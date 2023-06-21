@@ -47,11 +47,6 @@ DIR_PERSIST = os.path.join(DIR_ROOT, 'db')
 DIR_NOTES = os.path.join(DIR_ROOT, 'notes')
 DIR_XML = os.path.join(DIR_ROOT, 'xml')
 
-""" TODO: Move this to a .env file"""
-os.environ["OPENAP_API_KEY"] = "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"
-os.environ["PINECONE_API_KEY"] = "4ff8df60-5bf4-454f-a54f-2cb85073d628"
-os.environ["PINECONE_ENVIRONMENT"] = "us-west1-gcp-free"
-
 #model_name = 'gpt-4'
 model_name = 'gpt-3.5-turbo-16k'
 reference_instance = None

@@ -26,10 +26,6 @@ PERSONALITY="""You are a friendly assistant named Chad that is an expert on the 
         """
 PINECONE_INDEX_NAME = "5e"
 
-os.environ["OPENAP_API_KEY"] = "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"
-os.environ["PINECONE_API_KEY"] = "4ff8df60-5bf4-454f-a54f-2cb85073d628"
-os.environ["PINECONE_ENVIRONMENT"] = "us-west1-gcp-free"
-
 intents = nextcord.Intents.default()
 intents.message_content = True
 

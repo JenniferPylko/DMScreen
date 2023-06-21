@@ -10,3 +10,4 @@ ai_instructions.txt
 docs/*
 notes/*
 static/img/npc/*
+.env

@@ -12,7 +12,6 @@ from langchain.prompts import PromptTemplate
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s", datefmt="%Y-%m-%d %H:%M:%S")
 
-os.environ["OPENAP_API_KEY"] = "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"
 root_dir = os.path.dirname(os.path.abspath(__file__))
 audio_dir = os.path.join(root_dir, "audio")
 llm = ChatOpenAI(temperature=0, openai_api_key=os.environ["OPENAP_API_KEY"], model_name="gpt-4")
