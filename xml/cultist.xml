@@ -1,0 +1,59 @@
+        <category name="Cultist" id="cultist" hasa="cult">
+            <name name="The cultist's name is..." />
+            <table name="The cultist..." id="is">
+                <value>Is an outspoken true believer</value>
+                <value>Is a raving lunatic</value>
+                <value>Is a quiet fervent believer</value>
+                <value region_start="34|41" region_end="38|47" region_include="cult|cultist">Has doubts, but is devoted to the cult's leader</value>
+                <value>Has doubts, but is too afraid to voice them</value>
+                <value region_start="44|55" region_end="48|66" region_include="cult|__noun__">Doesn't care about the religious stuff; the cult meets other needs</value>
+            </table>
+            <table name="The cultist wears..." id="wears">
+                <value>A bandage on the thumb</value>
+                <value region_start="19" region_end="30" region_include="__noun__">A face tattoo of a holy symbol</value>
+                <value region_start="22" region_end="31" region_include="__noun__">A tattoo depicting an evil icon</value>
+                <value>A string of garlic around the neck</value>
+                <value>A robe with a tear at the knee</value>
+                <value>A fine silk robe</value>
+                <value region_start="13" region_end="17" region_include="__noun__">A large gold ring on one hand</value>
+                <value>A hooded robe</value>
+                <value region_start="25" region_end="36" region_include="__noun__">A robe emblazoned with a holy symbol</value>
+                <value>A lush, full beard</value>
+            </table>
+            <table name="The cultist has..." id="has">
+                <value>A ceremonial dagger in hand</value>
+                <value region_start="2" region_end="6" region_include="book">A book protruding from his or her pocket</value>
+                <value>A large scar on the throat</value>
+                <value>Scraggly matted hair</value>
+                <value>A shaved head</value>
+                <value>Scars on the wrists</value>
+                <value>A protruding chin</value>
+                <value>A maniacal grin</value>
+                <value>A surly curl of the lip</value>
+                <value>A gab between the front teeth</value>
+            </table>
+            <table name="The cultist is..." id="is">
+                <value>Humming an eerie incantation</value>
+                <value>Sweating profusely</value>
+                <value>Breathing heavily</value>
+                <value>Twitching nerviously</value>
+                <value>Laughing hysterically</value>
+                <value>Muttering under his/her breath</value>
+                <value>Coughing up a lung</value>
+                <value>Whispering a prayer</value>
+                <value>Moving with a limp</value>
+                <value>Stinking of wine</value>
+            </table>
+            <table name="The cultist is looking for..." id="looking">
+                <value region_start="20|26" region_end="24|32" region_include="cult|cultist">Ways to impress the cult's leader</value>
+                <value region_start="22|28" region_end="26|34" region_include="__noun__|__noun__">Tips for seducing the cult's leader</value>
+                <value region_start="27|33" region_end="31|39" region_include="__noun__|__noun__">Methods to assassinate the cult's leader</value>
+                <value region_start="36" region_end="39" region_include="deity">Something that will impress his/her god</value>
+                <value>Something to eat</value>
+                <value>Something to kill</value>
+                <value region_start="20" region_end="24" region_include="__noun__">Ways to advance the cult's goals</value>
+                <value>New recruits</value>
+                <value>Religious scholars to debate</value>
+                <value>A bottle of wine</value>
+            </table>
+        </category>

@@ -1,0 +1,141 @@
+<category name="Village" id="village">
+    <table name="The village's name is..." type="name">
+        <patterns>
+            <pattern>{aye} {bee}</pattern>
+            <pattern>{aye}'s {bee}</pattern>
+        </patterns>
+        <list type="aye">
+            <item>Leaf</item>
+            <item>Raven</item>
+            <item>Stone</item>
+            <item>Splint</item>
+            <item>Water</item>
+            <item>Ice</item>
+            <item>Flame</item>
+            <item>Sol</item>
+            <item>Storm</item>
+            <item>Earth</item>
+            <item>Gleam</item>
+            <item>Star</item>
+            <item>Art</item>
+            <item>War</item>
+            <item>Heart</item>
+            <item>Hard</item>
+            <item>Fall</item>
+            <item>Rock</item>
+            <item>Doom</item>
+            <item>Oak</item>
+            <item>Tear</item>
+            <item>Raven</item>
+            <item>Badger</item>
+            <item>Snake</item>
+            <item>Lion</item>
+            <item>Hell</item>
+            <item>Rage</item>
+            <item>Brine</item>
+            <item>Rat</item>
+            <item>Buck</item>
+            <item>Lily</item>
+            <item>Core</item>
+            <item>Stench</item>
+            <item>Mage</item>
+            <item>God</item>
+            <item>Soil</item>
+            <item>Pure</item>
+            <item>Mal</item>
+            <item>Cam</item>
+            <item>Fen</item>
+            <item>Clear</item>
+            <item>Split</item>
+            <item>Founder</item>
+            <item>Heir</item>
+            <item>Fair</item>
+            <item>Spin</item>
+            <item>Lord</item>
+            <item>King</item>
+            <item>Servant</item>
+            <item>Demon</item>
+            <item>Snow</item>
+            <item>Land</item>
+            <item>Ocean</item>
+        </list>
+        <list type="bee">
+            <item>bridge</item>
+            <item>brook</item>
+            <item>catch</item>
+            <item>crest</item>
+            <item>jaw</item>
+            <item>mark</item>
+            <item>run</item>
+            <item>blade</item>
+            <item>haven</item>
+            <item>rise</item>
+            <item>more</item>
+            <item>light</item>
+            <item>main</item>
+            <item>blaze</item>
+            <item>place</item>
+            <item>tear</item>
+            <item>fold</item>
+            <item>rest</item>
+            <item>host</item>
+            <item>craft</item>
+            <item>lair</item>
+            <item>hollow</item>
+            <item>vale</item>
+            <item>hammer</item>
+            <item>pike</item>
+            <item>rail</item>
+            <item>spike</item>
+            <item>ring</item>
+            <item>henge</item>
+            <item>coil</item>
+            <item>spring</item>
+            <item>jaw</item>
+            <item>mark</item>
+            <item>hail</item>
+            <item>loch</item>
+            <item>child</item>
+            <item>keep</item>
+            <item>fort</item>
+            <item>brook</item>
+            <item>forth</item>
+            <item>melt</item>
+            <item>borourgh</item>
+            <item>ford</item>
+            <item>crawl</item>
+            <item>moral</item>
+            <item>comb</item>
+            <item>glen</item>
+            <item>garden</item>
+            <item>wish</item>
+            <item>fellow</item>
+            <item>ridge</item>
+            <item>ward</item>
+            <item>town</item>
+        </list>
+    </table>
+    <table name="Vignettes, encounters, and color" id="vignette">
+        <value>A farmer and his son walk past on the road. The man is teaching his son a song</value>
+        <value>A wood cutter pauses his chopping to wave at you as you pass</value>
+        <value region_start="82" region_end="87" region_include="horse">A milkman struggles past pulling a horse cart. If questioned he mentions that his horse has taken ill, but he's managing</value>
+        <value>A farm wife sets a pie on a windowsill to cool while you walk by</value>
+        <value>A gaggle of children discuss plans to nick a pie from a windowsill</value>
+        <value>A butcher haggles cheerfully with a farmer over the price of a fat cow</value>
+        <value>A group of woman take turns sharing gossip and hoisting buckets from the town well</value>
+        <value>A celebration is taking place on the town green for two young people, recently married</value>
+        <value>A farmer is having a yard sale and has piled a small mountain of junk outside his home</value>
+        <value>A healthy looking dog runs past with a laughing boy in pursuit</value>
+        <value>A farm wife watches playing children through an open window</value>
+        <value>A man is helping a peddler fix his broken down wagon on the roadside</value>
+        <value region_start="2" region_end="7" region_include="smith">A smith pounds furiously on his anvil but stops to smile when his wife brings him some water</value>
+        <value>A group of old men with long beards sit on a stoop smoking pipes</value>
+        <value>A baker is returning home from making his rounds delivering bread</value>
+        <value>The town priest stands outside his church greeting people as they arrive for the service. He invites the PCs to attend</value>
+        <value>A group of men is mending a broken fence</value>
+        <value region_start="0|62" region_end="11|66" region_include="fisherfolk|__noun__">A fisherman walks past carrying tackle on his way down to the lake</value>
+        <value>A peddler is selling simple wares to the villagers from his wagon on the town green</value>
+        <value>A group of dwarves with brightly colored hoods puff pipes on the inn porch and watch the sun set</value>
+    </table>
+    <member name="Locations" include="locations" />
+</category>

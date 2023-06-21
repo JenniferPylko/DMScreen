@@ -1,0 +1,82 @@
+        <category name="Dinner at a Mining Town Pub" id="dinner_mining">
+            <table name="Tonight, we dine on..." id="dine">
+                <patterns>
+                    <pattern>{prep} {dish}</pattern>
+                </patterns>
+                <list type="prep">
+                    <item>Stewed</item>
+                    <item>Roasted</item>
+                    <item>Fried</item>
+                    <item>Smoked</item>
+                    <item>Baked</item>
+                    <item>Brined</item>
+                    <item>Seared</item>
+                    <item>Peppered</item>
+                    <item>Salted</item>
+                    <item>Pickled</item>
+                </list>
+                <list type="dish">
+                    <item>goat</item>
+                    <item>chicken</item>
+                    <item>blackbird</item>
+                    <item>mutton</item>
+                    <item>lamb</item>
+                    <item>ram</item>
+                    <item>wwe</item>
+                    <item>pork</item>
+                    <item>sausage</item>
+                    <item>bacon</item>
+                </list>
+
+            </table>
+            <table name="...with..." id="dine_wth">
+                <value>Golden potatoes.</value>
+                <value>Red potatoes.</value>
+                <value>Beets.</value>
+                <value>Leeks.</value>
+                <value>Lentils.</value>
+                <value>Red beans.</value>
+                <value>Black beans.</value>
+                <value>White beans.</value>
+                <value>Turnip mash.</value>
+                <value>Diced turnips.</value>
+                <value>White onions.</value>
+                <value>Yellow onions.</value>
+            </table>
+            <table name="...and..." id="dine_and">
+                <value>Carrots.</value>
+                <value>Red cabbage.</value>
+                <value>Green cabbage.</value>
+                <value>Purple cabbage.</value>
+                <value>Mushrooms.</value>
+                <value>Pine nuts.</value>
+                <value>Raisins.</value>
+                <value>Parsley.</value>
+                <value>Radishes.</value>
+                <value>Peas.</value>
+            </table>
+            <table name="Side dish..." id="side">
+                <value>Hard tack.</value>
+                <value>Fresh bread.</value>
+                <value>Crusty bread.</value>
+                <value>Rye bread.</value>
+                <value>Oat bread.</value>
+                <value>Pumpernickel bread.</value>
+                <value>Sharp cheese.</value>
+                <value>Stinky cheese.</value>
+                <value>Goat cheese.</value>
+                <value>Sheep's milk cheese.</value>
+            </table>
+            <table name="Beverage..." id="beverage">
+                <value>Bitter ale.</value>
+                <value>Wheat ale.</value>
+                <value>Black ale.</value>
+                <value>Stout.</value>
+                <value>Porter.</value>
+                <value>Mead.</value>
+                <value>Strong wine.</value>
+                <value>Red wine.</value>
+                <value>Brandy.</value>
+                <value>Whisky.</value>
+            </table>
+        </category>

@@ -1,0 +1,193 @@
+<category name="Fiend" id="fiend">
+    <name name="The fiend's true name is..." />
+    <table name="Status/Rank: The fiend is..." id="fiend_rank">
+        <value region_start="34" region_end="39" region_include="fiend">In the service of a more powerful fiend.</value>
+        <value region_start="24" region_end="35" region_include="__noun__">Bound to serve a mortal spellcaster.</value>
+        <value>Recently freed of its bonds.</value>
+        <value region_start="22" region_end="30" region_include="__noun__">Bound to a particular location.</value>
+        <value>Recently reborn.</value>
+        <value>An ancient and powerful being.</value>
+        <value>Rapidly ascending in rank.</value>
+        <value region_start="36" region_end="49" region_include="__noun__">Recently demoted from a position of greater power.</value>
+        <value region_start="37" region_end="45" region_include="__noun__">Rampaging after breaking free of its summoner.</value>
+        <value region_start="46" region_end="51" region_include="__noun__">A respected and feared lieutenant of a mighty fiend.</value>
+        <value>A laughingstock among the mighty fiends of its home realm.</value>
+        <value>Not entirely certain what its purpose and place may be.</value>
+    </table>
+    <table name="Skin: The fiend's skin is..." id="fiend_skin">
+        <value>Dark crimson.</value>
+        <value>Blood red.</value>
+        <value>Blackened.</value>
+        <value>Pale pink.</value>
+        <value>Sickly grey.</value>
+        <value>Burnt orange.</value>
+        <value>Mottled brown.</value>
+        <value>Orange-ish tan.</value>
+        <value>Shiny.</value>
+        <value>Rough.</value>
+        <value>Fur-covered.</value>
+        <value>Scaly.</value>
+    </table>
+    <table name="Eyes: The fiend's eyes are..." id="fiend_eyes">
+        <value>Glowing yellow.</value>
+        <value>Burning red.</value>
+        <value>Pitch black.</value>
+        <value>Deep blue.</value>
+        <value>White, with no visible pupils.</value>
+        <value>Toxic green.</value>
+        <value>Dull grey.</value>
+        <value>Midnight blue.</value>
+        <value>Laughing.</value>
+        <value>Unblinking and hollow.</value>
+        <value>More often closed than open.</value>
+        <value>Wide and perceptive.</value>
+    </table>
+    <table name="Head/Face: The fiend has..." id="fiend_head">
+        <value>A long snout.</value>
+        <value>Sharp fangs.</value>
+        <value>The face of a beautiful woman.</value>
+        <value>Curved horns.</value>
+        <value>Short horns.</value>
+        <value>Long, sharp horns.</value>
+        <value>Blackened horns.</value>
+        <value>An unsettling grin.</value>
+        <value>A terrifying scowl.</value>
+        <value>A constant smirk.</value>
+        <value>Long, dark hair.</value>
+        <value>Large ears.</value>
+    </table>
+    <table name="Body: The fiend has..." id="fiend_body">
+        <value>A well-muscled physique.</value>
+        <value>A voluptuous feminine shape.</value>
+        <value>Burnt flesh.</value>
+        <value>Cracked flesh.</value>
+        <value>A slender frame.</value>
+        <value>A thick-set frame.</value>
+        <value>A tall, bony frame.</value>
+        <value>A grotesque, obese body.</value>
+        <value>A lithe, athletic body.</value>
+        <value>Horrific scars.</value>
+        <value>Discolored flesh.</value>
+        <value>Many piercings.</value>
+    </table>
+    <table name="Appendages: The fiend has..." id="fiend_appendages">
+        <value>A pair of leathery wings.</value>
+        <value>A pair of feathered wings.</value>
+        <value>Wings pull close to its body to hide from view.</value>
+        <value>A scaly tail.</value>
+        <value>A tail ending in a poisoned stinger.</value>
+        <value>A forked tail.</value>
+        <value>An extra pair of arms.</value>
+        <value>Over-sized pincers in place of hands.</value>
+        <value>Hooves in place of feet.</value>
+        <value>Exceptionally long fingernails.</value>
+        <value>Talons in place of feet.</value>
+        <value>The body and legs of a crocodile</value>
+        <value>The body and legs of a goat</value>
+        <value>The body and legs of a lion</value>
+        <value>The body and legs of a serpent</value>
+        <value>The body and legs of a spider</value>
+        <value>The body and legs of a walrus.</value>
+    </table>
+    <table name="Knowledge and Magic: The fiend possesses..." id="fiend_knowledge">
+        <value region_start="27" region_end="35" region_include="divination">A missing line from a dark prophecy.</value>
+        <value region_start="25|43" region_end="29|46" region_include="npc|__noun__">The soul of a celebrated hero trapped in a gem.</value>
+        <value region_start="25|46" region_end="32|49" region_include="villain|__noun__">The soul of a terrifying villain trapped in a gem.</value>
+        <value region_start="19" region_end="33" region_include="deity">The true name of a god or goddess.</value>
+        <value region_start="27" region_end="33" region_include="dragon">A contract with an ancient dragon</value>
+        <value region_start="34" region_end="48" region_include="__noun__">A map to the prison of a powerful aberrant being.</value>
+        <value region_start="32|39" region_end="35|52" region_include="deity|__noun__">A map to the location of a dead god's resting place.</value>
+        <value region_start="38" region_end="43" region_include="__noun__">The key to the gates of a destructive realm.</value>
+        <value>A key to the gates of the realm of the dead.</value>
+        <value region_start="29" region_end="40" region_include="city">Knowledge of the location of a lost city.</value>
+        <value region_start="2" region_end="6" region_include="book">A book of morbid omens and prophecies.</value>
+        <value region_start="2" region_end="6" region_include="book">A book of foul summoning rituals.</value>
+    </table>
+    <table name="Weapons/Attacks: The fiend prefers to fight with..." id="fiend_weapons">
+        <value>A whip of pure flame.</value>
+        <value>A sword of elemental lightning.</value>
+        <value>A cudgel covered in teeth and sharp spikes.</value>
+        <value>A black steel mace.</value>
+        <value>A steel sword tempered in blood.</value>
+        <value>A wicked trident or spear.</value>
+        <value>Poison-coated arrows.</value>
+        <value>Life-draining arrows.</value>
+        <value>Spells and enchantments.</value>
+        <value>Its minions and thralls.</value>
+        <value>Its bare fists.</value>
+        <value>Tooth and claw.</value>
+    </table>
+    <table name="Goal: The fiend is looking for..." id="fiend_goal">
+        <value region_start="2" region_end="6" region_include="__noun__">A soul to collect and to keep.</value>
+        <value>A soul to devour.</value>
+        <value>Flesh to devour.</value>
+        <value>Powerful secrets.</value>
+        <value region_start="11" region_end="17" region_include="__noun__">A specific person who cheated it.</value>
+        <value region_start="3" region_end="11" region_include="artifacts">An artifact from a previous age.</value>
+        <value>Something to kill.</value>
+        <value>Something to burn.</value>
+        <value region_start="41" region_end="55" region_include="fiend">An opportunity to usurp the place of its fiendish liege.</value>
+        <value region_start="41" region_end="55" region_include="__noun__">An opportunity to prove its value to its fiendish liege.</value>
+        <value region_start="7" region_end="13" region_include="temple">A lost temple of story and song.</value>
+        <value region_start="7" region_end="11" region_include="tomb">A lost tomb of story and song.</value>
+        <value>The means to open a portal to a dark realm.</value>
+    </table>
+    <table name="Weakness: The fiend cannot resist..." id="fiend_weakness">
+        <value>Tasty flesh.</value>
+        <value>A pretty face.</value>
+        <value>A stiff drink.</value>
+        <value>Breaking and smashing things.</value>
+        <value>Setting things on fire.</value>
+        <value>A chance to gloat.</value>
+    </table>
+    <table name="Favorite Prey: The fiend is particularly fond of preying upon" id="fiend_prey">
+        <value>Beautiful young women.</value>
+        <value>Handsome young men.</value>
+        <value>Rulers and tyrants.</value>
+        <value>Poor, simple folk.</value>
+        <value>Pious, religious folk.</value>
+        <value>Mighty warriors.</value>
+        <value>Greedy and ambitious nobles and merchants.</value>
+        <value>Sad old men and women.</value>
+        <value>Sailors, pirates, and fishermen.</value>
+        <value>Desperate outlaws and thieves.</value>
+        <value>Talented actors and musicians.</value>
+        <value>Anyone; the fiend enjoys variety.</value>
+    </table>
+    <table name="Favorite Torments: With prey in its clutches, the fiend prefers to..." id="fiend_torment">
+        <value>Dismember its prey savagely.</value>
+        <value>Devour the flesh of its prey hungrily.</value>
+        <value>Toy with its prey before killing it.</value>
+        <value>Seduce its prey before violating the prey sadistically.</value>
+        <value>Mutilate its prey, leaving a horrifying reminder of the encounter.</value>
+        <value>Imprison its prey, subjecting it to years of psychological torment.</value>
+        <value>Torture its prey, keeping it alive and in pain for years.</value>
+        <value>Trap the soul of its prey in a gem, jar, or other object.</value>
+        <value>Collect the soul of its prey, sending it along to a fiendish realm.</value>
+        <value>Mark the soul of its prey, returning to collect it later.</value>
+        <value>Corrupt its prey, inciting it to commit evil acts.</value>
+        <value>Devour the soul of its prey, leaving a soulless husk.</value>
+        <value>Set dates for meetings then arrive late or cancel at the last minute.</value>
+        <value>Set dates for meetings and then never show up, apologize profusely, and promise to &quot;make it up to you.&quot;</value>
+        <value>Sow discord between its prey and the prey’s companions.</value>
+        <value>Lead its prey far afield while important matters are left undecided.</value>
+        <value>Lie to its prey; painting a rosier picture than reality dictates.</value>
+        <value>Undermine its prey’s business ventures.</value>
+        <value>Enter contracts it knows are flawed in its favor to the prey’s detriment.</value>
+        <value>Make promises to its prey for the sole purpose of breaking them.</value>
+    </table>
+    <table name="Vulnerability: To bind, to summon or to control the fiend or to drive it back to the shadow, one must..." id="fiend_vulnerability">
+        <value>Speak its true name.</value>
+        <value>Write its true name in one’s own blood.</value>
+        <value>Tattoo its true name to one’s breast.</value>
+        <value>Ritualistically burn a bit of the fiend’s skin.</value>
+        <value>Graft some of the fiend’s skin to one’s self.</value>
+        <value>Replace one’s own hand with the fiend’s.</value>
+        <value>Drink the fiend’s poisonous blood, die from the poison, and be resurrected.</value>
+        <value>Perform a ritualistic sacrifice of a goat.</value>
+        <value>Perform a ritualistic sacrifice of a maiden.</value>
+        <value>Locate the place of the fiend’s birth.</value>
+        <value>Pay tribute to the fiend’s far more dangerous and powerful liege lord.</value>
+        <value>Give up; no one’s ever bound this fiend.</value>
+    </table>
+</category>

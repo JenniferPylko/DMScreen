@@ -1,0 +1,90 @@
+        <category name="Damsel in distress" id="damsel">
+            <table name="The noble is..." id="is">
+                <value region_start="0" region_end="4" region_include="nobleman">Male</value>
+                <value region_start="0" region_end="6" region_include="noblewoman">Female</value>
+            </table>
+            <table name="The party..." id="party">
+                <value>Finds a hastily scrawled note that used finger tips as the pen and blood as the ink</value>
+                <value>Experiences a vision of the keep and noble has been reoccurring in their dreams</value>
+                <value region_start="55" region_end="61" region_include="noblehouse" saveas="noblefamily">Is shown a missing person notice posted by the noble's family</value>
+                <value>Stumbles upon the keep by chance while out adventuring</value>
+                <value>Is asked to investigate the keep(er) due to suspicious activity</value>
+                <value>Is stopped by woodland creatures who all begin chattering frantically about the situation</value>
+                <value region_start="20" region_end="26" region_include="tavern">Hears gossip in the tavern about the noble's whereabouts</value>
+                <value region_start="30" region_end="48" region_include="seer">Is told about the scenario by a traveling oracle</value>
+                <value>Is captured and taken by the keeper's henchmen</value>
+            </table>
+            <table name="The noble is being kept in..."  id="kept">
+                <value region_start="20" region_end="26" region_include="castle">A large magnificent castle on the mountainside</value>
+                <value region_start="2" region_end="6" region_include="cavern">A cave burrowed into the side of a hill</value>
+                <value>A pocket dimension that opens only on the full moon</value>
+                <value region_start="9" region_end="15" region_include="castle">A sunken castle with an enchantments that permits water breathing inside of it</value>
+                <value region_start="12" region_end="18" region_include="ship">The brig of a ship anchored just off the coast</value>
+                <value region_start="24" region_end="30" region_include="temple">An abandoned, overgrown temple in the woods</value>
+                <value region_start="24" region_end="31" region_include="__noun__">An abandoned, overgrown cottage in the woods</value>
+                <value region_start="12" region_end="19" region_include="caravan">A traveling caravan that is difficult to track down</value>
+                <value region_start="2|25" region_end="7|34" region_include="tomb|__noun__">A crypt hidden beneath a graveyard</value>
+                <value>A magical prison inside an amulet worn by the keeper</value>
+                <value>A hidden kingdom under the ground</value>
+            </table>
+            <table name="The noble is being held by..." id="held">
+                <value region_start="7" region_end="12" region_include="witch">An old witch with imps for henchmen</value>
+                <value region_start="2" region_end="9" region_include="vampire">A vampire lord with thrall for henchmen</value>
+                <value>A beholder with nothic henchmen</value>
+                <value>A bandit lord with bandit henchmen</value>
+                <value region_start="2" region_end="8" region_include="dragon">A dragon with half-dragon henchmen</value>
+                <value region_start="11" region_end="17" region_include="wizard">A powerful wizard with golem henchmen</value>
+                <value>A medusa with living statues as henchmen</value>
+                <value region_start="2" region_end="6" region_include="undead">A lich and his skeleton henchmen</value>
+                <value>A satyr prince hand his satyr henchmen</value>
+                <value region_start="24" region_end="36" region_include="orcclan">An orc warchief and his orc henchmen</value>
+            </table>
+            <table name="The keeper wants..." id="wants">
+                <value>Gold in exchange</value>
+                <value>The noble as a slave</value>
+                <value region_start="35" region_end="38" region_include="deity">To make a blood sacrifice to their god</value>
+                <value>To use the noble as bait to lure in more prey</value>
+                <value>To sell them to the highest bidder overseas</value>
+                <value>To spark war between nations</value>
+                <value>The noble as a suitor for their son/daughter</value>
+                <value>To fill the void in their life that was caused by a loved one dying</value>
+                <value>To keep the noble even though taking them happened by accident</value>
+                <value>To fulfill tradition, it's nothing personal</value>
+            </table>
+            <table name="The noble in question is..." id="noble_is">
+                <value>Beautiful/handsome beyond expression</value>
+                <value>Ugly as sin</value>
+                <value>Quite overweight</value>
+                <value>Much taller than you expected</value>
+                <value>Much shorted than you expected</value>
+                <value>Very thin and looking under-fed</value>
+                <value>Unusually muscular</value>
+                <value>Missing all of their hair</value>
+                <value>Much order compared to their description</value>
+                <value>Just a child</value>
+                <value>Exceptionally obese</value>
+            </table>
+            <table name="The real problem is..."  id="problem">
+                <value>The noble wants to stay</value>
+                <value region_start="18" region_end="30" region_include="noblehouse" saveas="noblefamily">The noble insists their family doesn't really want them to come back</value>
+                <value>The noble has been placed into a catatonic dream state</value>
+                <value>The noble dies on the way back home</value>
+                <value>The noble falls in love with a party member and doesn't want to leave them</value>
+                <value>The noble is an illusion and is being kept somewhere else [Roll another location]</value>
+                <value>There are six nobles who all look similar to the description</value>
+                <value>The noble is opposite gender than what you were told</value>
+                <value>The noble attacks the pantry in a frenzy and won't stop until calmed down or knocked unconscious</value>
+                <value>The noble gets captured again by someone else on the way back [Start over at The damsel is being kept in]</value>
+            </table>
+            <table name="Not until much later the party discovers that..." id="discover">
+                <value>It was the wrong noble. Oops</value>
+                <value region_start="54" region_end="60" region_include="noblehouse" saveas="noblefamily">The noble is a doppleganger looking to infiltrate the family</value>
+                <value region_start="4" region_end="10" region_include="noblehouse" saveas="noblefamily">The family did it as a publicity stunt to gain attention and sympathy</value>
+                <value region_start="63" region_end="69" region_include="noblehouse" saveas="noblefamily">The noble has been getting captured on purpose to escape their family</value>
+                <value region_start="58" region_end="64" region_include="noblehouse" saveas="noblefamily">Someone else is offering more gold for the noble than the family</value>
+                <value region_start="19" region_end="25" region_include="noblehouse" saveas="noblefamily">All members of the family the noble belongs to have since died</value>
+                <value>The noble was likely happier with the keeper</value>
+                <value>The noble wants to be freed to go where they choose rather than back home</value>
+                <value region_start="33|125" region_end="39|130" region_include="wizard|world">The noble is actually a powerful wizard who invented the whole scenario to see if there is anyone of valor still left in the world</value>
+            </table>
+        </category>

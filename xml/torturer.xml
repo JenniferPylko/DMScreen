@@ -1,0 +1,24 @@
+<category name="Torturer" id="torturer">
+    <name name="The torturer's name is..."/>
+    <include name="Race" include="npc_race" />
+    <table name="The torturer is..." id="is">
+        <value region_start="19" region_end="32" region_include="noblehouse">The bastard son of a noble house</value>
+        <value region_start="2" region_end="8" region_include="priest">A priest with a puritanical agenda</value>
+        <value>A horrible sadist</value>
+        <value>A wicked little man</value>
+    </table>
+    <table name="The torturer is looking to..." id="looking">
+        <value region_start="12" region_end="17" region_include="noble">Impress his liege with efficient confessions</value>
+        <value>Make himself feel powerful</value>
+        <value region_start="29" region_end="37" region_include="prisoner">Break a particularly willful prisoner</value>
+        <value>Frighten someone with grisly tales</value>
+    </table>
+    <table name="The torturer carries..." id="carries">
+        <value>A large knight and a scourge</value>
+        <value>A leather bound set of blades, hooks, and prongs</value>
+        <value>Several strange potions and poisons</value>
+        <value region_start="2|31" region_end="8|39" region_include="__noun__|prisoner">A trophy taken from a tortured prisoner</value>
+        <value>A pocket-sized prayer book</value>
+        <value>A flask of spirits</value>
+    </table>
+</category>

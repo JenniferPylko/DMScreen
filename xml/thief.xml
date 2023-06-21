@@ -1,0 +1,184 @@
+<category name="Thief" id="thief">
+    <name name="The thief's name is..."/>
+    <include name="Race" include="npc_race" />
+    <table name="The thief is..." id="is">
+        <value>A veteran dungeon delver</value>
+        <value>A desperate footpad</value>
+        <value>A reckless fortune seeker</value>
+        <value>A well-known adventurer</value>
+        <value>A brash, young fool</value>
+        <value>A student of the craft</value>
+        <value>A charismatic swindler</value>
+        <value region_start="13" region_end="22" region_include="nation">A mysterious foreigner</value>
+        <value>A femme fatale</value>
+        <value>A charming rogue</value>
+        <value>A dashing swashbuckler</value>
+        <value>A brutish thug</value>
+    </table>
+    <table name="The thief has..." id="has">
+        <value>A long, hooked nose</value>
+        <value>A bent, broken nose</value>
+        <value>A cute little button nose</value>
+        <value>A scar below the left eye</value>
+        <value>Pockmarked cheeks</value>
+        <value>High cheek bones</value>
+        <value>A pointy chin</value>
+        <value>A crossed bones tattoo on the arm</value>
+        <value>A dagger tattoo on the arm</value>
+        <value>A dragon tattoo on the arm</value>
+        <value>An eagle tattoo on the arm</value>
+        <value>A skull tattoo on the arm</value>
+        <value>A snake tattoo on the arm</value>
+        <value>A spider web tattoo on the arm</value>
+        <value>A thorns tattoo on the arm</value>
+        <value>A anchor tattoo on the arm</value>
+        <value>A fish tattoo on the arm</value>
+        <value>A mermaid tattoo on the arm</value>
+        <value>A octopus tattoo on the arm</value>
+        <value>A shark tattoo on the arm</value>
+        <value>A whale tattoo on the arm</value>
+        <value>An open shirt and a very hair chest</value>
+        <value>A five o'clock shadow</value>
+        <value>An extravagant mustache</value>
+    </table>
+    <table name="The thief wears..." id="wears">
+        <value region_start="9" region_end="16" region_include="__noun__">A flashy earring</value>
+        <value>A dark red cape</value>
+        <value>Shiny leather boots</value>
+        <value>Boots with a hole in the left toe</value>
+        <value>A leather baldric</value>
+        <value>A wide-brimmed hat</value>
+        <value>A heavy gold chain around the neck</value>
+        <value>A long dark ponytail</value>
+        <value>Luscious golden curls</value>
+        <value>A ruffled shirt</value>
+        <value>A stylish coat</value>
+        <value>A handkerchief in his breast pocket</value>
+    </table>
+    <table name="The thief carries..." id="carries">
+        <value>Some hemp rope and a silk handkerchief</value>
+        <value>Several over-sized sacks</value>
+        <value>Several torches and a much-used knife</value>
+        <value region_start="2" region_end="12" region_include="__noun__">A pocketbook of notes and maps</value>
+        <value>A dagger in each boot</value>
+        <value region_start="20" region_end="28" region_include="__noun__">A beautiful antique scabbard</value>
+        <value>A well-worn lantern</value>
+        <value>Climbing gear-pitons, hammer, and rope</value>
+        <value>An organize set of lockpicks</value>
+        <value>A crowbar</value>
+        <value>An adjustable lockpick</value>
+        <value>A mask</value>
+        <value region_start="4" region_end="9" region_include="__noun__">The token of a love</value>
+        <value>Letters for blackmail</value>
+        <value>A lucky rabbit's foot</value>
+        <value region_start="8" region_end="12" region_include="coins">A lucky coin</value>
+        <value>A lucky horseshoe</value>
+        <value>A lucky four-leaved clover</value>
+        <value>A flask of oil</value>
+        <value region_start="2" region_end="14" region_include="treasuremap">A treasure map</value>
+        <value>A flask filled with spirits</value>
+        <value>A wineskin</value>
+        <value>A little jar of mustache wax</value>
+    </table>
+    <table name="The thief..." id="does">
+        <value>Hums or sings while walking</value>
+        <value>Constantly brushes the hair back from out of his or her face</value>
+        <value>Laughs maniacally at everything</value>
+        <value>Never smiles and never laughs</value>
+        <value>Scratches the elbow frequently</value>
+        <value>Picks at his or her teeth after meals</value>
+    </table>
+    <table name="The thief is armed with..." id="armed">
+        <value>Brass knuckles</value>
+        <value>A shortsword</value>
+        <value>Several throwing knives</value>
+        <value>A crossbow with poisoned bolts</value>
+        <value>A narrow-bladed dagger</value>
+        <value>A serrated dagger</value>
+        <value>A club and a knife</value>
+        <value>A rapier</value>
+        <value>A hand crossbow</value>
+        <value>A garrote and a dagger</value>
+    </table>
+    <table name="The thief's modus operandi is..." id="modus">
+        <value>Petty theft</value>
+        <value>Burglary</value>
+        <value>Shoplifting</value>
+        <value>Mugging</value>
+        <value>Pickpocketing</value>
+        <value>Running heists of gems and precious metals</value>
+        <value>Running heists of warehoused commodities</value>
+        <value>Holding up outgoing boats or wagons</value>
+    </table>
+    <table name="The thief prefers to operate" id="operate">
+        <value>Alone</value>
+        <value region_start="5" region_end="14" region_include="thief">With a partner to provide extra muscle if things get rough</value>
+        <value region_start="5" region_end="14" region_include="thief">With a partner to server as a look-out</value>
+        <value region_start="5" region_end="14" region_include="thief">With a partner to create a diversion</value>
+        <value region_start="5" region_end="11" region_include="gang">With a gang</value>
+        <value>Wearing a mask</value>
+    </table>
+    <table name="Aside from theft, the thief has been known to be involved in..." id="involved">
+        <value>Distributing smokeleaf</value>
+        <value>Distributing hallucinogenic mushrooms</value>
+        <value>Distributing sleepysalt (a downer)</value>
+        <value>Distributing sharpsugar (an upper)</value>
+        <value>Fencing stolen gems and precious metals</value>
+        <value>Assassinations that look like accidents</value>
+        <value>Assassinations that frame someone else</value>
+        <value>Running exotic brothels</value>
+        <value>Running low brothels</value>
+        <value>Running high-class brothels</value>
+        <value>Shaking down legitimate local businesses for "protection"</value>
+        <value region_start="29" region_end="33" region_include="city">Shaking down scandal-plagued city officials</value>
+        <value>Serving as muscle for shady merchants and/or brothel-keepers</value>
+    </table>
+    <table name="Recently, the thief has been operating in or near..." id="near">
+        <value>A residential district</value>
+        <value region_start="13" region_end="17" region_include="shop">An artisan's shop</value>
+        <value region_start="2" region_end="7" region_include="guilds">A guildhall</value>
+        <value region_start="2" region_end="12" region_include="merchant">A merchant's office</value>
+        <value region_start="3" region_end="6" region_include="tavern">An inn</value>
+        <value region_start="2" region_end="9" region_include="brothel">A brothel</value>
+        <value region_start="2" region_end="11" region_include="__noun__">A warehouse</value>
+        <value region_start="2" region_end="10" region_include="__noun__">A shipyard</value>
+        <value region_start="2" region_end="8" region_include="temple">A temple complex</value>
+        <value region_start="2" region_end="10" region_include="cemetary">A cemetery</value>
+        <value region_start="4" region_end="13" region_include="__noun__">The town hall</value>
+        <value region_start="13" region_end="18" region_include="guilds">An abandoned guildhall</value>
+        <value region_start="13" region_end="22" region_include="__noun__">An abandoned warehouse</value>
+        <value region_start="2" region_end="12" region_include="__noun__">A shantytown</value>
+        <value region_start="27" region_end="37" region_include="__noun__">The residence of a wealthy individual</value>
+        <value region_start="4" region_end="10" region_include="castle">The palace</value>
+        <value region_start="2" region_end="9" region_include="library">A library</value>
+        <value region_start="2" region_end="12" region_include="__noun__">A university</value>
+        <value region_start="0" region_end="10" region_include="marketplace">The market square</value>
+        <value region_start="2" region_end="11" region_include="__noun__">A gatehouse</value>
+        <value region_start="2" region_end="5" region_include="__noun__">A pub</value>
+        <value region_start="2" region_end="8" region_include="tavern">A tavern</value>
+        <value region_start="4" region_end="9" region_include="__noun__">The docks</value>
+        <value region_start="4" region_end="10" region_include="__noun__">The bridge</value>
+    </table>
+    <table name="The thief's favorite marks include..." id="marks">
+        <value>Fishermen and sailors</value>
+        <value>Beggars and hobos</value>
+        <value>Merchants and moneychangers</value>
+        <value>Jewelers and gemcutters</value>
+        <value>Politicians and magistrates</value>
+        <value>Guards and sheriffs</value>
+        <value>Soldiers and sellswords</value>
+        <value>Musicians and storytellers</value>
+        <value>Farmers and ehrders</value>
+        <value>Servants and slaves</value>
+        <value>Priests and sages</value>
+        <value>Women and children</value>
+        <value>Peasant girls and farm wives</value>
+        <value>Young noblewoman</value>
+        <value>Old women</value>
+        <value>Noblemen</value>
+        <value>Harlots and madames</value>
+        <value>Barkeeps and barmaids</value>
+        <value>Peddlers and shopkeepers</value>
+        <value>Other thieves</value>
+    </table>
+</category>

@@ -1,0 +1,72 @@
+        <category name="Arena Game" id="arena">
+            <table name="The arena is..." id="arena_is">
+                <value>An ancient stone structure used for centuries</value>
+                <value>An old stone structure used for generations</value>
+                <value>A wondrous construction with grand stands, trap doors, and elevators</value>
+                <value>A sturdy wooden structure, recently built</value>
+                <value>A crisp stone structure, recently build</value>
+                <value>A set of rickety wooden stands around a dirt ring</value>
+                <value>A circle of rope surrounded by spectators and a few cages</value>
+                <value>An underground pit with spectators leaning over a railing above</value>
+            </table>
+            <table name="The games are being held..." id="arena_held">
+                <value region_start="16" region_end="25" region_include="nobleman">In honor of the sovereign's birthday</value>
+                <value region_start="15" region_end="37" region_include="__noun__">In honor of an historical anniversary</value>
+                <value region_start="23" region_end="39" region_include="__noun__">In honor of a recently military victory</value>
+                <value>To turn a legitimate profit for the organizers</value>
+                <value>to turn a gambling profit for the organizers</value>
+                <value>To dispose of prisoners</value>
+                <value>Strictly to entertain the masses</value>
+                <value region_start="30" region_end="45" region_include="__noun__">To determine a champion for a dangerous quest or traditional ceremony</value>
+            </table>
+            <table name="The main event is..." id="mainevent">
+                <value>A battle royale or grand melee</value>
+                <value>A reenactment of a historical battle</value>
+                <value>A duel between two arena champions</value>
+                <value>A duel between a champion and a severe underdog</value>
+                <value>Feeding prisoners to beasts</value>
+                <value>A battle of man versus bears</value>
+                <value>A battle of man versus chimeras</value>
+                <value>A battle of man versus dragons</value>
+                <value>A battle of man versus giant spiders</value>
+                <value>A battle of man versus lions</value>
+                <value>A battle of man versus owlbears</value>
+                <value>A battle of man versus tigers</value>
+                <value>A battle of man versus wolves</value>
+                <value>A chariot race or foot race</value>
+                <value>Feats of strength</value>
+            </table>
+            <table name="The day's champion wins..." id="arena_win">
+                <value>A heavy purse of silver</value>
+                <value>A sizable purse of gold</value>
+                <value>An expensive and ornate weapon</value>
+                <value region_start="40" region_end="50" region_include="armorer">An expensive and ornate piece of armor (crafted by)</value>
+                <value>A floral crown and a fine silver chain</value>
+                <value>A floral crown and a bejeweled gold belt</value>
+                <value>A fine silk cloak and a bejeweled silver chain</value>
+                <value region_start="14" region_end="27" region_include="nobleman">A petition of the sovereign</value>
+                <value region_start="27" region_end="31" region_include="military">A position of honor in the army and a purse of silver</value>
+                <value region_start="22" region_end="35" region_include="nobleman">A position of honor in the sovereign's guard</value>
+                <value>A week of pampering and pleasure and a purse of silver</value>
+                <value region_start="20" region_end="31" region_include="nobleman">A night with one of the noble's wives and a purse of gold</value>
+            </table>
+            <table name="The crowd's attitude is..." id="attitude">
+                <value>Rowdy and festive</value>
+                <value>Eager and excited</value>
+                <value>Relaxed and easy-going</value>
+                <value>Hostile and tense</value>
+                <value>Disappointed and angry</value>
+                <value>Rowdy and rebellious</value>
+            </table>
+            <table name="The crowd is made up of mostly..." id="crowd">
+                <value>Merchants, nobles, and the well-to-do</value>
+                <value>Soldiers, officers, and camp-followers</value>
+                <value>Local artisans, and shopkeepers</value>
+                <value>Local peasants and unskilled workers</value>
+                <value>Foreigners and travelers</value>
+                <value>Slaves, servants, and laborers</value>
+                <value>Sailors, pirates, and knaves</value>
+                <value>People of all social strata</value>
+            </table>
+            <member name="Gladiator" include="gladiator" />
+        </category>

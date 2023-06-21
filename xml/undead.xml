@@ -1,0 +1,181 @@
+<category name="Undead" id="undead">
+    <table name="The person was..." id="undead_was">
+        <value region_start="2" region_end="8" region_include="farmfolk">A farmer</value>
+        <value region_start="2" region_end="8" region_include="__noun__">A herder</value>
+        <value region_start="2" region_end="7" region_include="miner">A miner</value>
+        <value region_start="2" region_end="8" region_include="fisherfolk">A fisher</value>
+        <value region_start="2" region_end="7" region_include="__noun__">A slave</value>
+        <value region_start="2" region_end="9" region_include="maidservant">A servant</value>
+        <value region_start="2" region_end="9" region_include="__moun__">A laborer</value>
+        <value region_start="3" region_end="19" region_include="__noun__">An unskilled worker</value>
+        <value region_start="2" region_end="8" region_include="__noun__">A beggar or urchin</value>
+        <value region_start="2" region_end="7" region_include="noble">A noble</value>
+        <value region_start="2" region_end="8" region_include="knight">A knight</value>
+        <value region_start="2" region_end="11" region_include="__noun__">A craftsman</value>
+        <value region_start="2" region_end="8" region_include="__noun__">An artist</value>
+        <value region_start="2" region_end="10" region_include="merchant">A merchant</value>
+        <value region_start="2" region_end="12" region_include="merchant">A shopkeeper</value>
+        <value region_start="2" region_end="9" region_include="barkeep">A barkeep</value>
+        <value region_start="2" region_end="9" region_include="barkeep">A barmaid</value>
+        <value region_start="2" region_end="11" region_include="barbarian">A barbarian</value>
+        <value region_start="2" region_end="11" region_include="gladiator">A gladiator</value>
+        <value region_start="2" region_end="10" region_include="bard">A minstrel</value>
+        <value region_start="2" region_end="8" region_include="bard">A singer</value>
+        <value region_start="2" region_end="8" region_include="priest">A priest</value>
+        <value region_start="2" region_end="6" region_include="monk">A monk</value>
+        <value region_start="3" region_end="12" region_include="__noun__">An herbalist</value>
+        <value region_start="2" region_end="8" region_include="healer">A healer</value>
+        <value region_start="2" region_end="9" region_include="soldier">A soldier</value>
+        <value region_start="2" region_end="11" region_include="mercenary">A sellsword</value>
+        <value region_start="2" region_end="9" region_include="cultist">A cultist</value>
+        <value region_start="2" region_end="10" region_include="__noun__">A preacher</value>
+        <value region_start="2" region_end="8" region_include="__noun__">A hunter</value>
+        <value region_start="3" region_end="11" region_include="assassin">An assassin</value>
+        <value region_start="2" region_end="7" region_include="thief">A thief</value>
+        <value region_start="2" region_end="8" region_include="__noun__">A bandit</value>
+        <value region_start="2" region_end="10" region_include="smuggler">A smuggler</value>
+        <value region_start="2" region_end="12" region_include="__noun__">A con artist</value>
+        <value region_start="2" region_end="8" region_include="sailor">A sailor</value>
+        <value region_start="2" region_end="8" region_include="pirate">A pirate</value>
+        <value region_start="2" region_end="12" region_include="alchemist">An alchemist</value>
+        <value region_start="2" region_end="6" region_include="seer">A seer</value>
+    </table>
+    <table name="The person died from..." id="undead_death">
+        <value>Hanging or strangulation</value>
+        <value>Beheading</value>
+        <value>A stab wound or beating</value>
+        <value>Blunt trauma or being crushed</value>
+        <value>Drowning</value>
+        <value region_start="2" region_end="8" region_include="__noun__">A plague</value>
+        <value region_start="2" region_end="26" region_include="__noun__">A gastrointestinal illness</value>
+        <value region_start="2" region_end="21" region_include="__noun__">A respiratory illness</value>
+        <value region_start="12" region_end="17" region_include="__noun__">An infected wound</value>
+        <value region_start="0" region_end="9" region_include="poisons">Poisoning</value>
+        <value>Falling from a great height</value>
+        <value region_start="2" region_end="7" region_include="horse">A horse or wagon accident</value>
+        <value region_start="11" region_end="18" region_include="disease">A venereal disease</value>
+        <value region_start="3" region_end="20" region_include="__noun__">An allergic reaction</value>
+        <value>Shock</value>
+        <value>A heart attack or stroke</value>
+        <value>Liver failure</value>
+        <value>Old age</value>
+        <value>Natural causes</value>
+        <value>Unknown causes or under mysterious circumstances</value>
+        <value>Failed experiments with physical perfection</value>
+        <value>Overexposure to heat</value>
+        <value>Overexposure to cold</value>
+    </table>
+    <table name="The person's spirit lingers..." id="undead_linger">
+        <value region_start="8" region_end="17" region_include="__noun__">To seek vengeance</value>
+        <value region_start="12" region_end="21" region_include="__noun__">To pine for lost love</value>
+        <value region_start="10" region_end="23" region_include="__noun__">To bemoan lost treasure</value>
+        <value>Out of pure hatred of the living</value>
+        <value>Out of pure hatred of the living</value>
+        <value>Out of jealousy of the living</value>
+        <value region_start="29" region_end="48" region_include="__noun__">To covet the belongings of a specific individual</value>
+        <value region_start="27" region_end="43" region_include="__noun__">To provide protection to a specific someone</value>
+        <value region_start="10" region_end="26" region_include="__noun__">To warn a specific someone against danger</value>
+        <value region_start="27" region_end="42" region_include="__noun__">To warn everyone against a specific danger</value>
+        <value region_start="13" region_end="29" region_include="__noun__">To torment a specific someone</value>
+        <value region_start="24" region_end="38" region_include="__noun__">To torment members of a specific group</value>
+        <value>To torment anyone who crosses its path</value>
+    </table>
+    <table name="The person's spirit can move on if..." id="undead_moveon">
+        <value>Someone helps it achieve it's goal</value>
+        <value>It saves the life of at least one other person</value>
+        <value>It achieves its goal on its own</value>
+        <value>It is destroyed</value>
+        <value>It is driven from its current location</value>
+        <value>It is given evidence of events that happened after the person's death</value>
+        <value>It is made aware of the circumstances of the person's death</value>
+        <value>It is forced to visit the location of the person's death</value>
+        <value>It is given the opportunity to speak to a loved one</value>
+        <value>It sufficiently satisfied its lust for blood</value>
+        <value>It sufficiently satisfies its lust for human touch</value>
+        <value>The Hells freeze over</value>
+    </table>
+    <table name="The spirit's initial reaction when it encounters living creatures is..." id="undead_reaction">
+        <value>Hostile and aggressive</value>
+        <value>Hostile and suspicious</value>
+        <value>Nervous and frightened</value>
+        <value>Mostly indifferent</value>
+        <value>Completely indifferent</value>
+        <value>Curious but suspicious</value>
+        <value>Curious and playful</value>
+        <value>Desperate and aggressive</value>
+    </table>
+    <table name="Corporeal Undead: The person's spirit is..." id="undead_corpis">
+        <value>Occupying its original body, showing no signs of decay</value>
+        <value>Occupying its original body, showing some signs of decay</value>
+        <value>Occupying its original body, badly decomposed</value>
+        <value>Occupying its original body, only bare bones remain</value>
+        <value>Occupying the corpse of someone else</value>
+        <value>Occupying the living body of a stranger</value>
+        <value>Occupying the living body of someone the person knew</value>
+        <value>Occupying the living body of a beast</value>
+        <value>Occupying part of its original body (skull or hand)</value>
+        <value>Occupying part of someone else's corpse (skull or hand)</value>
+    </table>
+    <table name="Corporeal Undead: The creature moves..." id="undead_corpmoves">
+        <value>With a shambling gait</value>
+        <value>With an awkward limp</value>
+        <value>Lurching unpredictably</value>
+        <value>With more of shimmy than a walk</value>
+        <value>Taking slow, steady steps</value>
+        <value>With surprising quickness and agility</value>
+    </table>
+    <table name="Corporeal Undead: The creature has" id="undead_corphas">
+        <value>A tattered shirt</value>
+        <value>A missing arm, leg or finger</value>
+        <value>Only one eye</value>
+        <value>A club foot</value>
+        <value>Long-scraggly hair</value>
+        <value>Chattering teeth</value>
+        <value>Large crude stitches in its side</value>
+        <value>An awful hunchback</value>
+        <value>Incredibly long fingernails</value>
+        <value>Drool on its chin</value>
+        <value>Buck teeth</value>
+        <value>A creepy mustache</value>
+    </table>
+    <table name="Incorporeal Undead: The spirit is..." id="undead_incorpis">
+        <value>Incorporeal, invisible, and incapable of affecting its material surroundings</value>
+        <value>Incorporeal, invisible, and capable of moving small objects</value>
+        <value>Incorporeal, invisible, but capable of making itself seen</value>
+        <value>Incorporeal, invisible, and hidden within a chest</value>
+        <value>Incorporeal, invisible, and hidden within a drawer</value>
+        <value>Incorporeal, invisible, and hidden within a kettle</value>
+        <value>Incorporeal, invisible, and hidden within a wardrobe</value>
+        <value>Incorporeal, visible, but incapable of affecting its material surroundings</value>
+        <value>Incorporeal, visible, and capable of significant mischief and harm</value>
+        <value>Incorporeal, wretched and slimy, and capable of mischief and harm</value>
+        <value>Incorporeal, glowing blue or green, and capable of mischief and harm</value>
+        <value>Incorporeal, visible, but in a mist or fog form</value>
+        <value>Incorporeal, visible, but in an animal shape</value>
+        <value>Incorporeal, visible, but in the form of a floating skull</value>
+        <value>Incorporeal, visible, but in the form of a faint glow</value>
+        <value>Incorporeal, visible, but in the form of a pool of shadows</value>
+        <value>Incorporeal, visible, but in the form of a spectral hand</value>
+    </table>
+    <table name="Incorporeal Undead: The spirit moves..." id="undead_incorpmoves">
+        <value>By creeping, oozelike, across the ground</value>
+        <value>Smoothly, gliding above the ground</value>
+        <value>Taking slow fluid steps</value>
+        <value>Lightly, rarely touching the ground</value>
+        <value>Much quicker than you expect it to</value>
+        <value>By teleporting in a swirl of shadows</value>
+    </table>
+    <table name="Incorporeal Undead: The spirit appears to be..." id="undead_incorpappears">
+        <value>Severely bloated</value>
+        <value>Moaning in anguish</value>
+        <value>Snarling at you</value>
+        <value>Breathing heavily</value>
+        <value>Cowering fear</value>
+        <value>Posed to strike</value>
+        <value>Poised to strike</value>
+        <value>Gently bobbing up and down</value>
+        <value>Wind-blown and haggard</value>
+        <value>Fidgeting nervously</value>
+        <value>Oozing ectoplasm</value>
+    </table>
+</category>

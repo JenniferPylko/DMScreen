@@ -1,0 +1,112 @@
+<category name="Oozes" id="oozes">
+    <table name="Color: The ooze is..." id="ooze_color">
+        <value>Transparent</value>
+        <value>Translucent white</value>
+        <value>Translucent yellow</value>
+        <value>Translucent green</value>
+        <value>Translucent red</value>
+        <value>Translucent brown</value>
+        <value>White</value>
+        <value>Bright yellow</value>
+        <value>Pale green</value>
+        <value>Yellowish green</value>
+        <value>Bright green</value>
+        <value>Brownish green</value>
+        <value>Golden brown</value>
+        <value>Muddy brown</value>
+        <value>Reddish brown</value>
+        <value>Burnt orange</value>
+        <value>Blood red</value>
+        <value>Iridescent blue</value>
+        <value>Deep violet</value>
+        <value>Black.</value>
+    </table>
+    <table name="Consistency: The ooze is..." id="ooze_consistency">
+        <value>Silky</value>
+        <value>Smooth</value>
+        <value>Creamy</value>
+        <value>Thick</value>
+        <value>Thin</value>
+        <value>Watery</value>
+        <value>Spongy</value>
+        <value>Lumpy</value>
+        <value>Chunky</value>
+        <value>Fluffy</value>
+        <value>Stringy</value>
+        <value>Viscous</value>
+        <value>Sticky</value>
+        <value>Gooey</value>
+        <value>Slimy</value>
+        <value>Jiggly</value>
+        <value>Scummy</value>
+        <value>Soggy</value>
+        <value>Luscious</value>
+        <value>Velvety</value>
+    </table>
+    <table name="Habitat: This type of ooze often makes its home in..." id="ooze_habitat">
+        <value>Refuse heaps</value>
+        <value region_start="26" region_end="34" region_include="monsters">The lairs of subterranean monsters</value>
+        <value>Discarded bottles</value>
+        <value region_start="5" region_end="12" region_include="cavern">Deep caverns</value>
+        <value region_start="25" region_end="29" region_include="cavern">Crevices and cracks in a cave walls and floors</value>
+        <value region_start="0" region_end="16" region_include="tomb">Crypts or graves</value>
+        <value>Sewer pipes or culverts</value>
+        <value region_start="0|10" region_end="6|17" region_include="prison|castle_dungeon">Prison or dungeon cells</value>
+        <value region_start="21" region_end="27" region_include="castle">Old battlefields and castle ruins</value>
+        <value region_start="0" region_end="6" region_include="tavern">Tavern kitchens</value>
+        <value region_start="0" region_end="6" region_include="castle">Castle kitchens</value>
+        <value region_start="18|31" region_end="25|35" region_include="library|wizard">The laboratory or library of a mage</value>
+        <value>Lakes or along lake shores</value>
+        <value region_start="0" region_end="11" region_include="magicshop">Magic shops or magic-touched area</value>
+        <value>Extra-dimensional spaces</value>
+        <value>Earth motes in the sky</value>
+        <value region_start="0" region_end="6" region_include="swamp">Swamps and bogs</value>
+        <value>The ocean or along an ocean shore</value>
+        <value region_start="6" region_end="13" region_include="forest">Dense forests</value>
+        <value>Teapots or tankards</value>
+    </table>
+    <table name="Foraging/Hunting: This type of ooze is known to..." id="ooze_hunting">
+        <value>Drop down on prey from the ceiling</value>
+        <value>Climb a wall from which to pounce when prey comes near</value>
+        <value>Wait for prey to step on it</value>
+        <value>Wait for prey to walk right into it</value>
+        <value>Camouflage itself with debris</value>
+        <value>Disguise itself as a puddle of filth</value>
+        <value>Lurk in dark corners</value>
+        <value>Mold itself into a non-threatening shape</value>
+        <value>Mold itself into something prey will try to pick up</value>
+        <value>Emit faint light to attract prey</value>
+        <value>Split in two to flank its prey</value>
+        <value>Split into dozens of oozes to surround its prey</value>
+        <value>Digest nearly everything but stone</value>
+        <value>Digest nearly everything but metal</value>
+        <value>Digest nearly everything but glass</value>
+        <value>Engulf creatures while they sleep</value>
+        <value>Poison its prey with a paralysing toxin</value>
+        <value>Poison its prey with a slow-acting toxin</value>
+        <value>Stalk its prey for days on end</value>
+        <value>Go years between meals</value>
+    </table>
+    <table name="Reactivity: This type of ooze reacts to..." id="ooze_reactivity">
+        <value>Sunlight; the light burns the ooze</value>
+        <value>Loud noises; loud noises frighten the ooze</value>
+        <value>Music; the ooze becomes sleepy</value>
+        <value>Vibrations; the ooze becomes agitated and aggressive</value>
+        <value>Electricity; the ooze begins to move more rapidly and erratically</value>
+        <value>Cold; the ooze partially freezes and stops flowing</value>
+        <value>Water; the ooze becomes dilute, weakening its grasp</value>
+        <value>Air; the ooze dries out and moves more slowly</value>
+        <value>Fire; the ooze panics and flees from flames</value>
+        <value>Acid; the ooze bubbles and hisses and loses its ability to sense prey</value>
+        <value>Salt; the ooze shrivels up and shrinks in size</value>
+        <value>Lye; the ooze dissolves into a puddle</value>
+        <value>Alcohol; the ooze lurches when it moves and belches acidic sludge everywhere</value>
+        <value>Sugar; the ooze becomes bouncy in its movement</value>
+        <value>Bone; patches of the ooze calcify and solidify</value>
+        <value>Oil; the ooze begins to separate into aqueous and organic phases</value>
+        <value>Copper; the ooze begins to crackle with electricity</value>
+        <value>Iron; the ooze becomes magnetic pulling more and more iron to it</value>
+        <value>Silver; the ooze's color becomes highly reflective</value>
+        <value>Gold, the ooze grows rapidly.</value>
+    </table>
+</category>

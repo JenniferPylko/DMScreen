@@ -1,0 +1,44 @@
+<category name="Lycanthrope Pack" id="lycanthropepack">
+    <table name="The pack is..." id="is">
+        <value>A band of exiles and outcasts</value>
+        <value region_start="9" region_end="24" region_include="outlaws">A roving band of outlaws and thieves</value>
+        <value region_start="18" region_end="22" region_include="__noun__">A nomadic warrior clan</value>
+        <value region_start="23" region_end="33" region_include="mercenaries">A band of sought-after mercenaries</value>
+        <value region_start="30" region_end="46" region_include="assassinsguild">An integral part of the local assassins' guild</value>
+        <value region_start="30" region_end="44" region_include="__noun__">An integral part of the local thieves' guild</value>
+        <value region_start="0" region_end="19" region_include="mercenaries">A mercenary company in the service of a lord or lady or city watch</value>
+        <value>A wild bunch of hunters and killers</value>
+        <value region_start="11" region_end="15" region_include="__noun__">An ancient clan of warrior-hunters</value>
+    </table>
+    <table name="The pack's leader is..." id="leader">
+        <value>A dangerous megalomaniac</value>
+        <value>A charismatic demagogue</value>
+        <value region_start="13" region_end="22" region_include="nation">A mysterious foreigner</value>
+        <value region_start="11" region_end="16" region_include="thief">A talented thief</value>
+        <value region_start="28" region_end="34" region_include="noblehouse">An outcast from a prominent family</value>
+        <value>A ruthless killer</value>
+        <value>A femme fatale</value>
+        <value region_start="9|15" region_end="14|23" region_include="arena|gladiator">A former arena champion</value>
+        <value region_start="12" region_end="18" region_include="knight">A disgraced knight</value>
+        <value>A brutish thug</value>
+        <value region_start="13" region_end="19" region_include="priest">A de-frocked priest</value>
+        <value region_start="13" region_end="21" region_include="criminal">A well-known fugitive</value>
+    </table>
+    <table name="The pack's attitude toward their leader is..." id="attitude">
+        <value>Friendly and loyal</value>
+        <value>Respectful and business-like</value>
+        <value>Cautious and uncertain</value>
+        <value>Terrified and tight-lipped</value>
+        <value>Disappointed and disrespectful</value>
+        <value>Agitated and restless</value>
+    </table>
+    <table name="The pack's goals include" id="goals">
+        <value region_start="13" region_end="19" region_include="__noun__">Becoming the region's dominant predators</value>
+        <value region_start="24" region_end="35" region_include="lycanthropepack">Revenge against a rival band of lycanthropes or outlaws</value>
+        <value region_start="20" region_end="26" region_include="__noun__">Revenge against the region's elite</value>
+        <value region_start="22" region_end="28" region_include="__noun__">Rebellion against the region's elite</value>
+        <value>A quiet and peaceful existence</value>
+        <value>Violence to slake their bloodlust</value>
+    </table>
+    <member name="Lycanthrope" include="lycanthrope" />
+</category>

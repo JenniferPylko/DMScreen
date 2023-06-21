@@ -1,0 +1,164 @@
+<category name="Serial Killer" id="killer">
+    <table name="The killer is..." id="is">
+        <value>A quiet artisan</value>
+        <value>An eccentric scholar</value>
+        <value region_start="13" region_end="22" region_include="nation">A mysterious foreigner</value>
+        <value>A talented artist</value>
+        <value>A polite shopkeeper</value>
+        <value>A peddler of the bizarre</value>
+        <value>A feme fatale</value>
+        <value>A charming rogue</value>
+        <value>A hardened criminal</value>
+        <value>A brutish thug</value>
+        <value region_start="2" region_end="11" region_include="__noun__">A religious fanatic</value>
+        <value>A veteran soldier</value>
+    </table>
+    <table name="The killer's modus operandi is..." id="modus">
+        <value>Ingested poison or allergic reaction</value>
+        <value>Contact poison applied to a weapon</value>
+        <value>Arrow/bolt from range</value>
+        <value>Impaling</value>
+        <value>Knife in the chest or back</value>
+        <value>Multiple stab wounds</value>
+        <value>Slitting the throat</value>
+        <value>Gutting or eviscerating</value>
+        <value>Flaying</value>
+        <value>Beheading</value>
+        <value>Strangulation</value>
+        <value>Hanging</value>
+        <value>burying alive</value>
+        <value>Drowning</value>
+        <value>Boiling alive</value>
+        <value>Throwing off a roof</value>
+        <value>Sever beating</value>
+        <value>Desmembermemnt</value>
+        <value>Burning alive</value>
+        <value>Feeding to animals</value>
+    </table>
+    <table name="the killer is often armed with..." id="armed">
+        <value>Poisoned daggers</value>
+        <value>Throwing knives</value>
+        <value>An over-sized dagger</value>
+        <value>A serrated knife</value>
+        <value>A crossbow</value>
+        <value>A hammer or axe</value>
+        <value>A bow and arrows</value>
+        <value>A cudgel</value>
+        <value>A sickle or scythe</value>
+        <value>A garrote and dagger</value>
+        <value>Poisoned projectiles</value>
+        <value>Bare fists</value>
+    </table>
+    <table name="The killer's purposes include..." id="purpose">
+        <value>Sowing fear</value>
+        <value>Sowing destruction</value>
+        <value>Sowing chaos</value>
+        <value>Satisfying personal bloodlust</value>
+        <value region_start="43" region_end="63" region_include="__noun__">Gaining vengeance by hunting down a set of specific individuals</value>
+        <value>Vigilante justice</value>
+    </table>
+    <table name="The killer leaves a victim..." id="victim">
+        <value>In a signature pose</value>
+        <value>In a signature location</value>
+        <value>With a note on the corpse</value>
+        <value>With a piece of the corpse missing</value>
+        <value>With an unusual object planted on the corpse</value>
+        <value>Where the corpse will never be found</value>
+    </table>
+    <table name="Timing: The killer typically plans murders for..." id="plan">
+        <value>Just after sunrise</value>
+        <value>Just after sunset</value>
+        <value>Well into the night</value>
+        <value>the toll of midnight</value>
+        <value>After midnight</value>
+        <value>Just before sunrise</value>
+    </table>
+    <table name="The killer's base of operations is hidden in or near..." id="hidden">
+        <value region_start="17" region_end="26" region_include="__noun__">The killer's own residence</value>
+        <value region_start="13" region_end="17" region_include="shop">An artisan's shop</value>
+        <value region_start="2" region_end="7" region_include="guilds">A guildhall</value>
+        <value region_start="2" region_end="12" region_include="merchant">A merchant's office</value>
+        <value region_start="2" region_end="8" region_include="tavern">A tavern</value>
+        <value region_start="2" region_end="9" region_include="brothel">A brothel</value>
+        <value region_start="2" region_end="11" region_include="__noun__">A warehouse</value>
+        <value region_start="2" region_end="10" region_include="__noun__">A shipyard</value>
+        <value region_start="2" region_end="8" region_include="temple">A temple complex</value>
+        <value region_start="4" region_end="8" region_include="city">The city's sewers</value>
+        <value region_start="13" region_end="18" region_include="guilds">An abandoned guildhall</value>
+        <value region_start="13" region_end="22" region_include="__noun__">An abandoned warehouse</value>
+        <value region_start="3" region_end="21" region_include="__noun__">An armory or barracks</value>
+        <value region_start="19" region_end="37" region_include="__noun__">The residence of a wealthy individual or prominent citizen</value>
+        <value>Nowhere. The killer is a transient</value>
+    </table>
+    <table name="The killer's favorite victims are..." id="favorite">
+        <value>Fishermen and sailors</value>
+        <value>Beggars and thieves</value>
+        <value>Merchants and moneychangers</value>
+        <value>Young noblemen</value>
+        <value>Young noblewomen</value>
+        <value>Old noblewomen</value>
+        <value>Gamblers and drunks</value>
+        <value>Priests and monks</value>
+        <value>Priestesses</value>
+        <value>Serving girls</value>
+        <value>Slaves</value>
+        <value>Barmaids</value>
+        <value>Harlots and madames</value>
+        <value>Circus performers</value>
+        <value>Foreign travelers</value>
+        <value>Farm wives</value>
+        <value>Peasant girls</value>
+        <value>Inquisitive children</value>
+        <value>Young children</value>
+        <value>Other killers and criminals</value>
+    </table>
+    <table name="The killer refuses to kill..." id="refuses">
+        <value>Ugly women</value>
+        <value>Beautiful women</value>
+        <value>Pregnant women</value>
+        <value>Shy children</value>
+        <value>Bold children</value>
+        <value>Anyone with blue eyes</value>
+        <value>Anyone with green eyes</value>
+        <value>Anyone with blonde hair</value>
+        <value>Anyone with red hair</value>
+        <value>Anyone who is blind, deaf or lame</value>
+    </table>
+    <table name="The killer wears" id="wears">
+        <value>Old worn boots</value>
+        <value>Shiny leather boots</value>
+        <value>A mask covering the face</value>
+        <value>A wide-brimmed hat</value>
+        <value>A cap pulled low</value>
+        <value>A low-cut shirt</value>
+        <value>Tight fitting clothes</value>
+        <value>Neatly trimmed mustaches</value>
+    </table>
+    <table name="The killer carries" id="carries">
+        <value region_start="30" region_end="40" region_include="__noun__">The weapon used in his or her first kill</value>
+        <value region_start="2|22" region_end="8|32" region_include="__noun__|__noun__">A trophy from his/her first kill</value>
+        <value region_start="2" region_end="8" region_include="__noun__">A trophy from every one of his or her kills</value>
+        <value>A ledger listing each and every one of this or her kills</value>
+        <value>A journal describing in gory detail each and every one of his or her kills</value>
+        <value region_start="2|31" region_end="7|40" region_include="__noun__|__noun__">A token stolen from his or her next mark</value>
+        <value region_start="3" region_end="16" region_include="__noun__">An exotic weapon</value>
+        <value region_start="18" region_end="24" region_include="__noun__">A highly polished weapon</value>
+        <value region_start="2" region_end="8" region_include="__noun__">A weapon with runes carved into it</value>
+        <value region_start="2" region_end="8" region_include="__noun__">A weapon with a gem embedded in the pommel</value>
+        <value region_start="2" region_end="8" region_include="__noun__">A weapon made of an unusual material (blackened steel, bone, coral, cude iron, obsidian, stone)</value>
+    </table>
+    <table name="The killer is unusually fond of or particular regarding..." id="fond">
+        <value>Horticulture and floral arrangements</value>
+        <value>Fashion trends</value>
+        <value>Gourmet cooking</value>
+        <value>Personal health and fitness</value>
+        <value>Arms and armor maintenance</value>
+        <value>Small animals</value>
+        <value>High quality fabrics and leathers</value>
+        <value region_start="0" region_end="7" region_include="nation">Foreign music</value>
+        <value>Theater troupes and dancers</value>
+        <value>Fine wines</value>
+        <value>Social status</value>
+        <value>Facial hair</value>
+    </table>
+</category>

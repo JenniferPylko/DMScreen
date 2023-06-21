@@ -1,0 +1,165 @@
+        <category name="Assassin" id="assassin" hasa="assassinsguild">
+            <name name="The assassin's name is..."/>
+            <include name="Race" include="npc_race" />
+            <table name="The assassin is..." id="assassin_is">
+                <value>A veteran hitman</value>
+                <value>A desperate footpad</value>
+                <value>A well-known slayer</value>
+                <value>A brash, young fool</value>
+                <value>A student of the craft</value>
+                <value>A charismatic butcher</value>
+                <value region_start="13" region_end="22" region_include="nation">A mysterious foreigner</value>
+                <value>A femme fatale</value>
+                <value>A charming rogue</value>
+                <value>A dashing swashbuckler</value>
+                <value>A brutish thug</value>
+            </table>
+            <table name="The assassin has..." id="assassin_has">
+                <value>A scar on the forearm</value>
+                <value>A scar on the face</value>
+                <value>A high-pitched laugh</value>
+                <value>A long, hooked nose</value>
+                <value>A dangerous look in the eye</value>
+                <value>A cheerful smile</value>
+                <value>A cold stare</value>
+                <value>An agile step</value>
+                <value>A low-cut shirt</value>
+                <value>A bent, broken nose</value>
+                <value>A cute little button nose</value>
+                <value>A scar below the left eye</value>
+                <value>Pockmarked cheeks</value>
+                <value>High cheek bones</value>
+                <value>A pointy chin</value>
+                <value>A crossed bones tattoo on the arm</value>
+                <value>A dagger tattoo on the arm</value>
+                <value>A dragon tattoo on the arm</value>
+                <value>A eagle tattoo on the arm</value>
+                <value>A skull tattoo on the arm</value>
+                <value>A snake tattoo on the arm</value>
+                <value>A spider web tattoo on the arm</value>
+                <value>A thorns tattoo on the arm</value>
+                <value>An anchor tattoo on the arm</value>
+                <value>A fish tattoo on the arm</value>
+                <value>A mermaid tattoo on the arm</value>
+                <value>A octopus tattoo on the arm</value>
+                <value>A shark tattoo on the arm</value>
+                <value>A whale tattoo on the arm</value>
+                <value>An open shirt and a very hairy chest</value>
+                <value>A five o'clock shadow</value>
+                <value>A neatly trimmed mustache</value>
+            </table>
+            <table name="The assassin wears..." id="assassin_wears">
+                <value region_start="9" region_end="16" region_include="__noun__">A flashy earring</value>
+                <value>A shiny leather boots</value>
+                <value region_start="7" region_end="18" region_include="__noun__">A gold signet ring</value>
+                <value>A dagger in each boot</value>
+                <value>A mask covering the face</value>
+                <value>A wide-brimmed hat</value>
+                <value>A cloak with a dark hood</value>
+                <value>A black traveler's cloak</value>
+                <value region_start="32" region_end="38" region_include="poisons">A bandolier containing vials of poison</value>
+                <value>A quiver full of arrows/bolts</value>
+                <value>A dark red cape</value>
+                <value>Boots with golden buckles</value>
+                <value>A leather baldric</value>
+                <value>A handkerchief tied over the head</value>
+                <value region_start="8" region_end="20" region_include="__noun__">A small silver chain around the neck</value>
+                <value>A long dark ponytail</value>
+                <value>Luscious brown curls</value>
+                <value>A ruffled shirt</value>
+                <value>A black leather coat</value>
+                <value>A handkerchief in his breast pocket</value>
+            </table>
+            <table name="The assassin wields..." id="assassin_weilds">
+                <value region_start="15" region_end="18" region_include="__noun__">A blade with a gem embedded in the pommel</value>
+                <value>A blade with a soft leather tassels dangling from the pommel</value>
+                <value>A blade with a carved ivory hilt</value>
+                <value>A blade with a carved jade hilt</value>
+                <value>A blade with a carved soapstone hilt</value>
+                <value>A blade with a carved ebony hilt</value>
+                <value>A blade with a carved mahogany hilt</value>
+                <value>A blade with a carved oak hilt</value>
+                <value>A blade with a gently curved hilt</value>
+                <value>A blade with dragons sculpted into a steel of the guard</value>
+                <value>A blade with lions sculpted into a steel of the guard</value>
+                <value>A blade with scorpions sculpted into a steel of the guard</value>
+                <value>A blade with snakes sculpted into a steel of the guard</value>
+                <value>A blade with spiders sculpted into a steel of the guard</value>
+                <value>A blade with wolves sculpted into a steel of the guard</value>
+                <value>A blade made of blackened steel</value>
+                <value>A highly polished blade</value>
+                <value region_start="21" region_end="26" region_include="__noun__">A blade with strange runes carved into it</value>
+                <value>A blade with a serrated edge</value>
+                <value>A curved, exotic blade</value>
+            </table>
+            <table name="The assassin also carries..." id="assassin_carries">
+                <value>Several throwing knives</value>
+                <value region_start="12" region_end="19" region_include="poisons">An array of poisons in neatly stoppered vials</value>
+                <value region_start="26" region_end="32" region_include="poisons">Several doses of a deadly poison</value>
+                <value region_start="15" region_end="23" region_include="poisons">A blowgun with poisoned darts</value>
+                <value>An over-sized crossbow</value>
+                <value>Arrows/bolts tipped with black steel</value>
+                <value>Arrows/bolts with bronzed tips</value>
+                <value>Arrows/bolts flethed with peacock feathers</value>
+                <value region_start="23" region_end="29" region_include="poisons">Arrows/bolts coated in poison</value>
+                <value>Some hemp rope and a silk handkerchief</value>
+                <value region_start="16" region_end="30" region_include="__noun__">A pocketbook of notes and maps</value>
+                <value>Climbing gear - pitons, hammer, and rope</value>
+                <value>A mask</value>
+                <value region_start="4" region_end="9" region_include="__noun__">The token of a love</value>
+                <value>Letters for blackmail</value>
+                <value>A lucky rabbit's foot</value>
+                <value region_start="8" region_end="12" region_include="coins">A lucky coin</value>
+                <value>A lucky horseshoe</value>
+                <value>A lucky four-leaf clover</value>
+                <value region_start="20" region_end="27" region_include="__noun__">A flask filled with spirits</value>
+                <value>A wineskin</value>
+                <value>A little jar of mustache wax</value>
+            </table>
+            <table name="The assassin is looking for..." id="assassin_looking">
+                <value region_start="31" region_end="34" region_include="__noun__">Accomplices to help complete a job</value>
+                <value region_start="18" region_end="32" region_include="assassin">Revenge against a rival assassin</value>
+                <value>An easy contact</value>
+                <value region_start="19" region_end="35" region_include="__noun__">Extra muscle for a tough assignment</value>
+                <value>Rumors that may lead to a new client</value>
+                <value region_start="20|26" region_end="25|33" region_include="assassinsguild|__noun__">Word from a missing guild contact</value>
+                <value region_start="26" region_end="32" region_include="__noun__">Someone to frame up for a murder</value>
+                <value region_start="34" region_end="40" region_include="__noun__">Revenge against a double-crossing client</value>
+                <value>A big payday</value>
+                <value>A rowdy evening of carousing</value>
+            </table>
+            <table name="The assassin prefers top operate..." id="assassin_prefers">
+                <value>Alone</value>
+                <value region_start="18" region_end="25" region_include="__noun__">Alone, but with a contact who knows where the hit is to occur</value>
+                <value region_start="5" region_end="14" region_include="assassin">With a partner to provide extra muscle if things get rough</value>
+                <value region_start="5" region_end="14" region_include="assassin">With a partner to serve as a look-out</value>
+                <value region_start="5" region_end="14" region_include="assassin">With a partner to create a diversion</value>
+                <value>Wearing a mask</value>
+            </table>
+            <table name="Recently, the assassin has been rumored to have notched a kill in or near..." id="assassin_kill">
+                <value region_start="2" region_end="22" region_include="__noun__">A residential district</value>
+                <value region_start="13" region_end="17" region_include="shop">An artisan's shop</value>
+                <value region_start="2" region_end="11" region_include="__noun__">A guildhall</value>
+                <value region_start="2" region_end="12" region_include="merchant">A merchant's office</value>
+                <value region_start="3" region_end="6" region_include="tavern">An inn</value>
+                <value region_start="2" region_end="9" region_include="brothel">A brothel</value>
+                <value region_start="2" region_end="11" region_include="__noun__">A warehouse</value>
+                <value region_start="2" region_end="10" region_include="__noun__">A shipyard</value>
+                <value region_start="2" region_end="16" region_include="temple">A temple complex</value>
+                <value region_start="2" region_end="10" region_include="__noun__">A cemetery</value>
+                <value region_start="2" region_end="13" region_include="__noun__">The town hall</value>
+                <value region_start="13" region_end="22" region_include="__noun__">An abandoned guildhall</value>
+                <value region_start="13" region_end="22" region_include="__noun__">An abandoned warehouse</value>
+                <value region_start="2" region_end="12" region_include="village">A shantytown</value>
+                <value region_start="19" region_end="37" region_include="__noun__">The residence of a wealthy individual</value>
+                <value region_start="4" region_end="10" region_include="castle">The palace</value>
+                <value region_start="2" region_end="9" region_include="__noun__">A library</value>
+                <value region_start="2" region_end="12" region_include="__noun__">A university</value>
+                <value region_start="0" region_end="10" region_include="marketplace">The market square</value>
+                <value>A gatehouse</value>
+                <value region_start="2" region_end="5" region_include="tavern">A pub</value>
+                <value region_start="2" region_end="8" region_include="tavern">A tavern</value>
+                <value region_start="4" region_end="9" region_include="__noun__">The docks</value>
+                <value region_start="4" region_end="10" region_include="__noun__">The bridge</value>
+            </table>
+        </category>

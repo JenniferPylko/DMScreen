@@ -1,0 +1,79 @@
+        <category name="Grave Robber" id="graverobber">
+            <name name="The graverobber's name is..."/>
+            <include name="Race" include="npc_race" />
+            <table name="The graverobber is..." id="is">
+                <value region_start="10" region_end="25" region_include="__noun__">A veteran treasure hunter</value>
+                <value region_start="12" region_end="17" region_include="thief">A desperate thief</value>
+                <value>A reckless fortune seeker</value>
+                <value region_start="13" region_end="21" region_include="criminal">A well-known criminal</value>
+                <value>A brash young fool</value>
+                <value>A student of anatomy</value>
+                <value region_start="15" region_end="22" region_include="crafter_artisan">An out-of-work artisan</value>
+                <value>A displaced peasant</value>
+                <value>A combat veteran</value>
+                <value region_start="2" region_end="9" region_include="nation">A foreign refugee</value>
+            </table>
+            <table name="The graverobber has..." id="has">
+                <value>A long, hooked nose</value>
+                <value>A cute button nose</value>
+                <value>A broad, flat nose</value>
+                <value>A scar below the left eye</value>
+                <value>Piercing blue eyes</value>
+                <value>Pockedmarked cheeks</value>
+                <value>A pointy chin</value>
+                <value>Several missing teeth</value>
+                <value>A jagged scar above one eye</value>
+                <value>Extremely bushy eyebrows</value>
+            </table>
+            <table name="The graverobber wears..." id="wears">
+                <value>A flashy earring</value>
+                <value>A dark grey cape</value>
+                <value>Filthy leather boots</value>
+                <value>Boots with a hole in the left toe</value>
+                <value>A heavy gold belt buckle</value>
+                <value>A wide-brimmed hat</value>
+                <value>A dagger tattoo on the forearm</value>
+                <value>A dragon tattoo on the forearm</value>
+                <value>A nude figure tattoo on the forearm</value>
+                <value>A skull tattoo on the forearm</value>
+                <value>A snake tattoo on the forearm</value>
+                <value>A thorns tattoo on the forearm</value>
+                <value>A long dark ponytail</value>
+                <value>Luscious golden curls</value>
+                <value>A handkerchief in his breast pocket</value>
+                <value>An open shirt and a very hairy chest</value>
+                <value>Unruly mustaches</value>
+            </table>
+            <table name="The graverobber..." id="does">
+                <value>Hums or sings while digging</value>
+                <value>Constantly brushes the hair back from out of his or her face</value>
+                <value>Laughs maniacally at everything</value>
+                <value>Never smiles and never laughs</value>
+                <value>Spits constantly</value>
+                <value>Scratches the elbow frequently</value>
+                <value>Picks at his or her teeth after meals</value>
+                <value>Is fond of placing corpses in rude poses</value>
+            </table>
+            <table name="The graverobber carries..." id="carries">
+                <value>A sturdy shovel and a dirty handkerchief</value>
+                <value>A blunt pick-ax and several torches</value>
+                <value>A narrow shovel and a length of hemp rope</value>
+                <value>A new steel shovel and a length of silk rope</value>
+                <value>Several over-sized sacks</value>
+                <value>A sap and a large sack</value>
+                <value>An ornately crafted lantern</value>
+                <value>A simple lantern and a dagger</value>
+                <value>A pocketbook of notes on gravesites</value>
+                <value>A dagger and a crossbow</value>
+            </table>
+            <table name="The graverobber is looking for..." id="looking">
+                <value>A fresh grave</value>
+                <value region_start="16" region_end="32" region_include="tomb">The entrance to an ancient crypt</value>
+                <value>A pair of strong arms to help dig</value>
+                <value>Tales of recently deceased members of the nobility</value>
+                <value region_start="16" region_end="35" region_include="noblehouse">The location of the ruling family's personal cemetery</value>
+                <value>A pair of strong arms to move dirt</value>
+                <value>An ear to listen to some boasting</value>
+                <value>A drink and a break from digging</value>
+            </table>
+        </category>

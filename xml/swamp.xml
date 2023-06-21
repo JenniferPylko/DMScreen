@@ -1,0 +1,149 @@
+<category name="Swamp" id="swamp">
+    <table name="The swamp smells of..." id="swamp_smell">
+        <value>Nothing; it has no odor</value>
+        <value>An uncomfortable sulfur smell. After some exposure it causes players' eyes to water</value>
+        <value>Death and decay of corpses lost in the swamp</value>
+        <value>Earthy musk</value>
+        <value>Feet from a soldier who has been marching all day</value>
+        <value>Compost pile</value>
+        <value>Wet dog</value>
+        <value>Nothing; There is an odorless gas. Players will begin to get headaches if over exposed</value>
+        <value>Spoiled meat</value>
+        <value>Metallic scent that you can also taste in the back of your throat</value>
+    </table>
+    <table name="You notice..." id="swamp_fodder">
+        <value>Lights moving in the distance. They vanish as players get near</value>
+        <value>The trees are all dead. Their features almost resemble faces...</value>
+        <value>Large sections of waist deep water.</value>
+        <value>Several trees have large claw marks carved into them</value>
+        <value>Canine foot prints that slowly change into human prints</value>
+        <value>A single tree producing apples white as snow. None of them fall to the ground and they are all untouched by other creatures</value>
+        <value region_start="24" region_end="30" region_include="spider">The rotting corpse of a spider the size of a house. No sign of death</value>
+        <value>Small spiderwebs that are face level</value>
+        <value>Several humanoid skeletons. Their bones are scattered and look gnawed on</value>
+        <value>A small graveyard. None of the graves are marked and several look as if they were dug up recently</value>
+        <value region_start="10" region_end="27" region_include="__noun__">A ring of ancient monoliths</value>
+        <value region_start="26" region_end="30" region_include="tomb">The entrance to a flooded tomb</value>
+        <value region_start="9" region_end="15" region_include="temple">A Ruined temple</value>
+        <value region_start="2" region_end="7" region_include="__noun__">A house floating on pontoons</value>
+        <value region_start="2" region_end="7" region_include="__noun__">A house built on stilts</value>
+        <value region_start="7" region_end="11" region_include="cavern">A damp cave</value>
+    </table>
+    <table name="You see a/an..." id="swamp_landmark">
+        <value>Bubbling pool of mud.</value>
+        <value>Enormous gnarled old tree.</value>
+        <value>Hillock rising above the water.</value>
+        <value>Thorny bramble.</value>
+        <value>Patch of very tall reeds.</value>
+        <value>Large, rotting log.</value>
+    </table>
+    <table name="Minor feature" id="swamp_minor">
+        <value>Scent of decay.</value>
+        <value>Bird call.</value>
+        <value>Flying waterfowl.</value>
+        <value>Lizard climbing a tree.</value>
+        <value>Especially mossy tree.</value>
+        <value>Patch of mushrooms.</value>
+    </table>
+    <table name="Hazard" id="swamp_hazard">
+        <value>Patch of sticky mud.</value>
+        <value>Patch of quicksand.</value>
+        <value>Swarm of biting flies.</value>
+        <value>Sudden rainstorm.</value>
+        <value>Nauseating stench.</value>
+        <value>Hunter’s snare.</value>
+    </table>
+    <table name="Friendly Critters..." id="swamp_critters">
+        <value>Clouds of insects buzzing around</value>
+        <value>A murder of crows that remain relatively silent. If players get too close they explode into a roar of cawing and fly around the players madly</value>
+        <value>Large beetles that enjoy resting atop players heads</value>
+        <value>Crawling Claws that skitter away when they get spotted</value>
+        <value>Spiders the size of your fist. They catch birds and bats in their webs</value>
+        <value>Large millipedes crawling in and out of fallen logs</value>
+        <value>Toads that look unusually large</value>
+        <value>Very large brown snakes that look to be branches until disturbed</value>
+        <value>2-3 human children clothed in rags. They speak no languages and flee the party</value>
+        <value>A very lost and confused looking treant. It appears as the swamp is slowly claiming him</value>
+    </table>
+    <table name="Wild Monsters..." id="swamp_wildmonsters">
+        <value>Pack of ghouls led by a ghast</value>
+        <value>Pack of jackal led by a jackalwere</value>
+        <value>Several vine blights that lie in wait</value>
+        <value>Gnolls and their leader. Traps are set all through the swamp</value>
+        <value>Otyugh that sees the players as a new meal</value>
+        <value>Several vampire spawn that stalk the players. They strike at night when the party sleeps</value>
+        <value>Group of ghosts. They just want some new company in the swamp</value>
+        <value>Zombies that lie beneath the water. They try to drown whoever gets too close</value>
+        <value>A few Will o wisps. They will attempt to split the party and take them down one by one.</value>
+        <value>Undead treants. Use Zombie template</value>
+    </table>
+    <table name="Boss Monsters..." id="swamp_bossmonsters">
+        <value>Coven of hags that has been watching the players since they entered. Haunts their dreams if they sleep in swamp</value>
+        <value>Banshee and her group of ghosts. They are looking for new friends</value>
+        <value>A Spider the size of a house. Has a small spider army following him</value>
+        <value region_start="42" region_end="46" region_include="military">One or several wraiths. They have a small army of the damned at their command</value>
+        <value>A beholder guarding a graveyard. One of the graves leads to a small dungeon</value>
+        <value>A very weathered looking vampire. He is moving a large coffin with the help of vampire spawns</value>
+        <value>Medusa that is looking to add more statues to her collection. The party is a good start</value>
+        <value>Pack of Lycanthropes that have been terrorizing the nearby farmers/villages</value>
+        <value>A wizard from a nearby town and the flesh golems he is making in the swamp. He isn't thrilled you found him</value>
+        <value>Lich who is working on relocating his lair to here. A castle looks to be under construction</value>
+    </table>
+    <table name="Daytime encounter" id="swamp_daytime">
+        <value>Crocodile</value>
+        <value>Snake</value>
+        <value>Predatory fish</value>
+        <value>Predatory bird</value>
+        <value>Giant frog</value>
+        <value>Giant rat</value>
+        <value>Reclusive Were-Crocodile</value>
+        <value>Reclusive Were-Snake</value>
+        <value>Reclusive Were-fish</value>
+        <value>Reclusive Were-bird</value>
+        <value>Reclusive Were-frog</value>
+        <value>Reclusive Were-rat</value>
+        <value>Solitary fisherman.</value>
+        <value>Eccentric herbalist.</value>
+        <value>Skilled hunter.</value>
+        <value>Pack of ghouls led by a ghast</value>
+        <value>Pack of jackal led by a jackalwere</value>
+        <value>Several vine blights that lie in wait</value>
+        <value>Gnolls and their leader. Traps are set all through the swamp</value>
+        <value>Otyugh that sees the players as a new meal</value>
+        <value>Several vampire spawn that stalk the players. They strike at night when the party sleeps</value>
+        <value>Group of ghosts. They just want some new company in the swamp</value>
+        <value>Zombies that lie beneath the water. They try to drown whoever gets too close</value>
+        <value>A few Will o wisps. They will attempt to split the party and take them down one by one.</value>
+        <value>Undead treants. Use Zombie template</value>
+    </table>
+    <table name="Nighttime encounter" id="swamp_nighttime">
+        <value>Crocodile</value>
+        <value>Snake</value>
+        <value>Predatory fish</value>
+        <value>Predatory bird</value>
+        <value>Giant frog</value>
+        <value>Giant rat</value>
+        <value>Pack of ghouls led by a ghast</value>
+        <value>Pack of jackal led by a jackalwere</value>
+        <value>Several vine blights that lie in wait</value>
+        <value>Gnolls and their leader. Traps are set all through the swamp</value>
+        <value>Otyugh that sees the players as a new meal</value>
+        <value>Several vampire spawn that stalk the players. They strike at night when the party sleeps</value>
+        <value>Group of ghosts. They just want some new company in the swamp</value>
+        <value>Zombies that lie beneath the water. They try to drown whoever gets too close</value>
+        <value>A few Will o wisps. They will attempt to split the party and take them down one by one.</value>
+        <value>Undead treants. Use Zombie template</value>
+        <value>Hungry ghoul</value>
+        <value>Malevolent ghost</value>
+        <value>Foul-mouthed witch</value>
+        <value>Desperate fugitive</value>
+    </table>
+    <table name="This region is ruled or menaced by a/an…" id="swamp_ruler">
+        <value region_start="0" region_end="12" region_include="dragon/dragon_color/dragon_color_blue">Black dragon.</value>
+        <value>Hydra.</value>
+        <value region_start="0" region_end="4" region_include="undead">Lich.</value>
+        <value>Council of swampfolk elders.</value>
+        <value>Tribal chieftain.</value>
+        <value region_start="0" region_end="12" region_include="nobility">Noble family.</value>
+    </table>
+</category>

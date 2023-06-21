@@ -1,0 +1,95 @@
+        <category name="Dinner at a Mages' Academy Dining Hall" id="dinner_mage">
+            <table name="Tonight, we dine on..." id="dine">
+                <patterns>
+                    <pattern>{prep} {dish}</pattern>
+                </patterns>
+                <list type="prep">
+                    <item>Stewed</item>
+                    <item>Roasted</item>
+                    <item>Fried</item>
+                    <item>Baked</item>
+                    <item>Grilled</item>
+                    <item>Seared</item>
+                    <item>Salted</item>
+                    <item>Candied</item>
+                </list>
+                <list type="dish">
+                    <item>rabbit</item>
+                    <item>pheasant</item>
+                    <item>duck</item>
+                    <item>bat</item>
+                    <item>pork</item>
+                    <item>beef</item>
+                    <item>goose</item>
+                    <item>trout</item>
+                    <item>oysters</item>
+                    <item>blood sausage</item>
+                    <item>pork sausage</item>
+                    <item>meat pie</item>
+                </list>
+            </table>
+            <table name="...with..." id="dine_with">
+                <value>Dumplings.</value>
+                <value>Sweet cabbage.</value>
+                <value>Caramelized onions.</value>
+                <value>Pumpkin.</value>
+                <value>Butternut squash.</value>
+                <value>Peas.</value>
+                <value>Kidney beans.</value>
+                <value>String beans.</value>
+                <value>Pudding.</value>
+                <value>Asparagus.</value>
+                <value>Sprouts.</value>
+                <value>Potatoes.</value>
+                <value>Mushrooms.</value>
+                <value>Toadstools.</value>
+                <value>Squash.</value>
+                <value>White beans.</value>
+                <value>Red onions.</value>
+                <value>Spinach.</value>
+                <value>Cucumber.</value>
+                <value>Pickles.</value>
+            </table>
+            <table name="...and..." id="dine_and">
+                <value>Carrots.</value>
+                <value>Apples.</value>
+                <value>Cherries.</value>
+                <value>Tomatoes.</value>
+                <value>Pears.</value>
+                <value>Strawberries.</value>
+                <value>Pumpkin seeds.</value>
+                <value>Walnuts.</value>
+                <value>Pecans.</value>
+                <value>Almonds.</value>
+                <value>Parsley.</value>
+                <value>Turnips.</value>
+            </table>
+            <table name="Side dish..." id="side">
+                <value>Elvish bread.</value>
+                <value>Chocolate molded into the shape of frogs.</value>
+                <value>Cinnamon bread.</value>
+                <value>Pumpkin bread.</value>
+                <value>Chocolate candy.</value>
+                <value>Caramel candy.</value>
+                <value>Cheese cake.</value>
+                <value>Rum cake.</value>
+                <value>Sugar cake.</value>
+                <value>Fruit tart.</value>
+                <value>Pumpkin pie.</value>
+                <value>Blueberry pie.</value>
+            </table>
+            <table name="Beverage..." id="beverage">
+                <value>Pumpkin juice.</value>
+                <value>Buttery ale.</value>
+                <value>Root beer.</value>
+                <value>Ginger beer</value>
+                <value>Fizzy ale.</value>
+                <value>Chocolate stout.</value>
+                <value>Coffee stout.</value>
+                <value>Apple cider.</value>
+                <value>Pear cider.</value>
+                <value>Sweet tea.</value>
+                <value>Herbal tea.</value>
+                <value>Hot cocoa.</value>
+            </table>
+        </category>

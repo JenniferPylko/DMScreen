@@ -1,0 +1,76 @@
+        <category name="Artisan Crafter" id="crafter_artisan" hasa="craftingguild">
+            <name name="The artisan's name is..."/>
+            <include name="Race" include="npc_race" />
+            <table name="The artisan is..." id="crafter_artisan_is">
+                <value>A young journeyman</value>
+                <value>A mediocre journeyman</value>
+                <value>A skilled journeyman</value>
+                <value region_start="13" region_end="22" region_include="__noun__">A veteran of the craft</value>
+                <value region_start="12" region_end="21" region_include="__noun__">A master of the craft</value>
+                <value>An old crafter</value>
+            </table>
+            <table name="The artisan has..." id="crafter_artisan_has">
+                <value>A friendly smile</value>
+                <value>Keen eyes</value>
+                <value>Watery eyes</value>
+                <value>A stubborn scowl</value>
+                <value>A dour frown</value>
+                <value>A missing tooth</value>
+                <value>Tired eyes</value>
+                <value>An amused smirk</value>
+            </table>
+            <table name="The artisan also has..." id="crafter_artisan_hasalso">
+                <value>A limp</value>
+                <value>A hunchback</value>
+                <value>Unsteady hands when they aren't at work</value>
+                <value>A habit of looking down</value>
+                <value>A bulbous nose</value>
+                <value>A burn scar on the face</value>
+                <value>A wispy mustache</value>
+                <value>A thick mustache</value>
+            </table>
+            <table name="The artisan is particularly skilled at..." id="crafter_artisan_skill">
+                <value region_start="24" region_end="36" region_include="__noun__">Crafting one particular type of item</value>
+                <value>Identifying high quality raw materials</value>
+                <value>Putting the finishing touches on an item</value>
+                <value>Instructing an training apprentices</value>
+                <value>Negotiating better prices for goods</value>
+                <value region_start="15" region_end="20" region_include="craftingguild">Maneuvering in guild politics</value>
+            </table>
+            <table name="The artisan is looking for..." id="crafter_artisan_looking">
+                <value>A new apprentice</value>
+                <value>A journeyman craftsman to hire</value>
+                <value region_start="5" region_end="14" region_include="__noun__">Rare materials</value>
+                <value>A better set of tools</value>
+                <value>Someone with whom to talk shop</value>
+                <value region_start="31" region_end="45" region_include="__noun__">Someone who witnessed a recent sporting event</value>
+                <value region_start="37" region_end="51" region_include="__noun__">Someone who is attending an upcoming sporting event</value>
+                <value>A mug of strong ale</value>
+            </table>
+            <table name="The artisan is carrying..." id="crafter_artisan_carrying">
+                <value region_start="24" region_end="29" region_include="__noun__">The tools of his or her trade</value>
+                <value region_start="9" region_end="18" region_include="__noun__">Some raw materials</value>
+                <value region_start="11" region_end="18" region_include="__noun__">A finished product</value>
+                <value>A little coin</value>
+                <value>A to-do list scrawled on a bit of parchment</value>
+                <value>A set of many keys</value>
+                <value>A pipe and some tobacco</value>
+                <value>A flask of whisky</value>
+            </table>
+            <table name="The artisan is..." id="crafter_artisan_is2">
+                <value region_start="23" region_end="32" region_include="craftingguild">A well-known member of the guild</value>
+                <value region_start="41" region_end="50" region_include="craftingguild">An established or up-and-coming leader in the guild</value>
+                <value region_start="16" region_end="25" region_include="craftingguild">A new member of the guild, having recently relocated from a distant land</value>
+                <value region_start="49" region_end="54" region_include="craftingguild">A quiet guildmember, who doesn't get involved in guild politics</value>
+                <value region_start="21" region_end="26" region_include="craftingguild">On the outs with the guild leadership</value>
+                <value region_start="26" region_end="31" region_include="craftingguild">A favorite of some of the guild's leaders</value>
+            </table>
+            <table name="The artisan dreams of..." id="crafter_artisan_dream">
+                <value region_start="26" region_end="35" region_include="__noun__">Producing a masterwork of the craft</value>
+                <value region_start="21" region_end="26" region_include="craftingguild">Holding the reins of guild leadership</value>
+                <value>Retiring peacefully</value>
+                <value>Retiring rich</value>
+                <value>Running away from it all</value>
+                <value>A life of adventure</value>
+            </table>
+        </category>

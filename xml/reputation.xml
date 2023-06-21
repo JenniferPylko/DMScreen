@@ -1,0 +1,196 @@
+<category name="Reputation &amp; Rumors" id="reputation">
+    <table name="Mercenary Band, Positive" id="positive">
+        <value>Spotless, they are a reliable professional</value>
+        <value>Eccentric, they are capable professional with unusual methods</value>
+        <value>Brave, they won't back down from a fight</value>
+        <value>Reliable, they won't back out when the going gets tough</value>
+        <value>Skilled, they can handle a difficult mission</value>
+        <value>Legendary, they won an impossible battle</value>
+        <value>Lengthy, they are known for many successful past missions</value>
+        <value>Exotic, they are from a far away land</value>
+        <value>Stalwart, they are known for having stood their ground during a dangerous battle</value>
+        <value>Noble, they fought a desperate battle pro bono</value>
+    </table>
+    <table name="Mercenary Band, Neutral" id="neutral">
+        <value>Neutral, they hold to the letter of the contract</value>
+        <value>Raucous, but reliable in a fight</value>
+        <value region_start="20" region_end="33" region_include="city">Solved a problem in a nearby city, but barge a large amount for it</value>
+        <value>Professional, they are loyal to the contract</value>
+        <value region_start="13" region_end="19" region_include="__noun__">Stern, their leader is known to be humorless</value>
+        <value>Unremarkable, they have won some battles and lost some too</value>
+        <value>Safe, they kept looters under control during a tense situation</value>
+        <value>Rigid, they kept to the contract, even though they could have helped</value>
+        <value>New, they have yet to prove themselves</value>
+        <value>Enigmatic, they are known as professional but the exact nature of their missions is unknown</value>
+    </table>
+    <table name="Mercenary Band, Negative" id="negative">
+        <value region_start="14|33" region_end="29|46" region_include="__noun__|city">They caused a serious problem in a nearby city</value>
+        <value region_start="28" region_end="36" region_include="__noun__">Disgraced, they abandoned a contract when it got too difficult</value>
+        <value region_start="23" region_end="30" region_include="__noun__">Dangerous, they killed someone they should not have</value>
+        <value region_start="52" region_end="58" region_include="__noun__">Damaged, most of their troops were lost in a recent battle</value>
+        <value region_start="40|52|80" region_end="43|58|88" region_include="deity|__noun__">Fanatical, they believe in an unpopular god for the region and clash with their employer</value>
+        <value>Messy, they destroy the land they pass through with their foraging</value>
+        <value>Unreliable, they lost their last four battles</value>
+        <value region_start="34" region_end="40" region_include="__noun__">Spineless, they ran from a recent battle</value>
+        <value region_start="25" region_end="33" region_include="__noun__">Deserters, they took and employers money and disappeared</value>
+        <value region_start="57" region_end="64" region_include="__noun__">Rebels, they are former army troops fighting against the kingdom now for dubious causes</value>
+    </table>
+    <table name="Battle, you were involved" id="battle_involoved">
+        <value>You were there! It was awful!</value>
+        <value>You were there! It was glorious!</value>
+        <value>Someone in your family achieved fame there</value>
+        <value>Someone in your family was killed there</value>
+        <value>It happened near a town where you were living at the time</value>
+        <value>You were supposed to have been there</value>
+        <value>You made a good friend on the eve of battle and are still comrades</value>
+        <value>You were wounded and left for dead</value>
+        <value>Foragers sacked your home for supplies before the battle</value>
+        <value>You hid to avoid being constripted</value>
+    </table>
+    <table name="Battle, Positive" id="battle_positive">
+        <value>It was lead by a famous general, he won handily</value>
+        <value>A great hero rose from the ranks of the common men</value>
+        <value>A mercenary unit of great renown fought there</value>
+        <value>It was the last battle ending a brutal war with a victory for the side of good</value>
+        <value>The battle was so important archons took the field</value>
+        <value>A small band of heroes joined the battle at the last minute and made the difference</value>
+        <value>The king finally took the field personally and drove out his enemies</value>
+        <value>The battle was won by the king's hand picked general, a brave man from exotic lands</value>
+        <value>The royal battlemages carved the enemy into tiny pieces</value>
+        <value>The battle was the positive proof of a powerful alliance</value>
+    </table>
+    <table name="Battle, Neutral" id="battle_neutral">
+        <value>The battle was a draw and the war goes on</value>
+        <value>Both armies missed each other fumbling around in the dark, only their calvary actually engaged</value>
+        <value region_start="22" region_end="26" region_include="military">A huge portion of the army died but the troops won in the end, then victory was hollow for the few survivors</value>
+        <value region_start="12" region_end="16" region_include="military">Much of the army was made up of conscripts</value>
+        <value>A new pike technique was used there that may become common in the future</value>
+        <value>An unusual group of allies carried the fight and took most of the glory from the common troops</value>
+        <value>The king fought under the oldest banner of his house</value>
+        <value>The battle took place at a legendary fortification</value>
+        <value region_start="4|35" region_end="8|39" region_include="military|__noun__">The army had to march far from its home to fight there</value>
+        <value>The troops came home from the war having seen strange places and practicing strange customs</value>
+    </table>
+    <table name="Battle, Negative" id="battle_negative">
+        <value region_start="7" region_end="12" region_include="__noun__">An old enemy joined the fight</value>
+        <value>It was a terrible defeat. The king's forces were routed</value>
+        <value>The king himself was slain with his entire bodyguard unit</value>
+        <value region_start="4|51" region_end="8|56" region_include="noble">The king was captured and publicly executed by the enemy</value>
+        <value>The enemy debuted a powerful new fighting technique</value>
+        <value>One side used dangerious monsters captured and trained for war</value>
+        <value>A dark wizard was leading the enemy forces</value>
+        <value>On the verge of defeat, one side made a deal with the devils to secure victor as a terrible price</value>
+        <value>It was a bloody and terrible siege</value>
+        <value>A legendary enemy appeared for the first time</value>
+    </table>
+    <table name="You have heard of this priest before because...">
+        <value region_start="44|61" region_end="47|69" region_include="deity|city">They're the highest-ranking priest of their god in the city, something like a bishop</value>
+        <value>They are quite vocal in their opposition to recent reforms within their church</value>
+        <value>They are vocal in favor of reforms they feel their church is overdue for</value>
+        <value>They are known in certain circles to provide healing without asking how the wounds were acquired</value>
+        <value>They fearlessly run a soup kitchen in an area most charitable organizations would avoid</value>
+        <value>Rumors are circulating about unsavory habits involving youn parishioners</value>
+        <value>Drunkenness. He will out-drink you</value>
+        <value region_start="59" region_end="62" region_include="deity">Toughness. He will punch you in the face if you insult his god</value>
+        <value>Geniality. He's quick with a joke and a toast, and always makes those around him feel better</value>
+        <value>Hard-line beliefs. He preaches death to infidels</value>
+        <value>Tolerance. He regularly dines with adherents of other faiths or those with no faith at all</value>
+        <value>Pacifism. He always advocates non-violence, even to the point of being beat nearly to death by some thugs</value>
+        <value>Curiosity. He is well-read and well-versed in many scholarly subjects</value>
+        <value>Teaching advocacy. He is a gifted teacher and is committed to increasing literacy among members of the lower classes</value>
+        <value>Preaching. He is a captivating speaker, able to attract and to motivate large crowds</value>
+        <value>Humorless, they only wear dark colored clothing</value>
+        <value>Cynical, they don't actually believe what they preach</value>
+        <value>Dry witted, they are prone to sarcastic replies when not preaching</value>
+        <value>Cryptic, they often answer a question with a question</value>
+        <value>Political, they take aim at the establishment in their sermons</value>
+        <value>Dangerious, they might be starting a cult</value>
+        <value>False, they have been accused of convincing people to walk into a trap from another religion</value>
+        <value>Associated with dangerous humanoids whom they send gullible parishioners to as tribute</value>
+        <value>Drug addled, they claim to see visions while using a pingent smoke</value>
+        <value>A prophet, they actually have divine visions</value>
+        <value>They claim to be a demigod or angel</value>
+        <value>Poor, his parish has nothing be he presevers</value>
+        <value>Retired, he was an adventurer in a prior life</value>
+        <value>Blessed, he was slain in battle with an enemy but the gods revived him.</value>
+        <value>Smelly, his pipe smoke is extremely pungent</value>
+    </table>
+    <table name="You have heard of this mage before because...">
+        <value>They are rumored to have taken a demon as a lover</value>
+        <value>They misspoke and caused an entire town to go barren</value>
+        <value>They saved an entire garrison using only a minor spell</value>
+        <value>They angered a cruel baroness by animating her favorite brush</value>
+        <value>They move every full moon because children go missing</value>
+        <value>They are hated by every other mage for their good looks</value>
+        <value region_start="34" region_end="39" region_include="magetower">He keeps dangerous minions in his tower</value>
+        <value region_start="62" region_end="70" region_include="city">One of his experiments escaped and ran through the streets of the city</value>
+        <value region_start="2" region_end="8" region_include="dragon">A dragon came to visit him last autumn</value>
+        <value region_start="30|36" region_end="34|40" region_include="nobleman|military">He keeps a hedge maze for the kings army</value>
+        <value region_start="29|35" region_end="33|39" region_include="nobleman|military">He breeds war beasts for the kings army</value>
+        <value region_start="4" region_end="8" region_include="nobleman">The king has been trying to bring him under his thumb for months</value>
+        <value region_start="33" region_end="41" region_include="city">One of his rages burned down half the city</value>
+        <value>He's actually fond of visitors, but people are still scared of him. No one knows if they actually should be</value>
+        <value region_start="40" region_end="48" region_include="city">His automatons purchase all his food in the city on monthly errands</value>
+        <value region_start="22" region_end="27" region_include="magetower">Anyone who enters his tower never comes out</value>
+        <value>He often comes to town to entertain children with his cantrips</value>
+        <value>He's an expert in divination spells, and will cast them for anyone for a small fee</value>
+        <value>It's rumored that he curses people without them realizing it</value>
+        <value>It's rumored that he has magical cured for certain... maladies</value>
+    </table>
+    <table name="You have heard of this thief before because he is...">
+        <value>Bold. He stole the crown of the Dragon-Emperor right off his head</value>
+        <value>Audacious. He stole the maidenhood of the king's own daughter</value>
+        <value>Extraordinary. He single handedly stole an entire wagon train of spices and silver in the bleak wastes</value>
+        <value>Armorous. He stole the heart of a Southron queen who;s been after his head ever since he left her for a fortune teller</value>
+        <value region_start="21|56|69" region_end="30|61|74" region_include="book|witch|world">Daring. He stole the spellbook of the most powerful elf-witch in the world</value>
+        <value>Heroic. He crepty into the Duke's camp and swapped the Duke's map for a phony that led him to maneuver his host right into the rebel's trap</value>
+        <value>Magnanimous. He slipped in and out of the Pit of Despair six times to bring food an news to the captive prince</value>
+        <value>Devilish. He climbed the walls of the Black Keep just to steal a kiss from the shadow sorceress as she slept</value>
+        <value>Handsome. He has the most amazing mustache</value>
+        <value>Generous. He sells the loot he steals to feed the orphans of the River District</value>
+        <value>Did something impossible, like stealing a dragon's tail. Tale perhaps? The dragon was a bard and the original story is much less epic?</value>
+        <value>Killed a man with a fork</value>
+        <value>Is the sole survivor from a legendary job</value>
+        <value>Is the last living man who knows where a great treasure is hidden</value>
+        <value>Buried a great treasure then killed himself for reasons unknown</value>
+        <value region_start="14" region_end="18" region_include="military">Works for the army as a scout</value>
+        <value>Stole something important, but no one can prove it</value>
+        <value>On the lam after tricking a devil into selling its soul</value>
+        <value>Tough. He lost two fingers in a trapped chest, but still managed to snag the goods from inside</value>
+        <value region_start="32|57" region_end="37|63" region_include="world|prison">Slippery. He's escaped from the world's most inescapable prison. Twice</value>
+    </table>
+    <table name="You have heard of this explorer because...">
+        <value>He published a book of his sogourns in a distant land. The book gained fame for its vivid and outlandish stories (which may or may not be true, which might lead to moral dilemmas if the party is positioned to expost him as a fraud)</value>
+        <value region_start="8|65" region_end="20|77" region_include="noblewoman|nation">She was a noblewoman who decided to travel to the holy city of a foreign land. Her actions are on the one hand considered improper, yet everyone is eager to hear of her adventures</value>
+        <value>He and several other adventurers participated in a race to be the first to get to one of the most inhospotable places on the countinent. He was the only one to come back alive</value>
+        <value>He went on an expedition to a far off island years ago, promising to return with a horde of magical metal. He just returned recently, mostly empty handed, and completely disgraced</value>
+        <value>Has his ships custom built</value>
+        <value>Published a book about his sojourns claiming a prior explorers book is full of crap</value>
+        <value>Bumped off a rival in a distant land</value>
+        <value>Is seeking to launch one last expedition to clean his name from the disgrace of his failed ventures</value>
+        <value>She became a noblewomen of a distant land through her exploits and has returned home because...?</value>
+        <value>He has been believed dead a dozen times already, but always turns up alive and well</value>
+    </table>
+    <table name="You have heard of this Dragon before because...">
+        <value>It is a peaceful chatterbox. It can talk the hind leg off a donkey, and generally lets people go with a warning</value>
+        <value>It is a beautiful chatterbox, talkative and extremely vain</value>
+        <value>Obsessive Compulsive Hoarder. Its belongings have to be arranged just so</value>
+        <value>Romantically Predatory. It's always taking umanoid form to seduce impressionable young things</value>
+        <value>Has a strange hobby like carving wooden puppets or collecting butterflies</value>
+        <value>Has an unusual horde, like dungeon puzzle doors, and will pay adventurers to bring it new pieces for its collection</value>
+        <value>Is colorblind and mated with the wrong color female dragon</value>
+        <value>Is an aspiring author of travel guides but keeps frightening the peasants in new and unusual places</value>
+        <value>Considers itself a naturalist and collects animals, and people, from distant lands</value>
+        <value>Burned down a windmill that was blocking its view of the ocean</value>
+        <value>Has the wrong breath weapon for its color</value>
+        <value>Likes to capture its victims and paint their portrait before eating them</value>
+        <value>Somehow lost its horde recently and is looking for revenge</value>
+        <value>Keeps its horde in a pocket plane many thieves have tried to reach</value>
+        <value>Has a secret bond-villain-style lair and mustache twirling henchmen</value>
+        <value>Has some flaw that makes the locals refuse to take its threats seriously</value>
+        <value>Vicious. This monster defends its territory at all costs</value>
+        <value>Voracious. This creature's hunger is never sated</value>
+        <value>Cruel. You'll beg for death long before this creature grants it</value>
+        <value>Stealthy. This creature can move soundlessly</value>
+    </table>
+</category>

@@ -1,0 +1,107 @@
+        <category name="Alchemist" id="alchemist">
+            <name name="The alchemist's name is..."/>
+            <include name="Race" include="npc_race" />
+            <table name="The alchemist is..." id="alchemist_is">
+                <value>An apothecary</value>
+                <value region_start="8" region_end="14" region_include="wizard">A hedge wizard</value>
+                <value>An herbalist</value>
+                <value>A poison maker</value>
+                <value>A potioneer</value>
+                <value>A pyromancer</value>
+                <value region_start="14" region_end="21" region_include="__noun__">An alchemical scholar</value>
+                <value>An experimental alchemist</value>
+            </table>
+            <table name="The alchemist is looking for..." id="alchemist_looking">
+                <value>Delivery help</value>
+                <value>New recipes</value>
+                <value region_start="21" region_end="41" region_include="potions">A long-lost recipe for a legendary potion</value>
+                <value>Purchasers</value>
+                <value region_start="5" region_end="16" region_include="__noun__">Rare ingredients</value>
+                <value region_start="9" region_end="19" region_include="__noun__">A unique ingredient</value>
+            </table>
+            <table name="The alchemist carries..." id="alchemist_carries">
+                <value>Several vials of acid</value>
+                <value>Several curatives</value>
+                <value>An unusual potion</value>
+                <value>A purophoric substance</value>
+                <value>Several empty glass vials</value>
+                <value>Fine-tipped steel tweezers</value>
+                <value>A pocket-sized field guide to poisonous reptiles and amphibians</value>
+                <value>A pocket-sized field guide to arachnids, insects, and worms</value>
+                <value>A pocket-sized field guide to molds, mushrooms, and fungu</value>
+                <value>A pocket-sized field guide to aquatic plants</value>
+                <value>A pocket-sized field guide to toxic plants</value>
+                <value>A pocket-sized field guide to rare herbs and herbal remedies</value>
+                <value>A pocket-sized field guide to mineralogy</value>
+                <value>A pocket-sized field guide to soils and rocks</value>
+                <value>A small notebook filled with recipes and notes</value>
+            </table>
+            <table name="The alchemist learned his/her craft from..." id="alchemist_learned">
+                <value region_start="9" region_end="18" region_include="alchemist">A fellow alchemist to whom he/she apprenticed</value>
+                <value region_start="22" region_end="31" region_include="alchemist">A neighbor who was an alchemist</value>
+                <value region_start="19" region_end="28" region_include="alchemist">A parent who as an alchemist</value>
+                <value region_start="25" region_end="34" region_include="alchemist">A grandparent who was an alchemist</value>
+                <value region_start="0" region_end="5" region_include="book">Books of alchemical lore</value>
+                <value region_start="13" region_end="20" region_include="__noun__">Attending an academy</value>
+            </table>
+            <table name="The alchemist specializes in..." id="alchemist_specialize">
+                <value>Bombs</value>
+                <value>Curatives</value>
+                <value>Cursed potions</value>
+                <value>Enchantments</value>
+                <value>Herbalism</value>
+                <value>Metallurgy</value>
+                <value>Rare potions</value>
+                <value>Posions</value>
+                <value>Transmutations</value>
+                <value>Warding</value>
+            </table>
+            <table name="Potion Brewing: The alchemist's brew is percolating in..." id="alchemist_brew_in">
+                <value>A delicate ceramic tea kettle</value>
+                <value>A large cast iron cauldron</value>
+                <value>A heavy-bottomed iron pot</value>
+                <value>A thick cast iron vat</value>
+                <value>A copper tea kettle</value>
+                <value>A thick copper vat</value>
+                <value>A shiny steel vat</value>
+                <value>A blackened steel cauldron</value>
+                <value>A thick bronze cauldron</value>
+                <value>A glass flask with an oddly shaped neck</value>
+                <value>A round-bottom glass flask</value>
+                <value>A comically large glass flask</value>
+            </table>
+            <table name="Potion Brewing: The alchemist's cauldron currently contains..." id="alchemist_cauldron">
+                <value>Eye of newt</value>
+                <value>Toe of frog</value>
+                <value>Wool of bat</value>
+                <value>Tongue of dog</value>
+                <value>Adder's fork</value>
+                <value>Blind-worm's sting</value>
+                <value>Lizard's leg</value>
+                <value>Howlet's wing</value>
+                <value>Monkey's paw</value>
+                <value>Pint of blood</value>
+                <value>Pound of flesh</value>
+                <value>Cup of mud</value>
+                <value>Beak of duck</value>
+                <value>Housecat's tail</value>
+                <value>Glob of mold</value>
+                <value>Rusty nail</value>
+                <value>Garlic bulb</value>
+                <value>Cob of corn</value>
+                <value>Stirge's foot</value>
+                <value>Dryad;s thorn</value>
+            </table>
+            <table name="Potion Brewing: The alchemist is brewing..." id="alchemist_brewing">
+                <value>A love potion</value>
+                <value>A fertility tonic</value>
+                <value>A magical cure-all</value>
+                <value>A terrible poison</value>
+                <value>A component for a summoning ritual</value>
+                <value>A component for a necromatic ritual</value>
+                <value>A component for a polymorphing hex</value>
+                <value>A component for a beguiling charm</value>
+                <value>A potent acid solvent</value>
+                <value>An explosive substance</value>
+            </table>
+        </category>

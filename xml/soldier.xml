@@ -1,0 +1,78 @@
+<category name="Soldier" id="soldier">
+    <name name="The soldier's name is..."/>
+    <include name="Race" include="npc_race" />
+    <table name="The soldier is..." id="soldier_is">
+        <value>A farm boy</value>
+        <value region_start="11" region_end="18" region_include="miner">The son of a miner</value>
+        <value region_start="11" region_end="22" region_include="fisherfolk">The son of a fisherman</value>
+        <value region_start="13" region_end="25" region_include="gladiator">A veteran of gladiatorial combat</value>
+        <value>A veteran of warfare</value>
+        <value region_start="14" region_end="17" region_include="__noun__">A prisoner of war</value>
+        <value>A political dissident</value>
+        <value region_start="13" region_end="21" region_include="__noun__">The son of a poor man</value>
+        <value>A drunk</value>
+        <value region_start="11" region_end="19" region_include="criminal">A fugitive criminal</value>
+        <value region_start="9" region_end="15" region_include="pirate">A former pirate</value>
+        <value region_start="9" region_end="18" region_include="__noun__">A failed craftsman</value>
+        <value>A favorite among the ladies</value>
+				<value region_start="20" region_end="24" region_include="__noun__">The commander of an army</value>
+				<value>A master of the hunt</value>
+				<value region_start="14" region_end="26" region_include="noblehouse">A member of a noble family</value>
+				<value region_start="2" region_end="8" region_include="sailor">A sailor</value>
+				<value region_start="2" region_end="8" region_include="__noun__">A warden</value>
+				<value region_start="2" region_end="11" region_include="priest">A clergyman</value>
+				<value region_start="8" region_end="17" region_include="crafter_artisan">A great craftsman</value>
+				<value region_start="2" region_end="8" region_include="squire">A squire</value>
+				<value>A new recruit</value>
+				<value>A scout</value>
+			</table>
+    <table name="This soldier fights for..." id = "soldier_fights">
+        <value>The steady pay</value>
+        <value region_start="12" region_end="34" region_include="__noun__">The love of someone he cannot have</value>
+        <value>Pure bloodlust</value>
+        <value>A chance to deal out sadistic torment</value>
+        <value region_start="12" region_end="21" region_include="__noun__">A chance at vengeance</value>
+        <value region_start="14" region_end="27" region_include="__noun__">Gold to aid a family member</value>
+        <value>A chance to escape from life imprisonment</value>
+        <value region_start="12" region_end="22" region_include="__noun__">A chance at redemption</value>
+        <value>God and country</value>
+        <value>Forturn and glory</value>
+        <value>Strength and honor</value>
+    </table>
+    <table name="On the soldier's face is..." id="soldier_face">
+        <value>A large wart</value>
+        <value>An eyepatch</value>
+        <value>An unsightly scar</value>
+        <value>A haughty sneer</value>
+        <value>A look of sadness</value>
+        <value>A stupid grin</value>
+        <value>An eager grin</value>
+        <value>A fram of long, beautiful long hair</value>
+        <value>Ferocious sideburns</value>
+        <value>A neatly-trimmed goatee</value>
+        <value>An unruly beard</value>
+        <value>A lush, thick mustache</value>
+    </table>
+    <table name="The soldier carries..." id="soldier_carry">
+        <value>A blade with soft leather tassels dangling from the pommel</value>
+        <value>A blade with a carved ivory hilt</value>
+        <value>A blade with a carved jade hilt</value>
+        <value>A blade with a carved soapstone hilt</value>
+        <value>A blade with a carved ebony hilt</value>
+        <value>A blade with a carved mahogany hilt</value>
+        <value>A blade with a carved oak hilt</value>
+        <value>A blade with dragons sculpted into the steel of the guard</value>
+        <value>A blade with lions sculpted into the steel of the guard</value>
+        <value>A blade with scorpions sculpted into the steel of the guard</value>
+        <value>A blade with snakes sculpted into the steel of the guard</value>
+        <value>A blade with spiders sculpted into the steel of the guard</value>
+        <value>A blade with wolves sculpted into the steel of the guard</value>
+        <value>A blade made of blackened steel</value>
+        <value>A highly polished blade</value>
+        <value>A token from a sweetheart</value>
+        <value>A token from a parent</value>
+        <value>A letter from a fallen comrade</value>
+        <value region_start="23" region_end="28" region_include="__noun__">A trophy from a fallen enemy</value>
+        <value>A ribbon from a faraway maiden</value>
+    </table>
+</category>

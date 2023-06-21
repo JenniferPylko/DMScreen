@@ -1,0 +1,106 @@
+<category name="Rat" id="rat">
+    <table name="Size: The rat is..." id="size">
+        <value>A little on the small side; you've found bigger rats in your bedroll</value>
+        <value>Typically sized; it's just a rat</value>
+        <value>A little on the big side; it's not quite as big as a house cat</value>
+        <value>Pretty big; it's about the size of a large house cat</value>
+        <value>Enormous; it could eat a house cat</value>
+        <value>Of unusual size; it's about the same size as a grown man</value>
+    </table>
+    <table name="Color: The rat's fur is..." id="color">
+        <value>Black.</value>
+        <value>Mottled black and brown.</value>
+        <value>Mottled black and grey.</value>
+        <value>Dark grey.</value>
+        <value>Pale grey.</value>
+        <value>Mottled reddish brown and grey.</value>
+        <value>Mottled grey and brown.</value>
+        <value>Dark brown.</value>
+        <value>Mottled reddish brown and black.</value>
+        <value>White.</value>
+    </table>
+    <table name="Markings: The rat has..." id="marking">
+        <value>A missing eye.</value>
+        <value>A missing patch of fur on its back.</value>
+        <value>A scar on its face.</value>
+        <value>Missing toes on one of its front feet.</value>
+        <value>Missing toes on one of its back feet.</value>
+        <value>A pale underbelly.</value>
+        <value>A hairless underbelly.</value>
+        <value>A hairless tail.</value>
+        <value>A broken tail.</value>
+        <value>Intimidating whiskers.</value>
+    </table>
+    <table name="Teeth: The rat has..." id="teeth">
+        <value>Particularly sharp, pointy teeth</value>
+        <value>Disgustingly yellow teeth</value>
+        <value>Disgustingly brown teeth</value>
+        <value>Particularly curved teeth</value>
+        <value>Particularly long front teeth</value>
+        <value>A broken front tooth</value>
+        <value>Bone white teeth</value>
+        <value>Teeth protruding from bleeding gums</value>
+        <value>Short front teeth for a rat</value>
+        <value>Blunt, worn front teeth</value>
+    </table>
+    <table name="Manner: The rat..." id="manner">
+        <value>Squeaks whenever it moves.</value>
+        <value>Hisses whenever it moves.</value>
+        <value>Squeaks when it feels threatened.</value>
+        <value>Hisses when it feels threatened.</value>
+        <value>Scurries about when it moves.</value>
+        <value>Darts about when it moves.</value>
+        <value>Clacks its teeth, making an unsettling noise.</value>
+        <value>Chitters and chatters when it eats.</value>
+        <value>Clicks its teeth when it eats.</value>
+        <value>Moves without a sound.</value>
+    </table>
+    <table name="Favorite food: The rat prefers to eat..." id="food">
+        <value>Mutton.</value>
+        <value>Pork.</value>
+        <value>Eggs.</value>
+        <value>Pungent cheese.</value>
+        <value>Sharp cheese.</value>
+        <value>Fresh bread.</value>
+        <value>Dog faeces.</value>
+        <value>Cat faeces.</value>
+        <value>Beetles.</value>
+        <value>Spiders.</value>
+    </table>
+    <table name="Other food: ...but will just as happily eat..." id="food2">
+        <value>Rotting meat.</value>
+        <value>Rotting fruit.</value>
+        <value>Mouldy cheese.</value>
+        <value>Mouldy bread.</value>
+        <value>Discarded bones.</value>
+        <value>Any poop.</value>
+        <value>Cockroaches.</value>
+        <value>Maggots.</value>
+        <value>Fingers and toes.</value>
+        <value>Other rats.</value>
+    </table>
+    <table name="Nesting habits: This type of rat often infests..." id="nesting">
+        <value>Warehouses.</value>
+        <value>The cargo holds of ships.</value>
+        <value>Brothels.</value>
+        <value>Taverns.</value>
+        <value>Swamps.</value>
+        <value>Natural caverns</value>
+        <value>War camps.</value>
+        <value>Farmhouses.</value>
+        <value>Stables.</value>
+        <value>Granaries.</value>
+    </table>
+    <table name="Disease: This type of rat is believed to spread..." id="disease">
+        <value>A burning fever accompanied by headaches.</value>
+        <value>A fever accompanied by delusions.</value>
+        <value>A chill accompanied by sleepiness and fatigue.</value>
+        <value>A chill accompanied by cold sweats.</value>
+        <value>A stomach illness.</value>
+        <value>A respiratory illness.</value>
+        <value>An itchy rash.</value>
+        <value>An itchy pox.</value>
+        <value>An unsightly pox.</value>
+        <value>A deadly flux.</value>
+    </table>
+</category>

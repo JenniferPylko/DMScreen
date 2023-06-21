@@ -1,0 +1,44 @@
+<category name="Winter Beast" id="winter_beast">
+    <table name="The winter beast is..." id="is">
+        <value>A bear.</value>
+        <value>A boar.</value>
+        <value>A drake.</value>
+        <value>An eagle.</value>
+        <value>An elk.</value>
+        <value>A fox.</value>
+        <value>A goat.</value>
+        <value>An owl.</value>
+        <value>An owlbear.</value>
+        <value>An ox.</value>
+        <value>A stag.</value>
+        <value region_start="2" region_end="6" region_include="wolf">A wolf.</value>
+    </table>
+    <table name="The beast has..." id="has">
+        <value>Bright, red eyes.</value>
+        <value>Squinty, dark eyes.</value>
+        <value>Dirty white coloration.</value>
+        <value>Pale grey coloration.</value>
+        <value>White stripes or markings.</value>
+        <value>A thick coat of fur or feathers.</value>
+        <value>An aura of swirling snow.</value>
+        <value>A frigid aura.</value>
+    </table>
+    <table name="..and..." id="has_and">
+        <value>Exhales an icy spray when it breathes.</value>
+        <value>Can exhale a spout of freezing wind.</value>
+        <value>Chills to the bone any who stand close to it</value>
+        <value>Leaves a trail of frost in its wake.</value>
+        <value>Can freeze things with a touch.</value>
+        <value>Can disappear in a puff of swirling snow.</value>
+        <value>Explodes into many icy shards if it is slain.</value>
+        <value>Walks without hindrance atop snow and ice.</value>
+    </table>
+    <table name="The beast is looking for..." id="looking">
+        <value>Something to preserve to eat later.</value>
+        <value>A lair with an entrance hidden from view.</value>
+        <value region_start="3|28" region_end="13|34" region_include="__noun__|__noun__">An individual marked by its master.</value>
+        <value region_start="30" region_end="36" region_include="__noun__">An opportunity to impress its master.</value>
+        <value region_start="39" region_end="44" region_include="__noun__">The frozen corpse of a long-dead frost titan.</value>
+        <value region_start="3" region_end="7" region_include="__noun__">An item that can call blizzards.</value>
+    </table>
+</category>

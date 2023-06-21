@@ -1,0 +1,284 @@
+<categories id="root">
+    <category name="Dungeons" id="dungeons">
+        <category name="Castle" id="castle" link="dungeon_dressing" />
+        <category name="Caverns" id="cavern" link="dungeon_dressing" />
+        <category name="Castle Dungeon" id="castle_dungeon" link="dungeon_dressing" />
+        <category name="Dungeon of Elemental Water" id="dungeon_elemental_water" link="dungeon_dressing" />
+        <category name="Dungeon of Elemental Air" id="dungeon_elemental_air" />
+        <category name="Mine" id="mine" link="dungeon_dressing" />
+        <category name="Monastery" id="monastery" link="dungeon_dressing" />
+        <category name="Prison" id="prison" link="dungeon_dressing" />
+        <category name="Temple" id="temple" link="dungeon_dressing" />
+        <category name="Tomb" id="tomb" link="dungeon_dressing" />
+    </category>
+    <category name="Groups" id="groups">
+        <category id="cult" name="Cult" />
+        <category id="goblingang" name="Goblin Gang"/>
+        <category id="guilds" name="Guild" />
+        <category id="lycanthropepack" name = "Lycanthrope Pack" />
+        <category id="mercenaries" name="Mercenaries" />
+        <category id="caravan" name="Caravan" />
+        <category id="military" name = "Military" />
+        <category id="noblehouse" name="Noble House" />
+        <category id="orcclan" name="Orc Clan" />
+        <category id="outlaws" name="Outlaws" />
+        <category id="pirates" name="Pirates" />
+        <category id="savagehordes" name="Savage Hordes"/>
+        <category id="secretsociety" name="Secret Society" />
+        <category id="gang" name="Gang" />
+        <category id="watchmen" name="Watchmen" />
+    </category>
+    <category name="Food" id="food">
+        <category id="breakfast_camp" name="Breakfast in Camp"/>
+        <category id="breakfast_cafe" name="Breakfast at a Cafe" />
+        <category id="breakfast_inn" name="Breakfast at an Inn"/>
+        <category id="dinner_desert" name="Dinner in the Desert"/>
+        <category id="dinner_eastern" name="Dinner in the East" />
+        <category id="dinner_island" name="Dinner on an Island" />
+        <category id="dinner_jungle" name="Dinner in the Jungle" />
+        <category id="dinner_swamp" name="Dinner in a Swamp" />
+        <category id="dinner_inn" name="Dinner at an Inn" />
+        <category id="dinner_tavern" name="Dinner at a Tavern" />
+        <category id="dinner_mage" name="Dinner for a Mage"/>
+        <category id="dinner_goblin" name="Dinner for Goblins" />
+        <category id="dinner_hunter" name="Dinner for a Hunter" />
+        <category id="dinner_mining" name="Dinner for Miners" />
+        <category id="dinner_seasidecafe" name="Dinner at a Seaside Cafe"/>
+        <category id="dinner_witch" name="Dinner for a Witch" />
+        <category id="dinner_orc" name="Dinner for an Orc" />
+        <category id="dinner_undead" name="Dinner for the Undead" />
+        <category id="dinner_dwarf" name="Dinner with Dwarves" />
+        <category id="dinner_elf" name="Dinner with Elves" />
+        <category id="fish" name="Fish"/>
+        <category id="streetfood" name="Street Food" />
+        <category id="wines" name="Wines" />
+    </category>
+    <category name="Magic" id="magic">
+        <category id="mishaps" name="Mishaps"/>
+        <category id="divination" name="Divination"/>
+        <category id="herblore" name="Herb lore"/>
+        <category id="potions" name="Potions" />
+        <category id="legendary_weapon" name="Legendary Weapon" />
+        <category id="wands" name = "Wands"/>
+    </category>
+    <category name="Monsters" id="monsters">
+        <category name="Beasts" id="beast">         
+            <category id="aberrant_beast" name = "Aberrant Beast"/>
+            <category id="bat" name="Bat" />
+            <category id="cat" name="Cat"/>
+            <category id="celestial_beast" name="Celestial Beast"/>
+            <category id="demonic_beast" name="Demonic Beast" />
+            <category id="fey_beast" name="Fey Beast"/>
+            <category id="fire_beast" name="Fire Beast"/>
+            <category id="horse" name="Horse"/>
+            <category id="infernal_beast" name="Infernal Beast"/>
+            <category id="legendary_beast" name="Legendary Beast"/>
+            <category id="monkey" name="Monkey"/>
+            <category id="rat" name="Rat"/>
+            <category id="sea_beast" name="Sea Beast"/>
+            <category id="shadow_beast" name="Shadow Meast"/>
+            <category id="spider" name="Spider"/>
+            <category id="storm_beast" name="Storm Beast"/>
+            <category id="undead_beast" name="Undead Beast"/>
+            <category id="winter_beast" name="Winter Beast"/>
+            <category id="wolf" name="Wolf"/>
+        </category>
+        <category id="deity" name="Deity"/>
+        <category id="dragon" name="Dragon"/>
+        <category id="faerie" name="Faerie"/>
+        <category id="fiend" name="Fiend"/>
+        <category id="goblin" name="Goblin" />
+        <category id="golem" name="Golem"/>
+        <category id="kobold" name="Kobold"/>
+        <category id="lizardfolk" name="Lizardfolk"/>
+        <category id="lycanthrope" name="Lycanthrope"/>
+        <category id="merfolk" name="Merfolk"/>
+        <category id="mutant" name="Mutant"/>
+        <category id="oozes" name="Oozes"/>
+        <category id="orc" name="Orc"/>
+        <category id="orcwarlord" name="Orc Warlords"/>
+        <category id="treefolk" name="Treefolk"/>
+        <category id="undead" name="Undead"/>
+        <category id="vampire" name="Vampire"/>
+    </category>
+    <category name="Objects, Items and Misc" id="items">
+        <category id="book" name="Books" />
+        <category id="coins" name="Coins" />
+        <category id="disease" name="Disease" />
+        <category id="charm" name="Charms" />
+        <category id="heirloom" name="Heirloom" />
+        <category id="legendary_weapon" name="Legendary Weapon"/>
+        <category id="pickpocketloot" name="Pickpoket Loot"/>
+        <category id="poisons" name="Poisons"/>
+        <category id="potions" name="Potions" />
+        <category id="insults" name="Insults" />
+        <category id="traps" name="Traps"/>
+        <category id="chests" name="Chests"/>
+        <category id="unholyaltar" name="Unholy Altar"/>
+        <category id="junk" name="Junk" />
+        <category id="wines" name="Wines"/>
+    </category>
+    <category name="NPCs" id="npcs">
+        <category id="appearance" name="Appearance" />
+        <category id="npc" name="Generic NPC"/>
+        <category name="Classes" id="classes">
+            <category id="barbarian" name="Barbarian" />
+            <category id="bard" name="Bard"/>
+            <category id="druid" name="Druid"  />
+            <category id="fighter" name="Fighter" />
+            <category id="paladin" name="Paladin" />
+            <category id="priest" name="Priest"/>
+            <category id="ranger" name="Ranger"/>
+            <category id="rogue" name="Rogue"/>
+            <category id="sorcerer" name="Sorcerer" />
+            <category id="warlock" name="Warlock" />
+            <category id="wizard" name="Wizard" />
+        </category>
+        <category name="Races" id="race">
+            <category id="darkelf" name="Dark Elf"/>
+            <category id="dwarf" name="Dwarf" />
+            <category id="gnome" name="Gnome" />
+            <category id="halfling" name="Halfling" />
+            <category id="highelf" name="High Elf"/>
+            <category id="woodelf" name="Wood Elf"/>
+            <category id="dragonborn" name="Dragonborn"/>
+        </category>
+        <category id="alchemist" name="Alchemist"/>
+        <category id="animalhandler" name="Animal Handler"/>
+        <category id="crafter_apprentice" name="Crafter Apprentice"/>
+        <category id="archer" name="Archer"/>
+        <category id="armorer" name="Armorer"/>
+        <category id="crafter_artisan" name="Crafter Artisan"/>
+        <category id="assassin" name="Assassin"/>
+        <category id="barkeep" name="Barkeep"/>
+        <category id="bowyer" name="Boyer"/>
+        <category id="caravan_master" name="Caravan Master"/>
+        <category id="caravan_owner" name="Caravan Owner"/>
+        <category id="cook" name="Cook"/>
+        <category id="criminal" name="Criminal"/>
+        <category id="cultist" name="Cultist"/>
+        <category id="cultist_snake" name="Snake Cultist"/>
+        <category id="farmfolk" name="Farmfolk"/>
+        <category id="fisherfolk" name="Fisherfolk"/>
+        <category id="jester" name="Jester"/>
+        <category id="gangmember" name="Gang Member"/>
+        <category id="gladiator" name="Gladiator"/>
+        <category id="graverobber" name="Grave Robber"/>
+        <category id="guard" name="Guard" />
+        <category id="guard_captain" name="Guard Captain"/>
+        <category id="guide" name="Guide"/>
+        <category id="harlot" name="Harlot"/>
+        <category id="healer" name="Healer"/>
+        <category id="horsemaster" name="Horse Master"/>
+        <category id="huntsman" name="Huntsman"/>
+        <category id="investigator" name="Investigator"/>
+        <category id="jailor" name="Jailor"/>
+        <category id="kennelmaster" name="Kennel Master"/>
+        <category id="knight" name="Knight"/>
+        <category id="lawofficial" name="Law Official" />
+        <category id="maidservant" name="Maid Servant" />
+        <category id="mercenary" name="Mercenary" />
+        <category id="merchant" name="Merchant" />
+        <category id="miner" name="Miner" />
+        <category id="monk" name="Monk" />
+        <category id="monsterhunter" name="Monster Hunter" />
+        <category id="noble" name="Noble">
+            <category name="Nobleman" id="nobleman" />
+            <category name="Noblewoman" id="noblewoman" />
+            <category name="Princess" id="princess" />            
+        </category>
+        <category id="necromancer" name="Necromancer" />
+        <category id="pirate" name="Pirate"/>
+        <category id="poacher" name="Poacher" />
+        <category id="princess" name="Princess" />
+        <category id="prisoner" name="Prisoner" />
+        <category id="quartermaster" name="Quartermaster" />
+        <category id="robber" name="Robber" />
+        <category id="sailor" name="Sailor" />
+        <category id="seer" name="Seer" />
+        <category id="killer" name="Killer" />
+        <category id="shopkeeper" name="Shopkeeper" />
+        <category id="smith" name="Smith" />
+        <category id="smuggler" name="Smuggler" />
+        <category id="soldier" name="Soldier" />
+        <category id="squire" name="Squire" />
+        <category id="stablehand" name="Stablehand" />
+        <category id="steward" name="Steward" />
+        <category id="stranger" name="Stranger" />
+        <category id="thief" name="Theif" />
+        <category id="torturer" name="Torturer" />
+        <category id="traveler" name="Traveler" />
+        <category id="sage" name="Sage" />
+        <category id="vendor" name="Vendor" />
+        <category id="witch" name="Witch" />
+        <category id="woodsman" name="Woodsman" />
+        <category id="villain" name="Villain" />
+    </category>
+    <category name="Plot" id="plot">
+        <category name="Damsel in Distress" id="damsel" />
+        <category name="Nightmares" id="nightmares" />
+        <category name="Nightmares 2" id="nightmares2" />
+        <category name="Politics" id="politics" />
+        <category name="Reputation" id="reputation" />
+        <category name="Songs" id="songs" />
+        <category name="Places" id="places" />
+        <category name="Treasure Map" id="treasuremap" />
+        <category name="Crime" id="crime" />
+        <category name="Gossip" id="gossip" />
+    </category>
+    <category name="Locations" id="locations">
+        <category name="Arena" id="arena" />
+        <category name="Brothel" id="brothel" />
+        <category name="Landmark" id="landmark" />
+        <category name="Dwarf Enclave" id="dwarfenclave" />
+        <category name="Elf Enclave" id="elfenclave" />
+        <category name="Fishing Boat" id="fishingboat" />
+        <category name="Gnome Enclave" id="gnomeenclave" />
+        <category name="Library" id="library" />
+        <category name="Mage Tower" id="magetower" />
+        <category name="Mage Shop" id="mageshop" />
+        <category name="Marketplace" id="marketplace" />
+        <category name="Shop" id="shop" />
+        <category name="Military Camp" id="militarycamp" />
+        <category name="Orc Enclave" id="orcenclave" />
+        <category name="Ship" id="ship" />
+        <category name="Street Name" id="streetname" />
+        <category name="Tavern" id="tavern" />
+    </category>
+    <category name="Wilderness" id="wilderness">
+        <category name="Desert" id="desert">
+            <category name="Natural Desert" id="desert_natural" />
+            <category name="Flame-Scorched Desert" id="desert_flame" />
+            <category name="Shadowy Desert" id="desert_shadow" />
+        </category>
+        <category name="Forest" id="forest">
+            <category name="Natural Forest" id="forest_natural" />
+            <category name="Enchanted Forest" id="forest_enchanted" />
+            <category name="Haunted Forest" id="forest_haunted" />
+        </category>
+        <category name="Jungle" id="jungle" />
+        <category name="Plains" id="plains" />
+        <category name="Mountain" id="mountain" />
+        <category name="Swamp" id="swamp" />
+        <category name="Underdark" id="underdark" />
+    </category>
+    <category name="Worldbuilding" id="worldbuilding">
+        <category name="Continent" id="continent" />
+        <category name="Nation" id="nation" />
+        <category name="Town" id="town" />
+        <category name="Village" id="village" />
+        <category name="World" id="world" />
+        <category name="City" id="city" />
+    </category>
+    <category name="Rooms" id="rooms">
+        <category name="Castle Dungeon" id="room_castledungeon" />
+        <category name="Castle Chamber" id="room_castlechamber" />
+    </category>
+    <category name="Misc" id="misc">
+        <category name="Guilds" id="guilds">
+            <category name="Assassins' Guild" id="guild_assassin" />
+            <category name="Crafting Guild" id="guild_crafting" />
+            <category name="Merchants' Guild" id="guild_merchant" />
+        </category>
+    </category>
+</categories>

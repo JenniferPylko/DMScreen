@@ -1,0 +1,339 @@
+<category name="Guild" id="guilds">
+    <category name="Assassins' Guild" id="assassinsguild">
+        <table name="The guild's symbol is...">
+            <value>A skull</value>
+            <value>An eye</value>
+            <value>A flame</value>
+            <value>A dagger</value>
+            <value>A scythe</value>
+            <value>An arrow</value>
+            <value>A fish</value>
+            <value>A crow</value>
+            <value region_start="2" region_end="5" region_include="rat">A rat</value>
+            <value>A scorpion</value>
+            <value region_start="2" region_end="8" region_include="spider">A spider</value>
+            <value>A snake</value>
+        </table>
+        <table name="The guild's preferred method of execution is...">
+            <value region_start="9" region_end="15" region_include="poisons">Ingested poison or allergic reaction</value>
+            <value region_start="47" region_end="54" region_include="disease">Exposure to deadly (but not highly contagious) disease</value>
+            <value region_start="8" region_end="14" region_include="poisons">Contact poison applied to a weapon</value>
+            <value>Arrow/bolt from range</value>
+            <value>Knife in the chest or back</value>
+            <value>Multiple stab wounds</value>
+            <value>Slitting throats</value>
+            <value>Gutting or eviscerating</value>
+            <value>Flaying or scalping</value>
+            <value>Beheading</value>
+            <value>Strangulation</value>
+            <value>Hanging</value>
+            <value>Burying alive</value>
+            <value>Drowning</value>
+            <value>Boiling alive</value>
+            <value>Throwing off a roof</value>
+            <value>Acid (pouring or submersion)</value>
+            <value>Fiery explosion</value>
+            <value>Burning alive</value>
+            <value>Feeding to animals</value>
+        </table>
+        <table name="Guild members typically arm themselves with...">
+            <value>Poisoned daggers and short swords</value>
+            <value>Throwing knives</value>
+            <value>Over-sized daggers</value>
+            <value>Serrated daggers</value>
+            <value>Daggers and crossbows</value>
+            <value>Axes and knives</value>
+            <value>Bows and arrows</value>
+            <value>Short swords and crossbows</value>
+            <value>Sickles and scythes</value>
+            <value>Garrotes and daggers</value>
+            <value>Exortic blades and blowguns</value>
+            <value>Bolas and poisoned projectiles</value>
+        </table>
+        <table name="Guild members typically operate">
+            <value>Alone</value>
+            <value>In pairs</value>
+            <value>In small groups</value>
+            <value>By infiltrating an organization</value>
+            <value>By impersonating a specific individual</value>
+            <value>In plain sight</value>
+        </table>
+        <table name="Guild members typically know...">
+            <value>Very few other guild members</value>
+            <value>Several other guild members</value>
+            <value>The details of the guild's organization</value>
+            <value>Nothing about the guild's leadership</value>
+            <value>The names of the guild's leaders, though they've never met any of them</value>
+            <value>One of the guild's leading members and no other guild members</value>
+            <value>Everyone knows the guild's leaders, but not one realizes everyone knows</value>
+        </table>
+        <table name="The guild refuses to take contracts to kill...">
+            <value>Women</value>
+            <value>Young children</value>
+            <value>Nobles and prominent citizens</value>
+            <value>Priests and monks</value>
+            <value>Peasants and poor folk</value>
+            <value>Foreigners and travelers</value>
+            <value>Members of the client's family</value>
+            <value>Fellow criminals</value>
+        </table>
+        <table name="Guild members typically strike with...">
+            <value>Hit-and-run-tactics</value>
+            <value>Ambush tactics</value>
+            <value>Diversionary tactics</value>
+            <value>A precisely planned attack strategy</value>
+            <value>A well-planned escape strategy</value>
+            <value>The element of surprise</value>
+            <value>Announcing their presence</value>
+            <value>No thought of escape</value>
+        </table>
+        <table name="The guild's headquarters is hidden in or near...">
+            <value region_start="4|21" region_end="13|27" region_include="__noun__|assassin_leader">The residence of the leader</value>
+            <value region_start="4|19" region_end="13|38" region_include="__noun__|assassin">The residence of a senior guild member</value>
+            <value region_start="3|13" region_end="10|17" region_include="crafter_artistan|__noun__">An artisan's shop</value>
+            <value region_start="2" region_end="11" region_include="__noun__">A guildhall</value>
+            <value region_start="0" region_end="10" region_include="merchant">A merchant's office</value>
+            <value region_start="2" region_end="8" region_include="tavern">A tavern</value>
+            <value region_start="2" region_end="9" region_include="brothel">A brothel</value>
+            <value region_start="2" region_end="11" region_include="__noun__">A warehouse</value>
+            <value region_start="2" region_end="10" region_include="__noun__">A shipyard</value>
+            <value region_start="0" region_end="8" region_include="temple">A temple complex</value>
+            <value region_start="0" region_end="10" region_include="city">The city's sewers</value>
+            <value region_start="4|9" region_end="8|13" region_include="village|__noun__">The town hall</value>
+            <value region_start="13" region_end="22" region_include="__noun__">An abandoned guildhall</value>
+            <value region_start="13" region_end="22" region_include="__noun__">An abandoned warehouse</value>
+            <value region_start="2" region_end="10" region_include="__noun__">A barracks</value>
+            <value region_start="4" region_end="9" region_include="__noun__">An armory</value>
+            <value region_start="19" region_end="37" region_include="__noun__">The residence of a wealthy individual</value>
+            <value region_start="19" region_end="36" region_include="__noun__">The residence of a prominent citizen</value>
+        </table>
+        <table name="The guild is feared or respected by...">
+            <value>Fishermen and sailors</value>
+            <value>Beggars and orphans</value>
+            <value>Merchants and moneychangers</value>
+            <value>Nobles and rulers</value>
+            <value>Politicians and magistrates</value>
+            <value>Guilds and sherriffs</value>
+            <value>Soldiers and warriors</value>
+            <value>Thieves and criminals</value>
+            <value>Servants and slaves</value>
+            <value>Priests and sages</value>
+            <value>Women and children</value>
+            <value>Other assassins</value>
+        </table>
+        <member name="Guild Leader" id="assassin_leader">
+            <name name="The guild leader's name is..."/>
+            <table name="The guild's leader is...">
+                <value>A dangerous megalomaniac</value>
+                <value>A charismatic demagogue</value>
+                <value region_start="13" region_end="22" region_include="nation">A mysterious foreigner</value>
+                <value region_start="11" region_end="16" region_include="thief">A talented thief</value>
+                <value region_start="13" region_end="26" region_include="__noun__">A well-known public figure</value>
+                <value region_start="11" region_end="17" region_include="killer">A ruthless killer</value>
+                <value>A femme fatale</value>
+                <value region_start="11" region_end="16" region_include="rogue">A charming rogue</value>
+                <value>A dashing swashbucker</value>
+                <value>A brutish thug</value>
+                <value region_start="2" region_end="11" region_include="__noun__">A religious fanatic</value>
+                <value region_start="10" region_end="17" region_include="soldier">A veteran soldier</value>
+            </table>
+        </member>
+        <member name="Assassin" include="assassin" />
+    </category>
+    <category name="Crafting guilds" id="craftingguild">
+        <table name="This guild is for...">
+            <value>Miners</value>
+            <value>Foresters</value>
+            <value>Farmers</value>
+            <value>Smithies</value>
+            <value>Barbers and dentists</value>
+            <value>Jewelers</value>
+            <value>Fools, entertainers, and players</value>
+            <value>Shipwrights</value>
+            <value>Tanners, furriers, and shoemakers</value>
+            <value>Butchers</value>
+            <value>Locksmiths and nailsmiths</value>
+            <value>Potters and dyers</value>
+            <value>Saddlers, farriers, and stable masters</value>
+            <value>Joiners, wheelwrights, and coopers</value>
+            <value>Masons</value>
+            <value>Weavers and tailers</value>
+            <value>Goldsmiths and watchmakers</value>
+            <value>Alchemists</value>
+            <value>Architects</value>
+            <value>Calligraphers</value>
+            <value>Historians</value>
+            <value>Lawyers and judges</value>
+            <value>Scribes</value>
+            <value>Siege engineers</value>
+            <value>Writers</value>
+            <value>Brewers</value>
+            <value>Candlers</value>
+            <value>Chefs</value>
+            <value>Glassblowers</value>
+            <value>Historical reenactors</value>
+            <value>Mithrilsmiths</value>
+            <value>Musicians</value>
+            <value>Painters</value>
+            <value>Sculptors</value>
+            <value>Silversmiths</value>
+        </table>
+        <table name="This guild's status and control is...">
+            <value>Poor; though once great, this guild has fallen on hard times and is struggling to maintain its power</value>
+            <value>Brand new, and frantically recruiting members in order to snatch power</value>
+            <value region_start="24" region_end="35" region_include="__noun__">Exponentially rising, a recent boon has granted them great profits</value>
+            <value region_start="18" region_end="28" region_include="craftingguild">Slowing, a rising competitor is slowly cutting into profits</value>
+            <value>Absolute, they have complete dominance in their field</value>
+            <value>Spotty, depending on the will of the coin and the market this guild may be drinking Elven wine or rotten grog</value>
+            <value>Unquestioned, they exert complete dominance over all other guilds in the area</value>
+            <value>Questionable, though they claim to have control, some operators have undermined it</value>
+        </table>
+        <table name="The guild's illicit affairs are comprised of...">
+            <value>Literally nothing, they are paragons of upright morality</value>
+            <value>Staying well within the law, if slipping on a few taxes due to ignorance, of course</value>
+            <value>Knowing how to play the political game, they garner a few indirect favors from officials</value>
+            <value region_start="83" region_end="87" region_include="city">Guild leaders having dollar signs for eyes, and setting advantageous prices in the city</value>
+            <value>Price floors becoming commonplace, and officials are often bribed in order to overlook some minor illicit activities</value>
+            <value>A variety of upper-level bribes, some minor scams, and the dismay of local priests</value>
+            <value region_start="56" region_end="60" region_include="city">Rampant corruption, with large-scale bribery of various city officials and contracts with thieves guild and occasionally an assassin</value>
+            <value>Pacts with devils, large-scale counterfeiting, and treasonous activities are a normal Tuesday morning for this guild</value>
+        </table>
+        <table name="This guild's headquarters is...">
+            <value region_start="4|35" region_end="10|46" region_include="crafter_artisan|__noun__">The leader's personal residence, a large manor</value>
+            <value region_start="26|41" region_end="30|45" region_include="city|__noun__">The dusty basement of the city's capital hall</value>
+            <value region_start="30|69" region_end="39|75" region_include="__noun__|street">A single, thin, and very tall townhouse that leans slightly into the street</value>
+            <value region_start="9" region_end="13" region_include="ship">A moored ship, especially curious in landlocked cities</value>
+            <value region_start="37" region_end="41" region_include="city">An open-air pavilion centered in the city's bazaar</value>
+            <value region_start="34" region_end="38" region_include="__noun__">Doubling as a large and prestigious bank</value>
+            <value region_start="11" region_end="21" region_include="__noun__">An opulent demi-plane hidden in a shady back-alley</value>
+            <value region_start="38" region_end="45" region_include="city">Jointly shared with all the guilds of the city, and the thieves guild lurks in the sewers below</value>
+        </table>
+        <table name="Minor Quest: You must fetch a shipment of goods from...">
+            <value region_start="42" region_end="46" region_include="city">The city gates, held up by a bureaucratic city official</value>
+            <value region_start="12" region_end="19" region_include="village">The nearest village, where they're caught up in some small-town superstition</value>
+            <value region_start="19" region_end="23" region_include="city">A relatively nearby city, where there is a sever mix-up with the shipments</value>
+            <value>The natural areas one would gather them, yourself, to learn the roots of your trade</value>
+            <value region_start="14" region_end="24" region_include="city">The stores of the city's banks, which must be paid off from their mortgage</value>
+            <value>Across the room where the party receives the quest</value>
+        </table>
+        <table name="Standard Quest: Recently the guild has lost access to raw materials or manufacturing because of...">
+            <value region_start="24" region_end="32" region_include="__noun__">A recent venture with a supplier that has turned out bad</value>
+            <value region_start="24" region_end="29" region_include="craftingguild">A recent venture with a rival that has turned out bad</value>
+            <value region_start="24" region_end="38" region_include="__noun__">A recent venture with a local official that has turned out bad</value>
+            <value>A trade blockade that has to be resolved</value>
+            <value region_start="2" region_end="16" region_include="__noun__">A thieves' guild that is targeting the guild, but may be convince to look somewhere else</value>
+            <value>A master using it frivolously, you must go out to harvest a sufficient replacement amount</value>
+            <value region_start="2" region_end="6" region_include="city">A city official banning them, citing it as an immoral substance</value>
+            <value>Spending all the coffer's stores on fulfilling a special contract or bribing officials, lacking the foresight to buy sufficient raw materials</value>
+        </table>
+        <table name="Major Quest: The guild would like you to fetch a rare creature or material from...">
+            <value region_start="0" region_end="15" region_include="marketplace">The marketplace of the City of Brass</value>
+            <value region_start="11" region_end="29" region_include="dwarfenclave">An ancient dwarven stronghold's forges</value>
+            <value>A quaint pasture -- In the wildest parts of Arborea</value>
+            <value region_start="10" region_end="16" region_include="__noun__">A faraway island, rumored to have cannibals and foul magicks</value>
+            <value region_start="36" region_end="42" region_include="naturaldesert">A mystic mirage that manifests in a desert for twenty minutes once every century</value>
+            <value region_start="30" region_end="45" region_include="__noun__">The Plane of Rats (or similar filthy location)</value>
+        </table>
+        <member name="Apprentice Crafter" include="crafter_apprentice" />
+        <member name="Artisan Crafter" include="crafter_artisan" />
+    </category>
+    <category name="Merchant guilds" id="merchantguild">
+        <table name="The guild is controlled by...">
+            <value region_start="14" region_end="21" region_include="__noun__">A no-nonsense kingpin who despises bureaucracy</value>
+            <value region_start="25" region_end="30" region_include="gnome">A small and pinched-face gnome with a sinister desire for money</value>
+            <value region_start="17" region_end="28" region_include="nobleman">An inexperienced young noble with a petulant need for a full purse</value>
+            <value>A council of the heads of local crafting guilds</value>
+            <value region_start="43" region_end="47" region_include="city">An argumentative mass democracy of all the city's merchants</value>
+            <value region_start="68" region_end="75" region_include="watchmen">A longstanding and ancient charter that applies to all merchants, and the militia acting as the charter's executors</value>
+            <value region_start="17" region_end="25" region_include="merchant">The most wealthy merchant in the city</value>
+            <value region_start="17" region_end="21" region_include="monk">A city-appointed monk, who has sworn away worldly wealth</value>
+        </table>
+        <table name="This guild's illicit affairs comprise...">
+            <value>Literally nothing, they are paragons of upright morality</value>
+            <value>Staying well within the law, in flipping on a few taxes due to ignorance of course</value>
+            <value>Knowing how to play the political game, they garner a few indirect favors from officials</value>
+            <value region_start="83" region_end="87" region_include="city">Guild leaders having dollar signs for eyes, and setting advantageous prices in the city</value>
+            <value>Price floors becoming commonplace, and officials are often bribed in order to overlook some minor illicit activities</value>
+            <value>A variety of upper-level bribes, some minor scams, and the dismay of local priests</value>
+            <value region_start="56" region_end="60" region_include="city">Rampant corruption, with large-scale bribery of various city officials and contracts with theeves guild and occasionally an assassin</value>
+            <value>Pacts with devils, large-scale counterfeiting, and treasonous activities are a normal Tuesday morning for this guild</value>
+        </table>
+        <table name="The guild's status and control is...">
+            <value>Poor; though once great, this guild has fallen on hard times and is struggling to maintain its power</value>
+            <value>Brand new, and frantically recruiting members in order to snatch power</value>
+            <value>Exponentially rising, a recent boon has granted them great profits</value>
+            <value>Absolute, they have complete dominance in their field</value>
+            <value>Spotty, depending on the will of the coin, and the market this guild may be drinking Elven wine or rotten grog</value>
+            <value>Unquestioned, they exert complete dominance over all other guilds in the area</value>
+            <value>Questionable, though they claim to have control, some operators have undermined it</value>
+        </table>
+        <table name="The guild's headquarters is...">
+            <value>The leader's or leaders' personal residence, a large manor</value>
+            <value region_start="26" region_end="30" region_include="city">The dusty basement of the city's capital hall</value>
+            <value>A single, thin, and very tall townhouse that leans slightly into the street</value>
+            <value region_start="9" region_end="13" region_include="ship">A moored ship, especially curious in landlocked cities</value>
+            <value region_start="37" region_end="41" region_include="city">An open-air pavilion centered in the city's bazaar</value>
+            <value>Doubling as a large and prestigious bank</value>
+            <value>An opulent demiplane hidden in a shady back-alley</value>
+            <value region_start="38" region_end="46" region_include="city">Jointly shared with all the guilds of the city, and the thieves guild lurks in the sewers below</value>
+        </table>
+        <table name="Minor Quest: The guild has been having some trouble with...">
+            <value region_start="0" region_end="10" region_include="merchant">A merchant was recently shaken down by a lowly thug, send a message</value>
+            <value>Gold stores, perhaps you should make a donation of 500 gold pieces?</value>
+            <value>Transporting a semi-rare magical item to a nearby branch</value>
+            <value region_start="2" region_end="9" region_include="caravan">A caravan that doesn't feel comfortable going through a newly discovered path in the nearby woods, escort them</value>
+            <value region_start="7" region_end="21" region_include="solider">A city militia member getting nosy</value>
+            <value region_start="2" region_end="16" region_include="craftingguild">A crafting guild hesitant to sign up for the merchant guild's special loyalty program</value>
+            <value>A rat infestation</value>
+            <value>A rat infestation (that actually is a rift to the Plane of Rats or similar filthy location)</value>
+        </table>
+        <table name="Standard Quest: The guild needs you to handle...">
+            <value region_start="2" region_end="9" region_include="caravan">A caravan gone missing in a nearby region</value>
+            <value>A rising thieves' guild that seems uncooperative</value>
+            <value region_start="2" region_end="6" region_include="city">A city official hellbent on stamping out capitalism</value>
+            <value region_start="12" region_end="25" region_include="merchantguild">A competing merchant guild that has begun to outpace the guild</value>
+            <value>A recent trade blockade -- you need to resolve the tensions or clear the blockade</value>
+            <value>Rumors of aberrations in the night that have driven away trade</value>
+            <value>A board member who has decided to go rogue and has stolen from the coffers</value>
+            <value>A very large rat infestation (the rift has become a permanent Gate to the Plane of Rats or similar filthy location)</value>
+        </table>
+        <table name="Major Quest: A matter of great import, the guild is faced with...">
+            <value region_start="2|44" region_end="16|48" region_include="mercenaries|city">A mercenary army that has laid siege to the city!</value>
+            <value>Mass corruption from the inside, half the board is revealed to be mind flayers</value>
+            <value region_start="10" region_end="19" region_include="__noun__">A massive religious revival that causes the entire population to scorn material pursuits and cut deep into the bottom line</value>
+            <value region_start="2|29" region_end="13|36" region_include="undead|caravan">A mummy king who has taken a caravan with most of the guild coffer's investments hostage</value>
+            <value region_start="40" region_end="53" region_include="__noun__">Political revolution that threatens the guild coffers with looking, protect our stores but civilians cannot be harmed</value>
+            <value>An investigation from the King's spymaster into the extend of the guild's illicit activities</value>
+            <value>A planar being has supplanted the guild master, who is imprisoned in a planar cage</value>
+            <value>Waves of rats that threatenedd the entire guild hall's basement (the rift has become a gigantic faucet of rats) where an Avatar of the God of Rats has taken up residence</value>
+        </table>
+        <table name="Trading Company: This trading company's specific specialty or purpose is...">
+            <value>Long-range sea trade, exploration and transport</value>
+            <value>Long-range aerial trade; accomplished with airships, aarakocra messengers, and the occasional roc or dragon</value>
+            <value>The hunting and trapping of exotic monsters and animals</value>
+            <value>Acting as a puppet agency for a local kingdom manipulating global trade</value>
+            <value>Securing and creating long-range caravans, and the low growth of roads (and maybe even railroads)</value>
+            <value>Exploring and exploiting newly discovered lands or planes</value>
+        </table>
+        <table name="Trading Company: This trading company is controlled by...">
+            <value region_start="38" region_end="46" region_include="merchant">A planar being disguised as a wealthy merchant</value>
+            <value>A joint council of Masters of Coin from all civilized kingdoms of the world</value>
+            <value region_start="2" region_end="15" region_include="goblin">A savant goblin who has achieved immortality by divine blessing</value>
+            <value region_start="11" region_end="24" region_include="npc_class">A grizzled ex-adventurer</value>
+            <value>A council of investors</value>
+            <value>An argumentative mass democracy of all the company's merchants</value>
+            <value region_start="20" region_end="34" region_include="caravan_master">A massively wealthy caravan master who found a lost city of gold</value>
+            <value>A large and grotesque slave master</value>
+        </table>
+        <table name="Currency: Besides coin, the merchant will trade in...">
+            <value>Gems and jewelry</value>
+            <value>Gold and silver bullion</value>
+            <value>Water, provisions, and other goods</value>
+            <value>Shells, beads, and trinkets</value>
+            <value>Favors</value>
+            <value>Scandalous information</value>
+        </table>
+        <member name="Shopkeeper" include="shopkeeper" />
+        <member name="Merchant" include="merchant" />
+    </category>
+</category>

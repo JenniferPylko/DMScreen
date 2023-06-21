@@ -1,0 +1,452 @@
+<category name="Random NPC" id="npc">
+    <name name="The NPC's name is..."/>
+    <include name="Race" include="npc_race" />
+    <include name="Class" include="npc_class" />
+    <table name="The character's background is..." id="npc_background" short="Background" db="background">
+        <value>Acolyte</value>
+        <value>Anthropologist</value>
+        <value>Archaeologist</value>
+        <value>Charlatan</value>
+        <value>Athlete</value>
+        <value>Azorius Functionary</value>
+        <value region_start="0" region_end="7" region_include="barkeep">Barkeep</value>
+        <value>Boros Legionaire</value>
+        <value>Celebrity Adventurer's Scion</value>
+        <value>Charlatan</value>
+        <value>City Watch / Investigator</value>
+        <value>Clan Crafter</value>
+        <value>Cloistered Scholar</value>
+        <value>Courtier</value>
+        <value region_start="0" region_end="8" region_include="criminal">Criminal</value>
+        <value>Dimir Operative</value>
+        <value region_start="0" region_end="11" region_include="bard">Entertainer</value>
+        <value>Folk Hero</value>
+        <value>Faceless</value>
+        <value>Faction Agent</value>
+        <value>Failed Merchant</value>
+        <value>Far Traveler</value>
+        <value>Feylost</value>
+        <value>Fisher</value>
+        <value>Folk Hero</value>
+        <value>Gambler</value>
+        <value region_start="0" region_end="9" region_include="gladiator">Gladiator</value>
+        <value>Golgari Agent</value>
+        <value>Grinner</value>
+        <value>Gruul Anarch</value>
+        <value>Guild Artisan</value>
+        <value region_start="6" region_end="14" region_include="merchant">Guild Merchant</value>
+        <value>Haunted One</value>
+        <value>Hermit</value>
+        <value>House Agent</value>
+        <value>Inheritor</value>
+        <value>Investigator</value>
+        <value>Izzet Engineer</value>
+        <value region_start="0" region_end="6" region_include="knight">Knight</value>
+        <value>Lorehold Studen</value>
+        <value>Marine</value>
+        <value>Mercenary Veteran</value>
+        <value region_start="0" region_end="5" region_include="noble">Noble</value>
+        <value>Orzhov Representative</value>
+        <value>Outlander</value>
+        <value region_start="0" region_end="6" region_include="pirate">Pirate</value>
+        <value>Plaintiff</value>
+        <value>Prismari Student</value>
+        <value>Quandrix Student</value>
+        <value>Rakdos Cultist</value>
+        <value>Rival Intern</value>
+        <value>Sage</value>
+        <value region_start="0" region_end="6" region_include="sailor">Sailor</value>
+        <value>Selesnya Initiate</value>
+        <value>Shipwright</value>
+        <value>Silverquill Student</value>
+        <value>Simic Scientist</value>
+        <value>Smuggler</value>
+        <value region_start="0" region_end="7" region_include="soldier">Soldier</value>
+        <value>Spy</value>
+        <value>Urban Bounty Hunter</value>
+        <value>Urchin</value>
+        <value>Uthgardt Tribe Member</value>
+        <value>Volstrucker Agent</value>
+        <value>Waterdhavian Noble</value>
+        <value>Witchlight Hand</value>
+        <value>Withcerbloom Student</value>
+    </table>
+    <table name="The character's gender is..." id="npc_gender" short="Gender" db="gender">
+        <value>Male</value>
+        <value>Female</value>
+    </table>
+    <table name="The character's age is..." id="npc_age" short="Age" db="age">
+        <value>Juvenile</value>
+        <value>Pre-teen</value>
+        <value>Teenage</value>
+        <value>Young Adult</value>
+        <value>Adult</value>
+        <value>Middle-aged</value>
+        <value>Old</value>
+        <value>Very Old</value>
+        <value>Ancient</value>
+    </table>
+    <table name="Eyes: The person has..." short="Eyes" id="npc_eyes" db="eyes_description">
+        <value>Sleepy eyes</value>
+        <value>Shifty eyes</value>
+        <value>Watery eyes</value>
+        <value>Bright eyes</value>
+        <value>Cold eyes</value>
+        <value>Smiling eyes</value>
+        <value>Close-set eyes</value>
+        <value>Wild eyes</value>
+        <value>Distant eyes</value>
+        <value>A lazy eye</value>
+        <value>Piercing eyes</value>
+        <value>Watchful eyes</value>
+        <value>Dark eyes</value>
+        <value>Hooded eyes</value>
+        <value>Eyes of two different colors</value>
+        <value>Slightly crossed eyes</value>
+        <value>Wide eyes</value>
+        <value>Beautiful eyes</value>
+        <value>Beady eyes</value>
+        <value>Penetrating eyes</value>
+        <value>Fierce eyes</value>
+    </table>
+    <table name="Ears: The person has..." short="Ears" id="npc_ears" db="ears">
+        <value>Over-sides ears</value>
+        <value>Long ear lobes</value>
+        <value>Small ears</value>
+        <value>Uneven ears</value>
+        <value>Hairy ears</value>
+        <value>Pointy ears</value>
+        <value>Short ears lobes</value>
+        <value>Ears that stick out</value>
+        <value>Jug-handle ears</value>
+        <value>Elaborately pierced ears</value>
+        <value>Cauliflower ears</value>
+        <value>Ears with improbable tufts of hair</value>
+    </table>
+    <table name="Mouth: The person has..." short="Mouth" id="npc_mouth" db="mouth">
+        <value>Full lips</value>
+        <value>Buck-teeth</value>
+        <value>Thin lips</value>
+        <value>Rotting teeth</value>
+        <value>Crooked teeth</value>
+        <value>A broken or missing tooth</value>
+        <value>Pursed lips</value>
+        <value>Dry, cracked lips</value>
+        <value>One or more false teeth</value>
+        <value>A mouth that hangs open</value>
+    </table>
+    <table name="Nose: The person has..." short="Nose" id="npc_nose" db="nose">
+        <value>A crooked nose</value>
+        <value>A bulbous nose</value>
+        <value>A narrow nose</value>
+        <value>A button nose</value>
+        <value>A long nose</value>
+        <value>A broad nose</value>
+        <value>An angular nose</value>
+        <value>A round nose</value>
+        <value>A broken nose</value>
+        <value>A hawk-like nose</value>
+        <value>A wide nose</value>
+        <value>A delicate nose</value>
+    </table>
+    <table name="Chin or jaw: The person has..." short="Chin" id="npc_chin" db="chin">
+        <value>A pronounced chin</value>
+        <value>A cleft chin</value>
+        <value>A dimple on the chin</value>
+        <value>A rounded chin</value>
+        <value>A sharp jawline</value>
+        <value>A square jaw</value>
+        <value>A round jaw</value>
+        <value>An underbite</value>
+    </table>
+    <table name="Hair: The person has..." short="Hair" id="npc_hair" db="hair">
+        <value>Thick hair</value>
+        <value>Wispy hair</value>
+        <value>Straight hair</value>
+        <value>Wavy hair</value>
+        <value>Curly hair</value>
+        <value>Wiry hair</value>
+        <value>Oily hair</value>
+        <value>Lush hair</value>
+        <value>Poofy hair</value>
+        <value>Long braids</value>
+        <value>Braids tight against the head</value>
+        <value>Very long hair</value>
+        <value>Greasy hair</value>
+        <value>Unruly hair</value>
+        <value>An unusual hairstyle</value>
+        <value>An outdated hairstyle</value>
+        <value>A high-maintenance hairstyle</value>
+        <value>Short-cropped hair</value>
+        <value>A shaved head</value>
+        <value>No hair at all</value>
+    </table>
+    <table name="Other: The person's face has..." short="Other" id="npc_other" db="features">
+        <value>High cheekbones</value>
+        <value>Tight, drawn cheeks</value>
+        <value>Chubby cheeks</value>
+        <value>An unpleasant pustule</value>
+        <value>A large mole</value>
+        <value>A beauty mark</value>
+        <value>Freckles</value>
+        <value>Terrible scarring</value>
+    </table>
+    <table name="Height: The person is..." short="Height" id="npc_height" db="height">
+        <value>Unusually short</value>
+        <value>Short in statue</value>
+        <value>Average height</value>
+        <value>Slightly above average height</value>
+        <value>Well above average height</value>
+        <value>Unusually tall</value>
+    </table>
+    <table name="Body: The person's body is..." short="Body" id="npc_body" db="body">
+        <value>Thin and delicate</value>
+        <value>Of average build</value>
+        <value>Well-muscled</value>
+        <value>Slightly overweight</value>
+        <value>Grotesquely obese</value>
+        <value>Lean and lanky</value>
+        <value>Lithe and lean</value>
+        <value>Thin and wiry</value>
+        <value>Sinewy and strong</value>
+        <value>Flabby and weak</value>
+        <value>Lumpy or bent</value>
+        <value>Thin and flimsy</value>
+        <value>Soft and chubby</value>
+        <value>Thin and petite</value>
+        <value>Pudgy</value>
+        <value>Big and broad</value>
+        <value>Stocky and strong</value>
+        <value>Bony</value>
+        <value>Wide and ponderious</value>
+        <value>Covered in hair</value>
+        <value>Thin but muscular</value>
+    </table>
+    <table name="Hands: The person has..." short="Hands" id="npc_hands" db="hands">
+        <value>Powerful hands</value>
+        <value>Delicate hands</value>
+        <value>Rough hands</value>
+        <value>Soft hands</value>
+        <value>A light touch</value>
+        <value>A heavy touch</value>
+    </table>
+    <table name="Scar: The person has..." short="Scar" id="npc_scar" db="_skip">
+        <value>A jagged scar</value>
+        <value>A dark purple scar</value>
+        <value>An angry scar</value>
+        <value>A long, thin scar</value>
+    </table>
+    <table name="Tattoo: The person has..." short="Tattoo" id="npc_tattoo" db="_skip">
+        <value>A dagger tattoo</value>
+        <value>An arrow tattoo</value>
+        <value>An anchor tattoo</value>
+        <value>A skull tattoo</value>
+        <value>A pair of crossed bones tattoo</value>
+        <value>A snake tattoo</value>
+        <value>A scorpion tattoo</value>
+        <value>A spider web tattoo</value>
+        <value>A heart tattoo</value>
+        <value>A ring of thorns tattoo</value>
+        <value>A mermaid tattoo</value>
+        <value>A dragon tattoo</value>
+    </table>
+    <table name="Jewelery: The person wears" short="Jewelery" id="npc_jewelery" db="jewelry">
+        <value>An earring</value>
+        <value>Two earrings</value>
+        <value>A small chain about the neck</value>
+        <value>A large chain about the neck</value>
+        <value>A tight choker about the neck</value>
+        <value>A brooch</value>
+        <value>A ring</value>
+        <value>Several rings</value>
+        <value>A bracelet</value>
+        <value>A nose ring</value>
+        <value>A medallion</value>
+        <value>An ornate belt</value>
+    </table>
+    <table name="Jewelery: the jewelery is made of..." short="Jewelery Make" id="npc_jewelerymake" db="_skip">
+        <value>Steel</value>
+        <value>Bronze</value>
+        <value>Pewter</value>
+        <value>Silver</value>
+        <value>Gold</value>
+        <value>Platinum</value>
+        <value>Copper</value>
+        <value>One or more amethyst</value>
+        <value>One or more crystal</value>
+        <value>One or more diamond</value>
+        <value>One or more emerald</value>
+        <value>One or more jade</value>
+        <value>One or more obsidian</value>
+        <value>One or more opal</value>
+        <value>One or more pearl</value>
+        <value>One or more ruby</value>
+        <value>One or more sapphire</value>
+        <value>One or more topaz</value>
+        <value>One or more turquoise</value>
+    </table>
+    <table name="Clothes: The person's clothing is..." short="Clothes" id="npc_clothes" db="clothing">
+        <value>Crisp and new</value>
+        <value>Fashionable and hip</value>
+        <value>A bit old-fashioned</value>
+        <value>Of the highest quality</value>
+        <value>Faded, but in good condition</value>
+        <value>Faded and patched</value>
+        <value>Torn in places; missing buttons</value>
+        <value>Tattered and worn</value>
+    </table>
+    <table name="Emotions and attitude: Calm Trait: When calm, the person is typically..." short="Calm Trait" id="npc_calm" db="attitude">
+        <value>Compassionate</value>
+        <value>Cheerful</value>
+        <value>Reserved</value>
+        <value>Outspoken</value>
+        <value>Uninterested</value>
+        <value>Gruff</value>
+        <value>Eager</value>
+        <value>Deceitful</value>
+        <value>Foolish</value>
+        <value>Strict</value>
+        <value>Agreeable</value>
+        <value>Micheivious</value>
+        <value>Angry</value>
+        <value>Fearful</value>
+        <value>Manipulative</value>
+        <value>Devout</value>
+        <value>Greedy</value>
+        <value>Funny</value>
+        <value>Dour</value>
+        <value>Fun-loving</value>
+        <value>Lazy</value>
+        <value>Driven</value>
+        <value>Boastful</value>
+        <value>Artistic</value>
+        <value>Carefree</value>
+        <value>Cautious</value>
+        <value>Confident</value>
+        <value>Thoughtful</value>
+        <value>Loyal</value>
+        <value>Sophisticated</value>
+        <value>Weak-willed</value>
+    </table>
+    <table name="Emotions and attitude: Stress Trait: When stressed this person often becomes..." short="Stress Trait" id="npc_stress" db="_skip">
+        <value>Withdrawn</value>
+        <value>Murderous</value>
+        <value>Obsessive</value>
+        <value>Authoritarian</value>
+        <value>Determined</value>
+        <value>Brave</value>
+        <value>Spiteful</value>
+        <value>Belligerent</value>
+        <value>Caustic</value>
+        <value>Reckless</value>
+        <value>Argumentative</value>
+        <value>Gluttonous</value>
+        <value>Overly protective</value>
+        <value>Angry</value>
+        <value>Cowardly</value>
+        <value>Meticulous</value>
+        <value>Sarcastic</value>
+        <value>Stubborn</value>
+        <value>Destructive</value>
+        <value>Practical</value>
+        <value>Pushy</value>
+        <value>Fanatical</value>
+        <value>Secretive</value>
+        <value>Scornful</value>
+        <value>Courageous</value>
+        <value>Impractical</value>
+        <value>Calculating</value>
+        <value>Industrious</value>
+        <value>Manipulative</value>
+        <value>Destructive</value>
+        <value>Compulsive</value>
+        <value>Intolerant</value>
+    </table>
+    <table name="Emotions and attitude: Mood: Now, ther person is..." short="Mood" id="npc_mood" db="_skip">
+        <value>Agreeable</value>
+        <value>Carefree</value>
+        <value>Curious</value>
+        <value>Eager</value>
+        <value>Friendly</value>
+        <value>Happy</value>
+        <value>Hopeful</value>
+        <value>Upbeat</value>
+        <value>Indifferent</value>
+        <value>Bored</value>
+        <value>Focused</value>
+        <value>Suspicious</value>
+        <value>Tired</value>
+        <value>Withdrawn</value>
+        <value>Disagreeable</value>
+        <value>Agitated</value>
+        <value>Angry</value>
+        <value>Despondent</value>
+        <value>Gloomy</value>
+        <value>Nervous</value>
+    </table>
+    <table name="Faith and beliefs: This person is a..." short="Faith" id="npc_faith" db="faith">
+        <value>Quiet true believer</value>
+        <value>Causual observer</value>
+        <value>Critical student</value>
+        <value>Outspiken cynic</value>
+        <value>Open-minded seeker</value>
+        <value>Broken heretic</value>
+        <value>Cautious listener</value>
+        <value>Fanatical true believer</value>
+    </table>
+    <table name="Faith and beliefs: The person is prejudice against..." short="Predjudice" id="npc_predjudice" db="_skip">
+        <value>Other genders</value>
+        <value>Children</value>
+        <value>Teenagers</value>
+        <value>Elderly</value>
+        <value>The rulling class and authority figures</value>
+        <value>Powerful rich</value>
+        <value>Destitute poor</value>
+        <value>Beggars</value>
+        <value>Drunks</value>
+        <value>Drug-users</value>
+        <value>Farmers</value>
+        <value>Artists</value>
+        <value>Clergy</value>
+        <value>Soldiers</value>
+        <value>Fishers</value>
+        <value>Harlots</value>
+        <value>Miners</value>
+        <value>Merchants</value>
+        <value>Scholars</value>
+        <value>Herders</value>
+        <value>Sailors</value>
+        <value>Mages</value>
+        <value>Dwarves</value>
+        <value>Elves</value>
+        <value>Gnomes</value>
+        <value>Goblins</value>
+        <value>Half-breeds</value>
+        <value>Halflings</value>
+        <value>Humans</value>
+        <value>Orcs</value>
+        <value>Reptilians</value>
+    </table>
+    <table name="Flaws: The person..." short="Flaw" id="npc_flaw" db="flaws">
+        <value>Fidgets</value>
+        <value>Drinks too much</value>
+        <value>Eats too much</value>
+        <value>Swears often</value>
+        <value>Has poor hygiene</value>
+        <value>Can't resist flirting</value>
+        <value>Can't stop staring</value>
+        <value>Sweats profusely and easily</value>
+        <value>Is a habitual liar</value>
+        <value>Embellishes the truth</value>
+        <value>Exaggerates details</value>
+        <value>Has a short temper</value>
+        <value>Is melodramatic</value>
+        <value>Gossips</value>
+        <value>Chews with an open mouth</value>
+        <value>Often sniffs audibly</value>
+        <value>Believes what you tell him/her</value>
+        <value>Is skeptical of everything</value>
+        <value>Paces</value>
+        <value>Makes poor eye contact</value>
+    </table>
+</category>

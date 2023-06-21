@@ -1,0 +1,111 @@
+<category name="Gnome" id="gnome" link="appearance">
+    <table name="The gnome is..." id="gnome_is">
+        <value>A bookish potionmaker.</value>
+        <value region_start="11" region_end="20" region_include="alchemist">A half-mad alchemist.</value>
+        <value region_start="14" region_end="22" region_include="wizard">A charismatic magician.</value>
+        <value region_start="9" region_end="20" region_include="wizard">A tricky illusionist.</value>
+        <value>A skilled gem-cutter.</value>
+        <value>An absent-minded jeweler.</value>
+        <value region_start="13" region_end="17" region_include="cook">An inventive cook.</value>
+        <value>A restless tinker.</value>
+        <value>A high-strung clockmaker.</value>
+        <value region_start="14" region_end="20" region_include="bard">A mischievous singer.</value>
+        <value region_start="11" region_end="19" region_include="bard">A boastful musician.</value>
+        <value region_start="8" region_end="19" region_include="bard">A witty storyteller.</value>
+        <value region_start="12" region_end="16" region_include="bard">A whimsical poet.</value>
+        <value region_start="9" region_end="14" region_include="miner">A shrewd miner.</value>
+        <value>A daring explorer.</value>
+        <value region_start="17" region_end="22" region_include="thief">A happy-go-lucky thief.</value>
+        <value>A cheerful birdwatcher.</value>
+        <value>A cautious woodland guide.</value>
+        <value region_start="9" region_end="17" region_include="merchant">A clever merchant.</value>
+        <value region_start="13" region_end="20" region_include="merchant">An eccentric peddler.</value>
+    </table>
+    <table name="The gnome has..." id="gnome_has">
+        <value>Bright green eyes.</value>
+        <value>Piercing blue eyes.</value>
+        <value>Golden brown eyes.</value>
+        <value>A neatly cropped beard.</value>
+        <value>A carefully curled beard.</value>
+        <value>Hair growing out of the ears.</value>
+        <value>A shiny gold tooth.</value>
+        <value>Several gold teeth.</value>
+        <value>A waddling gait.</value>
+        <value>A scampering gait.</value>
+    </table>
+    <table name="The gnome is wearing..." id="gnome_wearing">
+        <value>A pointy, red cap.</value>
+        <value>A pointy, blue cap.</value>
+        <value>A pointy, green cap.</value>
+        <value>A cap that is too big.</value>
+        <value>A cap that is too small.</value>
+        <value>A traveler's cloak with a hood.</value>
+        <value>A dusty traveler's cloak.</value>
+        <value>A patched traveler's cloak.</value>
+        <value>A vest with many pockets.</value>
+        <value>A vest with lacy fringes.</value>
+    </table>
+    <table name="...and..." id="gnome_wearingand">
+        <value>Well-worn boots.</value>
+        <value>Boots with shiny, silver buckles.</value>
+        <value>Boots with mechanical crampons.</value>
+        <value region_start="2|27" region_end="6|35" region_include="__noun__|__noun__">A ring with a large purple gemstone.</value>
+        <value region_start="2|26" region_end="6|34" region_include="__noun__|__noun__">A ring with a flashy blue gemstone.</value>
+        <value region_start="2|23" region_end="6|31" region_include="__noun__|__noun__">A ring with a deep red gemstone.</value>
+        <value region_start="2|30" region_end="6|38" region_include="__noun__|__noun__">A ring with a brilliant green gemstone.</value>
+        <value>A pair of wire-framed spectacles.</value>
+        <value>A pair of multi-lens eyeglasses.</value>
+        <value>Goggles with several magnification settings.</value>
+    </table>
+    <table name="The gnome is carrying..." id="gnome_carrying">
+        <value>Several glass vials and a set of scales.</value>
+        <value region_start="2" region_end="6" region_include="wands">A wand of yew wood.</value>
+        <value region_start="2" region_end="6" region_include="wands">A wand of elderberry wood.</value>
+        <value>A small rock hammer.</value>
+        <value>A frying pan and a wooden spoon.</value>
+        <value>A set of hammers, awls, vises, and other tools.</value>
+        <value>A mining pick.</value>
+        <value>A set of lock picks and a crowbar.</value>
+        <value>A notebook and an ink pen.</value>
+        <value region_start="15" region_end="28" region_include="junk">A sack full of odds and ends.</value>
+    </table>
+    <table name="...and..." is="gnome_carryingand">
+        <value>A stoppered glass bottle and a pair of tweezers.</value>
+        <value>A set of jeweler's tools.</value>
+        <value>Several spare gears and springs.</value>
+        <value>A flute.</value>
+        <value>A tambourine.</value>
+        <value region_start="2" region_end="6" region_include="book">A book of tales.</value>
+        <value region_start="2" region_end="6" region_include="book">A book of poems.</value>
+        <value>A well-used lantern.</value>
+        <value>A field guide to flora and fauna.</value>
+        <value>A field guide to herbs and poisons.</value>
+    </table>
+    <table name="Presently, the gnome is looking for..." id="gnome_looking">
+        <value region_start="25" region_end="30" region_include="__noun__">Protection from an angry giant.</value>
+        <value region_start="27" region_end="34" region_include="goblinclan">Protection from some tricky goblins.</value>
+        <value region_start="7|24" region_end="17|30" region_include="__noun__|potions">A rare ingredient for a potion</value>
+        <value region_start="7|24" region_end="17|30" region_include="__noun__|poisons">A rare ingredient for a poison</value>
+        <value region_start="7" region_end="11" region_include="book">A lost book of arcane secrets.</value>
+        <value region_start="20" region_end="27" region_include="potions">Someone to buy some potions.</value>
+        <value>Someone from whom to palm a few coins.</value>
+        <value region_start="31" region_end="37" region_include="__noun__">An opinion on some plans for a device.</value>
+        <value>An unusually shaped gear or spring.</value>
+        <value region_start="32" region_end="36" region_include="wines">Someone with whom to share some wine.</value>
+        <value>A cup of ale or wine and a good tale.</value>
+    </table>
+    <table name="...but the gnome is also interested in finding..." is="gnome_finding">
+        <value region_start="24" region_end="30" region_include="potions">The recipe for a potent potion.</value>
+        <value region_start="24" region_end="30" region_include="poisons">The recipe for a potent poison.</value>
+        <value region_start="12" region_end="16" region_include="book">A copy of a book of lore on dangerous beasts.</value>
+        <value>Something with which to tinker.</value>
+        <value region_start="26" region_end="30" region_include="mine">The location of a storied mine.</value>
+        <value region_start="12" region_end="20" region_include="__noun__">A legendary gemstone.</value>
+        <value>New soup recipes.</value>
+        <value>New uses for cabbages and turnips.</value>
+        <value region_start="4|21" region_end="8|26" region_include="wands|witch">The wand of a famous witch.</value>
+        <value region_start="4|21" region_end="8|27" region_include="wands|wizard">The wand of a famous wizard.</value>
+        <value region_start="14|39" region_end="23|50" region_include="__noun__|wizard">The long lost spellbook of a legendary illusionist.</value>
+        <value region_start="7" region_end="15" region_include="__noun__">A rare songbird.</value>
+    </table>
+</category>

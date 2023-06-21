@@ -1,0 +1,85 @@
+<category name="Spider" id="spider">
+    <table name="The spider is" id="color">
+        <value>black</value>
+        <value>dark grey</value>
+        <value>dark brown</value>
+        <value>black and brown</value>
+        <value>black and grey</value>
+        <value>pale brown</value>
+        <value>brown and grey</value>
+        <value>reddish brown</value>
+    </table>
+    <table name="It has" id="has">
+        <value>pale banding on its legs</value>
+        <value>dark banding on its legs</value>
+        <value>bright orange banding on its legs</value>
+        <value>bright red banding on its legs</value>
+        <value>bright white banding on its legs</value>
+        <value>bright yellow banding on its legs</value>
+        <value>pale stripes down its abdomen</value>
+        <value>dark stripes down its abdomen</value>
+        <value>a distinct, crimson arrowhead shape on its abdomen</value>
+        <value>a distinct, crimson pair of eye-like spots on its abdomen</value>
+        <value>a distinct, crimson hourglass shape on its abdomen</value>
+        <value>a distinct, crimson star shape on its abdomen</value>
+        <value>a distinct, black or dark grey arrowhead shape on its abdomen</value>
+        <value>a distinct, black or dark grey diamond shape on its abdomen</value>
+        <value>a distinct, black or dark grey pair of wavy lines on its abdomen</value>
+        <value>a distinct, black or dark grey star shape on its abdomen</value>
+        <value>no obvious marking</value>
+    </table>
+    <table name="Its eyes are" id="eyes">
+        <value>dull and black</value>
+        <value>reflective and black</value>
+        <value>dark grey, almost black</value>
+        <value>dark red</value>
+        <value>bright red</value>
+        <value>pearly white</value>
+    </table>
+    <table name="Its mouth is" id="mouth">
+        <value>flanked by fangs, dripping venom</value>
+        <value>flanked by hooked fangs</value>
+        <value>flanked by hairy chelicerae, each ending in a sharp fang</value>
+        <value>flanked by chelicerae, covered in hair that hides any fangs</value>
+        <value>hungrily opening and closing</value>
+        <value>yawning open</value>
+    </table>
+    <table name="Its venom can cause" id="venom">
+        <value>paralysis</value>
+        <value>loss of consciousness</value>
+        <value>nausea</value>
+        <value>headache</value>
+        <value>loss of coordination</value>
+        <value>blindness</value>
+        <value>dizziness</value>
+        <value>shortness of breath</value>
+    </table>
+    <table name="It prefers to" id="prefers">
+        <value>pick off weak, easy prey</value>
+        <value>pursue its prey until the opportune time to strike</value>
+        <value>lay web traps and wait</value>
+        <value>incapacitate prey, wrap it in webbing and carry it off to its larder</value>
+        <value>ambush prey in territory the spider knows well</value>
+        <value>poison its prey and then retreat, following the prey until it falls</value>
+    </table>
+    <table name="It spins" id="spins">
+        <value>sheet-like webs</value>
+        <value>webs with radial symmetry</value>
+        <value>webs with triangular symmetry</value>
+        <value>webs with hexagonal symmetry</value>
+        <value>webs with irregular shapes</value>
+        <value>almost no webs; the spider is constantly on the move and on the hunt.</value>
+    </table>
+    <table name="This type of spider evolved to thrive" id="thrive">
+        <value region_start="3" region_end="10" region_include="caverns">in caverns</value>
+        <value>on cliff-sides</value>
+        <value region_start="7" region_end="13" region_include="naturalforest">on the forest floor</value>
+        <value region_start="3" region_end="13" region_include="plains">in grasslands</value>
+        <value region_start="3" region_end="10" region_include="jungle">in jungles</value>
+        <value region_start="9" region_end="16" region_include="naturaldesert">in rocky deserts</value>
+        <value>in rotting logs</value>
+        <value>in shallow burrows</value>
+        <value region_start="3" region_end="9" region_include="swamp">in swamps</value>
+        <value>in treetops</value>
+    </table>
+</category>

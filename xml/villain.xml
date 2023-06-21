@@ -1,0 +1,316 @@
+<category name="Villain" id="villain">
+    <name name="The villain's name is..."/>
+    <table name="The villain started as..." id="started">
+        <value>A commoner</value>
+        <value region_start="16" region_end="22" region_include="__noun__">A member of the clergy</value>
+        <value region_start="21" region_end="27" region_include="__noun__">An apprentice to the clergy</value>
+        <value region_start="14" region_end="21" region_include="artisan">An apprentice artisan</value>
+        <value region_start="14" region_end="19" region_include="armorsmith">An apprentice smith</value>
+        <value region_start="14" region_end="25" region_include="noblehouse">A member of a noble house</value>
+        <value>A street urchin</value>
+        <value>A mayor</value>
+        <value>A constable or sheriff</value>
+        <value region_start="2" region_end="11" region_include="mercenary">A mercenary</value>
+        <value region_start="2" region_end="7" region_include="guard">A guard</value>
+        <value region_start="3" region_end="13" region_include="npc">An adventurer</value>
+        <value region_start="24" region_end="29" region_include="guilds">A low-level member of a guild</value>
+        <value region_start="2" region_end="7" region_include="guilds">A guild leader</value>
+        <value region_start="2" region_end="11" region_include="traveler">A traveller</value>
+        <value region_start="2" region_end="10" region_include="merchant">A merchant</value>
+        <value region_start="14" region_end="26" region_include="secretsociety">A member of a secret order</value>
+        <value region_start="2" region_end="9" region_include="__noun__">A scholar</value>
+        <value region_start="2" region_end="7" region_include="__noun__">A slave</value>
+        <value region_start="15" region_end="19" region_include="nobleman">A servant to a lord</value>
+    </table>
+    <table name="The villain turned (how long ago)..." id="turned">
+        <value>Recently</value>
+        <value region_start="6" region_end="13" region_include="__noun__">At an old age</value>
+        <value>In his middle years</value>
+        <value region_start="5" region_end="14" region_include="__noun__">At a young age</value>
+        <value region_start="5" region_end="10" region_include="__noun__">As a child</value>
+        <value>The day he was born, he has always had a darkness</value>
+    </table>
+    <table name="The villain turned (how quickly)..." id="quick">
+        <value>Suddenly</value>
+        <value>Over a few days</value>
+        <value>Over the course of a year</value>
+        <value>Slowly, over the course of a very long time</value>
+    </table>
+    <table name="The villain turned because..." id="because">
+        <value region_start="21" region_end="33" region_include="__noun__">He was betrayed by a close friend</value>
+        <value region_start="21" region_end="26" region_include="__noun__">He was betrayed by a lover</value>
+        <value region_start="21" region_end="27" region_include="__noun__">He was betrayed by a parent</value>
+        <value region_start="21" region_end="31" region_include="__noun__">He was betrayed by the priesthood</value>
+        <value region_start="21" region_end="29" region_include="noblehouse">He was betrayed by the nobility</value>
+        <value region_start="21" region_end="25" region_include="deity">He was betrayed by the gods</value>
+        <value region_start="23" region_end="29" region_include="__noun__">He was cast out of his family</value>
+        <value region_start="23" region_end="30" region_include="village">He was cast out of his village</value>
+        <value region_start="19" region_end="26" region_include="__noun__">He was cast out of society</value>
+        <value region_start="23" region_end="28" region_include="__noun__">He was cast out by his peers</value>
+        <value region_start="30" region_end="40" region_include="__noun__">He was cast out of his chosen profession</value>
+        <value region_start="21" region_end="32" region_include="__noun__">He was cast out of a noble house</value>
+        <value region_start="28" region_end="36" region_include="killer">His family was killed by an intruder</value>
+        <value region_start="29" region_end="37" region_include="noblehouse">His family was killed by the nobility</value>
+        <value region_start="28" region_end="42" region_include="killer">His family was killed by an unknown person</value>
+        <value>He was nearly killed and left for dead</value>
+        <value region_start="32" region_end="43" region_include="__noun__">He was the subject of grotesque experiments</value>
+        <value>He was forced to fight for his survival against all odds.</value>
+        <value region_start="28" region_end="33" region_include="__noun__">He discovered an unbearable truth</value>
+        <value>He was pushed beyond his limits and went mad</value>
+        <value region_start="43" region_end="50" region_include="__noun__">He believes he is the rightful heir to the kingdom</value>
+        <value region_start="43" region_end="51" region_include="artifacts">He believes he is the rightful owner of an artifact</value>
+        <value region_start="4" region_end="13" region_include="__noun__">His true love was taken from him</value>
+        <value>He believes everyone is out to destroy him</value>
+        <value>He was overwhelmed with power and driven mad</value>
+        <value region_start="9" region_end="24" region_include="__noun__">He got a taste of wealth and become obsessed with gaining more</value>
+        <value region_start="9" region_end="23" region_include="__noun__">He got a taste of power and become obsessed with gaining more</value>
+        <value>He believes he is the only one to save a people at all costs</value>
+        <value>He believes he must save a people from themselves</value>
+        <value region_start="46" region_end="53" region_include="__noun__">He got lost on a mission to prove his love to another</value>
+        <value region_start="18" region_end="37" region_include="__noun__">He got a taste of forbidden knowledge, and it drove him mad</value>
+        <value region_start="18" region_end="37" region_include="__noun__">He got a taste of forbidden knowledge, and became obsessed with learning more</value>
+        <value region_start="16" region_end="27" region_include="__noun__">He learned of a dark secret, and it seduced him</value>
+        <value region_start="38" region_end="43" region_include="__noun__">He was seduced by the love of an evil woman</value>
+        <value region_start="38" region_end="43" region_include="__noun__">He was seduced by the lust of an evil woman</value>
+        <value region_start="34" region_end="39" region_include="__noun__">He was seduced then betrayed by a woman</value>
+        <value region_start="36" region_end="56" region_include="__noun__">He was taken in, then cast out by a father/mother figure</value>
+        <value region_start="36" region_end="46" region_include="npc">He was taken in, then seduced by a personal hero</value>
+        <value>He is bound by a code to do good, and will achieve the ultimate good even at all costs</value>
+        <value>He is constantly on the defence from usurpers</value>
+        <value region_start="24" region_end="29" region_include="__noun__">He was passed over by a woman that he loved, who never noticed him</value>
+        <value>He came to believe himself to be an important albeit evil part of balance</value>
+        <value region_start="39" region_end="44" region_include="world">He became seduced by the idea that the world was too good, and stagnant. He took on a mantle of opposition to instigate change</value>
+        <value>It was simply fun</value>
+        <value region_start="29" region_end="39" region_include="__noun__">He was driven mad by his own experiment</value>
+        <value region_start="46" region_end="56" region_include="__noun__">He was driven mad by continuing to fail at an experiment</value>
+        <value region_start="16" region_end="24" region_include="divination">He learned of a prophesy that predicted the loss of his power</value>
+        <value region_start="16" region_end="24" region_include="divination">He learned of a prophesy that predicted the loss of his wealth</value>
+        <value region_start="16|46" region_end="24|52" region_include="divination|__noun__">He learned of a prophesy that predicted the loss of his spouse/lover</value>
+        <value region_start="16|46" region_end="24|54" region_include="divination|__noun__">He learned of a prophesy that predicted the loss of his children</value>
+        <value region_start="16|46" region_end="24|53" region_include="divination|__noun__">He learned of a prophesy that predicted the loss of his parents</value>
+        <value region_start="16|46" region_end="24|54" region_include="divination|__noun__">He learned of a prophesy that predicted the loss of his siblings</value>
+        <value region_start="16" region_end="24" region_include="divination">He learned of a prophesy that predicted his death</value>
+        <value region_start="16|46" region_end="24|53" region_include="divination|__noun__">He learned of a prophesy that predicted the loss of his station</value>
+        <value region_start="16" region_end="24" region_include="divination">He learned of a prophesy that predicted the loss of his influence</value>
+        <value region_start="18" region_end="27" region_include="__noun__">He learned of his successor</value>
+        <value>He was promised great power</value>
+        <value>He was promised great wealth</value>
+        <value>He was promised a great lover</value>
+        <value>He is not evil, and never turned. He is just perceived that way</value>
+        <value>He is not inherently evil, it is just in his nature</value>
+        <value region_start="55" region_end="62" region_include="__noun__">He is not inherently evil, that is just the way of his society</value>
+        <value region_start="26" region_end="37" region_include="__noun__">He became possessed by an evil entity</value>
+        <value>He was pushed to the edge by boredom</value>
+        <value>He was pushed to the edge by the lack of a physical challenge</value>
+        <value>He was pushed to the edge by the lack of an intellectual challenge</value>
+        <value region_start="7" region_end="17" region_include="divination">It was prophesied, and he embraced his destiny</value>
+        <value region_start="7" region_end="17" region_include="divination">It was prophesied, and ironically in fighting his destiny he became what he feared</value>
+        <value region_start="62" region_end="69" region_include="__noun__">He did not choose evil, but he is the most skilled in an evil society</value>
+        <value region_start="63" region_end="70" region_include="__noun__">He did not choose evil, but he is the most powerful of an evil society</value>
+        <value region_start="4" region_end="7" region_include="__noun__">His mom didn't love him enough</value>
+        <value region_start="25" region_end="30" region_include="world">He just wants to see the world burn</value>
+        <value region_start="10" region_end="14" region_include="__noun__">A special item was stolen from him</value>
+        <value region_start="4" region_end="11" region_include="__noun__">His parents were kidnapped</value>
+        <value region_start="2" region_end="9" region_include="__noun__">A sibling was kidnapped</value>
+        <value region_start="4" region_end="9" region_include="__noun__">His child was kidnapped</value>
+        <value>He was kidnapped</value>
+        <value region_start="8" region_end="14" region_include="__noun__">A close friend was kidnapped</value>
+        <value region_start="27" region_end="37" region_include="__noun__">He was caught up in a deep conspiracy</value>
+        <value>He was groomed from an early age</value>
+        <value region_start="7" region_end="18" region_include="__noun__">He was brainwashed</value>
+        <value>He was tortured to the breaking point</value>
+        <value region_start="21" region_end="28" region_include="__noun__">He has seen too many horrors</value>
+        <value region_start="26|66" region_end="33|73" region_include="__noun__|__noun__">He was passed over by his parents in favour of his less deserving sibling</value>
+        <value region_start="41" region_end="48" region_include="__noun__">He felt the need to prove himself to his parents</value>
+        <value>He started listening to the voices in his head</value>
+        <value>He had an overdeveloped sense of personal space</value>
+        <value>He grew extremely paranoid</value>
+        <value>He became partially separated from the material world</value>
+        <value region_start="13" region_end="18" region_include="__noun__">He visited a plane of torment</value>
+        <value>He developed a sense of intense loneliness.</value>
+        <value>He developed a fear that everyone was going to leave him</value>
+        <value>He developed a fear that no one would ever love him</value>
+        <value>He was separated from the world for a very long time</value>
+        <value>He was secluded from the world since birth</value>
+        <value>He wanted his name to go down in the ages</value>
+        <value>He didn't realize he was doing evil, he was just protecting himself</value>
+        <value region_start="21" region_end="28" region_include="__noun__">He was going to make someone listen at any cost</value>
+        <value region_start="31" region_end="40" region_include="__noun__">He had no choice. He was being compelled</value>
+        <value region_start="20" region_end="29" region_include="__noun__">He was out to prove something, and went to far</value>
+    </table>
+    <table name="The villain has..." id="has">
+        <value>A steep brow casting a shadow over his eyes</value>
+        <value>A maniacal laugh</value>
+        <value>A wry grin</value>
+        <value>A sharpened tooth</value>
+        <value region_start="2" region_end="7" region_include="__noun__">A charm with tokens from his favourite victims</value>
+        <value region_start="2" region_end="9" region_include="__noun__">A memento of his greatest triumph</value>
+        <value>A scar on his face</value>
+        <value>Unusual facial hair</value>
+        <value>Unusual clothing</value>
+        <value>A completely bald body</value>
+        <value>Albinism</value>
+        <value>A face that resembles a hawk</value>
+        <value>A face that resembles a wolf</value>
+        <value>A face that resembles a bear</value>
+        <value>A face that resembles a fox</value>
+        <value>A face that resembles a dragon</value>
+        <value>The voice of angels</value>
+        <value>The voice of demons</value>
+        <value>No voice</value>
+        <value>Scars covering his body</value>
+        <value>A missing ear</value>
+        <value>A missing eye</value>
+        <value>A missing arm</value>
+        <value>A missing nose</value>
+        <value>No eyes</value>
+        <value>Missing fingers</value>
+        <value>Extra fingers</value>
+        <value>A smile no one can resist</value>
+        <value region_start="23" region_end="32" region_include="__noun__">Never been seen in his true form</value>
+        <value region_start="8" region_end="16" region_include="__noun__">Unusual coloured skin</value>
+        <value region_start="2" region_end="18" region_include="legendary_weapon">A legendary weapon</value>
+        <value>A gaze that can see into your soul</value>
+        <value>A permanent frown</value>
+        <value region_start="12" region_end="20" region_include="__noun__">Exaggerated features</value>
+        <value>A massive stature</value>
+        <value>A diminutive stature</value>
+        <value region_start="15" region_end="20" region_include="__noun__">A full body of armor</value>
+        <value>A completely painted face</value>
+        <value>A face painted with tribal markings</value>
+        <value>A face painted war paint</value>
+        <value>A partially hidden face</value>
+        <value>A face hidden in the shadows</value>
+        <value>No pupils</value>
+        <value>No special features. He could be anyone</value>
+        <value region_start="10" region_end="18" region_include="artifacts">A magical artifact</value>
+        <value region_start="9" region_end="15" region_include="__noun__">A golden broach</value>
+        <value>A flowing cape</value>
+        <value region_start="2" region_end="9" region_include="__noun__">A memento of his last victim</value>
+        <value region_start="14" region_end="21" region_include="__noun__">Sigils of his station</value>
+    </table>
+    <table name="The villain's current goal is..." is="goal">
+        <value>Revenge</value>
+        <value region_start="9" region_end="13" region_include="__noun__">Steal an item</value>
+        <value region_start="7" region_end="14" region_include="__noun__">Murder someone</value>
+        <value region_start="32" region_end="37" region_include="guilds">Become the boss of a company or guild</value>
+        <value>Become wealthy</value>
+        <value>Raise an army</value>
+        <value>Genocide</value>
+        <value region_start="10" region_end="17" region_include="village">Destroy a village</value>
+        <value region_start="10" region_end="17" region_include="__noun__">Enslave a species</value>
+        <value region_start="10" region_end="17" region_include="village">Enslave a village</value>
+        <value>Start a rebellion</value>
+        <value region_start="9" region_end="17" region_include="artifacts">Build an artifact</value>
+        <value>Become the King or Queen</value>
+        <value>Become nobility</value>
+        <value>Take over the empire</value>
+        <value region_start="31" region_end="34" region_include="deity">Raise a dead/sleeping/banished god</value>
+        <value>Become a deity</value>
+        <value>Become a lich</value>
+        <value region_start="19" region_end="24" region_include="world">Destroy/Remake the world</value>
+        <value>One-up himself</value>
+    </table>
+    <table name="The villain will oppose the party..." id="oppose">
+        <value>Directly</value>
+        <value>Indirectly</value>
+    </table>
+    <table name="The villain is a..." id="is">
+        <value region_start="0" region_end="5" region_include="appearance">Human</value>
+        <value region_start="0" region_end="6" region_include="goblin">Goblin</value>
+        <value region_start="0" region_end="6" region_include="dragon">Dragon</value>
+        <value region_start="0" region_end="3" region_include="orc">Orc</value>
+        <value>Ogre</value>
+        <value region_start="0" region_end="6" region_include="kobold">Kobold</value>
+        <value region_start="0" region_end="4" region_include="undead">Lich</value>
+        <value region_start="0" region_end="5" region_include="fiend">Fiend</value>
+        <value>Celestial</value>
+        <value>Banshee</value>
+        <value>Beholder</value>
+        <value>Centaur</value>
+        <value>Devil</value>
+        <value>Doppelganger</value>
+        <value>Dracolich</value>
+        <value>Dryad</value>
+        <value>Duergar</value>
+        <value region_start="0" region_end="8" region_include="highelf">High Elf</value>
+        <value region_start="0" region_end="8" region_include="woodlef">Wood Elf</value>
+        <value region_start="0" region_end="8" region_include="darkelf">Dark Elf</value>
+        <value region_start="9" region_end="14" region_include="dwarf">Mountain Dwarf</value>
+        <value region_start="5" region_end="10" region_include="dwarf">Hill Dwarf</value>
+        <value region_start="0" region_end="5" region_include="gnome">Gnome</value>
+        <value region_start="0" region_end="3" region_include="deity">God</value>
+        <value region_start="0" region_end="5" region_include="deity">Deity</value>
+        <value region_start="0" region_end="5" region_include="undead">Ghost</value>
+        <value>Giant</value>
+        <value>Half-Dragon</value>
+        <value>Lamia</value>
+        <value region_start="0" region_end="10" region_include="lizardfolk">Lizardfolk</value>
+        <value region_start="0" region_end="11" region_include="lycanthrope">Lycanthrope</value>
+        <value>Medusa</value>
+        <value>Mind Flayer</value>
+        <value>Naga</value>
+        <value region_start="0" region_end="6" region_include="faerie">Faerie</value>
+        <value region_start="0" region_end="7" region_include="vampire">Vampire</value>
+        <value region_start="0" region_end="6" region_include="undead">Wraith</value>
+        <value>Yuan-ti</value>
+        <value>Tiefling</value>
+        <value region_start="12" region_end="15" region_include="deity">Avatar of a God</value>
+    </table>
+    <table name="The villain leads through..." id="leads">
+        <value>Charisma. His followers love him unquestioningly</value>
+        <value>Charisma. He has a silver tongue</value>
+        <value>Enchantment. His followers are all under his command</value>
+        <value>Legend. Stories of him may be bigger than he is</value>
+        <value>Force of will. There is no better alternative</value>
+        <value>Terror. Join him or die</value>
+        <value>Greed. Join him and be well rewarded</value>
+        <value>Eternity. Join him and be rewarded in the afterlife</value>
+        <value>Intelligence. He has calculated his every move. To oppose him would be folly</value>
+        <value>Omniscience. If you don't follow, he will know.</value>
+        <value>Strength. He is the most powerful individual</value>
+        <value>Strength. He commands the greatest armies</value>
+        <value>Strength. He rules the greatest empire</value>
+        <value>Intelligence. His followers don't know they follow him</value>
+        <value>Force. He can not be defeated</value>
+        <value>Loyalty. His subjects revere his station</value>
+        <value>Profits. He pays his minions well</value>
+        <value>Damnation. Follow him, or be damned in the afterlife</value>
+        <value>Promises of Power.</value>
+        <value>Manipulation. Everyone is a pawn of a bigger game</value>
+    </table>
+    <table name="The villain's minions are..." id="minions">
+        <value region_start="9" region_end="14" region_include="secretsociety">A secret cabal devoted to him/her</value>
+        <value region_start="2" region_end="8" region_include="__noun__" >A nation devoted to him/her</value>
+        <value>A select few lieutenants</value>
+        <value>Vast and numerous, but don't know they follow him/her</value>
+        <value region_start="13" region_end="18" region_include="guilds">Members of a guild</value>
+        <value>Mercenaries and adventurers</value>
+        <value>Natural creatures</value>
+        <value>Dragons</value>
+        <value>Warring between each other. Each believing they are superior to the other</value>
+        <value>None. She/He works alone</value>
+    </table>
+    <table name="Despite being evil, his qualities include..." id="qualities">
+        <value region_start="16" region_end="21" region_include="__noun__">True love for a child</value>
+        <value region_start="16" region_end="22" region_include="__noun__">True love for a spouse</value>
+        <value region_start="16" region_end="22" region_include="__noun__">True love for a parent</value>
+        <value>Love of nature and it's inhabitants</value>
+        <value>He treats his minions with respect</value>
+        <value>After conquering a people, he improves their lives</value>
+        <value>He spends time meditating daily</value>
+        <value>He gardens</value>
+        <value>He donates to charity</value>
+        <value>He takes care of the sick</value>
+        <value>He takes care of the elderly</value>
+        <value>He takes pride in artwork</value>
+        <value>He loves music</value>
+        <value>He spares the weak</value>
+        <value>He does not harm the undeserving</value>
+        <value>He ultimately seeks order</value>
+        <value>He gives away all of his riches</value>
+        <value>He truly believes he is doing good</value>
+        <value>He is a scholar</value>
+        <value region_start="23" region_end="33" region_include="__noun__">He is the creator of a great good</value>
+    </table>
+</category>

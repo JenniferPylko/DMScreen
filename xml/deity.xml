@@ -1,0 +1,281 @@
+        <category name="Deity" id="deity">
+            <name name="The deity's name is..." />
+            <table name="The deity's primary domain is..." id="deity_domain">
+                <value>Blood</value>
+                <value>Penitence</value>
+                <value>Dreams</value>
+                <value>Truth</value>
+                <value>Secrets</value>
+                <value>Vengeance</value>
+                <value>Sexuality and Gender</value>
+                <value>Wealth</value>
+                <value id="deity_domain_storms">Storms</value>
+                <value>Fire</value>
+                <value>Chemistry</value>
+                <value>Radiation</value>
+                <value>Language</value>
+                <value>Lies</value>
+                <value>Forgiveness</value>
+                <value>Judgement</value>
+                <value>Transformation</value>
+                <value>Purification</value>
+                <value>Joy</value>
+                <value>The Hunt</value>
+                <value>Night &amp; Day</value>
+                <value>Animals</value>
+                <value>Weddings</value>
+                <value>Hope</value>
+                <value>Law</value>
+                <value>Strength</value>
+                <value>Abundance</value>
+                <value>Marriage</value>
+                <value>Infamy</value>
+                <value>The Rivers</value>
+                <value>Trade</value>
+                <value>Winter</value>
+                <value>Hunting</value>
+                <value>Duty</value>
+                <value>Children</value>
+                <value>Dusk</value>
+                <value>Jealousy</value>
+                <value>Wind</value>
+                <value>Messages</value>
+                <value>Pleasure</value>
+                <value>War</value>
+                <value>Dead</value>
+                <value>Shadows</value>
+                <value>Life</value>
+                <value>Funerals</value>
+                <value>Music</value>
+                <value>The Dark</value>
+                <value>The Afterlife</value>
+                <value>Miracles</value>
+                <value>Fertility</value>
+                <value>Time</value>
+                <value>Science</value>
+                <value>Oracles</value>
+                <value>Victory</value>
+                <value>Health</value>
+                <value>Thunder</value>
+                <value>Logic</value>
+                <value>The Land</value>
+                <value id="deity_domain_sea">The Sea</value>
+                <value>The Hearth</value>
+                <value>Finance</value>
+                <value>Freedom</value>
+                <value>The Sky</value>
+                <value>Prosperity</value>
+                <value>Agriculture</value>
+                <value>Destiny</value>
+                <value>Tricks</value>
+                <value>The Sun</value>
+                <value>Honesty</value>
+                <value>Torture</value>
+                <value>Medicine</value>
+                <value>Wine</value>
+                <value>The Military</value>
+                <value>Earth</value>
+                <value>Wisdom</value>
+                <value>Night</value>
+                <value>Governance</value>
+                <value>Beginnings</value>
+                <value>Beauty</value>
+                <value>Beer</value>
+                <value>Fire</value>
+                <value>Life &amp; Death</value>
+                <value>Death</value>
+                <value>Tranquillity</value>
+                <value>Work</value>
+                <value>Blacksmiths</value>
+                <value>Mercy</value>
+                <value>Envy</value>
+                <value>Day</value>
+                <value>Harvest</value>
+                <value>Magic</value>
+                <value>Youth</value>
+                <value>Home</value>
+                <value>Jealousy</value>
+                <value>The Underworld</value>
+                <value>Battle</value>
+                <value>Fortune</value>
+                <value>The Afterlife</value>
+                <value>Education</value>
+                <value>The Moon</value>
+                <value>Misfortune</value>
+                <value>Virtues</value>
+            </table>
+            <table name="The deity's secondary domain is..." id="secondary">
+                <value>Reconciliation</value>
+                <value>Nausea</value>
+                <value>Dignity</value>
+                <value>Meat</value>
+                <value>Navigation</value>
+                <value>Poisons and Toxins</value>
+                <value>Monstrosity</value>
+                <value>Sacrifice</value>
+                <value>Disease</value>
+                <value>Ethanol</value>
+                <value>True Names</value>
+                <value>Ghosts</value>
+                <value>Orthodoxy</value>
+                <value>Safety</value>
+                <value>Invisibility</value>
+                <value>Delusions</value>
+                <value>Questions</value>
+                <value>Law and Inverse Law</value>
+                <value>Learning</value>
+                <value>Absence and Presence</value>
+            </table>
+            <table name="The deity is also possibly associated with..." id="assoc">
+                <value>Smoke and Ash, Contentment, Worry</value>
+                <value>Dust, Wasting, Earth</value>
+                <value>The Deep Ocean, Magic, Curses</value>
+                <value>Salt, Brine, Dissolution, Decay</value>
+                <value>Sky-Burial, Sacrifice, Platonic Ideals</value>
+                <value>The Sky, The Cosmos, The Endless Dark</value>
+                <value>Crocodilians, Smiles, Tears, Pleasure</value>
+                <value>Snakes and Frogs, Conflict, Contention</value>
+                <value>Moths and Locusts, Vermin, Hunger</value>
+                <value>Swine, Food and The Culinary, Labour</value>
+                <value>Endless Birth, Endless Consumption</value>
+                <value>Tending to Fear, Comfort, Emotional Closeness</value>
+            </table>
+            <table name="The deity can manifest as..." id="manifest">
+                <value>Intangible Liquid</value>
+                <value>Shifting Mass</value>
+                <value>Large Cat</value>
+                <value>Giant Crow</value>
+                <value>Ancient Tree</value>
+                <value>Skeleton</value>
+                <value>Viscera</value>
+                <value>Old Human</value>
+                <value>Young Human</value>
+                <value>Mirror</value>
+                <value>Instrument</value>
+                <value>Abomination</value>
+            </table>
+            <table name="...with an aesthetic of..." id="aesthetic">
+                <value>Golden Bells</value>
+                <value>Knives, Too Many</value>
+                <value>Putridity</value>
+                <value>Being Mummified, Crucified</value>
+                <value>Resplendence in The Warm Dark</value>
+                <value>Ghostly</value>
+                <value>Overgrown With Plant life</value>
+                <value>Veiled and Still</value>
+                <value>Immaculate</value>
+                <value>Mercurial</value>
+                <value>Dissolving and Reforming</value>
+                <value>Being A Nest of Serpents</value>
+                <value>Being Parasite-riddled</value>
+                <value>Sleeping or Comatose</value>
+                <value>Being Incredibly Far and Incredibly Close</value>
+                <value>Minuscule</value>
+                <value>Bedecked in Finery, Gems, Poisons</value>
+                <value>Surrounded by Corpse-Smoke</value>
+                <value>Hateful</value>
+                <value>Chimerical</value>
+            </table>
+            <table name="The deity has a fixed, singular appearance..." id="appearance">
+                <value>Affixed to a tree with nine nails through its fragile, frog-like body.</value>
+                <value>Vaguely-human mass of smoke and honeycombed muscle.</value>
+                <value>Silver-masked and bearlike and sodden, wailing to speak, crowned in rain.</value>
+                <value>A stone like a mouth with huge teeth drooling rainwater.</value>
+                <value region_start="7" region_end="10" region_include="cat">Like a cat and then several cats all at once and then a single cat again.</value>
+                <value>Helmet like a birdcage, head burnt and almost gone in a wreath of fire. No legs, instead seven eels and ten tentacles.</value>
+                <value>Magpie large as a horse, sour-smelling, foul bile all over its toothy beak.</value>
+                <value>Huge dancing pig with crafty eyes, fangs, a nasty laugh, a tongue like a snake.</value>
+                <value>Plaited beard to its waist, face is nothing but a single gasping, gaping mouth.</value>
+                <value>A pair, armored in silver and lead, one with a helmet of a withered elder, the other a grinning crocodilian.</value>
+                <value>Crusted in heavy layers of wax over plate mail. Has hundreds of candles burning atop its shoulders.</value>
+                <value>An owl-like bird, face-feathers in a trefoil, face spinning into eyes and then a skull and then back to an owl face.</value>
+                <value>A knot of roots pulling itself along just beneath the ground, tearing up earth.</value>
+                <value>Dogs with human hands and human grins and human teeth, whistling, cleaning their fingernails with thorns.</value>
+                <value>Flowers and dense thorns wrapped around prone bleached bones, fingers clutched in fervent prayer.</value>
+                <value>Cold grey fire and damp purple ashes, hands only half-corporeal reaching through the flames en masse.</value>
+                <value>Floating innards, arranged as a spiral, nerves drifting in the air behind it.</value>
+                <value>Shrouded figure, fifteen feet tall, strung with silent chimes and shuffling on its knees.</value>
+                <value>Head like a weeping willow, long body made of carved articulated wood like an armless puppet.</value>
+                <value>Shifting pyramidal tumor, blubbery, with trunk-like extremities.</value>
+            </table>
+            <table name="The deity desires, and will cooperate in exchange for..." id="desire">
+                <value>To write the book that ends everything; Ink and paper, print, letters, new and old language.</value>
+                <value>To consensually fuck itself to death; Aphrodisiacs, encouragements.</value>
+                <value>To distil rancid sunlight; Glass containers, fresh captured sunlight.</value>
+                <value>To pass on its divine nature to another; Experimental subjects, godgore, godflesh.</value>
+                <value>To read all that has been written; More books, dead writers, live librarians.</value>
+                <value>To collect samples of all possible life; Taxonomic records, tissue samples.</value>
+                <value>To be alone; A wide berth, very limited attention, very small requests.</value>
+                <value>To sleep forever; Powerful soporifics, cushions, permanent silence, eternal night.</value>
+                <value>To spread fecund life; Stem cells, mycelia, spores of itself, blood.</value>
+                <value>To destroy another deity; Divine trails or tracks, tactics, defiled divine icons, an infinity of weapons.</value>
+                <value>To find its lost extrasensory eyes; Physical eyeballs, optic nerves, non-light, anti-light, ghost photons.</value>
+                <value>To educate all sapient beings; Educated brains, large crowds and increasing attention.</value>
+                <value>To stop Time so it may get ahead; Clocks, hourglasses, evidence of chronology, fragments of the Arrow of Time.</value>
+                <value>To consume/be made a part of primordial flame; Refined fuels, primordial embers, the flame itself.</value>
+                <value>To consume another deity; Divine trails or tracks, divine iconography, fine seasoning, broth.</value>
+                <value>To unfix itself from space and time; Any records of its existence, your memories of it, your eyes.</value>
+                <value>To know absolutely everything; Increasingly fine, specific, interconnected information.</value>
+                <value>To tax names and having names and epistemology; Your real names, the real names of everyone you come across, reified personalities from names.</value>
+                <value>To categorize sin, call itself a sinner; New moral strictures, inquisitors, confessors, guidelines, depravities.</value>
+                <value>To escape into the unconscious world; Dreams themselves, the ability to sleep.</value>
+            </table>
+            <table name="The deity is able to..." id="able">
+                <value>Retrace fates of the dead, drown people on land.</value>
+                <value>Combust whole cities, divine and reveal personal secrets.</value>
+                <value>Incite homicide, make enemies into allies for a time.</value>
+                <value>Reveal mysteries of still water, manifest and lead vast armies.</value>
+                <value>Steal treasures of other deities, ruin personal dignity.</value>
+                <value>Give answers to all esoterica, make people completely undetectable.</value>
+                <value>Make an individual loved by all, teach every single language.</value>
+                <value>Heal all infirmaries, manifest benevolent companions.</value>
+                <value>Reveal ancient treasures, incite positive emotions in people.</value>
+                <value>Place ideas into people’s minds, reveal true personalities.</value>
+                <value>Cause earthquakes, evangelize its own divine nature.</value>
+                <value>Teach logic, ethics, moral relativism, and the process of eternal life.</value>
+                <value>Teach pyromancy, procure feuds, reconcile controversies.</value>
+                <value>Compel people to thievery, manifest trapped or cursed items.</value>
+                <value>Cause and heal afflictions, change the shape of humans.</value>
+                <value>Travel anywhere known or perceived, disconnect the soul from the body.</value>
+                <value>Induce laziness, vanity, and growing paranoia.</value>
+                <value>Destroy thoughts and memories, destroy past actions or results of actions.</value>
+                <value>Transmute metals into other metals, create sensory illusions.</value>
+                <value>Trade favors and debts from one person to another, teach divine nature.</value>
+            </table>
+            <table name="The deity's nature and behavior is generally" id="nature">
+                <value>Introspective, mind-ruining.</value>
+                <value>Sulking, vengeful, innocent.</value>
+                <value>Belligerent, cold, patient.</value>
+                <value>Anxious, dreamy, contemplative.</value>
+                <value>Murky, loathsome, self-righteous.</value>
+                <value>Stoic, nasty, downright smug.</value>
+                <value>Consumed with regret.</value>
+                <value>Selfish, unaware, oblivious.</value>
+                <value>Generous, no self-preservation.</value>
+                <value>Disgusted, impatient, languorous.</value>
+                <value>Harried, hushed, hollow-hearted.</value>
+                <value>Unforgiving, unforgivable, deceptive.</value>
+                <value>Driven, avoidant, genuine.</value>
+                <value>Confused, easily led to action.</value>
+                <value>Kind-hearted, utterly incomprehensible.</value>
+                <value>Wise, reserved, increasingly uncaring.</value>
+                <value>Sickly, miserable.</value>
+                <value>Indirect, assumptive, paranoid, loving.</value>
+                <value>Attentive, crafty, manipulative, useless.</value>
+                <value>Inactive, incurious, conspiratorial.</value>
+            </table>
+            <table name="If brought into contract or exchange, the deity maintains this taboo..." id="taboo">
+                <value>Beg No Mercy</value>
+                <value>Leave No Evidence</value>
+                <value>Keep No Secrets</value>
+                <value>Keep No Council</value>
+                <value>Love No One</value>
+                <value>Show No Patience</value>
+                <value>Consume Nothing</value>
+                <value>Bow To None</value>
+                <value>Engage No Indulgence</value>
+                <value>Forget No Transgression</value>
+                <value>Carry No Debts</value>
+                <value>Tolerate No Lack</value>
+            </table>
+        </category>

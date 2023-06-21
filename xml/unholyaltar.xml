@@ -1,0 +1,94 @@
+<category name="Unholy Altar" id="unholyaltar">
+    <table name="The altar chamber is lit by..." id="unholyaltar_lit">
+        <value>A few large candles.</value>
+        <value>Many small candles.</value>
+        <value>Several candelabra.</value>
+        <value>A pair of torches near the entrance.</value>
+        <value>Several torches in sconces around the room.</value>
+        <value>Lanterns with green glass</value>
+        <value>Lanterns with orange glass</value>
+        <value>Lanterns with purple glass</value>
+        <value>Lanterns with red glass</value>
+        <value>Torches that burn with blue flames</value>
+        <value>Torches that burn with green flames</value>
+        <value>Torches that burn with purple flames</value>
+        <value>Torches that burn with red flames</value>
+        <value>A large brazier, emitting a dim red glow.</value>
+        <value>Only the light you take with you.</value>
+        <value>Nothing; this is a dark place, and you have difficulty keeping your torches lit.</value>
+    </table>
+    <table name="Upon approaching the altar, you feel..." id="unholyaltar_feel">
+        <value>Insignificant.</value>
+        <value>A little irritable.</value>
+        <value>A little weak.</value>
+        <value>Less safe than before.</value>
+        <value>An up welling of fear.</value>
+        <value>An up welling of hatred.</value>
+        <value region_start="9" region_end="17" region_include="__noun__">A hungry presence.</value>
+        <value region_start="13" region_end="21" region_include="__noun__">A malevolent presence.</value>
+        <value region_start="14" region_end="22" region_include="__noun__">A domineering presence.</value>
+        <value region_start="11" region_end="19" region_include="__noun__">A watchful presence.</value>
+    </table>
+    <table name="The altar is made of..." id="unholyaltar_make">
+        <value>A solid block of stone.</value>
+        <value>Three large slabs of stone.</value>
+        <value>Three thick cuts of wood.</value>
+        <value region_start="47" region_end="53" region_include="__noun__">A single block of stone carved with disturbing images.</value>
+        <value>Three slabs of rune-carved stone.</value>
+        <value>Several small stones held together with mortar.</value>
+        <value>Brick and mortar.</value>
+        <value>Wood carved in the forms of frightening beasts.</value>
+        <value>Volcanic glass.</value>
+        <value>Bone.</value>
+    </table>
+    <table name="Atop the altar, you find..." id="unholyaltar_find">
+        <value region_start="11" region_end="15" region_include="book">An ancient tome.</value>
+        <value region_start="17" region_end="21" region_include="book">A profane ritual book.</value>
+        <value>Several candles.</value>
+        <value>A blood-stained parchment.</value>
+        <value>A singed parchment.</value>
+        <value region_start="40" region_end="45" region_include="beast">A blanket made from the hide of a great beast.</value>
+        <value>A dish made of bone</value>
+        <value>A dish made of brass</value>
+        <value>A dish made of gold</value>
+        <value>A dish made of ivory</value>
+        <value>A dish made of jade</value>
+        <value>A dish made of silver</value>
+        <value>A dish made of steel</value>
+        <value>A dish made of volcanic glass</value>
+        <value>A goblet made of bone</value>
+        <value>A goblet made of brass</value>
+        <value>A goblet made of gold</value>
+        <value>A goblet made of ivory</value>
+        <value>A goblet made of jade</value>
+        <value>A goblet made of silver</value>
+        <value>A goblet made of steel</value>
+        <value>A goblet made of volcanic glass</value>
+        <value>A vessel of blood.</value>
+        <value>A ceremonial knife.</value>
+    </table>
+    <table name="You find a prisoner tied to the altar. If you sacrifice a prisoner on the altar, ..." id="unholyaltar_sacrifice">
+        <value region_start="2" region_end="7" region_include="fiend">A fiend appears before you and begins savaging you with its claws.</value>
+        <value region_start="2" region_end="7" region_include="fiend">A fiend appears before you, demanding to know why you've summoned it to this dreary place.</value>
+        <value region_start="2" region_end="7" region_include="fiend">A fiend presence speaks to you, offering to answer one question you have.</value>
+        <value region_start="53" region_end="70" region_include="fiend">Nothing happens at first. After a while, you sense a fiendish presence begins watching your every move; you can feel its malevolent gaze.</value>
+        <value>An angel appears to smite you for your foul act.</value>
+        <value>The victim's corpse rises as a ghoul after 2d6 minutes, and it seeks you out, hungering for flesh.</value>
+    </table>
+    <table name="You find a prisoner tied to the altar. If you leave the prisoner there, ..." id="unholyaltar_leave">
+        <value region_start="0" region_end="12" region_include="npc">Someone else kills the prisoner before you come back.</value>
+        <value>The prisoner dies of shock, fear, or injuries previously sustained; you discover the corpse when you come back.</value>
+        <value>The prisoner screams madly at you to help; the noise is going to draw attention.</value>
+        <value>Nothing; that prisoner was worthless.</value>
+        <value>When you return, rats are gnawing on the poor prisoner's toes and fingers. The prisoner is screaming and writhing in agony.</value>
+        <value region_start="2" region_end="7" region_include="fiend">A fiend appears and pulls the prisoner's heart out and consumes the still beating organ as you look on in horror.</value>
+    </table>
+    <table name="You find a prisoner tied to the altar. If you free the prisoner, ..." id="unholyaltar_free">
+        <value>The prisoner scrambles away out of the dungeon, terrified of what you may do.</value>
+        <value>The prisoner instantly befriends you, desperately wanting to repay you the life-saving favor.</value>
+        <value>The prisoner thanks you and tells you where to find a sack full of buried gold if you ever make it out of this hole in the ground; the prisoner then scurries off.</value>
+        <value>The prisoner tells you to get out of here because this place is cursed.</value>
+        <value>The prisoner tries to stab you with a hidden knife, having actually been a cleverly disguised cultist.</value>
+        <value>The prisoner promises to take you on safe paths through the dungeon to visit the terrifying Lord of Deep Places; the prisoner may not be mentally balanced.</value>
+    </table>
+</category>

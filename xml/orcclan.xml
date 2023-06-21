@@ -1,0 +1,362 @@
+<category name="Orc Clan" id="orcclan">
+    <table name="The orcs are..." id="are">
+        <value>Nomadic hunters, following game</value>
+        <value region_start="29" region_end="41" region_include="wilderness">Raiders displaced from their native lands</value>
+        <value region_start="20" region_end="30" region_include="__noun__">In exile from their native lands</value>
+        <value region_start="21" region_end="29" region_include="noble">In the service of a sovereign warlord</value>
+        <value>A loose confederacy of tribes and families related by blood</value>
+        <value region_start="39" region_end="39" region_include="military">Degenerate survivors from a broken army</value>
+        <value>Disorganized; a clan of competing warriors</value>
+        <value>A tight-knit war band</value>
+        <value>Bent on sowing chaos and mayhem</value>
+        <value>Raiders after supplies and slaves</value>
+        <value region_start="40" region_end="53" region_include="warchief">Marching to war under the leadership of a great chief</value>
+        <value region_start="17" region_end="31" region_include="wizard">On an errand for an evil wizard</value>
+        <value region_start="20" region_end="43" region_include="villain">On an errand for an evil and powerful being</value>
+    </table>
+    <table name="The orcs value..." id="value">
+        <value>Bravery</value>
+        <value>Strength</value>
+        <value>Wisdom</value>
+        <value>Virility</value>
+        <value>Honoring the gods</value>
+        <value>Battle-scars</value>
+        <value>Survival</value>
+        <value>Kill counts</value>
+        <value>Scalps</value>
+        <value>Steel</value>
+        <value>Meat</value>
+    </table>
+    <table name="The orcs' iconography features" id="iconography">
+        <value>Symbols of death and destruction (bats)</value>
+        <value>Symbols of death and destruction (blood)</value>
+        <value>Symbols of death and destruction (bones)</value>
+        <value>Symbols of death and destruction (corpses)</value>
+        <value>Symbols of death and destruction (crows)</value>
+        <value>Symbols of death and destruction (flames)</value>
+        <value>Symbols of death and destruction (ghosts)</value>
+        <value>Symbols of death and destruction (scorpions)</value>
+        <value>Symbols of death and destruction (skulls)</value>
+        <value>Symbols of death and destruction (vultures)</value>
+        <value>Symbols of the heavens (clouds)</value>
+        <value>Symbols of the heavens (lightning)</value>
+        <value>Symbols of the heavens (moon)</value>
+        <value>Symbols of the heavens (snow)</value>
+        <value>Symbols of the heavens (stars)</value>
+        <value>Symbols of the heavens (sun)</value>
+        <value>Symbols of strength and weaponry (arrows)</value>
+        <value>Symbols of strength and weaponry (axes)</value>
+        <value>Symbols of strength and weaponry (fists)</value>
+        <value>Symbols of strength and weaponry (spears)</value>
+        <value>Symbols of strength and weaponry (stones)</value>
+        <value>Symbols of strength and weaponry (swords)</value>
+        <value>A great beast (bears)</value>
+        <value>A great beast (boars)</value>
+        <value>A great beast (eagles)</value>
+        <value>A great beast (horses)</value>
+        <value>A great beast (lions)</value>
+        <value>A great beast (owls)</value>
+        <value>A great beast (snakes)</value>
+        <value>A great beast (wolves)</value>
+        <value>Wolf's head.</value>
+        <value>A skull.</value>
+        <value>An animal skull.</value>
+        <value>Two axes.</value>
+        <value>An axe.</value>
+        <value>Two swords.</value>
+        <value>Crossed bones.</value>
+        <value>A laughing face.</value>
+        <value>A fist.</value>
+        <value>A dragon.</value>
+        <value>A wolf.</value>
+        <value>A hanging man.</value>
+        <value region_start="4|25" region_end="15|28" region_include="__noun__|deity">The holy symbol of their god.</value>
+        <value>An 8 pointed star.</value>
+        <value>A moon.</value>
+        <value>A claw.</value>
+        <value>Several stars.</value>
+        <value>A shield.</value>
+        <value>A cross pattern.</value>
+        <value>A spotted pattern.</value>
+        <value>A bloody hand.</value>
+        <value>A blood stain.</value>
+        <value>A toothy maw.</value>
+        <value>Teeth.</value>
+        <value>Eyes.</value>
+        <value>A dead elf king.</value>
+        <value>A boot.</value>
+        <value>Several green figures.</value>
+        <value>A strange geometric shape.</value>
+        <value>A beholder.</value>
+        <value>A drake.</value>
+        <value>A lion.</value>
+        <value>A tiger.</value>
+        <value>A shark.</value>
+        <value>Waves.</value>
+        <value>A volcano.</value>
+        <value>A forest.</value>
+        <value>A large tree.</value>
+        <value>The four forces of nature.</value>
+        <value>Fire.</value>
+        <value>Water.</value>
+        <value>Earth.</value>
+        <value>Air.</value>
+        <value>An angry face.</value>
+        <value>Several different faces.</value>
+        <value>Two hands.</value>
+        <value>The last warchief.</value>
+        <value>A strange twenty sided shape with a 20 on one side.</value>
+        <value>A square.</value>
+        <value>A triangle.</value>
+        <value>Some scribble that looks like a toddler made it.</value>
+        <value>A cloud.</value>
+        <value>A ghost.</value>
+        <value>A skeleton.</value>
+        <value>A zombie.</value>
+        <value>A river.</value>
+        <value>The surrounding region.</value>
+        <value>A nude woman.</value>
+        <value>A strong man.</value>
+        <value region_start="6" region_end="9" region_include="deity">Their god.</value>
+        <value>Just black.</value>
+        <value>Just red.</value>
+        <value>Just white.</value>
+        <value>Just green.</value>
+        <value>Just blue.</value>
+        <value>Just yellow.</value>
+        <value>A variance of striped colours.</value>
+        <value>Half and half two colours.</value>
+        <value>A decapitated head.</value>
+        <value>Guts.</value>
+        <value>Tusks.</value>
+        <value>A fiend.</value>
+        <value>An archfiend.</value>
+        <value>The area the orcs came from.</value>
+        <value>A cliff.</value>
+        <value>A tower.</value>
+        <value>A fortress.</value>
+        <value>A monster.</value>
+        <value>Screaming women.</value>
+        <value>Gallows.</value>
+        <value>Headless people.</value>
+        <value>Armour.</value>
+        <value>A helmet.</value>
+        <value>A spear.</value>
+        <value>Two spears.</value>
+        <value>Several spears.</value>
+        <value>A long spiked sword.</value>
+        <value>A bow.</value>
+        <value>An arrow.</value>
+        <value>A crossbow.</value>
+        <value>A cannon.</value>
+        <value>A catapult.</value>
+        <value>A trebuchet.</value>
+        <value>A dark circle.</value>
+        <value>A hand print.</value>
+        <value>A footprint.</value>
+        <value region_start="16" region_end="23" region_include="disease">The symptoms of disease.</value>
+        <value>A potion.</value>
+        <value>Runic symbols.</value>
+        <value>Some face that looks so strangely like the DM.</value>
+    </table>
+    <table name="The orcs' chief is..." id="chief">
+        <value>A well-respected chief</value>
+        <value region_start="14" region_end="21" region_include="__noun__">A charismatic warlord</value>
+        <value region_start="13" region_end="19" region_include="__noun__">A mysterious shaman</value>
+        <value region_start="27" region_end="31" region_include="npc_class">A descendant of an honored hero</value>
+        <value region_start="11" region_end="17" region_include="killer">A ruthless killer</value>
+        <value region_start="10" region_end="14" region_include="__noun__">A brutish thug</value>
+        <value region_start="19" region_end="26" region_include="fighter">An impatient young warrior</value>
+        <value>A wise old chief</value>
+        <value region_start="17" region_end="21" region_include="npc_class">A celebrated war hero</value>
+        <value>A prolific lover</value>
+    </table>
+    <table name="The orcs' favorite meat comes from" id="meat">
+        <value>Dwarves and halflings</value>
+        <value>Beggars and thieves</value>
+        <value>Merchants and caravan guards</value>
+        <value>Noblemen</value>
+        <value>Noblewomen</value>
+        <value>Priests and priestesses</value>
+        <value>Slaves</value>
+        <value>Circus folk and minstrels</value>
+        <value>Foreign travelers</value>
+        <value>Peasant women</value>
+        <value>Young children</value>
+        <value>Elves and pixies</value>
+    </table>
+    <table name="The orcs fear..." id="fear">
+        <value>Men armored in steel</value>
+        <value>Human women</value>
+        <value>Spellcasters</value>
+        <value>Dwarves</value>
+        <value>Elves</value>
+        <value>Goblinoids</value>
+        <value>Reptilian humanoids</value>
+        <value>Blizzards</value>
+        <value>Earthquakes</value>
+        <value>Floods</value>
+        <value>Thunderstorms</value>
+        <value>Volcanoes</value>
+        <value>Typhoons</value>
+        <value>The gods</value>
+        <value>Aberrant evils</value>
+        <value>Dragons</value>
+    </table>
+    <table name="The orcs are notorious for..." id="notorious">
+        <value>Never leaving survivors</value>
+        <value>Feeding prisoners to wild beasts</value>
+        <value>Tattooing or branding prisoners</value>
+        <value>Scalping enemies</value>
+        <value>Flaying enemies</value>
+        <value>Raiding and burning villages</value>
+        <value>Plundering merchant caravans</value>
+        <value>Eating prisoners raw</value>
+        <value>Claiming prisoners as slaves</value>
+        <value>Taking prisoners as wives, concubines, or catamites</value>
+    </table>
+    <table name="The orcs are known for..." id="known">
+        <value>Screaming and shouting during battle</value>
+        <value>Convening with ghosts and spirits</value>
+        <value>Ritual animal sacrifice under the new moon</value>
+        <value>Ritual humanoid sacrifice deep within the earth</value>
+        <value>Ritualistic sexual acts under the full moon</value>
+        <value>Eating unusually-prepared meats</value>
+        <value>Prolific amounts of drinking</value>
+        <value>Never cutting their hair</value>
+        <value>Shaving their heads and bodies</value>
+        <value>Wearing long top-knots or braids</value>
+        <value>Bathing and perfuming their bodies</value>
+    </table>
+    <table name="The orcs' attitude is..." id="attitude">
+        <value>Rowdy and festive</value>
+        <value>Joyful and eager to fight</value>
+        <value>Relaxed and carefree</value>
+        <value>Frightened and suspicious</value>
+        <value>Hostile and suspicious</value>
+        <value>Hostile and eager to fight</value>
+    </table>
+    <table name="The orcs' goals include (chief and lower-ranking members could have different goals)..." id="goal">
+        <value region_start="16" region_end="22" region_include="__noun__">Upheaval of the region's politics</value>
+        <value region_start="18" region_end="24" region_include="__noun__">Disruption of the region's trade</value>
+        <value region_start="24" region_end="36" region_include="__noun__">Revenge against another civilization</value>
+        <value region_start="24" region_end="35" region_include="orcclan">Revenge against a rival orcish clan</value>
+        <value>Spreading chaos and destruction</value>
+        <value region_start="25" region_end="33" region_include="artifacts">Possession of a powerful artifact</value>
+    </table>
+    <table name="The orcs typically fight with..." id="fight">
+        <value>Hit-and-run tactics</value>
+        <value>Ambush tactics</value>
+        <value>Unpredictable maneuvers</value>
+        <value>Kicking and stomping</value>
+        <value>Lots of screaming and shouting</value>
+        <value>Lots of head-butting</value>
+        <value>Lots of biting and scratching</value>
+        <value>Frequent breaks for eating</value>
+        <value>Frequent breaks for looting corpses</value>
+        <value>Frequent breaks for re-forming ranks</value>
+        <value>Frequent breaks for arguing among themselves</value>
+    </table>
+    <table name="As guardians or pets, the orcs sometimes keep..." id="pet">
+        <value>Boars</value>
+        <value>Dire rats</value>
+        <value>Giant lizards</value>
+        <value>Ogres</value>
+        <value>Wargs</value>
+        <value>Wolves</value>
+    </table>
+    <table name="As slaves, the orcs keep..." id="slave">
+        <value region_start="0" region_end="7" region_include="dwarf">Dwarves</value>
+        <value region_start="0" region_end="6" region_include="gnome">Gnomes</value>
+        <value region_start="0" region_end="7" region_include="goblin">Goblins</value>
+        <value region_start="0" region_end="9" region_include="halfling">Halflings</value>
+        <value region_start="0" region_end="6" region_include="appearance">Humans</value>
+        <value region_start="0" region_end="7" region_include="kobold">Kobolds</value>
+        <value region_start="0" region_end="6" region_include="undead">Undead servitors</value>
+        <value>Nothing; the orcs eat any captives they take</value>
+        <value>Nothing; the orcs leave no survivors</value>
+        <value>Nothing; the orcs believe in freedom for all beings</value>
+    </table>
+    <table name="Most of the orcs are wielding..." id="wielding">
+        <value>Spears and large hunting knives</value>
+        <value>Spears and javelins</value>
+        <value>Exotic, curved blades and several bolas</value>
+        <value>Huge, curved blades</value>
+        <value>Exotic, curved blades and blowguns</value>
+        <value>Pikes and shortswords</value>
+        <value>Battleaes and throwing axes</value>
+        <value>Battleaxes and longbows</value>
+        <value>Longswords and longbows</value>
+        <value>Jagged greatswords and shortbows</value>
+        <value>Greataxes and javelins</value>
+    </table>
+    <table name="The clan's main soldiers and warriors are..." id="soldiers">
+        <value>Orc barbarians with swarm tactics.</value>
+        <value>Orc Shamans who have strong elemental magic.</value>
+        <value>Orc Mage hunters who have wards to protect them from magic.</value>
+        <value>Powerful orcs who have been engineered and trained from birth to know nothing other than war.</value>
+        <value>Orc Knights with full armour.</value>
+        <value>Orc Assassins.</value>
+        <value>Orc archers and rangers who attack from afar.</value>
+        <value>Orc monster hunters prepared to take down massive prey.</value>
+        <value>Orog soldiers who use superior tactics.</value>
+        <value>Orc riders who ride wargs dire wolves and horses.</value>
+        <value>Ogres who crush and destroy anyone needed.</value>
+        <value>Hobgoblin mercenaries used for the most dangerous jobs.</value>
+        <value>Ogrillion barbarians and berserkers.</value>
+        <value>One amazingly strong and talented orc who can take on massive beasts with ease.</value>
+        <value>Half Orcs who follow their orcish side more.</value>
+        <value>Orc artillery experts who use catapults and cannons.</value>
+        <value>Orc warlocks who have made a pact with fiends for more power.</value>
+        <value>Amazonian she-orcs.</value>
+        <value>A swarm of young orcs wanting to prove themselves in battle.</value>
+        <value>Orc monster handlers who control massive drakes and similar creatures.</value>
+    </table>
+    <table name="Minions: The clan also has..." id="has">
+        <value region_start="0" region_end="7" region_include="goblin">Goblins who are used as cannon fodder.</value>
+        <value region_start="0" region_end="7" region_include="kobold">Kobolds convinced with small amounts of gold.</value>
+        <value region_start="0" region_end="7" region_include="goblin">Goblins who are wired with explosives.</value>
+        <value>Orc peasants attacking with simple weapons.</value>
+        <value>Prisoners brainwashed to fight for the orcs.</value>
+        <value>Simple orc warriors.</value>
+        <value>A clumsy ogre</value>
+        <value>A pack of allied gnolls</value>
+        <value>Packs of wargs</value>
+        <value>Packs of dire wolves.</value>
+        <value>A tamed Wyvern.</value>
+        <value region_start="20" region_end="26" region_include="wizard">A very powerful orc wizard.</value>
+        <value>A small fleet of galleys and sailboats.</value>
+        <value region_start="0" region_end="14" region_include="dragon/dragon_age/youngling">A young dragon who assists them.</value>
+        <value>Swarms of giant insects assisting them.</value>
+        <value>Conjured elementals.</value>
+        <value region_start="10" region_end="21" region_include="mercenaries">Hobgoblin mercenaries.</value>
+        <value region_start="8" region_end="19" region_include="mercenaries">Bugbear mercenaries.</value>
+        <value>A small family of trolls helping them.</value>
+        <value>Undead risen to assist the clan.</value>
+    </table>
+    <table name="Base: The clan is based out of..." id="based">
+        <value region_start="24" region_end="31" region_include="village">A small shamanistic orc village.</value>
+        <value region_start="14" region_end="18" region_include="castle">A massive orc keep with multiple traps and defences such as boiling oil.</value>
+        <value region_start="2" region_end="10" region_include="castle">A fortress on the back of a dire mammoth.</value>
+        <value region_start="2|25" region_end="8|29" region_include="dragon|__noun__">A dragon's old abandoned lair.</value>
+        <value region_start="12" region_end="19" region_include="village">A conquered village/town of their enemies.</value>
+        <value region_start="2" region_end="8" region_include="naturalforest">A forest camp.</value>
+        <value region_start="14" region_end="20" region_include="__noun__">A camp in the tundra.</value>
+        <value region_start="13" region_end="23" region_include="__noun__">A walled off stronghold originally made to be temporary.</value>
+        <value region_start="11" region_end="15" region_include="mine">A huge pit mine with furnaces and smelters making weaponry.</value>
+        <value>A solitary island with a shipyard.</value>
+        <value region_start="14" region_end="18" region_include="city">A huge orcish city.</value>
+        <value region_start="15" region_end="20" region_include="__noun__">The bones of a titan</value>
+        <value region_start="15" region_end="21" region_include="dragon">The bones of a dragon</value>
+        <value region_start="2" region_end="8" region_include="cavern">A cavern in a cliff.</value>
+        <value region_start="2" region_end="11" region_include="__noun__">A riverside.</value>
+        <value region_start="2" region_end="9" region_include="__noun__">A coastal cliff.</value>
+        <value region_start="8" region_end="11" region_include="swamp">A muddy bog.</value>
+        <value region_start="10" region_end="14" region_include="__noun__">A nomadic camp they can put up in hours.</value>
+        <value region_start="14" region_end="24" region_include="plains">The middle of the plains.</value>
+        <value region_start="14" region_end="18" region_include="__noun__">A mountainous camp made of rock.</value>
+        <value region_start="0" region_end="18" region_include="__noun__">Somewhere original created to imprison them.</value>
+    </table>
+    <member name="Orc" include="orc" />
+    <member name="Orc Warlord" include="orcwarlord" />
+</category>

@@ -1,0 +1,97 @@
+<category name="Crafting guilds" id="craftingguild">
+    <table name="This guild is for..." id="for">
+        <value>Miners</value>
+        <value>Foresters</value>
+        <value>Farmers</value>
+        <value>Smithies</value>
+        <value>Barbers and dentists</value>
+        <value>Jewelers</value>
+        <value>Fools, entertainers, and players</value>
+        <value>Shipwrights</value>
+        <value>Tanners, furriers, and shoemakers</value>
+        <value>Butchers</value>
+        <value>Locksmiths and nailsmiths</value>
+        <value>Potters and dyers</value>
+        <value>Saddlers, farriers, and stable masters</value>
+        <value>Joiners, wheelwrights, and coopers</value>
+        <value>Masons</value>
+        <value>Weavers and tailers</value>
+        <value>Goldsmiths and watchmakers</value>
+        <value>Alchemists</value>
+        <value>Architects</value>
+        <value>Calligraphers</value>
+        <value>Historians</value>
+        <value>Lawyers and judges</value>
+        <value>Scribes</value>
+        <value>Siege engineers</value>
+        <value>Writers</value>
+        <value>Brewers</value>
+        <value>Candlers</value>
+        <value>Chefs</value>
+        <value>Glassblowers</value>
+        <value>Historical reenactors</value>
+        <value>Mithrilsmiths</value>
+        <value>Musicians</value>
+        <value>Painters</value>
+        <value>Sculptors</value>
+        <value>Silversmiths</value>
+    </table>
+    <table name="This guild's status and control is..." id="status">
+        <value>Poor; though once great, this guild has fallen on hard times and is struggling to maintain its power</value>
+        <value>Brand new, and frantically recruiting members in order to snatch power</value>
+        <value region_start="24" region_end="35" region_include="__noun__">Exponentially rising, a recent boon has granted them great profits</value>
+        <value region_start="18" region_end="28" region_include="craftingguild">Slowing, a rising competitor is slowly cutting into profits</value>
+        <value>Absolute, they have complete dominance in their field</value>
+        <value>Spotty, depending on the will of the coin and the market this guild may be drinking Elven wine or rotten grog</value>
+        <value>Unquestioned, they exert complete dominance over all other guilds in the area</value>
+        <value>Questionable, though they claim to have control, some operators have undermined it</value>
+    </table>
+    <table name="The guild's illicit affairs are comprised of..." id="illicit">
+        <value>Literally nothing, they are paragons of upright morality</value>
+        <value>Staying well within the law, if slipping on a few taxes due to ignorance, of course</value>
+        <value>Knowing how to play the political game, they garner a few indirect favors from officials</value>
+        <value region_start="83" region_end="87" region_include="city">Guild leaders having dollar signs for eyes, and setting advantageous prices in the city</value>
+        <value>Price floors becoming commonplace, and officials are often bribed in order to overlook some minor illicit activities</value>
+        <value>A variety of upper-level bribes, some minor scams, and the dismay of local priests</value>
+        <value region_start="56" region_end="60" region_include="city">Rampant corruption, with large-scale bribery of various city officials and contracts with thieves guild and occasionally an assassin</value>
+        <value>Pacts with devils, large-scale counterfeiting, and treasonous activities are a normal Tuesday morning for this guild</value>
+    </table>
+    <table name="This guild's headquarters is..." id="hq">
+        <value region_start="4|35" region_end="10|46" region_include="crafter_artisan|__noun__">The leader's personal residence, a large manor</value>
+        <value region_start="26|41" region_end="30|45" region_include="city|__noun__">The dusty basement of the city's capital hall</value>
+        <value region_start="30|69" region_end="39|75" region_include="__noun__|street">A single, thin, and very tall townhouse that leans slightly into the street</value>
+        <value region_start="9" region_end="13" region_include="ship">A moored ship, especially curious in landlocked cities</value>
+        <value region_start="37" region_end="41" region_include="city">An open-air pavilion centered in the city's bazaar</value>
+        <value region_start="36" region_end="40" region_include="__noun__">Doubling as a large and prestigious bank</value>
+        <value region_start="11" region_end="21" region_include="__noun__">An opulent demi-plane hidden in a shady back-alley</value>
+        <value region_start="38" region_end="45" region_include="city">Jointly shared with all the guilds of the city, and the thieves guild lurks in the sewers below</value>
+    </table>
+    <table name="Minor Quest: You must fetch a shipment of goods from..." id="minor">
+        <value region_start="42" region_end="46" region_include="city">The city gates, held up by a bureaucratic city official</value>
+        <value region_start="12" region_end="19" region_include="village">The nearest village, where they're caught up in some small-town superstition</value>
+        <value region_start="20" region_end="24" region_include="city">A relatively nearby city, where there is a sever mix-up with the shipments</value>
+        <value>The natural areas one would gather them, yourself, to learn the roots of your trade</value>
+        <value region_start="14" region_end="24" region_include="city">The stores of the city's banks, which must be paid off from their mortgage</value>
+        <value>Across the room where the party receives the quest</value>
+    </table>
+    <table name="Standard Quest: Recently the guild has lost access to raw materials or manufacturing because of..." id="standard">
+        <value region_start="24" region_end="32" region_include="__noun__">A recent venture with a supplier that has turned out bad</value>
+        <value region_start="24" region_end="29" region_include="craftingguild">A recent venture with a rival that has turned out bad</value>
+        <value region_start="24" region_end="38" region_include="__noun__">A recent venture with a local official that has turned out bad</value>
+        <value>A trade blockade that has to be resolved</value>
+        <value region_start="2" region_end="16" region_include="__noun__">A thieves' guild that is targeting the guild, but may be convince to look somewhere else</value>
+        <value>A master using it frivolously, you must go out to harvest a sufficient replacement amount</value>
+        <value region_start="2" region_end="6" region_include="city">A city official banning them, citing it as an immoral substance</value>
+        <value>Spending all the coffer's stores on fulfilling a special contract or bribing officials, lacking the foresight to buy sufficient raw materials</value>
+    </table>
+    <table name="Major Quest: The guild would like you to fetch a rare creature or material from..." id="major">
+        <value region_start="0" region_end="15" region_include="marketplace">The marketplace of the City of Brass</value>
+        <value region_start="11" region_end="29" region_include="dwarfenclave">An ancient dwarven stronghold's forges</value>
+        <value>A quaint pasture -- In the wildest parts of Arborea</value>
+        <value region_start="10" region_end="16" region_include="__noun__">A faraway island, rumored to have cannibals and foul magicks</value>
+        <value region_start="36" region_end="42" region_include="naturaldesert">A mystic mirage that manifests in a desert for twenty minutes once every century</value>
+        <value region_start="30" region_end="45" region_include="__noun__">The Plane of Rats (or similar filthy location)</value>
+    </table>
+    <member name="Apprentice Crafter" include="crafter_apprentice" />
+    <member name="Artisan Crafter" include="crafter_artisan" />
+</category>

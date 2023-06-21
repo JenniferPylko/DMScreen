@@ -1,0 +1,44 @@
+            <category name="Fey Beast" id="fey_beast">
+                <table name="The fey beast is..." id="is">
+                    <value>A bear.</value>
+                    <value>A beaver.</value>
+                    <value>A boar.</value>
+                    <value>An elk.</value>
+                    <value>A hawk.</value>
+                    <value>An owl.</value>
+                    <value>An owlbear.</value>
+                    <value>A panther.</value>
+                    <value>A songbird.</value>
+                    <value>A swan.</value>
+                    <value>A toad.</value>
+                    <value region_start="2" region_end="6" region_include="wolf">A wolf.</value>
+                </table>
+                <table name="The beast has..." id="has">
+                    <value>Unusually bright coloration.</value>
+                    <value>Unusual stripes or markings.</value>
+                    <value>Captivating, blue or grey eyes.</value>
+                    <value>Mischievous, green or gold eyes.</value>
+                    <value>A shimmering aura.</value>
+                    <value>A misty aura.</value>
+                </table>
+                <table name="..and..." id="has_and">
+                    <value>Moves gracefully, almost dancing.</value>
+                    <value>Darts in and out of hiding places.</value>
+                    <value>Can create an illusory double of itself.</value>
+                    <value>Can teleport short distances.</value>
+                    <value>Speaks in rhymes and riddles.</value>
+                    <value>Speaks in songs.</value>
+                    <value>Gives you an uneasy feeling.</value>
+                    <value>Relishes in playful pranks and hijinks.</value>
+                </table>
+                <table name="The beast is looking for..." id="looking">
+                    <value region_start="16" region_end="30" region_include="__noun__">An answer to an ancient riddle.</value>
+                    <value>A mortal worthy of its service.</value>
+                    <value>A mortal to torment and to tease.</value>
+                    <value region_start="3|25" region_end="11|29" region_include="artifacts|npc_class">An artifact of an elvish hero of a past age.</value>
+                    <value region_start="4|28" region_end="12|39" region_include="wilderness|elfenclaev">The location of an ancient, elvish ruin.</value>
+                    <value region_start="4|34" region_end="10|38" region_include="__noun__|__noun__">The source of corruption near its home.</value>
+                    <value region_start="29" region_end="43" region_include="__noun__">The recipient of a specific, secret message.</value>
+                    <value>A new song to sing.</value>
+                </table>
+            </category>

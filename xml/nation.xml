@@ -1,0 +1,383 @@
+<category name="Nation" id="nation">
+    <table name="Age: The nation is..." short="Age" id="nation_age">
+        <value>Ancient; No one remembers when it was founded</value>
+        <value>Very Old; It has been standing for millennia</value>
+        <value>Old; It has been around for centuries</value>
+        <value>Young; The elderly can remember when it was formed</value>
+        <value>Very Young; It was founded within the past generation</value>
+        <value>Fledgling: It was very recently founded</value>
+    </table>
+    <table name="Political System: The nation is run by..." short="Politics" id="nation_politics">
+        <value>Democracy; Every citizen has an equal say in how the government is run</value>
+        <value>Republic; Individuals represent groups of citizens</value>
+        <value>Monarchy; A ruling class passes leadership through a predisposed line of sovereignty</value>
+        <value>Empire; A wide-spread collection of states or communities with complex organization to maintain fealty to the ruler</value>
+        <value>Dictatorship; A single all-powerful ruler lords over the people</value>
+        <value>Tribal; There is no specific ruler, rather there is an uncoordinated group of tribes</value>
+        <value>Anarchy; There is no centralized government nor authority. The people are self-policing</value>
+        <value>Communism; The ruling class distributes all aspects of society including economics, jobs, resources, and where to live to make sure everyone has an equal share.</value>
+        <value>Theocracy; Religious leaders hold the power, and laws are dictated by religious beliefs</value>
+        <value>Oligarchy; A small group of people maintain control of the nation</value>
+    </table>
+    <table name="Economics: The nation's system of economics is..." short="Economics" id="nation_economics">
+        <value>Manorial agriculture. Serfs and freemen work their lord's land.</value>
+        <value>Trade guilds. Conglomerates of tradespeople control the means of producing and distributing the most valuable goods.</value>
+        <value>Nomadic grazing. Herds of domestic animals roam freely, and people follow their movements.</value>
+        <value>Feudalism. The rulers control all land, and designate landholders to oversee production, distribution and taxation in those areas.</value>
+        <value>Cottage industry. Small, family groups produce most trade goods.</value>
+        <value>Mercantilism. Trade is strictly regulated by the government, in favor of local production.</value>
+        <value>Corporatism. Different areas of the economy are controlled by defined organizations, often given national charter.</value>
+        <value>Family conglomeratism. A few key families control production and distribution across multiple industries.</value>
+        <value>Syndicalism. Groups of workers control production and distribution in different areas of the economy.</value>
+        <value>Communism. The state controls the means of production, and distributes goods evenly to the population.</value>
+        <value>Hunting and gathering. Food is obtained by foraging.</value>
+        <value>Post-scarcity. Most goods needed for survival are available cheaply/freely to all.</value>
+        <value>Market system. Goods are produced and traded freely by individuals and groups.</value>
+        <value>Industrialism. Mining and manufacturing dominate the economy.</value>
+        <value>Knowledge economy. Scribes, theologians and other knowledge workers dominate be economy.</value>
+        <value>Mages. Magic-users control the means of production and distribution.</value>
+        <value>The church or churches. The means of production and distribution are controlled by religious leaders.</value>
+        <value>Trade. There is no centralized currency. Citizens trade for all goods and services</value>
+        <value>Benevolent Deity. A powerful being or group of powerful beings gives the people what it sees fit.</value>
+    </table>
+    <table name="Ruler: The ruler(s) of the nation is..." short="Ruler" id="nation_ruler">
+        <value>A demagogue; He rules the nation through fear and prejudices</value>
+        <value>A philosopher</value>
+        <value>A military leader</value>
+        <value>A council of elders</value>
+        <value>A council of randomly selected citizens</value>
+        <value>Corporations</value>
+        <value>A power hungry dictator</value>
+        <value>A manipulative politician</value>
+        <value>A noble philanthropist</value>
+        <value>A religious zealot</value>
+        <value>A puppet of a secret society</value>
+        <value>A figure-head. The real power lies at the local level</value>
+    </table>
+    <table name="A unique characteristic of the nation is..." short="Flavor" id="nation_flavor">
+        <value>It is undergoing a civil war</value>
+        <value>It is experiencing extreme inflation</value>
+        <value>It is at war with another nation</value>
+        <value>It is controlled by a secret society pulling the strings</value>
+        <value>The political system is collapsing</value>
+        <value>It is believe to be protected by a god</value>
+        <value>The citizens believe it to be the greatest nation in the world</value>
+        <value>It is the home of a legendary warrior</value>
+        <value>It is the home of a famous philosopher</value>
+        <value>It is undefeated in battle</value>
+        <value>It is imperialistic; always trying to conquer new territory</value>
+        <value>It is isolationist; it does not like interacting with other nations</value>
+        <value region_start="30" region_end="38" region_include="artifacts">It is the home of a legendary artifact</value>
+        <value>It is extremely strict with its laws</value>
+        <value>Vigilantism is condoned</value>
+        <value>It is a pillar of moral values</value>
+        <value>It is generally hated by other nations</value>
+        <value>Its borders are open to refugees</value>
+        <value>It is being crippled by sanctions from other nations</value>
+        <value>It has been invaded by another nation</value>
+        <value>A popular and respected public figure recently died</value>
+        <value>Slavery is an accepted practice</value>
+        <value>Women are considered to be lesser people</value>
+        <value>Men are considered to be lesser people</value>
+        <value>The people observe a single day each year when all crime is legal</value>
+        <value>All trials are settled through death by combat</value>
+        <value>All trials are settled through a sporting competition</value>
+        <value>Annual gladiatorial combat is held, and the participants are randomly selected among the citizens</value>
+        <value>Prisoners are offered a chance at freedom if they can win a gladiatorial game. The games are rigged. Prisoners are not intended to survive</value>
+        <value>Prisoners are offered a chance at freedom if they can win a gladiatorial game. The games are extremely difficult, almost no one ever survives</value>
+        <value>Prisoners are offered a chance at freedom if they can win a gladiatorial game. The games are fair. A skilled warrior has a chance at winning</value>
+        <value>Prisoners are offered a chance at freedom if they can win a gladiatorial game. The games are easy. Just about anyone with a bit of skill can win</value>
+        <value>Prisoners are offered a chance at freedom if they can win a gladiatorial game. The games are unbalanced; Many enter, only one leaves</value>
+        <value>Prisoners are offered a chance at freedom if they can win a gladiatorial game. The games are massive. Hundreds enter at a time, but only a few survive</value>
+        <value>A citizen is randomly selected, and sacrificed annually</value>
+    </table>
+    <table name="Founding: The nation was founded by..." short="Founded" id="nation_founded">
+        <value>Revolutionaries seeking freedom from an oppressive government</value>
+        <value>A power-hungry tyrant</value>
+        <value>A religious order</value>
+        <value>A philosopher wanting to experiment with a new social order</value>
+        <value>A tribe that evolved into a nation</value>
+        <value>An explorer who claimed the land for his own</value>
+        <value>A god</value>
+        <value>A cult claiming a bastion separate from society</value>
+    </table>
+    <table name="Sub-divisions: To manage the nation, it is split into multiple..." short="Sub-Divisions" id="nation_divisions" instruction="add_child_type">
+        <value>Autonomous states</value>
+        <value>Fiefdoms</value>
+        <value>Cities</value>
+        <value>Duchies</value>
+        <value>Provinces</value>
+        <value>Geographical regions</value>
+    </table>
+    <table name="Mood: The citizens are..." short="Happiness" id="nation_happiness">
+        <value>Miserable; They hate their government or leaders, and feel oppressed</value>
+        <value>Unhappy; They don't like the state of their nation, and don't feel like they are valued or treated well</value>
+        <value>Satiated; Though they may not like things about the government, they are happy enough with their current life to risk losing what they have</value>
+        <value>Happy; Even if things aren't perfect, they are generally happy with their way of life</value>
+        <value>Extremely happy; They love their lives</value>
+        <value>Angry; They are being pushed to their limits</value>
+        <value>Patriotic; They love their nation, and will die to protect it</value>
+        <value>Confused; They people feel like the nation is in a state of turmoil, and don't know what tomorrow will hold</value>
+        <value>Anxious; Something bad is coming, they just know it, even if they don't know what it is</value>
+        <value>Frightened; People gather for safety, or stay in their homes at night</value>
+        <value>Scared; People live in fear of their nation's leaders</value>
+        <value>Indifferent; The politics of the nation are unimportant in day to day life</value>
+    </table>
+    <table name="Wealth and Prosperity: The citizens are..." short="Prosperity" id="nation_wealth">
+        <value>Very well off; They enjoy the finer things in life</value>
+        <value>Doing well; Their needs are met, and they have the ability to improve their station in life</value>
+        <value>They have enough to get by, but not enough to improve their station in life</value>
+        <value>Poor; The people are barely scraping by</value>
+        <value>Desperate; They are lucky to find food and shelter</value>
+    </table>
+    <table name="Religion: The nation's approach to religion is..." short="Religion" id="nation_religion">
+        <value>A specific religion is required of all citizens.</value>
+        <value>A specific religion is encouraged, but not required. All other religions are banned</value>
+        <value>The nation allows a select list of acceptable religions</value>
+        <value>The nation allows any religion, but bans a select list</value>
+        <value>All religions are welcome, though some are discouraged</value>
+        <value>All religions are welcome, though some are encouraged</value>
+        <value>Religion is banned all together</value>
+        <value>A single religion is very popular, while others are generally considered to be strange or blasphemous</value>
+        <value>Two or more religions are warring to be the only nationally sponsored religion</value>
+        <value>Religion is not important to the people, nor the rulers.</value>
+    </table>
+    <table name="Laws: A notable law includes..." short="Law" id="nation_law">
+        <value>Capital punishment for most crimes</value>
+        <value>Magic is banned</value>
+        <value>Drug use is legal</value>
+        <value>Alcohol use is banned</value>
+        <value>Citizens are not allowed to speak poorly of their leaders</value>
+        <value>Military service is required of all citizens</value>
+        <value>Hunting of wolves is banned</value>
+        <value>Hunting of lions is banned</value>
+        <value>Hunting of tigers is banned</value>
+        <value>Hunting of chickens is banned</value>
+        <value>Hunting of bears is banned</value>
+        <value>Hunting of elves is banned</value>
+        <value>Hunting of boar is banned</value>
+        <value>Hunting of apes is banned</value>
+        <value>Hunting of monkeys is banned</value>
+        <value>Hunting of axe beaks is banned</value>
+        <value>Hunting of baboons is banned</value>
+        <value>Hunting of badgers is banned</value>
+        <value>Hunting of is banned</value>
+        <value>Hunting of blink dogs is banned</value>
+        <value>Hunting of leopards is banned</value>
+        <value>Hunting of hawks is banned</value>
+        <value>Hunting of eagles is banned</value>
+        <value>Hunting of crocodiles is banned</value>
+        <value>Hunting of alligators is banned</value>
+        <value>Hunting of death dogs is banned</value>
+        <value>Hunting of dire wolves is banned</value>
+        <value>Hunting of horses is banned</value>
+        <value>Hunting of deer is banned</value>
+        <value>Hunting of moose is banned</value>
+        <value>Hunting of elephants is banned</value>
+        <value>Hunting of giant apes is banned</value>
+        <value>Hunting of giant badgers is banned</value>
+        <value>Hunting of giant bats is banned</value>
+        <value>Hunting of giant boar is banned</value>
+        <value>Hunting of giant centipede is banned</value>
+        <value>Hunting of giant snakes is banned</value>
+        <value>Hunting of giant crab is banned</value>
+        <value>Hunting of giant crocodile is banned</value>
+        <value>Hunting of giant alligator is banned</value>
+        <value>Hunting of giant elk is banned</value>
+        <value>Hunting of giant fire beetles is banned</value>
+        <value>Hunting of giant frogs is banned</value>
+        <value>Hunting of goats is banned</value>
+        <value>Hunting of giant goats is banned</value>
+        <value>Hunting of giant lizards is banned</value>
+        <value>Hunting of octopuses is banned</value>
+        <value>Hunting of giant octopuses is banned</value>
+        <value>Hunting of giant owls is banned</value>
+        <value>Hunting of owls is banned</value>
+        <value>Hunting of giant rats is banned</value>
+        <value>Hunting of rats is banned</value>
+        <value>Hunting of giant scorpions is banned</value>
+        <value>Hunting of sharks is banned</value>
+        <value>Hunting of giant sharks is banned</value>
+        <value>Hunting of giant spiders is banned</value>
+        <value>Hunting of giant toads is banned</value>
+        <value>Hunting of giant vultures is banned</value>
+        <value>Hunting of giant wasps is banned</value>
+        <value>Hunting of giant weasels is banned</value>
+        <value>Hunting of weasels is banned</value>
+        <value>Hunting of whales is banned</value>
+        <value>Hunting of hyenas is banned</value>
+        <value>Hunting of jackals is banned</value>
+        <value>Hunting of killer whales is banned</value>
+        <value>Hunting of mammoths is banned</value>
+        <value>Hunting of dogs is banned</value>
+        <value>Hunting of panthers is banned</value>
+        <value>Hunting of ravens is banned</value>
+        <value>Hunting of rhinoceros is banned</value>
+        <value>Hunting of saber-toothed tigers is banned</value>
+        <value>Hunting of worgs is banned</value>
+        <value>Hunting of giraffes is banned</value>
+        <value>Hunting of ankhegs is banned</value>
+        <value>Hunting of cockatrice is banned</value>
+        <value>Hunting of bulettes is banned</value>
+        <value>Hunting of basilisks is banned</value>
+        <value>Hunting of chimera is banned</value>
+        <value>Hunting of dinosaurs is banned</value>
+        <value>Hunting of displacer beasts is banned</value>
+        <value>Hunting of undead is banned</value>
+        <value>Hunting of gnolls is banned</value>
+        <value>Hunting of goblins is banned</value>
+        <value>Hunting of griffons is banned</value>
+        <value>Hunting of harpies is banned</value>
+        <value>Hunting of hippogriffs is banned</value>
+        <value>Hunting of kobolds is banned</value>
+        <value>Hunting of lizardfolk is banned</value>
+        <value>Hunting of manticore is banned</value>
+        <value>Hunting of ogres is banned</value>
+        <value>Hunting of orcs is banned</value>
+        <value>Hunting of owlbears is banned</value>
+        <value>Hunting of pixies is banned</value>
+        <value>Hunting of sprites is banned</value>
+        <value>Hunting of trolls is banned</value>
+        <value>Hunting of unicorns is banned</value>
+        <value>Hunting of yetis is banned</value>
+        <value>Hunting of demons is banned</value>
+        <value>Hunting of dragons is banned</value>
+        <value>Hunting of giants is banned</value>
+        <value>Hunting of lycanthropes is banned</value>
+        <value>Hunting of cougars is banned</value>
+        <value>Hunting of cats is banned</value>
+        <value>Hunting of turtles is banned</value>
+        <value>Hunting of dolphins is banned</value>
+        <value>Hunting of brownies is banned</value>
+        <value>Hunting of kangaroos is banned</value>
+        <value>Religious leaders must register with a local authority</value>
+        <value>Revenge killing is legal</value>
+        <value>Magic users must register with a local authority</value>
+        <value>Begging is illegal</value>
+        <value>Prostitution is illegal</value>
+        <value>The native population is a protected class</value>
+        <value>The native population can be hunted for a reward</value>
+        <value>The native population can be hunted for sport</value>
+        <value>No one is allowed to own more than an acre of land</value>
+        <value>Everyone is guaranteed an acre of land</value>
+        <value>The nation maintains protected land that may be not be used by private citizens</value>
+        <value>No animal may be ridden</value>
+        <value>No citizen is allowed to use a pack animal</value>
+        <value>No citizen is allowed to use animals to assist with farming, or heavy labor</value>
+        <value>Soldiers are not allowed to enter a citizen's home without permission</value>
+        <value>A citizen's private property is not allowed to be searched with out permission</value>
+        <value>Prima Nocta; Leaders have first rights to deflower newly-weds</value>
+        <value>Animal fighting is banned</value>
+        <value>It is illegal to impersonate a member of the clergy</value>
+        <value>It is illegal to bite off another person's leg</value>
+        <value>It is illegal to walk backwards after sunset</value>
+        <value>Fishing is prohibited</value>
+        <value>Divorce is illegal</value>
+        <value>It is only legal to move large groups of animals at certain times of the day</value>
+        <value>Profanities may not be spoken in public</value>
+        <value>It is legal to hunt and kill members of a specific religion</value>
+        <value>Escape from prison is not illegal</value>
+        <value>Public affection is illegal</value>
+        <value>It is illegal to feed animals in public places</value>
+        <value>All persons in public must be bathed, and perfumed</value>
+        <value>All food sold must be approved by a local authority</value>
+        <value>All weapons must be registered with a local authority</value>
+        <value>All procreation is regulated, and must be approved by the government</value>
+        <value>All deforestation must be approved by a local authority</value>
+        <value>All farms must be approved by a local authority</value>
+        <value>All citizens are required to do regular charity work</value>
+        <value>Martial weapons are prohibited</value>
+        <value>Citizens may kill trespassers</value>
+        <value>Bounty hunting is illegal</value>
+        <value>Money changing is illegal</value>
+        <value>Money lending is illegal</value>
+        <value>Gambling is illegal</value>
+        <value>Businesses are not allowed to operate an a specific day each week</value>
+    </table>
+    <table name="Language: The common spoken language is..." short="Language" id="nation_language">
+        <value>Common</value>
+        <value>Dwarvish</value>
+        <value>Elvish</value>
+        <value>Draconic</value>
+        <value>Abyssal</value>
+        <value>Celestial</value>
+        <value>Deep Speech</value>
+        <value>Druidic</value>
+        <value>Giant</value>
+        <value>Gnomish</value>
+        <value>Goblin</value>
+        <value>Gnoll</value>
+        <value>Halfling</value>
+        <value>Infernal</value>
+        <value>Orc</value>
+        <value>Primordial</value>
+        <value>Sylvan</value>
+        <value>Undercommon</value>
+        <value>Common and one other language (roll again on this table)</value>
+        <value>Two languages (roll two more times on this table)</value>
+    </table>
+    <table name="Xenophobia: The various races are treated..." short="Xenophobia" id="nation_xenophobia">
+        <value>Each race hates all other races</value>
+        <value>Each race lives in peace with all other races, but stick to their own</value>
+        <value>Humans and Demi-humans (dwarves, elves, etc) get along, but do not tolerate sub-humans (goblinoids, orcs, etc)</value>
+        <value>Each race tolerates the others, but they don't get along well</value>
+        <value>The races are split into factions. Each faction hates the others</value>
+        <value>The races get along, but dwarves are hated by all others</value>
+        <value>The races get along, but elves are hated by all others</value>
+        <value>The races get along, but tieflings are hated by all others</value>
+        <value>The races get along, but humans are hated by all others</value>
+        <value>The races get along, but halflings are hated by all others</value>
+        <value>The races get along, but gnomes are hated by all others</value>
+        <value>The races get along, but hybrid races are hated by all others</value>
+        <value>The races get along, but dragonborn hated by all others</value>
+        <value>The races do not get along, but dwarves are revered by all others</value>
+        <value>The races do not get along, but elves are revered by all others</value>
+        <value>The races do not get along, but tieflings are revered by all others</value>
+        <value>The races do not get along, but humans are revered by all others</value>
+        <value>The races do not get along, but halflings are revered by all others</value>
+        <value>The races do not get along, but gnomes are revered by all others</value>
+        <value>The races do not get along, but hybrid races are revered by all others</value>
+        <value>The races do not get along, but dragonborn revered by all others</value>
+        <value>The races mix freely</value>
+    </table>
+    <table name="Class System: Social classes in the society are determined by..." short="Social Classes" id="nation_classes">
+        <value>Age</value>
+        <value>Race</value>
+        <value>Profession</value>
+        <value>Lineage</value>
+        <value>Birthplace</value>
+        <value>Height</value>
+        <value>Wealth</value>
+        <value>Gender</value>
+        <value>Eye color</value>
+        <value>Hair color</value>
+        <value>Skin color</value>
+        <value>Religion</value>
+    </table>
+    <table name="Social Pariahs: Social outcasts generally include..." short="Pariahs" id="nation_pariahs">
+        <value>Bastards</value>
+        <value>Lycanthropes</value>
+        <value>The ill</value>
+        <value>The elderly</value>
+        <value>The homeless</value>
+        <value>Mercenaries</value>
+        <value>Druids</value>
+        <value>Rangers</value>
+        <value>Law breakers</value>
+        <value>Merchants</value>
+        <value>Magic users</value>
+        <value>The clergy</value>
+        <value>Local law enforcement</value>
+        <value>Widows and Widowers</value>
+        <value>Oath-breakers</value>
+        <value>The Dishonored</value>
+        <value>Followers of a specific religion</value>
+        <value>Drunks</value>
+        <value>Prostitutes</value>
+        <value>Foreigners</value>
+    </table>
+    <member name="Wilderness" include="wilderness" />
+    <member name="City" include="city" />
+    <member name="Town" include="town" />
+    <member name="Village" include="village" />
+</category>

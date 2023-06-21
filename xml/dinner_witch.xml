@@ -1,0 +1,145 @@
+        <category name="Dinner at a Witch's Hovel" id="dinner_witch">
+            <table name="Tonight, we dine on..." id="dine">
+                <patterns>
+                    <pattern>{prep} {dish}</pattern>
+                </patterns>
+                <list type="prep">
+                    <item>Stewed</item>
+                    <item>Roasted</item>
+                    <item>Skewered</item>
+                    <item>Charred</item>
+                    <item>Smoked</item>
+                    <item>Grilled</item>
+                    <item>Sauteed</item>
+                    <item>Battered</item>
+                    <item>Salted</item>
+                    <item>Peppered</item>
+                    <item>Pickled</item>
+                    <item>Fried</item>
+                </list>
+                <list type="dish">
+                    <item>songbird</item>
+                    <item>catfish</item>
+                    <item>turtle</item>
+                    <item>lizard</item>
+                    <item>eel</item>
+                    <item>goat</item>
+                    <item>snake</item>
+                    <item>rat</item>
+                    <item>frog</item>
+                    <item>bat</item>
+                    <item>newt</item>
+                    <item>rabbit</item>
+                    <item>cat</item>
+                    <item>dog</item>
+                    <item>knight</item>
+                    <item>maiden</item>
+                    <item>thief</item>
+                    <item>peasant</item>
+                    <item>dwarf</item>
+                    <item>halfling</item>
+                </list>
+            </table>
+            <table name="...with..." id="dine_with">
+                <value>Dumplings.</value>
+                <value>Red cabbage.</value>
+                <value>Green cabbage.</value>
+                <value>Chickpeas.</value>
+                <value>Leeks.</value>
+                <value>Lentils.</value>
+                <value>Broccoli.</value>
+                <value>Peas.</value>
+                <value>Cauliflower.</value>
+                <value>Red beans.</value>
+                <value>String beans.</value>
+                <value>White beans.</value>
+                <value>Black beans.</value>
+                <value>Turnips.</value>
+                <value>Asparagus.</value>
+                <value>Sprouts.</value>
+                <value>Tomatoes.</value>
+                <value>Asparagus.</value>
+                <value>Potatoes.</value>
+                <value>Yams.</value>
+            </table>
+            <table name="...and..." id="dine_and">
+                <value>Carrots.</value>
+                <value>Apples.</value>
+                <value>Cherries.</value>
+                <value>Wild berries.</value>
+                <value>Raspberries.</value>
+                <value>Elder berries.</value>
+                <value>Beets.</value>
+                <value>Squash.</value>
+                <value>Radishes.</value>
+                <value>Pumpkin.</value>
+                <value>Sweet onions.</value>
+                <value>Red onions.</value>
+                <value>Green onions</value>
+                <value>Purple mushrooms.</value>
+                <value>Cave mushrooms.</value>
+                <value>Wild mushrooms.</value>
+                <value>Toadstools.</value>
+                <value>Hot peppers.</value>
+                <value>Fire peppers.</value>
+                <value>Garlic.</value>
+            </table>
+            <table name="Side dish..." id="side">
+                <value>Rum cakes.</value>
+                <value>Honey cakes.</value>
+                <value>Oat cakes.</value>
+                <value>Lemon cakes.</value>
+                <value>Chocolate cakes.</value>
+                <value>Pumpkin pies.</value>
+                <value>Candied fruits.</value>
+                <value>Chocolate candies.</value>
+                <value>Mice.</value>
+                <value>Leeches.</value>
+                <value>Maggots.</value>
+                <value>Beetles</value>
+                <value>Crickets.</value>
+                <value>Toads.</value>
+                <value>Earthworms.</value>
+                <value>Wriggling tentacles.</value>
+                <value>Assorted cheeses.</value>
+                <value>Little fingers and toes.</value>
+                <value>Unidentifiable brains.</value>
+                <value>Mysterious sausages.</value>
+            </table>
+            <table name="Beverage..." id="beverage">
+                <value>Pumpkin juice.</value>
+                <value>White tea.</value>
+                <value>Green tea.</value>
+                <value>Red tea.</value>
+                <value>Black tea.</value>
+                <value>Herbal tea.</value>
+                <value>Floral tea.</value>
+                <value>Homebrew ale.</value>
+                <value>Skunky ale.</value>
+                <value>Pale ale.</value>
+                <value>Dark ale.</value>
+                <value>Sour wine.</value>
+                <value>Sweet wine.</value>
+                <value>White wine.</value>
+                <value>Red wine.</value>
+                <value>Blood wine.</value>
+                <value>Brandy.</value>
+                <value>Whisky.</value>
+                <value>Rum.</value>
+                <value>Black liquid served out of a human skull.</value>
+            </table>
+            <table name="...that leaves you feeling..." id="feeling">
+                <value>Refreshed.</value>
+                <value>Peaceful.</value>
+                <value>Anxious.</value>
+                <value>Carefree.</value>
+                <value>Very sleepy.</value>
+                <value>A little light-headed.</value>
+                <value>Somewhat nostalgic.</value>
+                <value>Somewhat melancholy.</value>
+                <value>Somewhat edgy.</value>
+                <value>A little paranoid.</value>
+                <value>Rather dizzy.</value>
+                <value>Rather amorous.</value>
+            </table>
+        </category>

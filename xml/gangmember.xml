@@ -1,0 +1,17 @@
+        <category name="Gang Member" id="gangmember">
+            <name name="The gang member's name is..."/>
+            <table name="Distinguishing feature: The gang member has..." id="has">
+                <value>A nose ring</value>
+                <value>Shiny leather boots</value>
+                <value>A hole in the toe of one boot</value>
+                <value>A dagger in each boot</value>
+                <value>A heavy gold chain around the neck</value>
+                <value>A wide-brimmed hat</value>
+                <value>A dagger tattoo on the forearm</value>
+                <value>A snake tattoo on the forearm</value>
+                <value>A maniacal laugh</value>
+                <value>A long, hooked nose</value>
+                <value>An open shirt and a very hairy chest</value>
+                <value>Extravagant mustaches</value>
+            </table>
+        </category>

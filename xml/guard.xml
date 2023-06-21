@@ -1,0 +1,69 @@
+        <category name="Guard" id="guard">
+            <name name="The guard's name is..."/>
+            <include name="Race" include="npc_race" />
+            <table name="The guard is..." id="is">
+                <value>A farm boy</value>
+                <value region_start="11" region_end="18" region_include="miner">The son of a miner</value>
+                <value region_start="11" region_end="22" region_include="fisherfolk">The son of a fisherman</value>
+                <value>A veteran of warfare</value>
+                <value region_start="2" region_end="11" region_include="nation">A foreigner</value>
+                <value region_start="13" region_end="21" region_include="__noun__">The son of a poor man</value>
+                <value>A drunk</value>
+                <value region_start="11" region_end="19" region_include="criminal">A reformed criminal</value>
+                <value region_start="2" region_end="6" region_include="__noun__">A thug</value>
+                <value region_start="9" region_end="18" region_include="crafter_artisan">A failed craftsman</value>
+                <value>A favorite among the ladies</value>
+            </table>
+            <table name="The guard works for..." id="works">
+                <value>The steady pay</value>
+                <value>A chance to deal out sadistic punishment</value>
+                <value>Gold to repay debts</value>
+                <value>Gold to aid a family member</value>
+                <value>A chance to escape from life imprisonment</value>
+                <value>Patriotic devotion</value>
+                <value>The chance to bully others</value>
+                <value>To prove how tough he is</value>
+                <value>To take out his aggression on criminals</value>
+                <value>Love of his liege's family</value>
+                <value>God and country</value>
+                <value>The chance to demonstrate his valor</value>
+                <value>The possibility of being raised to a knight</value>
+            </table>
+            <table name="On the guard's face is..." id="face">
+                <value>A large wart</value>
+                <value>An unsightly scar</value>
+                <value>A look of determination</value>
+                <value>A foolish grin</value>
+                <value>A stupid stare</value>
+                <value>A look of confusion</value>
+                <value>A bulbous nose</value>
+                <value>Bushy eyebrows</value>
+                <value>Fearsome sideburns</value>
+                <value>An unruly beard</value>
+                <value>A neatly-trimmed mustache</value>
+                <value>A waxed mustache</value>
+                <value>A blank stare</value>
+                <value>A bushy mustache</value>
+                <value>A haughty sneer</value>
+                <value>A look of sadness</value>
+                <value>An eager grin</value>
+            </table>
+            <table name="The guard carries..." id="carries">
+                <value>A blade with soft leather tassels dangling from the pommel</value>
+                <value region_start="16" region_end="27" region_include="__noun__">A blade with an inscription</value>
+                <value>A highly polished blade</value>
+                <value region_start="2|24" region_end="7|30" region_include="__noun__|harlot">A token from a favorite harlot</value>
+                <value region_start="2|16" region_end="8|24" region_include="__noun__|criminal">A trophy from a criminal</value>
+                <value region_start="16" region_end="28" region_include="noblewoman">A ribbon from a noble maiden</value>
+                <value>A silk handkerchief</value>
+                <value>A flask of wine</value>
+                <value>A lucky rabbit's foot</value>
+                <value region_start="12" region_end="16" region_include="coins">A lucky old coin</value>
+                <value region_start="14" region_end="18" region_include="coins">A lucky shiny coin</value>
+                <value>A lucky four-leaf clover</value>
+                <value>A grocery list</value>
+                <value region_start="23" region_end="30" region_include="guard">A letter from a fallen comrade</value>
+                <value region_start="8|23" region_end="8|28" region_include="__noun__|__noun__">A trophy from a fallen enemy</value>
+                <value region_start="22" region_end="28" region_include="maidservant">A ribbon from a sweet maiden</value>
+            </table>
+        </category>

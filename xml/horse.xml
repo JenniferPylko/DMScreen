@@ -1,0 +1,102 @@
+<category name="Horse" id="horse">
+    <table name="Breed/Variety: The horse is..." id="breed">
+        <value>A pony; stout and suitable for small riders and narrow trails.</value>
+        <value>A dray; reliable and suitable for pulling plows and wagons.</value>
+        <value>A garron; hardy and well-suited for harsh weather and terrain.</value>
+        <value>A palfrey; tireless and well-suited for long journeys.</value>
+        <value>A rounsey; medium-sized and suitable for riding or for battle.</value>
+        <value>A courser; swift and well-suited for hunting or for battle.</value>
+        <value>A charger; solid and suitable for jousting or for battle.</value>
+        <value>A destrier; huge and well-suited for jousting or for battle.</value>
+    </table>
+    <table name="Gender and Age: The horse is.." id="age">
+        <value>A colt.</value>
+        <value>A young gelding.</value>
+        <value>An old gelding.</value>
+        <value>A stallion.</value>
+        <value>A yearling.</value>
+        <value>A filly.</value>
+        <value>A young mare.</value>
+        <value>An old mare.</value>
+    </table>
+    <table name="Quality: The horse is..." id="quality">
+        <value>A stot; this animal is completely useless.</value>
+        <value>A canner; this animal is good for nothing but meat.</value>
+        <value>A hack; this animal is mediocre, but useful.</value>
+        <value>A hard keeper; this animal requires extra food to maintain its strength and endurance.</value>
+        <value>An easy keeper; this animal requires little food to maintain its strength and endurance.</value>
+        <value>Of middling quality; acceptable for its breed.</value>
+        <value>Of high quality; a very good animal for its breed.</value>
+        <value>Of the highest quality; a paragon of its breed.</value>
+    </table>
+    <table name="Color: The horse's coat is..." id="color">
+        <value>Bay.</value>
+        <value>Black.</value>
+        <value>Buckskin.</value>
+        <value>Chestnut.</value>
+        <value>Gray.</value>
+        <value>Piebald.</value>
+        <value>Roan.</value>
+        <value>White.</value>
+    </table>
+    <table name="Eyes: The horse has..." id="eyes">
+        <value>Light brown eyes.</value>
+        <value>Brown eyes.</value>
+        <value>Dark brown eyes.</value>
+        <value>Green eyes.</value>
+        <value>Hazel eyes.</value>
+        <value>Amber eyes.</value>
+        <value>Brown and blue eyes.</value>
+        <value>Blue eyes.</value>
+    </table>
+    <table name="Flaw: The horse is..." id="flaw">
+        <value>Pigeon toed.</value>
+        <value>Splay footed.</value>
+        <value>Mule footed (narrow feet).</value>
+        <value>Mushroom footed (large feet).</value>
+        <value>Barrel chested.</value>
+        <value>Narrow chested.</value>
+        <value>Steep rumped.</value>
+        <value>Slab sided.</value>
+    </table>
+    <table name="Severity of Flaw: The horse's flaw is..." id="severity">
+        <value>Imperceptible to all but the most expert horse-masters and riders.</value>
+        <value>Barely noticeable.</value>
+        <value>Not a hindrance to the horse's performance.</value>
+        <value>Something the horse can make up for with its other qualities.</value>
+        <value>Something that sufficient training can overcome.</value>
+        <value>Something that makes riding the horse a little difficult.</value>
+        <value>Something that makes riding the horse a little embarrassing.</value>
+        <value>A severe hindrance to the horse's performance.</value>
+    </table>
+    <table name="Distinguishing Feature: The horse has..." id="feature">
+        <value>One eye that is blind or nearly blind.</value>
+        <value>Pig eyes (small eyes).</value>
+        <value>Large ears.</value>
+        <value>Small ears.</value>
+        <value>A wry tail (tail carried to one side).</value>
+        <value>A clipped tail.</value>
+        <value>A scar above one forehoof.</value>
+        <value>A shaggy mane.</value>
+    </table>
+    <table name="Personality: Most of the time, this horse is..." id="personality">
+        <value>Eager to please.</value>
+        <value>Social.</value>
+        <value>Gentle.</value>
+        <value>Aloof.</value>
+        <value>Unimpressed.</value>
+        <value>Fearful.</value>
+        <value>Challenging.</value>
+        <value>Foul-tempered.</value>
+    </table>
+    <table name="Behavior: The horse often..." id="behavior">
+        <value>Nickers when anxious.</value>
+        <value>Whinnies when anxious.</value>
+        <value>Bucks when impatient.</value>
+        <value>Stamps when impatient.</value>
+        <value>Froths when tired.</value>
+        <value>Snorts when tired.</value>
+        <value>Stamps when content.</value>
+        <value>Snorts when content.</value>
+    </table>
+</category>

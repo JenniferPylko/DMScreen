@@ -1,0 +1,28 @@
+            <category name="Archer" id="archer">
+                <name name="The archer's name is..."/>
+                <include name="Race" include="npc_race" />
+                <table name="The archer is..." id="archer_is">
+                    <value>An eager young marksman</value>
+                    <value>A trigger-happy hotshot</value>
+                    <value>A braggart and a fool</value>
+                    <value>A skilled hunter</value>
+                    <value>A wily, old veteran</value>
+                    <value>A local archery champion</value>
+                </table>
+                <table name="The archer is looking to..." id="archer_looking">
+                    <value region_start="30" region_end="35" region_include="__noun__">Help his allies slaughter the enemy</value>
+                    <value region_start="10|33" region_end="25|39" region_include="__noun__|castle">Keep safe someone special in the castle</value>
+                    <value>Hear word of any percolating wars</value>
+                    <value>Eat, drink, and be merry</value>
+                </table>
+                <table name="The archer carries" id="archer_carries">
+                    <value>A longbow with a fraying string</value>
+                    <value>A longbow crafted of superior wood</value>
+                    <value>Arrows fletched with the feathers of a wild eagle</value>
+                    <value>Arrows fletched with the feathers of a wild hawk</value>
+                    <value>Arrows fletched with the feathers of a wild owl</value>
+                    <value>Arrows fletched with the feathers of a wild pheasant</value>
+                    <value>Arrows fletched with the feathers of a wild raven</value>
+                    <value>Arrows fletched with the feathers of a wild swan</value>
+                </table>
+            </category>

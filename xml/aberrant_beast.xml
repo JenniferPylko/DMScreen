@@ -1,0 +1,44 @@
+            <category name="Aberrant Beast" id="aberrant_beast" short="Looks like">
+                <table name="The aberrant beast looks a good bit like" id="like">
+                    <value>an ape</value>
+                    <value>a bat</value>
+                    <value>a centipede</value>
+                    <value>a crow</value>
+                    <value>a fish</value>
+                    <value>a jellyfish</value>
+                    <value>a lizard</value>
+                    <value>a lobster</value>
+                    <value>an octopus</value>
+                    <value>a panther</value>
+                    <value region_start="2" region_end="8" region_include="spider">a spider</value>
+                    <value>a vulture</value>
+                </table>
+                <table name="It has" short="Has" id="has">
+                    <value>tentacles where you expect eyes</value>
+                    <value>a blind, jawed worm for a tongue</value>
+                    <value>a large single, lidless eye</value>
+                    <value>several extra eyes</value>
+                    <value>slime covering its body</value>
+                    <value>small tentacles covering its body</value>
+                    <value>dexterous tentacles it uses like hands</value>
+                    <value>an unpleasant, briny odour</value>
+                </table>
+                <table name="and" short="Special quality" id="hasand">
+                    <value>moves by floating eerily in air or water</value>
+                    <value>moves by slithering or scuttling</value>
+                    <value>can teleport in a swirl of shadows</value>
+                    <value>can fade away and reappear elsewhere</value>
+                    <value>shambles awkwardly across the ground</value>
+                    <value>glides smoothly over the ground or water</value>
+                    <value>mutters darkly to itself</value>
+                    <value>whispers strange desires to mortals</value>
+                </table>
+                <table name="The beast is looking for" short="Looking for" id="looking">
+                    <value>a brain to devour</value>
+                    <value>a host to infect with its parasitic larva</value>
+                    <value>a mortal to enslave</value>
+                    <value region_start="27" region_end="33" region_include="__noun__">a mortal to present to its master</value>
+                    <value region_start="32" region_end="38" region_include="__noun__">an opportunity to overthrow its master</value>
+                    <value>someone to lovingly caress</value>
+                </table>
+            </category>

@@ -1,0 +1,45 @@
+        <table name="Religious articles and furnishings" short="Religious Furnishing" id="dressing_religious">
+            <value>Altar</value>
+            <value>Bell(s)</value>
+            <value>Brazier(s)</value>
+            <value>Candelabra</value>
+            <value>Candles</value>
+            <value>Candlesticks</value>
+            <value>Cassocks</value>
+            <value>Chime(s)</value>
+            <value>Altar cloth</value>
+            <value>Columns or pillars</value>
+            <value>Curtain or tapestry</value>
+            <value>Drum</value>
+            <value>Font</value>
+            <value>Gong</value>
+            <value>Holy or unholy symbol(s)</value>
+            <value>Holy or unholy writings</value>
+            <value>Idol(s)</value>
+            <value>Incense burner(s)</value>
+            <value>Kneeling bench</value>
+            <value>Lamp(s)</value>
+            <value>Lectern</value>
+            <value>Mosaics</value>
+            <value>Offertory container</value>
+            <value>Paintings or frescoes</value>
+            <value>Pews</value>
+            <value>Musical pipes</value>
+            <value>Prayer rug</value>
+            <value>Pulpit</value>
+            <value>Rail</value>
+            <value>Robes</value>
+            <value>Sanctuary</value>
+            <value>Screen</value>
+            <value>Shrine</value>
+            <value>Side chair(s)</value>
+            <value>Stand</value>
+            <value>Statues(s)</value>
+            <value>Throne</value>
+            <value>Thurible</value>
+            <value>Tripod</value>
+            <value>Vestry</value>
+            <value>Vestments</value>
+            <value>Votive light</value>
+            <value>Whistle</value>
+        </table>

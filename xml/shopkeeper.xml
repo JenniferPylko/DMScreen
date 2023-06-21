@@ -1,0 +1,16 @@
+<category name="Shopkeeper" id="shopkeeper">
+    <name name="The shopkeeper's name is..."/>
+    <include name="Race" include="npc_race" />
+    <table name="This shopkeeper is..." id="is">
+        <value>Bored</value>
+        <value>Eager to help</value>
+        <value>Visibly perturbed</value>
+        <value>Nervously looking about</value>
+    </table>
+    <table name="This shopkeeper seeks someone to..." id="seeks">
+        <value>Purchase faulty goods</value>
+        <value>Purchase a large shipment of goods</value>
+        <value>Listen to some whining</value>
+        <value>Share some wine and chat</value>
+    </table>
+</category>

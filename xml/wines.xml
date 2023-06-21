@@ -1,0 +1,125 @@
+<category name="Wine" id="wines">
+    <table name="This wine was made in..." id="wine_in">
+        <value region_start="14" region_end="28" region_include="__noun__">A traditional coastal region known for its wines.</value>
+        <value region_start="8" region_end="16" region_include="mountain">A mild, mountain valley known for its wines.</value>
+        <value region_start="2" region_end="8" region_include="wildreness">A region with a growing community of winemakers.</value>
+        <value region_start="2" region_end="14" region_include="nation">A foreign land that has been making wines for centuries.</value>
+        <value region_start="14" region_end="28" region_include="__noun__">A region where settlers have begun making wine as their ancestors had.</value>
+        <value region_start="11" region_end="20" region_include="monastery">A secluded monastery.</value>
+        <value>A chain of islands far across the sea.</value>
+        <value region_start="33" region_end="36" region_include="tavern">The basement of a little country inn.</value>
+        <value>The basement of a little country chapel or shrine.</value>
+        <value region_start="27" region_end="31" region_include="nobleman">The household of an elvish lord.</value>
+        <value region_start="7" region_end="13" region_include="temple">A dark temple in the underdark.</value>
+    </table>
+    <table name="The wine is..." id="wine_is">
+        <value>A pale white.</value>
+        <value>A bubbly white.</value>
+        <value>A goldish white.</value>
+        <value>A pale rosé.</value>
+        <value>A rich rosé.</value>
+        <value>A delicate red.</value>
+        <value>A thick red.</value>
+        <value>A deep red.</value>
+        <value>A robust red.</value>
+        <value>A reddish purple.</value>
+    </table>
+    <table name="The wine smells of..." id="wine_smell">
+        <value>Springtime breezes.</value>
+        <value>Wildflowers.</value>
+        <value>Honey.</value>
+        <value>Roses.</value>
+        <value>Cherry blossoms.</value>
+        <value>Lilacs.</value>
+        <value>Lilies.</value>
+        <value>Wildflowers.</value>
+        <value>Morning dew.</value>
+        <value>Rain-covered flower petals.</value>
+        <value>Orange blossoms.</value>
+        <value>Young grapes.</value>
+        <value>Ripe grapes.</value>
+        <value>Cherries.</value>
+        <value>Tangerines.</value>
+        <value>Apple blossoms.</value>
+        <value>Ripe grapes.</value>
+        <value>Lemongrass.</value>
+        <value>Peach blossoms.</value>
+        <value>Hydrangeas.</value>
+        <value>Forest fruits</value>
+        <value>Dark chocolate</value>
+        <value>Grapes</value>
+        <valu>Sea breeze</valu>
+    </table>
+    <table name="The wine's flavor has notes of..." id="wine_flavor">
+        <value>Apple.</value>
+        <value>Blueberry.</value>
+        <value>Butter.</value>
+        <value>Citrus.</value>
+        <value>Cherry.</value>
+        <value>Chocolate.</value>
+        <value>Cloves.</value>
+        <value>Ginger.</value>
+        <value>Lemon.</value>
+        <value>Oak.</value>
+        <value>Peach.</value>
+        <value>Pear.</value>
+        <value>Pepper.</value>
+        <value>Pine.</value>
+        <value>Plum.</value>
+        <value>Raspberry.</value>
+        <value>Spices.</value>
+        <value>Smokiness.</value>
+        <value>Strawberry.</value>
+        <value>Tangerine.</value>
+    </table>
+    <table name="The wine is served in..." id="wine_served">
+        <value>A glass goblet.</value>
+        <value>A glass flute.</value>
+        <value>A glass mug.</value>
+        <value>A glass cup.</value>
+        <value>A tin cup.</value>
+        <value>A brass goblet.</value>
+        <value>A steel mug.</value>
+        <value>A gilded flute.</value>
+        <value>A silver goblet.</value>
+        <value>A bucket.</value>
+    </table>
+    <table name="The wine is best when enjoyed..." id="wine_enjoyed">
+        <value>Iced.</value>
+        <value>Chilled.</value>
+        <value>Cold.</value>
+        <value>After it has had a few minutes to breathe.</value>
+        <value>After it has had a few hours to breathe.</value>
+        <value>Lightly spiced.</value>
+        <value>Warmed.</value>
+        <value>Hot.</value>
+        <value>Honeyed.</value>
+        <value>Heavily spiced and boiled.</value>
+    </table>
+    <table name="The wine makes a great pairing with..." id="wine_pairs">
+        <value>Oysters or fish.</value>
+        <value>Lobster or crab.</value>
+        <value>Chicken or turkey.</value>
+        <value>Pork chops or bacon.</value>
+        <value>Steak or veal.</value>
+        <value>Mutton or lamb.</value>
+        <value>Sausage.</value>
+        <value>A soft cheese.</value>
+        <value>A hard cheese.</value>
+        <value>A stinky cheese.</value>
+    </table>
+    <table name="There is a tale that this type of wine was..." id="wine_tale">
+        <value region_start="14" region_end="17" region_include="deity">A gift from a god or goddess to an ancient people.</value>
+        <value region_start="17" region_end="30" region_include="__noun__">Drunk at a famed wedding feast.</value>
+        <value region_start="36" region_end="40" region_include="nobleman">Drunk at the funeral of a legendary king</value>
+        <value region_start="36" region_end="41" region_include="noblewoman">Drunk at the funeral of a legendary queen.</value>
+        <value region_start="12" region_end="31" region_include="barbarian">Consumed by a legendary warrior before slaying a dragon.</value>
+        <value region_start="12" region_end="41" region_include="priest">Consumed by a legendary priest or priestess prior to making a dark prophecy.</value>
+        <value region_start="12" region_end="29" region_include="witch">Consumed by a legendary witch before he or she mysteriously disappeared.</value>
+        <value region_start="12" region_end="30" region_include="wizard">Consumed by a legendary wizard before he or she mysteriously disappeared.</value>
+        <value region_start="12" region_end="29" region_include="thief">Consumed by a legendary thief before stealing a celebrated gem.</value>
+        <value region_start="12" region_end="30" region_include="knight">Consumed by a legendary knight before leading a host to victory against impossible odds.</value>
+        <value>Consumed by a famous pair of lovers as they poisoned themselves.</value>
+        <value>First produced by a now-extinct, ancient race or clan.</value>
+    </table>
+</category>

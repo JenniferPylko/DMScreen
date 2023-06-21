@@ -1,0 +1,89 @@
+        <table name="Furnishing and Appointments, General" short="Furnishing" id="dressing_furnishings">
+                <value>Altar</value>
+                <value>Armchair</value>
+                <value>Armoire</value>
+                <value>Cross</value>
+                <value>Bag</value>
+                <value>Barrel</value>
+                <value>Bed</value>
+                <value>Bench</value>
+                <value>Blanket</value>
+                <value>Large Box</value>
+                <value>Brazier and charcoal</value>
+                <value>Bucket</value>
+                <value>Buffet</value>
+                <value>Bunks</value>
+                <value>Cabinet</value>
+                <value>Candelabrum</value>
+                <value>Large Carpet</value>
+                <value>Cask</value>
+                <value>Chandelier</value>
+                <value>Charcoal</value>
+                <value>Chair</value>
+                <value>Padded chair</value>
+                <value>Padded armchair</value>
+                <value>Large chest</value>
+                <value>Medium chest</value>
+                <value>Chest of drawers</value>
+                <value>Closet (wardrobe)</value>
+                <value>Coal</value>
+                <value>Couch</value>
+                <value>Crate</value>
+                <value>Cresset</value>
+                <value>Cupboard</value>
+                <value>Cushion</value>
+                <value>Dias</value>
+                <value>Desk</value>
+                <value>Fireplace and wood</value>
+                <value>Fireplace with mantle</value>
+                <value>Firkin</value>
+                <value>Fountain</value>
+                <value>Fresco</value>
+                <value>Grindstone</value>
+                <value>Hamper</value>
+                <value>Hassock</value>
+                <value>Hogshead</value>
+                <value>Large Idol</value>
+                <value>Keg</value>
+                <value>Loom</value>
+                <value>Mat</value>
+                <value>Mattress</value>
+                <value>Pail</value>
+                <value>Painting</value>
+                <value>Pallet</value>
+                <value>Pedestal</value>
+                <value>Pegs</value>
+                <value>Pillow</value>
+                <value>Pipe</value>
+                <value>Quilt</value>
+                <value>Small Rug</value>
+                <value>Rushes</value>
+                <value>Sack</value>
+                <value>Wall Sconce</value>
+                <value>Screen</value>
+                <value>Sheet</value>
+                <value>Shelf</value>
+                <value>Shrine</value>
+                <value>Sideboard</value>
+                <value>Sofa</value>
+                <value>Staff</value>
+                <value>Stand</value>
+                <value>Statue</value>
+                <value>High stool</value>
+                <value>Stool</value>
+                <value>Large table</value>
+                <value>Long table</value>
+                <value>Low table</value>
+                <value>Round table</value>
+                <value>Small table</value>
+                <value>Trestle table</value>
+                <value>Tapestry</value>
+                <value>Throne</value>
+                <value>Trunk</value>
+                <value>Tub</value>
+                <value>Tun</value>
+                <value>Urn</value>
+                <value>Wall basin and font</value>
+                <value>Wood billets</value>
+                <value>Workbench</value>
+            </table>

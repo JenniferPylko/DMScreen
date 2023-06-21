@@ -1,0 +1,15 @@
+<category name="Rogue" id="rogue">
+    <name name="The rogue's name is..." />
+    <table name="You have heard of this rogue because..." id="rogue_heard">
+        <value region_start="76" region_end="84" region_include="prison">Shortly after being imprisoned, he promptly escaped from a maximum security stockade.</value>
+        <value region_start="30" region_end="34" region_include="nobleman">He has more treasure than the king stashed away in a dozen murky hiding places.</value>
+        <value>He's due to be hanged in a few days. It seems he has escaped.</value>
+        <value>He's a kleptomaniac, often weighted down with hot goods he needs to sell to anyone, at any price.</value>
+        <value>He's well known to the locals as a knave who cons newcomers.</value>
+        <value region_start="46" region_end="50" region_include="nobleman">The common folk are facing reprisals from the king as a result of his predations.</value>
+        <value region_start="17" region_end="25" region_include="assassin">He's a dangerous assassin who keeps grudges.</value>
+        <value region_start="11|61" region_end="29|65" region_include="artifacts|cults">He stole a legendary artifact from the lair of an evil death cult.</value>
+        <value region_start="61|69" region_end="66|77" region_include="__noun__|__noun__">He's a rebel do-gooder in a tyrannical kingdom and wooed the Baron's daughter to the rebel cause.</value>
+        <value>The common folk overlook his more petty crimes because he tricked a group of bandits threatening the town into leaving.</value>
+    </table>
+</category>

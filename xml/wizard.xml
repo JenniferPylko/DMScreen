@@ -1,0 +1,15 @@
+<category name="Wizard" id="wizard">
+    <name name="The wizard's name is..."/>
+    <table name="You have heard of this wizard because..." id="wizard_known">
+        <value region_start="43" region_end="51" region_include="city">He used his magic to fend off an attack on the city by dark forces.</value>
+        <value region_start="28" region_end="32" region_include="nobleman">He is the right hand of the king, a beloved ruler.</value>
+        <value region_start="30|62" region_end="40|69" region_include="__noun__|library">He is the beloved head of the university and a master of it's library.</value>
+        <value region_start="13" region_end="24" region_include="necromancer">He's a hated necromancer, wanted for grave robbing.</value>
+        <value>He's a con-man using magic to fleece the unwary.</value>
+        <value region_start="47" region_end="54" region_include="__noun__">He's a legendary terror who nearly brought the kingdom to its knees not long ago.</value>
+        <value region_start="68" region_end="73" region_include="book/book_subject/outerplanes">He's a noted traveler of the outer planes and has published several books on the subject.</value>
+        <value>He's a collector of ancient lore, happy to accompany adventurers into a dungeon, or pay them for information they have recovered.</value>
+        <value>He's a famous war mage with a quick temper. His familiar is a holy terror.</value>
+        <value>He's a drunk with dangerous knowledge.</value>
+    </table>
+</category>

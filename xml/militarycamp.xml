@@ -1,0 +1,178 @@
+<category name="Military Camp" id="militarycamp">
+    <table name="This tent functions as..." id="tent">
+        <value>Barracks</value>
+        <value>A chapel or shrine</value>
+        <value>A forge (armorer)</value>
+        <value>A forge (blacksmith)</value>
+        <value>A forge (farrier)</value>
+        <value>A forge (swordsmith)</value>
+        <value>An infermary or surgerons' office</value>
+        <value>A mess hall</value>
+        <value>Officers' quarters</value>
+        <value>Officers' mess</value>
+        <value>A supply tent (armory)</value>
+        <value>A supply tent (building materials)</value>
+        <value>A supply tent (food)</value>
+        <value>A supply tent (water)</value>
+        <value>A stable or kennel</value>
+        <value>A workship (cartwright)</value>
+        <value>A workship (fletcher)</value>
+        <value>A workship (leatherworker)</value>
+        <value>A workship (siege engineer)</value>
+    </table>
+    <table name="Other Landmarks: You see..." id="landmark">
+        <value>A corral or wagon yard</value>
+        <value>A guard post or watch tower</value>
+        <value>A gatehouse</value>
+        <value>Tables that serve as an outdoor mess hall</value>
+        <value>A drill yard</value>
+        <value>A target range or sparring pit</value>
+        <value>Water wells</value>
+        <value>A privy or waste pit</value>
+        <value>An outdoor forge or workshop</value>
+        <value>A stockade or jail</value>
+        <value>Animal pens</value>
+        <value>Graves</value>
+    </table>
+    <table name="The camp's mounts include" id="mounts">
+        <value>Camels</value>
+        <value>Large draft horses</value>
+        <value>Reliable garrons</value>
+        <value>Quick-footed palfreys</value>
+        <value>Huge destriers</value>
+        <value>Bears</value>
+        <value>Bison</value>
+        <value>Elephants</value>
+        <value>Elk</value>
+        <value>Giant lizards</value>
+        <value>Zebras</value>
+    </table>
+    <table name="As hunting or war beasts, the camp has..." id="hunting">
+        <value>Falcons</value>
+        <value>Fighting dogs</value>
+        <value>Hounds</value>
+        <value>Terriers</value>
+        <value>Wolves</value>
+        <value>Boars</value>
+        <value>Dire rats</value>
+        <value>Dire wolves</value>
+        <value>Drakes</value>
+        <value>Eagles</value>
+        <value>Lions</value>
+        <value>Owlbears</value>
+        <value>Ravens</value>
+        <value>Tigers</value>
+        <value>Wargs</value>
+    </table>
+    <table name="The camp's general mood is..." id="mood">
+        <value>Desperate; a calamity has befallen them</value>
+        <value>Solemn; badly outnumbered, battle is nigh</value>
+        <value>Foul; morale is bad, and provisions are low</value>
+        <value>Tired; the journey is long and longer yet</value>
+        <value>Eager; great plunder waits at journey's end</value>
+        <value>Cheerful; victory is all but certain</value>
+    </table>
+    <member name="Commander" id="commander">
+        <table name="The commander is...">
+            <value>A brilliant strategist</value>
+            <value>A brutish thug</value>
+            <value>A dashing swashbuckler</value>
+            <value>A celebrated war hero</value>
+            <value>An anounted knight</value>
+            <value>A career soldier</value>
+        </table>
+        <table name="The commander is looking for...">
+            <value>Information regarding enemy positioning</value>
+            <value>Information regarding the terrain ahead</value>
+            <value>Reinforcements or new recruits</value>
+            <value>News of his hometown</value>
+            <value>Revenge against a bitter rival</value>
+            <value>Drinking companions and storytellers</value>
+        </table>
+        <table name="The commander is trying to avoid...">
+            <value>Barbarians</value>
+            <value>Bandits</value>
+            <value region_start="10" region_end="14" region_include="military">The enemy army</value>
+            <value>Hazardous terrain</value>
+        </table>
+        <table name="The commander carries...">
+            <value>A superbly crafted sword</value>
+            <value>A trusted blade and a map</value>
+            <value>A lucky charm</value>
+            <value>The token of a faraway love</value>
+            <value>A pipe and a pouch of tabacco</value>
+            <value>A little jar of mustache wax</value>
+        </table>
+    </member>
+    <member name="Scout" id="scout">
+        <table name="The scout is...">
+            <value>A daring ranger</value>
+            <value>A skilled hunter</value>
+            <value>An expert tracker</value>
+            <value>A brutal warrior</value>
+        </table>
+        <table name="The scout is looking to...">
+            <value>Help the camp slaughter the enemy</value>
+            <value>Keep the camp from marching into a trap</value>
+            <value>Hear word of enemy patrols and wild game</value>
+            <value>Eat, drink, and be merry</value>
+        </table>
+        <table name="The scout carries...">
+            <value>A map with notes scawled all over it</value>
+            <value>A unique trinket or piece of jewelry</value>
+            <value>A longbow and a quiver of arrows</value>
+            <value>A large knife and climbing gear</value>
+        </table>
+    </member>
+    <member name="Armorer" id="armorer">
+        <table name="The armorer is...">
+            <value>A meticulous armorsmith</value>
+            <value>A blacksmith with some militia experience</value>
+            <value>A farrier with little experience with weapons</value>
+            <value>A highly-skilled weaponsmith</value>
+        </table>
+        <table name="The armorer is looking for...">
+            <value>A new apprentice or a journeyman assistant</value>
+            <value>Rare metals</value>
+            <value>Dull blades to sharpen</value>
+            <value>A mug of strong ale</value>
+        </table>
+        <table name="The armorer carries..">
+            <value>A hammer</value>
+            <value>A metal trinket made by the armorer</value>
+            <value>A conract for a set of special plate armor</value>
+            <value>Little more than a few coins</value>
+        </table>
+    </member>
+    <member name="Quartermaster" include="quartermaster" />
+    <member name="Stable Hand / Squire / Valet" id="stablehand">
+        <table name="The servant is..." id="stablehand_is">
+            <value region_start="2|16" region_end="8|27" region_include="squire|noblehouse">A squire from a noble house</value>
+            <value>A frightened link boy</value>
+            <value>A long-time valet or reformed criminal</value>
+            <value>A reformed criminal-turned valet</value>
+            <value>A prisoner of war</value>
+            <value region_start="13" region_end="22" region_include="nation">A mysterious foreigner</value>
+            <value>A simple-minded stable hand</value>
+            <value>An expert on horses</value>
+        </table>
+        <table name="The servant has..." id="stablehand_has">
+            <value>An awkward gait</value>
+            <value>Incredibly large hands</value>
+            <value>Quite an odor</value>
+            <value>A ragged beard</value>
+        </table>
+        <table name="The servant wants to..." id="stablehand_wants">
+            <value>Earn a little silver</value>
+            <value>Go back home</value>
+            <value>Show off an animal's new trick</value>
+            <value>Train with weapons and be a hero</value>
+            <value>Earn the affection of his or her master</value>
+            <value>Have a drink and a rest</value>
+        </table>
+    </member>
+    <member name="Camp Follower" include="traveler" />
+    <member name="Military Company" include="military" />
+    <member name="Cook" include="cook" />
+    <member name="Soldier" include="soldier" />
+</category>

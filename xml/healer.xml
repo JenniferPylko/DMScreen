@@ -1,0 +1,72 @@
+        <category name="Healer" id="healer">
+            <table name="Profession: The healer is..." id="is">
+                <value region_start="10" region_end="17" region_include="__noun__">A devoted acolyte.</value>
+                <value region_start="9" region_end="16" region_include="__noun__">A silent acolyte.</value>
+                <value region_start="10" region_end="19" region_include="alchemist">A skilled alchemist.</value>
+                <value region_start="2" region_end="11" region_include="__noun__">A religious fanatic.</value>
+                <value region_start="13" region_end="19" region_include="__noun__">A cloistered zealot.</value>
+                <value region_start="12" region_end="21" region_include="__noun__">A talkative herbalist.</value>
+                <value region_start="10" region_end="19" region_include="__noun__">A patient herbalist.</value>
+                <value region_start="9" region_end="15" region_include="knight">A devout knight.</value>
+                <value region_start="14" region_end="18" region_include="monk">A soft-spoken monk.</value>
+                <value region_start="19" region_end="28" region_include="__noun__">An academy-trained physician.</value>
+                <value region_start="9" region_end="16" region_include="__noun__">An eager student.</value>
+                <value region_start="14" region_end="20" region_include="__noun__">A self-taught shaman.</value>
+                <value region_start="2" region_end="17" region_include="__noun__">A medical scholar.</value>
+                <value region_start="12" region_end="19" region_include="__noun__">A practised surgeon.</value>
+                <value region_start="16" region_end="25" region_include="priest">A battle-tested warpriest.</value>
+                <value region_start="9" region_end="19" region_include="__noun__">A quirky witch-doctor.</value>
+                <value region_start="10" region_end="16" region_include="priest">A pompous priest or priestess.</value>
+                <value region_start="10" region_end="24" region_include="__noun__">A nervous miracle worker.</value>
+                <value region_start="17" region_end="24" region_include="merchant">A silver-tongued peddler.</value>
+                <value region_start="15" region_end="26" region_include="__noun__">A sharp-witted potionmaker.</value>
+            </table>
+            <table name="Mannerism: The healer has..." id="mannerism">
+                <value>A likeable grin.</value>
+                <value>Kind eyes.</value>
+                <value>Alert eyes.</value>
+                <value>A sympathetic smile.</value>
+                <value>An arrogant smirk.</value>
+                <value>A thoughtful frown.</value>
+                <value>A humourless visage.</value>
+                <value>An easy laugh.</value>
+                <value>A habit of sighing.</value>
+                <value>A habit of muttering to himself or herself.</value>
+            </table>
+            <table name="Apparel: The healer wears..." id="wears">
+                <value>A threadbare robe.</value>
+                <value>A sturdy wool cloak.</value>
+                <value>A hooded traveller's cloak.</value>
+                <value region_start="46" region_end="49" region_include="deity">A cotton robe emblazoned with the symbol of a god.</value>
+                <value>A faded cotton robe.</value>
+                <value>A clean silk robe with simple embroidery.</value>
+                <value>A leather vest and a traveller's cloak.</value>
+                <value>Boiled leather armor.</value>
+                <value>Patchwork armor of leather and steel.</value>
+                <value region_start="21" region_end="31" region_include="armorsmith">A chain mail shirt. (Crafted by)</value>
+            </table>
+            <table name="Possessions: The healer carries..." id="possession">
+                <value>A clean, sharp knife.</value>
+                <value>A wooden staff.</value>
+                <value>A sturdy cudgel.</value>
+                <value>A needle, thread, and some healing balms.</value>
+                <value>A pocketbook of sacred texts and prayers.</value>
+                <value>A notebook of hand-written potion recipes.</value>
+                <value>A variety of healing potions and bandages.</value>
+                <value>Scales, glass vials, and delicate tools.</value>
+                <value>A small field guide to diagnosing illnesses.</value>
+                <value>A wineskin.</value>
+            </table>
+            <table name="Goal: The healer is looking for..." id="looking">
+                <value region_start="22" region_end="34" region_include="__noun__">The translation of an ancient text.</value>
+                <value>Individuals in need of his or her services.</value>
+                <value>Someone to purchase a potion or two.</value>
+                <value region_start="12" region_end="21" region_include="__noun__">A dangerous substance for a potent elixir.</value>
+                <value region_start="2|19" region_end="10|28" region_include="wilderness|__noun__">A location where a rare herb grows.</value>
+                <value region_start="11" region_end="14" region_include="deity">Proof of a god’s existence.</value>
+                <value region_start="4|27" region_end="10|33" region_include="__noun__|potions">The recipe for a legendary potion.</value>
+                <value>A chance to earn a little coin.</value>
+                <value region_start="19" region_end="30" region_include="__noun__">A chance to tell a tale of woe.</value>
+                <value>The bottom of a goblet.</value>
+            </table>
+        </category>

@@ -1,0 +1,66 @@
+<category name="Shadowy Desert" id="shadowdesert">
+    <table name="Interesting Location: You find..." id="shadowdesert_interest">
+        <value region_start="2" region_end="8" region_include="shadowdesert_cavern">A cavern in a canyon wall.</value>
+        <value region_start="2" region_end="6" region_include="shadowdesert_hole">A hole under a large boulder.</value>
+        <value region_start="8" region_end="14" region_include="shadowdesert_hole">A large burrow.</value>
+        <value region_start="2" region_end="12" region_include="shadowdesert_cavern">A small cave next to a dry river bed.</value>
+        <value region_start="2" region_end="16" region_include="shadowdesert_grave">A pair of graves.</value>
+        <value region_start="11" region_end="15" region_include="shadowdesert_tent">A peculiar tent.</value>
+        <value>Some nomads’ camp.</value>
+        <value region_start="3" region_end="24" region_include="shadowdesert_house">An abandoned stone house.</value>
+        <value region_start="13" region_end="21" region_include="shadowdesert_camp">An abandoned campsite.</value>
+        <value region_start="15" region_end="27" region_include="shadowdesert_cavern">An entrance to a rocky cave.</value>
+        <value region_start="11" region_end="15" region_include="tomb">An ancient tomb.</value>
+        <value region_start="8" region_end="13" region_include="shadowdesert_hole">Ancient ruins.</value>
+    </table>
+    <table name="Distinguising Landmark: You see..." id="shadowdesert_landmark">
+        <value>An oasis with a tree bearing rotten fruit.</value>
+        <value>An oasis with foul-smelling water.</value>
+        <value>An unusually large, prickly desert plant.</value>
+        <value>A pair of prickly plants from the same root.</value>
+        <value>A patch of coarse grass next to a boulder, shrouded in a strange mist.</value>
+        <value>A rocky bluff.</value>
+        <value>A boulder shaped like a skull.</value>
+        <value>A pair of identical boulders, side by side.</value>
+        <value>A boulder sitting atop a larger boulder.</value>
+        <value>A small, rocky canyon with a trickle of foul water.</value>
+        <value>A deep, rocky canyon with a trickle of foul water.</value>
+        <value>A dry river bed.</value>
+    </table>
+    <table name="Feature: You notice..." id="shadowdesert_feature">
+        <value>A buzzard circles overhead.</value>
+        <value>A vulture screams.</value>
+        <value>A flock of crows scatter.</value>
+        <value>A large beetle scuttles away.</value>
+        <value>A raven croaks.</value>
+        <value>A crow caws.</value>
+        <value region_start="2" region_end="5" region_include="rat">A rat scurries away.</value>
+        <value>A swarm of beetles crawl past.</value>
+        <value>A ghostly presence flees.</value>
+        <value>A ghostly presence watches curiously.</value>
+        <value>A beast howls mournfully in the distance.</value>
+        <value>An eerie silence.</value>
+        <value>The wind kicks up dust.</value>
+        <value>The breeze stops.</value>
+        <value>The wind moans eerily.</value>
+        <value>Small lose stones tumble down a slope.</value>
+        <value>A dead palm tree.</value>
+        <value>A distant scream.</value>
+        <value>The smell of rotting flesh.</value>
+        <value>The smell of decay.</value>
+    </table>
+    <table name="Encounters: You come upon..." id="shadowdesert_encounter">
+        <value>A giant spider.</value>
+        <value>A pack of wolves.</value>
+        <value>An animated skeleton.</value>
+        <value>A malevolent ghost.</value>
+        <value>A restless ghost.</value>
+        <value>A pair of ghouls.</value>
+        <value>A pair of bandits.</value>
+        <value>A strange hermit.</value>
+        <value>A lost traveler.</value>
+        <value>A destitute nomad.</value>
+        <value>A dust storm.</value>
+        <value>A thick, cold fog.</value>
+    </table>
+</category>

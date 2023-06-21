@@ -1,0 +1,36 @@
+<category name="Marketplace" id="marketplace">
+    <table name="The marketplace is located in..." id="located">
+        <value>A wide, rectangular plaza.</value>
+        <value>A large, circular or elliptical plaza.</value>
+        <value>A large plaza with a perfect square shape</value>
+        <value>A large plaza with a trapezoid shape</value>
+        <value>A large plaza with a triangle shape</value>
+        <value>A large plaza with a pentagon shape</value>
+        <value>An intersection of two wide roads.</value>
+        <value>A sprawling maze of small alleyways.</value>
+        <value region_start="40" region_end="44" region_include="city">A sprawling maze of tunnels beneath the city streets.</value>
+        <value>A huge pavilion with a solid roof overhead.</value>
+        <value>A disorganized series of large tents.</value>
+    </table>
+    <table name="Vendor stalls, carts and booths are mostly organized by..." id="organized">
+        <value>Type of merchandise.</value>
+        <value>Nation of origin of the merchandise.</value>
+        <value>Race or ethnicity of the merchants.</value>
+        <value>Nothing; the place is a big disorganized mess.</value>
+        <value>Religious or political affiliation of the merchants.</value>
+        <value>Raw materials and commodities on one half of the market, finished products on the other half.</value>
+        <value>Imported goods on one half of the market, local goods on the other half.</value>
+        <value>An intricate and archaic system put down in an ancient civic or religious document.</value>
+        <value>The social class to which the vendor caters.</value>
+        <value>Order of arrival at the marketplace on any given day.</value>
+    </table>
+    <member name="Vendor" include="vendor" />
+    <member name="Merchant Caravan" include="caravan" />
+    <member name="Crafting Guild" include="craftingguild" />
+    <member name="Merchant Guild" include="merchantguild" />
+    <member name="Sellsword Guards" include="mercenary" />
+    <member name="Theif" include="thief" />
+    <member name="City Watchmen" include="watchmen" />
+    <member name="Entertainers" include="bard" />
+    <member name="Harlots" include="harlot" />
+</category>

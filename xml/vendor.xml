@@ -1,0 +1,89 @@
+<category name="Vendor" id="vendor">
+    <name name="The vendor's name is..." />
+    <include name="Race" include="npc_race" />
+    <table name="This vendor is selling wares from..." id="from">
+        <value>A little push cart.</value>
+        <value>A small, mule-drawn cart.</value>
+        <value>A sizable, horse- or ox-drawn wagon.</value>
+        <value>A handful of crates or chests the vendor has set up.</value>
+        <value>A large rug on which the vendor has laid out the merchandise.</value>
+        <value>A flimsy wooden booth.</value>
+        <value>A sturdy wooden booth with a cotton awning.</value>
+        <value>A semi-permanent wooden stall.</value>
+        <value>A permanent stone stall.</value>
+        <value>A huge sack the merchant has set down on the ground.</value>
+        <value>A one- or two-man tent.</value>
+        <value>A myriad of pockets in the vendor's clothes or a hidden demiplane.</value>
+    </table>
+    <table name="This vendor specializes in..." id="specialize">
+        <value region_start="13" region_end="19" region_include="farmfolk">Raw produce (farmer)</value>
+        <value region_start="12" region_end="18" region_include="farmfolk">Raw grains (farmer)</value>
+        <value region_start="11" region_end="17" region_include="farmfolk">Raw meats (farmer)</value>
+        <value region_start="4" region_end="8" region_include="fish">Raw fish</value>
+        <value>Urban street food</value>
+        <value region_start="0" region_end="5" region_include="wines">Wines</value>
+        <value>Prepared foodstuffs.</value>
+        <value>Arms and armor.</value>
+        <value>Clothing, apparel, or accessories.</value>
+        <value>Tools, trinkets, or other household goods.</value>
+        <value region_start="0" region_end="7" region_include="potions">Potions</value>
+        <value>Talismans, religious relics, or other magical goods.</value>
+        <value>Jewelry</value>
+        <value region_start="0" region_end="15" region_include="herblore">Herbal Remedies</value>
+        <value region_start="0" region_end="7" region_include="poisons">Poisons</value>
+        <value>Live animals.</value>
+        <value>Raw materials.</value>
+        <value region_start="0" region_end="15" region_include="seer">Fortune telling</value>
+        <value region_start="0" region_end="5" region_include="book">Books</value>
+        <value region_start="0" region_end="5" region_include="coins">Coins</value>
+        <value region_start="12" region_end="18" region_include="chests">Finely made chests</value>
+        <value>Slaves</value>
+    </table>
+    <table name="This vendor's wares were produced or prepared..." id="produced">
+        <value region_start="5" region_end="17" region_include="nation">In a foreign land.</value>
+        <value>In a local workshop.</value>
+        <value>By slaves.</value>
+        <value>By skilled laborers or crafters.</value>
+        <value>By the vendor him- or herself.</value>
+        <value>By laborers or crafters working under horrible conditions.</value>
+        <value region_start="13" region_end="17" region_include="city">In a distant city known for goods of this type.</value>
+        <value region_start="13" region_end="19" region_include="wildreness">In a distant region known for goods of this type.</value>
+        <value>Somewhere by someone; the vendor neither knows nor cares.</value>
+    </table>
+    <table name="This vendor's goods are..." id="goods">
+        <value>Of poor quality.</value>
+        <value>Cheap but usable, a real bargain.</value>
+        <value>Priced for more than they are worth.</value>
+        <value>Of decent quality and fairly priced.</value>
+        <value>Of the highest quality and quite expensive.</value>
+        <value>A mixed bag of low-quality and high-quality stuff.</value>
+        <value>Of mysterious origin.</value>
+        <value>Possibly stolen.</value>
+    </table>
+    <table name="The vendor is..." id="is">
+        <value>An old woman.</value>
+        <value>An old man.</value>
+        <value>A fat man.</value>
+        <value>A scrawny man.</value>
+        <value>A hardy woman.</value>
+        <value>A plain-faced maid.</value>
+        <value>A large woman.</value>
+        <value region_start="7" region_end="16" region_include="nation">An odd foreigner.</value>
+    </table>
+    <table name="Attitude: The vendor is..." id="attitude">
+        <value>Cheerful.</value>
+        <value>Surly.</value>
+        <value>Suspicious.</value>
+        <value>Friendly.</value>
+        <value>Alert.</value>
+        <value>Sleepy.</value>
+        <value>Nervous.</value>
+        <value>Frightened.</value>
+    </table>
+    <table name="Busy: The vendor is..." id="busy">
+        <value>Very busy; customers are waiting in line to make purchases.</value>
+        <value>Reasonably busy; the vendor makes a sale every few minutes.</value>
+        <value>A little slow; the vendor makes a few sales every hour.</value>
+        <value>Very slow; the vendor makes only a few sales a day.</value>
+    </table>
+</category>

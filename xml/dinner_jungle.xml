@@ -1,0 +1,79 @@
+        <category name="Dinner among Jungle Dwellers" id="dinner_jungle">
+            <table name="Tonight, we dine on..." id="dine">
+                <patterns>
+                    <pattern>{prep} {dish}</pattern>
+                </patterns>
+                <list type="prep">
+                    <item>Stewed</item>
+                    <item>Roasted</item>
+                    <item>Skewered</item>
+                    <item>Charred</item>
+                    <item>Smoked</item>
+                    <item>Grilled</item>
+                    <item>Sauteed</item>
+                    <item>Toasted</item>
+                    <item>Salted</item>
+                    <item>Peppered</item>
+                    <item>Pickled</item>
+                    <item>Fried</item>
+                </list>
+                <list type="dish">
+                    <item>frog</item>
+                    <item>carp</item>
+                    <item>crocodile</item>
+                    <item>lizard</item>
+                    <item>goat</item>
+                    <item>songbird</item>
+                    <item>waterfowl</item>
+                    <item>turtle</item>
+                    <item>panther</item>
+                    <item>monkey</item>
+                    <item>snake</item>
+                    <item>boar</item>
+                </list>
+            </table>
+            <table name="...with..." id="dine_with">
+                <value>Casava.</value>
+                <value>Taro.</value>
+                <value>Lettuce.</value>
+                <value>Avocado.</value>
+                <value>Onions.</value>
+                <value>White beans.</value>
+                <value>Red beans.</value>
+                <value>Leafy greens.</value>
+                <value>Bitter greens.</value>
+                <value>Hot peppers.</value>
+                <value>Coconut.</value>
+                <value>Yams.</value>
+            </table>
+            <table name="...and..." id="dine_and">
+                <value>Banana.</value>
+                <value>Mango.</value>
+                <value>Guava.</value>
+                <value>Figs.</value>
+                <value>Mixed nuts.</value>
+                <value>Mixed berries.</value>
+            </table>
+            <table name="Side dish..." id="dine_side">
+                <value>Cockroaches.</value>
+                <value>Beetles.</value>
+                <value>Oysters.</value>
+                <value>Slugs.</value>
+                <value>Snails.</value>
+                <value>Clams.</value>
+                <value>Crayfish.</value>
+                <value>Grubs.</value>
+            </table>
+            <table name="Beverage..." id="beverage">
+                <value>Black tea.</value>
+                <value>Sweet tea.</value>
+                <value>Pale ale.</value>
+                <value>Skunky ale.</value>
+                <value>Strong wine.</value>
+                <value>Sweet wine.</value>
+                <value>Absinthe.</value>
+                <value>Spiced rum.</value>
+                <value>Rum punch.</value>
+                <value>Whisky.</value>
+            </table>
+        </category>

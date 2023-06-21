@@ -1,0 +1,107 @@
+        <category name="Gladiator" id="gladiator">
+            <name name="The gladiator's name is..."/>
+            <include name="Race" include="npc_race" />
+            <table name="The gladiator is armored in..." id="armor">
+                <value>Nothing</value>
+                <value>A leather vest</value>
+                <value>A leather jerkin</value>
+                <value>The hides of exotic beasts</value>
+                <value region_start="15" region_end="25" region_include="armorer">A breastplate (crafted by)</value>
+                <value region_start="11" region_end="21" region_include="armorer">Chainmail (crafted by)</value>
+                <value region_start="17|25" region_end="24|34" region_include="nation|npc">The costume of a foreign adversary</value>
+                <value region_start="26" region_end="30" region_include="soldier">The costume of a military hero</value>
+            </table>
+            <table name="The gladiator is wielding..." id="weild">
+                <value>A spear</value>
+                <value>A gladius (short sword)</value>
+                <value>Two short swords</value>
+                <value>A spear and a shield</value>
+                <value>A shortsword and a shield</value>
+                <value>A heavy flail</value>
+                <value>A morning star</value>
+                <value>A huge axe</value>
+                <value>A whip</value>
+                <value>Brass knuckles</value>
+                <value>A net and trident</value>
+                <value>An exotic, curved blade</value>
+            </table>
+            <table name="The gladiator fights with..." id="fight">
+                <value>Hit-and-run tactics</value>
+                <value>Making a direct assault</value>
+                <value>Making a mad charge</value>
+                <value>Fancy footwork</value>
+                <value>Unpredictable lurches</value>
+                <value>Masterful combat maneuvers</value>
+                <value>Kicking and stomping</value>
+                <value>Lots of taunts and jeers</value>
+                <value>Lots of screaming and shouting</value>
+                <value>Lots of head-butting</value>
+            </table>
+            <table name="The gladiator is..." id="is">
+                <value>A well-trained slave</value>
+                <value>A poorly-trained slave</value>
+                <value>A seasoned veteran of the arena</value>
+                <value>A veteran of warfare</value>
+                <value region_start="14" region_end="17" region_include="__noun__">A prisoner of war</value>
+                <value>A political prisoner</value>
+                <value region_start="13" region_end="21" region_include="__noun__">The son of a poor man</value>
+                <value>A drunk</value>
+                <value region_start="11" region_end="19" region_include="criminal">A captured criminal</value>
+                <value region_start="9" region_end="15" region_include="pirate">A former pirate</value>
+                <value region_start="13" region_end="19" region_include="priest">A de-frocked priest</value>
+                <value>A favorite among the ladies</value>
+            </table>
+            <table name="The gladiator fights for..." id="for">
+                <value>The love of the sport</value>
+                <value region_start="12" region_end="34" region_include="__noun__">The love of someone he cannot have</value>
+                <value>Pure bloodlust</value>
+                <value>A chance to deal out sadistic torment</value>
+                <value>A chance at freedom</value>
+                <value>A chance at vengeance</value>
+                <value>A chance to escape from life imprisonment</value>
+                <value>A chance to escape from execution</value>
+                <value>A chance at redemption</value>
+                <value>God and country</value>
+                <value>Fortune and glory</value>
+                <value>Strength and honor</value>
+            </table>
+            <table name="On the gladiator's face is..." id="face">
+                <value>A nose ring</value>
+                <value>A garish earring</value>
+                <value>An empty eye socket</value>
+                <value>A grisly scar</value>
+                <value>A haughty sneer</value>
+                <value>A look of panic</value>
+                <value>A look of sadness</value>
+                <value>An eager grin</value>
+                <value>A frame of long, beautiful long hair</value>
+                <value>Ferocious sideburns</value>
+                <value>An unruly beard</value>
+                <value>An intimidating mustache</value>
+            </table>
+            <table name="On the gladiator's body is..." id="body">
+                <value>A tattoo of a fish</value>
+                <value>A tattoo of a kraken</value>
+                <value>A tattoo of a mermaid</value>
+                <value>A tattoo of a octopus</value>
+                <value>A tattoo of a bear</value>
+                <value>A tattoo of a boar</value>
+                <value>A tattoo of a dragon</value>
+                <value>A tattoo of a eagle</value>
+                <value>A tattoo of a lion</value>
+                <value>A tattoo of a wolf</value>
+                <value>A tattoo of a skull</value>
+                <value>A tattoo of an arrow</value>
+                <value>A tattoo of an axe</value>
+                <value>A tattoo of a spear</value>
+                <value>A tattoo of a sword</value>
+                <value>A festering wound</value>
+                <value>A frightening scar</value>
+                <value>The brand of a slave</value>
+                <value>The brand of a soldier</value>
+                <value>A pronounced gut</value>
+                <value>A frightening amount of bulging muscles</value>
+                <value>An obscene amount of oil</value>
+                <value>An initimidating amount of hair</value>
+            </table>
+        </category>

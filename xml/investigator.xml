@@ -1,0 +1,63 @@
+<category name="Investigator" id="investigator">
+    <name name="The constable's name is..."/>
+    <include name="Race" include="npc_race" />
+    <table name="The constable is..." id="is">
+        <value region_start="2" region_end="8" region_include="priest">A priest</value>
+        <value region_start="8" region_end="12" region_include="monk">A stoic monk</value>
+        <value region_start="9" region_end="16" region_include="soldier">A former soldier</value>
+        <value region_start="13" region_end="22" region_include="nation">A mysterious foreigner</value>
+        <value>A pompous windbag</value>
+        <value>An accomplished scholar</value>
+        <value>A violent drunk</value>
+        <value region_start="2" region_end="10" region_include="criminal">A criminal lackey</value>
+        <value region_start="10" region_end="16" region_include="__noun__">A popular tavern patron</value>
+        <value>Ruggedly handsome</value>
+    </table>
+    <table name="The constable works for..." id="works">
+        <value>The steady pay</value>
+        <value>A chance to bring evil-doers to justice</value>
+        <value>Gold to repay debts</value>
+        <value>Gold to support his drinking addiction</value>
+        <value>Gold to support his gambling addiction</value>
+        <value>Gold to support his harlot addiction</value>
+        <value>Gold to support his smoking addiction</value>
+        <value>The joy of solving mysteries</value>
+        <value region_start="13" region_end="22" region_include="__noun__">A chance for vengeance</value>
+    </table>
+    <table name="The constable's face has..." id="face">
+        <value>A scar from a burn</value>
+        <value>A jagged scar</value>
+        <value>A hard-set jaw</value>
+        <value>A friendly grin</value>
+        <value>A faraway look</value>
+        <value>A furrowed brow</value>
+        <value>A pair of piercing eyes</value>
+        <value>A broken nose</value>
+        <value>Bushy eyebrows</value>
+        <value>Unshaven stubble</value>
+        <value>A neatly-trimmed beared</value>
+        <value>An intimidating mustache</value>
+    </table>
+    <table name="The constable carries..." id="carries">
+        <value>A magnifying lense</value>
+        <value>A blade with a carved ivory hilt</value>
+        <value>A blade with a carved jade hilt</value>
+        <value>A blade with a carved soapstone hilt</value>
+        <value>A blade with a carved ebony hilt</value>
+        <value>A blade with a carved mahogany hilt</value>
+        <value>A blade with a carved oak hilt</value>
+        <value>A blade with dragons sculpted into the steel of the guard</value>
+        <value>A blade with lions sculpted into the steel of the guard</value>
+        <value>A blade with scorpions sculpted into the steel of the guard</value>
+        <value>A blade with snakes sculpted into the steel of the guard</value>
+        <value>A blade with spiders sculpted into the steel of the guard</value>
+        <value>A blade with wolves sculpted into the steel of the guard</value>
+        <value>A blade made of blackened steel</value>
+        <value>An unusual hat</value>
+        <value region_start="2|15" region_end="6|29" region_include="__noun__|crime">A clue from an unsolved crime</value>
+        <value region_start="2|15" region_end="7|24" region_include="__noun__|__noun__">A token from a lost love</value>
+        <value>Props for several disguises</value>
+        <value>Alchemical reference manual</value>
+        <value>A pocket-sized almanac</value>
+    </table>
+</category>

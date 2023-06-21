@@ -1,0 +1,26 @@
+<category name="Orc Enclave" id="orcenclave">
+    <name name="The enclave's name is..." src="cities" />
+    <table name="Vignettes, encounters, and color" id="vignette">
+        <value>A roaring feast is going on with great bonfires and drums</value>
+        <value>Two orcs are fist fighting in a pit with mangled knuckles and bloody tusks</value>
+        <value region_start="7" region_end="12" region_include="smith">An orc smith beats captured armor into new spear points for the troops</value>
+        <value>A raiding party is returning with a new batch of mewling captives</value>
+        <value>A young half-orc boy is being banished as his parentage is becoming more apparent</value>
+        <value>A great tent, made of hide and decorated with skulls, looms over the camp</value>
+        <value>A group of sweating orcs digs a trench around the camp and places sharpened stakes</value>
+        <value>A brave trader has set up his wagon on the far side of the camp and it is peddling goods to the surly orcs</value>
+        <value>A group of the kings knights have arrived to deliver an ultimatum to the chief</value>
+        <value>A wrong turn takes you down a confusing path of randomly pitched tents and yurts</value>
+        <value>A group of hobgoblin emissaries look around at the disorganized camp with obvious scorn</value>
+        <value>A hill giant, chained and whipped, is being &quot;trained&quot; for the next raid</value>
+        <value>A cantankerous orc wife throws his husband out of their tent and pummels him in the street to great guffaws from onlookers</value>
+        <value>The chief and his retinue pass, they seem like low prow thugs</value>
+        <value>The chief and his retinue pass, he seems more regal and intelligent than you expected</value>
+        <value>A group of orc traders has just returned from bartering with a town too strong to rob</value>
+        <value>An orc wolf master is training pups in a pen</value>
+        <value>An envoy from a stronger orc band has arrived to collect tribute</value>
+        <value>A surly old dwarf walks through the camp and demands the chief present himself. The orcs give him a wide berth</value>
+        <value>You overhear a group of orcs discussing their plan to overthrow the chief and take his place</value>
+    </table>
+    <member name="Locations" include="locations" />
+</category>

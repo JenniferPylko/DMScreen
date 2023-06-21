@@ -1,0 +1,91 @@
+        <category name="Dinner among Islanders" id="dinner_island">
+            <table name="Tonight, we dine on..." id="dine">
+                <patterns>
+                    <pattern>{prep} {dish}</pattern>
+                </patterns>
+                <list type="prep">
+                    <item>Stewed</item>
+                    <item>Breaded</item>
+                    <item>Fried</item>
+                    <item>Battered</item>
+                    <item>Baked</item>
+                    <item>Brined</item>
+                    <item>Seared</item>
+                    <item>Peppered</item>
+                    <item>Salted</item>
+                    <item>Pickled</item>
+                </list>
+                <list type="dish">
+                    <item>clams</item>
+                    <item>crab</item>
+                    <item>anchovies</item>
+                    <item>scallops</item>
+                    <item>mussels</item>
+                    <item>sea bass</item>
+                    <item>skate</item>
+                    <item>cuttlefish</item>
+                    <item>flounder</item>
+                    <item>grouper</item>
+                    <item>marlin</item>
+                    <item>shrimp</item>
+                    <item>sardines</item>
+                    <item>tuna</item>
+                    <item>snapper</item>
+                    <item>lLobster</item>
+                    <item>monkfish</item>
+                    <item>shark</item>
+                    <item>seabird</item>
+                    <item>pork</item>
+                </list>
+            </table>
+            <table name="...with..." id="dine_wth">
+                <value>Wild rice.</value>
+                <value>White rice.</value>
+                <value>Brown rice.</value>
+                <value>Yams.</value>
+                <value>Lentils.</value>
+                <value>Red beans.</value>
+                <value>Black beans.</value>
+                <value>White beans.</value>
+                <value>Plantains.</value>
+                <value>Coconut.</value>
+            </table>
+            <table name="...and..." id="dine_and">
+                <value>Carrots.</value>
+                <value>Mixed nuts.</value>
+                <value>Sweet cabbage.</value>
+                <value>Leafy greens.</value>
+                <value>Dill weed.</value>
+                <value>Lemongrass.</value>
+                <value>Peas.</value>
+                <value>Parsley.</value>
+                <value>Green onions.</value>
+                <value>Yellow onions.</value>
+            </table>
+            <table name="Side dish..." id="side">
+                <value>Coconut cake.</value>
+                <value>Pineapple cake.</value>
+                <value>Banana bread.</value>
+                <value>Honeydew.</value>
+                <value>Pineapple.</value>
+                <value>Papaya.</value>
+                <value>Cantaloupe.</value>
+                <value>Starfruit.</value>
+                <value>Bacon.</value>
+                <value>Fried egg.</value>
+                <value>Ham.</value>
+                <value>Turtle soup.</value>
+            </table>
+            <table name="Beverage..." id="beverage">
+                <value>Sun tea.</value>
+                <value>Sweet tea.</value>
+                <value>Pale ale.</value>
+                <value>Skunky ale.</value>
+                <value>Strong wine.</value>
+                <value>Sweet wine.</value>
+                <value>Dry rum.</value>
+                <value>Spiced rum.</value>
+                <value>Rum punch.</value>
+                <value>Coconut water.</value>
+            </table>
+        </category>

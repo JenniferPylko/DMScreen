@@ -1,0 +1,100 @@
+        <category name="Heirloom" id="heirloom">
+            <table name="The heirloom is a..." id="heirloom_is">
+                <value>Broach</value>
+                <value>Necklace</value>
+                <value>Ring</value>
+                <value>Earring</value>
+                <value>Gem</value>
+                <value>Monocle</value>
+                <value region_start="13" region_end="26" region_include="__noun__">Carving of a family member</value>
+                <value region_start="14" region_end="20" region_include="__noun__">Carving of an animal</value>
+                <value>Carving of nothing in particular</value>
+                <value region_start="13" region_end="19" region_include="__noun__">Carving of a flower</value>
+                <value>Painting</value>
+                <value>Vase</value>
+                <value>Rug</value>
+                <value>Tapestry</value>
+                <value>Wardrobe</value>
+                <value>Couch</value>
+                <value>Table</value>
+                <value>Chair</value>
+                <value>Mirror</value>
+                <value>Clock</value>
+                <value>Piano</value>
+                <value>Lute</value>
+                <value>Flute</value>
+                <value>Harp</value>
+                <value>Sword</value>
+                <value>Axe</value>
+                <value>Lance</value>
+                <value>Dagger</value>
+                <value>Mace</value>
+                <value>Bow</value>
+                <value>Crossbow</value>
+                <value>Morningstar</value>
+                <value>Shield</value>
+                <value>Helmet</value>
+                <value>Breastplate</value>
+                <value>Bracers</value>
+                <value>Rake</value>
+                <value>Shovel</value>
+                <value>Rolling pin</value>
+                <value>Hatchet</value>
+                <value>Staff</value>
+                <value>Frying Pan</value>
+                <value>Tea pot</value>
+                <value>Silverware</value>
+            </table>
+            <table name="The heirloom once belonged to..." id="heirloom_belong">
+                <value region_start="12" region_end="18" region_include="__noun__">The owner's mother</value>
+                <value region_start="12" region_end="18" region_include="__noun__">The owner's father</value>
+                <value region_start="12" region_end="23" region_include="__noun__">The owner's grandmother</value>
+                <value region_start="12" region_end="23" region_include="__noun__">The owner's grandfather</value>
+                <value region_start="12" region_end="20" region_include="__noun__">A long lost relative</value>
+                <value>No one really knows. It has just be passed down</value>
+                <value region_start="2" region_end="7" region_include="noble">A noble</value>
+                <value region_start="2" region_end="11" region_include="nation">A foreigner</value>
+                <value region_start="2" region_end="5" region_include="deity">A god</value>
+                <value region_start="13" region_end="19" region_include="__noun__">The family's patron</value>
+            </table>
+            <table name="The heirloom is made of..." id="heirloom_made">
+                <value>Wood</value>
+                <value>Gold</value>
+                <value>Silver</value>
+                <value>Bronze</value>
+                <value>Copper</value>
+                <value>Steel</value>
+                <value>Iron</value>
+                <value>Mithril</value>
+                <value>Tin</value>
+                <value>Adamantine</value>
+                <value>An unknown material</value>
+                <value>Brass</value>
+            </table>
+            <table name="...and is adorned with..." id="heirloom_adorned">
+                <value>Rubies</value>
+                <value>Diamonds</value>
+                <value>Pearls</value>
+                <value>Gold Filigree</value>
+                <value>Silver Filigree</value>
+                <value>Nothing</value>
+            </table>
+            <table name="The heirloom's value is..." id="heirloom_value">
+                <value>None. It only has value to its family</value>
+                <value>None. It doesn't even have value to its family</value>
+                <value>Only the value of its base components</value>
+                <value>Moderately valuable</value>
+                <value>Very valuable</value>
+                <value>Its value is legendary</value>
+            </table>
+            <table name="The heirloom's is special because..." id="heirloom_special">
+                <value>It is magical</value>
+                <value region_start="20" region_end="40" region_include="__noun__">It was crafted by a member of the family</value>
+                <value>It is said to be lucky</value>
+                <value region_start="23" region_end="28" region_include="__noun__">It signifies a special event in the family</value>
+                <value region_start="23|36" region_end="28|42" region_include="__noun__|region">It signifies a special event in the region</value>
+                <value>No reason, it is just tradition to hand it down</value>
+                <value>Many rumors surround it, none are actually true</value>
+                <value region_start="20" region_end="23" region_include="deity">It was blessed by a god</value>
+            </table>
+        </category>

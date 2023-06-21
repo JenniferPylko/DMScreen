@@ -1,0 +1,121 @@
+<category name="Mercenary Troop" id="mercenaries">
+    <table name="The mercenary troops colors are..." id="colors">
+        <value>Black</value>
+        <value>Red / Scarlet</value>
+        <value>Gold</value>
+        <value>Forest Green</value>
+        <value>Royal Blue</value>
+        <value>Brown / Beaver</value>
+        <value>Dark Grey / Gunmetal</value>
+        <value>Maroon</value>
+        <value>Navy Blue</value>
+        <value>Dark Brown / Chocolate</value>
+        <value>Steel / Blue Grey</value>
+        <value>Olive Green</value>
+    </table>
+    <table name="The mercenary troop's banner features" id="banner">
+        <value>A skull</value>
+        <value>A ghost</value>
+        <value>A clenched fist</value>
+        <value>A flame</value>
+        <value>An arrow</value>
+        <value>A dagger</value>
+        <value>A sword</value>
+        <value>A hammer</value>
+        <value>The sun</value>
+        <value>The moon</value>
+        <value>A bat</value>
+        <value>A bull</value>
+        <value>A dragon</value>
+        <value>A falcon</value>
+        <value>A lion</value>
+        <value>A raven</value>
+        <value>A scorpion</value>
+        <value>A snake</value>
+        <value>A vulture</value>
+        <value>A wolf</value>
+    </table>
+    <table name="The mercenary troop's commander is..." id="commander">
+        <value region_start="9" region_end="15" region_include="outlaw">A brazen outlaw</value>
+        <value>A charismatic demagogue</value>
+        <value region_start="13" region_end="22" region_include="nation">A mysterious foreigner</value>
+        <value region_start="28" region_end="34" region_include="noblehouse">An outcast from a prominent family</value>
+        <value>A ruthless killer</value>
+        <value>A dashing swashbuckler</value>
+        <value>A brutish thug</value>
+        <value>A celebrated war hero</value>
+        <value region_start="12" region_end="18" region_include="knight">A disgraced knight</value>
+        <value region_start="9|15" region_end="14|23" region_include="arena|gladiator">A former arena champion</value>
+    </table>
+    <table name="The mercenary troop's attitude toward their commander is..." id="attitude">
+        <value>Friendly and loyal</value>
+        <value>Respectful and business-like</value>
+        <value>Cautious and uncertain</value>
+        <value>Terrified and tight-lipped</value>
+        <value>Disappointed and rude</value>
+        <value>Angry and rebellious</value>
+    </table>
+    <table name="The mercenary troop is currently" id="currently">
+        <value>Gainfully employed as a guard</value>
+        <value>Gainfully employed in war</value>
+        <value>Under contract with some criminals</value>
+        <value>Under contract with some merchants</value>
+        <value>Under contract with some nobles</value>
+        <value>Looking for work</value>
+    </table>
+    <table name="The mercenary troop specializes in..." id="specialize">
+        <value>Siege-breaking</value>
+        <value>Holding a redoubt or fort</value>
+        <value>Frontal assault</value>
+        <value>Infiltration tactics</value>
+        <value>Skirmishes</value>
+        <value>Laying ambushes</value>
+        <value>Patrolling</value>
+        <value>Flanking maneuvers</value>
+        <value>Guerilla tactics</value>
+        <value>Raiding and pillaging</value>
+    </table>
+    <table name="The mercenary troop is notorious for..." id="notorious">
+        <value>Taking no prisoners</value>
+        <value>Leaving the dead to be eaten by beasts</value>
+        <value>Tattooing or branding prisoners</value>
+        <value>Scalping or flaying prisoners</value>
+        <value>Burning villages and fields</value>
+        <value>Betraying their employers</value>
+        <value>Singing bawdy songs</value>
+        <value>Drinking too much ale and wine</value>
+    </table>
+    <table name="The mercenary troop fights with..." id="fights">
+        <value>Hit-and-run tactics</value>
+        <value>Making a direct assault</value>
+        <value>Unpredictable lurches</value>
+        <value>Masterful combat maneuvers</value>
+        <value>No mercy</value>
+        <value>Lots of taunts and jeers</value>
+        <value>Dirty tactics</value>
+    </table>
+    <table name="Many of the mercenaries in the troop are armored in..." id="armor">
+        <value>Exotic robes</value>
+        <value>Leather armor</value>
+        <value>Studded leather armor</value>
+        <value>Hide armor</value>
+        <value region_start="10" region_end="20" region_include="armorer">Ringmail (crafted by)</value>
+        <value region_start="11" region_end="21" region_include="armorer">Chainmail (crafted by)</value>
+        <value region_start="13" region_end="23" region_include="armorer">Scale armor (crafted by)</value>
+        <value region_start="13" region_end="23" region_include="armorer">Plate armor (crafted by)</value>
+    </table>
+    <table name="Many of the mercenaries in the troop are wielding" id="weild">
+        <value>Longswords</value>
+        <value>Longswords and shields</value>
+        <value>Shortswords and spears</value>
+        <value>Shortswirds and shields</value>
+        <value>Longswords and crossbows</value>
+        <value>Greatswords</value>
+        <value>Spears and shields</value>
+        <value>Battleaxes</value>
+        <value>Warhammers</value>
+        <value>Scimitars</value>
+        <value>Scimitars and a shield</value>
+    </table>
+    <member name="Mercenary" include="mercenary" />
+</category>

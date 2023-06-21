@@ -1,0 +1,134 @@
+<category name="Savage Horde" id="savagehordes">
+    <table name="The barbarians are..." id="are">
+        <value>A tribe of nomads, following game</value>
+        <value region_start="60" region_end="72" region_include="wilderness">A tribe that began raiding after being displaced from their native lands</value>
+        <value region_start="25" region_end="37" region_include="wilderness">A clan exiled from their native lands</value>
+        <value region_start="27" region_end="36" region_include="nobleman">A clan in the service of a sovereign</value>
+        <value>A confederacy of related tribes or clans</value>
+        <value region_start="36" region_end="40" region_include="military">The degenerate survivors of a broken army</value>
+    </table>
+    <table name="The barbarians travel..." id="travel">
+        <value>On foot</value>
+        <value>On foot with small carts</value>
+        <value>On foot with mounted scouts</value>
+        <value>On mounts</value>
+        <value>On mounts with wagons</value>
+        <value>In small watercraft</value>
+    </table>
+    <table name="The barbarians value" id="value">
+        <value>Bravery</value>
+        <value>Strength</value>
+        <value>Wisdom</value>
+        <value>Virility</value>
+        <value>Honoring the gods</value>
+        <value>Honoring their ancestors</value>
+        <value>Battle-scars</value>
+        <value>Kill counts</value>
+    </table>
+    <table name="The barbarian's iconography features..." id="feature">
+        <value>Symbols of death and destruction (bats)</value>
+        <value>Symbols of death and destruction (bones)</value>
+        <value>Symbols of death and destruction (crows)</value>
+        <value>Symbols of death and destruction (flames)</value>
+        <value>Symbols of death and destruction (ghosts)</value>
+        <value>Symbols of death and destruction (scorpions)</value>
+        <value>Symbols of death and destruction (skulls)</value>
+        <value>Symbols of death and destruction (vultures)</value>
+        <value>Symbols of the heavens (clouds)</value>
+        <value>Symbols of the heavens (lightning)</value>
+        <value>Symbols of the heavens (moon)</value>
+        <value>Symbols of the heavens (snow)</value>
+        <value>Symbols of the heavens (stars)</value>
+        <value>Symbols of the heavens (sun)</value>
+        <value>Symbols of strength and weaponry (arrows)</value>
+        <value>Symbols of strength and weaponry (axes)</value>
+        <value>Symbols of strength and weaponry (fists)</value>
+        <value>Symbols of strength and weaponry (spears)</value>
+        <value>Symbols of strength and weaponry (stones)</value>
+        <value>Symbols of strength and weaponry (swords)</value>
+        <value>Totem beasts (bears)</value>
+        <value>Totem beasts (boars)</value>
+        <value>Totem beasts (eagles)</value>
+        <value>Totem beasts (horses)</value>
+        <value>Totem beasts (lions)</value>
+        <value>Totem beasts (owls)</value>
+        <value>Totem beasts (snakes)</value>
+        <value>Totem beasts (wolves)</value>
+    </table>
+    <table name="The barbarians' leader is..." id="leader">
+        <value>A well-respected chief</value>
+        <value>A charismatic warlord</value>
+        <value>A ruthless warlord</value>
+        <value region_start="13" region_end="20" region_include="__noun__">A mysterious prophet</value>
+        <value region_start="27" region_end="31" region_include="npc">A descendant of an honored hero</value>
+        <value region_start="11" region_end="17" region_include="killer">A ruthless killer</value>
+        <value region_start="10" region_end="14" region_include="__noun__">A brutish thug</value>
+        <value region_start="19" region_end="26" region_include="fighter">An impatient young warrior</value>
+        <value region_start="11" region_end="14" region_include="appearance">A wise old man</value>
+        <value region_start="17" region_end="21" region_include="npc">A celebrated war hero</value>
+        <value>A prolific lover</value>
+    </table>
+    <table name="The barbarians fear..." id="fear">
+        <value>Foreigners wearing red clothing</value>
+        <value>Foreigners wearing gold clothing</value>
+        <value>Foreigners wearing green clothing</value>
+        <value>Foreigners wearing blue clothing</value>
+        <value>Foreigners wearing purple clothing</value>
+        <value>Foreigners wearing white clothing</value>
+        <value>Foreigners wearing black clothing</value>
+        <value>Foreigners wearing grey clothing</value>
+        <value>Foreigners armored in steel</value>
+        <value>Foreigners with facial hair</value>
+        <value>All foreigners</value>
+        <value>Dwarves</value>
+        <value>Elves</value>
+        <value>Goblinoids</value>
+        <value>Reptillian humanoids</value>
+        <value>Blizzards</value>
+        <value>Earthquakes</value>
+        <value>Floods</value>
+        <value>Thunderstorms</value>
+        <value>Volcanoes</value>
+        <value>Typhoons</value>
+        <value>Spellcasters</value>
+        <value>The gods</value>
+        <value>Dragons</value>
+    </table>
+    <table name="The barbarians are notorious for..." id="notorious">
+        <value>Never leaving survivors</value>
+        <value>Feeding prisoners to wild beasts</value>
+        <value>Tattooing or branding prisoners</value>
+        <value>Scalping enemies</value>
+        <value>Flaying enemies</value>
+        <value>Raiding and burning villages</value>
+        <value>Plundering merchant caravans</value>
+        <value>Eating prisoners</value>
+        <value>Claiming prisoners as slaves</value>
+        <value>Taking prisoners as wives, concubines, or catamites</value>
+        <value>Never having been defeated in battle</value>
+    </table>
+    <table name="The barbarians are known for..." id="known">
+        <value>Screaming and shouting during battle</value>
+        <value>Convening with ghosts and spirits</value>
+        <value>Ritual animal sacrifices</value>
+        <value>Ritual human sacrifices</value>
+        <value>Ritualistic blood-letting</value>
+        <value>Ritualistic sexual acts</value>
+        <value>Eating unusual meats</value>
+        <value>Prolific amounts of drinking</value>
+        <value>Never cutting their hair</value>
+        <value>Shaving their heads and bodies</value>
+        <value>Never bathing</value>
+        <value>Bathing and perfuming their bodies</value>
+    </table>
+    <table name="The barbarians' attitude is..." id="attitude">
+        <value>Rowdy and festive</value>
+        <value>Joyful and eager to fight</value>
+        <value>Relaxed and carefree</value>
+        <value>Frightened and suspicious</value>
+        <value>Hostile and suspicious</value>
+        <value>Hostile and eager to fight</value>
+        <value>Grim and silent</value>
+    </table>
+    <member name="Barbarian" include="barbarian" />
+</category>

@@ -1,0 +1,95 @@
+        <category name="Dinner at an Orcish Camp" id="dinner_orc">
+            <table name="Tonight, we dine on..." id="dine">
+                <patterns>
+                    <pattern>{prep} {dish}</pattern>
+                </patterns>
+                <list type="prep">
+                    <item>Stewed</item>
+                    <item>Roasted</item>
+                    <item>Skewered</item>
+                    <item>Raw</item>
+                    <item>Smoked</item>
+                    <item>Grilled</item>
+                    <item>Roasted</item>
+                    <item>Flame-broiled</item>
+                    <item>Charred</item>
+                    <item>Blackened</item>
+                    <item>Spoiled</item>
+                    <item>Rotted</item>
+                </list>
+                <list type="dish">
+                    <item>songbird</item>
+                    <item>mutton</item>
+                    <item>pork</item>
+                    <item>horse</item>
+                    <item>rabbit</item>
+                    <item>wild beast</item>
+                    <item>lizard</item>
+                    <item>snake</item>
+                    <item>wolf</item>
+                    <item>bear</item>
+                    <item>cat</item>
+                    <item>dog</item>
+                    <item>manflesh</item>
+                    <item>maiden</item>
+                    <item>soldier</item>
+                    <item>nomad</item>
+                    <item>farm folk.</item>
+                    <item>bandit</item>
+                    <item>dwarf</item>
+                    <item>halfling</item>
+                </list>
+            </table>
+            <table name="...with..." id="dine_wth">
+                <value>Soft potatoes.</value>
+                <value>Hard potatoes.</value>
+                <value>White beans.</value>
+                <value>Red beans.</value>
+                <value>Black beans.</value>
+                <value>Corn mash.</value>
+                <value>Bitter cabbage.</value>
+                <value>Weepy cabbage.</value>
+                <value>Onions.</value>
+                <value>Turnips.</value>
+            </table>
+            <table name="...and..." id="dine_and">
+                <value>Stale bread.</value>
+                <value>Crusty biscuits.</value>
+                <value>Hard tack.</value>
+                <value>Moldy bread.</value>
+                <value>Moldy biscuits.</value>
+                <value>Black mushrooms.</value>
+                <value>Bloody gravy.</value>
+                <value>Thick gravy.</value>
+                <value>Thin gravy.</value>
+                <value>Moldy fruit.</value>
+            </table>
+            <table name="...Side dish..." id="side">
+                <value>Roasted rats.</value>
+                <value>Raw rat tails.</value>
+                <value>Maggots.</value>
+                <value>Rabbit bones.</value>
+                <value>Old fish.</value>
+                <value>Dried fish.</value>
+                <value>Bitter roots.</value>
+                <value>Chewy roots.</value>
+                <value>Stale cakes.</value>
+                <value>Human fingers.</value>
+                <value>Frogs or toads.</value>
+                <value>Pig's feet.</value>
+            </table>
+            <table name="Beverage..." id="beverage">
+                <value>Foul ale.</value>
+                <value>Skunky ale.</value>
+                <value>Stolen ale.</value>
+                <value>Strong ale.</value>
+                <value>Black ale.</value>
+                <value>Rich porter.</value>
+                <value>Stolen wine.</value>
+                <value>Sour wine.</value>
+                <value>Strong wine.</value>
+                <value>Pigs' blood.</value>
+                <value>Man blood.</value>
+                <value>Stolen whisky.</value>
+            </table>
+        </category>

@@ -1,0 +1,253 @@
+<category name="Strange Person" id="stranger">
+    <name name="Name..."/>
+    <table name="Age..." id="age">
+        <value>Barely teenaged</value>
+        <value>A young adult</value>
+        <value>An adult</value>
+        <value>A middleaged</value>
+        <value>An older</value>
+        <value>An ancient</value>
+        <value>More dead than living</value>
+        <value>Non-aging</value>
+    </table>
+    <table name="Gender..." id="sex">
+        <value>Male</value>
+        <value>Female</value>
+        <value>Difficult to tell</value>
+        <value>Creature</value>
+    </table>
+    <table name="Hair type..." id="hair_type">
+        <value>Greasy</value>
+        <value>Healthy</value>
+        <value>Neat</value>
+        <value>Spotty</value>
+        <value>Thin</value>
+        <value>Thick</value>
+        <value>Curly</value>
+        <value>Seemingly alive</value>
+    </table>
+    <table name="Hair color..." id="hair_color">
+        <value>White, almost glowing</value>
+        <value>Grey</value>
+        <value>Black</value>
+        <value>Dark brown</value>
+        <value>Light brown</value>
+        <value>Blonde</value>
+        <value>Platinum blonde</value>
+        <value>Red</value>
+    </table>
+    <table name="Hair style..." id="hair_style">
+        <value>Extraordinarily long hair reaching all the way down the back</value>
+        <value>Shoulder long hair</value>
+        <value>Long hair</value>
+        <value>Long hair done up in a bun</value>
+        <value>Long hair done up in a ponytail</value>
+        <value>Long braided hair</value>
+        <value>Long hair with strange objects braided into it</value>
+        <value>Long completely tangled and matted hair</value>
+        <value>Long completely tangled and matted hair with strange objects attached</value>
+        <value>Short hair</value>
+        <value>Stubs after having been shaved off just recently</value>
+        <value>Lost long ago to baldness</value>
+    </table>
+    <table name="Mark..." id="mark">
+        <value>An eye patch</value>
+        <value>A lazy eye</value>
+        <value>A glass eye</value>
+        <value>Greasy glasses</value>
+        <value>Glasses</value>
+        <value>A blindold over the eyes</value>
+        <value>A hat</value>
+        <value>The remnants of a hat</value>
+        <value>A mouth without teeth</value>
+        <value>A mouth filled with gold teeth</value>
+        <value>An alluring smile</value>
+        <value>A great scar</value>
+        <value>A sad look</value>
+        <value>A constant grin</value>
+        <value>A quiet demeanor</value>
+        <value>Eyes staring straight into your soul</value>
+        <value>A mutilated face</value>
+        <value>A deformed face</value>
+        <value>A pointy nose</value>
+        <value>The nose cut off</value>
+        <value>An obsure symbol branded on the neck</value>
+        <value>An otherwise extraordinarily ordinary appearance</value>
+        <value>A very long tongue</value>
+        <value>A terrifying libido</value>
+    </table>
+    <table name="Home..." id="home">
+        <value region_start="11|39" region_end="20|43" region_include="_noun__|shop">In a small apartment on top of a small shop</value>
+        <value region_start="11|35" region_end="22|53" region_include="__noun__|__noun__">In a small apartment in an immense apartment building</value>
+        <value region_start="11|31" region_end="22|39" region_include="__noun__|__noun__">In a small apartment in a damp tenement</value>
+        <value region_start="11|32" region_end="22|46" region_include="__noun__|__noun__">In a small apartment in a moldy boarding house</value>
+        <value region_start="5" region_end="10" region_include="__noun__">In a shack built of garbage</value>
+        <value region_start="5|16" region_end="10|27" region_include="__noun__|__noun__">In a shack in a public park</value>
+        <value region_start="5|19" region_end="10|25" region_include="__noun__|__noun__">In a shack under a bridge</value>
+        <value region_start="5" region_end="10" region_include="__noun__">In a shack up in a tree</value>
+        <value region_start="16" region_end="21" region_include="__noun__">In an inherited villa</value>
+        <value region_start="16" region_end="22" region_include="__noun__">In an inherited estate</value>
+        <value region_start="16" region_end="25" region_include="__noun__">In an inherited townhouse</value>
+        <value region_start="16" region_end="24" region_include="__noun__">In an inherited carriage</value>
+        <value region_start="11" region_end="20" region_include="__noun__">In a small townhouse with boarded up windows</value>
+        <value region_start="11" region_end="20" region_include="__noun__">In a small townhouse with heavy curtains covering the windows</value>
+        <value region_start="11" region_end="20" region_include="__noun__">In a small townhouse with a wilderness for a garden</value>
+        <value region_start="11" region_end="20" region_include="__noun__">In a small townhouse without any windows at all</value>
+        <value region_start="17" region_end="26" region_include="__noun__">In a burned down warehouse</value>
+        <value region_start="17" region_end="22" region_include="__noun__">In a burned down villa</value>
+        <value region_start="17" region_end="23" region_include="__noun__">In a burned down church</value>
+        <value region_start="17" region_end="25" region_include="__noun__">In a burned down workshop</value>
+        <value region_start="26" region_end="35" region_include="__noun__">In an abandoned overgrown warehouse</value>
+        <value region_start="26" region_end="31" region_include="__noun__">In an abandoned overgrown villa</value>
+        <value region_start="26" region_end="32" region_include="__noun__">In an abandoned overgrown church</value>
+        <value region_start="26" region_end="34" region_include="__noun__">In an abandoned overgrown workshop</value>
+        <value region_start="5|15" region_end="9|26" region_include="__noun__|__noun__">In a tent in a public park</value>
+        <value region_start="5|15" region_end="9|24" region_include="__noun__|__noun__">In a tent on a graveyard</value>
+        <value region_start="5|18" region_end="9|24" region_include="__noun__|__noun__">In a tent under a bridge</value>
+        <value region_start="5|13" region_end="9|25" region_include="__noun__|__noun__">In a tent in someone else's garden</value>
+        <value region_start="11" region_end="17" region_include="__noun__">In a grand estate</value>
+        <value region_start="11" region_end="16" region_include="__noun__">In a grand villa</value>
+        <value region_start="11" region_end="20" region_include="__noun__">In a grand apartment</value>
+        <value region_start="11" region_end="18" region_include="__noun__">In a grand mansion</value>
+        <value region_start="32" region_end="40" region_include="__noun__">In the basement of an abandoned hospital</value>
+        <value region_start="21" region_end="29" region_include="__noun__">In the basement of a workshop</value>
+        <value region_start="19|34" region_end="31|39" region_include="__noun__|__noun__">In the basement of someone else's house</value>
+        <value region_start="29" region_end="35" region_include="tavern">In the basement of a sketchy tavern</value>
+        <value region_start="16" region_end="32" region_include="__noun__">In a supposedly enchanted closet</value>
+        <value region_start="16" region_end="30" region_include="__noun__">In a supposedly enchanted shed</value>
+        <value region_start="16" region_end="36" region_include="__noun__">In a supposedly enchanted tree-house</value>
+        <value region_start="16" region_end="42" region_include="__noun__">In a supposedly enchanted hole in the wall</value>
+    </table>
+    <table name="Location..." id="location">
+        <value region_start="13" region_end="17" region_include="village">Somewhere in town</value>
+        <value region_start="21" region_end="25" region_include="village">Somewhere outside of town</value>
+        <value region_start="30" region_end="34" region_include="village">Somewhere in the nice part of town</value>
+        <value region_start="17" region_end="22" region_include="__noun__">Somewhere in the slums</value>
+        <value>On the streets, for some reason</value>
+        <value region_start="12" region_end="16" region_include="city">Beneath the city</value>
+        <value region_start="3" region_end="9" region_include="cavern">In a cave</value>
+        <value region_start="0" region_end="9" region_include="__noun__">Somewhere we've all suppressed from our memories</value>
+        <value region_start="33" region_end="37" region_include="village">In an otherwise desolate part of town</value>
+        <value region_start="9" region_end="19" region_include="__noun__">Near the waterfront</value>
+    </table>
+    <table name="Occupation..." id="occupation">
+        <value>An archivist with an interest for the hideous</value>
+        <value>An archivist with a large collection of obscure trinkets</value>
+        <value>An archivist organizing the strange collection of the local museum</value>
+        <value>An archivist who collects very particular books</value>
+        <value region_start="2" region_end="8" region_include="priest">A priest with little interest in his flock</value>
+        <value region_start="2" region_end="8" region_include="priest">A priest who's slowly but steadily deviating from the pious path</value>
+        <value region_start="2" region_end="8" region_include="priest">A priest who lives in seclusion</value>
+        <value region_start="2" region_end="8" region_include="priest">A priest with a veiled interest in the obscure</value>
+        <value>A collector of peculiar stones</value>
+        <value>A collector of primordial artifacts</value>
+        <value>A collector of cats</value>
+        <value>A collector of obscure art</value>
+        <value>A collector of ancient books</value>
+        <value>A collector of old diaries</value>
+        <value>A collector of crime memorabilia</value>
+        <value>A collector of toys</value>
+        <value region_start="3" region_end="13" region_include="npc">An adventurer who's only ever seen leaving home at night</value>
+        <value region_start="3" region_end="13" region_include="npc">An adventurer with a staggering hatred for the undead</value>
+        <value region_start="3" region_end="13" region_include="npc">An adventurer who's constantly preparing for the apocalypse</value>
+        <value region_start="3" region_end="13" region_include="npc">An adventurer who's always just getting wasted alone</value>
+        <value region_start="2" region_end="8" region_include="__noun__">A doctor with dubious credentials</value>
+        <value region_start="2|57" region_end="8|68" region_include="__noun__|__noun__">A doctor who's working on an alternative treatment for a rare malady</value>
+        <value region_start="2" region_end="8" region_include="__noun__">A doctor who's obsessed with immortality</value>
+        <value region_start="2" region_end="8" region_include="__noun__">A doctor who's offering treatment to everyone whether healthy or ill</value>
+        <value region_start="8" region_end="13" region_include="thief">A known thief who allegedly has buried the past</value>
+        <value region_start="8" region_end="13" region_include="thief">A known thief who's always on the lookout for someone... or something</value>
+        <value region_start="8" region_end="13" region_include="thief">A known thief who's getting by selling strange otherworldly goods in an alley</value>
+        <value region_start="8|53" region_end="13|59" region_include="thief|__noun__">A known thief who's only ever stealing from the same person</value>
+        <value region_start="2|43" region_end="12|62" region_include="harlot|__noun__">A prostitute always providing for the same mysterious customer</value>
+        <value region_start="2" region_end="12" region_include="harlot">A prostitute who's always stumbling around in the streets at night</value>
+        <value region_start="2" region_end="12" region_include="harlot">A prostitute who's always seen crying</value>
+        <value region_start="2" region_end="12" region_include="harlot">A prostitute who always gently takes the hand of a PC and starts growling</value>
+        <value region_start="2" region_end="12" region_include="smith/smith_is/smith_is_blacksmith">A blacksmith who's always making nails</value>
+        <value region_start="2" region_end="12" region_include="smith/smith_is/smith_is_blacksmith">A blacksmith who's making iron masks of customers' faces</value>
+        <value region_start="2" region_end="12" region_include="smith/smith_is/smith_is_blacksmith">A blacksmith with an affection for toys and dolls</value>
+        <value region_start="2" region_end="12" region_include="smith/smith_is/smith_is_blacksmith">A blacksmith who's always making the same small figurines</value>
+        <value region_start="2" region_end="7" region_include="guard">A guard who enjoys humiliating civilians</value>
+        <value region_start="2" region_end="7" region_include="guard">A guard with a worrying love for power</value>
+        <value region_start="2" region_end="7" region_include="guard">A guard who's only talking to the towns kids and animals</value>
+        <value region_start="2" region_end="7" region_include="guard">A guard with a clear disdain for a local religious order</value>
+        <value region_start="2" region_end="10" region_include="merchant">A merchant dealing in very cheap meats</value>
+        <value region_start="2" region_end="10" region_include="merchant">A merchant and alleged grave robber</value>
+        <value region_start="2" region_end="10" region_include="merchant">A merchant providing a strange assortment of quality products incredibly cheap</value>
+        <value region_start="2" region_end="10" region_include="merchant">A merchant whose worrying old products never seem to be exchanged</value>
+    </table>
+    <table name="Renoun: People in town..." id="renoun">
+        <value>Love him or her</value>
+        <value>Hate him or her</value>
+        <value>Fear him or her</value>
+        <value>Adore him or her</value>
+        <value>Worship him or her</value>
+        <value>Tolerate him or her</value>
+        <value>Barely recognize him or her</value>
+        <value>Has forgotten about him or her</value>
+    </table>
+    <table name="Build..." id="build">
+        <value>Fat and round</value>
+        <value>Built like a horse</value>
+        <value>Of athletic stature</value>
+        <value>Muscular and strong</value>
+        <value>Scrawny</value>
+        <value>Physically mostly reminiscent of a curled up dry carrot</value>
+        <value>Tall and lanky</value>
+        <value>A midget</value>
+        <value>Easily confused with a giant</value>
+        <value>Looking more dead than alive</value>
+    </table>
+    <table name="Descriptor..." id="desc">
+        <value>Has a cane</value>
+        <value>Has a strange jumpy walk</value>
+        <value>Has beautiful clothes</value>
+        <value region_start="4" region_end="17" region_include="__noun__">Has weird objects hanging from the belt</value>
+        <value>Sings</value>
+        <value>Has constant tears</value>
+        <value>Dances</value>
+        <value>Drinks heavily</value>
+        <value>Has a bird on the shoulder</value>
+        <value region_start="4" region_end="9" region_include="__noun__">Has marks on the wrists left by handcuffs</value>
+        <value>Whispers</value>
+        <value>Constantly blinks</value>
+        <value>Constant scratches head</value>
+        <value>Has bleeding wounds</value>
+        <value>Has bandages</value>
+        <value>Has an affection for fire</value>
+        <value>Has pale skin</value>
+        <value>Has a dog</value>
+        <value region_start="6" region_end="9" region_include="cat">Has a cat</value>
+    </table>
+    <table name="Speaks..." id="speaks">
+        <value>With a lisp</value>
+        <value>With a deep voice</value>
+        <value>With a dry hoarse voice</value>
+        <value>With a light squeaking voice</value>
+        <value>With a soft pleasant voice</value>
+        <value>With a seductive voice</value>
+        <value>In a strange tongue</value>
+        <value>With a sleazy voice</value>
+    </table>
+    <table name="She/he really wants to..." id="wants">
+        <value region_start="7" region_end="13" region_include="__noun__">Keep a secret</value>
+        <value>Runaway and hide</value>
+        <value>Survive</value>
+        <value region_start="6" region_end="15" region_include="__noun__">Taste something once again</value>
+        <value region_start="10" region_end="19" region_include="__noun__">Never see something again</value>
+        <value region_start="6" region_end="13" region_include="__noun__">Brand someone with a hot iron</value>
+        <value region_start="4" region_end="13" region_include="__noun__">Set something on fire and start over</value>
+        <value region_start="11" region_end="17" region_include="__noun__">Answer the voices</value>
+        <value>Honor their trust</value>
+        <value region_start="7" region_end="14" region_include="__noun__">Keep a promise</value>
+        <value region_start="5" region_end="14" region_include="__noun__">Find something</value>
+        <value region_start="5" region_end="14" region_include="__noun__">Hide something</value>
+        <value region_start="8" region_end="17" region_include="__noun__">Destroy something</value>
+        <value region_start="8" region_end="15" region_include="__noun__">Impress someone</value>
+        <value region_start="6" region_end="15" region_include="__noun__">Build something from perpetual dreams</value>
+        <value region_start="4" region_end="11" region_include="__noun__">Get revenge</value>
+        <value region_start="16" region_end="26" region_include="__noun__">Prepare for the inevitable</value>
+        <value region_start="5" region_end="14" region_include="__noun__">Make something come alive</value>
+        <value>Finally ascend as promised</value>
+    </table>
+</category>

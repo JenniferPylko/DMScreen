@@ -1,0 +1,24 @@
+<category name="Prisoner" id="prisoner">
+    <name name="The prisoner's name is..."/>
+    <include name="Race" include="npc_race" />
+    <table name="The prisoner has..." id="has">
+        <value>A long scraggly beard</value>
+        <value>A patchy beard</value>
+        <value>Skin draped loosely over his bones</value>
+        <value>Boils and sores on his skin</value>
+    </table>
+    <table name="The prisoner is here because" id="here">
+        <value region_start="9" region_end="18" region_include="__noun__">He stole something</value>
+        <value region_start="10" region_end="17" region_include="__noun__">He killed someone</value>
+        <value region_start="9" region_end="16" region_include="__noun__">He raped someone</value>
+        <value region_start="30" region_end="38" region_include="nobleman">He was caught poaching on his liege's land</value>
+        <value region_start="16" region_end="28" region_include="__noun__">He committed an act of fraud</value>
+        <value region_start="26" region_end="38" region_include="__noun__">Someone confused him with someone else</value>
+    </table>
+    <table name="The prisoner has..." id="escape">
+        <value>No hope of escape</value>
+        <value>A foolish optimism of his escape prospects</value>
+        <value>A tenuous grasp on reality</value>
+        <value>Been driven mad</value>
+    </table>
+</category>

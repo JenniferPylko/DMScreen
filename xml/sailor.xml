@@ -1,0 +1,133 @@
+<category name="Sailor" id="sailor">
+    <name name="The sailor's name is..."/>
+    <include name="Race" include="npc_race" />
+    <table name="The sailor is..." id="is">
+        <value>A veteran of many voyages.</value>
+        <value region_start="26" region_end="35" region_include="__noun__">A survivor of a notorious shipwreck.</value>
+        <value region_start="10" region_end="16" region_include="__noun__">A cunning pirate, sailing under a false name.</value>
+        <value>A green boy, still naive about the dangers of life at sea.</value>
+        <value region_start="45" region_end="50" region_include="world">A bright-eyed young sailor, eager to see the world.</value>
+        <value>A disillusioned man, going through the motions.</value>
+        <value>A sad young man who misses his family.</value>
+        <value>A happy-go-lucky fellow who loves life aboard a ship.</value>
+        <value>A terrible rake with a sweetheart in every port.</value>
+        <value>Strong as an ox, but with a gentle heart.</value>
+        <value>Wiry and quick, scaling the rigging faster than anyone.</value>
+        <value>A dangerous man, fierce and bad tempered.</value>
+    </table>
+    <table name="The sailor has..." id="has">
+        <value>A dagger tattoo.</value>
+        <value>An anchor tattoo.</value>
+        <value>A skull tattoo.</value>
+        <value>A thorny vine tattoo.</value>
+        <value>A snake tattoo.</value>
+        <value>A fish tattoo.</value>
+        <value>A spider web tattoo.</value>
+        <value>An octopus tattoo.</value>
+        <value>A whale tattoo.</value>
+        <value>A lobster tattoo.</value>
+        <value>A crab tattoo.</value>
+        <value>A mermaid tattoo.</value>
+        <value>A shark tattoo.</value>
+        <value>A dragon tattoo.</value>
+        <value>A cloud with a lightning bolt.</value>
+        <value>A single-mast sailboat.</value>
+        <value>A double-mast ship.</value>
+        <value>A sunburst tattoo.</value>
+        <value>A moon tattoo.</value>
+        <value>A tattoo of a constellation of stars.</value>
+    </table>
+    <table name="The sailor's tattoo is a memento of..." id="tattoo">
+        <value>A particularly lengthy voyage.</value>
+        <value region_start="18" region_end="45" region_include="world">Sailing through a dangerous part of the world.</value>
+        <value region_start="16" region_end="19" region_include="__noun__">Crossing a wide sea.</value>
+        <value region_start="12" region_end="23" region_include="__noun__">Visiting an exotic port.</value>
+        <value region_start="12" region_end="28" region_include="__noun__">Visiting an enchanted island.</value>
+        <value region_start="10" region_end="17" region_include="__noun__">Winning a contest.</value>
+        <value>Fighting in a battle.</value>
+        <value region_start="12" region_end="18" region_include="nobleman">Serving for a lord or king.</value>
+        <value region_start="12" region_end="21" region_include="__noun__">Surviving a shipwreck.</value>
+        <value region_start="25" region_end="36" region_include="__noun__">Surviving an attack by a sea monster.</value>
+        <value>Fending off pirates.</value>
+        <value>Sailing with pirates.</value>
+        <value>His first voyage.</value>
+        <value region_start="2" region_end="9" region_include="sailor">A comrade, lost at sea.</value>
+        <value region_start="12" region_end="16" region_include="__noun__">A long lost love.</value>
+        <value region_start="12" region_end="18" region_include="__noun__">A long lost friend</value>
+        <value>A passionate love affair.</value>
+        <value region_start="7" region_end="15" region_include="__noun__">A dead relative.</value>
+        <value region_start="15" region_end="30" region_include="__noun__">The birth of a son or daughter.</value>
+        <value region_start="12" region_end="32" region_include="__noun__">A traumatic childhood experience.</value>
+        <value region_start="14" region_end="23" region_include="village">His childhood home town.</value>
+    </table>
+    <table name="Distinguising facial feature: The sailor has..." id="feature">
+        <value>A flashy earring.</value>
+        <value>A scar across the cheek.</value>
+        <value>Gold teeth.</value>
+        <value>A neatly trimmed beard.</value>
+        <value>An eyepatch.</value>
+        <value>A long, hooked nose.</value>
+        <value>Bushy eyebrows.</value>
+        <value>Long hair tied up into a bun.</value>
+        <value>Dark, curly hair.</value>
+        <value>A broad grin.</value>
+        <value>Sideburns that meet his mustache.</value>
+        <value>Extravagant mustaches.</value>
+    </table>
+    <table name="Accessories: The sailor is wearing or carrying..." id="wearing">
+        <value>Breeches with patches on the knees.</value>
+        <value>Shiny leather boots.</value>
+        <value>An oversized dagger in the belt.</value>
+        <value>An undersized vest.</value>
+        <value>A silver chain around the neck.</value>
+        <value>A wide-brimmed hat.</value>
+        <value>A bandanna tied over the head.</value>
+        <value>A cutlass in a scabbard.</value>
+        <value>A knife in each boot.</value>
+        <value>A puffy shirt.</value>
+        <value>A wooden peg where a leg had been.</value>
+        <value>An open shirt that shows off a very hairy chest.</value>
+    </table>
+    <table name="At the end of a long voyage, the sailor is eager to..." id="eager">
+        <value>Weigh anchor and make sail again.</value>
+        <value>Spend all his coin on drink.</value>
+        <value>Spend all his coin in brothels.</value>
+        <value>Spend all his coin on card games and dice.</value>
+        <value region_start="26" region_end="36" region_include="__noun__">Send a letter home to his sweetheart.</value>
+        <value region_start="26" region_end="32" region_include="__noun__">Send a letter home to his mother.</value>
+        <value>Find work with the captain of a different ship.</value>
+        <value>Find work on shore and put off making another long voyage.</value>
+        <value>Get drunk and start a fight.</value>
+        <value>Sleep on a real bed.</value>
+        <value>Drink and dance the night away.</value>
+        <value>Drink and gamble his coin away.</value>
+    </table>
+    <table name="When drunk, the sailor is prone to..." id="drunk">
+        <value>Start a fist fight with anyone nearby.</value>
+        <value>Sing loudly late into the night.</value>
+        <value>Become morose and quiet, withdrawing to be alone.</value>
+        <value>Attempt to impress the ladies with any skill, regardless of his level of mastery.</value>
+        <value>Tell stories of epic adventures on the high seas with great fervor.</value>
+        <value>Tell the same story about an old friend that turned to piracy.</value>
+        <value>Act as though he's never met a stranger and everyone is his friend.</value>
+        <value>Play childish pranks on anyone nearby, but especially those that don't look like they are having enough fun.</value>
+        <value>Wander about town until the wee hours.</value>
+        <value>Pass out in a stable and sleep among the horses and pigs until dawn.</value>
+        <value>Pass out on a beach or dock, listening to the lullaby of waves tumbling in.</value>
+        <value>Steal a dinghy and pass out on the deck of a strange ship.</value>
+    </table>
+    <table name="What the sailor really wants is to..." id="wants">
+        <value>Own his own ship.</value>
+        <value>Retire to a quiet place inland somewhere, as far from the open ocean as possible.</value>
+        <value>Make sure his wives on either side of the sea never learn of each other.</value>
+        <value>Marry and have a passel of kids to return home to.</value>
+        <value>Be recognized for his hard work and maybe be first mate some day.</value>
+        <value>Get off the ship and own a shipping brokerage.</value>
+        <value>Write a drinking song that will be recognized by everyone.</value>
+        <value>Forget the demons of his past.</value>
+        <value region_start="23" region_end="33" region_include="village">Retire to a quiet fishing village with a little boat and a little house with a little woman.</value>
+        <value region_start="21" region_end="33" region_include="__noun__">Face down one of the sea monsters he's heard his mates go on and on about.</value>
+        <value region_start="9" region_end="16" region_include="sailor">Kill the captain; that guy's a jerk.</value>
+        <value>Be a pirate.</value>
+    </table>
+</category>

@@ -1,0 +1,44 @@
+            <category name="Celestial Beast" id="celestial_beast">
+                <table name="The celestial beast appears in the form of..." id="form">
+                    <value>A badger.</value>
+                    <value>A bull.</value>
+                    <value>A dove.</value>
+                    <value>An eagle.</value>
+                    <value>A griffon.</value>
+                    <value>A hound.</value>
+                    <value>A horse.</value>
+                    <value>A lion.</value>
+                    <value>A serpent.</value>
+                    <value>A stag.</value>
+                    <value>A swan.</value>
+                    <value>A unicorn.</value>
+                </table>
+                <table name="The beast has..." id="has">
+                    <value>Shining golden eyes.</value>
+                    <value>Sympathetic pale blue or grey eyes.</value>
+                    <value>Eyes full of knowledge and judgement.</value>
+                    <value>A crown of gold.</value>
+                    <value>Wings of the pure white feathers.</value>
+                    <value>Pristine white feathers or fur.</value>
+                    <value>An aura of glowing light.</value>
+                    <value>An aura of peacefulness.</value>
+                </table>
+                <table name="...and..." id="has_and">
+                    <value>Moves gracefully, almost gliding.</value>
+                    <value>Carries itself proudly.</value>
+                    <value>Has a gentle manner.</value>
+                    <value>Speaks eloquently.</value>
+                    <value>Speaks in poetic riddles.</value>
+                    <value>Fills you with a sense of peace.</value>
+                </table>
+                <table name="The beast is looking for..." id="looking">
+                    <value region_start="15" region_end="28" region_include="__noun__">An answer to a cosmic riddle.</value>
+                    <value>A mortal worthy of its service.</value>
+                    <value>A mortal worthy of serving its master.</value>
+                    <value region_start="2|33" region_end="8|39" region_include="__noun__|__noun__">A mortal condemned to die by its master.</value>
+                    <value region_start="2" region_end="8" region_include="__noun__">A mortal who has succumbed to temptation.</value>
+                    <value region_start="3|29" region_end="7|35" region_include="__noun__|__noun__">An item of importance to its master.</value>
+                    <value region_start="4|35" region_end="12|39" region_include="__noun__|__noun__">The location of an ancient, hidden evil.</value>
+                    <value region_start="4|23" region_end="17|33" region_include="__noun__|npc">The resting place of a great hero.</value>
+                </table>
+            </category>

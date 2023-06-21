@@ -1,0 +1,185 @@
+        <category name="Unusual Crime" id="crime">
+            <table name="Victim type" id="victim_type">
+                <value>A group of travelers lead by a...</value>
+                <value region_start="2" region_end="9" region_include="caravan">A caravan lead by a...</value>
+                <value>An adventuring party lead by a...</value>
+                <value>A group of pilgrims following a...</value>
+                <value>A young...</value>
+                <value>An old...</value>
+                <value>A down on his luck...</value>
+                <value>A common...</value>
+                <value>A few...</value>
+                <value>A hated...</value>
+                <value>Another...</value>
+                <value>A middleaged...</value>
+                <value>The family of a...</value>
+                <value>The friend of a...</value>
+                <value>A strange...</value>
+                <value>A famous...</value>
+                <value>A well-liked...</value>
+                <value>A simple dressed...</value>
+                <value>An extravagantly dressed...</value>
+                <value>A commonly dressed...</value>
+            </table>
+            <table name="Origin" id="origin">
+                <value>Local...</value>
+                <value>Foreign...</value>
+                <value>Exotic looking...</value>
+                <value>Unknown...</value>
+            </table>
+            <table name="Victim" id="victim">
+                <value>Man</value>
+                <value>Woman</value>
+                <value>Craftsman</value>
+                <value region_start="0" region_end="5" region_include="guard">Guard</value>
+                <value region_start="0" region_end="5" region_include="nobleman">Noble</value>
+                <value>Slave</value>
+                <value region_start="0" region_end="7" region_include="maidservant">Servant</value>
+                <value>Child</value>
+                <value region_start="0" region_end="4" region_include="nobleman">Lord</value>
+                <value region_start="0" region_end="4" region_include="wizard">Mage</value>
+                <value region_start="0" region_end="6" region_include="priest">Priest</value>
+                <value region_start="0" region_end="8" region_include="merchant">Merchant</value>
+                <value region_start="0" region_end="5" region_include="thief">Thief</value>
+                <value>Assassin</value>
+                <value>Officer</value>
+                <value>Hobo</value>
+                <value region_start="0" region_end="10" region_include="harlot">Prostitute</value>
+                <value region_start="0" region_end="8" region_include="criminal">Criminal</value>
+                <value>Art collector</value>
+                <value>Archivist</value>
+            </table>
+            <table name="Crime" id="crime">
+                <value>Killed</value>
+                <value>Robbed</value>
+                <value>Kidnapped</value>
+                <value>Extorted</value>
+                <value>Blackmailed</value>
+                <value>Attacked</value>
+                <value>Eaten</value>
+                <value>Decapitated</value>
+                <value>Mutilated</value>
+                <value>Assaulted</value>
+                <value>Taken hostage</value>
+                <value>Banished to another plane</value>
+                <value>Blown up</value>
+                <value>Set on fire</value>
+                <value>Polimorphed into an ottoman</value>
+                <value>Fed to wild animals</value>
+                <value>Thrown into a pit</value>
+                <value>Tricked</value>
+                <value>Cloned</value>
+                <value>Shrinked</value>
+                <value>Drained of blood</value>
+                <value>Poisoned</value>
+                <value>Stabbed</value>
+                <value>Tortured</value>
+            </table>
+            <table name="Location" id="location">
+                <value>At home</value>
+                <value>In the street in broad daylight</value>
+                <value>In a dark alley</value>
+                <value region_start="5" region_end="11" region_include="tavern">In a tavern</value>
+                <value region_start="5" region_end="12" region_include="brothel">At a brothel</value>
+                <value>On the outskirts of town</value>
+                <value>In the park</value>
+                <value>In someone's garden</value>
+                <value region_start="5" region_end="11" region_include="temple">In a temple</value>
+                <value>On the town square</value>
+                <value region_start="7" region_end="16" region_include="naturalforest">Out in the woods</value>
+                <value>Down by the lake</value>
+                <value region_start="7" region_end="12" region_include="swamp">In the swamp</value>
+                <value>In the nearby ruin</value>
+                <value region_start="12" region_end="16" region_include="cavern">In a nearby cave</value>
+                <value>By the sewer exit</value>
+                <value>In a guard tower</value>
+                <value>In an abandoned house</value>
+                <value>In an abandoned warehouse</value>
+                <value>In an old mansion</value>
+                <value>In the stable of an old estate</value>
+                <value region_start="5" region_end="10" region_include="tomb">In a crypt</value>
+                <value>In a library</value>
+                <value>At the victims own place of work</value>
+                <value>In the victims own bedroom</value>
+                <value>In a hidden room in the victims own house</value>
+                <value region_start="22" region_end="35" region_include="guilds">In the common room of a local guild</value>
+                <value region_start="3" region_end="9" region_include="ship">On a boat on the lake</value>
+                <value region_start="11" region_end="19" region_include="mountain">On a quiet mountain road</value>
+                <value region_start="18" region_end="23" region_include="naturalforest">On a track in the woods</value>
+                <value>Out by the waterfall</value>
+                <value>In the cathedral</value>
+                <value>In the old church</value>
+                <value>In the catacombs</value>
+                <value>At an undisclosed location</value>
+            </table>
+            <table name="Investigators: The case is being investigated by..." id="investigators">
+                <value region_start="4" region_end="8" region_include="city">The city guard</value>
+                <value>Royal guard</value>
+                <value>A fearsome crew with obvious scars of battle</value>
+                <value>A strange and quiet group, not known by any of the locals</value>
+                <value>Men of the church</value>
+                <value>An old man in a robe and his dog</value>
+                <value>A middle-aged woman in a simple uniform with her young male assistant</value>
+                <value>A young man, who won't disclose his relationship to the victim assigned by his mute brother</value>
+                <value>The minister of war</value>
+                <value region_start="11" region_end="22" region_include="gang">One of the local gangs</value>
+                <value>Someone assigned by the wizard's academy</value>
+                <value region_start="4" region_end="8" region_include="town">The town's best men</value>
+                <value>No one. It was dropped</value>
+            </table>
+            <table name="Interest in solving it" id="interest">
+                <value>keen on solving it</value>
+                <value>not very interested in solving it</value>
+                <value>doing all they can in solving it</value>
+                <value>letting no on stand in their way of solving it</value>
+                <value>not doing so much for solving it</value>
+                <value>clearly making sure nothing is done in solving it</value>
+            </table>
+            <table name="Willingness to share details" id="share">
+                <value>are hostile when asked to share details</value>
+                <value>are in no way willing to share details</value>
+                <value>Are very skeptical to share details</value>
+                <value>Are scared to share details</value>
+                <value>are clearly not allowed to share details</value>
+                <value>are, when completely hammered, somewhat willing to share details</value>
+                <value>skeptical, but somewhat willing to share details</value>
+                <value>willing to share details</value>
+                <value>very willing to share details</value>
+                <value>way too willing to share details</value>
+                <value>yelling to everyone trying to share details</value>
+            </table>
+            <table name="Source" id="source">
+                <value region_start="39" region_end="45" region_include="tavern">According to your sources at the local tavern, there's...</value>
+                <value region_start="23" region_end="28" region_include="__noun__">A less-reputable local paper writes about...</value>
+                <value region_start="10" region_end="20" region_include="__noun__">A scrawny town crier tells passers-by of...</value>
+                <value>A group of craftsmen walking by talks about...</value>
+                <value region_start="17" region_end="23" region_include="__noun__">According to the flyers distributed in quite overwhelming numbers around town, there is definately...</value>
+                <value region_start="2" region_end="5" region_include="__noun__">A man without teeth comes up and whispers to a PC</value>
+                <value region_start="34" region_end="37" region_include="__noun__">By the gate, a hideously deformed man passes you a note mentioning...</value>
+                <value region_start="31" region_end="48" region_include="__noun__">At the scene of the crime is a verse from a poem, written with intestines laid out in beautiful cursive. It has...</value>
+                <value region_start="2" region_end="6" region_include="__noun__">A note on a player's bed speaks of...</value>
+            </table>
+            <table name="Clue" id="clue">
+                <value>A local cult with rather extreme beliefs</value>
+                <value>A lock of strange fur</value>
+                <value>A rumored jealous lover</value>
+                <value>A hot tempered spouse</value>
+                <value>The local child, the one with the strangest eyes</value>
+                <value>Markings of something having entered from beyond</value>
+                <value>Remnants of the darkest magic</value>
+                <value>Revenge</value>
+                <value>Lust</value>
+                <value>Greed</value>
+                <value>A murky acquaintance from the victim's past</value>
+                <value>That old tablet covered in obscure symbols</value>
+                <value>The terrible story no one wants to remember</value>
+                <value>An old friend of the PCs</value>
+                <value>A beautiful young woman, who only came to town recently</value>
+                <value>Another horrid crime committed not long ago</value>
+                <value>The escaped criminal, rumored to be in hiding nearby</value>
+                <value>Markings of a wild animal</value>
+                <value>The deep rumble, that you might hear coming from below the surface of the paved roads from time to time</value>
+                <value>The nightly activities of one of the PCs, but it's all so hazy...</value>
+            </table>
+            <member name="Criminal" include="criminal" />
+        </category>

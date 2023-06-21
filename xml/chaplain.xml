@@ -1,0 +1,22 @@
+            <category name="Chaplain" id="chaplain">
+                <name name="The chaplain's name is..."/>
+                <include name="Race" include="npc_race" />
+                <table name="The chaplain is..." id="chaplain_is">
+                    <value region_start="10" region_end="17" region_include="__noun__">A devoted acolyte</value>
+                    <value region_start="9" region_end="15" region_include="healer">An adept healer</value>
+                    <value>A wise source of counsel</value>
+                    <value>A drunken hypocrite</value>
+                </table>
+                <table name="The chaplain is looking for..." id="chaplain_looking">
+                    <value>News from the surrounding lands</value>
+                    <value>Sinners and heretics</value>
+                    <value region_start="17" region_end="32" region_include="__noun__">The answer to an ancient mystery</value>
+                    <value>The bottom of a goblet</value>
+                </table>
+                <table name="The chaplain carries" id="chaplain_carries">
+                    <value>A ceremonial cudgel or staff</value>
+                    <value region_start="24" region_end="35" region_include="__noun__">A prominently displayed holy symbol</value>
+                    <value>A pocketbook of sacred texts</value>
+                    <value>A wineskin</value>
+                </table>
+            </category>

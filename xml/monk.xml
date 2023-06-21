@@ -1,0 +1,185 @@
+<category name="Monk" id="monk">
+    <name name="The monk's name is..."/>
+    <include name="Race" include="npc_race" />
+    <table name="The monk is..." id="is">
+        <value region_start="10" region_end="17" region_include="__noun__">A devoted acolyte</value>
+        <value>A dogmatic teacher</value>
+        <value region_start="12" region_end="18" region_include="__noun__">A wondering mystic</value>
+        <value region_start="7" region_end="14" region_include="fighter">A grim warrior</value>
+        <value region_start="9" region_end="15" region_include="healer">An adept healer</value>
+        <value region_start="13" region_end="20" region_include="__noun__">A road-weary pilgrim</value>
+        <value>A charismatic preacher</value>
+        <value region_start="13" region_end="17" region_include="__noun__">An eccentric sage</value>
+        <value region_start="16" region_end="23" region_include="__noun__">A disillusioned scholar</value>
+        <value region_start="16" region_end="30" region_include="__noun__">A battle-tested martial artist</value>
+        <value>A sharp-witted beggar-in-disguise</value>
+        <value>An outspoken zealot</value>
+        <value region_start="15" region_end="24" region_include="nation">An inscrutable foreigner</value>
+        <value>A world-weary philosopher</value>
+        <value region_start="8" region_end="22" region_include="__noun__">A brash martial artist</value>
+        <value region_start="11" region_end="19" region_include="criminal">A reformed criminal</value>
+        <value region_start="2" region_end="9" region_include="fighter">A warrior in exile</value>
+        <value region_start="11" region_end="18" region_include="__noun__">A cautious refugee</value>
+        <value>A bare-knucked brawler</value>
+        <value>An unapologetic drunk</value>
+    </table>
+    <table name="At the monastery, the monk serves or served as..." id="serves">
+        <value>A brewer or vintner</value>
+        <value>A baker, butcher, or cook</value>
+        <value>A carpenter or stonemason</value>
+        <value region_start="2" region_end="8" region_include="farmfolk">A farmer or gardener</value>
+        <value region_start="2" region_end="9" region_include="smith/smith_is/smith_is_farrier">A farrier</value>
+        <value region_start="0" region_end="10" region_include="smith/smith_is/smith_is_blacksmith">blacksmith</value>
+        <value region_start="2" region_end="7" region_include="guard">A guard</value>
+        <value region_start="2" region_end="9" region_include="soldier">A soldier</value>
+        <value>A librarian or instructor</value>
+        <value>A leatherworker or rope-maker</value>
+        <value>A scribe or bookkeeper</value>
+        <value>A steward or quartermaster</value>
+        <value>A stable hand or herder</value>
+        <value>A tailor or weaver</value>
+        <value>A custodian</value>
+        <value>A liason with the public</value>
+    </table>
+    <table name="The monk has..." id="has">
+        <value>A likable grin</value>
+        <value>A hearty laugh</value>
+        <value>An unreadable face</value>
+        <value>A sulky grimace</value>
+        <value>A humorless visage</value>
+        <value>A habit of sighing</value>
+        <value>A sad look on his or her face</value>
+        <value>A kind look on his or her face</value>
+        <value>A habit of pacing</value>
+        <value>A habit of scratching his or her chin</value>
+        <value>A habit of licking his or her lips</value>
+        <value>A habit of muttering under his or her breath</value>
+    </table>
+    <table name="The monk is particularly knowledgeable regarding..." id="knowledge">
+        <value>Alchemical preparations (curatives)</value>
+        <value>Alchemical preparations (explosives)</value>
+        <value>Alchemical preparations (poisons)</value>
+        <value>Alchemical preparations (sedatives)</value>
+        <value>The power of the mind</value>
+        <value>Realms beyond the material world</value>
+        <value>Demonology</value>
+        <value>Healing arts</value>
+        <value>The journey of the soul</value>
+        <value>The laws of the gods</value>
+        <value>Sacred rites</value>
+        <value>Sacred texts</value>
+        <value>Saints, martyrs, and heroes of legend</value>
+        <value>The monastic order's hierarchy and bureucracy</value>
+        <value>The body's strengths and weaknesses</value>
+    </table>
+    <table name="The monk has recently been contemplating..." id="contemplating">
+        <value>The mysteries of death and life</value>
+        <value>The meaning of a recurring dream</value>
+        <value>The meaning of several dark omens</value>
+        <value>The perfection of the mind</value>
+        <value>The perfection of the body</value>
+        <value>The perfection of the soul</value>
+        <value>The wisdom of an ancient philosopher</value>
+        <value>The beauty and power of nature</value>
+        <value>The path to inner peace</value>
+        <value>Forgiveness for his or her past sins</value>
+        <value>The balance of good and evil</value>
+        <value>The balance of order and chaos</value>
+        <value>The meaning of life, the universe, and everything</value>
+    </table>
+    <table name="The monk prefers to meditate..." id="meditate">
+        <value region_start="11" region_end="17" region_include="temple">In a large temple</value>
+        <value region_start="14" region_end="27" region_include="monastery">In a shrine at the monastery</value>
+        <value region_start="30" region_end="43" region_include="monastery">In his or her personal cell at the monastery</value>
+        <value>In a garden</value>
+        <value region_start="8" region_end="22" region_include="wilderness">Deep in the wilderness</value>
+        <value region_start="15" region_end="29" region_include="__noun__">In an isolated cave or grotto</value>
+        <value region_start="18" region_end="30" region_include="__noun__">On the site of an ancient ruin</value>
+        <value region_start="31" region_end="36" region_include="world">While walking the roads of the world</value>
+    </table>
+    <table name="The monk wears..." id="wears">
+        <value>A threadbare robe</value>
+        <value>A sturdy wool cloak</value>
+        <value>A comfortable linen robe</value>
+        <value region_start="35" region_end="38" region_include="deity">A cotton robe with the symbol of a god embroidered on the lapel</value>
+        <value>A clean silk robe with simple embroidery</value>
+        <value>An expensive silk robe with elaborate gold embroidery</value>
+    </table>
+    <table name="The monk's martial arts style includes..." id="style">
+        <value>Landing many rapid, open-hand slaps</value>
+        <value>Landing many rapid, close-fist punches</value>
+        <value>Acrobatic flips and quick maneuvers</value>
+        <value>Lighting sprints and flying leaps</value>
+        <value>A stumbling gait to keep foes off balance</value>
+        <value>Methodical footwork</value>
+        <value>Landing a few powerful punches</value>
+        <value>Landing a few powerful kicks</value>
+        <value>Leg sweeps to trip foes</value>
+        <value>Striking pressure points to debilitate foes</value>
+        <value>Using explisive powders and alchemical smoke to distract foes</value>
+    </table>
+    <table name="The monk carries..." id="carries">
+        <value>A polished wooden staff</value>
+        <value>A well-used walking staff</value>
+        <value>Several razor-sharp daggers</value>
+        <value>A blunted ceremonial dagger or sword</value>
+        <value>A kukri</value>
+        <value>A kusari-gama</value>
+        <value>Nunchaku</value>
+        <value>Scythe</value>
+        <value>Shuriken</value>
+        <value>A Sickle</value>
+        <value region_start="34" region_end="45" region_include="__noun__">A prominently displayed bejeweled holy symbol</value>
+        <value region_start="31" region_end="42" region_include="__noun__">A prominently displayed gilded holy symbol</value>
+        <value region_start="29" region_end="40" region_include="__noun__">A prominently displayed iron holy symbol</value>
+        <value region_start="31" region_end="42" region_include="__noun__">A prominently displayed silver holy symbol</value>
+        <value region_start="30" region_end="41" region_include="__noun__">A prominently displayed steel holy symbol</value>
+        <value region_start="31" region_end="42" region_include="__noun__">A prominently displayed wooden holy symbol</value>
+        <value>A purse of silver to distribute to the poor</value>
+        <value>A notebook of hand-written prayers and devotions</value>
+        <value>A variety of healing potions and slaves</value>
+        <value>A set of prayer beads</value>
+        <value>A heavy ring of keys</value>
+        <value>A wineskin or flask</value>
+    </table>
+    <table name="The monk prefers to drink..." id="drink">
+        <value>Ale</value>
+        <value>Coffee</value>
+        <value>Fermented cow milk</value>
+        <value>Fermented goat milk</value>
+        <value>Fermented mare milk</value>
+        <value>Fermented yak milk</value>
+        <value>Firewhisky</value>
+        <value>Mead</value>
+        <value>Porter</value>
+        <value>Black tea</value>
+        <value>Green tea</value>
+        <value>Herbal tea</value>
+        <value>Water</value>
+        <value>Wine</value>
+        <value>Rice wine</value>
+    </table>
+    <table name="The monk is looking for..." id="looking">
+        <value>New students</value>
+        <value region_start="22" region_end="40" region_include="__noun__">The translation of an ancient manuscript</value>
+        <value>Heretics and enemies of the order</value>
+        <value>Relics and rare lore</value>
+        <value region_start="11" region_end="14" region_include="deity">Proof of a god's existence</value>
+        <value region_start="25" region_end="31" region_include="temple">The location of a ruined temple</value>
+        <value region_start="25" region_end="34" region_include="monastery">The location of a ruined monastery</value>
+        <value region_start="25" region_end="30" region_include="__noun__">An opportunity to tell a fable</value>
+        <value>The bottom of a goblet</value>
+    </table>
+    <table name="You have heard of this monk because..." id="heard">
+        <value region_start="20" region_end="25" region_include="__noun__">He's a member of an order sworn to poverty.</value>
+        <value region_start="20" region_end="25" region_include="__noun__">He's a member of an order rumored to be sitting on a great treasure despite appearances of poverty.</value>
+        <value>He's traveling the roads searching for an experience that will grant him enlightenment.</value>
+        <value>He's a famous master of hand to hand combat. A drunken master.</value>
+        <value region_start="61" region_end="70" region_include="monastery">He's a wandering neophyte on a quest to prove himself to the monastery by doing good for others.</value>
+        <value>His wisdom is legendary and people travel far and wide to seek his advice.</value>
+        <value region_start="4" region_end="13" region_include="monastery">His monastery is a safe home for the lost, the weary, and those orphaned by war or tragedy.</value>
+        <value region_start="36" region_end="40" region_include="cult">He's a sworn killer serving a death cult.</value>
+        <value region_start="45" region_end="56" region_include="villains">He's a mage killer sworn to the service of a dark master.</value>
+        <value region_start="39" region_end="48" region_include="__noun__">He's a master of an evil and forbidden technique.</value>
+    </table>
+</category>

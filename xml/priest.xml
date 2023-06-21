@@ -1,0 +1,132 @@
+<category name="Priest" id="priest">
+    <name name="The priest's name is..."/>
+    <table name="The priest is..." id="priestis">
+        <value id="acolyte">A devoted acolyte</value>
+        <value region_start="11" region_end="19" region_include="chaplain">A dogmatic chaplain</value>
+        <value region_start="10" region_end="18" region_include="chaplain">A wealthy chaplain</value>
+        <value id="exorcist">A grim exorcist</value>
+        <value region_start="8" region_end="14" region_include="healer" id="priest_healer">A adept healer</value>
+        <value>A road-weary pilgrim</value>
+        <value id="preacher">A charismatic preacher</value>
+        <value>An eccentric scholar</value>
+        <value id="scholar">A disillusioned scholar</value>
+        <value>A battle-tested war-priest</value>
+        <value>A sharp-witted witch-hunter</value>
+        <value id="zealot">An outspoken zealot</value>
+    </table>
+    <table name="The priest has..." id="has">
+        <value>A likable grin</value>
+        <value>A hearty laugh</value>
+        <value>An arrogant smirk</value>
+        <value>A haughty sneer</value>
+        <value>A humorless visage</value>
+        <value>A habit of sighing</value>
+        <value>A sad look on his or her face</value>
+        <value>A kind look on his or her face</value>
+        <value>A habit of pacing</value>
+        <value>A habit of scratching his or her chin</value>
+        <value>A habit of licking his or her lips</value>
+        <value>A habit of muttering under his or her breath</value>
+    </table>
+    <table name="The priest is particularly knowledgeable regarding" id="knowldege">
+        <value>Alchemical curatives</value>
+        <value>Creation myths</value>
+        <value>Crusades and religious wars</value>
+        <value>Demonology</value>
+        <value>Healing arts</value>
+        <value>The journey of the soul</value>
+        <value>The laws of the gods</value>
+        <value>Sacred rites</value>
+        <value>Sacred texts</value>
+        <value>Saints and martyrs</value>
+        <value region_start="4" region_end="10" region_include="temple">The temple hierarchy and bureaucracy</value>
+        <value>Undead creatures</value>
+    </table>
+    <table name="The priest has recently been praying for..." id="praying">
+        <value region_start="16" region_end="30" region_include="__noun__">The death of an enemy or rival</value>
+        <value region_start="28" region_end="42" region_include="__noun__">The miraculous recover of a friend or ally</value>
+        <value>Evil tidings and omens to pass over him or her</value>
+        <value>Strength against temptation</value>
+        <value region_start="20" region_end="38" region_include="__noun__">Wisdom in making an important decision</value>
+        <value region_start="27" region_end="36" region_include="__noun__">Forgiveness for his or her past sins</value>
+    </table>
+    <table name="The priest wears..." id="wears">
+        <value>A threadbare robe</value>
+        <value>A sturdy wool cloak</value>
+        <value>A comfortable linen robe</value>
+        <value>A robe that smells of incense</value>
+        <value region_start="35" region_end="38" region_include="deity">A cotton robe with the symbol of a god embroidered on the lapel</value>
+        <value>A clean silk robe with simple embroidery</value>
+        <value>An expensive silk robe with elaborate gold embroidery</value>
+        <value>Boiled leather armor</value>
+        <value>Patchwork armor of leather and steel</value>
+        <value region_start="41" region_end="51" region_include="armorer">Armor that smells of scented, holy oils (crafted by)</value>
+        <value region_start="38" region_end="48" region_include="armorer">Chainmail armor with a priest's hood (crafted by)</value>
+        <value region_start="42|47" region_end="45|57" region_include="deity|armorer">Chainmail emblazoned with the symbol of a god (crafted by)</value>
+    </table>
+    <table name="The priest carries..." id="carrries">
+        <value>A well-used cudgel</value>
+        <value>A shinynew mace</value>
+        <value>A walking staff</value>
+        <value>A staff with a crook</value>
+        <value>A ceremonial dagger</value>
+        <value region_start="34" region_end="45" region_include="__noun__">A prominently displayed bejeweled holy symbol</value>
+        <value region_start="31" region_end="42" region_include="__noun__">A prominently displayed gilded holy symbol</value>
+        <value region_start="29" region_end="40" region_include="__noun__">A prominently displayed iron holy symbol</value>
+        <value region_start="31" region_end="42" region_include="__noun__">A prominently displayed silver holy symbol</value>
+        <value region_start="30" region_end="41" region_include="__noun__">A prominently displayed steel holy symbol</value>
+        <value region_start="31" region_end="42" region_include="__noun__">A prominently displayed wooden holy symbol</value>
+        <value>A pocketbook of sacred texts</value>
+        <value>A notebook of hand-written prayers and devotions</value>
+        <value>A variety of healing potions and salves</value>
+        <value>A set of prayer beads</value>
+        <value>A heavy ring of keys</value>
+        <value>A wineskin</value>
+    </table>
+    <table name="The priest prefers to drink" id="drink">
+        <value>Amber ale</value>
+        <value>Brown ale</value>
+        <value>Red ale</value>
+        <value>Pale ale</value>
+        <value>Wheat ale</value>
+        <value>White ale</value>
+        <value>Brandy</value>
+        <value>Lager</value>
+        <value>Mead</value>
+        <value>Milk</value>
+        <value>Pilsner</value>
+        <value>Porter or stout</value>
+        <value>Black tea</value>
+        <value>Green tea</value>
+        <value>Herbal tea</value>
+        <value>Sweetened tea</value>
+        <value>Red wine</value>
+        <value>Sour wine</value>
+        <value>White wine</value>
+        <value>Water</value>
+    </table>
+    <table name="The priest is looking for..." id="looking">
+        <value>New converts</value>
+        <value region_start="22" region_end="40" region_include="__noun__">The translation of an ancient manuscript</value>
+        <value>Heretics</value>
+        <value>Sinners</value>
+        <value>Donations</value>
+        <value>Relics and rare lore</value>
+        <value region_start="11" region_end="14" region_include="deity">Proof of a god's existence</value>
+        <value region_start="25" region_end="31" region_include="temple">The location of a ruined temple</value>
+        <value>An opportunity to tell a fable</value>
+        <value>The bottom of a goblet</value>
+    </table>
+    <table name="You have heard of this adventurer because..." id="heard">
+        <value region_start="4|48" region_end="10|54" region_include="__noun__|__noun__">His church is one of the few safe places in the region.</value>
+        <value>He's a kind-hearted man who helps all in need.</value>
+        <value region_start="57" region_end="61" region_include="city">He moved heaven and earth to revive fallen heroes in his city's time of need.</value>
+        <value region_start="17" region_end="32" region_include="cult">He's a member of a fearsome cult that holds the entire countryside in terror.</value>
+        <value region_start="88" region_end="91" region_include="deity">He hunts members of other faiths with a dark devotion, then sacrifices them to his dark god.</value>
+        <value region_start="16|62" region_end="27|68" region_include="necromancer|wildreness">He's a fearsome necromancer who has bound all the dead in the region to his will.</value>
+        <value region_start="33|44" region_end="36|50" region_include="deity|__noun__">He is the the high priest of his god in the region. To his followers his word is law.</value>
+        <value>He's a scholar first and a priest second.</value>
+        <value>He's more politically motivated than faith driven.</value>
+        <value>He's a promising young convert to his religion full of fervor.</value>
+    </table>
+</category>

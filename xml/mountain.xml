@@ -1,0 +1,411 @@
+<category name="Mountain" id="mountain">
+    <table name="The mountain's name is..." short="Name" type="name" type_name="Mountain">
+        <patterns>
+            <pattern>The {noun}</pattern>
+            <pattern>Mount {noun}</pattern>
+            <pattern>Mount {markov}</pattern>
+            <pattern>{markov} {type}</pattern>
+            <pattern>{noun} {type}</pattern>
+            <pattern>{adj} {type}</pattern>
+            <pattern>{markov}'s {noun}</pattern>
+            <pattern>{noun}'s {noun}</pattern>
+        </patterns>
+        <list type="noun">
+            <item>Shadow</item>
+            <item>Chicken</item>
+            <item>Warrior</item>
+            <item>Druid</item>
+            <item>Bull</item>
+            <item>Bear</item>
+            <item>Shepherd</item>
+            <item>Arrow</item>
+            <item>Buck</item>
+            <item>Castle</item>
+            <item>Crown</item>
+            <item>Hammer</item>
+            <item>Sword</item>
+            <item>Shield</item>
+            <item>Dagger</item>
+            <item>Axe</item>
+            <item>Spear</item>
+            <item>Sickle</item>
+            <item>Lich</item>
+            <item>Skeleton</item>
+            <item>Dragon</item>
+            <item>Serpent</item>
+            <item>Pony</item>
+            <item>Mason</item>
+            <item>King</item>
+            <item>Queen</item>
+            <item>Rose</item>
+            <item>Daisy</item>
+            <item>Thorn</item>
+            <item>Oak</item>
+            <item>Siren</item>
+            <item>Medusa</item>
+            <item>Cat</item>
+            <item>Dog</item>
+            <item>Cow</item>
+            <item>Phoenix</item>
+            <item>Naga</item>
+            <item>Hydra</item>
+            <item>Stranger</item>
+            <item>Traveler</item>
+            <item>Merchant</item>
+            <item>Nymph</item>
+            <item>Wish</item>
+            <item>Cauldron</item>
+            <item>Immortal</item>
+            <item>Butcher</item>
+            <item>Fiend</item>
+            <item>Demon</item>
+            <item>Wizard</item>
+            <item>Donkey</item>
+            <item>Raven</item>
+            <item>Crow</item>
+            <item>Grave</item>
+            <item>Unicorn</item>
+            <item>Goat</item>
+            <item>Ram</item>
+            <item>Fox</item>
+            <item>Coyote</item>
+            <item>Dingo</item>
+            <item>Angel</item>
+            <item>Angelic</item>
+            <item>Eagle</item>
+            <item>Hawk</item>
+            <item>Falcon</item>
+            <item>Owl</item>
+            <item>Pigeon</item>
+            <item>Rabbit</item>
+            <item>Stag</item>
+            <item>Fist</item>
+            <item>Centaur</item>
+            <item>Hoof</item>
+            <item>Bard</item>
+            <item>Priest</item>
+            <item>Hero</item>
+            <item>Hand</item>
+            <item>Potion</item>
+            <item>Herb</item>
+            <item>Duchess</item>
+            <item>Duke</item>
+            <item>Paladin</item>
+            <item>Wizard</item>
+            <item>Mage</item>
+            <item>Sorcerer</item>
+            <item>Harpy</item>
+            <item>Prince</item>
+            <item>Princess</item>
+            <item>Imp</item>
+            <item>Orc</item>
+            <item>Goblin</item>
+            <item>Breath</item>
+            <item>Wanderer</item>
+            <item>Ronin</item>
+            <item>Archer</item>
+            <item>Mercenary</item>
+            <item>Horseman</item>
+            <item>Scholar</item>
+            <item>Peasant</item>
+            <item>Vixen</item>
+            <item>Pearl</item>
+            <item>Ruby</item>
+            <item>Onyx</item>
+            <item>Garnet</item>
+            <item>Gold</item>
+            <item>Silver</item>
+            <item>Copper</item>
+            <item>Bronze</item>
+            <item>Adamantite</item>
+            <item>Electrum</item>
+            <item>Platinum</item>
+            <item>Gem</item>
+            <item>Gazebo</item>
+            <item>Troll</item>
+            <item>Minotaur</item>
+            <item>Cloak</item>
+            <item>Night</item>
+            <item>Highwayman</item>
+            <item>Alchemist</item>
+            <item>Brew</item>
+            <item>Herbalist</item>
+        </list>
+        <list type="adj">
+            <item>Moonlit</item>
+            <item>Shadowed</item>
+            <item>Dark</item>
+            <item>Celestial</item>
+            <item>Holy</item>
+            <item>Fortified</item>
+            <item>Broken</item>
+            <item>Fallen</item>
+            <item>Sturdy</item>
+            <item>Royal</item>
+            <item>Ancient</item>
+            <item>Light</item>
+            <item>Misty</item>
+            <item>Sharp</item>
+            <item>Swift</item>
+            <item>Shielded</item>
+            <item>Long</item>
+            <item>Short</item>
+            <item>High</item>
+            <item>Low</item>
+            <item>Haunted</item>
+            <item>Skeletal</item>
+            <item>Lost</item>
+            <item>Evil</item>
+            <item>Strong</item>
+            <item>Rose</item>
+            <item>Red</item>
+            <item>Blue</item>
+            <item>Green</item>
+            <item>Black</item>
+            <item>White</item>
+            <item>Golden</item>
+            <item>Silvered</item>
+            <item>Thorny</item>
+            <item>Oaken</item>
+            <item>Singing</item>
+            <item>Silent</item>
+            <item>Unsettled</item>
+            <item>Forbidden</item>
+            <item>Fortunate</item>
+            <item>Phoenix</item>
+            <item>Strange</item>
+            <item>Traveled</item>
+            <item>Rich</item>
+            <item>Tempered</item>
+            <item>Natural</item>
+            <item>Unnatural</item>
+            <item>Immortal</item>
+            <item>Butched</item>
+            <item>Fiendish</item>
+            <item>Demonic</item>
+            <item>Magical</item>
+            <item>Enchanted</item>
+            <item>Elcipsed</item>
+            <item>Stubborn</item>
+            <item>Foul</item>
+            <item>Soaring</item>
+            <item>Intelligent</item>
+            <item>Ever-watching</item>
+            <item>Watchful</item>
+            <item>Guardian</item>
+            <item>Sly</item>
+            <item>Crumbling</item>
+            <item>Decayed</item>
+            <item>Decaying</item>
+            <item>Rising</item>
+            <item>National</item>
+            <item>Vigilant</item>
+            <item>Conquered</item>
+            <item>Blessed</item>
+            <item>Cursed</item>
+            <item>Fabled</item>
+            <item>Spendant</item>
+            <item>Stalwart</item>
+            <item>Impotent</item>
+            <item>Fierce</item>
+            <item>Angry</item>
+            <item>Mellow</item>
+            <item>Cold</item>
+            <item>Burning</item>
+            <item>Lonely</item>
+            <item>Solitary</item>
+            <item>Sad</item>
+            <item>Laughing</item>
+            <item>Screeching</item>
+            <item>Wailing</item>
+            <item>Howling</item>
+            <item>Subdued</item>
+            <item>Jagged</item>
+            <item>Flat</item>
+            <item>Unrelenting</item>
+            <item>Unforgiving</item>
+            <item>Traveled</item>
+            <item>Enormous</item>
+            <item>Huge</item>
+            <item>Flaring</item>
+            <item>Hungry</item>
+            <item>Unresting</item>
+            <item>Colorless</item>
+            <item>Whispering</item>
+            <item>Round-topped</item>
+            <item>Bellowing</item>
+            <item>Southern</item>
+            <item>Northern</item>
+            <item>Eastern</item>
+            <item>Western</item>
+            <item>Frigid</item>
+            <item>Deserted</item>
+            <item>Gray</item>
+            <item>Yelling</item>
+            <item>Dangerous</item>
+            <item>Shimmering</item>
+            <item>Eroded</item>
+            <item>Vast</item>
+            <item>Remote</item>
+            <item>Towering</item>
+            <item>Darkest</item>
+            <item>Faraway</item>
+            <item>Ghastly</item>
+            <item>Wintry</item>
+            <item>Motionless</item>
+            <item>Welcoming</item>
+            <item>Arctic</item>
+            <item>Fearsome</item>
+            <item>Beholding</item>
+            <item>Moonlit</item>
+            <item>Violent</item>
+            <item>Distant</item>
+            <item>Disintegrated</item>
+            <item>Calm</item>
+            <item>Calming</item>
+            <item>Calmest</item>
+            <item>Colossal</item>
+            <item>Voiceless</item>
+            <item>Iron</item>
+            <item>Steel</item>
+            <item>Rocky</item>
+            <item>Desolated</item>
+            <item>Moaning</item>
+            <item>Hollow</item>
+            <item>Verdant</item>
+            <item>Ethereal</item>
+            <item>Mammoth</item>
+            <item>Forrested</item>
+            <item>Rugged</item>
+            <item>Thundering</item>
+            <item>Lifeless</item>
+            <item>Hopeless</item>
+            <item>Scarlet</item>
+            <item>Mirrored</item>
+            <item>Dead</item>
+            <item>Unliving</item>
+            <item>Burning</item>
+            <item>Steep</item>
+            <item>Bare</item>
+            <item>Arid</item>
+        </list>
+        <list type="type">
+            <item>Volcano</item>
+            <item>Mountain</item>
+            <item>Mountains</item>
+            <item>Range</item>
+            <item>Tips</item>
+            <item>Reach</item>
+            <item>Heights</item>
+            <item>Slopes</item>
+            <item>Pinnacle</item>
+            <item>Hills</item>
+            <item>Hill</item>
+            <item>Rise</item>
+            <item>Summit</item>
+            <item>Peaks</item>
+            <item>Bluff</item>
+            <item>Tops</item>
+            <item>Hillside</item>
+            <item>Highland</item>
+        </list>
+    </table>
+    <table name="Interesting Location: You find..." short="Interesting Location" id="mountain_location">
+        <value region_start="2|18" region_end="8|27" region_include="cavern|__noun__">A cavern behind a waterfall</value>
+        <value region_start="2" region_end="12" region_include="cavern">A small cave in the crook of a rock wall</value>
+        <value region_start="15" region_end="27" region_include="cavern">An entrance to a rocky cave</value>
+        <value region_start="2" region_end="6" region_include="__noun__">A hole under a sheer cliff face</value>
+        <value region_start="7" region_end="13" region_include="__noun__">A dark tunnel leading under the mountain</value>
+        <value region_start="2" region_end="8" region_include="__noun__">A tunnel in a cliff face</value>
+        <value region_start="22" region_end="39" region_include="mine">A tunnel leading into an abandoned mine</value>
+        <value region_start="11" region_end="16" region_include="__noun__">A peculiar cabin</value>
+        <value region_start="14" region_end="19" region_include="__noun__">A cozy little cabin</value>
+        <value region_start="13" region_end="18" region_include="__noun__">An abandoned cabin</value>
+        <value region_start="13" region_end="21" region_include="__noun__">An abandoned campsite</value>
+        <value region_start="25" region_end="29" region_include="tomb">A poorly marked grave or tomb</value>
+        <value region_start="10" region_end="21" region_include="__noun__">An active mining camp</value>
+        <value region_start="12" region_end="21" region_include="monastery">An isolated monastery</value>
+        <value region_start="24" region_end="34" region_include="cavern">A strategically located watchtower</value>
+        <value region_start="9" region_end="15" region_include="temple">A remote temple</value>
+        <value region_start="11" region_end="17" region_include="temple">An ancient temple</value>
+        <value region_start="13" region_end="23" region_include="cavern">An abandoned watchtower</value>
+        <value region_start="9" region_end="18" region_include="monastery">A ruined monastery</value>
+        <value region_start="19" region_end="23" region_include="__noun__">An enormous bird’s nest</value>
+    </table>
+    <table name="Distinguishing Landmark: You see..." short="Landmark" id="mountain_landmark">
+        <value>A trickle of water flowing down a rock wall</value>
+        <value>A small mountain lake of cold, fresh water</value>
+        <value>A swiftly flowing small stream</value>
+        <value>A natural bridge between two cliff faces</value>
+        <value>A narrow gorge with walls close enough to climb between</value>
+        <value>A deep gorge with no bottom in sight</value>
+        <value>A set of deliberately stacked stones</value>
+        <value>A large boulder eroded by the wind into the shape of a near-perfect sphere</value>
+        <value>A group of stones arranged in a circle</value>
+        <value>A boulder shaped to resemble a face</value>
+        <value>A pair of narrow needle-like peaks</value>
+        <value>A chimney-like column of rock</value>
+        <value>A large boulder split in half like an egg</value>
+        <value>A damp rock wall, covered in moss</value>
+        <value>The fossilized bones of a great beast visible in a rock wall</value>
+        <value>A thicket of hardy mountain shrubs growing atop a boulder</value>
+        <value>A copse of scrawny trees</value>
+        <value>A gorge where the wind whistles</value>
+        <value>A gorge with a near perfect echo</value>
+        <value>A rocky shoulder beneath a snowcap</value>
+    </table>
+    <table name="Feature: You notice..." short="Feature" id="mountain_feature">
+        <value>A cache of abandoned, decrepit mining equipment</value>
+        <value>Some old dry bones</value>
+        <value>A small fossilized leaf</value>
+        <value region_start="21" region_end="31" region_include="__noun__">Evidence of a recent encampment</value>
+        <value>An enormous spider web</value>
+        <value>An incredible view</value>
+        <value>The clatter of rocks falling</value>
+        <value>Loose stones underfoot</value>
+        <value>An unstable rock wall</value>
+        <value>A distant sound—a scream, hammers at work, footsteps, or drums</value>
+        <value>The name of a previous traveler carved into a boulder</value>
+        <value>An ancient rune carved in a rock wall</value>
+        <value>A scrawny tree growing with its roots spread over a small boulder</value>
+        <value>The distant cry of a beast—an eagle, a goat, a mountain lion, or a wolf</value>
+        <value>The wind whips up to a treacherous speed</value>
+        <value>Snow flurries begin to fall</value>
+        <value>The sound of birds chirping</value>
+        <value>A flock of birds takes flight</value>
+        <value>An old fire pit</value>
+        <value>Several puddles of cold water</value>
+    </table>
+    <table name="Encounters: You come upon..." short="Encounter" id="mountain_encounter">
+        <value>A lost prospector</value>
+        <value region_start="9" region_end="16" region_include="fighter">A solemn warrior</value>
+        <value>An angry wraith</value>
+        <value>A malevolent ghost</value>
+        <value>Some bandits</value>
+        <value>A seasoned mountaineer</value>
+        <value>A paranoid shapeshifter</value>
+        <value>An ancient vampire</value>
+        <value>Several homeless dwarves</value>
+        <value>An eccentric witch</value>
+        <value>A contemplative monk</value>
+        <value>A mountain lion</value>
+        <value>A pair of harpies</value>
+        <value>A flock of ravens</value>
+        <value>Several orc raiders</value>
+        <value>A hunting peryton</value>
+        <value>A mated pair of manticores</value>
+        <value>A trio of monstrous trolls</value>
+        <value>A clan of stone giants at rest</value>
+        <value>A roc tearing apart some prey</value>
+    </table>
+    <table name="Hazards/Obstacles: You run into..." short="Hazard" id="mountain_hazard">
+        <value>A perilous rockslide</value>
+        <value>An icy rime across the path or road</value>
+        <value>A tumbling boulder</value>
+        <value>Loose rocks that make for poor footing</value>
+        <value>A large boulder blocking the way</value>
+        <value>A place where the path has fallen away leaving a narrow ledge on which to walk</value>
+        <value>A place where the path or road slopes steeply down toward a cliff edge</value>
+        <value>A sudden storm bringing heavy snow</value>
+    </table>
+</category>

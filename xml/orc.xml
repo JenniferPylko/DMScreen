@@ -1,0 +1,113 @@
+<category name="Orc" id="orc">
+    <table name="Skin: The orc has..." id="skin">
+        <value>Pale green skin.</value>
+        <value>Yellowish green skin.</value>
+        <value>Dirty brown skin.</value>
+        <value>Reddish brown skin.</value>
+        <value>Grey skin.</value>
+        <value>Greenish grey skin.</value>
+        <value>Brownish grey skin.</value>
+        <value>Yellowish brown skin.</value>
+    </table>
+    <table name="Eyes: The orc has..." id="eyes">
+        <value>Greenish yellow eyes.</value>
+        <value>Green and grey eyes.</value>
+        <value>Muddy brown eyes.</value>
+        <value>Dark brown eyes.</value>
+        <value>Black eyes.</value>
+        <value>A missing eye.</value>
+        <value>Squinty eyes.</value>
+        <value>Bug eyes.</value>
+    </table>
+    <table name="Face: The orc has..." id="face">
+        <value>A pronounced underbite, large even for an orc.</value>
+        <value>An especially wide chin.</value>
+        <value>Long tusks.</value>
+        <value>A broken tusk.</value>
+        <value>A jagged scar.</value>
+        <value>A missing nose.</value>
+        <value>A missing ear.</value>
+        <value>A lot of war paint.</value>
+    </table>
+    <table name="Hair: The orc has..." id="hair">
+        <value>Unkempt, cropped black hair.</value>
+        <value>Wild, stringy black hair.</value>
+        <value>A long black braid.</value>
+        <value>Unkempt, cropped brown hair.</value>
+        <value>Wild, stringy brown hair.</value>
+        <value>A long brown braid.</value>
+        <value>A shaved head.</value>
+        <value>A shaved head except for one long topknot.</value>
+    </table>
+    <table name="Build: The orc has..." id="build">
+        <value>A well-muscled frame.</value>
+        <value>Enormous, bulging muscles.</value>
+        <value>An agile wiry frame, for an orc.</value>
+        <value>A stocky build.</value>
+        <value>A grotesquely fat belly.</value>
+        <value>A tall frame.</value>
+        <value>A thick-set frame.</value>
+        <value>Extra wide shoulders and long arms.</value>
+    </table>
+    <table name="Tattoo: The orc has..." id="tattoo">
+        <value>A bone tattoo</value>
+        <value>A dragon tattoo</value>
+        <value>A skull tattoo</value>
+        <value>A spear tattoo</value>
+        <value>A spiderweb tattoo</value>
+        <value>A tattoo of thorns</value>
+        <value>A tattoo of chains</value>
+    </table>
+    <table name="Role: The orc is..." id="role">
+        <value>A ferocious berserker</value>
+        <value>A rage-filled killer</value>
+        <value>A persistent hunter</value>
+        <value>A fearless scout</value>
+        <value>A masterful strategist</value>
+        <value>A mighty leader</value>
+        <value>A grim bone shaman</value>
+        <value>A grim blood shaman</value>
+        <value>A grim earth shaman</value>
+        <value>A grim moon shaman</value>
+        <value region_start="9" region_end="16" region_include="fighter">An eager warrior</value>
+    </table>
+    <table name="Skill: Even among orcs, the orc is particularly good at..." id="skill">
+        <value>Tracking creatures by scent</value>
+        <value>Identifying and following the tracks of creatures</value>
+        <value>Running down prey</value>
+        <value>Decapitating foes</value>
+        <value>Impaling foes</value>
+        <value>Roping captives</value>
+        <value>Breaking slaves</value>
+        <value>Handling savage beasts</value>
+    </table>
+    <table name="Armor: The orc is armored in..." id="armor">
+        <value>Nothing</value>
+        <value>Tattered leather</value>
+        <value>Blood-stained leather</value>
+        <value>Boiled leather</value>
+        <value>The hides of scaly beasts</value>
+        <value>The hides of furry beasts</value>
+        <value>The hides of exotic beasts</value>
+        <value region_start="36" region_end="48" region_include="villain">A helm and breastplate taken from a fallen enemy</value>
+        <value region_start="21" region_end="24" region_include="deity">The holy symbol of a god</value>
+    </table>
+    <table name="Weapon: The orc is wielding..." id="weilding">
+        <value>A spear</value>
+        <value>A scimitar</value>
+        <value>A falchion</value>
+        <value>A pike</value>
+        <value>A battleaxe</value>
+        <value>A greatsword</value>
+        <value>A greataxe</value>
+        <value>A longbow</value>
+    </table>
+    <table name="Motivation: The orc is looking for..." id="looking">
+        <value>A good meal, fresh if possible</value>
+        <value>A hearty meal, spoiled is not a problem</value>
+        <value>A throat to cut or a head to bash</value>
+        <value>A chance to prove itself in combat</value>
+        <value>A place to rest and to sharpen weapons</value>
+        <value>A strong drink</value>
+    </table>
+</category>

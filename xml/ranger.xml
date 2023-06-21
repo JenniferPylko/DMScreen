@@ -1,0 +1,15 @@
+<category name="Ranger" id="ranger">
+    <name name="The ranger's name is..." />
+    <table name="You have heard of this ranger because..." id="heard">
+        <value>His men are often willing to help if your cause is just and if you can find them.</value>
+        <value region_start="36" region_end="41" region_include="beast">He's famous for slaying a dangerous beast that was preying on travelers along the roads.</value>
+        <value region_start="13" region_end="23" region_include="orcclan">To the local orc tribes he's a boogeyman.</value>
+        <value>He's a brutal bandit who strikes from hiding and never leaves survivors.</value>
+        <value>He's a deceitful wanderer who hires himself as a caravan guide and leads innocents into ambushes of men and beasts.</value>
+        <value>He hunts men and elves to harvest their organs, which he sells to mages for use in the most vile of spells.</value>
+        <value region_start="39" region_end="49" region_include="wilderness">He's a sought after guide to the local wilderness.</value>
+        <value region_start="39" region_end="55" region_include="__noun__">He is a legendary tamer of beasts. His animal companion is a legend in its own right.</value>
+        <value>He's a well known army scout who retired a few years ago.</value>
+        <value region_start="41" region_end="48" region_include="village">The common folk pay him to protect their village from marauding humanoids.</value>
+    </table>
+</category>

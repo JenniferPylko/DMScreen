@@ -1,0 +1,86 @@
+<category name="Seer" id="seer">
+    <name name="The seer's name is..."/>
+    <include name="Race" include="npc_race" />
+    <table name="The seer is..." id="is">
+        <value>An astrologer</value>
+        <value>A fortune teller</value>
+        <value>A mystic</value>
+        <value>A lorekeeper</value>
+        <value>A prophet</value>
+        <value>A psychic</value>
+        <value region_start="12" region_end="31" region_include="__noun__">A defrocked priest or priestess</value>
+        <value region_start="11" region_end="16" region_include="__noun__">A hermetic witch</value>
+        <value region_start="11" region_end="17" region_include="__noun__">A hermetic wizard</value>
+        <value>An oneiromancer</value>
+        <value>An antroppomancer</value>
+    </table>
+    <table name="The seer first discovered his/her gift after..." id="discovered">
+        <value region_start="19" region_end="26" region_include="witch">Being kidnapped by a witch</value>
+        <value region_start="19" region_end="27" region_include="wizard">Being kidnapped by a wizard</value>
+        <value region_start="14" region_end="19" region_include="witch">Aiding an old witch</value>
+        <value region_start="14" region_end="20" region_include="wizard">Aiding an old wizard</value>
+        <value region_start="34" region_end="42" region_include="__noun__">An uncomfortable encounter with a neighbor</value>
+        <value region_start="15" region_end="21" region_include="__noun__">The death of a parent</value>
+        <value>Reading a book of forbidden lore</value>
+        <value region_start="18" region_end="26" region_include="__noun__">Visiting an eerie cemetery</value>
+        <value region_start="34" region_end="40" region_include="__noun__">Dreaming of a conversation with a friend</value>
+        <value region_start="43" region_end="50" region_include="__noun__">A night spent in prayer while suffering an illness</value>
+    </table>
+    <table name="When communicating a vision or prophecy, the seer speaks..." id="commune">
+        <value>In a deep voice</value>
+        <value>In a wistful voice</value>
+        <value>In a fearful tone</value>
+        <value>With eyes closed</value>
+        <value>While facing you with unfocused eyes</value>
+        <value>While looking directly into your eyes</value>
+    </table>
+    <table name="The seer views his or her visions and prophecies as..." id="visions">
+        <value>A reward for strong faith in the gods; their words are truth</value>
+        <value>Contact from the Realm of the Dead; the dead have seen things</value>
+        <value region_start="16" region_end="34" region_include="__noun__">Contact from an otherworldly being; the being has knowledge beyond comprehension</value>
+        <value>The product of years of practice; the seer has worked to obtain power</value>
+        <value>A gift that is impossible to understand; these things just come</value>
+        <value>A curse; knowing the future is a terrible burden</value>
+        <value>No big deal; The seer has been receiving visions since childhood</value>
+        <value>Rubbish; don't believe a word of it</value>
+    </table>
+    <table name="For coin or barter, the seer will attempt to..." id="coin">
+        <value>Read your fortune</value>
+        <value>Gaze into your future</value>
+        <value>Contact a dead relative or friend</value>
+        <value>Give you a hint regarding future events</value>
+        <value>Convince you to take up a quest</value>
+        <value>Convince you that all hope is lost</value>
+    </table>
+    <table name="The seer is haunted by a vision. The seer will die of..." id=
+        "haunted">
+        <value>Hanging or strangulation</value>
+        <value>Drowning</value>
+        <value>Burning</value>
+        <value region_start="0" region_end="7" region_include="disease">Disease</value>
+        <value region_start="0" region_end="9" region_include="poison">Poisoning</value>
+        <value>A wound from a blade</value>
+        <value region_start="15" region_end="27" region_include="__noun__">Falling from a great height</value>
+        <value>Old age</value>
+    </table>
+    <table name="The seer is looking for..." id="looking">
+        <value region_start="16" region_end="34" region_include="__noun__">The answer to a riddle or prophecy</value>
+        <value>New clients for a reading</value>
+        <value region_start="17" region_end="31" region_include="__noun__">News regarding a missing person</value>
+        <value region_start="14" region_end="29" region_include="__noun__">The soul of a specific person</value>
+        <value>A book on an archaic method of divination</value>
+        <value region_start="15|39" region_end="23|45" region_include="__noun__|__noun__">Just the right material for a powerful ritual</value>
+        <value region_start="25" region_end="33" region_include="divination">The meaning of a cryptic prophecy</value>
+        <value>Some juicy gossip</value>
+    </table>
+    <table name="The seer carries..." id="carries">
+        <value>A crystal ball</value>
+        <value>A dowsing rod</value>
+        <value>A large, sharp-pointed knife</value>
+        <value>Several star charts</value>
+        <value region_start="12" region_end="16" region_include="book">A dusty old book</value>
+        <value>A bundle of notes, quills and inks</value>
+        <value>A purse jingling with coins</value>
+        <value>A garish, bejeweled ring</value>
+    </table>
+</category>

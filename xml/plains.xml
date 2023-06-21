@@ -1,0 +1,96 @@
+<category name="Plains" id="plains">
+    <table name="The plant life is..." id="plains_plant">
+        <value>Green, waving grass, several feet high</value>
+        <value>Short tight grass clumps intermingled with shrubbery</value>
+        <value>Yellowish grass that grows low to the ground, with the occasional tree growing by itself</value>
+        <value>Sparce, with only clumps of dark green and brown scrub brush every few yards</value>
+        <value>Groves of trees growing every few hundred yards among tall grasses, as if nature(or someone) is trying to seed a forest</value>
+        <value>Briar patches and mildly poisonous plants that have choked out most of the other plant life</value>
+    </table>
+    <table name="Perception fodder: You notice..." id="plains_fodder">
+        <value>the sun becomes obscured by the clouds.</value>
+        <value>a well used animal trail.</value>
+        <value>a hawk flying high overhead.</value>
+        <value>the croaking of frogs at a nearby water source.</value>
+        <value>small mammals playing/fighting loudly that suddenly grow silent and disappear as you approach.</value>
+        <value>a light breeze blows, carrying the scent of wood smoke.</value>
+        <value>a strong wind gusts, carrying the sound of thunder and scent of approaching rain.</value>
+        <value>the faint thumping of drums in the distance.</value>
+        <value>a plume of smoke on the horizon.</value>
+        <value>the buzzing and singing of insects hidden in the foliage.</value>
+        <value>the scent of death and decay.</value>
+        <value>a sickly sweet smelling flowered bush.</value>
+        <value>a sudden gust of wind brings a strange smell, but it fades quickly as the wind dies down.</value>
+        <value>the faint rattling of a serpent's tail nearby.</value>
+        <value>the chirping of a flock of small birds that takes the air when you approach.</value>
+        <value>a trail of fresh blood.</value>
+        <value>a mound of loose earth, as if something was recently buried.</value>
+        <value>a swarm of insects buzzing loudly around a dead animal.</value>
+        <value>a faint rumbling in the ground that stops after a moment or two.</value>
+        <value>a nearby boulder covered with a swarm of ants. A busy day in the anthill, indeed.</value>
+    </table>
+    <table name="Interesting locations: You come across..." id="plains_interest">
+        <value region_start="8" region_end="23" region_include="plains_stones">several standing stones on top of a hill and arranged in a strange design.</value>
+        <value region_start="0" region_end="19" region_include="plains_monolith">an ancient monolith constructed of a material not found native in the area.</value>
+        <value region_start="2" region_end="16" region_include="__noun__">a rushing stream that snakes its way across the plains.</value>
+        <value region_start="8" region_end="21" region_include="__noun__">a large watering hole used by numerous forms of wildlife.</value>
+        <value region_start="0" region_end="12" region_include="cavern">a rocky cave opening jutting out of the ground.</value>
+        <value region_start="11" region_end="28" region_include="plains_nomads">a group of indigenous nomads, stopping for a time before continuing their journey.</value>
+        <value region_start="0" region_end="9" region_include="village">a village of settlers from a nearby civilization.</value>
+        <value region_start="12" region_end="22" region_include="plains_holes">a series of sink holes that drop several hundred feet into the earth.</value>
+        <value region_start="39" region_end="51" region_include="castle">the ruins of a long abandoned military outpost/fort.</value>
+        <value>a lone tree with several skeletons dangling from nooses.</value>
+        <value region_start="103" region_end="110" region_include="__noun__">a makeshift quarry dug into the ground where large chunks of stone have been cut out and chiseled into statues.</value>
+        <value region_start="7|76" region_end="17|84" region_include="__noun__|__noun__">a lone gravestone. Large, but sunken into the ground. The engraving is in a language not spoken in this region.</value>
+        <value>a low swampy area, full of foul smelling water and brightly colored flowers.</value>
+        <value region_start="82" region_end="88" region_include="__noun__">a huge boulder sitting alone in a field. Into the sides are scrawled all kinds of glyphs, most partially worn away by time.</value>
+        <value region_start="7" region_end="20" region_include="__noun__">a tall hill or cliff, standing several hundred feet higher than the surrounding terrain. You can see for miles from the top.</value>
+        <value region_start="42" region_end="50" region_include="__noun__">a stone well, recently used by a group of herdsmen, their livestock having left tracks nearby.</value>
+        <value region_start="12" region_end="23" region_include="__noun__">a forgotten stone tower, collapsing from the ravages of time.</value>
+        <value region_start="2" region_end="12" region_include="__noun__">a fairy ring, several feet in diameter, with a statue of two elves dancing in the center.</value>
+        <value region_start="14" region_end="27" region_include="__noun__">a large elven hunting lodge, a fine roof and floor with no walls. Some elven hunters meditate inside while the rest hunt in the plains.</value>
+        <value region_start="2" region_end="18" region_include="__noun__">a religious shrine in disrepair. It bears a map of all points on a long forgotten pilgrimage.</value>
+    </table>
+    <table name="Wildlife Encounters: You encounter..." id="plains_wildlife">
+        <value region_start="8" region_end="11" region_include="cat">a large cat apathetically watching you, well camouflaged against its native terrain.</value>
+        <value>several large snakes that slither off into the brush when you get too close.</value>
+        <value>a herd of bison, grazing lazily.</value>
+        <value>a family of ground rodents that watch you curiously from the safety of their burrow entrances.</value>
+        <value>a pack of coyotes out for a meal.</value>
+        <value>wild hogs rooting in the ground.</value>
+        <value>a herd of elephants/woolly mammoth.</value>
+        <value>a fat, ambling bear.</value>
+        <value>a herd of wild horses stampeding across the plains.</value>
+        <value>a flock of ground fowl, loudly protesting as you approach their nesting area.</value>
+        <value>a lone crow watching as you pass by. It hops after you a few steps at time to get a better look and then flies away, cawwing loudly.</value>
+        <value>a rhinoceros, taking a dust bath.</value>
+    </table>
+    <table name="Enemy Encounters: You come upon:" id="plains_enemy">
+        <value>a bandit raiding party.</value>
+        <value>an ankheg ambushing you from below!</value>
+        <value>a small flock of cockatrices.</value>
+        <value>a hobgoblin patrol.</value>
+        <value>a trio of motionless scarecrows near an abandoned cottage.</value>
+        <value>a wandering ogre.</value>
+        <value>a hungry Manticore.</value>
+        <value>a hobgoblin patrol plus a Hobgoblin captain.</value>
+        <value>a raging bull elephant.</value>
+        <value>a burrowing Bullette.</value>
+        <value>a soaring Chimera.</value>
+        <value>a shambling cyclops.</value>
+    </table>
+    <table name="Friendly encounters: You cross paths with..." id="plains_friendly">
+        <value>an explorer, heading out into the unknown wilds.</value>
+        <value>a surveyor, marking landmarks and distances on a map in the wake of an explorer.</value>
+        <value region_start="0" region_end="7" region_include="miner">a miner, coming back to civilization with many valuables and oddities to sell.</value>
+        <value>an artist, pursuing their inspiration in the wilderness.</value>
+        <value>a grizzled old veteran, looking for their final battle.</value>
+        <value region_start="0" region_end="16" region_include="druid">an elderly druid, preparing a ritual to perform during an upcoming astral event (solstice, equinox, eclipse, etc).</value>
+        <value>a nomadic tribe of centaurs traveling across the plains.</value>
+        <value region_start="23" region_end="28" region_include="deity">an acolyte of a nature deity, undergoing a pilgrimage.</value>
+        <value region_start="0" region_end="7" region_include="nobleman">a noble and their entourage, returning from a big game hunt.</value>
+        <value region_start="31" region_end="44" region_include="village">a tribal warrior, returning to their village from a successful hunt.</value>
+        <value>a bounty hunter, tracking a fugitive.</value>
+        <value>a revenant, tirelessly making its way back to civilization to exact its ultimate revenge.</value>
+    </table>
+</category>

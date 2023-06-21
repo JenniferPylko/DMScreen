@@ -1,0 +1,55 @@
+<category name="Magic Wand" id="wands">
+    <table name="The wand's tip is..." id="tip">
+        <value>An orb of lightning</value>
+        <value>A shard of crystal</value>
+        <value>A burning flame</value>
+        <value>An orb of obsidian</value>
+        <value>A jagged flint tip</value>
+        <value>An orb of glass and wind</value>
+        <value>Not there, this item is a rod with no tip</value>
+        <value>A brass cap</value>
+        <value>A copper cap</value>
+        <value>A gold cap</value>
+        <value>An iron cap</value>
+        <value>A platinum cap</value>
+        <value>A silver cap</value>
+    </table>
+    <table name="The wand's shaft is..." id="shaft">
+        <value>Elm, grown in moonlight</value>
+        <value>The horn of a unicorn</value>
+        <value>An iron bar</value>
+        <value>Oak, strong and firm</value>
+        <value>Stone, cool beneath your fingers</value>
+        <value>Silver, glinting</value>
+        <value>Adamantium</value>
+        <value>Not there, this is an orb not a wand</value>
+    </table>
+    <table name="The wand is also decorated with..." id="decorated">
+        <value>Mystic runes, that cause pain to look upon</value>
+        <value>Small, shining gemstones</value>
+        <value>Intricate metal work</value>
+        <value>A carved stone eye</value>
+        <value>A swirling of wind that surrounds the object</value>
+        <value>An always glowing light</value>
+        <value>Large rough-cut gemstones</value>
+        <value>Runes that are warm to the touch</value>
+    </table>
+    <table name="The creator of this object was..." id="creator">
+        <value region_start="2" region_end="5" region_include="deity">A god</value>
+        <value region_start="3" region_end="6" region_include="highelf">An elf</value>
+        <value region_start="2" region_end="7" region_include="dwarf">A dwarf</value>
+        <value region_start="2" region_end="7" region_include="appearance">A human</value>
+        <value region_start="2" region_end="10" region_include="__noun__">A half-elf</value>
+        <value region_start="2" region_end="10" region_include="__noun__">A tiefling</value>
+    </table>
+    <table name="Who..." id="who">
+        <value>Was banished for the object's creation</value>
+        <value>Was revered for the object's creation</value>
+        <value>Was killed for the object's creation</value>
+        <value>Was insane</value>
+        <value>Went insane</value>
+        <value>Was a beacon of goodness</value>
+        <value>Was a force of evil</value>
+        <value>Had no magical talent</value>
+    </table>
+</category>

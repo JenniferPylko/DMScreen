@@ -1,0 +1,23 @@
+<category name="Maidservant" id="maidservant">
+    <name name="The servant's name is..."/>
+    <include name="Race" include="npc_race" />
+    <table name="The servant is..." id="mainservant_is">
+        <value region_start="4" region_end="14" region_include="nobleman">Her lordship's favorite</value>
+        <value region_start="4" region_end="8" region_include="noblewoman">Her lady's favorite</value>
+        <value>A long-time servant of the household</value>
+        <value>New to the household and always in trouble</value>
+        <value>New to the household and eager to please</value>
+    </table>
+    <table name="The servant has..." id="mainservant_has">
+        <value>A pretty smile, but crooked teeth</value>
+        <value>Beautiful but sad eyes</value>
+        <value>A wide frame</value>
+        <value>A bony figure</value>
+    </table>
+    <table name="The servant wants to..." id="mainservant_wants">
+        <value region_start="36" region_end="41" region_include="noble">Avoid being alone with a particular noble</value>
+        <value region_start="11|38" region_end="30|44" region_include="__noun__|castle">Discipline one of the children in the castle</value>
+        <value region_start="26" region_end="34" region_include="__noun__">Earn the affection of her mistress</value>
+        <value>Bend your ear for an old folk tale</value>
+    </table>
+</category>

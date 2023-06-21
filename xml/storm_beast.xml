@@ -1,0 +1,44 @@
+<category name="Storm Beast" id="storm_beast">
+    <table name="The storm beast is..." id="is">
+        <value>A basilisk.</value>
+        <value>A boar.</value>
+        <value>A drake.</value>
+        <value>A griffon.</value>
+        <value>A hawk.</value>
+        <value>A lizard.</value>
+        <value>A manticore.</value>
+        <value>An owlbear.</value>
+        <value>An ox.</value>
+        <value>A scorpion.</value>
+        <value>A serpent.</value>
+        <value>A wyvern.</value>
+    </table>
+    <table name="The beast has..." id="has">
+        <value>Bright blue or white markings.</value>
+        <value>Zigzag stripes.</value>
+        <value>Broad, feathered or leathery wings.</value>
+        <value>Cold, grey eyes.</value>
+        <value>Watery, blue eyes.</value>
+        <value>A coat that always appears damp.</value>
+        <value>An aura of static electricity.</value>
+        <value>A windy aura.</value>
+    </table>
+    <table name="..and..." id="has_and">
+        <value>Flies erratically, fluttering in the wind.</value>
+        <value>Flies swiftly, like a bolt of lightning.</value>
+        <value>Causes the ground to quake with each step.</value>
+        <value>A loud, thunderous howl or cry.</value>
+        <value>Can conjure a rain cloud wherever it goes.</value>
+        <value>Exhales lightning when it breathes.</value>
+        <value>Electrically shocks those who touch it.</value>
+        <value>Flies into a rage when struck by an attack.</value>
+    </table>
+    <table name="The beast is looking for..." id="looking">
+        <value>Something to electrocute or to drown.</value>
+        <value>A lair on high ground with a view of the land.</value>
+        <value region_start="28" region_end="34" region_include="__noun__">An individual marked by its master.</value>
+        <value region_start="30" region_end="36" region_include="__noun__">An opportunity to impress its master.</value>
+        <value region_start="27" region_end="39" region_include="__noun__">The remains of a long-dead storm titan.</value>
+        <value region_start="3" region_end="7" region_include="__noun__">An item that can call thunderstorms.</value>
+    </table>
+</category>

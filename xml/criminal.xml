@@ -1,0 +1,28 @@
+        <category name="Criminal" id="criminal">
+            <name name="The criminal's name is..."/>
+            <include name="Race" include="npc_race" />
+            <table name="The criminal is..." id="is">
+                <value region_start="3" region_end="11" region_include="assassin">An assassin</value>
+                <value>A con artist</value>
+                <value>A gambler</value>
+                <value region_start="2" region_end="9" region_include="poacher">A poacher</value>
+                <value region_start="2" region_end="10" region_include="smuggler">A smuggler</value>
+                <value region_start="2" region_end="7" region_include="assassin">A thief</value>
+            </table>
+            <table name="The criminal is looking for..." id="looking">
+                <value region_start="18" region_end="31" region_include="__noun__">Accomplices for a specific task</value>
+                <value region_start="16" region_end="32" region_include="criminal">Revenge against a rival criminal</value>
+                <value>An easy mark</value>
+                <value>Extra muscle for some work</value>
+                <value>Rumors that may lead to a big score</value>
+                <value>A rowdy evening of carousing</value>
+            </table>
+            <table name="The criminal carries..." id="carries">
+                <value>A crossbow with poisoned darts</value>
+                <value>Several daggers</value>
+                <value>A short sword</value>
+                <value>A lucky charm</value>
+                <value region_start="4" region_end="9" region_include="__noun__">The token of a love</value>
+                <value>Letters for blackmail</value>
+            </table>
+        </category>

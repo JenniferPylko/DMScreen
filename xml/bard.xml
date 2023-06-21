@@ -1,0 +1,187 @@
+            <category name="Bards" id="bard">
+                <name name="The bard's name is..."/>
+                <table name="The bard is..." id="bardis">
+                    <value id="bard_singer">A talented singer</value>
+                    <value>A graceful dancer</value>
+                    <value>A virtuoso musician</value>
+                    <value id="storyteller">A captivating storyteller</value>
+                    <value>A brilliant poet</value>
+                    <value>A scholar of history</value>
+                    <value>A serious actor</value>
+                    <value>A dashing swashbuckler</value>
+                    <value>A wise-cracking magician</value>
+                    <value>A bold knife-thrower</value>
+                    <value>A slippery con artist</value>
+                    <value>A lovable jack-of-all-trades</value>
+                    <value>A duplicitous spy</value>
+                    <value>A witty satirist</value>
+                    <value region_start="11" region_end="17" region_include="knight">A gracious knight</value>
+                    <value>An enchanting dancer</value>
+                    <value region_start="13" region_end="22" region_include="nation">A mysterious foreigner</value>
+                    <value region_start="8" region_end="14" region_include="jester">A rowdy jester</value>
+                    <value>A master of riddles</value>
+                    <value>A terrible singer</value>
+                </table>
+                <table name="Always prepared to make a melody or rhythm, the bard carries his/her..." id="bard_instrument">
+                    <value>Bagpipes</value>
+                    <value>Bells</value>
+                    <value>Castanets</value>
+                    <value>Cymbals</value>
+                    <value>Drum</value>
+                    <value>Fiddle</value>
+                    <value>Flute</value>
+                    <value>Harmonica</value>
+                    <value>Harp</value>
+                    <value>Lute</value>
+                    <value>Lyre</value>
+                    <value>Mandolin</value>
+                    <value>Ocarina</value>
+                    <value>Panpipes</value>
+                    <value>Shawm</value>
+                    <value>Tabor</value>
+                    <value>Tamourine</value>
+                    <value>Trumpet</value>
+                    <value>Viol</value>
+                    <value>Zither</value>
+                </table>
+                <table name="The bard's musical instrument is..." id="bard_instrumentis">
+                    <value region_start="14" region_end="28" region_include="__noun__">A gift from a wealthy patron</value>
+                    <value>A family heirloom</value>
+                    <value>Very old, but well maintained</value>
+                    <value>An old, worn-out thing</value>
+                    <value>In need of some repair</value>
+                    <value>Always out-of-tune</value>
+                    <value>Decorated with gold</value>
+                    <value region_start="17" region_end="33" region_include="__noun__">The product of a master craftsman</value>
+                    <value>Something the bard made</value>
+                    <value region_start="18" region_end="34" region_include="bard">The instrument of a legendary bard</value>
+                </table>
+                <table name="If things get rough, the bard has..." id="bard_weapon">
+                    <value>Several sharp daggers</value>
+                    <value>A lightweight saber</value>
+                    <value>A finely-crafted shortsword</value>
+                    <value region_start="18" region_end="33" region_include="__noun__">A longsword and a good luck charm</value>
+                    <value>Some well-balanced throwing knives</value>
+                    <value>A quick-winding crossbow</value>
+                    <value>A bow of elvish make</value>
+                    <value>A short sword of dwarvish make</value>
+                    <value>A heavy wooden staff</value>
+                    <value>A dagger in each boot</value>
+                    <value region_start="2" region_end="6" region_include="book">A book of hexes and curses</value>
+                    <value>Quick wits and a gift for lying</value>
+                </table>
+                <table name="The bard also carries..." id="bard_carries">
+                    <value region_start="15" region_end="26" region_include="__noun__">A compromising love letter</value>
+                    <value region_start="20" region_end="26" region_include="__noun__">A lacy favor from a maiden</value>
+                    <value>Some parchment with half-finished poems</value>
+                    <value>Some faded sheet music</value>
+                    <value>A silk handkerchief</value>
+                    <value region_start="26" region_end="41" region_include="__noun__">The key to a well-guarded trreasure chest</value>
+                    <value>A bundle of old books</value>
+                    <value region_start="27" region_end="34" region_include="potions">An alchemy kit and several potions</value>
+                    <value>A pocket field guide to local herbs</value>
+                    <value region_start="12" region_end="15" region_include="__noun__">A faded old map</value>
+                    <value region_start="22" region_end="37" region_include="__noun__">A tome of legends and historical lore</value>
+                    <value>A jar of mustache wax</value>
+                </table>
+                <table name="The bard is wearing..." id="bard_wearing">
+                    <value>Tight-fitting pants</value>
+                    <value>A low-cut shirt</value>
+                    <value>A revealing set of breeches</value>
+                    <value>A tevaeler's cloak</value>
+                    <value>A wide-brimmed hat with a large cockatrice feather</value>
+                    <value>A wide-brimmed hat with a large giant eagle feather</value>
+                    <value>A wide-brimmed hat with a large giant owl feather</value>
+                    <value>A wide-brimmed hat with a large griffon feather</value>
+                    <value>A wide-brimmed hat with a large hippogriff feather</value>
+                    <value>A wide-brimmed hat with a large ostrich feather</value>
+                    <value>A wide-brimmed hat with a large peacock feather</value>
+                    <value>A wide-brimmed hat with a large phoenix feather</value>
+                    <value>A wide-brimmed hat with a large roc feather</value>
+                    <value>A wide-brimmed hat with a large shadowraven feather</value>
+                    <value>Shiny boots made from basilisk hide</value>
+                    <value>Shiny boots made from crocodile hide</value>
+                    <value>Shiny boots made from demonskin hide</value>
+                    <value>Shiny boots made from dragonscale hide</value>
+                    <value>Shiny boots made from drake hide</value>
+                    <value>Shiny boots made from flameskin hide</value>
+                    <value>Shiny boots made from lightning lizard hide</value>
+                    <value>Shiny boots made from wyvern hide</value>
+                    <value>A coat made from dragonscale hide</value>
+                    <value>A coat made from leapard hide</value>
+                    <value>A coat made from owlbear hide</value>
+                    <value>A coat made from sharkskin hide</value>
+                    <value>A coat made from tiger hide</value>
+                    <value>A coat made from zebra hide</value>
+                    <value>A large golden necklace</value>
+                    <value>Flashy earrings</value>
+                    <value>Dancing shoes</value>
+                    <value>Too much perfume</value>
+                </table>
+                <table name="The bard has..." id="bard_has">
+                    <value>A silver tongue</value>
+                    <value>A gift for satire and wit</value>
+                    <value>A beautiful face</value>
+                    <value>Incredibly good looks</value>
+                    <value>An easy smile</value>
+                    <value>A graceful manner</value>
+                    <value>A polite gentility</value>
+                    <value>Impeccable manners</value>
+                    <value>A foul mouth</value>
+                    <value>A hearty laugh</value>
+                    <value>An alluring quality</value>
+                    <value>A handsome mustache</value>
+                </table>
+                <table name="The bard is looking for..." id="bard_looking">
+                    <value>A new tale to tell</value>
+                    <value>Inspiration for a song</value>
+                    <value>A beautiful muse</value>
+                    <value region_start="20" region_end="38" region_include="__noun__">Someone to repair a musical instrument</value>
+                    <value>A catchy melody</value>
+                    <value>Experimental harmonies</value>
+                    <value>An edgy dance move</value>
+                    <value>A word that rhymes with "hippopotamus"</value>
+                    <value>New styles of poetry</value>
+                    <value region_start="12" region_end="20" region_include="artifacts">A legendary artifact</value>
+                    <value>A hero to immortalize in song</value>
+                    <value>A night of drinking and merrymaking</value>
+                </table>
+                <table name="The bard is always a big hit among..." id="bard_hit">
+                    <value>Fisherman, sailors, and pirates</value>
+                    <value>Farmers and herders</value>
+                    <value>Miners and travelers</value>
+                    <value>Guards, soldiers, and sellswords</value>
+                    <value>Members of the nobility</value>
+                    <value>Young children</value>
+                    <value>Idealistic youths</value>
+                    <value>Serving girls, slaves, and harlots</value>
+                    <value>Pretty young maidens</value>
+                    <value>Lonely wives</value>
+                </table>
+                <table name="The bard tells a tale of a recent visit to..." id="bard_tale">
+                    <value region_start="2" region_end="13" region_include="__noun__">A royal court</value>
+                    <value region_start="12" region_end="20" region_include="mountain">A dangerous mountain</value>
+                    <value region_start="2" region_end="16" region_include="tomb">A legendary tomb</value>
+                    <value region_start="10" region_end="16" region_include="castle">A distant castle</value>
+                    <value region_start="14" region_end="18" region_include="__noun__">A frightening lair</value>
+                    <value region_start="13" region_end="23" region_include="__noun__">A celebrated tournament</value>
+                    <value region_start="2" region_end="14" region_include="nation">A foreign land</value>
+                    <value region_start="2" region_end="9" region_include="witch">A witch's home</value>
+                    <value region_start="7" region_end="13" region_include="prison">A dark prison cell</value>
+                    <value region_start="8" region_end="16" region_include="__noun__">A grand festival</value>
+                    <value region_start="13" region_end="22" region_include="wilderness">A savage and wild land</value>
+                    <value region_start="10" region_end="16" region_include="castle">A haunted castle</value>
+                </table>
+                <table name="You have heard of this bard because..." id="bard_heard">
+                    <value region_start="42" region_end="47" region_include="__noun__">He and his troop were sent up river for a crime they didn't commit.</value>
+                    <value region_start="19" region_end="24" region_include="thief">He moonlights as a thief. Everyone knows, but so far no one has been able to catch him in the act.</value>
+                    <value region_start="76" region_end="83" region_include="__noun__">He's on the run after using his honeyed words to cause a schism in the next kingdom.</value>
+                    <value>He moonlights as a vigilante do-gooder.</value>
+                    <value>He's a master of the old lore and spends his time spreading his knowledge among the villages.</value>
+                    <value region_start="36" region_end="40" region_include="__noun__">He's a dashing knave the tyrannical king has not been able to catch yet, and his poetic broadsheets periodically appear in public places mocking the government.</value>
+                    <value region_start="65" region_end="69" region_include="__noun__">He has a voice that could entrance even the most shrewish of the king's daughters.</value>
+                    <value>He's a washed up has been and hasn't been held in high esteem for many years.</value>
+                    <value>His music is the latest fashion and his name is on everyone's lips.</value>
+                    <value>He mostly just moonlights, wink wink nudge nudge.</value>
+                </table>
+            </category>

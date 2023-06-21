@@ -1,0 +1,15 @@
+<category name="Paladin" id="paladin">
+    <name name="The paladin's name is..." />
+    <table name="You have heard of this paladin because..." id="heard">
+        <value>He's the one you can turn to if you have a problem, if no one else can help.</value>
+        <value>He's a traditionalist armed with gleaming sword and polished shield.</value>
+        <value region_start="16" region_end="34" region_include="legendary_weapon">His weapon is a legendary artifact of good.</value>
+        <value>He's a grey guard who cares more about the ends than the means.</value>
+        <value region_start="39" region_end="42" region_include="deity">He's the champion of a dark, forgotten god.</value>
+        <value region_start="26" region_end="26" region_include="deity">He's a champion of a dark god feared through the entire realm.</value>
+        <value region_start="26|41" region_end="31|46" region_include="__noun__|noble">He's a knight errant on a quest for his liege.</value>
+        <value region_start="19" region_end="33" region_include="monsterhunter">He's a hard bitten monster hunter who only shows up when times are desperate.</value>
+        <value>He's a famous dragon slayer.</value>
+        <value>He never accepts payment for his aid.</value>
+    </table>
+</category>

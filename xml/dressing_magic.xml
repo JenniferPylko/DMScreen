@@ -1,0 +1,68 @@
+        <table name="Magic-user furnishings" short="Magic-user Furnishing" id="dressing_magic">
+                <value>Alembic</value>
+                <value>Balance and weights</value>
+                <value>Beaker</value>
+                <value>Bellows</value>
+                <value>Bladder</value>
+                <value>Bottle</value>
+                <value>Book</value>
+                <value>Bowl</value>
+                <value>Box</value>
+                <value>Brazier</value>
+                <value>Cage</value>
+                <value>Cauldron</value>
+                <value>Candle</value>
+                <value>Candlestick</value>
+                <value>Carafe</value>
+                <value>Chalk</value>
+                <value>Crucible</value>
+                <value>Cruet</value>
+                <value>Crystal ball</value>
+                <value>Decanter</value>
+                <value>Desk</value>
+                <value>Dish</value>
+                <value>Flask</value>
+                <value>Funnel</value>
+                <value>Furnace</value>
+                <value>Herbs</value>
+                <value>Horn</value>
+                <value>Hourglass</value>
+                <value>Jar</value>
+                <value>Jug</value>
+                <value>Kettle</value>
+                <value>Ladle</value>
+                <value>Lamp</value>
+                <value>Lens</value>
+                <value>Magic circle</value>
+                <value>Mortar and pestle</value>
+                <value>Pan</value>
+                <value>Parchment</value>
+                <value>Pentacle</value>
+                <value>Pentagram</value>
+                <value>Phial</value>
+                <value>Pipette</value>
+                <value>Pot</value>
+                <value>Prism</value>
+                <value>Quill</value>
+                <value>Retort</value>
+                <value>Rod</value>
+                <value>Scroll</value>
+                <value>Scroll tube</value>
+                <value>Sheet</value>
+                <value>Skin</value>
+                <value>Skull</value>
+                <value>Spatula</value>
+                <value>Measuring spoon</value>
+                <value>Stand</value>
+                <value>Stool</value>
+                <value>Stuffed animal</value>
+                <value>Tongs</value>
+                <value>Tripod</value>
+                <value>Tube</value>
+                <value>Piping</value>
+                <value>Tweezers</value>
+                <value>Vial</value>
+                <value>Waterclock</value>
+                <value>Wire</value>
+                <value>Workbench</value>
+            </table>

@@ -1,0 +1,107 @@
+        <category name="Dinner at an Undead Feasthall" id="dinner_undead">
+            <table name="Tonight, we dine on..." id="dine">
+                <patterns>
+                    <pattern>{prep} {dish}</pattern>
+                </patterns>
+                <list type="prep">
+                    <item>Stewed</item>
+                    <item>Roasted</item>
+                    <item>Cold</item>
+                    <item>Boiled</item>
+                    <item>Baked</item>
+                    <item>Blackened</item>
+                    <item>Aged</item>
+                    <item>Worm-infested</item>
+                    <item>Fly-covered</item>
+                    <item>Pickled</item>
+                    <item>Rotted</item>
+                    <item>Decaying</item>
+                </list>
+                <list type="dish">
+                    <item>rabbit</item>
+                    <item>chicken</item>
+                    <item>duck</item>
+                    <item>mutton</item>
+                    <item>pork</item>
+                    <item>beef</item>
+                    <item>pheasant</item>
+                    <item>goose</item>
+                    <item>trout</item>
+                    <item>clams</item>
+                    <item>pork sausage</item>
+                    <item>duck sausage</item>
+                    <item>knight</item>
+                    <item>maiden</item>
+                    <item>thief.</item>
+                    <item>priest</item>
+                    <item>mage</item>
+                    <item>peasant</item>
+                    <item>dwarf</item>
+                    <item>halfling</item>
+                </list>
+            </table>
+            <table name="...with..." id="dine_wth">
+                <value>Mushy cabbage.</value>
+                <value>Weepy cabbage.</value>
+                <value>Rubbery leeks.</value>
+                <value>Lentils.</value>
+                <value>Peas.</value>
+                <value>Red beans.</value>
+                <value>Black beans.</value>
+                <value>White beans.</value>
+                <value>Turnip mash.</value>
+                <value>Sliced turnips.</value>
+                <value>Rotten potatoes.</value>
+                <value>Cave mushrooms.</value>
+                <value>Black mushrooms.</value>
+                <value>Sweet onions.</value>
+                <value>Red onions.</value>
+                <value>Carrots.</value>
+                <value>Parsnips.</value>
+                <value>Cauliflower.</value>
+                <value>Radishes.</value>
+                <value>Beets.</value>
+            </table>
+            <table name="...and..." id="dine_and">
+                <value>Wormy apples.</value>
+                <value>Moldy cherries.</value>
+                <value>Over-ripe tomatoes.</value>
+                <value>Moldy berries.</value>
+                <value>Crumbling cake.</value>
+                <value>Stale bread.</value>
+                <value>Hard biscuits.</value>
+                <value>Moldy biscuits.</value>
+                <value>Bloody gravy.</value>
+                <value>Thin gravy.</value>
+                <value>Moldy cheese.</value>
+                <value>Stinky cheese.</value>
+            </table>
+            <table name="Side dish..." id="side">
+                <value>Mice.</value>
+                <value>Leeches.</value>
+                <value>Maggots.</value>
+                <value>Fish bones.</value>
+                <value>Finger bones.</value>
+                <value>Spare ribs.</value>
+                <value>Stale cakes.</value>
+                <value>Moldy cakes.</value>
+                <value>Rotten eggs.</value>
+                <value>Pieces of brain.</value>
+                <value>Whole brains.</value>
+                <value>Mysterious sausages.</value>
+            </table>
+            <table name="Beverage..." id="beverage">
+                <value>Still water.</value>
+                <value>White ale.</value>
+                <value>Black ale.</value>
+                <value>Porter.</value>
+                <value>Mead.</value>
+                <value>White wine.</value>
+                <value>Red wine.</value>
+                <value>Blood wine.</value>
+                <value>Brandy.</value>
+                <value>Whisky.</value>
+                <value>Rum.</value>
+                <value>Blood served out of a humanoid skull.</value>
+            </table>
+        </category>

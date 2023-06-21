@@ -1,0 +1,341 @@
+<category name="Library" id="library">
+    <table name="The room that houses the library..." id="room">
+        <value>used to be a broom closet</value>
+        <value>is very small</value>
+        <value>is small</value>
+        <value>is moderately small</value>
+        <value>is moderate</value>
+        <value>is moderately large</value>
+        <value>is large</value>
+        <value>is very large</value>
+        <value>is huge</value>
+        <value>is cavernous</value>
+    </table>
+    <table name="The room is shaped..." id="shaped">
+        <value>square</value>
+        <value>rectangular</value>
+        <value>circular</value>
+        <value>oblong</value>
+        <value>wide, but shallow</value>
+        <value>long, but thin</value>
+        <value>narrow at the entrance, but wide at the back wall</value>
+        <value>wide at the entrance, but narrow at the back wall</value>
+        <value>star shaped</value>
+        <value>moon shaped</value>
+        <value>L shaped</value>
+        <value>H shaped</value>
+        <value>Z shaped</value>
+        <value>V shaped</value>
+        <value>naturally shaped</value>
+    </table>
+    <table name="The ceiling is..." id="ceiling">
+        <value>a low ceiling</value>
+        <value>a tall ceiling</value>
+        <value>low ceilings near the walls, tall ceilings in the center</value>
+        <value>tall ceilings near the walls, low ceilings in the center</value>
+        <value>a second or third floor accessed by stairs</value>
+        <value>a second or third floor accessed by ladders</value>
+        <value>a second or third floor accessed by a ramp</value>
+        <value>a second or third floor accessed elsewhere</value>
+        <value>a second or third floor accessed by elevator</value>
+        <value>a second or third floor with no obvious means of access</value>
+        <value>split levels</value>
+        <value>a gallery</value>
+        <value>a sunken area in the center</value>
+        <value>a sunken area near the walls</value>
+        <value>no ceiling</value>
+    </table>
+    <table name="Entrances..." id="entrance">
+        <value>just the entrance you came through</value>
+        <value>one other entrance</value>
+        <value>two other entrances</value>
+        <value>three or more other entrances</value>
+    </table>
+    <table name="Lighting..." id="lighting">
+        <value>brightly lit</value>
+        <value>well lit</value>
+        <value>dimly lit</value>
+        <value>barely lit</value>
+        <value>dark</value>
+        <value>well lit near entryways only</value>
+        <value>well lit near shelves only</value>
+        <value>lit by a single light source</value>
+        <value>well lit in the corners only</value>
+        <value>well lit in the center only</value>
+    </table>
+    <table name="Bookshelves take up how much of the walls..." id="space">
+        <value>none</value>
+        <value>very little</value>
+        <value>twenty percent</value>
+        <value>thirty percent</value>
+        <value>forty percent</value>
+        <value>fifty percent</value>
+        <value>sixty percent</value>
+        <value>seventy percent</value>
+        <value>eighty percent</value>
+        <value>most</value>
+    </table>
+    <table name="The remaining usable space is..." id="usable">
+        <value>none</value>
+        <value>very little</value>
+        <value>twenty percent</value>
+        <value>thirty percent</value>
+        <value>forty percent</value>
+        <value>fifty percent</value>
+        <value>sixty percent</value>
+        <value>seventy percent</value>
+        <value>seventy five percent</value>
+        <value>eighty percent</value>
+    </table>
+    <table name="The usable space features..." id="features">
+        <value>empty</value>
+        <value>used for storage</value>
+        <value>used for tables</value>
+        <value>used for reading chairs</value>
+        <value>used for catalogues</value>
+        <value>used for scroll cabinets</value>
+        <value>used for a fireplace</value>
+        <value>used for a bar</value>
+        <value>used for a workshop</value>
+        <value>used for a classroom</value>
+        <value>shared with a bedroom</value>
+        <value>shared with a kitchen</value>
+        <value>shared with a privy</value>
+        <value>shared with an aviary</value>
+        <value>shared with a prison or cell</value>
+        <value>shared with a storeroom</value>
+        <value>shared with an armoury</value>
+        <value>shared with a shrine</value>
+        <value>shared with a brewery</value>
+        <value>home to a wizard</value>
+        <value>home to a sorcerer</value>
+        <value>home to a warlock</value>
+        <value>home to a scholar</value>
+        <value>home to a monk</value>
+        <value>home to a student</value>
+        <value>home to a necromancer</value>
+        <value>home to a hermit</value>
+        <value>home to a madman</value>
+        <value>home to a transient</value>
+    </table>
+    <table name="The library prominently features..." id="prominently">
+        <value>a well worn overstuffed armchair</value>
+        <value>a map cabinet</value>
+        <value>a complex mechanical printing press</value>
+        <value>a book stand with a heavily bound book chained to it</value>
+        <value>an ornate chandelier</value>
+        <value>rows of child-sized desks</value>
+        <value>an oversized librarian's desk</value>
+        <value>taxidermied animal heads on the walls</value>
+        <value>weapons mounted to plaques on the walls</value>
+        <value>an enchanting table</value>
+        <value>a gaming table</value>
+        <value>a locking bookshelf</value>
+        <value>a finely detailed globe</value>
+        <value>a bookbinding workshop</value>
+        <value>a scrying table</value>
+        <value>a summoning circle</value>
+        <value>a living tree</value>
+        <value>a mechanical librarian</value>
+        <value>elaborate tapestries</value>
+        <value>large paintings on the walls</value>
+    </table>
+    <table name="The bookshelves are made from..." id="made">
+        <value>oak wood</value>
+        <value>redwood</value>
+        <value>cedar wood</value>
+        <value>ash wood</value>
+        <value>walnut wood</value>
+        <value>cherry wood</value>
+        <value>mahogany wood</value>
+        <value>driftwood</value>
+        <value>stone</value>
+        <value>iron</value>
+        <value>steel</value>
+        <value>ceramic</value>
+        <value>bone</value>
+        <value>coral</value>
+        <value>woven reeds</value>
+        <value>living plants</value>
+        <value>glass</value>
+        <value>crystal</value>
+        <value>brick</value>
+    </table>
+    <table name="Each shelf holds..." id="shelf">
+        <value>one to seven</value>
+        <value>eight to fifteen</value>
+        <value>sixteen to twenty three</value>
+        <value>twenty four to thirty</value>
+    </table>
+    <table name="Each bookcase has..." id="has">
+        <value>two shelves</value>
+        <value>three shelves</value>
+        <value>four shelves</value>
+        <value>five shelves</value>
+        <value>six shelves</value>
+        <value>seven shelves</value>
+    </table>
+    <table name="How full is each bookshelf..." id="full">
+        <value>ten percent</value>
+        <value>twenty percent</value>
+        <value>thirty percent</value>
+        <value>forty percent</value>
+        <value>fifty percent</value>
+        <value>sixty percent</value>
+        <value>seventy percent</value>
+        <value>eighty percent</value>
+        <value>ninety percent</value>
+        <value>one hundred percent</value>
+    </table>
+    <table name="The remaining space is used for..." id="remaining">
+        <value>nothing</value>
+        <value>the storage of writing supplies</value>
+        <value>the storage of spell components</value>
+        <value>the storage of alchemy supplies</value>
+        <value>the storage of foodstuffs</value>
+        <value>the storage of potions</value>
+        <value>the storage of poisons</value>
+        <value>the storage of cleaning supplies</value>
+        <value>the storage of clothing</value>
+        <value>the storage of art supplies</value>
+        <value>the storage of book repair supplies</value>
+        <value>the display of animal trophies</value>
+        <value>the display of weapons</value>
+        <value>the display of awards</value>
+        <value>the display of pottery</value>
+        <value>the display of glassware</value>
+        <value>the display of paintings</value>
+        <value>the display of magical items</value>
+        <value>the display of jewellery</value>
+        <value>the display of diplomas or certificates</value>
+        <value>the display of preserved specimens</value>
+        <value region_start="22" region_end="25" region_include="bat">the living space of a bat</value>
+        <value region_start="22" region_end="25" region_include="cat">the living space of a cat</value>
+        <value>the living space of a toad</value>
+        <value>the living space of a small owl</value>
+        <value>the living space of a pixie</value>
+        <value>the living space of a homunculus</value>
+        <value>the living space of an imp</value>
+        <value>the living space of a pseudodragon</value>
+        <value>the living space of a badger</value>
+        <value region_start="22" region_end="25" region_include="rat">the living space of a rat</value>
+    </table>
+    <table name="The books are..." id="books_are">
+        <value>placed on the shelves seemingly at random</value>
+        <value>sorted alphabetically by author</value>
+        <value>sorted alphabetically by title</value>
+        <value>sorted by color</value>
+        <value>sorted by subject</value>
+        <value>sorted by size</value>
+        <value>sorted by condition</value>
+        <value>sorted by age</value>
+        <value>sorted by usefulness</value>
+        <value>sorted by some unknown system</value>
+        <value>for the most part new</value>
+        <value>for the most part old</value>
+        <value>for the most part in good condition</value>
+        <value>for the most part in bad condition</value>
+        <value>for the most part small</value>
+        <value>for the most part oversized</value>
+        <value>for the most part written by the same author</value>
+        <value>for the most part bound in the same style cover</value>
+        <value>for the most part written in the same uncommon language</value>
+        <value>for the most part all the same book</value>
+        <value>magical in that they float slightly above the shelf</value>
+        <value>magical in that they speak their titles when touched</value>
+        <value>magical in that they read themselves aloud when opened</value>
+        <value>magical in that they glow slightly when opened</value>
+        <value>magical in that they open when placed on a flat surface</value>
+        <value>magical in that they erase themselves after being read</value>
+        <value>magical in that they contain more pages that the size of the book would normally allow</value>
+        <value>magical in that they are indestructible through non-magical means</value>
+        <value>magical in that they are weatherproof</value>
+        <value>magical in that they contain magical rituals and spells</value>
+    </table>
+    <table name="One of the bookshelves looks peculiar, it..." id="perculiar">
+        <value>is hiding a secret hallway</value>
+        <value>is hiding a second shelf full of rare books</value>
+        <value>is hiding a secret staircase</value>
+        <value>is hiding a chest</value>
+        <value>is hiding a liquor cabinet</value>
+        <value>is hiding a lavishly decorated den</value>
+        <value>is hiding a bricked up doorway</value>
+        <value>is hiding a teleportation rune</value>
+        <value>is hiding a trap</value>
+        <value>is hiding a secret message</value>
+        <value>holds a collection of spell scrolls</value>
+        <value>holds a collection of books with locks on them</value>
+        <value>holds a collection of squabbling sentient books</value>
+        <value>holds a collection of minor magical items</value>
+        <value>holds a collection of fossils</value>
+        <value>holds a collection of scrimshaw</value>
+        <value>holds a collection of glowing dwarven runes</value>
+        <value>holds a collection of masks</value>
+        <value>holds a collection of wooden figurines</value>
+        <value>holds a collection of finely crafted silverware</value>
+        <value>seems to be glowing faintly</value>
+        <value>seems to be unwilling to let books go</value>
+        <value>seems to be murmuring quietly</value>
+        <value>seems to be watching you</value>
+        <value>seems to be moving when you aren't looking</value>
+        <value>seems to be taller than the room allows for</value>
+        <value>seems to be oozing</value>
+        <value>seems to be invisible</value>
+        <value>seems to be absorbing light</value>
+        <value>seems to be showing you what you want to see</value>
+        <value>is leaning precariously</value>
+        <value>is covered in vines</value>
+        <value>is infested with beetles</value>
+        <value>is badly warped</value>
+        <value>is immersed in a pool of water</value>
+        <value>is half collapsed</value>
+        <value>is badly burned</value>
+        <value>is covered in dried blood</value>
+        <value>is obviously booby trapped</value>
+        <value>is covered in spikes</value>
+    </table>
+    <table name="Something interesting you notice..." id="interesting">
+        <value>a ghostly librarian lurks behind an oversized desk, barring your progress into a back room</value>
+        <value>a large, feral dogs prowl between leaning bookshelves</value>
+        <value>you can hear the soft weeping of a small child</value>
+        <value>all the books appear to be inlaid with extravagant jewels and gold leaf, but only while in the room</value>
+        <value>ladders quietly slide along rails above the shelves, and unseen hands organize and reorganize the books</value>
+        <value>the books are all written by the same author, a minor NPC from a previous adventure</value>
+        <value>a card the size of a kite shield, clearly made for a giant, with a large signature and an address written on the back</value>
+        <value>dozens of people lay in enchanted slumber, books scattered around their bodies</value>
+        <value>books flit around the room, and are drawn to light sources, singing the edges of pages when they fly too close</value>
+        <value>the books are written in an alphabet you recognize, but with no spaces, punctuation, or discernible words</value>
+        <value>the room contains a single book, and hundreds of mimics that look just like it</value>
+        <value>a withered lich, surrounded by piles of books, completely ignores you</value>
+        <value>a bookshelf is hewn from gently humming crystal that deals psychic damage for every round that a book is misplaced</value>
+        <value>the bookshelves are golems, and serve both as automatic shelving mechanisms, and tireless defenders against theft</value>
+        <value>mirrors that reflect different text that what's written on the page</value>
+        <value>a docile subspecies of ettercap lives, who draw sustenance from knowledge</value>
+        <value>the library is tended by myconids, who read books by seeding fungus between pages and sensing the spores they release</value>
+        <value>the library housed in a pocket dimension, with a key that turns any door into an entrance to it</value>
+        <value>the books are of immense size and variety, most of which is nonsense</value>
+        <value>a clockwork librarian, patrons and staff run an unending pantomime of a normal library, with any attempt to interrupt it met with violence</value>
+    </table>
+    <table name="Rumors about this library say..." id="rumor">
+        <value>a rare book of tremendous evil</value>
+        <value>a rare book of awesome righteousness</value>
+        <value>a rare book of eerie prophecies</value>
+        <value>a rare book of wondrous music</value>
+        <value>a rare book of royal bloodlines</value>
+        <value>a rare book of military strategy</value>
+        <value region_start="15" region_end="32" region_include="__noun__">a rare book of forgotten history</value>
+        <value>a rare book of fantastic stories</value>
+        <value region_start="28" region_end="33" region_include="druid">the almanac of an acclaimed druid</value>
+        <value region_start="25" region_end="31" region_include="ranger">the guide of a commended ranger</value>
+        <value region_start="26" region_end="32" region_include="wizard">the spellbook of a mighty wizard</value>
+        <value region_start="28" region_end="32" region_include="bard">the journal of a celebrated bard</value>
+        <value region_start="23" region_end="30" region_include="rogue">the tome of a infamous warlock</value>
+        <value region_start="31" region_end="37" region_include="__noun__">the prayer book of a venerated cleric</value>
+        <value region_start="26" region_end="33" region_include="rogue">the log book of a storied fighter</value>
+        <value region_start="26" region_end="34" region_include="sorcerer">the ramblings of a feared sorcerer</value>
+        <value region_start="25" region_end="34" region_include="barbarian">the tales of a respected barbarian</value>
+        <value region_start="25" region_end="30" region_include="rogue">the notes of a notorious rogue</value>
+        <value region_start="24" region_end="31" region_include="paladin">the oaths of a renowned paladin</value>
+        <value region_start="43|108" region_end="57|111" region_include="__noun__|deity">the travelogue, cookbook, and memoirs of a celebrity chef, long rumored to have been the avatar for a minor God</value>
+    </table>
+</category>

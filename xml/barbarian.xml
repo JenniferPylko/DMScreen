@@ -1,0 +1,103 @@
+            <category name="Barbarian" id="barbarian">
+                <name name="The warrior's name is..."/>
+                <table name="The warrior is armored in..." id="barbarian_armor">
+                    <value>Nothing</value>
+                    <value>Tattered leather</value>
+                    <value>Blood-stained leather</value>
+                    <value>Boiled leather</value>
+                    <value>The hides of scaly beasts</value>
+                    <value>The hides of furry beasts</value>
+                    <value>The hides of exotic beasts</value>
+                    <value region_start="50" region_end="60" region_include="armorer">A helm and breastplate taken from a fallen enemy (crafted by)</value>
+                </table>
+                <table name="The warrior is wielding..." id="barbarian_weilds">
+                    <value>A spear and a hunting knife</value>
+                    <value>A spear and a shield</value>
+                    <value>A huge, curved blade</value>
+                    <value>An over-sized hammer</value>
+                    <value>An enormous club</value>
+                    <value>A greataxe</value>
+                    <value>A battleaxe and a shield</value>
+                    <value>Several handaxes</value>
+                    <value>A greatsword</value>
+                    <value>A pair of long knives</value>
+                    <value>A longspear and hunting knife</value>
+                </table>
+                <table name="The warrior is also carrying..." id="barbarian_carries">
+                    <value>Several throwing spears</value>
+                    <value>Several throwing axes</value>
+                    <value>Many throwing axes</value>
+                    <value>A shortbow</value>
+                    <value>A longbow</value>
+                    <value>A grearbow</value>
+                    <value>A blowgun</value>
+                    <value>Several bolas</value>
+                </table>
+                <table name="The warrior fights with..." id="barbarian_fights">
+                    <value>Hit-and-run tactics</value>
+                    <value>Making a mad charge</value>
+                    <value>Relentless repeated blows</value>
+                    <value>Lots of taunts and jeers</value>
+                    <value>Never breaking eye contact</value>
+                    <value>Lots of head-butting</value>
+                </table>
+                <table name="The warrior is..." id="barbarian_is">
+                    <value>A practiced hunter</value>
+                    <value>A poorly-trained slave</value>
+                    <value>A veteran of many wars</value>
+                    <value>A mystical shaman</value>
+                    <value>An expert scout</value>
+                    <value>A master weapon crafter</value>
+                    <value>A superb herbalist</value>
+                    <value>A beast handler</value>
+                    <value>An insufferable braggart</value>
+                    <value>A drunk</value>
+                    <value>A favorite among the men</value>
+                    <value>A favorite among the ladies</value>
+                </table>
+                <table name="On the warrior's face is..." id="barbarian_face">
+                    <value>A bone through a nose piercing</value>
+                    <value>A bone earring</value>
+                    <value>An empty eye socket</value>
+                    <value>A grisly scar</value>
+                    <value>A serious expression</value>
+                    <value>A look of sadness</value>
+                    <value>A carefree grin</value>
+                    <value>A ruined nose</value>
+                    <value>Some terrifying war paint</value>
+                    <value>A frame of long beautiful long hair</value>
+                    <value>An unruly beard</value>
+                    <value>A long, braided mustache</value>
+                </table>
+                <table name="On the warrior's body is..." id="barbarian_body">
+                    <value>A tattoo of a bear</value>
+                    <value>A tattoo of a boar</value>
+                    <value>A tattoo of a dragon</value>
+                    <value>A tattoo of a eagle</value>
+                    <value>A tattoo of a lion</value>
+                    <value>A tattoo of a wolf</value>
+                    <value>A tattoo of a skull and some bodies</value>
+                    <value>A tattoo of an arrow</value>
+                    <value>A tattoo of an axe</value>
+                    <value>A tattoo of a spear</value>
+                    <value>A tattoo of a sword</value>
+                    <value>A festering wound</value>
+                    <value>A noticable scar from a blade</value>
+                    <value>A ceremonial brand</value>
+                    <value>An intimidating amount of muscle</value>
+                    <value>An awful lot of war paint</value>
+                    <value>A whole lot of hair</value>
+                </table>
+                <table name="You have heard of this adventurer because..." id="barbarian_heard">
+                    <value region_start="23" region_end="42" region_include="__noun__">He was the muscle in a crack commando unit.</value>
+                    <value region_start="68" region_end="80" region_include="__noun__">He's waging a one man war against the evil hill giants plaguing his tribes lands.</value>
+                    <value>His rough exterior hides a jolly friendly soul.</value>
+                    <value>He wears the skulls of his fallen enemies as adornments on his armor.</value>
+                    <value region_start="21" region_end="34" region_include="__noun__">His tribe pillaged a frontier fort recently. They left no survivors.</value>
+                    <value region_start="32" region_end="36" region_include="nobleman">He was surrounded by six of the king's best soldiers. He killed them, then ate their hearts and drank their blood.</value>
+                    <value>He's actually an animal, chief of a tribe of lycanthropes.</value>
+                    <value region_start="42" region_end="48" region_include="dragon">His endurance is legendary. He wrestled a dragon for two nights and two days straight.</value>
+                    <value>His endurance is legendary. He wrestled his way through the entire red light district in two days and two nights.</value>
+                    <value>He's a ferocious berserker who loses all control in combat.</value>
+                </table>
+            </category>

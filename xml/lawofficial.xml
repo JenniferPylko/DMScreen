@@ -1,0 +1,23 @@
+<category name="Law Official" id="lawofficial">
+    <name name="The law official's name is..."/>
+    <table name="The law official is..." id="lawofficial_type">
+        <value>A constable</value>
+        <value>A sheriff</value>
+        <value>A guard captain</value>
+        <value>A magistrate</value>
+    </table>
+    <table name="The law official seeks someone to..." id="lawofficial_seeks">
+        <value region_start="10" region_end="18" region_include="criminal">Capture a fugitive</value>
+        <value region_start="6" region_end="13" region_include="thief">Catch a thief</value>
+        <value region_start="17|29" region_end="25|35" region_include="__noun__|__noun__">Guard a specific location or person</value>
+        <value region_start="14" region_end="27" region_include="__noun__">Investigate a disappearance</value>
+        <value region_start="6" region_end="22" region_include="crime">Solve a murder mystery</value>
+        <value>Have an ale with</value>
+    </table>
+    <table name="The law official carries..." id="lawofficial_carries">
+        <value region_start="25" region_end="31" region_include="outlaws">An arrest warrant for an outlaw</value>
+        <value region_start="2" region_end="14" region_include="__noun__">A proclamation for a reward</value>
+        <value>A knife or sword of the office</value>
+        <value>A pocketbook of local laws</value>
+    </table>
+</category>

@@ -1,0 +1,60 @@
+        <category name="Merchant Caravan" id="caravan">
+            <table name="The caravan is..." id="is">
+                <value>A wagon train</value>
+                <value>A long wagon train</value>
+                <value>A small train of pack animals</value>
+                <value>A long train of pack animals</value>
+                <value>A train of pack animals with livestock</value>
+                <value>Traveling on foot with a few animals</value>
+            </table>
+            <table name="The caravan's pack animals are..." id="animals">
+                <value>One-humped camels</value>
+                <value>Two-humped camels</value>
+                <value>Large draft horses</value>
+                <value>Reliable garrons</value>
+                <value>Sure-footed ponies</value>
+                <value>Mules</value>
+                <value>Oxen</value>
+                <value>Bison</value>
+                <value>Drakes</value>
+                <value>Elephants</value>
+                <value>Elk</value>
+                <value>Giant</value>
+                <value>Lizards</value>
+                <value>Zebras</value>
+            </table>
+            <table name="The caravan is transporting..." id="transporting">
+                <value>Cotton cloth</value>
+                <value>Linen cloth</value>
+                <value>Silk cloth</value>
+                <value>Wool cloth</value>
+                <value>Drugs or contraband</value>
+                <value>Diamonds</value>
+                <value>Emeralds</value>
+                <value>Jade</value>
+                <value>Obsidian</value>
+                <value>Opal</value>
+                <value>Pearl</value>
+                <value>Ruby</value>
+                <value>Sapphire</value>
+                <value>Topaz</value>
+                <value>Turquoise</value>
+                <value>Arsenic</value>
+                <value>Copper</value>
+                <value>Gold</value>
+                <value>Lead</value>
+                <value>Silver</value>
+                <value>Tin</value>
+                <value>Spices and teas</value>
+                <value>Wine and spirits</value>
+            </table>
+            <table name="The caravan's general mood is..." id="mood">
+                <value>Desperate; a calamity has befallen them</value>
+                <value>Foul; morale is bad, and provisions are low</value>
+                <value>Tired; the journey is long and longer yet</value>
+                <value>Eager; great riches await at journey's end</value>
+            </table>
+            <member name="Caravan Master" include="caravan_master" />
+            <member name="Caravan Owner" include="caravan_owner" />
+            <member name="Animal Handler" include="animalhandler" />
+        </category>

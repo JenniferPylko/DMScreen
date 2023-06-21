@@ -1,0 +1,73 @@
+<category name="Nobleman" id="nobleman">
+    <name name="The lord's name is..."/>
+	<table name="the lord's nickname is..." short="Title" id="nobleman_nick">
+		<value>The wise</value>
+		<value>The wrathful</value>
+		<value>The rich</value>
+		<value>The poor</value>
+		<value>The frugal</value>
+		<value>The beautiful</value>
+		<value>The powerful</value>
+		<value>The weak</value>
+		<value>The foolish</value>
+		<value>The conquerer</value>
+		<value>The lover</value>
+		<value>The pious</value>
+		<value>The dark</value>
+		<value>The light</value>
+		<value>The moderate</value>
+		<value>The scholar</value>
+		<value>The honest</value>
+		<value>The noble</value>
+		<value>The dishonest</value>
+		<value>The peacemaker</value>
+		<value>The traveled</value>
+		<value>The large</value>
+		<value>The prophet</value>
+		<value>The conquered</value>
+		<value>The feeble minded</value>
+		<value>The stalwart</value>
+		<value>The whimsical</value>
+		<value>The poet</value>
+		<value>The romantic</value>
+		<value>The old</value>
+		<value>The young</value>
+	</table>
+    <include name="Race" include="npc_race" />
+	<table name="The lord's station is..." short="Station" id="nobleman_station">
+		<value>King</value>
+		<value>Emperor</value>
+		<value>Prince</value>
+		<value>Knight</value>
+		<value>Duke</value>
+		<value region_start="9" region_end="14" region_include="noble">Son of a noble</value>
+	</table>
+    <table name="The lord is..." id="nobleman_is">
+        <value>A patient old man</value>
+        <value>A wide-eyed young man</value>
+        <value>A hot-tempered tyrant</value>
+        <value>A patient and benevolent ruler</value>
+        <value region_start="32" region_end="37" region_include="noblehouse">A guest, a member of a powerful house</value>
+        <value region_start="30" region_end="35" region_include="__noun__">A guest, a member of a lesser house</value>
+        <value>A blind man</value>
+        <value>Silent and imposing</value>
+    </table>	
+    <table name="The lord seeks someone to..." id="nobleman_seeks">
+        <value region_start="14" region_end="19" region_include="__noun__">Dispose of an enemy</value>
+        <value>Negotiate a trade contract</value>
+        <value region_start="12" region_end="18" region_include="castle">Prepare the castle's defenders for war</value>
+        <value region_start="9" region_end="16" region_include="nobleman">Sabotage a rival</value>
+        <value>Arrange a beneficial marriage</value>
+        <value>Have a good time with</value>
+        <value>Help him return to his office, and dispose of an ursurper</value>
+    </table>
+    <table name="The lord carries..." id="nobleman_carries">
+        <value>Several deeds and titles</value>
+        <value region_start="9" region_end="17" region_include="__noun__">A family heirloom</value>
+        <value>Several inventories and invoices</value>
+        <value>An extremely valuable sword</value>
+        <value region_start="15" region_end="26" region_include="__noun__">A compromising love letter</value>
+        <value region_start="25" region_end="29" region_include="nobleman">A letter from a powerful lord</value>
+        <value region_start="25" region_end="29" region_include="noblewoman">A letter from a powerful lady</value>
+    </table>
+</category>

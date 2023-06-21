@@ -1,0 +1,127 @@
+<category name="Natural Desert" id="naturaldesert">
+    <table name="Interesting Location: You find..." id="naturaldesert_interest">
+        <value region_start="2" region_end="8" region_include="desertcavern">A cavern in a canyon wall</value>
+        <value region_start="2" region_end="6" region_include="desertcavern">A cave entrance, hidden by a boulder</value>
+        <value region_start="2" region_end="6" region_include="hole">A hole under a large boulder.</value>
+        <value region_start="2" region_end="14" region_include="hole">A large burrow.</value>
+        <value region_start="2" region_end="12" region_include="desertcavern">A small cave next to a dry river bed.</value>
+        <value region_start="11" region_end="15" region_include="deserttent">A peculiar tent.</value>
+        <value region_start="2" region_end="13" region_include="stonehouse">A stone house sheltered by a canyon, gorge, or bluff.</value>
+        <value>Some nomads’ camp.</value>
+        <value>An abandoned stone house.</value>
+        <value region_start="13" region_end="21" region_include="desertcamp">An abandoned campsite.</value>
+        <value region_start="2" region_end="20" region_include="caravan">A merchant caravan’s camp.</value>
+        <value region_start="15" region_end="27" region_include="desertcavern">An entrance to a rocky cave.</value>
+        <value region_start="3" region_end="11" region_include="desertmine">An old mine in a canyon.</value>
+        <value region_start="10" region_end="21" region_include="desertmine">An active mining camp.</value>
+        <value region_start="2" region_end="9" region_include="village">A village of primitive canyon dwellers.</value>
+        <value region_start="11" region_end="20" region_include="monstery">A secluded monastery.</value>
+        <value region_start="0" region_end="5" region_include="desertruins">Ruins of an ancient city.</value>
+        <value region_start="2" region_end="8" region_include="temple">A temple ruin.</value>
+        <value region_start="11" region_end="15" region_include="desertcavern">An ancient tomb.</value>
+        <value region_start="7" region_end="17" region_include="deserttower">An old watchtower.</value>
+    </table>
+    <table name="Distinguishing Landmark: You see..." id="naturaldesert_landmark">
+        <value>An oasis with a fruit tree.</value>
+        <value>An oasis with a palm tree and some desert flowers.</value>
+        <value>An unusually large, prickly desert plant.</value>
+        <value>A pair of prickly plants from the same root.</value>
+        <value>A patch of desert flowers in the shade of a boulder.</value>
+        <value>A patch of damp sand in the shadow of a large boulder.</value>
+        <value>A rocky bluff.</value>
+        <value>A boulder shaped like a face.</value>
+        <value>A pair of identical boulders, side by side.</value>
+        <value>A boulder sitting atop a larger boulder.</value>
+        <value>A narrow gorge with a trickle of water.</value>
+        <value>A wide canyon with a trickle of water.</value>
+        <value>A dry river bed.</value>
+        <value>A swiftly flowing, shallow river in a canyon.</value>
+        <value>A muddy river bed.</value>
+        <value>A ridge of wind-eroded rock.</value>
+        <value>A ridge of jagged rock.</value>
+        <value region_start="25" region_end="33" region_include="__noun__">A mostly-buried, ancient monument.</value>
+        <value>Twelve large stones, deliberately arranged in a ring.</value>
+        <value>A sheer rock wall with patterns of color in the rock layers.</value>
+    </table>
+    <table name="Feature: You notice..." id="naturaldesert_feature">
+        <value>A buzzard circles overhead.</value>
+        <value>A vulture screams.</value>
+        <value>A scorpion scuttles away.</value>
+        <value>A large beetle scuttles away.</value>
+        <value>A toad hops behind a rock.</value>
+        <value>A lizard crawls under a rock</value>
+        <value>A jackal barks.</value>
+        <value>A snake slithers away.</value>
+        <value>A butterfly flutters by.</value>
+        <value>A rattlesnake sounds.</value>
+        <value>An unusual bird chirps.</value>
+        <value>A gentle breeze blows.</value>
+        <value>The wind blows harder.</value>
+        <value>The wind kicks up dust.</value>
+        <value>Small lose stones tumble down a slope.</value>
+        <value>A hint of moisture on the ground.</value>
+        <value>A prickly plant with brightly colored fruit.</value>
+        <value>A strange desert flower.</value>
+        <value>A small palm tree.</value>
+        <value>Several small prickly plants.</value>
+    </table>
+    <table name="Landscape: The desert is..." id="naturaldesert_landscape">
+        <value>Rocky</value>
+        <value>Hilly</value>
+        <value>Bleak</value>
+        <value>Rugged</value>
+        <value>Boulder-strewn</value>
+        <value>Forbidding</value>
+        <value>Jagged</value>
+        <value>Wind-swept</value>
+    </table>
+    <table name="Ground: The earth beneath your feet is..." id="naturaldesert_ground">
+        <value>Sandy</value>
+        <value>Pebbly</value>
+        <value>Cracked</value>
+        <value>Hard-packed</value>
+        <value>Muddy brown</value>
+        <value>Deep red</value>
+        <value>Grey</value>
+    </table>
+    <table name="Encounters: You come upon..." id="naturaldesert_encounter">
+        <value region_start="12" region_end="17" region_include="__noun__">A poisonous snake.</value>
+        <value region_start="2" region_end="14" region_include="spider">A giant spider.</value>
+        <value region_start="2" region_end="16" region_include="__noun__">A giant scorpion.</value>
+        <value region_start="2" region_end="17" region_include="__noun__">A giant centipede.</value>
+        <value region_start="2" region_end="17" region_include="__noun__">A pack of jackals.</value>
+        <value region_start="9" region_end="19" region_include="__noun__">A hungry jackalwere.</value>
+        <value region_start="8" region_end="14" region_include="__noun__">A giant lizard.</value>
+        <value region_start="4" region_end="9" region_include="undead">The ghost of a traveler.</value>
+        <value>A pair of gnolls.</value>
+        <value>A pair of bandits.</value>
+        <value region_start="2" region_end="11" region_include="__noun__">A hobgoblin scout.</value>
+        <value region_start="2" region_end="18" region_include="orcclan">An orcish war band.</value>
+        <value region_start="2" region_end="5" region_include="__noun__">A roc on the wing.</value>
+        <value region_start="2" region_end="8" region_include="__noun__">A wyvern on the wing.</value>
+        <value region_start="10" region_end="16" region_include="__noun__">A strange hermit.</value>
+        <value region_start="7" region_end="15" region_include="traveler">A lost traveler.</value>
+        <value region_start="7" region_end="12" region_include="__noun__">A poor nomad.</value>
+        <value region_start="13" region_end="18" region_include="miner">A suspicious miner.</value>
+        <value region_start="2" region_end="11" region_include="barbarian">A barbarian hunter.</value>
+        <value region_start="10" region_end="19" region_include="barbarian">A mounted barbarian scout.</value>
+    </table>
+    <table name="Hazzards/Obstacles: You run into..." id="naturaldesert_hazzard">
+        <value>A rock slide coming down a canyon wall.</value>
+        <value>A boulder rolling down a canyon wall.</value>
+        <value>A collapsing sand dune.</value>
+        <value>Quicksand</value>
+        <value>Persistent, strong winds kicking up dust.</value>
+        <value>A sudden, swirling sandstorm.</value>
+        <value>A mirage of a city</value>
+        <value>A mirage of an oasis.</value>
+    </table>
+    <table name="Climate: The rains ome to this desert..." id="naturaldesert_climate">
+        <value>Once a year for a few days straight.</value>
+        <value>On a few days scattered through the year.</value>
+        <value>During the winter months.</value>
+        <value>Never; but snow melting in the mountains waters the land briefly every spring.</value>
+        <value>Never; the land floods briefly once a year.</value>
+        <value>Never; this place hasn’t had water in years.</value>
+    </table>
+</category>

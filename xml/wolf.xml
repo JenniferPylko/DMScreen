@@ -1,0 +1,109 @@
+<category name="Wolf" id="wolf">
+    <table name="Color: The wolf's coat is..." id="wolf_color">
+        <value>Black.</value>
+        <value>Dark grey.</value>
+        <value>Dark brown.</value>
+        <value>Black and brown.</value>
+        <value>Black and grey.</value>
+        <value>Pale brown.</value>
+        <value>Brown and grey.</value>
+        <value>Reddish brown.</value>
+        <value>Sandy brown.</value>
+        <value>White.</value>
+    </table>
+    <table name="Markings: The wolf has..." id="wolf_marking">
+        <value>White or pale fur on each paw.</value>
+        <value>White or pale fur on one paw.</value>
+        <value>White or pale fur around the face and muzzle.</value>
+        <value>Black or dark fur around the face and muzzle.</value>
+        <value>A dark grey banded pattern on its back</value>
+        <value>A pale grey banded pattern on its back</value>
+        <value>A reddish brown banded pattern on its back</value>
+        <value>A sandy brown banded pattern on its back</value>
+        <value>Lighter fur on its belly.</value>
+        <value>Darker fur on its belly.</value>
+        <value>A distinct, white or pale grey arrowhead shape on its chest</value>
+        <value>A distinct, white or pale grey diamond shape on its chest</value>
+        <value>A distinct, white or pale grey wide stripe on its chest</value>
+        <value>A distinct, white or pale grey star shape on its chest</value>
+        <value>A scar from a past injury on its flank</value>
+        <value>A scar from a past injury on its flank on its foreleg</value>
+        <value>A scar from a past injury on its flank on its snout</value>
+        <value>A scar from a past injury on its flank on its ear</value>
+        <value>A scar from a past injury on its flank on its eye</value>
+        <value>A scar from a past injury on its flank on its hindleg</value>
+        <value>No obvious markings.</value>
+    </table>
+    <table name="Eyes: The wolf's eyes are..." id="wolf_eye">
+        <value>Reflective and black.</value>
+        <value>Pale grey.</value>
+        <value>Brownish grey.</value>
+        <value>Dark grey.</value>
+        <value>Dark brown.</value>
+        <value>Golden brown.</value>
+        <value>Light brown.</value>
+        <value>Red.</value>
+        <value>Yellow.</value>
+        <value>Green.</value>
+        <value>Pale blue.</value>
+        <value>Dark blue.</value>
+    </table>
+    <table name="Manner: The wolf is..." id="wolf_manner">
+        <value>Panting lightly.</value>
+        <value>Panting heavily, its tongue lolling out of its mouth.</value>
+        <value>Salivating.</value>
+        <value>Hungrily licking its chops.</value>
+        <value>Yawning.</value>
+        <value>Watching curiously.</value>
+        <value>Watching warily.</value>
+        <value>Pacing nervously.</value>
+        <value>Whining softly.</value>
+        <value>Watching with ears perked and hackles raised.</value>
+        <value>Growling low, giving warning.</value>
+        <value>Standing perfectly still, ready to lunge.</value>
+    </table>
+    <table name="Hunting: The wolf prefers to..." id="wolf_hunt">
+        <value>Pick off weak, easy prey.</value>
+        <value>Stalk its prey until the opportune time to strike.</value>
+        <value>Harrying its prey over long distances until the prey is exhausted.</value>
+        <value>Chase its prey to a place where its packmates are waiting in ambush.</value>
+        <value>Wait in ambush while one or more of its packmates chases the prey to it.</value>
+        <value>Choose its prey and to run it down.</value>
+    </table>
+    <table name="Favorite prey: If given the choice, the wolf will opt to eat..." id="wolf_prey">
+        <value>Rabbit.</value>
+        <value>Squirrel.</value>
+        <value>Pheasant.</value>
+        <value>Goose.</value>
+        <value>Deer.</value>
+        <value>Sheep.</value>
+        <value>Chicken.</value>
+        <value>Carrion.</value>
+        <value>Human flesh.</value>
+        <value>Scraps from a roadside inn's refuse heap.</value>
+    </table>
+    <table name="Pack: The wolf is..." id="wolf_pack">
+        <value>The alpha of a large pack.</value>
+        <value>The alpha of a small pack.</value>
+        <value>The beta of its pack, patiently waiting for the alpha to fail.</value>
+        <value>The beta of its pack, constantly challenging the alpha.</value>
+        <value>Somewhere in the middle of the pack order, looking for opportunities to ascend.</value>
+        <value>Somewhere in the middle of the pack order, satisfied to follow the alpha.</value>
+        <value>The omega of a large pack.</value>
+        <value>The omega of a small pack.</value>
+        <value>One of a mated pair.</value>
+        <value>A lone predator.</value>
+    </table>
+    <table name="Habitat: This type of wolf evolved to thrive..." id="wolf_habitat">
+        <value>In canyonlands.</value>
+        <value>In grassy hills.</value>
+        <value>In forested hills.</value>
+        <value region_start="10" region_end="16" region_include="plains">On grassy plains.</value>
+        <value region_start="11" region_end="18" region_include="naturalforest">In ancient forests.</value>
+        <value region_start="9" region_end="16" region_include="naturalforest">In young forests.</value>
+        <value region_start="9" region_end="16" region_include="naturaldesert">In rocky deserts.</value>
+        <value region_start="20" region_end="29" region_include="mountain">In the foothills of mountains.</value>
+        <value region_start="3" region_end="11" region_include="mountain">In mountain passes.</value>
+        <value>In frozen lands.</value>
+    </table>
+</category>

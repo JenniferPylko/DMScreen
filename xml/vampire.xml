@@ -1,0 +1,212 @@
+<category name="Vampire" id="vampire">
+    <table name="In life. the vampire was..." id="life">
+        <value region_start="3" region_end="12" region_include="alchemist">An alchemist</value>
+        <value>A pyromancer</value>
+        <value region_start="3" region_end="11" region_include="assassin">An assassin</value>
+        <value>A poison maker</value>
+        <value region_start="2" region_end="9" region_include="barkeep">A barkeep</value>
+        <value region_start="2" region_end="9" region_include="barkeep">A barmaid</value>
+        <value>A con artist</value>
+        <value region_start="2" region_end="8" region_include="harlot">A harlot</value>
+        <value>A madame</value>
+        <value>A hunter or woodsman</value>
+        <value region_start="2" region_end="8" region_include="knight">A knight</value>
+        <value region_start="2" region_end="11" region_include="mercenary">A sellsword</value>
+        <value region_start="0" region_end="6" region_include="nobleman">A lord</value>
+        <value region_start="0" region_end="6" region_include="noblewoman">A lady</value>
+        <value region_start="2" region_end="6" region_include="monk">A monk</value>
+        <value region_start="2" region_end="8" region_include="priest">A priest</value>
+        <value region_start="2" region_end="8" region_include="sailor">A sailor</value>
+        <value region_start="2" region_end="8" region_include="pirate">A pirate</value>
+        <value region_start="2" region_end="6" region_include="seer">A seer or mystic</value>
+        <value region_start="2" region_end="10" region_include="smuggler">A smuggler</value>
+        <value region_start="2" region_end="7" region_include="thief">A thief</value>
+    </table>
+    <table name="Often, the vampire poses as..." id="poses">
+        <value region_start="11" region_end="16" region_include="noble">A powerful noble</value>
+        <value region_start="13" region_end="20" region_include="__noun__">An eccentric scholar</value>
+        <value region_start="13" region_end="22" region_include="nation">A mysterious foreigner</value>
+        <value region_start="11" region_end="17" region_include="__noun__">A talented artist</value>
+        <value region_start="9" region_end="19" region_include="merchant">A polite shopkeeper</value>
+        <value region_start="9" region_end="16" region_include="merchant">A creepy peddler</value>
+        <value>A femme fatale</value>
+        <value region_start="11" region_end="16" region_include="rogue">A charming rogue</value>
+        <value region_start="11" region_end="18" region_include="barkeep">A friendly barkeep</value>
+        <value region_start="11" region_end="18" region_include="barkeep">A friendly barmaid</value>
+        <value region_start="14" region_end="25" region_include="bard">A charismatic entertainer</value>
+        <value region_start="2" region_end="11" region_include="__noun__">A religious fanatic</value>
+        <value region_start="10" region_end="17" region_include="soldier">A veteran soldier</value>
+    </table>
+    <table name="In addition to draining blood, the vampire is fond of..." id="fond">
+        <value>Shooting prey with an arrow or bolt from range</value>
+        <value>Impaling prey</value>
+        <value>Gutting or eviscerating prey</value>
+        <value>Flaying prey</value>
+        <value>Beheading prey</value>
+        <value>Strangling prey</value>
+        <value>Hanging prey</value>
+        <value>Burying prey alive</value>
+        <value>Drowning</value>
+        <value>Throwing prey off a roof</value>
+        <value>Severely beating prey</value>
+        <value>Dismembering prey</value>
+    </table>
+    <table name="The vampire's goals include..." id="goals">
+        <value>Procreating</value>
+        <value region_start="42" region_end="50" region_include="city">Corrupting and influencing the politics of the city</value>
+        <value region_start="47" region_end="53" region_include="__noun__">Corrupting and influencing the politics of the region</value>
+        <value region_start="18" region_end="22" region_include="city">Domination of the city's politics</value>
+        <value region_start="18" region_end="24" region_include="__noun__">Domination of the region's politics</value>
+        <value region_start="18" region_end="31" region_include="vampire">Revenge against a rival vampire</value>
+        <value region_start="25" region_end="31" region_include="__noun__">Revenge against a living person</value>
+        <value region_start="18" region_end="24" region_include="__noun__">Revenge against a family</value>
+        <value region_start="19" region_end="31" region_include="__noun__">Revenge against an organization</value>
+        <value>Seeking hedonistic pleasure</value>
+        <value>Uncovering ancient secrets of death and undeath</value>
+        <value>Enslaving the living to create an easy source of food for vampires</value>
+    </table>
+    <table name="The vampire's base of operations is..." id="base">
+        <value region_start="12" region_end="23" region_include="__noun__">A beautiful manor house</value>
+        <value region_start="11" region_end="17" region_include="castle">A run-down castle</value>
+        <value region_start="11" region_end="19" region_include="castle">An ancient fortress</value>
+        <value region_start="9|26" region_end="14|32" region_include="__noun__|street">A quaint house on a quiet street</value>
+        <value region_start="2" region_end="8" region_include="tavern">A tavern</value>
+        <value region_start="2" region_end="9" region_include="brothel">A brothel</value>
+        <value region_start="26" region_end="30" region_include="__noun__">An unpleasant underground lair</value>
+        <value region_start="2" region_end="7" region_include="tomb">A crypt in a graveyard</value>
+        <value region_start="2" region_end="7" region_include="tomb">A crypt beneath a temple</value>
+        <value>The vampire in a transient</value>
+    </table>
+    <table name="The vampire prefers to hunt..." id="hunt">
+        <value>Just before sunrise</value>
+        <value>Just after sunset</value>
+        <value>In the early evening</value>
+        <value>Well into the night</value>
+        <value>The toll of midnight</value>
+        <value>After midnight</value>
+    </table>
+    <table name="The vampire's favorite prey are..." id="prey">
+        <value>Fishermen and sailors</value>
+        <value>Beggars and thieves</value>
+        <value>Merchants and moneychangers</value>
+        <value>Young noblemen</value>
+        <value>Young noblewomen</value>
+        <value>Old neoblewomen</value>
+        <value>Gamblers and drunks</value>
+        <value>Priests and monks</value>
+        <value>Priestesses</value>
+        <value>Serving girls</value>
+        <value>Slaves</value>
+        <value>Barmaids</value>
+        <value>Harlots and madames</value>
+        <value>Circus performers</value>
+        <value>Foreign travelers</value>
+        <value>Farmwives</value>
+        <value>Peasant girls</value>
+        <value>Inquisitive children</value>
+        <value>Elves and the fey</value>
+    </table>
+    <table name="The vampire refuses to feed on..." id="refuses">
+        <value>Ugly women</value>
+        <value>Beautiful women</value>
+        <value>Pregnant women</value>
+        <value>Shy women</value>
+        <value>Bold children</value>
+        <value>Anyone with blue eyes</value>
+        <value>Anyone with green eyes</value>
+        <value>Anyone with blonde hair</value>
+        <value>Anyone with red hair</value>
+        <value>Anyone who is blind, deaf, or lame</value>
+        <value>Big burly men</value>
+        <value>Dwarves and underground dwellers</value>
+    </table>
+    <table name="The vampire can shapeshift to take the form of..." id="form">
+        <value region_start="7" region_end="10" region_include="bat">A tiny bat</value>
+        <value>A swarm of bats</value>
+        <value>A cloud of mist</value>
+        <value>A swirl of shadows</value>
+        <value region_start="2" region_end="6" region_include="wolf">A wolf</value>
+        <value region_start="8" region_end="11" region_include="bat">A giant bat</value>
+    </table>
+    <table name="Even among vampires, the vampire is quite good at..." id="good">
+        <value>Charming humanoids</value>
+        <value>Frightening humanoids</value>
+        <value>Draining blood quickly</value>
+        <value>Sniffing out living creatures</value>
+        <value>Traveling overland quickly</value>
+        <value>Disguising its true nature</value>
+        <value>Negotiations</value>
+        <value>Climbing</value>
+    </table>
+    <table name="The vampire's grave dirt is from..." id="dirt">
+        <value region_start="2" region_end="14" region_include="__noun__">A faraway land</value>
+        <value region_start="20" region_end="26" region_include="temple">A local cemetery or temple</value>
+        <value region_start="10" region_end="17" region_include="village">A country village</value>
+        <value region_start="10" region_end="15" region_include="__noun__">A country manor</value>
+        <value region_start="13" region_end="19" region_include="castle">A well-known castle or fortress</value>
+        <value region_start="2" region_end="13" region_include="__noun__">A battlefield</value>
+        <value region_start="9" region_end="15" region_include="naturalforest">A remote forest</value>
+        <value region_start="9" region_end="17" region_include="mountain">A remote mountain</value>
+    </table>
+    <table name="The vampire's associates include" id="associates">
+        <value>Less powerful vampires</value>
+        <value>Skeletons, zombies, and other undead thralls</value>
+        <value>Living thralls on which to feed</value>
+        <value>Living thralls who provide pleasurable diversions</value>
+        <value>Hundreds of bats</value>
+        <value>Rats and maggots</value>
+        <value>A pack of vicious wolves</value>
+        <value region_start="13" region_end="23" region_include="cult">Members of a death cult</value>
+        <value region_start="10" region_end="18" region_include="noblehouse">The local nobility</value>
+        <value region_start="10" region_end="25" region_include="outlaws">The local band of outlaws</value>
+        <value region_start="10" region_end="26" region_include="assassinsguild">The local assassin's guild</value>
+    </table>
+    <table name="Even among vampires, the vampire is especially..." id="very">
+        <value>Agile</value>
+        <value>Attractive</value>
+        <value>Charming</value>
+        <value>Cruel</value>
+        <value>Domineering</value>
+        <value>Intimidating</value>
+        <value>Quick</value>
+        <value>Sadistic</value>
+        <value>Sleazy</value>
+        <value>Witty</value>
+    </table>
+    <table name="The vampire often wears" id="wears">
+        <value>Shiny leather boots</value>
+        <value>A black cape with a hood</value>
+        <value>A black cape with a high collar</value>
+        <value>A wide-brimmed hat</value>
+        <value>A cap pulled low</value>
+        <value>A low-cut shirt</value>
+        <value>Tight-fitting cloths</value>
+        <value>A family signet ring</value>
+        <value>An unusual brooch or necklace</value>
+        <value>A waxy mustache</value>
+    </table>
+    <table name="The vampire is unusually fond of or particular regarding..." id="particular">
+        <value>Horticulture and floral arrangements</value>
+        <value>Fashion and trends</value>
+        <value>Arms and armor maintenance</value>
+        <value>Small animals</value>
+        <value>Horses</value>
+        <value>High quality fabrics and leathers</value>
+        <value>Foreign music</value>
+        <value>Theater troupes and dancers</value>
+        <value>Social status</value>
+        <value>Personal hygiene</value>
+        <value>Hair styles</value>
+        <value>Dental hygiene</value>
+    </table>
+    <table name="The vampire is particularly afraid of or takes special care to avoid..." id="avoid">
+        <value>Hallowed places</value>
+        <value>Densely populated areas</value>
+        <value>Sunlight</value>
+        <value>Running water</value>
+        <value>Sharp wooden objects</value>
+        <value>Garlic</value>
+        <value>Silver objects</value>
+        <value>Relics of the gods</value>
+    </table>
+</category>

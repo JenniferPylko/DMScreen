@@ -1,0 +1,16 @@
+        <table name="Odors" short="Odor" id="dressing_odor">
+                <value>Acrid</value>
+                <value>Chlorine</value>
+                <value>Dank and moldy</value>
+                <value>Earthy</value>
+                <value>Manure</value>
+                <value>Metallic</value>
+                <value>Ozone</value>
+                <value>Putrid</value>
+                <value>Rotting vegetation</value>
+                <value>Salty and wet</value>
+                <value>Smoky</value>
+                <value>Stale and fetid</value>
+                <value>Sulphur</value>
+                <value>Urine</value>
+            </table>

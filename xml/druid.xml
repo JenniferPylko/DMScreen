@@ -1,0 +1,189 @@
+            <category name="Druid" id="druid">
+                <name name="The druid's name is..."/>
+                <table name="The druid is..." id="is">
+                    <value>A wildling orphan</value>
+                    <value>A seasoned herbalist</value>
+                    <value>A militant environmentalist</value>
+                    <value region_start="13" region_end="19" region_include="healer">A well-known healer</value>
+                    <value>A brash, young fool</value>
+                    <value region_start="13" region_end="18" region_include="noble">A rebellious noble</value>
+                    <value>A patient teacher</value>
+                    <value region_start="13" region_end="22" region_include="nation">A mysterious foreigner</value>
+                    <value>A beautiful maiden</value>
+                    <value>A rugged outdoorsman</value>
+                    <value region_start="21" region_end="26" region_include="guide">A veteran wilderness guide</value>
+                    <value>A beastly brute</value>
+                    <value>A dark-hearted avenger</value>
+                    <value>A curious philosopher</value>
+                    <value>A shy beast-friend</value>
+                    <value>A fierce guardian</value>
+                    <value>An exiled spellcaster</value>
+                    <value>A mystic shaman</value>
+                    <value>A savage priest or priestess</value>
+                    <value region_start="2" region_end="9" region_include="village">A village elder</value>
+                </table>
+                <table name="The druid learned the craft from..." id="craft">
+                    <value region_start="27" region_end="32" region_include="witch">Apprenticing to a woodland witch</value>
+                    <value region_start="31" region_end="38" region_include="__noun__">Studying wilderness lore at an academy</value>
+                    <value region_start="2" region_end="8" region_include="druid">A parent who was also a druid</value>
+                    <value region_start="34" region_end="41" region_include="noblehouse">Running a menagerie or garden for royalty</value>
+                    <value>Surviving in the wild alone for years</value>
+                    <value>Conversing with primal spirits</value>
+                    <value region_start="13" region_end="18" region_include="beast">An enchanted beast</value>
+                    <value>Studying old books</value>
+                    <value>The circle of druids that took him/her in as a child</value>
+                    <value region_start="2" region_end="14" region_include="fey_beast">A fey creature that offered redemption for past transgressions against nature</value>
+                    <value region_start="13" region_end="20" region_include="village">A mysterious village elder</value>
+                    <value region_start="23" region_end="43" region_include="wilderness">Time spent stranded in a wild, foreign land</value>
+                </table>
+                <table name="Eyes: The druid has..." id="eyes">
+                    <value>Sky blue eyes</value>
+                    <value>Deep sea blue eyes</value>
+                    <value>Bright grass green eyes</value>
+                    <value>Sunset golden eyes</value>
+                    <value>Pale moss green eyes</value>
+                    <value>Muddy brown eyes</value>
+                    <value>Dark, stormy grey eyes</value>
+                    <value>Night-sky purple eyes</value>
+                    <value>Dusty brown eyes</value>
+                    <value>Stony grey eyes</value>
+                </table>
+                <table name="The druid has..." id="has">
+                    <value>An earthy scent</value>
+                    <value>Bits of green underneath its fingernails</value>
+                    <value>Stains of bird droppings on his/her clothes</value>
+                    <value>A long, hooked, beak-like nose</value>
+                    <value>Large bear-like shoulders and hands</value>
+                    <value>A pointy, rodent-like nose</value>
+                    <value>Very hairy arms and legs</value>
+                    <value>Long, sharp fingernails</value>
+                    <value>Beautiful, healthy skin</value>
+                    <value>A greenish, mossy beard</value>
+                </table>
+                <table name="The druid..." id="does">
+                    <value>Stares hungrily like a wolf</value>
+                    <value>Stares suspiciously like a cat</value>
+                    <value>Hisses like a snake when he/she laughs</value>
+                    <value>Barks like seal when he/she laughs</value>
+                    <value>Twitters like a bird when he/she laughs</value>
+                    <value>Walks gracefully like a panther</value>
+                    <value>Eats like a horse</value>
+                    <value>Eats like a bird</value>
+                    <value>Speaks very little</value>
+                    <value>Fidgets like a squirrel</value>
+                    <value>Pounces like a lion</value>
+                    <value>Move like a bear</value>
+                </table>
+                <table name="The druid shares an especially close connection with..." id="connection">
+                    <value>Aquatic mammals</value>
+                    <value>Bears</value>
+                    <value>Birds of prey</value>
+                    <value>Cats</value>
+                    <value>Hoofed mammals</value>
+                    <value>Reptiles and amphibians</value>
+                    <value>Songbirds and waterfowl</value>
+                    <value>Wolves and dogs</value>
+                    <value>Blizzards and snowstorms</value>
+                    <value>Hurricanes and tides</value>
+                    <value>Volcanoes, geysers, and hot springs</value>
+                    <value>Earthquakes</value>
+                    <value>Thunderstorms and floods</value>
+                    <value>Forest and trees</value>
+                    <value>Mountains and stone</value>
+                    <value>Caves and shadows</value>
+                    <value>Jungles and rainstorms</value>
+                    <value>Glaciers and tundra</value>
+                    <value>Deserts and sand</value>
+                    <value>Swamps and marshes</value>
+                </table>
+                <table name="The druid wields..." id="weilds">
+                    <value>A wooden staff</value>
+                    <value>A wooden club</value>
+                    <value>A club and a wooden shield</value>
+                    <value>A scimitar</value>
+                    <value>A scimitar and a wooden shield</value>
+                    <value>A spear</value>
+                    <value>A spear and a wooden shield</value>
+                    <value>A dagger</value>
+                    <value>A thorny whop made from a tough vine</value>
+                    <value>Tooth and claw</value>
+                </table>
+                <table name="The druid carries..." id="carries">
+                    <value>A sprig of holly</value>
+                    <value>A sprig of mistletoe</value>
+                    <value region_start="6" region_end="10" region_include="wands">A yew wand</value>
+                    <value region_start="17" region_end="27" region_include="wands">A cutting from a rare plant</value>
+                    <value>A totem necklace, strung with beaks</value>
+                    <value>A totem necklace, strung with bones of beasts</value>
+                    <value>A totem necklace, strung with claws of beasts</value>
+                    <value>A totem necklace, strung with shells</value>
+                    <value>A totem necklace, strung with tiny skulls of beasts</value>
+                    <value>A totem necklace, strung with teeth of beasts</value>
+                    <value>A totem rod adorned with bones of beasts</value>
+                    <value>A totem rod adorned with feathers of beasts</value>
+                    <value>A totem rod adorned with fur of beasts</value>
+                    <value>A totem rod adorned with scales of beasts</value>
+                    <value>A totem necklace, strung with seed pods</value>
+                    <value>A totem necklace, strung with dried fruit</value>
+                    <value>A totem necklace, strung with root clippings</value>
+                    <value>A totem necklace, strung with fresh flowers</value>
+                    <value>A totem rod adorned with tree bark</value>
+                    <value>A totem rod adorned with fresh leaves</value>
+                    <value>A totem rod adorned with berries</value>
+                    <value>A totem rod adorned with seeds and tree sap</value>
+                </table>
+                <table name="The druid also carries..." id="also_carrries">
+                    <value>A small knife</value>
+                    <value>A wooden flute</value>
+                    <value>A hunting horn</value>
+                    <value>A shard of obsidian, warm to the touch</value>
+                    <value>A piece of crystal that glows in moonlight</value>
+                    <value>A small pouch full of seeds</value>
+                    <value>A small pouch full of herbal tea</value>
+                    <value>Several vials of herbal extracts</value>
+                    <value>A pair of herb snips</value>
+                    <value region_start="49" region_end="55" region_include="wilderness">A pocketbook field guide to flora and fauna in a region the druid has never visited</value>
+                    <value>A book of Elvish poems and songs</value>
+                    <value>Several vials of healing potions</value>
+                </table>
+                <table name="The druid wears..." id="wears">
+                    <value>Robes of earth tones</value>
+                    <value>A dark green cape</value>
+                    <value>Shiny leather boots with fur</value>
+                    <value>Boots of soft leather</value>
+                    <value>A leather baldric</value>
+                    <value>Leather armor decorated with leafy motifs</value>
+                    <value>Armor made from the hides of beasts</value>
+                    <value>Leather armor studded with bone</value>
+                    <value>A robe stained with bird droppings</value>
+                    <value>A robe with vines growing from its pockets</value>
+                    <value>Only what nature gave him/her</value>
+                </table>
+                <table name="The druid is looking to..." id="looking">
+                    <value>Find a place where a rare herb grows</value>
+                    <value region_start="14" region_end="32" region_include="__noun__">Drive away an unnatural intruder</value>
+                    <value region_start="22" region_end="26" region_include="traps">Lead intruders into a trap</value>
+                    <value region_start="16" region_end="31" region_include="beast">Help a wounded, legendary beast</value>
+                    <value region_start="29" region_end="34" region_include="__noun__">Permanently transform into a beast</value>
+                    <value region_start="19" region_end="34" region_include="__noun__">Locate a legendary garden or grove</value>
+                    <value>Stop the spread of mining or grazing</value>
+                    <value>Swap recipes and herb lore</value>
+                    <value>Bear witness to nature's awesome power</value>
+                    <value region_start="27" region_end="39" region_include="__noun__">Provide a safe haven for a hunted beast</value>
+                    <value>Inspire a love for nature</value>
+                    <value>Drink some tea mixed with strong spirits</value>
+                    <value>Live in peace</value>
+                </table>
+                <table name="You have heard of this adventurer because..." id="heard">
+                    <value region_start="30" region_end="34" region_include="__noun__">He's a wise leader of a small sect of like minded druids.</value>
+                    <value region_start="32" region_end="50" region_include="__noun__">He's a legendary protector of a secluded community.</value>
+                    <value region_start="71" region_end="78" region_include="__noun__">He's an emissary who acts as a go-between for the men and elves of the kingdom, solving disputes and keeping the peace.</value>
+                    <value>He's a hermit, maddened by isolation, who murders travelers.</value>
+                    <value>He's a dark druid who kills townsfolk and uses their bodies to fertilize his grove.</value>
+                    <value>He's a good druid driven to dark deeds by men who hold his forest home hostage.</value>
+                    <value region_start="13" region_end="25" region_include="lycanthrope">He's a noted shapeshifter who prefers his beast forms to his human form.</value>
+                    <value>He's claims a body that heals itself is stronger than one magically healed.</value>
+                    <value region_start="48" region_end="54" region_include="__noun__">His accustomed home is the harshest land in the region.</value>
+                    <value region_start="28" region_end="32" region_include="village">He occasionally turns up in town to barter rare medicinal plants for trade goods.</value>
+                </table>
+            </category>

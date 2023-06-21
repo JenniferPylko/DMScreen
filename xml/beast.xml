@@ -1,0 +1,21 @@
+<categories name="Beasts" id="beast"> 
+    <category id="aberrant_beast" name = "Aberrant Beast"/>
+    <category id="bat" name="Bat" />
+    <category id="cat" name="Cat"/>
+    <category id="celestial_beast" name="Celestial Beast"/>
+    <category id="demonic_beast" name="Demonic Beast" />
+    <category id="fey_beast" name="Fey Beast"/>
+    <category id="fire_beast" name="Fire Beast"/>
+    <category id="horse" name="Horse"/>
+    <category id="infernal_beast" name="Infernal Beast"/>
+    <category id="legendary_beast" name="Legendary Beast"/>
+    <category id="monkey" name="Monkey"/>
+    <category id="rat" name="Rat"/>
+    <category id="sea_beast" name="Sea Beast"/>
+    <category id="shadow_beast" name="Shadow Meast"/>
+    <category id="spider" name="Spider"/>
+    <category id="storm_beast" name="Storm Beast"/>
+    <category id="undead_beast" name="Undead Beast"/>
+    <category id="winter_beast" name="Winter Beast"/>
+    <category id="wolf" name="Wolf"/>
+</categories>

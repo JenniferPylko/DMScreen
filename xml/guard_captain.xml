@@ -1,0 +1,32 @@
+            <category name="Guard captain" id="guard_captain">
+                <name name="The captain's name is..."/>
+                <include name="Race" include="npc_race" />
+                <table name="The captain is..." id="guard_captain_is">
+                    <value region_start="9|27" region_end="15|32" region_include="noble|noblehouse">A lesser member of a noble house</value>
+                    <value>A brutish thug</value>
+                    <value>A dashing swashbuckler</value>
+                    <value region_start="13" region_end="21" region_include="npc">A celebrated war hero</value>
+                    <value region_start="12" region_end="18" region_include="knight">An anointed knight</value>
+                    <value region_start="9" region_end="16" region_include="soldier">A career soldier</value>
+                </table>
+                <table name="The captain is concerned about..." id="guard_captain_concerned">
+                    <value>The resolve of the new recruits</value>
+                    <value region_start="4" region_end="12" region_include="castle">The castle's food stores</value>
+                    <value>Sheltering too many commonfolk in a siege</value>
+                    <value>Running out of ale during a siege</value>
+                </table>
+                <table name="The captain is looking for..." id="guard_captain_looking">
+                    <value region_start="22" region_end="27" region_include="__noun__">Information regarding enemy movements</value>
+                    <value>Reinforcements or new recruits</value>
+                    <value region_start="26" region_end="34" region_include="__noun__">News of his or his wife's hometown</value>
+                    <value>Drinking companions and storytellers</value>
+                </table>
+                <table name="The captain carries" id="guard_captain_carries">
+                    <value>A superbly crafted sword</value>
+                    <value region_start="22" region_end="25" region_include="__noun__">A trusted blade and a map</value>
+                    <value region_start="2" region_end="13" region_include="__noun__">A lucky charm</value>
+                    <value region_start="4" region_end="9" region_include="__noun__">The token of a faraway love</value>
+                    <value>A pipe and a pouch of tobacco</value>
+                    <value>A little jar of mustache wax</value>
+                </table>
+            </category>

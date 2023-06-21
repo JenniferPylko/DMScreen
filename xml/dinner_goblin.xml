@@ -1,0 +1,83 @@
+        <category name="Dinner at a Goblin Hideout" id="dinner_goblin">
+            <table name="Tonight, we dine on..." id="dine">
+                <patterns>
+                    <pattern>{prep} {dish}</pattern>
+                </patterns>
+                <list type="prep">
+                    <item>Stewed</item>
+                    <item>Toasted</item>
+                    <item>Skewered</item>
+                    <item>Raw</item>
+                    <item>Smoked</item>
+                    <item>Grilled</item>
+                    <item>Seared</item>
+                    <item>Flame-broiled</item>
+                    <item>Charred</item>
+                    <item>Blackened</item>
+                </list>
+                <list type="dish">
+                    <item>rabbit</item>
+                    <item>duck</item>
+                    <item>pork</item>
+                    <item>cave fish</item>
+                    <item>trout</item>
+                    <item>clams</item>
+                    <item>bat</item>
+                    <item>rat</item>
+                    <item>sausage</item>
+                    <item>mystery meat</item>
+                </list>
+            </table>
+            <table name="...with..." id="dine_wth">
+                <value>Potatoes.</value>
+                <value>Red cabbage.</value>
+                <value>White cabbage.</value>
+                <value>Leeks.</value>
+                <value>Lentils.</value>
+                <value>Rhubarb.</value>
+                <value>Peas.</value>
+                <value>Sliced turnips.</value>
+                <value>Turnip mash.</value>
+                <value>Parsnips.</value>
+                <value>Red onions.</value>
+                <value>Yellow onions.</value>
+            </table>
+            <table name="...and..." id="dine_and">
+                <value>Stale bread.</value>
+                <value>Crusty biscuits.</value>
+                <value>Hard tack.</value>
+                <value>Wild mushrooms.</value>
+                <value>Sliced mushrooms.</value>
+                <value>Black mushrooms.</value>
+                <value>Purple mushrooms.</value>
+                <value>Cave mushrooms.</value>
+                <value>Truffles.</value>
+                <value>Yellow mold.</value>
+                <value>Blue mold.</value>
+                <value>Green mold.</value>
+            </table>
+            <table name="Side dish..." id="side">
+                <value>Mice.</value>
+                <value>Toad legs.</value>
+                <value>Crickets.</value>
+                <value>Earthworms.</value>
+                <value>Snails.</value>
+                <value>Stale cakes.</value>
+                <value>Pixie cakes.</value>
+                <value>Pig's feet.</value>
+                <value>Rat tails.</value>
+                <value>Lizards.</value>
+                <value>Snakes.</value>
+                <value>Bitter roots.</value>
+            </table>
+            <table name="Beverage..." id="beverage">
+                <value>Foul ale.</value>
+                <value>Skunky ale.</value>
+                <value>Stolen ale.</value>
+                <value>Sour wine.</value>
+                <value>Strong wine.</value>
+                <value>Bitter tea.</value>
+                <value>Black tea.</value>
+                <value>Stolen whisky.</value>
+            </table>
+        </category>

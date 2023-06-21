@@ -1,0 +1,87 @@
+<category name="Watchmen" id="watchmen">
+    <table name="The watch's colors are..." id="colors">
+        <value>Black</value>
+        <value>Red / Scarlet</value>
+        <value>Gold</value>
+        <value>Forest Green</value>
+        <value>Royal Blue</value>
+        <value>Silver / Light Grey</value>
+        <value>Brown / Beaver</value>
+        <value>White</value>
+        <value>Maroon</value>
+        <value>Sky Blue</value>
+        <value>Navy Blue</value>
+        <value>Dark Brown / Chocolate</value>
+    </table>
+    <table name="The watch's symbol is..." id="symbol">
+        <value>A flame</value>
+        <value>A gauntlet</value>
+        <value>A shield</value>
+        <value>A sword</value>
+        <value>The sun</value>
+        <value>An eye</value>
+        <value>An eagle</value>
+        <value>An owl</value>
+        <value>A dragon</value>
+        <value>A lion</value>
+        <value>A raven</value>
+        <value>A wolf</value>
+        <value>A tiger</value>
+    </table>
+    <table name="The watch's captain is..." id="captain">
+        <value region_start="2" region_end="11" region_include="__noun__">A religious zealot</value>
+        <value region_start="25" region_end="31" region_include="noblehouse">A scion from a prominent family</value>
+        <value region_start="28" region_end="34" region_include="noblehouse">An outcast from a prominent family</value>
+        <value>A dashing swashbuckler</value>
+        <value region_start="10" region_end="14" region_include="__noun__">A brutish thug</value>
+        <value region_start="17" region_end="21" region_include="npc">A celebrated war hero</value>
+        <value region_start="12" region_end="18" region_include="knight">An anointed knight</value>
+        <value region_start="9" region_end="16" region_include="soldier">A career soldier</value>
+        <value region_start="11" region_end="18" region_include="soldier">A grizzled veteran</value>
+        <value region_start="9" region_end="21" region_include="__noun__">An adept investigator</value>
+        <value region_start="11" region_end="20" region_include="__noun__">An erudite detective</value>
+        <value>A devoted public servant</value>
+    </table>
+    <table name="The watch's attitude toward their captain is..." id="attitude">
+        <value>Friendly and loyal</value>
+        <value>Respectful and business-like</value>
+        <value>Completely indifferent</value>
+        <value>Cautious and uncertain</value>
+        <value>Terrified and tight-lipped</value>
+        <value>Disappointed and disrespectful</value>
+    </table>
+    <table name="The watch has a reputation for..." id="reputation">
+        <value>High morals</value>
+        <value>Efficiency</value>
+        <value>Reliability</value>
+        <value>Brutality</value>
+        <value>Taking bribes</value>
+        <value>Shaking down shopkeepers and artisans</value>
+        <value>Frequenting brothels</value>
+        <value>Cowardice</value>
+        <value>Incompetence</value>
+        <value>Intoxication</value>
+    </table>
+    <table name="Most members of the watch are outfitted with..." id="outfit">
+        <value>Rough-spun wool cloaks</value>
+        <value>Whatever armor they can find</value>
+        <value >Leather armor marked with the symbol of the watch</value>
+        <value region_start="40" region_end="50" region_include="city">Leather armor marked with the symbol of their city</value>
+        <value region_start="40" region_end="50" region_include="nobleman">Leather armor marked with the symbol of their lord</value>
+        <value region_start="27" region_end="37" region_include="armorer">Well-maintained chainmail (crafted by)</value>
+    </table>
+    <table name="Most members of the watch are equipped with..." id="equip">
+        <value>Longswords and shortbows</value>
+        <value>Longswords and crossbows</value>
+        <value>Longswords and shields</value>
+        <value>Shortswords and shields</value>
+        <value>Maces and crossbows</value>
+        <value>Maces and shields</value>
+        <value>Maces and daggers</value>
+        <value>Pikes and shortswords</value>
+        <value>Halberds and daggers</value>
+        <value>Halberds and crossbows</value>
+    </table>
+    <member name="Investigator" include="investigator" />
+    <member name="Guard" include="guard" />
+</category>

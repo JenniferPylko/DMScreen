@@ -1,0 +1,426 @@
+<category name="Ship" id="ship">
+    <table name="The ship's name is..." type="name" type_name="Ship">
+        <patterns>
+            <pattern>{markov}'s {noun}</pattern>
+            <pattern>{markov}'s {desc}</pattern>
+            <pattern>The {noun}</pattern>
+            <pattern>The {noun}'s {noun}</pattern>
+            <pattern>The {adj} {noun}</pattern>
+            <pattern>The {noun}'s {desc}</pattern>
+        </patterns>
+        <list type="noun">
+            <item>Bear</item>
+            <item>Chicken</item>
+            <item>Dolphin</item>
+            <item>Turtle</item>
+            <item>Trout</item>
+            <item>Whale</item>
+            <item>Shark</item>
+            <item>Sparrow</item>
+            <item>Gull</item>
+            <item>Mermaid</item>
+            <item>Battleaxe</item>
+            <item>Arch-angel</item>
+            <item>Imposter</item>
+            <item>Man</item>
+            <item>Woman</item>
+            <item>Entertainer</item>
+            <item>Bard</item>
+            <item>Songstress</item>
+            <item>Siren</item>
+            <item>Owl</item>
+            <item>Raven</item>
+            <item>Warrior</item>
+            <item>God</item>
+            <item>Marine</item>
+            <item>Cleaver</item>
+            <item>Queen</item>
+            <item>King</item>
+            <item>Prince</item>
+            <item>Princess</item>
+            <item>Duke</item>
+            <item>Duchess</item>
+            <item>Samurai</item>
+            <item>Ronin</item>
+            <item>Arrow</item>
+            <item>Sword</item>
+            <item>Axe</item>
+            <item>Manatee</item>
+            <item>Seraphim</item>
+            <item>Float</item>
+            <item>Urchin</item>
+            <item>Popper</item>
+            <item>Arch-mage</item>
+            <item>Bone</item>
+            <item>Rascal</item>
+            <item>Voyager</item>
+            <item>Executioner</item>
+            <item>Wanderer</item>
+            <item>Ghost</item>
+            <item>Goddess</item>
+            <item>Guard</item>
+            <item>Elk</item>
+            <item>Steed</item>
+            <item>Pony</item>
+            <item>Griffon</item>
+            <item>Sphinx</item>
+            <item>Maiden</item>
+            <item>Noble</item>
+            <item>Prospector</item>
+            <item>Shaman</item>
+            <item>Leader</item>
+            <item>Ambassador</item>
+            <item>Assassin</item>
+            <item>Moon</item>
+            <item>Glen</item>
+            <item>Marine</item>
+            <item>Drake</item>
+            <item>Boulder</item>
+            <item>Soldier</item>
+            <item>Scarab</item>
+            <item>Feline</item>
+            <item>Phylactery</item>
+            <item>Corona</item>
+            <item>Crown</item>
+            <item>Miner</item>
+            <item>Nomad</item>
+            <item>Hermit</item>
+            <item>Dancer</item>
+            <item>Ruby</item>
+            <item>Sapphire</item>
+            <item>Peridot</item>
+            <item>Garnet</item>
+            <item>Flamberge</item>
+            <item>Bandit</item>
+            <item>Prostitute</item>
+            <item>Sellsword</item>
+            <item>Merchant</item>
+            <item>Mercenary</item>
+            <item>Panda</item>
+            <item>Mule</item>
+            <item>Neighbour</item>
+            <item>Sailor</item>
+            <item>Captain</item>
+            <item>Summoner</item>
+            <item>Elemental</item>
+            <item>Fiend</item>
+            <item>Harpy</item>
+            <item>Faerie</item>
+            <item>Highlander</item>
+            <item>Curiass</item>
+            <item>Mountain</item>
+            <item>Tiger</item>
+            <item>Lion</item>
+            <item>Gauntlet</item>
+            <item>Sheriff</item>
+            <item>Lawman</item>
+            <item>Devil</item>
+            <item>Crystal</item>
+            <item>Angel</item>
+            <item>Flail</item>
+            <item>Skull</item>
+            <item>Hunter</item>
+            <item>Ranger</item>
+            <item>Druid</item>
+            <item>Heir</item>
+            <item>Faith</item>
+            <item>Adventurer</item>
+            <item>Villain</item>
+            <item>Traitor</item>
+            <item>Knight</item>
+        </list>
+        <list type="adj">
+            <item>Devious</item>
+            <item>Mysterious</item>
+            <item>Knightly</item>
+            <item>Unknown</item>
+            <item>Wealthy</item>
+            <item>Cruel</item>
+            <item>Kind</item>
+            <item>Friendly</item>
+            <item>Unpredictable</item>
+            <item>Decrepit</item>
+            <item>Ghastly</item>
+            <item>Heroic</item>
+            <item>Predictable</item>
+            <item>Thundering</item>
+            <item>Innocent</item>
+            <item>Wondrous</item>
+            <item>Obsidian</item>
+            <item>Compassionate</item>
+            <item>Haunted</item>
+            <item>Grand</item>
+            <item>Lovely</item>
+            <item>Hated</item>
+            <item>Ugly</item>
+            <item>Old</item>
+            <item>Beautiful</item>
+            <item>Secret</item>
+            <item>Challenging</item>
+            <item>Challenged</item>
+            <item>Heroic</item>
+            <item>Holy</item>
+            <item>Youthful</item>
+            <item>Ancient</item>
+            <item>Young</item>
+            <item>Unholy</item>
+            <item>Distant</item>
+            <item>Wandering</item>
+            <item>Astral</item>
+            <item>Dangerous</item>
+            <item>Grim</item>
+            <item>Hazardous</item>
+            <item>Lawful</item>
+            <item>Chaotic</item>
+            <item>Neutral</item>
+            <item>Perfect</item>
+            <item>Scorched</item>
+            <item>Lonely</item>
+            <item>Frozen</item>
+            <item>Killer</item>
+            <item>Royal</item>
+            <item>False</item>
+            <item>True</item>
+            <item>Unsinkable</item>
+            <item>Flying</item>
+            <item>Impure</item>
+            <item>Pure</item>
+            <item>Defiant</item>
+            <item>Outlaw</item>
+            <item>Rebel</item>
+            <item>Northern</item>
+            <item>Southern</item>
+            <item>Necromatic</item>
+            <item>Spectral</item>
+            <item>Eastern</item>
+            <item>Misty</item>
+            <item>Swift</item>
+            <item>Western</item>
+            <item>Prophecy</item>
+            <item>Rebellious</item>
+            <item>Loyal</item>
+            <item>Stalwart</item>
+            <item>Noble</item>
+            <item>Disharmony</item>
+            <item>Bloodthirsty</item>
+            <item>Floating</item>
+            <item>Animate</item>
+            <item>Unpredictable</item>
+            <item>Ethereal</item>
+            <item>Fallen</item>
+            <item>Hate</item>
+            <item>Good</item>
+            <item>Lucky</item>
+            <item>Major</item>
+            <item>Minor</item>
+            <item>Dark</item>
+            <item>Official</item>
+            <item>Light</item>
+            <item>Red</item>
+            <item>Green</item>
+            <item>Yellow</item>
+            <item>Charismatic</item>
+            <item>Strong</item>
+            <item>Wise</item>
+            <item>Intelligent</item>
+            <item>Blue</item>
+            <item>Bad</item>
+            <item>Good</item>
+            <item>Hidden</item>
+            <item>Purple</item>
+            <item>Swollen</item>
+            <item>Sombre</item>
+            <item>Sullen</item>
+            <item>Chaste</item>
+            <item>Dirty</item>
+        </list>
+        <list type="desc">
+            <item>Hope</item>
+            <item>Haste</item>
+            <item>Anger</item>
+            <item>Patience</item>
+            <item>Intellect</item>
+            <item>Strategy</item>
+            <item>Wisdom</item>
+            <item>Strength</item>
+            <item>Illness</item>
+            <item>Superstition</item>
+            <item>Oath</item>
+            <item>Exorcist</item>
+            <item>Cluster</item>
+            <item>Revelation</item>
+            <item>Epic</item>
+            <item>Chastity</item>
+            <item>Matter</item>
+            <item>Vigilance</item>
+        </list>
+    </table>
+    <table name="Size: The ship is..." id="is">
+        <value>Very small, a one or two-person crew.</value>
+        <value>Small, with several crew members.</value>
+        <value>Regular, with a crew around 10-20</value>
+        <value>Large, with a crew up to 50.</value>
+        <value>Very Large with a crew up to a hundred.</value>
+        <value>Massive, with a crew of several hundred.</value>
+    </table>
+    <table name="Type: the ship's type is a..." id="ship_type">
+        <value>Warship, a powerful ship ready for combat</value>
+        <value>Frigate, a smaller warship with speed and manoeuvrability.</value>
+        <value>Battleship, highly armed and highly armoured.</value>
+        <value>Yacht, an expensive pleasure boat.</value>
+        <value>Ship-town, a floating nomadic town that goes where it pleases.</value>
+        <value>Cargo ship, going from harbour to harbour with precious cargo.</value>
+        <value>A transport ship, for transporting soldiers or people from place to place.</value>
+        <value>Fishing boat, for fishing or perhaps sea monster hunting.</value>
+        <value>Flagship, that leads a fleet of other ships.</value>
+        <value>Lifeboat, an emergency boat.</value>
+        <value id="ship_type_ferry">Ferry, makes regular trips between two locations</value>
+    </table>
+    <table name="Style: The ship is built in the style of..." id="style">
+        <value>Humans. Practical and functional.</value>
+        <value>Orcs. Things are spiky, adorned with metal and shamanistic symbols.</value>
+        <value>Elves. An elegant craft that glides through the water.</value>
+        <value>Dwarves. A bulky metal ship which cares for use rather than appearance.</value>
+        <value>Gnomes. A smaller metal or wooden craft with strange curious technology.</value>
+        <value>Dragonborn. A regal ship with draconic designs.</value>
+        <value>Halflings. Similar to human design but with smaller stockier design, and more focus on the kitchen.</value>
+        <value region_start="58" region_end="63" region_include="world">Unknown. The ship seems strange. Perhaps from a different world.</value>
+    </table>
+    <table name="Purpose: The ship's purpose is..." id="purpose">
+        <value>Transporting slaves</value>
+        <value>Smuggling goods</value>
+        <value>Transporting passengers</value>
+        <value>Transporting merchandise for a merchant</value>
+        <value>Transporting merchandise for a company</value>
+        <value>Transporting merchandise for the highest bidder</value>
+        <value>Transporting a specific type of merchandise (fruit)</value>
+        <value>Transporting a specific type of merchandise (animals)</value>
+        <value>Transporting a specific type of merchandise (meats)</value>
+        <value>Transporting a specific type of merchandise (grains)</value>
+    </table>
+    <table name="Crew: The crew is made of..." id="crew">
+        <value region_start="5" region_end="13" region_include="military">Navy soldiers patrolling the seas for pirates.</value>
+        <value region_start="0" region_end="8" region_include="military">Soldiers being transferred to a far off war.</value>
+        <value>Independent bounty and pirate hunters.</value>
+        <value region_start="0" region_end="7" region_include="pirates">Pirates looking to get plunder any way they can.</value>
+        <value region_start="22" region_end="32" region_include="pirates">A pirate king and his elite crew, who terrifies others.</value>
+        <value region_start="0" region_end="7" region_include="pirates">Pirates who are in mutiny after the captain was killed.</value>
+        <value region_start="0" region_end="14" region_include="pirateS">Lawful Pirates who follow a strict code of honour.</value>
+        <value region_start="43" region_end="48" region_include="world">Explorers trying to find new places in the world.</value>
+        <value>Relic Hunters trying to find artifacts under the water.</value>
+        <value region_start="0" region_end="9" region_include="fisherfolk">Fishermen who just want to make their living.</value>
+        <value>Monster Hunters hunting a sea monster.</value>
+        <value region_start="0|46" region_end="17|50" region_include="mercenaries|military">Hired privateers who are working for a nearby army.</value>
+        <value>Refugees who left their lands.</value>
+        <value>Adventurers who are on a grand quest.</value>
+        <value>Sailors working simple jobs.</value>
+        <value>Monsters who have taken hold of the ship.</value>
+        <value>Fiends who have taken hold of the ship.</value>
+        <value region_start="0" region_end="7" region_include="nobleman">A noble and his bodyguards.</value>
+        <value>Sailors trying to make a new living on the sea.</value>
+        <value>Traders who got way in over their heads.</value>
+    </table>
+    <table name="Power: The ship is powered by..." id="power">
+        <value>Sails only.</value>
+        <value>Sails and rowing.</value>
+        <value>Rowing.</value>
+        <value region_start="0" region_end="6" region_include="wizard">A mage manipulating the wind and water around the ship.</value>
+        <value>Sea creatures pulling the ship.</value>
+        <value>A magical engine.</value>
+        <value region_start="11" region_end="19" region_include="artifacts">An ancient artifact.</value>
+        <value>A water wheel engine.</value>
+        <value>Water/wind elementals.</value>
+        <value>A steampunk engine.</value>
+    </table>
+    <table name="Combat: The ship is combat uses..." id="combat">
+        <value>Nothing. The ship has no defences.</value>
+        <value>Prayer to their gods.</value>
+        <value>Harpoons, and pulls the enemy ships closer for boarding.</value>
+        <value>A battering ram.</value>
+        <value>Magical energy cannons.</value>
+        <value>Cannons.</value>
+        <value>Catapults.</value>
+        <value>Trebuchets.</value>
+        <value>Archers.</value>
+        <value>Great crossbows.</value>
+        <value>Boarding parties.</value>
+        <value>Elemental magic.</value>
+        <value>Fiendish magic.</value>
+        <value>Bombs thrown from crew.</value>
+        <value>Smaller ships with boarders.</value>
+        <value>Illusions and mind games.</value>
+        <value>Spears.</value>
+        <value>Spikes on the side of the ship.</value>
+        <value>Creatures catapulted at the enemy.</value>
+        <value>Hexes and curses.</value>
+    </table>
+    <table name="Trait: The ship is strange because..." id="trait">
+        <value>It has a large garden filled with trees, flowers and animals.</value>
+        <value>The crew is all undead, cursed to travel the seas.</value>
+        <value>The crew worships a kraken and the crew has become mutated sea creatures since.</value>
+        <value>The crew all happens to be cannibals.</value>
+        <value>Sea birds constantly circle the ship.</value>
+        <value>Everyone on the ship is one gender and hates the other.</value>
+        <value>The crew seems to have stolen the ship from somewhere else.</value>
+        <value>The ship looks like it’s just been in a terrible fight.</value>
+        <value>It looks clumsily built.</value>
+        <value>The crew all act like nobles and dress in expensive clothing.</value>
+        <value>The crew have some kind of blood lust.</value>
+        <value>There’s a large amount of animals on the ship.</value>
+        <value>The crew is being mind controlled by something.</value>
+        <value region_start="33" region_end="40" region_include="disease">The crew is all suffering from a disease.</value>
+        <value>The crew is starving.</value>
+        <value>The ship is surrounded by mist.</value>
+        <value region_start="37" region_end="45" region_include="artifacts">The ship is carrying a very powerful artifact.</value>
+        <value>The ship is being chased.</value>
+        <value>The ship is dirty and rotting.</value>
+        <value>The ship is booming out loud music.</value>
+    </table>
+    <table name="Captain: The captain is..." id="captain">
+        <value>Not there, the ship has been running without a captain.</value>
+        <value region_start="11" region_end="17" region_include="wizard">A powerful wizard.</value>
+        <value>A brawler who fights anyone in fist fights to prove his strength.</value>
+        <value region_start="0" region_end="9" region_include="paladin">A paladin bound by godly honour.</value>
+        <value>A war-forged or similar construct.</value>
+        <value region_start="2" region_end="7" region_include="druid">A druid of the sea.</value>
+        <value>A different race than the rest of the crew.</value>
+        <value>Coated in scars and battle wounds.</value>
+        <value region_start="14" region_end="18" region_include="bard">A charismatic bard.</value>
+        <value>Silent and slow to trust.</value>
+        <value>Cursed by something horrific.</value>
+        <value>Newly appointed.</value>
+        <value>On a secret mission.</value>
+        <value>On the warpath.</value>
+        <value>Trying to make a lot of money.</value>
+        <value>Horrifically ugly.</value>
+        <value>Amazingly beautiful.</value>
+        <value>Obnoxiously short.</value>
+        <value>Blind, has two eyepatches.</value>
+        <value>Going to betray everyone.</value>
+    </table>
+    <table name="Vignettes, encounters, and color" id="vignette">
+        <value>The dolphins riding the bow waves squeak suddenly and flee</value>
+        <value>A red dawn spooks the sailors</value>
+        <value>A crossing the equator ceremony. The PCs are &quot;introduced&quot; into Neptune's court</value>
+        <value>A woman stares mournfully at the sea. She seems an unlikely passenger</value>
+        <value region_start="0" region_end="8" region_include="sailor">A sailor off duty has a fishing rod cast over the side and a pail of fish beside him</value>
+        <value>The captain unexpectedly approaches the PCs and demands to know what they are doing in this part of the ship</value>
+        <value>The wooden creaking of the hulls sounds ominous to the land lubbers</value>
+        <value>A howling storm can be seen in the distance</value>
+        <value>The captain stares with steely eyes into a spyglass then turns to his men with a look of grim resolve</value>
+        <value>The masts of another ship are visible in the distance</value>
+        <value>Flotsam from a wreck is seen in the distance. Men cling to bits and pieces. The captain explains there is a reef there, and refuses to approach</value>
+        <value>An imperial courier approaches the ship in a port, and the captain regrets to inform his passengers there has been a change in destination</value>
+        <value region_start="0" region_end="7" region_include="prates">Pirates approach and greet the captain as an old friend</value>
+        <value>The sun rises bright and clear, and the winds pick up, a good omen for the day</value>
+        <value>Land birds are sighted in the distance where there should be none</value>
+        <value>At the next stop in port the sailors sing a batch of work songs the bard has never heard before</value>
+        <value>A storm is sighted coming this way. The captain sends his first mate down below to &quot;make sure the cargo doesn't escape&quot;</value>
+        <value>A group of sailors is being flogged at the mast for breaking into the wine supplies</value>
+        <value>A group of sailors is being flogged at the mast for something the party rogue actually stole</value>
+        <value>Someone in the party overhears whispers of mutiny</value>
+    </table>
+    <member name="Pirate" include="pirate" />
+    <member name="Sailor" include="sailor" />
+    <member name="Mercenary" include="mercenary" />
+</category>

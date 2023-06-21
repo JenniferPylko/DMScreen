@@ -1,0 +1,72 @@
+        <category name="Breakfast at a Country Inn" id="breakfast_inn">
+            <table name="Main course..." id="main">
+                <value>Scrambled eggs.</value>
+                <value>Fried eggs.</value>
+                <value>Boiled eggs.</value>
+                <value>Poached eggs.</value>
+                <value>Smoked ham.</value>
+                <value>Honey ham.</value>
+                <value>Hard cheese.</value>
+                <value>Soft cheese.</value>
+                <value>Hot porridge.</value>
+                <value>Cold porridge.</value>
+                <value>Thin porridge.</value>
+                <value>Warm gruel.</value>
+            </table>
+            <table name="...with..." id="main_with">
+                <value>Soggy bacon.</value>
+                <value>Chewy bacon.</value>
+                <value>Crispy bacon.</value>
+                <value>Thick-cut bacon.</value>
+                <value>Sweet sausage.</value>
+                <value>Mild sausage.</value>
+                <value>Spicy sausage.</value>
+                <value>Hot sausage.</value>
+                <value>Sour yogurt.</value>
+                <value>Sweetened yogurt.</value>
+            </table>
+            <table name="...and..." id="main_and">
+                <value>Fried potatoes.</value>
+                <value>Boiled potatoes.</value>
+                <value>Tomatoes.</value>
+                <value>Mushrooms.</value>
+                <value>Sweet peppers.</value>
+                <value>Spinach.</value>
+                <value>Sweet onions.</value>
+                <value>Red onions.</value>
+            </table>
+            <table name="Side dish..." id="side">
+                <value>Corn bread.</value>
+                <value>Corn mash.</value>
+                <value>Fresh bread.</value>
+                <value>Crusty bread.</value>
+                <value>Dry toast.</value>
+                <value>Buttered toast.</value>
+                <value>Pumpernickel bread.</value>
+                <value>Pretzel bread.</value>
+                <value>Fried egg.</value>
+                <value>Extra bacon.</value>
+                <value>Sharp cheese.</value>
+                <value>Pungent cheese.</value>
+            </table>
+            <table name="...with..." id="side_with">
+                <value>Apples.</value>
+                <value>Cherries.</value>
+                <value>Blueberries.</value>
+                <value>Strawberries.</value>
+                <value>Pears.</value>
+                <value>Blackberries.</value>
+            </table>
+            <table name="Beverage..." id="beverage">
+                <value>Water.</value>
+                <value>Brown ale.</value>
+                <value>Red ale.</value>
+                <value>Porter.</value>
+                <value>Stout.</value>
+                <value>Spiced wine.</value>
+                <value>Red wine.</value>
+                <value>Milk.</value>
+                <value>Coffee.</value>
+                <value>Tea.</value>
+            </table>
+        </category>

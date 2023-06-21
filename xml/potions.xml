@@ -1,0 +1,614 @@
+<category name="Potion" id="potions">
+    <table name="This is a..." id="potion_is">
+        <value>Potion.</value>
+        <value>Elixir</value>
+        <value>Draught</value>
+        <value>Vial</value>
+        <value>Philter</value>
+        <value>Tonic</value>
+        <value>Brew</value>
+        <value>Ichor</value>
+        <value>Juice</value>
+        <value>Concoction</value>
+    </table>
+    <table name="Effect: The potion's main effect is..." id="potion_effect">
+        <value>Healing. It instantly regenerates some health when drank.</value>
+        <value>Vigor. Gives temporary health when drank.</value>
+        <value>Vitality. It slowly regenerates health over a period of some hours.</value>
+        <value>Might. It gives a bonus to attack rolls after drinking.</value>
+        <value>Courage. Gives immunity to fear and some temporary inspiration.</value>
+        <value>Giant Strength. It gives the user much more strength.</value>
+        <value>Flame Resistance. It gives resistance to fire damage.</value>
+        <value>Cold Resistance. It gives resistance to cold damage.</value>
+        <value>Necro Resistance. Gives resistance to necrotic damage.</value>
+        <value>Radiant Resistance. Gives resistance to radiant damage.</value>
+        <value>Stoneskin. Gives resistance to martial damage.</value>
+        <value>Acid Resistance. Gives resistance to acid.</value>
+        <value>Lightning Resistance. Gives resistance to lightning damage.</value>
+        <value>Succubus Charm. Makes the drinker irresistible to nearby people.</value>
+        <value>Shielding. Gives the user a magical shield of energy.</value>
+        <value>Flame Breath. Gives the user fire breath for a short time.</value>
+        <value>Growth. Makes the user double in size.</value>
+        <value>Shrinking. Makes the user half in size.</value>
+        <value>Comprehension. Lets the user understand all languages.</value>
+        <value>Fertility. Makes the user very fertile, almost certain to make a baby under its effects!</value>
+        <value>Intimidation. Gives the user a huge booming voice that terrifies those around.</value>
+        <value>Luck. It gives the user a temporary boost to luck.</value>
+        <value>Mana. Gives the user more magical power to cast with.</value>
+        <value>Arcane. Gives the user more powerful spells.</value>
+        <value>Animal form. Makes the user turn into a random animal.</value>
+        <value>Dreams. Makes the user get lost in a hallucinary dream world of their perfect dream.</value>
+        <value>Nightmares. Makes the user get lost in a hallucinary dream world of their worst nightmares.</value>
+        <value>Stamina. Gives the user more stamina and constitution.</value>
+        <value>Fleet foot. Makes the user have more speed.</value>
+        <value>Knowledge. Increases the users intelligence temporarily.</value>
+        <value>The Bard. Increases the users charisma and charm temporarily.</value>
+        <value>Disguise. Changes the users form to a disguised form of any race and appeance.</value>
+        <value>Feast. Removes all hunger and thirst from the target.</value>
+        <value>Youth. Makes the user grow some years younger.</value>
+        <value>Age. Makes the user grow some years older.</value>
+        <value>Furnace. Makes the user radiate with a damaging aura.</value>
+        <value>Eagle Sight. Gives the user strong vision and a bonus to perception.</value>
+        <value>Health. Cures all diseases and illnesses.</value>
+        <value>Invulnerability. Freezes the user in stasis that makes them immune to damage but they cannot move or act.</value>
+        <value>Riddle me gone. Gives the user the cure to a single riddle.</value>
+        <value>Horrifying appearance. Makes the user look more ugly for a time.</value>
+        <value>Beautiful appearance. Makes the user appear more attractive for a time.</value>
+        <value>Swordsmanship. Makes the user more effective and versatile with a blade.</value>
+        <value>Bowmanship. Makes the user more effective with a bow or ranged weapon.</value>
+        <value>Nymph Breath. Gives water breathing.</value>
+        <value>Midas. Makes the user turn things to gold.</value>
+        <value>Berserker. Makes the user rage with great strength.</value>
+        <value>Utter Hatred. Makes the user have bonuses against a particular type of enemy.</value>
+        <value>Oracle. Lets the user divinate the future.</value>
+        <value>Demonic Leech. Heals a portion of all damage the user deals.</value>
+        <value>Fey Nature. Lets the user become one with animals and nature around them.</value>
+        <value>Tracelessness. Makes the user very hard to follow.</value>
+        <value>Gracefulness. Makes the user have a better acrobatics skill.</value>
+        <value>Goblin Climb. Gives the user a bonus to climbing.</value>
+        <value>Dead Ringer. Makes the user appear completely dead to all magic.</value>
+        <value>One Leafed Clover. Gives the user worst luck.</value>
+        <value>Possession. Lets the user gain control of a nearby creature, their body comatosed while they do.</value>
+        <value>Owls Wake. Makes the user need no sleep for a time.</value>
+        <value>Hawks Flight. Lets the user fly.</value>
+        <value>Peace. Makes the user very calm and unable to harm others.</value>
+        <value>Rejuvenation. Heals a single scar or bad injury on the user such as a missing arm.</value>
+        <value>Sphinxes Truth. Makes the user tell the truth.</value>
+        <value>Serpent Tongue. Makes the user only able to lie.</value>
+        <value>Navigation. Makes the user unable to get lost and find where they need.</value>
+        <value>Hook Horror. The users hands become sharp weaponised blades.</value>
+        <value>Schaffensfreude. Makes the enemies take damage as they deal it to the user.</value>
+        <value>Invisibility. Makes the user invisible.</value>
+        <value>Wild magic. Taps into wild magic making an absolutely random thing happen.</value>
+        <value>Fame. Makes the user more famous.</value>
+        <value>Goats Trek. Makes the user immune to the toils of long travels and bad weather.</value>
+        <value>Gargoyle Toughness. Increases the users constitution.</value>
+        <value>Atomic Clock. Lets the user know the exact tme and date.</value>
+        <value>Transmutation. Lets the user have the ability to change somethings properties.</value>
+        <value>Iron Skin. Turns the users skin to metal giving them many resistances.</value>
+        <value>Sex Change. Changes the users gender.</value>
+        <value>Race Change. Changes the users race.</value>
+        <value>Musical Breath. Makes the user say everything in song, and fey music follows them in the air.</value>
+        <value>Utter Understanding. Makes the user know very intimately about one exact thing. Random, or they can decide.</value>
+        <value>Split Form. The user turns into two or three tiny versions of themselves and controls them all.</value>
+        <value>Flavour. Makes anything and everything taste amazing!</value>
+        <value>Glimmer. Makes the user and its gear instantly clean and as good looking as possible.</value>
+        <value>Love. Makes the user and someone else fall in love.</value>
+        <value>Poison. Poisons the user, weakening them.</value>
+        <value>Rebirth. Resurrects the user if they die soon after drinking.</value>
+        <value>Elemental form. Turns the user to an elemental form relevant to their personality.</value>
+        <value>True form. Turns the user into a familiar like creature similar to their personality.</value>
+        <value>Gods Touch. Gives the user a holy connection to their god or fiendish deity.</value>
+        <value>Antidepressant. Does what it says on the tin.</value>
+        <value>Ghostly Form. Makes the user intangible and able to phase through objects.</value>
+        <value>Artisans Skill. Gives the user skill in a particular art temporarily.</value>
+        <value>Godly form. Improves all stats.</value>
+        <value>Bless Weapon. Makes the users weapons do more damage.</value>
+        <value>Euphoria. Makes the user feel amazing and trip out.</value>
+        <value>Bodyguard. Creates a spectral bodyguard for a short time who obeys orders.</value>
+        <value>Babelfish. Lets the user speak any language but not understand it.</value>
+        <value>Preservation. Stops whatever its poured on from rotting or degrading.</value>
+        <value>Fear. Makes the user terrified.</value>
+        <value>Night vision. Gives the ability to see in the dark.</value>
+        <value region_start="33" region_end="38" region_include="__noun__">Tracking. Lets the user track an enemy.</value>
+        <value>Cure-all. Cures any status effects.</value>
+    </table>
+    <table name="Strength: The potion's strength is..." id="potion_strength">
+        <value>Regular with a slight side effect.</value>
+        <value>Regular with no side effect.</value>
+        <value>Regular with a strong side effect.</value>
+        <value>Minor with a strong side effect.</value>
+        <value>Minor with a slight side effect.</value>
+        <value>Major with a strong side effect.</value>
+        <value>Major with a small side effect.</value>
+        <value>A poison. Almost no positive affect all side effect.</value>
+        <value>Temporary but strong and wears off quickly.</value>
+        <value>Seemingly permanent.</value>
+    </table>
+    <table name="Side Effect: The potion also causes (usually) temporary..." id="potion_temporary">
+        <value>Nothing bad at all!</value>
+        <value>Puts the user to sleep.</value>
+        <value>Rapid hair growth all over the body.</value>
+        <value>Bleeding from the eyes.</value>
+        <value>Vivid hallucinations.</value>
+        <value>Flashbacks of your own eventual demise.</value>
+        <value>The skin to crack and appear distorted.</value>
+        <value>Spots to grow on the skin.</value>
+        <value>Diarrhoea.</value>
+        <value>Vomiting.</value>
+        <value>Blurred Vision.</value>
+        <value>Blindness.</value>
+        <value>Deafness.</value>
+        <value>Mutism.</value>
+        <value>Health loss via rapid bleeding.</value>
+        <value>A sudden horrific accent.</value>
+        <value>The irresistible urge to dance.</value>
+        <value>The hearing of demons.</value>
+        <value>Loss of balance.</value>
+        <value>Everything tasting like dirt for some time.</value>
+        <value>Excessive drooling.</value>
+        <value>Loss of intelligence.</value>
+        <value>Loss of strength.</value>
+        <value>Loss of speed.</value>
+        <value>Loss of charisma.</value>
+        <value>Genuine happiness.</value>
+        <value>Hunger.</value>
+        <value>Thirst.</value>
+        <value>Trouble breathing.</value>
+        <value>Sudden Moustache.</value>
+        <value>Poisoning.</value>
+        <value>Petrification.</value>
+        <value>Stunning.</value>
+        <value>Immobilisation.</value>
+        <value>Increased libido.</value>
+        <value>Fidgeting.</value>
+        <value>Itchiness.</value>
+        <value>Rashes.</value>
+        <value>Attracts bears.</value>
+        <value>Magically covers in dirt.</value>
+        <value>Horrifying stench.</value>
+        <value>Baldness.</value>
+        <value>Swelling.</value>
+        <value>Loss of a random item.</value>
+        <value>Curses.</value>
+        <value>Damage.</value>
+        <value>Weakness to a magical damage type.</value>
+        <value>Weakness to physical damage.</value>
+        <value>Feelings of Guilt</value>
+        <value>Feelings of Anxiety.</value>
+        <value>Feelings of Shame.</value>
+        <value>Sneezing.</value>
+        <value>Uncontrollable crying.</value>
+        <value>Need to sing heroic music.</value>
+        <value>Urge to hug.</value>
+        <value>Kleptomania.</value>
+        <value>Burping.</value>
+        <value>Loss of smell.</value>
+        <value>Insomnia.</value>
+        <value>Paranoia.</value>
+        <value>Bad luck.</value>
+        <value>Summons imps that want to kill you.</value>
+        <value>Summons angry bees.</value>
+        <value>Fear of something.</value>
+        <value>Temporary madness.</value>
+        <value>Relaxation.</value>
+        <value>Appreciation of colours and sound.</value>
+        <value>Tripping the hell out.</value>
+        <value>Painful lust.</value>
+        <value>Light headedness.</value>
+        <value>Increased confidence.</value>
+        <value>Recklessness.</value>
+        <value>Rage.</value>
+        <value>Sadness.</value>
+        <value>Dizziness.</value>
+        <value>Pain.</value>
+        <value>Slight possession.</value>
+        <value>Allergic reaction to your favourite food.</value>
+        <value>Strong believe you’re someone else.</value>
+        <value>Severe debt.</value>
+        <value>Grumpiness.</value>
+        <value>Muscle spasms.</value>
+        <value>A bloated feeling.</value>
+        <value>A cold.</value>
+        <value>A fever.</value>
+        <value>Becoming strangely light.</value>
+        <value>Weakness.</value>
+        <value>The urge to fight.</value>
+        <value>The need to make friends.</value>
+        <value>Nausea.</value>
+        <value>Mood swings.</value>
+        <value>Addiction.</value>
+        <value>Need for booze.</value>
+        <value>Drunkeness.</value>
+        <value>Coughing.</value>
+        <value>Uncontrollable babbling.</value>
+        <value>Slight aches.</value>
+        <value>A bad taste for some time.</value>
+        <value>Giddiness.</value>
+        <value>Laughter.</value>
+    </table>
+    <table name="Container: The potion is in a..." id="potion_in">
+        <value>A conical smooth glass bottle.</value>
+        <value>A square glass bottle.</value>
+        <value>A not quite watertight leather waterskin.</value>
+        <value>A stone flask.</value>
+        <value>A metal thermos.</value>
+        <value>A glass syringe.</value>
+        <value>A small medical vial.</value>
+        <value>A small shot sized bottle.</value>
+        <value>A large metal bottle.</value>
+        <value>A capped horn.</value>
+        <value>An ornate very decorated glass bottle.</value>
+        <value>A geometric diamond shaped bottle.</value>
+        <value>A translucent long wine bottle.</value>
+        <value>A translucent beer bottle.</value>
+        <value>A leather pouch.</value>
+        <value>An inhaler like spray bottle.</value>
+        <value>A coloured bottle.</value>
+        <value>A bone flask.</value>
+        <value>A small metal vial.</value>
+        <value>A large bottle that can be swigged several times.</value>
+    </table>
+    <table name="Appearance: The potion looks..." id="potion_looks">
+        <value>Clear.</value>
+        <value>Blue.</value>
+        <value>Green.</value>
+        <value>Red.</value>
+        <value>Pale Green.</value>
+        <value>Pink.</value>
+        <value>Light Blue.</value>
+        <value>White.</value>
+        <value>Black.</value>
+        <value>Dark Grey.</value>
+        <value>Light grey.</value>
+        <value>Yellow.</value>
+        <value>Orange.</value>
+        <value>Gold.</value>
+        <value>Rainbow.</value>
+        <value>Bronze.</value>
+        <value>Metallic.</value>
+        <value>Purple.</value>
+        <value>Brown.</value>
+        <value>Dark Red.</value>
+    </table>
+    <table name="Appearance 2: With..." id="potion_looks_with">
+        <value>Flecks of colour.</value>
+        <value>Swirls of colour.</value>
+        <value>Fizzing bubbles.</value>
+        <value>Bubbles suspended in it.</value>
+        <value>Some kind of bone floating in it.</value>
+        <value>Leaves and flowers in it.</value>
+        <value>Two separating liquid.</value>
+        <value>A bright glow.</value>
+        <value>A soft glow.</value>
+        <value>Stripes of colour.</value>
+        <value>Translucency.</value>
+        <value>A cloudy murkiness.</value>
+        <value>Blood within it.</value>
+        <value>Dirt floating in it.</value>
+        <value>Chunks of metal in it.</value>
+        <value>Some type of gore from a slain creature.</value>
+        <value>Steam coming from it.</value>
+        <value>A face in the liquid.</value>
+        <value>Constantly moving and shifting liquid.</value>
+        <value>A constant heat.</value>
+    </table>
+    <table name="Texture: The potion is..." id="potion_texture">
+        <value>Thick and sludgy.</value>
+        <value>Thin and watery.</value>
+        <value>Airy and bubbly.</value>
+        <value>Slimey.</value>
+        <value>Almost solid.</value>
+        <value>Oily.</value>
+        <value>Chunky.</value>
+        <value>Bitty.</value>
+        <value>Milky.</value>
+        <value>Almost gaseous.</value>
+    </table>
+    <table name="Smell: The potion smells like..." id="potion_smell">
+        <value>Nothing at all.</value>
+        <value>Sulphur.</value>
+        <value>Fresh air.</value>
+        <value>Baking cookies.</value>
+        <value>Flowers.</value>
+        <value>Rotting meat.</value>
+        <value>Egg.</value>
+        <value>Rotten eggs.</value>
+        <value>Fresh bread.</value>
+        <value>Blood.</value>
+        <value>Home.</value>
+        <value>Vomit.</value>
+        <value>Garlic.</value>
+        <value>Fruit.</value>
+        <value>Chocolate.</value>
+        <value>Beer.</value>
+        <value>Smoke.</value>
+        <value>Wood.</value>
+        <value>Death.</value>
+        <value>Orc.</value>
+        <value>Wet dog.</value>
+        <value>Wet goblin.</value>
+        <value>Perfume.</value>
+        <value>Cheap perfume.</value>
+        <value>Musk.</value>
+        <value>Garbage.</value>
+        <value>Sand.</value>
+        <value>The Forest.</value>
+        <value>Nuts.</value>
+        <value>Acidic.</value>
+        <value>Spicy.</value>
+        <value>Minty.</value>
+        <value>Of chemicals.</value>
+        <value>Dirt.</value>
+        <value>Of something bad flavoured to taste better.</value>
+        <value>Alcohol.</value>
+        <value>Sugar.</value>
+        <value>A damp cave.</value>
+        <value>Strange.</value>
+        <value>Indescribable but nice.</value>
+        <value>Indescribable but horrid.</value>
+        <value>Rain.</value>
+        <value>Medical.</value>
+        <value>Bacon.</value>
+        <value>Coffee.</value>
+        <value>Cut grass.</value>
+        <value>Vanilla.</value>
+        <value>The sea.</value>
+        <value>Roast meat.</value>
+        <value>Festive.</value>
+        <value>Lavender.</value>
+        <value>Lilac and Gooseberries.</value>
+        <value>A fresh baby.</value>
+        <value>A new car.</value>
+        <value>Cirtrus.</value>
+        <value>Leather.</value>
+        <value>Metal.</value>
+        <value>A forge.</value>
+        <value>Fresh Cake.</value>
+        <value>Paint.</value>
+        <value>Wine.</value>
+        <value>Polish.</value>
+        <value>Cheese.</value>
+        <value>Fish.</value>
+        <value>Compost.</value>
+        <value>The sewers.</value>
+        <value>Apples.</value>
+        <value>Holy oils.</value>
+        <value>Massage oil.</value>
+        <value>A brothel.</value>
+        <value>Old fruit.</value>
+        <value>Roses.</value>
+        <value>Something that stirs memories.</value>
+        <value>Gingerbread.</value>
+        <value>Cinnamon.</value>
+        <value>Candy.</value>
+        <value>Fumes.</value>
+        <value>Bark.</value>
+        <value>Chicken.</value>
+        <value>Beef.</value>
+        <value>Human Flesh.</value>
+        <value>Gunpowder.</value>
+        <value>A storm.</value>
+        <value>Success.</value>
+        <value>Gold.</value>
+        <value>Mayonnaise.</value>
+        <value>Barbeque.</value>
+        <value>Salt.</value>
+        <value>Pepper.</value>
+        <value>Aromatic spices.</value>
+        <value>Fruit punch.</value>
+        <value>Water.</value>
+        <value>Fresh water.</value>
+        <value>Stagnant water.</value>
+        <value>Mud.</value>
+        <value>A colour.</value>
+        <value>Music.</value>
+        <value>The end of the world.</value>
+        <value>Magically the worst thing to you</value>
+        <value>Magically the most desirable thing to you.</value>
+    </table>
+    <table name="Taste: The potion tastes like..." id="potion_taste">
+        <value>Nothing at all.</value>
+        <value>Sulphur.</value>
+        <value>Fresh air.</value>
+        <value>Baking cookies.</value>
+        <value>Flowers.</value>
+        <value>Rotting meat.</value>
+        <value>Egg.</value>
+        <value>Rotten eggs.</value>
+        <value>Fresh bread.</value>
+        <value>Blood.</value>
+        <value>Home.</value>
+        <value>Vomit.</value>
+        <value>Garlic.</value>
+        <value>Fruit.</value>
+        <value>Chocolate.</value>
+        <value>Beer.</value>
+        <value>Smoke.</value>
+        <value>Wood.</value>
+        <value>Death.</value>
+        <value>Orc.</value>
+        <value>Wet dog.</value>
+        <value>Wet goblin.</value>
+        <value>Perfume.</value>
+        <value>Cheap perfume.</value>
+        <value>Musk.</value>
+        <value>Garbage.</value>
+        <value>Sand.</value>
+        <value>The Forest.</value>
+        <value>Nuts.</value>
+        <value>Acidic.</value>
+        <value>Spicy.</value>
+        <value>Minty.</value>
+        <value>Of chemicals.</value>
+        <value>Dirt.</value>
+        <value>Of something bad flavoured to taste better.</value>
+        <value>Alcohol.</value>
+        <value>Sugar.</value>
+        <value>A damp cave.</value>
+        <value>Strange.</value>
+        <value>Indescribable but nice.</value>
+        <value>Indescribable but horrid.</value>
+        <value>Rain.</value>
+        <value>Medical.</value>
+        <value>Bacon.</value>
+        <value>Coffee.</value>
+        <value>Cut grass.</value>
+        <value>Vanilla.</value>
+        <value>The sea.</value>
+        <value>Roast meat.</value>
+        <value>Festive.</value>
+        <value>Lavender.</value>
+        <value>Lilac and Gooseberries.</value>
+        <value>A fresh baby.</value>
+        <value>A new car.</value>
+        <value>Cirtrus.</value>
+        <value>Leather.</value>
+        <value>Metal.</value>
+        <value>A forge.</value>
+        <value>Fresh Cake.</value>
+        <value>Paint.</value>
+        <value>Wine.</value>
+        <value>Polish.</value>
+        <value>Cheese.</value>
+        <value>Fish.</value>
+        <value>Compost.</value>
+        <value>The sewers.</value>
+        <value>Apples.</value>
+        <value>Holy oils.</value>
+        <value>Massage oil.</value>
+        <value>A brothel.</value>
+        <value>Old fruit.</value>
+        <value>Roses.</value>
+        <value>Something that stirs memories.</value>
+        <value>Gingerbread.</value>
+        <value>Cinnamon.</value>
+        <value>Candy.</value>
+        <value>Fumes.</value>
+        <value>Bark.</value>
+        <value>Chicken.</value>
+        <value>Beef.</value>
+        <value>Human Flesh.</value>
+        <value>Gunpowder.</value>
+        <value>A storm.</value>
+        <value>Success.</value>
+        <value>Gold.</value>
+        <value>Mayonnaise.</value>
+        <value>Barbeque.</value>
+        <value>Salt.</value>
+        <value>Pepper.</value>
+        <value>Aromatic spices.</value>
+        <value>Fruit punch.</value>
+        <value>Water.</value>
+        <value>Fresh water.</value>
+        <value>Stagnant water.</value>
+        <value>Mud.</value>
+        <value>A colour.</value>
+        <value>Music.</value>
+        <value>The end of the world.</value>
+        <value>Magically the worst thing to you</value>
+        <value>Magically the most desirable thing to you.</value>
+    </table>
+    <table name="Label: The potion has a label showing..." id="potion_label">
+        <value>Its name and title in bold letters.</value>
+        <value>Its description in ornate elvish.</value>
+        <value>Its description in elvish with a relevant mythic story.</value>
+        <value>Its description on dwarven.</value>
+        <value>Dwarven runes.</value>
+        <value>Its description in gnomish.</value>
+        <value>Gnomish diagrams for its use.</value>
+        <value>The words USE ONLY IN EMERGENCIES scrawled on iti.</value>
+        <value>A mass produced label claiming the company has no fault for any side effects.</value>
+        <value>A mass produced label saying it’s a new flavour.</value>
+        <value>Very tiny print describing how the potion was made in great detail, around 1000 words.</value>
+        <value>Its name in Bold words in Giant.</value>
+        <value>Is scrawled off.</value>
+        <value>Has faded beyond reading.</value>
+        <value>Doesn’t seem to have one.</value>
+        <value>Its description and a random fact.</value>
+        <value>Its description and a small compliment to make your day better.</value>
+        <value>Its description and a joke.</value>
+        <value>Its description in infernal.</value>
+        <value>Its description in some ancient language.</value>
+        <value>All in some kind of symbols.</value>
+        <value>All in some kind of raised symbols for the blind to read.</value>
+        <value>Its description in elemental languages.</value>
+        <value>Its name and flavour.</value>
+        <value>Its name with a warning about side effects.</value>
+        <value>Its name and its recommended buying price.</value>
+        <value>Bloody prints all over it.</value>
+        <value>Name engraved into the container.</value>
+        <value>Its name glowing with minor magic.</value>
+        <value>A cartoony mascot.</value>
+        <value>A warning of an ancient curse.</value>
+        <value>Its name and description in invisible ink.</value>
+        <value>Its description in draconic.</value>
+        <value>Several different names and descriptions plastered over eachother.</value>
+        <value>A name of a completely different potion to what it does.</value>
+        <value>A title describing the exact opposite.</value>
+        <value>A money back guarantee.</value>
+        <value>A coupon for a free potion.</value>
+        <value>A living face looking around.</value>
+        <value>Its name and recipe for other alchemists.</value>
+        <value>A heartfelt love letter for someone.</value>
+        <value>A heartfelt hate letter for someone.</value>
+        <value>A persons name. The potion won't work unless asked by its name to do so.</value>
+        <value>A strange prophecy.</value>
+        <value>A small doodle.</value>
+        <value>A note saying DO NOT DRINK.</value>
+        <value>A passive aggressive note about other people drinking potions that don’t belong to them.</value>
+        <value>Brightly glowing letters.</value>
+        <value>That plays a very quiet sing song till the bottle is empty.</value>
+        <value>Ornate and beautiful designs.</value>
+        <value>Very practical designs.</value>
+        <value>Holy symbols.</value>
+        <value>Unholy symbols.</value>
+        <value>Fey symbols and sylvan writing.</value>
+        <value>A riddle, the lid not opening unless the riddle is solved.</value>
+        <value>Saying its designed for babies.</value>
+        <value>Saying that it shouldn’t be drank by anyone under 18.</value>
+        <value>A note saying its illegal contraband being confiscated.</value>
+        <value>A note saying the alchemist thinks it is its greatest work.</value>
+        <value>A note saying the alchemist is sorry for ever creating it.</value>
+        <value>A note saying that it never should have been made and copius blood stains over the bottle.</value>
+        <value>It says you’re being watched. When the person checks it instead says Just Kidding.</value>
+        <value>Its description in Druidic.</value>
+        <value>Its description in orcish</value>
+        <value>Its description in goblin.</value>
+        <value>Its description in Halfling.</value>
+        <value>Its description in Celestial.</value>
+        <value>Its description in Undercommon.</value>
+        <value>Its description in Deep speech.</value>
+        <value>Its description in strange arcane symbols.</value>
+        <value>A map of where the potion was made.</value>
+        <value>A small puzzle for kids.</value>
+        <value>A list of ingredients in their chemical forms.</value>
+        <value>A list of possible side effects as long as the bottle is.</value>
+        <value>A red X.</value>
+        <value>A sad face.</value>
+        <value>An angry face.</value>
+        <value>A happy face.</value>
+        <value>A healing symbol.</value>
+        <value>A cheesy pun potion name.</value>
+        <value>Growing with vines.</value>
+        <value>Growing with flowers.</value>
+        <value>Growing with crystals.</value>
+        <value>Growing with rock.</value>
+        <value>Shamanistic symbols and shavings.</value>
+        <value>No words just a single colour.</value>
+        <value>Water damage but a just legibale label.</value>
+        <value>A label as if it was some kind of present.</value>
+        <value>A label showing how many calories it is.</value>
+        <value>A warning about potion abuse and to only take in moderation.</value>
+        <value>A label with warnings and side effects all scribbled out.</value>
+        <value>That only shows the side effects.</value>
+        <value>A mysterious number.</value>
+        <value>A code name.</value>
+        <value>A few unrelated letters.</value>
+        <value>The name of one of the party members.</value>
+        <value>The name of the bad guy.</value>
+        <value>Crawling with bugs.</value>
+        <value>Covered in something unspeakable.</value>
+        <value>Covered in glitter. It gets everywhere.</value>
+    </table>
+</category>

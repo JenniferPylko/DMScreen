@@ -1,0 +1,22 @@
+<category name="Quartermaster" id="quartermaster">
+    <name name="The Quartermaster's name is..." />
+    <include name="Race" include="npc_race" />
+    <table name="The quartermaster is..." is="is">
+        <value region_start="14" region_end="26" region_include="__noun__">A member of a trading clan</value>
+        <value region_start="24" region_end="30" region_include="noblehouse">A member of a prominent family</value>
+        <value region_start="25" region_end="37" region_include="__noun__">A survivor of a terrible battle wound</value>
+        <value>Secretly a coward</value>
+    </table>
+    <table name="The quartermaster seeks someone to..." id="seeks">
+        <value>Obtain hard-to-get provisions</value>
+        <value>Purchase contraband items</value>
+        <value region_start="16" region_end="26" region_include="__noun__">Help win over a sweetheart</value>
+        <value>Share a drink and a laugh</value>
+    </table>
+    <table name="Currency: The quertermaster trades in..." id="trade">
+        <value>Coins</value>
+        <value>Gems and trinkets</value>
+        <value>Meat, foraged roots, and other provisions</value>
+        <value>Bones, scalps, teeth, or other grisly trophies</value>
+    </table>
+</category>

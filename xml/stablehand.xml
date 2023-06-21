@@ -1,0 +1,22 @@
+<category name="Stable Hand" id="stablehand">
+    <name name="The stable hand's name is..."/>
+    <include name="Race" include="npc_race" />
+    <table name="The stable hand is..." id="stablehand_is">
+        <value>A shady-looking character</value>
+        <value region_start="19|34" region_end="26|40" region_include="maidservant|castle">The son of another servant in the castle</value>
+        <value>A prisoner-of-war turned servant</value>
+        <value>A simple minded stable boy</value>
+    </table>
+    <table name="The stable hand has..." id="stablehand_has">
+        <value>An awkward gait</value>
+        <value>Incredibly large hands</value>
+        <value>Quite an odor</value>
+        <value>A patchy beard</value>
+    </table>
+    <table name="The stable hand wants to..." id="stablehand_wants">
+        <value>Earn a little silver</value>
+        <value>Avoid being kicked by a horse</value>
+        <value>Rise to the position of horse master</value>
+        <value>Pet the pretty horses</value>
+    </table>
+</category>

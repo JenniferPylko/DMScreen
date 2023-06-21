@@ -1,0 +1,168 @@
+<category name="Book" id="books">
+    <table name="The book's subject is..." id="book_subject">
+        <value>Healing tonics</value>
+        <value>Metallurgy</value>
+        <value>Pyromancy</value>
+        <value>Poisoncraft</value>
+        <value>Potionmaking</value>
+        <value>Recipes</value>
+        <value>Fortresses and palaces</value>
+        <value>Painting</value>
+        <value>Sketching</value>
+        <value>Sculpture</value>
+        <value>Stone masonry</value>
+        <value>Temples and tombs</value>
+        <value>Comets</value>
+        <value>Constellations</value>
+        <value>The moon</value>
+        <value>The sun</value>
+        <value>The stars</value>
+        <value>Strange phenomena</value>
+        <value>Domestic beasts</value>
+        <value>Beast habits</value>
+        <value>Beast handling</value>
+        <value>Beast husbandry</value>
+        <value>Poisonous beasts</value>
+        <value>Regional bestiary</value>
+        <value>Conjuring demons</value>
+        <value>Exorcising demons</value>
+        <value>Fiendish bargains</value>
+        <value>Fiendish bestiary</value>
+        <value>Fiendish realms</value>
+        <value>Fiendish symbols</value>
+        <value>Anthropomancy</value>
+        <value>Crystal gazing</value>
+        <value>Oneiromancy</value>
+        <value>Palm reading</value>
+        <value>Tarot cards</value>
+        <value>Tea leaves</value>
+        <value>Alchemical remedies</value>
+        <value>Anatomy</value>
+        <value>Herbal remedies</value>
+        <value>Prayers</value>
+        <value>Rituals</value>
+        <value>Surgery</value>
+        <value>Healing herbs</value>
+        <value>Mushrooms</value>
+        <value>Herbal poisons</value>
+        <value>Roots</value>
+        <value>Trees</value>
+        <value>Wildflowers</value>
+        <value>Ancient history</value>
+        <value>Cultural history</value>
+        <value>Economic history</value>
+        <value>Military history</value>
+        <value>Political history</value>
+        <value>Regional history</value>
+        <value>Ancient languages</value>
+        <value>Forbidden languages</value>
+        <value>Exotic languages</value>
+        <value>Grammar and punctuation</value>
+        <value>Translations</value>
+        <value>Traveler's phrases</value>
+        <value>Adventure fiction</value>
+        <value>Fairy tales</value>
+        <value id="folk_tales">Folk tales</value>
+        <value>Murder mystery</value>
+        <value>Romance fiction</value>
+        <value>Satire fiction</value>
+        <value>Gems</value>
+        <value>Metals</value>
+        <value>Mining sites</value>
+        <value>Mining strategy</value>
+        <value>Mineralogy (rocks)</value>
+        <value>Smithing</value>
+        <value>Heroic ballads</value>
+        <value>Love ballads</value>
+        <value>Bawdy tunes</value>
+        <value>Dirges and laments</value>
+        <value>Hymns</value>
+        <value>Musical theory</value>
+        <value>Necromatic animation</value>
+        <value>Necromancy (corpses)</value>
+        <value>Lichdom</value>
+        <value>Spirits and souls</value>
+        <value>Undead bestiary</value>
+        <value>Vampirism</value>
+        <value>Comedic plays</value>
+        <value>Dramatic plays</value>
+        <value>Historical plays</value>
+        <value>Romantic plays</value>
+        <value>Satirical plays</value>
+        <value>Tragic plays</value>
+        <value>Poetry (ballads)</value>
+        <value>Poetry (bawdy songs)</value>
+        <value>Poetry (epic poetry)</value>
+        <value>Poetry (hymns)</value>
+        <value>Poetry (love poetry)</value>
+        <value>Poetry (lyric poetry)</value>
+        <value>Prophecies and Opens (Apocalypse)</value>
+        <value>Prophecies and Opens (Astronomical events)</value>
+        <value>Prophecies and Opens (birds)</value>
+        <value>Prophecies and Opens (dreams)</value>
+        <value>Prophecies and Opens (visions)</value>
+        <value>Prophecies and Opens (weather)</value>
+        <value>Theology (afterlife)</value>
+        <value>Theology (rituals and practices)</value>
+        <value>Theology (religious history)</value>
+        <value>Theology (saints and martyrs)</value>
+        <value>Theology (sacred symbols)</value>
+        <value>Theology (sacred texts)</value>
+        <value>True magic (elementalism)</value>
+        <value>True magic (enchantment)</value>
+        <value>True magic (illusions)</value>
+        <value>True magic (summoning)</value>
+        <value>True magic (teleportation and travel)</value>
+        <value>True magic (warding)</value>
+        <value>Ancient Ruins</value>
+        <value>Exotic Travelogue</value>
+        <value>Economics and Taxation</value>
+        <value>Foreign Cultures</value>
+        <value>Regional landmarks and terrain</value>
+        <value>Trade Routes</value>
+        <value id="outerplanes">Outer Planes</value>
+    </table>
+    <table name="The book's condition is..." id="book_condition">
+        <value>Worn and tattered</value>
+        <value>Poor. An ink stain obscures a fair amount of the pages</value>
+        <value>Accidentally damaged. Various water damage around the edges but readable</value>
+        <value>Vandalized. It appears that a good dozen pages have been ripped out</value>
+        <value>Deliberately damaged. Towards the middle there is a section hollowed out. In this places you find a locket</value>
+        <value>Deliberately damaged. Towards the middle there is a section hollowed out. In this places you find a knife</value>
+        <value>Deliberately damaged. Towards the middle there is a section hollowed out. In this places you find a small hammer</value>
+        <value>Deliberately damaged. Towards the middle there is a section hollowed out. In this places you find a small scroll</value>
+        <value>Deliberately damaged. Towards the middle there is a section hollowed out. In this places you find a vial of mysterious liquid</value>
+        <value>Deliberately damaged. Towards the middle there is a section hollowed out. In this places you find a ring</value>
+        <value>Badly damaged. A lot of the ink has run through water damage and it is nearly illegible</value>
+        <value>Ancient. The pages crumble as they turn</value>
+        <value>Strange. The pages are blank?</value>
+        <value>Good, but used. There are handwritten notes in the margins of the pages</value>
+        <value>Pristine. You can smell the ink drying</value>
+    </table>
+    <table name="The book's cover is..." id="book_cover">
+        <value>Missing. The pages are bound with string woven through the holes near the spine</value>
+        <value>Stained leather. Some signs of wear</value>
+        <value>Wooden. The title is carved into the spine</value>
+        <value>Paperback</value>
+        <value>Animal hide. The fur is still on</value>
+        <value>Stone. Iron rings hold it together</value>
+        <value>Cast Iron. Hinges keep it bound</value>
+        <value>Leather with gemstones embedded in it</value>
+        <value>Leather with title branded on it</value>
+        <value>Leather with gilding on the spine</value>
+        <value>Torn off. It's kept together by a leather belt</value>
+        <value>Tree bark. Dried vine binds it.</value>
+    </table>
+    <table name="The book is..." id="book_is">
+        <value>A standalone volume. The author's only published work</value>
+        <value>A standalone volume. The author's only surviving work</value>
+        <value>A standalone volume, written by a prolific but obscure author</value>
+        <value>A standalone volume, written by a well-known author</value>
+        <value>The sequel to a book by the same author</value>
+        <value>A part of a series with 3-9 books</value>
+        <value>A single volume of a larger work with 4-15 volumes</value>
+        <value>An edition of a regularly published book with multiple authors</value>
+        <value>A collection of works by the same author</value>
+        <value>An anthology of works by several authors</value>
+    </table>
+</category>

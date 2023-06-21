@@ -1,0 +1,103 @@
+        <category name="Dinner at a Seaside Cafe" id="dinner_seasidecafe">
+            <table name="Tonight, we dine on..." id="dine">
+                <patterns>
+                    <pattern>{prep} {dish}</pattern>
+                </patterns>
+                <list type="prep">
+                    <item>Stewed</item>
+                    <item>Breaded</item>
+                    <item>Fried</item>
+                    <item>Battered</item>
+                    <item>Baked</item>
+                    <item>Brined</item>
+                    <item>Seared</item>
+                    <item>Peppered</item>
+                    <item>Salted</item>
+                    <item>Smoked</item>
+                </list>
+                <list type="dish">
+                    <item>clams</item>
+                    <item>crab</item>
+                    <item>lobster</item>
+                    <item>mussels</item>
+                    <item>oysters</item>
+                    <item>squid</item>
+                    <item>shrimp</item>
+                    <item>prawns</item>
+                    <item>chicken</item>
+                    <item>lamb</item>
+                    <item>mutton</item>
+                    <item>steak</item>
+                    <item>beef</item>
+                    <item>veal</item>
+                    <item>scallops</item>
+                    <item>artichokes</item>
+                    <item>eggplant</item>
+                    <item>sweet sausage</item>
+                    <item>mild sausage</item>
+                    <item>spicy sausage</item>
+                </list>
+            </table>
+            <table name="...with..." id="dine_wtih">
+                <value>Golden potatoes.</value>
+                <value>Red potatoes.</value>
+                <value>Long, thin pasta.</value>
+                <value>Short, broad pasta.</value>
+                <value>Curly pasta.</value>
+                <value>Spiral pasta.</value>
+                <value>Red beans.</value>
+                <value>White beans.</value>
+                <value>Garbanzo beans.</value>
+                <value>Rice.</value>
+            </table>
+            <table name="...and..." id="dine_and">
+                <value>Asparagus.</value>
+                <value>Broccoli.</value>
+                <value>Capers.</value>
+                <value>Scallions.</value>
+                <value>Small, sweet tomatoes.</value>
+                <value>Tomato wedges.</value>
+                <value>Black olives.</value>
+                <value>Green olives.</value>
+                <value>Red olives.</value>
+                <value>Peas.</value>
+                <value>Carrots.</value>
+                <value>Arugula.</value>
+            </table>
+            <table name="...dressed with..." id="dressed">
+                <value>Olive oil and basil.</value>
+                <value>Olive oil and oregano.</value>
+                <value>Olive oil and garlic.</value>
+                <value>Olive oil and lemon juice.</value>
+                <value>Olive oil and pungent cheese.</value>
+                <value>Olive oil and vinegar.</value>
+                <value>White wine sauce.</value>
+                <value>Red wine sauce.</value>
+                <value>Creamy cheese sauce.</value>
+                <value>Butter sage sauce.</value>
+                <value>Tomato sauce with basil.</value>
+                <value>Tomato sauce with garlic.</value>
+            </table>
+            <table name="Side dish..." id="side">
+                <value>Fresh bread.</value>
+                <value>Crusty bread.</value>
+                <value>Buttered bread.</value>
+                <value>Garlic bread.</value>
+                <value>A plate of olives.</value>
+                <value>A plate of almonds.</value>
+                <value>A plate of pistachios.</value>
+                <value>A plate of cheeses.</value>
+            </table>
+            <table name="Beverage..." id="beverage">
+                <value>Mediocre ale.</value>
+                <value>Strong coffee.</value>
+                <value>Coffee with milk.</value>
+                <value>Sour wine.</value>
+                <value>Sweet wine.</value>
+                <value>White wine.</value>
+                <value>Rosé.</value>
+                <value>Red wine.</value>
+                <value>Strong wine.</value>
+                <value>Brandy.</value>
+            </table>
+        </category>

@@ -1,0 +1,373 @@
+        <category name="Brothel" id="brothel">
+            <table name="The place is called..." id="called">
+                <value>Daises</value>
+                <value>The Don</value>
+                <value>Blinkers</value>
+                <value>The Prude's Suspenders</value>
+                <value>Gold's Dust</value>
+                <value>The Velvet Fang</value>
+                <value>The Whisper Home</value>
+                <value>The Hook</value>
+                <value>Over the River</value>
+                <value>Slooshes</value>
+                <value>The Rapid Rascal</value>
+                <value>Sthe Stoat</value>
+                <value>The Fidgety Ferret</value>
+                <value>Long Shaft</value>
+                <value>The Guards</value>
+                <value>Castity's</value>
+                <value>The Mask</value>
+                <value>The Red Dress</value>
+                <value>Jewels</value>
+                <value>Silken Flute</value>
+                <value>The Nag's Head</value>
+                <value>Drummers</value>
+                <value>Sailor's Choice</value>
+                <value>Blacksmith's Envy</value>
+                <value>The Nagging Wife</value>
+                <value>Colins Rubble</value>
+                <value>Dron's Beat</value>
+                <value>The Wink</value>
+                <value>Maggie's Horn</value>
+                <value>The Sun &amp; Cinder</value>
+                <value>The Oakworm</value>
+                <value>Tickle &amp; Feather</value>
+                <value>the Mistress</value>
+                <value>Madam Zersannies's</value>
+                <value>The King's Court</value>
+                <value>The Cursed Coin</value>
+                <value>Slit</value>
+                <value>The Maiden Head</value>
+                <value>The Rusty</value>
+                <value>The Silken Ferret</value>
+                <value>Long Legs</value>
+                <value>Elven Whispers</value>
+                <value>The Leg</value>
+                <value>False Suspenders</value>
+                <value>Aunt Fannies Bloomers</value>
+                <value>Final Rest</value>
+                <value>Cocks Crow</value>
+                <value>The Unblinking Eye</value>
+                <value>The Bountiful Bosom</value>
+                <value>Tuskers</value>
+                <value>The Thrusting Gentleman</value>
+                <value>Tally Hoes</value>
+                <value>Rutting</value>
+                <value>Pigs in Blankets</value>
+                <value>The Delicate Touch</value>
+                <value>Aphrodite's Wish</value>
+                <value>The Dirty Secret</value>
+                <value>Long Locks</value>
+                <value>Sweat</value>
+                <value>Brothel</value>
+                <value>Taters</value>
+                <value>The Swift Finish</value>
+                <value>Raisins</value>
+                <value>Cumberlands</value>
+                <value>The Missing Sausage</value>
+                <value>The Fool's Frolic</value>
+                <value>Dragons</value>
+                <value>The Bushel</value>
+                <value>Farmer's Oats</value>
+                <value>The Raised Brow</value>
+                <value>Genies</value>
+                <value>The Farfetched Feather</value>
+                <value>Junk</value>
+                <value>The Connoisseur's Choice</value>
+                <value>Colossus</value>
+                <value>The Smooth Ride</value>
+                <value>Bucking</value>
+                <value>The Great Big Globes</value>
+                <value>The Glimmeric</value>
+                <value>Loving Embrace</value>
+                <value>Choker's Necklace</value>
+                <value>The Grand Madame's Emporium of Fine Delicacies, Treats, and the Exotic</value>
+                <value>Thug's Retreat</value>
+                <value>Warriors' Return</value>
+                <value>Gold Gobblers</value>
+                <value>Cackling Croons</value>
+                <value>The Warty</value>
+                <value>Bessie's Best</value>
+                <value>Corset</value>
+                <value>Winkies</value>
+                <value>The Shagger</value>
+                <value>Port of Call</value>
+                <value>The Home Away from Hoes</value>
+                <value>Smooth</value>
+                <value>The Maiden Fair</value>
+                <value>The Bit</value>
+                <value>Hosted</value>
+                <value>Glamorous Delights</value>
+                <value>Happily Ever After</value>
+                <value>Sultry Stare</value>
+                <value>The Full Flush</value>
+                <value>The Lighted Candle</value>
+                <value>The Red Candle</value>
+                <value>The Raised Candle</value>
+                <value>The Dancing Flame</value>
+                <value>The Candlelight Resort</value>
+                <value>The Sweetest Cherry</value>
+                <value>Cherry's</value>
+                <value>Cherry Pie</value>
+                <value>The Velvet Cherry</value>
+                <value>The Golden Cherry</value>
+                <value>The Silk Curtain</value>
+                <value>The Red Curtain</value>
+                <value>The Lacy Curtain</value>
+                <value>The Welcoming Curtain</value>
+                <value>The Satin Curtain</value>
+                <value>Satin Dolls</value>
+                <value>Sweet Dolls</value>
+                <value>Porcelain Dolls</value>
+                <value>The Sugar Doll</value>
+                <value>Dancers and Dolls</value>
+                <value>The Red Door</value>
+                <value>The Golden Door</value>
+                <value>The Silver Door</value>
+                <value>The Maiden's Door</value>
+                <value>The Dancer's Door</value>
+                <value>Lover's Embrace</value>
+                <value>Lady's Embrace</value>
+                <value>The Sweetest Embrace</value>
+                <value>The Warmest Embrace</value>
+                <value>Welcoming Embrace</value>
+                <value>The Satin Glove</value>
+                <value>Silky Gloves</value>
+                <value>Lacy Gloves</value>
+                <value>The Lady's Glove</value>
+                <value>The Maiden's Glove</value>
+                <value>The Shining Heart</value>
+                <value>Heart of Gold</value>
+                <value>Pink Hearts</value>
+                <value>Lacy Hearts</value>
+                <value>Sweetheart's</value>
+                <value>The Maiden's Heart</value>
+                <value>The Night House</value>
+                <value>The Pink House</value>
+                <value>The Porcelain House</value>
+                <value>The Welcoming House</value>
+                <value>The Cozy House</value>
+                <value>The Warmest Lamp</value>
+                <value>The Red Lamp</value>
+                <value>The Pink Lamp</value>
+                <value>The Soft Lamp</value>
+                <value>The Lady's Lamp</value>
+                <value>Genie in a Bottle</value>
+                <value>The Lady's Kiss</value>
+                <value>The Maiden's Kiss</value>
+                <value>The Night's Kiss</value>
+                <value>Cozy Kisses</value>
+                <value>Satin Kisses</value>
+                <value>Peach's Place</value>
+                <value>The Peach</value>
+                <value>The Prettiest Peach</value>
+                <value>The Sweetest Peach</value>
+                <value>The Golden Peach</value>
+                <value>The Silky Purse</value>
+                <value>The Satin Purse</value>
+                <value>The Lady's Purse</value>
+                <value>The Dancer's Purse</value>
+                <value>The Pink Purse</value>
+                <value>The Maiden's Purse</value>
+                <value>The Lover's Purse</value>
+                <value>The Lover's Room</value>
+                <value>The Night Room</value>
+                <value>The Warm Room</value>
+                <value>The Red Room</value>
+                <value>The Silver Slipper</value>
+                <value>The Satin Slipper</value>
+                <value>The Silk Slipper</value>
+                <value>The Red Slipper</value>
+                <value>The Dancer's Slipper</value>
+                <value>The Lacy Skirt</value>
+                <value>The Welcoming Skirt</value>
+                <value>The Pink Skirt</value>
+                <value>The Dancer's Skirt</value>
+                <value>The Lady's Skirt</value>
+                <value>The Maiden's Shoe</value>
+                <value>The Red Shoe</value>
+                <value>Cozy Shoes</value>
+                <value>Lover's Shoes</value>
+                <value>Silver Shoes</value>
+                <value>Silky Stockings</value>
+                <value>The Red Stocking</value>
+                <value>The Lacy Stocking</value>
+                <value>The Lady's Stocking</value>
+                <value>The Softest Stockings</value>
+                <value>The Maiden's Veil</value>
+                <value>The Lacy Veil</value>
+                <value>The Silk Veil</value>
+                <value>The Lover's Veil</value>
+                <value>The Veil of Night</value>
+                <value>Soft-Lighted Window</value>
+                <value>The Shining Window</value>
+                <value>The Lighted Window</value>
+                <value>The Pink Window</value>
+                <value>The Welcoming Window</value>
+            </table>
+            <table name="The brothel is located..." id="located">
+                <value>In the slums</value>
+                <value>In a shantytown</value>
+                <value>In a well-to-do residential neighborhood</value>
+                <value>In the docks district</value>
+                <value>In the riverfront district</value>
+                <value>In the barracks district</value>
+                <value>In an ally off a foreign bazaar</value>
+                <value>In an ally off the main market square</value>
+                <value region_start="17" region_end="25" region_include="temple">In the shadow of a temple</value>
+                <value region_start="19" region_end="25" region_include="tavern">Above a boisterous tavern</value>
+                <value region_start="7" region_end="15" region_include="tavern">Behind a tavern teeming with criminals</value>
+                <value region_start="12" region_end="20" region_include="tavern">Adjacent to a tavern full of gamblers</value>
+                <value>Underground</value>
+                <value region_start="20" region_end="28" region_include="city">Outside the walls of the city</value>
+                <value>On the outskirts of a town</value>
+                <value region_start="26" region_end="31" region_include="magetower">At the base of a wizard's tower</value>
+                <value region_start="3" region_end="9" region_include="cavern">In a cave that had been a monster's lair</value>
+                <value region_start="6" region_end="12" region_include="tavern">Above an inn on a busy trading route</value>
+                <value region_start="19" region_end="27" region_include="tavern">In the basement of a tavern</value>
+                <value>On a street with many other brothels</value>
+                <value>In a house in a park, garden, or forest</value>
+            </table>
+            <table name="In addition to the &quot;usual&quot; everyday brother fare, here you can procure..." id="procure">
+                <value>Really weird stuff for those with the most interesting fetishes</value>
+                <value>Illegal stuff. If this is found out, the place would be burnt down and the owners hung. It is clearly kept in great secret</value>
+                <value>Performances involving food</value>
+                <value>An outlet to love out violent fantasies</value>
+                <value>Exotic races</value>
+                <value>The most beautiful women and men. Not just a claim, it's the gods' honest truth</value>
+                <value>Ann all-inclusive lump-sum -- all the harlots, food, and drink you can handle!</value>
+                <value>The sale of mind-altering drugs</value>
+                <value>Stuff with exotic/magical ingredients, potions, etc</value>
+                <value>Magical delights</value>
+            </table>
+            <table name="The place is run by..." id="runby">
+                <value>A collective of the inmates themselves</value>
+                <value>A mean old madam</value>
+                <value>A large madam with a no-nonsense attitude</value>
+                <value>A warm motherly figure</value>
+                <value>A surly brute</value>
+                <value>A tyrannical and cruel fellow</value>
+                <value>A sultry seductress</value>
+                <value region_start="11" region_end="16" region_include="witch">A charming witch</value>
+            </table>
+            <table name="To eat, the place serves..." id="eat">
+                <value>Simple snacks</value>
+                <value>Banquets</value>
+                <value>Peasant food</value>
+                <value>Food hand-fed to you by a harlot</value>
+                <value>Exotic delights</value>
+                <value>Spicy treats</value>
+                <value>Simple food</value>
+                <value>Sweets and delicacies</value>
+                <value>Grubby, poorly made meals</value>
+                <value>All you can eat buffets</value>
+                <value>Simple stew and bread</value>
+                <value>Nothing; it satisfies other appetities</value>
+            </table>
+            <table name="To drink, the place serves..." id="drink">
+                <value>Ales</value>
+                <value>Cocktails</value>
+                <value>Grog, and nothing byt grog</value>
+                <value>Cheap wines</value>
+                <value>Mead</value>
+                <value>The finest wines and champagnes</value>
+                <value>Lagers</value>
+                <value>Nothing; inebriation is not tolerated</value>
+            </table>
+            <table name="People talk about this place; they say..." id="people_say">
+                <value>The girls are underpaid and poorly treated</value>
+                <value>Nothing really; it's a neighborhood brothel</value>
+                <value region_start="12" region_end="17" region_include="nobleman">A prominent noble is a regular</value>
+                <value region_start="12" region_end="20" region_include="merchant">A prominent merchant is a regular</value>
+                <value>The goddess of love and fertility blessed this place and all her followers must visit</value>
+                <value>The usual stuff; a new girl is making a stir</value>
+                <value>Once a month it offers discounted services</value>
+                <value region_start="34" region_end="38" region_include="cult">It is secretly the home to a dark cult</value>
+                <value>All the inmates there are related</value>
+                <value>Nothing much, a popular girl is with child</value>
+                <value>You can pay for services with contract work</value>
+                <value>You can pay for services with criminal favors</value>
+                <value>You can pay for services with goods</value>
+                <value>You can pay for services with religious services</value>
+                <value>You can pay for services with secrets</value>
+                <value>You can pay for services with stock</value>
+            </table>
+            <table name="People talk about this place; rumors suggest that recently..." id="rumors">
+                <value region_start="0" region_end="10" region_include="nobleman">A nobleman got one of the girls with child, but refuses to acknowledge her or the baby</value>
+                <value>Someone slaughtered half of the workers and clients in the night</value>
+                <value>A client was stabbed with a letter opener</value>
+                <value>A man claiming to be a paragon of the god of love visited the place</value>
+                <value>A group of outraged townsfolk has started protesting outside of the brothel, disgusted with what it does</value>
+                <value>The oldest patron, who visited the brothel every day for the last fifty years has died. A day of mourning and celebration, along with a lavish funeral is being held for him</value>
+                <value region_start="7" region_end="18" region_include="harlot">One of the inmates was strangled</value>
+                <value region_start="7" region_end="18" region_include="harlot">One of the inmates has fallen madly in love with a client, but he or she is married</value>
+                <value>A sinkhole has appeared in teh basement. No one can see the bottom, and the boss worries it might grow and do more damage</value>
+                <value region_start="30" region_end="37" region_include="disease">Several clients have caught a disease</value>
+            </table>
+            <table name="Room Furnishings: This room has..." id="furnishings">
+                <value>A four-poster bed with velvet curtains</value>
+                <value>A four-posted bed with lacy curtains</value>
+                <value>A soft, leather chaise lounge</value>
+                <value>A plush, pink chaise lounge</value>
+                <value>A large pile of pillows with soft tassels</value>
+                <value>A large pile of pillows with frilly edges</value>
+                <value>A table with fruit and wine set upon it</value>
+                <value>A table with perfumes and oils set upon it</value>
+                <value>A large mirror against one wall</value>
+                <value>A large mirror on the ceiling over the bed</value>
+            </table>
+            <table name="Features: You notice..." id="notice">
+                <value>The scent of lavender</value>
+                <value>The scent of lilac perfume</value>
+                <value>The scent of ginger and cinnamon</value>
+                <value>The scent of roses</value>
+                <value>Scented candles</value>
+                <value>The soft red glow from a shaded lamp</value>
+                <value>A lamp burning dimly</value>
+                <value>A statue of two figures kissing</value>
+                <value>A statue of two figures coupling</value>
+                <value>A statue of a nude woman bathing</value>
+                <value>A painting of several nudes bathing</value>
+                <value>A painting of a pair of lovers</value>
+                <value>A curtain of beads</value>
+                <value>A silk curtain</value>
+                <value>A plush carpet beneath your feet</value>
+                <value>A thick fur carpet beneat your feet</value>
+                <value>The sound of distant, soft music</value>
+                <value>The sound of furniture creaking nearby</value>
+                <value>A lengthy, shrill scream</value>
+                <value>A long moan</value>
+            </table>
+            <table name="You have heard of this place before because..." id="reputation" id="heard">
+                <value region_start="30" region_end="41" region_include="__noun__">It's a barbaric monument to a dead people</value>
+                <value>It's unmistakable as anything else</value>
+                <value>It is dangerous to go there and extremely spooky</value>
+                <value>You only see it if you have made a terrible mistake and gone somewhere bad</value>
+                <value>It's rumored to move around</value>
+                <value>It's man made, like a ship graveyard</value>
+                <value>It's naturally occurring, like a mesa</value>
+                <value>It's less of a landmark, and more of a region with a distinct character</value>
+                <value>It was formed by a great disaster</value>
+                <value>Travelers come from leagues around to see it</value>
+                <value>Pilgrims leave trinkets and carvings in/on/at it as they make their way for good luck</value>
+                <value>It is thought that the tree with endure forever, so lovers carve their initials into it</value>
+                <value>Children rub the statue's nose for good luck</value>
+                <value>A famous assassination occurred on this spot</value>
+                <value region_start="27" region_end="36" region_include="sorcerer">The world grieved when the sorceress who is interred here died</value>
+                <value>Your elder brother came to this place on his Grand Tour of the realm</value>
+                <value>It's ugly as sin and doesn't at all fit with the surrounding architecture</value>
+                <value>They are major port and trading hub</value>
+                <value>They are the only place an important spice can be grown</value>
+                <value>It is built around a giant mine</value>
+                <value>The lord of the city is a dragon</value>
+                <value>The city was the site of a great magical disaster</value>
+                <value>The city was the site of a great magical experiment</value>
+                <value>A great artist makes his home there</value>
+                <value>It's so far away you've only barely heard its name before</value>
+                <value>It's caught between two large agressive neighbors</value>
+                <value region_start="39|50" region_end="42|55" region_include="deity|__noun__">Its home to the largest cathedral to a god in the realm</value>
+                <value>It suffers a terrible reputation as a wretched hive of scum and villainy</value>
+                <value>Dark magics seem to gravitate to the regain</value>
+            </table>
+            <member name="Harlot" include="harlot" />
+        </category>

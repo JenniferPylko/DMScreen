@@ -1,0 +1,72 @@
+<category name="Monkey" id="monkey">
+    <table name="The monkey's name is..." id="name">
+        <value>Coco.</value>
+        <value>Koko.</value>
+        <value>Cocoa.</value>
+        <value>Marcel.</value>
+        <value>Marzo.</value>
+        <value>Mongo.</value>
+        <value>Mondo.</value>
+        <value>Mimi.</value>
+        <value>Bibi</value>
+        <value>Bobo.</value>
+        <value>Hobo.</value>
+        <value>Jerry.</value>
+    </table>
+    <table name="Most of the monkey's fur is..." id="fur">
+        <value>Black.</value>
+        <value>Dark brown.</value>
+        <value>Reddish brown.</value>
+        <value>Golden brown.</value>
+        <value>Pale brown.</value>
+        <value>Greyish brown.</value>
+        <value>Brownish red.</value>
+        <value>Brownish grey.</value>
+        <value>Brownish orange.</value>
+        <value>Orangish gold.</value>
+        <value>Pale grey.</value>
+        <value>Dark grey.</value>
+    </table>
+    <table name="The monkey's distinctive markings include..." is="marking">
+        <value>Some white around the nose and mouth.</value>
+        <value>Some gold around the nose and mouth.</value>
+        <value>A white belly.</value>
+        <value>A golden belly.</value>
+        <value>White tufts behind the ears.</value>
+        <value>Golden tufts behind the ears.</value>
+        <value>A black nose with a white face.</value>
+        <value>A black nose with a golden face.</value>
+        <value>A white tip on the tail.</value>
+        <value>A golden tip on the tail.</value>
+        <value>One white paw.</value>
+        <value>One golden paw.</value>
+    </table>
+    <table name="The monkey is especially good at..." id="good">
+        <value>Climbing trees.</value>
+        <value>Climbing ropes.</value>
+        <value>Climbing walls.</value>
+        <value>Making mischief.</value>
+        <value>Throwing fruit.</value>
+        <value>Throwing nuts.</value>
+        <value>Throwing poop.</value>
+        <value>Shrieking.</value>
+        <value>Pickpocketing.</value>
+        <value>Biting.</value>
+        <value>Fighting.</value>
+        <value>Mating.</value>
+    </table>
+    <table name="The monkey is looking for..." id="looking">
+        <value>Some bananas.</value>
+        <value>Some nuts.</value>
+        <value>Some dates.</value>
+        <value>A date.</value>
+        <value>Some love.</value>
+        <value>A barrel in which to hide.</value>
+        <value>A good laugh.</value>
+        <value>A new friend.</value>
+        <value>Someone to torment.</value>
+        <value>Something shiny to steal.</value>
+        <value>Something sparkly to steal.</value>
+        <value>A new hat.</value>
+    </table>
+</category>

@@ -1,0 +1,125 @@
+<category name="Monster Hunter" id="monsterhunter">
+    <name name="The monster hunter's name is..."/>
+    <include name="Race" include="npc_race" />
+    <table name="The monster hunter is..." id="is">
+        <value region_start="2" region_end="9" region_include="fighter">A warrior</value>
+        <value region_start="2" region_end="8" region_include="priest">A priest or agent of the church</value>
+        <value>A scholar</value>
+        <value region_start="11" region_end="16" region_include="nobile">A landless noble</value>
+        <value region_start="2" region_end="8" region_include="knight">A knight errant</value>
+        <value region_start="2" region_end="8" region_include="sailor">A sailor</value>
+        <value>A femme fatale</value>
+        <value>A mentor to others</value>
+        <value>A repentant monster</value>
+        <value>A polymorphed creature in disguise</value>
+    </table>
+    <table name="The monster hunter fights by..." id="fights">
+        <value>Traditional methods. Stakes, silver arrows, and blessed swords</value>
+        <value region_start="21" region_end="25" region_include="trap">Setting an elaborate trap for their prey</value>
+        <value>Raising a posse of townsfolk and teaching them how to kill</value>
+        <value>Beating the monster to death with their bare hands</value>
+        <value>Killing the monster from ambush</value>
+        <value>Riding out and meeting the monster one on one</value>
+        <value>Tracking and killing the monster with a team of hand picked allies</value>
+        <value>Casting a spell or ritual</value>
+        <value>Invoking the aid of the gods</value>
+        <value>Leaping in without a plan</value>
+    </table>
+    <table name="The monster hunter is wielding..." id="weilding">
+        <value>A sword</value>
+        <value region_start="2" region_end="6" region_include="wands">A wand</value>
+        <value>An axe</value>
+        <value region_start="2" region_end="7" region_include="__noun__">A spell</value>
+        <value>A mace</value>
+        <value>A dagger</value>
+        <value>A bow</value>
+        <value region_start="3|24" region_end="16|36" region_include="__noun__|__noun__">An exotic weapon from a faraway land</value>
+        <value region_start="2" region_end="20" region_include="artifacts">A legendary artifact</value>
+        <value region_start="2" region_end="16" region_include="__noun__">A strange weapon of their own design</value>
+    </table>
+    <table name="The monster hunter appears..." id="appears">
+        <value region_start="28" region_end="38" region_include="armorer">Well prepared. Plate armor (crafted by), potions, and stakes</value>
+        <value region_start="25" region_end="37" region_include="__noun__">Dressed for a visit to a noble patron</value>
+        <value region_start="38" region_end="44" region_include="__noun__">Dressed casually in the custom of the region</value>
+        <value>Wearing exotic war paints</value>
+        <value region_start="8" region_end="16" region_include="__noun__">Wearing trophies from their prior kills</value>
+        <value region_start="0" region_end="16" region_include="noblehouse">Noble of bearing and well dressed</value>
+        <value region_start="35" region_end="57" region_include="__noun__">Fanatical, carrying many religious ornaments and trinkets</value>
+        <value region_start="32" region_end="46" region_include="__noun__">Unsavory, and probably carrying hidden weapons</value>
+        <value>Disguised with a fake mustache</value>
+        <value>Unkempt and tired from a battle</value>
+    </table>
+    <table name="The monster hunter's personality is..." id="personality">
+        <value>Grim</value>
+        <value>Chipper</value>
+        <value>Charming</value>
+        <value>Mercurial</value>
+        <value>All business</value>
+        <value>Thoughtful</value>
+        <value>Fanatical</value>
+        <value>Absent minded</value>
+        <value>Patient</value>
+        <value>Impulsive</value>
+    </table>
+    <table name="The monster hunter's backer is..." id="backer">
+        <value>No one, they work for themselves</value>
+        <value region_start="2" region_end="8" region_include="temple">A church</value>
+        <value region_start="2" region_end="14" region_include="secretsociety">A secret order</value>
+        <value region_start="2" region_end="15" region_include="thievesguild">A thieves guild stamping out competition</value>
+        <value region_start="18" region_end="29" region_include="mercenaries">A public guild of mercenaries</value>
+        <value region_start="2" region_end="14" region_include="noblehouse">A noble family</value>
+        <value region_start="2" region_end="5" region_include="deity">A god</value>
+        <value region_start="2" region_end="7" region_include="fiend">A demon</value>
+        <value region_start="2" region_end="16" region_include="__noun__">A wizard's cabal collecting monster body parts</value>
+        <value region_start="2" region_end="6" region_include="city">A city or town</value>
+        <value region_start="8" region_end="15" region_include="__noun__">A rival monster</value>
+    </table>
+    <table name="The hunter's relationship with their backer is..." id="backer_relationship">
+        <value>They are a member</value>
+        <value>Rebellious</value>
+        <value>Businesslike</value>
+        <value>Getting along well</value>
+        <value>Preparing for imminent betrayal</value>
+        <value>Already betrayed</value>
+        <value>Well paid and content</value>
+        <value>Neutral</value>
+        <value>Secret</value>
+        <value>Brand new</value>
+    </table>
+    <table name="The hunter hunts because..." id="because">
+        <value>They are well paid</value>
+        <value>They are in it for the glory</value>
+        <value>It's an outlet for psychotic desires</value>
+        <value region_start="39" region_end="49" region_include="__noun__">They crave vengeance for the monster's past deeds</value>
+        <value region_start="29" region_end="47" region_include="__noun__">The monster is a threat to a business associate</value>
+        <value region_start="4" region_end="11" region_include="__noun__">The monster is a rival moving in on their turn and the monster hunter is a creature in disguise</value>
+        <value region_start="3" region_end="19" region_include="artifacts">An ancient artifact compels them</value>
+        <value region_start="2" region_end="7" region_include="__noun__">A curse from the gods compels them</value>
+        <value region_start="2" region_end="6" region_include="village">A town or church threatened by the monster hired them</value>
+        <value>It's a speculative venture</value>
+    </table>
+    <table name="The hunter hunts only..." id="hunts">
+        <value>One type of monster</value>
+        <value>A specific monster who did them wrong long ago</value>
+        <value>Any kind of monster for the right payment</value>
+        <value>Wizards and necromancers</value>
+        <value>Monsters that threaten the defeneseless</value>
+        <value>Monsters near their home base</value>
+        <value>Sea monsters</value>
+        <value region_start="15" region_end="22" region_include="__noun__">In one kind of terrain</value>
+        <value>Only single giant monsters</value>
+        <value>Only hordes of smaller monsters</value>
+    </table>
+    <table name="The monster hunter's reputation is..." id="reputation">
+        <value>Good, they help those in need</value>
+        <value>Mercenary, they help those who can pay</value>
+        <value>Unsavory, they are dangerious to have around</value>
+        <value>Skilled and experienced. They know their business</value>
+        <value>Lucky. By the grace of the gods they are somehow still alive</value>
+        <value>Capable, but brash and foolhardy</value>
+        <value>Enigmatic</value>
+        <value region_start="26" region_end="39" region_include="__noun__">Responsible for causing a major problem</value>
+        <value region_start="30" region_end="43" region_include="__noun__">Responsible for clearing up a major problem</value>
+        <value>Band new to their trade</value>
+    </table>
+</category>

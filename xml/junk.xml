@@ -1,0 +1,106 @@
+<category name="Useless Junk" id="junk">
+    <table name="The container contains..." id="junk_is">
+        <value>Rusty knives.</value>
+        <value>Dull knives.</value>
+        <value>Mismatched armor.</value>
+        <value>Shattered shields.</value>
+        <value>Tattered leather armor.</value>
+        <value>Wooden practice swords.</value>
+        <value>Broken swords.</value>
+        <value>Axe handles.</value>
+        <value>Arrowheads.</value>
+        <value>Goose feathers.</value>
+        <value>Turkey feathers.</value>
+        <value>Dulled spear points.</value>
+        <value>Worn-out hammers.</value>
+        <value>Steel nails.</value>
+        <value>Rusted hinges.</value>
+        <value>Broken doorknobs.</value>
+        <value>Assorted keys.</value>
+        <value>Empty glass bottles.</value>
+        <value>Broken glass.</value>
+        <value>Empty cans.</value>
+        <value>Blank parchment.</value>
+        <value>Lists and inventories.</value>
+        <value>Legal case files.</value>
+        <value>Decaying books.</value>
+        <value>Extra copies of a useless book.</value>
+        <value>Dried-up ink wells.</value>
+        <value>Used quills.</value>
+        <value>Empty glass vials.</value>
+        <value>Cork vial stoppers.</value>
+        <value>Discarded alchemical laboratory equipment.</value>
+        <value>Incomprehensible notes on alchemy.</value>
+        <value>Grocery lists and recipes.</value>
+        <value>Hand-written memoir of an ineffective bureaucrat.</value>
+        <value>Collection of of sappy love letters.</value>
+        <value>Crumbling sheet music.</value>
+        <value>Broken musical instruments.</value>
+        <value>Spare brass parts.</value>
+        <value>Scrap copper.</value>
+        <value>Old dried fish.</value>
+        <value>Human bones.</value>
+        <value>Some unidentifiable bones.</value>
+        <value>Teeth.</value>
+        <value>Blood-soaked rags.</value>
+        <value>Oily rags.</value>
+        <value>Tattered banners.</value>
+        <value>Tattered sails.</value>
+        <value>Winches and pulleys.</value>
+        <value>Some frayed rope.</value>
+        <value>A length of chain in an impossible knot.</value>
+        <value>Dented helms.</value>
+        <value>Assorted strips of leather.</value>
+        <value>Wood chips.</value>
+        <value>Iron filings.</value>
+        <value>Steel slag.</value>
+        <value>Ant-ridden flour.</value>
+        <value>Maggot-ridden meat.</value>
+        <value>Mold-covered cheese.</value>
+        <value>Bottles of over-ripe wine.</value>
+        <value>Ceramic mugs.</value>
+        <value>Glass mugs.</value>
+        <value>Plates and bowls.</value>
+        <value>Low-end steel cutlery.</value>
+        <value>Some old children's clothes.</value>
+        <value>Worn-out children's shoes.</value>
+        <value>Boots with holes.</value>
+        <value>Well-worn men's clothes.</value>
+        <value>Moth-eaten dresses.</value>
+        <value>Broken jars of pickled foodstuffs.</value>
+        <value>Empty gunnysacks.</value>
+        <value>Cured meat that is hard as a rock.</value>
+        <value>Bits of broken furniture.</value>
+        <value>Some tattered blankets.</value>
+        <value>Leaky oil lanterns.</value>
+        <value>Worms.</value>
+        <value>Mice.</value>
+        <value>Roaches.</value>
+        <value>Beetles.</value>
+        <value>A mysterious powder.</value>
+        <value>A mysterious crystalline substance.</value>
+        <value>A mysterious viscous liquid.</value>
+        <value>Cat toys.</value>
+        <value>Leashes, collars, and whips.</value>
+        <value>Horseshoes.</value>
+        <value>A heavy apron.</value>
+        <value>Rag dolls.</value>
+        <value>Wicker dolls.</value>
+        <value>Ripped and broken baskets.</value>
+        <value>Undyed wool.</value>
+        <value>Thin cotton cloth.</value>
+        <value>Needles, threads, and spare bits of cloth.</value>
+        <value>Vials of brightly colored powders.</value>
+        <value>Vials of brightly colored liquids.</value>
+        <value>Paintings of poor quality.</value>
+        <value>Sculptures and figurines of middling quality.</value>
+        <value>Incomplete chess sets.</value>
+        <value>Playing cards and betting chips.</value>
+        <value>Bent and broken wands.</value>
+        <value>Cracked and broken orbs.</value>
+        <value>Saintly relics and pungent incense.</value>
+        <value>Brushes of various sorts.</value>
+        <value>A couple of chickens</value>
+        <value>Torn up book pages</value>
+    </table>
+</category>

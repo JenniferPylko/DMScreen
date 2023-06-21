@@ -1,0 +1,83 @@
+    <category name="Enchanted Forest" id="enchantedforest">
+        <table name="Interesting Location: You find..." id="enchantedforest_interest">
+            <value region_start="2|18" region_end="8|27" region_include="cavern|__noun__">A cavern behind a waterfall.</value>
+            <value region_start="2" region_end="7" region_include="enchantedforest_burrow">A house under a large tree.</value>
+            <value region_start="2" region_end="14" region_include="enchantedforest_burrow">A large burrow with a door.</value>
+            <value region_start="2|30" region_end="12|35" region_include="cavern|__noun__">A small cave in the bank of a creek.</value>
+            <value region_start="11" region_end="18" region_include="enchantedforest_cottage">A peculiar cottage.</value>
+            <value region_start="2" region_end="7" region_include="enchantedforest_tree">A house up in a tree.</value>
+            <value region_start="18" region_end="25" region_include="enchantedforest_cottage">A well-maintained cottage.</value>
+            <value>A ring of mushrooms.</value>
+            <value region_start="15" region_end="27" region_include="cavern">An entrance to a rocky cave.</value>
+            <value region_start="8" region_end="13" region_include="enchantedforest_tree">Ancient ruins.</value>
+            <value>A reflecting pool between colonnades.</value>
+            <value region_start="16" region_end="23" region_include="deity">The statue of a goddess on a beautiful marble fountain.</value>
+        </table>
+        <table name="Distinguising Landmark: You see..." id="enchantedforest_landmark">
+            <value>A lush fruit tree.</value>
+            <value>A large, hollow tree.</value>
+            <value>A pair of trees from the same root.</value>
+            <value>A tree growing over a boulder.</value>
+            <value>A clearing with wildflowers.</value>
+            <value>A grassy clearing.</value>
+            <value>A moss-covered boulder.</value>
+            <value>A thicket of flowering bushes.</value>
+            <value>A babbling brook.</value>
+            <value>A brook in a deep ravine.</value>
+            <value>A brook, with gentle rapids.</value>
+            <value>A creek with flowers on its bank.</value>
+            <value>A small pool at a creek's bend.</value>
+            <value>A patch of mushrooms.</value>
+            <value>An enormous mushroom.</value>
+            <value>A large, hollow log.</value>
+            <value>A large, rotting log.</value>
+            <value>A tree felled by lightning.</value>
+            <value>An old gnarled tree.</value>
+            <value>The stump of an enormous tree.</value>
+        </table>
+        <table name="Feature: You notice..." id="enchantedforest_feature">
+            <value>A flock of birds scatter.</value>
+            <value>A hawk cries.</value>
+            <value>A woodpecker drumming.</value>
+            <value>An owl hoots.</value>
+            <value>Birds chirping.</value>
+            <value>A chipmunk scurrying.</value>
+            <value>A deer dashes away.</value>
+            <value>A deer watches curiously.</value>
+            <value>A squirrel leaps from one tree to another.</value>
+            <value>A wolf howls.</value>
+            <value>Butterflies fluttering about.</value>
+            <value>Squirrels chittering.</value>
+            <value>Distant music from a harp.</value>
+            <value>Distant music from a flute.</value>
+            <value>A warm breeze blows.</value>
+            <value>A twig snaps.</value>
+            <value>Brightly, colored berries.</value>
+            <value>Leaves rustling.</value>
+            <value>The scent of flowers.</value>
+            <value>Pixies dancing in the distance.</value>
+        </table>
+        <table name="Encounters: You come upon..." id="enchantedforest_encounter">
+            <value>A large bear.</value>
+            <value>A bear wearing a collar.</value>
+            <value>A giant spider.</value>
+            <value>A talking spider.</value>
+            <value>An enormous anthill.</value>
+            <value>A pack of wolves.</value>
+            <value>A talking wolf.</value>
+            <value>A displacer beast.</value>
+            <value>A moaning ghost.</value>
+            <value>A mischievous ghost.</value>
+            <value>A pair of goblin scouts.</value>
+            <value>A hobgoblin beasthunter.</value>
+            <value>Several tiny faeries.</value>
+            <value>A dozen or more pixies.</value>
+            <value>A protective sprite.</value>
+            <value>A dancing satyr.</value>
+            <value>An old witch.</value>
+            <value>A lost child.</value>
+            <value>A high elf sage.</value>
+            <value>A wood elf wanderer.</value>
+        </table>
+        <table name="Vignettes, and color" include="naturalforest_vignette" />
+    </category>

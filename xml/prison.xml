@@ -1,0 +1,201 @@
+<category name="Prison" id="prison" link="dungeon_dressing">
+    <table name="The prison is located..." id="prison_located">
+        <value region_start="11|30" region_end="17|35" region_include="__noun__|__noun__">On a small island on a remote coast</value>
+        <value region_start="11|23" region_end="17|29" region_include="__noun__|city">On a small island near a city</value>
+        <value region_start="16" region_end="22" region_include="castle">In a tower of a castle</value>
+        <value region_start="10" region_end="16" region_include="temple">Beneath a temple complex</value>
+        <value region_start="17" region_end="23" region_include="temple">In an annex on a temple complex</value>
+        <value region_start="10|15" region_end="14|19" region_include="village|__noun__">Beneath a town hall</value>
+        <value region_start="17|22" region_end="21|26" region_include="village|__noun__">In an annex on a town hall</value>
+        <value region_start="13" region_end="17" region_include="city">Underneath a city, deep below ground</value>
+        <value region_start="34" region_end="43" region_include="__noun__">Behind walls in a fortified rural coastland</value>
+        <value region_start="34" region_end="42" region_include="__noun__">Behind walls in a fortified rural farmland</value>
+        <value region_start="34" region_end="48" region_include="__noun__">Behind walls in a fortified rural mining country</value>
+        <value region_start="34" region_end="44" region_include="__noun__">Behind walls in a fortified rural ranch land</value>
+        <value region_start="30" region_end="39" region_include="__noun__">Below ground in a hidden rural coastland</value>
+        <value region_start="30" region_end="38" region_include="__noun__">Below ground in a hidden rural farmland</value>
+        <value region_start="31" region_end="45" region_include="__noun__">Below ground in a hidden rural mining country</value>
+        <value region_start="31" region_end="41" region_include="__noun__">Below ground in a hidden rural ranch land</value>
+        <value region_start="39" region_end="45" region_include="desert">Behind walls in a fortified wilderness desert</value>
+        <value region_start="39" region_end="45" region_include="forest">Behind walls in a fortified wilderness forest</value>
+        <value region_start="39" region_end="44" region_include="__noun__">Behind walls in a fortified wilderness hills</value>
+        <value region_start="39" region_end="45" region_include="mountain">Behind walls in a fortified wilderness mountains</value>
+        <value region_start="39" region_end="44" region_include="swamp">Behind walls in a fortified wilderness swamp</value>
+        <value region_start="38" region_end="44" region_include="__noun__">Behind walls in a fortified wilderness tundra</value>
+        <value region_start="36" region_end="42" region_include="desert">Below ground in a hidden wilderness desert</value>
+        <value region_start="36" region_end="42" region_include="forest">Below ground in a hidden wilderness forest</value>
+        <value region_start="36" region_end="41" region_include="__noun__">Below ground in a hidden wilderness hills</value>
+        <value region_start="36" region_end="45" region_include="mountain">Below ground in a hidden wilderness mountains</value>
+        <value region_start="36" region_end="41" region_include="tundra">Below ground in a hidden wilderness swamp</value>
+        <value region_start="36" region_end="42" region_include="__noun__">Below ground in a hidden wilderness tundra</value>
+        <value region_start="15" region_end="24" region_include="mountain">Beneath a cold mountain.</value>
+        <value region_start="16" region_end="25" region_include="mountain">Beneath a fiery mountain.</value>
+        <value region_start="21" region_end="29" region_include="mountain">Near a well-traveled mountain pass.</value>
+        <value region_start="14" region_end="20" region_include="forest">Deep within a forest.</value>
+        <value region_start="14" region_end="20" region_include="desert">Deep within a desert.</value>
+        <value region_start="11" region_end="14" region_include="__noun__">Beside the sea.</value>
+        <value region_start="6" region_end="12" region_include="__noun__">On an island.</value>
+        <value region_start="19" region_end="23" region_include="city">Beneath a bustling city.</value>
+        <value region_start="31" region_end="35" region_include="city">Beneath the ruin of an ancient city.</value>
+        <value region_start="21" region_end="27" region_include="castle">Beneath a well-known castle</value>
+        <value region_start="21" region_end="30" region_include="monastery">Beneath a well-known monastery.</value>
+        <value region_start="28" region_end="34" region_include="castle">Beneath the ruins of an old castle</value>
+        <value region_start="28" region_end="37" region_include="monastery">Beneath the ruins of an old monastery.</value>
+        <value>In a place reachable only by magic.</value>
+    </table>
+    <table name="The prison was built by..." id="prison_built">
+        <value region_start="7" region_end="11" region_include="nobleman">A wise king</value>
+        <value region_start="7" region_end="12" region_include="noblewoman">A wise queen</value>
+        <value region_start="13" region_end="17" region_include="nobleman">An ambitious lord</value>
+        <value region_start="13" region_end="17" region_include="noblewoman">An ambitious lady</value>
+        <value region_start="8" region_end="14" region_include="__noun__">An evil tyrant</value>
+        <value region_start="8" region_end="17" region_include="__noun__">A civic committee</value>
+        <value region_start="10" region_end="15" region_include="__noun__">A popular mayor</value>
+        <value region_start="10" region_end="17" region_include="__noun__">A popular sheriff</value>
+        <value region_start="16" region_end="20" region_include="nobleman">An unscrupulous king</value>
+        <value region_start="16" region_end="21" region_include="noblewoman">An unscrupulous queen</value>
+        <value region_start="13" region_end="27" region_include="merchantguild">A prosperous merchant guild</value>
+        <value region_start="11" region_end="22" region_include="noblehouse">A powerful noble house</value>
+        <value region_start="11" region_end="24" region_include="__noun__">An ancient dwarvish clan.</value>
+        <value region_start="11|15" region_end="14|21" region_include="highelf|nobleman">An ancient elf prince.</value>
+        <value region_start="11" region_end="17" region_include="wizard">A powerful wizard.</value>
+        <value region_start="7" region_end="16" region_include="sorcerer">A dark sorceress.</value>
+        <value region_start="2" region_end="16" region_include="nation">A foreign empire.</value>
+        <value region_start="10" region_end="17" region_include="__noun__">Religious zealots.</value>
+        <value region_start="19" region_end="25" region_include="__noun__">An ancient race of giants.</value>
+        <value region_start="13" region_end="17" region_include="nobleman">A tyrannical king of old.</value>
+        <value region_start="23" region_end="27" region_include="cavern">No one; it's a natural cave.</value>
+    </table>
+    <table name="The prison complex is..." id="prison_complex">
+        <value>A sprawling maze of twisting passages</value>
+        <value>A sprawling maze of narrow passages</value>
+        <value>Organized into small, neat rows of cells or pits</value>
+        <value>Organized around a large central cell block or pit</value>
+        <value>An endless series of long corridors</value>
+        <value>A series of corridors with very low ceilings</value>
+    </table>
+    <table name="The prison is surrounded by..." id="prison_surrounded">
+        <value>Very high stone walls</value>
+        <value>Incredibly thick stone walls</value>
+        <value>A curtain wall with many gatehouses</value>
+        <value>A moat filled with putrescent water</value>
+        <value>A moat filled with thick, boot-sucking mud</value>
+        <value>A moat filled with sharp spikes</value>
+    </table>
+    <table name="Prisoners are held within..." id="prison_prisoners">
+        <value>Individual cells, in complete isolation</value>
+        <value>Individual cells, but they can see and hear other prisoners</value>
+        <value>Individual cells, but they can hear other prisoners</value>
+        <value>Cells that accommodate up to two prisoners</value>
+        <value>Cells that accommodate up to two prisoners, each shackled to the wall</value>
+        <value>Cells that accommodate up to four prisoners</value>
+        <value>Cells that accommodate up to four prisoners, each shackled to the wall</value>
+        <value>A large chamber with many other prisoners, each shackled to the wall</value>
+        <value>Individual pits or wells, open at the top</value>
+        <value>One or more huge pits with many other prisoners</value>
+    </table>
+    <table name="The cells' condition is..." id="prison_cells">
+        <value>Well-maintained; the walls are solid</value>
+        <value>Aging, but sturdy; the walls have some cracks</value>
+        <value>Decrepit; the walls are crumbling</value>
+        <value>So dark it's difficult to say</value>
+    </table>
+    <table name="Prisoners are treated..." id="prison_treated">
+        <value>Humanely; they receive reasonable meals, some exercise, and healing when needed</value>
+        <value>Like dogs; they receive poor quality meals and enough healing to keep them alive</value>
+        <value>Like rats; they receive terrible meals and are plagued by sickness</value>
+        <value>Like they don't exist; occasionally they receive food</value>
+    </table>
+    <table name="The prison is known for..." id="prison_known">
+        <value region_start="35" region_end="41" region_include="__noun__">Many prisoners dying in a terrible plague</value>
+        <value region_start="2" region_end="13" region_include="__noun__">A mass escape in the past</value>
+        <value region_start="16" region_end="31" region_include="criminal">The escape of a famous criminal</value>
+        <value region_start="26" region_end="41" region_include="criminal">Being the final home of a famous criminal</value>
+        <value region_start="26" region_end="39" region_include="npc_class">Being the final home of a legendary hero</value>
+        <value region_start="26" region_end="32" region_include="undead">Being haunted by vengeful ghosts</value>
+        <value region_start="13" region_end="25" region_include="__noun__">Its horrific torture pits</value>
+        <value>Never suffering a successful escape</value>
+        <value region_start="12" region_end="31" region_include="__noun__">Its unusual architectural style</value>
+        <value>The quality of its meals</value>
+    </table>
+    <table name="According to rumor, within the prison's walls lies..." id="prison_rumor">
+        <value region_start="9" region_end="15" region_include="__noun__">A secret tunnel to the outside</value>
+        <value region_start="26" region_end="32" region_include="criminal">The bones of a celebrated outlaw</value>
+        <value region_start="33" region_end="40" region_include="villain">The preserved head of an ancient villain</value>
+        <value region_start="11" region_end="16" region_include="monsters">A terrible beast to which prisoners are fed</value>
+        <value region_start="10" region_end="14" region_include="nobleman">A missing lord</value>
+        <value region_start="10" region_end="14" region_include="noblewoman">A missing lady</value>
+        <value region_start="33" region_end="41" region_include="prisoner">A treasure stolen by a notorious prisoner</value>
+        <value region_start="22" region_end="36" region_include="__noun__">A unique and terrible torture device</value>
+        <value region_start="23" region_end="27" region_include="nobleman">The bones of a deposed king</value>
+        <value region_start="23" region_end="28" region_include="noblewoman">The bones of a deposed queen</value>
+    </table>
+    <table name="A particularly interesting prisoner is..." id="prison_prisoner">
+        <value region_start="12" region_end="18" region_include="criminal">A dangerous outlaw.</value>
+        <value region_start="3" region_end="12" region_include="__noun__">An elemental lord.</value>
+        <value region_start="2" region_end="9" region_include="vampire">A vampire.</value>
+        <value region_start="2" region_end="6" region_include="undead">A lich.</value>
+        <value region_start="2" region_end="7" region_include="fiend">A demon.</value>
+        <value region_start="2" region_end="7" region_include="fiend">A devil.</value>
+        <value region_start="3" region_end="6" region_include="orc">An orc warlord.</value>
+        <value region_start="2" region_end="11" region_include="__noun__">A hobgoblin commander.</value>
+        <value region_start="3" region_end="20" region_include="__noun__">An aberrant presence.</value>
+        <value region_start="2" region_end="7" region_include="witch">A witch.</value>
+        <value region_start="2" region_end="7" region_include="__noun__">A giant.</value>
+        <value region_start="2" region_end="8" region_include="dragon">A dragon.</value>
+    </table>
+    <member name="Escape Encounter">
+        <table name="You come upon">
+            <value region_start="11" region_end="16" region_include="guard">A snoozing guard</value>
+            <value>A pair of guards on patrol</value>
+            <value>A quartet of guards playing cards or dice on their break</value>
+            <value region_start="58" region_end="63" region_include="guard">A pack of trained hunting dogs commanded by a high-ranking guard who has been alerted of the escape attempt</value>
+            <value region_start="2|46|74" region_end="14|54|78" region_include="__noun__|prisoner|__noun__">A law official on-site to interrogate another prisoner about an unrelated case</value>
+            <value>An ear-splitting alarm triggers</value>
+            <value region_start="17" region_end="21" region_include="__noun__">A wide, well-lit yard that must be crossed with guards watching it from towers</value>
+            <value>A high wall directly in the path of escape</value>
+            <value>A barred window in the path of escape</value>
+            <value region_start="17|30" region_end="23|39" region_include="__noun__|__noun__">The rat-infested kitchens and mess hall</value>
+            <value region_start="14" region_end="27" region_include="killer">An imprisoned serial killer who is also attempting to escape</value>
+            <value region_start="14" region_end="19" region_include="thief">An imprisoned thief who is bent on revenge</value>
+        </table>
+    </member>
+    <member name="Chamber">
+        <table name="Rooms: This chamber is...">
+            <value region_start="9" region_end="13" region_include="__noun__">A prison cell</value>
+            <value>A passageway connecting cell blocks</value>
+            <value region_start="2" region_end="11" region_include="__noun__">A guardroom</value>
+            <value region_start="4" region_end="12" region_include="__noun__">The barracks</value>
+            <value region_start="4|13" region_end="12|21" region_include="jailer|__noun__">The jailer's quarters</value>
+            <value region_start="2" region_end="6" region_include="__noun__">A yard or a large indoor space for exercise</value>
+            <value region_start="2" region_end="13" region_include="__noun__">A dining hall</value>
+            <value region_start="3" region_end="20" region_include="__noun__">An interrogation room</value>
+            <value region_start="2" region_end="16" region_include="__noun__">A torture chamber</value>
+        </table>
+        <table name="Features: You notice...">
+            <value>A wooden door reinforced with steel bands</value>
+            <value>Steel bars where you expected a stone wall</value>
+            <value>Empty manacles along the wall</value>
+            <value>An empty sconce to hold a torch</value>
+            <value>Distant torchlight</value>
+            <value>The floor is uneven</value>
+            <value>A crack in the stone floor</value>
+            <value>A mouse skittering underfoot</value>
+            <value>The stench of rotting flesh</value>
+            <value>The scent of stale urine</value>
+            <value>A putrid smell</value>
+            <value>A dank and moldy odor</value>
+            <value>An uncomfortable groaning</value>
+            <value>A faint scratching sound</value>
+            <value>An odd tapping sound</value>
+            <value>The squeaking of rats</value>
+            <value>The shouting of distant voices</value>
+            <value>Howls of agony</value>
+            <value>Horrific screams</value>
+            <value>The clanking of chains</value>
+        </table>
+    </member>
+    <member name="Jailer" include="jailer" />
+    <member name="Guard" include="guard" />
+    <member name="Prisoner" include="prisoner" />
+</category>

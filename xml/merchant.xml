@@ -1,0 +1,62 @@
+<category name="Merchant" id="merchant" hasa="shop">
+    <name name="The merchant's name is..."/>
+    <include name="Race" include="npc_race" />
+    <table name="The merchant is..." id="is">
+        <value region_start="14" region_end="26" region_include="__noun__">A member of a trading clan</value>
+        <value region_start="2" region_end="12" region_include="nobleman">A minor lord</value>
+        <value region_start="2" region_end="12" region_include="noblewoman">A minor lady</value>
+        <value>An enterprising trader</value>
+        <value region_start="24" region_end="30" region_include="noblehouse">A member of a prominent family</value>
+        <value>Of common birth</value>
+        <value region_start="38" region_end="46" region_include="merchant">The representative of a more powerful merchant</value>
+    </table>
+    <table name="The merchant wears..." id="wears">
+        <value>An unpleasant grin</value>
+        <value>An arrogant smirk</value>
+        <value>Too much perfume</value>
+        <value>A baggy shirt to cover a fat belly</value>
+        <value>Fine silks</value>
+        <value>Gaudy clothing</value>
+        <value>Colorful robes</value>
+        <value>A fading uniform</value>
+        <value>Only a pair of pants</value>
+        <value region_start="2" region_end="7" region_include="guilds">A guild symbol</value>
+        <value>A fake smile</value>
+    </table>
+    <table name="The merchant seeks someone to..." id="seeks">
+        <value region_start="20" region_end="28" region_include="artifacts">Obtain a mysterious artifact</value>
+        <value region_start="12" region_end="26" region_include="__noun__">Negotiate a trade contract</value>
+        <value region_start="9" region_end="25" region_include="merchant">Sabotage a rival merchant</value>
+        <value>Have a good time with</value>
+    </table>
+    <table name="the merchant carries..." id="carries">
+        <value region_start="9" region_end="17" region_include="__noun__">A family heirloom</value>
+        <value>Several inventories and invoices</value>
+        <value region_start="19" region_end="25" region_include="__noun__">Some very valuable jewels</value>
+        <value region_start="15" region_end="26" region_include="__noun__">A compromising love letter</value>
+        <value>A small knife</value>
+        <value>A vial of healing potion, just in case</value>
+    </table>
+    <table name="You have heard of this merchant before because" id="heard">
+        <value>They gouge outrageous prices if their customers have no alternatives</value>
+        <value region_start="58" region_end="63" region_include="noble">They are exceptionally wealthy, surpassing even the local ruler</value>
+        <value region_start="26" region_end="38" region_include="__noun__">They have donated gold to noble causes in the past</value>
+        <value>They are known in certain circles to buy items without asking where they came from</value>
+        <value>They are known to hire ruthless thugs to go after debtors</value>
+        <value>They are said to have made their first fortune by illegally minting coins</value>
+        <value>They are reputed to sell illegal magic items</value>
+        <value>They are well known in the fur trade</value>
+        <value region_start="30" region_end="39" region_include="__noun__">They always wear an elaborate headdress</value>
+        <value region_start="50" region_end="61" region_include="__noun__">They are up and coming, and seek to eliminate the competition</value>
+        <value region_start="11" region_end="15" region_include="ship">They own a ship or fleet</value>
+        <value region_start="31" region_end="38" region_include="__noun__">They helped found an important company</value>
+        <value region_start="3|24|64" region_end="17|31|68" region_include="__noun__|__noun__|nobleman">In distant places their company is actually more powerful than the king</value>
+        <value region_start="50" region_end="56" region_include="tavern">They're often the butt of jokes made in the local tavern</value>
+        <value>Rumor says that it's entirely made up of doppelganglers</value>
+        <value>Of their reputation for having access to highly restricted goods</value>
+        <value>The local populace invoke they're name as a foul mouthed curse</value>
+        <value>Members are identifiable by their yellow and red armor</value>
+        <value region_start="48" region_end="64" region_include="__noun__">Of their ruthless efficiency in advancing their mysterious goals</value>
+        <value>They hold an iron grip on the local cheese market</value>
+    </table>
+</category>

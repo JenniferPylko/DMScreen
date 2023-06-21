@@ -1,0 +1,36 @@
+        <category name="Fishing Boat" id="fishingboat">
+            <table name="Type: The boat is..." id="type">
+                <value>A flat raft</value>
+                <value>A pontoon raft</value>
+                <value>A canoe</value>
+                <value>A coracle</value>
+                <value>A drifter</value>
+                <value>A buss</value>
+            </table>
+            <table name="Operation: The boat can..." id="can">
+                <value>Easily be operated by one person</value>
+                <value>Be operated by one person, but some flaw or damage has made handling diffficult</value>
+                <value>Be operated by two people, but it can be handled by one with difficulty</value>
+                <value>Be operated by three or more people, but it can be handled by two with difficulty</value>
+            </table>
+            <table name="The boat is..." id="is">
+                <value>Laden with the latest catch</value>
+                <value>Well-stocked with bait and gear and ready to go</value>
+                <value>In tip-top shape</value>
+                <value>In need of repair</value>
+                <value>Barely staying afloat</value>
+                <value>Resting beneath the waves</value>
+            </table>
+            <table name="The boat's hull markings feature..." id="hull">
+                <value>A ghost</value>
+                <value>A mermaid</value>
+                <value>A shark</value>
+                <value>A perlican</value>
+                <value>A whale</value>
+                <value>An octopus</value>
+                <value>A swordfish</value>
+                <value>A crab</value>
+                <value>A sea turtle</value>
+                <value>A big tura</value>
+            </table>
+        </category>

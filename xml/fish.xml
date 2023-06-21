@@ -1,0 +1,106 @@
+        <category name="Fish / Daily Catch" id="fish">
+            <table name="Cold ocean fishing: Near-shore catch: You haull in..." id="cold_shore">
+                <value>A clam</value>
+                <value>A crab</value>
+                <value>A herring</value>
+                <value>A lobster</value>
+                <value>A mussel</value>
+                <value>An oyster</value>
+                <value>A prawn</value>
+                <value>A salmon</value>
+                <value>A smelt</value>
+                <value>A rare catch (see below)</value>
+            </table>
+            <table name="Cold ocean fishing: Deep-sea catch: You haul in..." id="cold_sea">
+                <value>A crab</value>
+                <value>A cod</value>
+                <value>A haddock</value>
+                <value>A halibut</value>
+                <value>A mackerel</value>
+                <value>An oyster</value>
+                <value>A shrimp</value>
+                <value>A squid</value>
+                <value>A tuna</value>
+                <value>A rare catch (see below)</value>
+            </table>
+            <table name="Cold ocean fishing: Rare catch: You haul in..." id="cold_rare">
+                <value>A tangle of seaweed</value>
+                <value>A torn net</value>
+                <value>Rotten wood</value>
+                <value>An old boot</value>
+                <value>An abalone</value>
+                <value>A monkfish</value>
+                <value>An octopus</value>
+                <value>A sea bass</value>
+                <value>A giant squid (fights, attacks)</value>
+            </table>
+            <table name="Warm ocean fishing: Near-shore catch: You haul in..." id="warm_shore">
+                <value>An anchovy</value>
+                <value>A clam</value>
+                <value>A crab</value>
+                <value>A mussel</value>
+                <value>A scallop</value>
+                <value>A sea bass</value>
+                <value>A skate</value>
+                <value>A rare catch (see below)</value>
+            </table>
+            <table name="Warm ocean fishing: Deep-sea catch: You haul in..." id="warm_sea">
+                <value>A cuttlefish</value>
+                <value>A flounder</value>
+                <value>A grouper</value>
+                <value>A marlin</value>
+                <value>A sardine</value>
+                <value>A scallop</value>
+                <value>A shrimp</value>
+                <value>A snapper</value>
+                <value>A tune</value>
+                <value>A rare catch (see below)</value>
+            </table>
+            <table name="Warm ocean fishing: Rare catch: You haul in..." id="warm_rare">
+                <value>A tangle of seaweed</value>
+                <value>A torn net</value>
+                <value>rotten wood</value>
+                <value>An old boot</value>
+                <value>An abalone</value>
+                <value>A barracade (fights, attacks)</value>
+                <value>A lobster</value>
+                <value>A monkfish</value>
+                <value>An octopus (attacks)</value>
+                <value>A reef shark (fights, attacks)</value>
+                <value>A swordfish (fights)</value>
+            </table>
+            <table name="Freshwater fishing: Cold-water catch: You haul in..." id="fresh_cold">
+                <value>A bass (fights)</value>
+                <value>A carp</value>
+                <value>An eel</value>
+                <value>An oyster</value>
+                <value>A perch</value>
+                <value>A salmon</value>
+                <value>A smelt</value>
+                <value>A sturgeon</value>
+                <value>A trout</value>
+                <value>A walleye</value>
+            </table>
+            <table name="Freshwater fishing: Warm-water catch: You haul in..." id="fresh_warm">
+                <value>A carp</value>
+                <value>A catfish (fights)</value>
+                <value>An eel</value>
+                <value>An oyster</value>
+                <value>A perch</value>
+                <value>A prawn</value>
+                <value>A quipper (fights, attacks)</value>
+                <value>A salmon</value>
+                <value>A tilapia</value>
+                <value>A trout</value>
+            </table>
+            <table name="Freshwater fishing: Swamp-water catch: You haul in..."id = "fresh_swamp">
+                <value>A bass (fights)</value>
+                <value>A catfish (fights)</value>
+                <value>A crayfish</value>
+                <value>A crocodile (fights, attacks)</value>
+                <value>An eel (fights)</value>
+                <value>A prawn</value>
+            </table>
+            <member name="Fisherfolk" include="fisherfolk" />
+            <member name="Fishing Boat" include="fishingboat" />
+        </category>

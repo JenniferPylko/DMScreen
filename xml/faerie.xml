@@ -1,0 +1,105 @@
+        <category name="Faeriefolk" id="faerie">
+            <name name="The faerie's name is..." />
+            <table name="The faerie is..." id="is">
+                <value>A capricious nymph</value>
+                <value>An apprehensive nymph</value>
+                <value>A nervous pixie</value>
+                <value>A cheerful pixie</value>
+                <value>A carefree pixie</value>
+                <value>A wrathful sprite</value>
+                <value>A surly sprite</value>
+                <value>A drunken satyr</value>
+                <value>A salty bully</value>
+                <value>A sharp-witted satyr</value>
+            </table>
+            <table name="The faerie has..." id="has">
+                <value>Black hair</value>
+                <value>Copper hair</value>
+                <value>Golden blonde hair</value>
+                <value>Platinum hair</value>
+                <value>Silver-white hair</value>
+                <value>Dark brown hair</value>
+                <value>Reddish-brown hair</value>
+                <value>Fiery red hair</value>
+                <value>Light brown hair</value>
+                <value>Auburn hair</value>
+                <value>Black hair with a brown streak</value>
+                <value>Dark brown hair with an auburn streak</value>
+                <value>Brown hair with a blonde streak</value>
+                <value>Bright white hair</value>
+                <value>Silver-blonde hair</value>
+                <value>Whitish blonde hair</value>
+                <value>Golden hair with a pink streak</value>
+                <value>Golden hair with a green streak</value>
+                <value>Black hair with a blue streak</value>
+                <value>Black hair with a white streak</value>
+            </table>
+            <table name="The faerie has..." id="has2">
+                <value>Pale golden eyes</value>
+                <value>Bright golden eyes</value>
+                <value>Brilliant green eyes</value>
+                <value>Bright blue eyes</value>
+                <value>Dark blue eyes</value>
+                <value>Blue eyes with golden flecks</value>
+                <value>Pale green eyes</value>
+                <value>Golden brown eyes</value>
+                <value>Hazel eyes</value>
+                <value>Whitish blue eyes</value>
+                <value>Pale blue eyes</value>
+                <value>Lilac eyes</value>
+                <value>Pale violet eyes</value>
+                <value>Bright violet eyes</value>
+                <value>Deep red eyes</value>
+                <value>Pale pink eyes</value>
+                <value>Silver eyes</value>
+            </table>
+            <table name="Mannerisms: The faerie has..." id="mannerism">
+                <value>A likable grin</value>
+                <value>A delicate laugh</value>
+                <value>A playful laugh</value>
+                <value>A laugh that goes on too long</value>
+                <value>An amused smirk</value>
+                <value>A humorless visage</value>
+                <value>A habit of sighing</value>
+                <value>A touch of sorrow in his or her voice</value>
+                <value>A habit of pacing</value>
+                <value>A habit of scratching the back of the neck</value>
+                <value>A habit of winking</value>
+                <value>A seductive sway of the lips</value>
+            </table>
+            <table name="The faerie is looking for..." id="looking">
+                <value region_start="57" region_end="63" region_include="forest">An unnatural creature that has taken up residence in the forest</value>
+                <value>Ways to cause mischief for travelers</value>
+                <value region_start="21" region_end="33" region_include="__noun__">Worthy visitors of a secret grove</value>
+                <value>Amusement in frightening travelers</value>
+                <value region_start="27" region_end="31" region_include="__noun__">Someone to listen to a new song</value>
+                <value>A heart to break</value>
+                <value>Love and war</value>
+                <value>Love and mischief</value>
+                <value>Mischief and mayhem</value>
+                <value region_start="16" region_end="22" region_include="__noun__">The answer to a riddle</value>
+                <value>A dance partner</value>
+                <value>A drinking partner</value>
+            </table>
+            <table name="The faerie carries..." id="carries">
+                <value>A delicate wreath of flowers</value>
+                <value>A gem glowing with moonlight or starlight</value>
+                <value>A finely-crafted bow or knife</value>
+                <value region_start="27" region_end="33" region_include="potions">A vial containing a potent potion</value>
+                <value region_start="8" region_end="25" region_include="__noun__">Several magical mushrooms</value>
+                <value region_start="13" region_end="18" region_include="__noun__">A variety of herbs commonly used in potionmaking</value>
+                <value region_start="2|24" region_end="9|28" region_include="__noun__|nobleman">A message from a faerie king</value>
+                <value region_start="2|24" region_end="9|29" region_include="__noun__|noblewoman">A message from a faerie queen</value>
+                <value region_start="2|15" region_end="7|24" region_include="__noun__|__noun__">A token from a past love</value>
+                <value>A fiddle</value>
+                <value>A harp</value>
+                <value>A lute</value>
+                <value>A lyre</value>
+                <value>A flute</value>
+                <value>A horn</value>
+                <value>An ocarina</value>
+                <value>Panpipes</value>
+                <value>A piece of sweet cake</value>
+                <value>A jug of wine</value>
+            </table>
+        </category>

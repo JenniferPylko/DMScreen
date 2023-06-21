@@ -1,0 +1,12 @@
+
+*.pyc
+ai_instructions.txt
+*.sqlite3
+*.parquet
+*.pkl
+*.bin
+*.code-workspace
+*.pdf
+docs/*
+notes/*
+static/img/npc/*

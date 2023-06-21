@@ -1,0 +1,111 @@
+<category name="Outlaw Band" id="outlaws">
+    <table name="The outlaw band's primary business involves..." id="business">
+        <value region_start="53" region_end="60" region_include="nobleman">Poaching from the sovereign's preserve or a prominent noble's lands</value>
+        <value>Harboring fugitives</value>
+        <value>Harassing government officials and nobles who pass along the road</value>
+        <value>Robbing caravans carrying gems, precious metals, and exotic goods</value>
+        <value>Holding up incoming or outgoing ships or wagons</value>
+        <value>Smuggling smokeleaf</value>
+        <value>Smuggling hallucingenic mushrooms</value>
+        <value>Smuggling sleepysalt (a downer)</value>
+        <value>Smuggling sharpsugar (an upper)</value>
+    </table>
+    <table name="The outlaw band's colors are..." id="colors">
+        <value>Black</value>
+        <value>Gold</value>
+        <value>Forest Green</value>
+        <value>Bronze</value>
+        <value>Tan / Khaki</value>
+        <value>Brown / Beaver</value>
+        <value>Dark Grey Gunmetal</value>
+        <value>Maroon</value>
+        <value>Dark Brown / Chocolate</value>
+        <value>Olive Green</value>
+    </table>
+    <table name="The outlaw band's symbol is..." id="symbol">
+        <value>A skull</value>
+        <value>An arrow</value>
+        <value>A dagger</value>
+        <value>A goblet</value>
+        <value>The moon</value>
+        <value>A star</value>
+        <value>A snake</value>
+        <value>A badger</value>
+        <value region_start="2" region_end="8" region_include="spider">A spider</value>
+        <value region_start="2" region_end="5" region_include="rat">A rat</value>
+        <value region_start="2" region_end="6" region_include="wolf">A wolf</value>
+        <value>A bear</value>
+    </table>
+    <table name="The outlaw band's leader is..." id="leader">
+        <value>A dangerous megalomaniac</value>
+        <value>A charismatic demagogue</value>
+        <value region_start="13" region_end="22" region_include="nation">A mysterious foreigner</value>
+        <value region_start="11" region_end="16" region_include="thief">A talented thief</value>
+        <value region_start="24" region_end="30" region_include="noblehouse">A member of a prominent family</value>
+        <value region_start="11" region_end="17" region_include="killer">A ruthless killer</value>
+        <value>A femme fatale</value>
+        <value region_start="11" region_end="16" region_include="__noun__">A charming rogue</value>
+        <value>A dashing swashbucker</value>
+        <value region_start="10" region_end="14" region_include="__noun__">A brutish thug</value>
+        <value region_start="10" region_end="16" region_include="priest">A devoted priest</value>
+        <value region_start="13" region_end="21" region_include="criminal">A well-known fugitive</value>
+    </table>
+    <table name="The outlaw band's members are primarily" id="members">
+        <value>Out-of-work artisans</value>
+        <value>Displaced peasants</value>
+        <value>Desperate peasants</value>
+        <value>Escaped slaves</value>
+        <value>Combat veterans</value>
+        <value region_start="0" region_end="7" region_include="nation">Foreign refugees</value>
+    </table>
+    <table name="The outlaw band's goals include (leadership and rank-and-file members could have different goals)" id="goals">
+        <value region_start="18" region_end="24" region_include="__noun__">Domination of the region's trade</value>
+        <value region_start="16" region_end="22" region_include="__noun__">Sabotage of the region's trade</value>
+        <value region_start="18" region_end="39" region_include="outlaws">Revenge against a rival band of outlaws</value>
+        <value region_start="20" region_end="26" region_include="__noun__">Revenge against the region's elite</value>
+        <value region_start="22" region_end="28" region_include="__noun__">Rebellion against the region's elite</value>
+        <value>Equality and freedom for all</value>
+        <value>A wealthy and peaceful retirement</value>
+        <value>Violence to slake their bloodlust</value>
+    </table>
+    <table name="Members of the outlaw band typically arm themselves with" id="arm">
+        <value>Wooden clubs</value>
+        <value>Over-sized daggers</value>
+        <value>Shortbows and arrows</value>
+        <value>Longbows and arrows</value>
+        <value>Daggers and crossbows</value>
+        <value>Axes and knives</value>
+        <value>Sticks and stones</value>
+        <value>Shortswords</value>
+        <value>Brass knuckles</value>
+        <value>Daggers and sling shots</value>
+    </table>
+    <table name="The outlaw band's headquarters is hidden in or near..." id="hq">
+        <value region_start="29" region_end="34" region_include="nobleman">The residence of a prominent noble</value>
+        <value region_start="0" region_end="13" region_include="village">The village's market square</value>
+        <value region_start="10" region_end="13" region_include="tavern">A wayside inn</value>
+        <value region_start="2" region_end="8" region_include="tavern">A tavern</value>
+        <value region_start="2" region_end="9" region_include="brothel">A brothel</value>
+        <value region_start="7" region_end="17" region_include="__noun__">An old lighthouse</value>
+        <value region_start="13" region_end="18" region_include="__noun__">An abandoned cabin</value>
+        <value region_start="2" region_end="11" region_include="__noun__">A waterfall</value>
+        <value region_start="2" region_end="6" region_include="cavern">A cave</value>
+        <value region_start="8" region_end="14" region_include="forest">A dense forest</value>
+    </table>
+    <table name="The outlaw band is feared or respected by..." id="feared">
+        <value>Ambassadors and tax collectors</value>
+        <value>Merchants and peddlers</value>
+        <value>Politicians and magistrates</value>
+        <value>Guards and sheriffs</value>
+        <value>Soldiers and warriors</value>
+        <value>Nobles and wealthy travelers</value>
+        <value>Knights and loyalists</value>
+        <value>Peasants and farmers</value>
+        <value>Priests and sages</value>
+        <value>Women and children</value>
+    </table>
+    <member name="Poacher" include="poacher" />
+    <member name="Robber" include="robber" />
+    <member name="Smuggler" include="smuggler" />
+    <member name="Criminal" include="criminal" />
+</category>

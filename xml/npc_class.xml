@@ -1,0 +1,125 @@
+<table name="The character's class is..." id="npc_class" short="Class">
+    <value>Arificer (Alchemist)</value>
+    <value>Arificer (Armorer)</value>
+    <value>Arificer (Artillerist)</value>
+    <value>Arificer (Battle Smith)</value>
+    <value region_start="0" region_end="9" region_include="barbarian">Barbarian (Ancestral Guardian)</value>
+    <value region_start="0" region_end="9" region_include="barbarian">Barbarian (Battlerager)</value>
+    <value region_start="0" region_end="9" region_include="barbarian">Barbarian (Beast)</value>
+    <value region_start="0" region_end="9" region_include="barbarian">Barbarian (Berserker)</value>
+    <value region_start="0" region_end="9" region_include="barbarian">Barbarian (Storm Herald)</value>
+    <value region_start="0" region_end="9" region_include="barbarian">Barbarian (Totem Warrior)</value>
+    <value region_start="0" region_end="9" region_include="barbarian">Barbarian (Wild Magic)</value>
+    <value region_start="0" region_end="9" region_include="barbarian">Barbarian (Zealot)</value>
+    <value>Blood Hunter (Order of the Ghostslayer)</value>
+    <value>Blood Hunter (Order of the Lycan)</value>
+    <value>Blood Hunter (Order of the Mutant)</value>
+    <value>Blood Hunter (Order of the Profane Soul)</value>
+    <value region_start="0" region_end="4" region_include="bard">Bard (College of Creation)</value>
+    <value region_start="0" region_end="4" region_include="bard">Bard (College of Eloquence)</value>
+    <value region_start="0" region_end="4" region_include="bard">Bard (College of Glamour)</value>
+    <value region_start="0" region_end="4" region_include="bard">Bard (College of Lore)</value>
+    <value region_start="0" region_end="4" region_include="bard">Bard (College of Spirits)</value>
+    <value region_start="0" region_end="4" region_include="bard">Bard (College of Swords)</value>
+    <value region_start="0" region_end="4" region_include="bard">Bard (College of Valor)</value>
+    <value region_start="0" region_end="4" region_include="bard">Bard (College of Whispers)</value>
+    <value region_start="0" region_end="6" region_include="__noun__">Cleric (Arcana Domain)</value>
+    <value region_start="0" region_end="6" region_include="__noun__">Cleric (Death Domain)</value>
+    <value region_start="0" region_end="6" region_include="__noun__">Cleric (Forge Domain)</value>
+    <value region_start="0" region_end="6" region_include="__noun__">Cleric (Grave Domain)</value>
+    <value region_start="0" region_end="6" region_include="__noun__">Cleric (Knowledge Domain)</value>
+    <value region_start="0" region_end="6" region_include="__noun__">Cleric (Life Domain)</value>
+    <value region_start="0" region_end="6" region_include="__noun__">Cleric (Light Domain)</value>
+    <value region_start="0" region_end="6" region_include="__noun__">Cleric (Nature Domain)</value>
+    <value region_start="0" region_end="6" region_include="__noun__">Cleric (Order Domain)</value>
+    <value region_start="0" region_end="6" region_include="__noun__">Cleric (Peace Domain)</value>
+    <value region_start="0" region_end="6" region_include="__noun__">Cleric (Tempest Domain)</value>
+    <value region_start="0" region_end="6" region_include="__noun__">Cleric (Trickery Domain)</value>
+    <value region_start="0" region_end="6" region_include="__noun__">Cleric (Twilight Domain)</value>
+    <value region_start="0" region_end="6" region_include="__noun__">Cleric (War Domain)</value>
+    <value region_start="0" region_end="5" region_include="druid">Druid (Circle of Dreams)</value>
+    <value region_start="0" region_end="5" region_include="druid">Druid (Circle of Spores)</value>
+    <value region_start="0" region_end="5" region_include="druid">Druid (Circle of Stars)</value>
+    <value region_start="0" region_end="5" region_include="druid">Druid (Circle of the Land)</value>
+    <value region_start="0" region_end="5" region_include="druid">Druid (Circle of the Moon)</value>
+    <value region_start="0" region_end="5" region_include="druid">Druid (Circle of the Shepherd)</value>
+    <value region_start="0" region_end="5" region_include="druid">Druid (Circle of Wildfire)</value>
+    <value region_start="0" region_end="7" region_include="fighter">Fighter (Arcane Archer)</value>
+    <value region_start="0" region_end="7" region_include="fighter">Fighter (Battle Master)</value>
+    <value region_start="0" region_end="7" region_include="fighter">Fighter (Cavalier)</value>
+    <value region_start="0" region_end="7" region_include="fighter">Fighter (Champion)</value>
+    <value region_start="0" region_end="7" region_include="fighter">Fighter (Echo Knight)</value>
+    <value region_start="0" region_end="7" region_include="fighter">Fighter (Eldrith Knight)</value>
+    <value region_start="0" region_end="7" region_include="fighter">Fighter (Gunslinger)</value>
+    <value region_start="0" region_end="7" region_include="fighter">Fighter (Psi Warrior)</value>
+    <value region_start="0" region_end="7" region_include="fighter">Fighter (Purple Dragon Knight)</value>
+    <value region_start="0" region_end="7" region_include="fighter">Fighter (Run Knight)</value>
+    <value region_start="0" region_end="7" region_include="fighter">Fighter (Samurai)</value>
+    <value region_start="0" region_end="4" region_include="monk">Monk (Way of Mercy)</value>
+    <value region_start="0" region_end="4" region_include="monk">Monk (Way of Shadow)</value>
+    <value region_start="0" region_end="4" region_include="monk">Monk (Way of the Ascendant Dragon)</value>
+    <value region_start="0" region_end="4" region_include="monk">Monk (Way of the Astral Self)</value>
+    <value region_start="0" region_end="4" region_include="monk">Monk (Way of the Cobal Soul)</value>
+    <value region_start="0" region_end="4" region_include="monk">Monk (Way of the Drunken Master)</value>
+    <value region_start="0" region_end="4" region_include="monk">Monk (Way of the Four Elements)</value>
+    <value region_start="0" region_end="4" region_include="monk">Monk (Way of the Kensei)</value>
+    <value region_start="0" region_end="4" region_include="monk">Monk (Way of the Long Death)</value>
+    <value region_start="0" region_end="4" region_include="monk">Monk (Way of the Open Hand)</value>
+    <value region_start="0" region_end="4" region_include="monk">Monk (Way of the Sun Soul)</value>
+    <value region_start="0" region_end="7" region_include="paladin">Paladin (Oath of the Ancients)</value>
+    <value region_start="0" region_end="7" region_include="paladin">Paladin (Oath of Conquest)</value>
+    <value region_start="0" region_end="7" region_include="paladin">Paladin (Oath of Devotion)</value>
+    <value region_start="0" region_end="7" region_include="paladin">Paladin (Oath of Glory)</value>
+    <value region_start="0" region_end="7" region_include="paladin">Paladin (Oath of Redemption)</value>
+    <value region_start="0" region_end="7" region_include="paladin">Paladin (Oath of the Crown)</value>
+    <value region_start="0" region_end="7" region_include="paladin">Paladin (Oath of the Open Sea)</value>
+    <value region_start="0" region_end="7" region_include="paladin">Paladin (Oath of the Watchers)</value>
+    <value region_start="0" region_end="7" region_include="paladin">Paladin (Oath of Vengeance)</value>
+    <value region_start="0" region_end="7" region_include="paladin">Paladin (Oathbreaker)</value>
+    <value region_start="0" region_end="6" region_include="ranger">Ranger (Drakewarden)</value>
+    <value region_start="0" region_end="6" region_include="ranger">Ranger (Fey Wanderer)</value>
+    <value region_start="0" region_end="6" region_include="ranger">Ranger (Hunter)</value>
+    <value region_start="0" region_end="6" region_include="ranger">Ranger (Gloomstalker)</value>
+    <value region_start="0" region_end="6" region_include="ranger">Ranger (Horizon Walker)</value>
+    <value region_start="0" region_end="6" region_include="ranger">Ranger (Monster Slayer)</value>
+    <value region_start="0" region_end="6" region_include="ranger">Ranger (Swarmkeeper)</value>
+    <value region_start="0" region_end="6" region_include="ranger">Ranger (Beastmaster)</value>
+    <value region_start="0" region_end="5" region_include="rogue">Rogue (Arcane Trickster)</value>
+    <value region_start="0" region_end="5" region_include="rogue">Rogue (Assassin)</value>
+    <value region_start="0" region_end="5" region_include="rogue">Rogue (Inquisitive)</value>
+    <value region_start="0" region_end="5" region_include="rogue">Rogue (Mastermind)</value>
+    <value region_start="0" region_end="5" region_include="rogue">Rogue (Phantom)</value>
+    <value region_start="0" region_end="5" region_include="rogue">Rogue (Scout)</value>
+    <value region_start="0" region_end="5" region_include="rogue">Rogue (Soulknife)</value>
+    <value region_start="0" region_end="5" region_include="rogue">Rogue (Swashbuckler)</value>
+    <value region_start="0" region_end="5" region_include="rogue">Rogue (Thief)</value>
+    <value region_start="0" region_end="8" region_include="sorcerer">Sorcerer (Aberrant Mind)</value>
+    <value region_start="0" region_end="8" region_include="sorcerer">Sorcerer (Clockwork Soul)</value>
+    <value region_start="0" region_end="8" region_include="sorcerer">Sorcerer (Divine Soul)</value>
+    <value region_start="0" region_end="8" region_include="sorcerer">Sorcerer (Draconic Bloodline)</value>
+    <value region_start="0" region_end="8" region_include="sorcerer">Sorcerer (Shadow Magic)</value>
+    <value region_start="0" region_end="8" region_include="sorcerer">Sorcerer (Storm Sorcery)</value>
+    <value region_start="0" region_end="8" region_include="sorcerer">Sorcerer (Wild Magic)</value>
+    <value region_start="0" region_end="7" region_include="warlock">Warlock (The Archfey)</value>
+    <value region_start="0" region_end="7" region_include="warlock">Warlock (The Celestial)</value>
+    <value region_start="0" region_end="7" region_include="warlock">Warlock (The Fathomless)</value>
+    <value region_start="0" region_end="7" region_include="warlock">Warlock (The Fiend)</value>
+    <value region_start="0" region_end="7" region_include="warlock">Warlock (The Genie)</value>
+    <value region_start="0" region_end="7" region_include="warlock">Warlock (The Great Old One)</value>
+    <value region_start="0" region_end="7" region_include="warlock">Warlock (The Hexblade)</value>
+    <value region_start="0" region_end="7" region_include="warlock">Warlock (The Undead)</value>
+    <value region_start="0" region_end="7" region_include="warlock">Warlock (The Undying)</value>
+    <value region_start="0" region_end="6" region_include="wizard">Wizard (School of Abjuration)</value>
+    <value region_start="0" region_end="6" region_include="wizard">Wizard (School of Conjuration)</value>
+    <value region_start="0" region_end="6" region_include="wizard">Wizard (School of Divination)</value>
+    <value region_start="0" region_end="6" region_include="wizard">Wizard (School of Enchantment)</value>
+    <value region_start="0" region_end="6" region_include="wizard">Wizard (School of Evocation)</value>
+    <value region_start="0" region_end="6" region_include="wizard">Wizard (School of Illusion)</value>
+    <value region_start="0" region_end="6" region_include="wizard">Wizard (School of Necromancy)</value>
+    <value region_start="0" region_end="6" region_include="wizard">Wizard (School of Transmutation)</value>
+    <value region_start="0" region_end="6" region_include="wizard">Wizard (Bladesinging)</value>
+    <value region_start="0" region_end="6" region_include="wizard">Wizard (Chronurgy Magic)</value>
+    <value region_start="0" region_end="6" region_include="wizard">Wizard (Graviturgy Magic)</value>
+    <value region_start="0" region_end="6" region_include="wizard">Wizard (Order of Scribes)</value>
+    <value region_start="0" region_end="6" region_include="wizard">Wizard (War Magic)</value>
+</table>

@@ -1,0 +1,25 @@
+        <category name="Cook" id="cook">
+            <name name="The cook's name is..."/>
+            <include name="Race" include="npc_race" />
+            <table name="The cook greets you with..." id="greet">
+                <value>A goblet of warm wine</value>
+                <value>A glass of water</value>
+                <value>A cup of cold porridge</value>
+                <value>A hearty handshake</value>
+                <value>A sweet smile</value>
+            </table>
+            <table name="The cook is looking for..." id="looking">
+                <value>Someone more important to talk to</value>
+                <value>Some better ingredients</value>
+                <value>A good joke or story</value>
+                <value>The bottom of a bottle</value>
+            </table>
+            <table name="The cook carries..." id="carries">
+                <value>A filthy rag</value>
+                <value>A large wooden spoon</value>
+                <value>A grease-smeared apron</value>
+                <value>An unusual belt purse</value>
+                <value>A pouch full of spices</value>
+                <value>A bottle of whisky</value>
+            </table>
+        </category>

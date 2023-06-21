@@ -1,0 +1,38 @@
+<category name="Miner" id="miner">
+    <name name="The miner's name is..."/>
+    <include name="Race" include="npc_race" />
+    <table name="The miner is..." id="is">
+        <value region_start="18" region_end="24" region_include="farmfolk">The son of a poor farmer</value>
+        <value region_start="18" region_end="27" region_include="fisherfolk">The son of a poor fisherman</value>
+        <value region_start="18" region_end="23" region_include="miner">The son of an old miner</value>
+        <value region_start="15" region_end="30" region_include="__noun__">An adventurous treasure hunter</value>
+        <value region_start="15" region_end="27" region_include="nation">A slave from a foreign land</value>
+        <value region_start="2" region_end="7" region_include="dwarf">A dwarf</value>
+    </table>
+    <table name="The miner has..." id="has">
+        <value>Unkempt hair</value>
+        <value>Skin blackened with dust</value>
+        <value>Hard, leathery hands</value>
+        <value>Long whiskers</value>
+        <value>An excited laugh</value>
+        <value>A raspy voice</value>
+    </table>
+    <table name="The miner wears..." id="wears">
+        <value>A sweat-stained shirt</value>
+        <value>A belt of tools</value>
+        <value>Patched-knee breeches</value>
+        <value>A head lamp</value>
+    </table>
+    <table name="The miner is looking to..." id="looking">
+        <value>Get rich quick</value>
+        <value>Make some coin to payoff a debt</value>
+        <value>Make some coin to send home to a family</value>
+        <value>Share a drink while prying for rumors</value>
+    </table>
+    <table name="The miner carries..." id="carries">
+        <value>A shovel and a pick</value>
+        <value>Alength of rope and a lantern</value>
+        <value>A pouch of uncut gems or bits of raw ore</value>
+        <value>A flask of storng spirits</value>
+    </table>
+</category>

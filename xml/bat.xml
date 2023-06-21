@@ -1,0 +1,106 @@
+            <category name="Bat" id="bat">
+                <table name="Size: the bat is..." id="is">
+                    <value>Tiny; it could fit in the palm of your hand.</value>
+                    <value>Small; you could probably grasp it in one hand.</value>
+                    <value>A good size; its body is about the size of a rat's.</value>
+                    <value>Pretty big; its body is about the size of a house cat's.</value>
+                    <value>Enormous; its body is about the size of a sheep dog's.</value>
+                    <value>Terrifyingly large; it's like a bear with wings.</value>
+                </table>
+                <table name="Color: The bat's fur color is..." id="fur">
+                    <value>Black fur...</value>
+                    <value>Charcoal fur...</value>
+                    <value>Grey fur...</value>
+                    <value>Pale fur...</value>
+                    <value>Tan fur...</value>
+                    <value>Reddish brown fur...</value>
+                    <value>Dark brown fur...</value>
+                    <value>Black and brown mottled fur...</value>
+                    <value>Black and grey mottled fur...</value>
+                    <value>Brown and grey mottled fur...</value>
+                </table>
+                <table name="Color: ...with..." id="fur_with">
+                    <value>Black skin.</value>
+                    <value>Dark grey skin.</value>
+                    <value>Pale grey skin.</value>
+                    <value>Light brown skin.</value>
+                    <value>Muddy brown skin.</value>
+                    <value>Dark brown skin.</value>
+                    <value>Ruddy skin.</value>
+                    <value>Orangish brown skin.</value>
+                    <value>Reddish pink skin.</value>
+                    <value>Pink skin.</value>
+                </table>
+                <table name="Eyes: The bat has..." id="eyes">
+                    <value>Large dark eyes.</value>
+                    <value>Large pale eyes.</value>
+                    <value>Small dark eyes.</value>
+                    <value>Wide-set eyes.</value>
+                    <value>Narrow-set eyes.</value>
+                    <value>Blinking eyes.</value>
+                    <value>Nearly sightless eyes.</value>
+                    <value>Squinty eyes.</value>
+                    <value>Golden eyes that catch the light.</value>
+                    <value>Glowing red eyes.</value>
+                </table>
+                <table name="Face/head: The bat has..." id="face">
+                    <value>Oversized ears.</value>
+                    <value>Tufted ears.</value>
+                    <value>Pointy ears.</value>
+                    <value>Long sharp fangs.</value>
+                    <value>Sharp little teeth.</value>
+                    <value>A pig snout.</value>
+                    <value>A long snout.</value>
+                    <value>A flat snout.</value>
+                    <value>A hairless face.</value>
+                    <value>Bristly fur atop its head.</value>
+                </table>
+                <table name="Manner: The bat..."  id="manner">
+                    <value>Squeaks incessantly.</value>
+                    <value>Squeaks when it is frightened.</value>
+                    <value>Shrieks when it takes off from its roost.</value>
+                    <value>Shrieks gleefully after it bites something.</value>
+                    <value>Flutters about nervously.</value>
+                    <value>Flies with lots of loops and swoops.</value>
+                    <value>Keeps its distance and swoops in to strike.</value>
+                    <value>Shows little fear of other creatures.</value>
+                    <value>Watches warily from its roost.</value>
+                    <value>Only leaves its roost if disturbed.</value>
+                </table>
+                <table name="Diet: The bat prefers to eat..." id="diet">
+                    <value>Melons and other large fruits.</value>
+                    <value>Berries and other small fruits.</value>
+                    <value>Nectar.</value>
+                    <value>Beetles.</value>
+                    <value>Flies.</value>
+                    <value>Spiders.</value>
+                    <value>Rats and other small mammals.</value>
+                    <value>Frogs and lizards.</value>
+                    <value>The blood of livestock.</value>
+                    <value>Human blood.</value>
+                </table>
+                <table name="Sleeping habits: The bat is typically most active..." id="habit">
+                    <value>In the late afternoon and early evening.</value>
+                    <value>Around sunset.</value>
+                    <value>Shortly after sunset.</value>
+                    <value>While the night is young.</value>
+                    <value>Around midnight.</value>
+                    <value>In the wee hours.</value>
+                    <value>Before first light.</value>
+                    <value>Around dawn.</value>
+                    <value>In the early morning hours.</value>
+                    <value>On moonless nights.</value>
+                </table>
+                <table name="Habitat: The bat has evolved to thrive..." id="habitat">
+                    <value>In caverns near the surface.</value>
+                    <value>In deep caverns.</value>
+                    <value>On cliff-sides.</value>
+                    <value>In temperate woodlands.</value>
+                    <value>In jungles.</value>
+                    <value>In rocky deserts.</value>
+                    <value>In warm, mountainous regions.</value>
+                    <value>In mild coastal regions.</value>
+                    <value>In swamps.</value>
+                    <value>In treetops.</value>
+                </table>
+            </category>

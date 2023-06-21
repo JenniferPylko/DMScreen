@@ -1,0 +1,108 @@
+<category name="Kobold" id="kobold">
+    <table name="The kobold is..." id="is">
+        <value region_start="2" region_end="7" region_include="miner">A miner.</value>
+        <value region_start="2" region_end="7" region_include="scout">A scout.</value>
+        <value region_start="2" region_end="9" region_include="warrior">A warrior.</value>
+        <value>A trapmaker.</value>
+        <value>A sentry.</value>
+        <value>A slinger.</value>
+        <value>A sneakthief.</value>
+        <value>A wyrmpriest.</value>
+        <value>A rat-catcher.</value>
+        <value>A speardancer.</value>
+        <value>A pyromancer.</value>
+        <value region_start="2" region_end="10" region_include="sorcerer">A sorcerer.</value>
+        <value>A tunnel-prowler.</value>
+        <value>A dragonshield.</value>
+        <value>A gemcutter.</value>
+        <value>A cook.</value>
+        <value>A digger.</value>
+        <value>A prankster.</value>
+        <value>A slyblade.</value>
+        <value>A worthless nobody.</value>
+    </table>
+    <table name="The kobold is particularly skilled at..." id="skilled">
+        <value>Being sneaky.</value>
+        <value>Not being seen.</value>
+        <value>Tracking foes.</value>
+        <value>Building traps.</value>
+        <value>Avoiding traps.</value>
+        <value>Repairing traps.</value>
+        <value>Foraging for food and water.</value>
+        <value>Digging tunnels.</value>
+        <value>Blasting tunnels.</value>
+        <value>Backstabbing foes.</value>
+        <value>Backstabbing allies.</value>
+        <value>Cutting throats.</value>
+    </table>
+    <table name="The kobold wields..." id="wields">
+        <value region_start="16" region_end="21" region_include="__noun__">A jagged little sword.</value>
+        <value region_start="9" region_end="14" region_include="__noun__">A mended sword</value>
+        <value region_start="9" region_end="13" region_include="__noun__">A spiked club.</value>
+        <value region_start="17" region_end="20" region_include="__noun__">A wicked looking axe.</value>
+        <value region_start="2" region_end="7" region_include="__noun__">A spear tipped with obsidian.</value>
+        <value>Several daggers of obsidian.</value>
+        <value region_start="18" region_end="24" region_include="__noun__">A large, serrated dagger.</value>
+        <value>A pair of curved daggers.</value>
+        <value region_start="17" region_end="23" region_include="__noun__">A cracked wooden shield.</value>
+        <value region_start="2" region_end="8" region_include="__noun__">A shield with scorch marks.</value>
+        <value region_start="2" region_end="7" region_include="__noun__">A sling with a pouch of small, smooth stones.</value>
+        <value region_start="2|15|32" region_end="7|23|35" region_include="__noun__|__noun__|__noun__">A sling with a clay pot full of goo.</value>
+    </table>
+    <table name="The kobold wears..." id="wears">
+        <value>Armor with greasy stains.</value>
+        <value>Patched leather armor.</value>
+        <value region_start="24" region_end="34" region_include="armorsmith">Piecemeal chain armor. (Crafted by)</value>
+        <value>A leather helm.</value>
+        <value>A bat-winged helm.</value>
+        <value>A dragon-face helm.</value>
+        <value region_start="41" region_end="51" region_include="armorsmith">A breastplate emblazoned with a snake. (Crafted by)</value>
+        <value>Several ropes tied to its belt.</value>
+        <value region_start="21" region_end="26" region_include="__noun__">A belt with a lot of tools.</value>
+        <value>A cloudy crystal on a string around its neck.</value>
+        <value>A black cloak with a hood.</value>
+        <value>A large belt purse.</value>
+    </table>
+    <table name="The kobold has..." id="has">
+        <value>Red warpaint on its face.</value>
+        <value>A missing eye.</value>
+        <value>Burn scars on its face.</value>
+        <value>Several missing front teeth.</value>
+        <value>Unusually long teeth.</value>
+        <value>A long, thin bone in its nose piercing.</value>
+        <value>Violet eyes.</value>
+        <value>Dark, striped scales.</value>
+        <value>Bright, spotted scales.</value>
+        <value>Pale, striped scales.</value>
+        <value>Dull, spotted scales.</value>
+        <value>Several missing fingers.</value>
+    </table>
+    <table name="The kobold also has..." id="also_has">
+        <value>An unsettling stare.</value>
+        <value>A lean and hungry look.</value>
+        <value>A maniacal laugh.</value>
+        <value>An incessant cackle.</value>
+        <value>A high-pitched twittering laugh.</value>
+        <value>A tendency to snicker at everything.</value>
+        <value>A nervous twitch.</value>
+        <value>A difficult time standing still.</value>
+        <value>A limp.</value>
+        <value>A habit of tapping one foot when it stands still.</value>
+        <value>A habit of chewing on its fingers.</value>
+        <value>A ponderous bulk, for a kobold.</value>
+    </table>
+    <table name="Presently, the kobold is looking to..." id="looking">
+        <value>Find something to eat.</value>
+        <value>Find something to drink.</value>
+        <value>Find some coins or gems to steal.</value>
+        <value region_start="9" region_end="15" region_include="__noun__">Warn its master of monster hunters in the area.</value>
+        <value region_start="9|19" region_end="15|33" region_include="__noun__|__noun__">Warn its master of a savage beast in the area.</value>
+        <value region_start="14" region_end="20" region_include="__noun__">Report to its master as to where to find treasure.</value>
+        <value region_start="24" region_end="30" region_include="__noun__">Prove its mettle to its master.</value>
+        <value region_start="20" region_end="26" region_include="__noun__">Avoid notice by its master</value>
+        <value>Avoid notice by anyone.</value>
+        <value region_start="10" region_end="16" region_include="__noun__">Leave its master entirely.</value>
+        <value>Play a cruel prank.</value>
+        <value region_start="23" region_end="27" region_include="traps">Test out a newly built trap.</value>
+    </table>
+</category>

@@ -1,0 +1,5 @@
+<category name="Desert" id="desert">
+    <category name="Natural Desert" id="desert_natural" />
+    <category name="Flame-Scorched Desert" id="desert_flame" />
+    <category name="Shadowy Desert" id="desert_shadow" />
+</category>

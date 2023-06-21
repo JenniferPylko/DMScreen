@@ -1,0 +1,286 @@
+        <category name="City" id="city">
+            <table name="The city's name is..." type="name" id="city_name">
+                <patterns>
+                    <pattern>{aye} {bee}</pattern>
+                </patterns>
+                <list type="aye">
+                    <item>Stone</item>
+                    <item>Water</item>
+                    <item>Leaf</item>
+                    <item>Ice</item>
+                    <item>Flame</item>
+                    <item>Sol</item>
+                    <item>Storm</item>
+                    <item>Earth</item>
+                    <item>Gleam</item>
+                    <item>Star</item>
+                    <item>Art</item>
+                    <item>War</item>
+                    <item>Heart</item>
+                    <item>Hard</item>
+                    <item>Fall</item>
+                    <item>Rock</item>
+                    <item>Doom</item>
+                    <item>Oak</item>
+                    <item>Tear</item>
+                    <item>Raven</item>
+                    <item>Badger</item>
+                    <item>Snake</item>
+                    <item>Lion</item>
+                    <item>Hell</item>
+                    <item>Rage</item>
+                    <item>Brine</item>
+                    <item>Rat</item>
+                    <item>Buck</item>
+                    <item>Lily</item>
+                    <item>Core</item>
+                    <item>Stench</item>
+                    <item>Mage</item>
+                    <item>God</item>
+                    <item>Soil</item>
+                    <item>Pure</item>
+                    <item>Mal</item>
+                    <item>Cam</item>
+                    <item>Fen</item>
+                    <item>Clear</item>
+                    <item>Split</item>
+                    <item>Founder's</item>
+                    <item>Heir</item>
+                    <item>Fair</item>
+                    <item>Spin</item>
+                    <item>Lord's</item>
+                    <item>King's</item>
+                    <item>Servant's</item>
+                    <item>Demon's</item>
+                    <item>Snow</item>
+                    <item>Land's</item>
+                </list>
+                <list type="bee">
+                    <item>crest</item>
+                    <item>bridge</item>
+                    <item>run</item>
+                    <item>catch</item>
+                    <item>blade</item>
+                    <item>haven</item>
+                    <item>rise</item>
+                    <item>more</item>
+                    <item>light</item>
+                    <item>main</item>
+                    <item>blaze</item>
+                    <item>place</item>
+                    <item>tear</item>
+                    <item>fold</item>
+                    <item>rest</item>
+                    <item>host</item>
+                    <item>craft</item>
+                    <item>lair</item>
+                    <item>hollow</item>
+                    <item>vale</item>
+                    <item>hammer</item>
+                    <item>pike</item>
+                    <item>rail</item>
+                    <item>spike</item>
+                    <item>ring</item>
+                    <item>henge</item>
+                    <item>coil</item>
+                    <item>spring</item>
+                    <item>jaw</item>
+                    <item>mark</item>
+                    <item>hail</item>
+                    <item>loch</item>
+                    <item>child</item>
+                    <item>keep</item>
+                    <item>fort</item>
+                    <item>brook</item>
+                    <item>forth</item>
+                    <item>melt</item>
+                    <item>borourgh</item>
+                    <item>ford</item>
+                    <item>crawl</item>
+                    <item>moral</item>
+                    <item>combe</item>
+                    <item>glen</item>
+                    <item>garden</item>
+                    <item>wish</item>
+                    <item>fellow</item>
+                    <item>ridge</item>
+                    <item>ward</item>
+                    <item>town</item>
+                </list>
+            </table>
+            <table name="Geography: The city grew up around..." short="Geography" id="city_geography">
+                <value>A coastal harbor.</value>
+                <value>A calm, coastal bay.</value>
+                <value>A large freshwater lake.</value>
+                <value>A wide, navigable river.</value>
+                <value region_start="2" region_end="7" region_include="_noun__">A river navigable by small craft.</value>
+                <value>The mouth of a river or a river delta.</value>
+                <value>The confluence of two rivers.</value>
+                <value>A series of natural springs.</value>
+                <value>A well-traveled crossroads.</value>
+                <value>A water source and a well-travelled road.</value>
+            </table>
+            <table name="Resources: The city is near a region ideal for mining, growing, or grazing..." short="Resources" id="city_resources">
+                <value>Iron ore.</value>
+                <value>Copper ore.</value>
+                <value>Gold or silver deposits.</value>
+                <value>Clay or granite deposits.</value>
+                <value>Quartz or salt deposits.</value>
+                <value>Peat or coal deposits.</value>
+                <value>Hardwood lumber.</value>
+                <value>Barley and oats.</value>
+                <value>Beans and corn.</value>
+                <value>Nuts and olives.</value>
+                <value>Rice or wheat.</value>
+                <value>Potatoes and leeks.</value>
+                <value>Sugar cane.</value>
+                <value>Tobacco.</value>
+                <value>Cotton.</value>
+                <value>Fruit trees.</value>
+                <value>Cabbages and beets.</value>
+                <value>Cattle.</value>
+                <value>Dairy cows.</value>
+                <value>Sheep.</value>
+            </table>
+            <table name="Culture: The city is known for its..." short="Culture" id="city_culture">
+                <value>Architectural style.</value>
+                <value>Architectural feats.</value>
+                <value>Artists and poets.</value>
+                <value>Inventive cuisine.</value>
+                <value>Traditional cuisine.</value>
+                <value>Suggestive dancing.</value>
+                <value>Gladiatorial games.</value>
+                <value>Horse races.</value>
+                <value>Scholars and sages.</value>
+                <value>Music and/or dance.</value>
+                <value>Romance.</value>
+                <value>Jousting games.</value>
+                <value>Superior soldiers.</value>
+                <value>Street festivals.</value>
+                <value>Religious feasts.</value>
+                <value>Religious fervor.</value>
+                <value>Traditional dress.</value>
+                <value>Unusual dress.</value>
+                <value>Theater scene.</value>
+                <value>Wine and/or ale.</value>
+            </table>
+            <table name="Government: The city is ruled by..." short="Government" id="city_government">
+                <value>The head of a noble family.</value>
+                <value>A council of distinguished nobles.</value>
+                <value>A council of wealthy merchants.</value>
+                <value>A council of elected officials.</value>
+                <value>An elected mayor.</value>
+                <value>A benevolent sovereign.</value>
+                <value>A wicked tyrant.</value>
+                <value>A brutal warlord.</value>
+                <value>A cabal of witches and wizards.</value>
+                <value>The leaders of a religious order.</value>
+            </table>
+            <table name="Historical Event: The city experienced..." short="Event" id="city_event">
+                <value>Mass conversions.</value>
+                <value>An earthquake.</value>
+                <value>An age of exploration.</value>
+                <value>A terrible famine.</value>
+                <value>A disastrous flood.</value>
+                <value>A legendary storm.</value>
+                <value>An assassination.</value>
+                <value>A series of riots.</value>
+                <value>A great discovery.</value>
+                <value>A vermin infestation.</value>
+                <value>A destructive fire.</value>
+                <value>A deadly plague.</value>
+                <value>A bloody rebellion.</value>
+                <value>A lengthy siege.</value>
+                <value>Religious wars.</value>
+                <value>Territorial wars.</value>
+                <value region_start="2" region_end="9" region_include="nation">A foreign occupation.</value>
+                <value>An economic boom.</value>
+                <value>A great depression.</value>
+                <value>A dragon attack.</value>
+            </table>
+            <table name="Threats: The people of the city are fearful of (leaders and commonfolk may fear different things)..." short="Threat" id="city_threat">
+                <value>Bandits and outlaws.</value>
+                <value>Barbarian invasions.</value>
+                <value>Disease outbreaks.</value>
+                <value>A dragon or legendary beast.</value>
+                <value>Destructive flooding.</value>
+                <value>Food shortages.</value>
+                <value region_start="16" region_end="30" region_include="nation">Occupation by a foreign empire.</value>
+                <value region_start="24" region_end="27" region_include="deity">The wrath of a vengeful god.</value>
+                <value>Magic and new inventions.</value>
+                <value>Pirates, smugglers, and bands of thieves.</value>
+                <value>A recently established religion.</value>
+                <value>A rival city.</value>
+            </table>
+            <table name="Defenses: The city is defended by..." short="Defenses" id="city_defense">
+                <value>A disciplined military guard.</value>
+                <value>A standing army of devoted soldiers.</value>
+                <value>A company of sellswords and knaves.</value>
+                <value>An order of holy knights.</value>
+                <value>Little; the city’s been sacked many times.</value>
+                <value>A huge, fortress or citadel within the city.</value>
+                <value>A series of watchtowers and forts spread throughout the region.</value>
+                <value>Thick stone walls and impenetrable gates.</value>
+                <value>High stone walls, catapults, and scorpions.</value>
+                <value>A powerful magical ward or gigantic golem.</value>
+            </table>
+            <table name="Law Enforcement: The laws are..." short="Law Enforcement" id="city_law">
+                <value>Enforced by a strict, orderly city watch.</value>
+                <value>Enforced by a corrupt, roguish city watch.</value>
+                <value>Not enforced among the wealthy elite.</value>
+                <value>Enforced in a haphazard fashion, incomprehensible to visitors.</value>
+                <value>Not enforced for those who pay bribes.</value>
+                <value>More like guidelines.</value>
+                <value>Enforced by a secret society of assassins, mages, or priests.</value>
+                <value>Enforced by a company of mercenaries.</value>
+                <value>Simple, easy to learn and to follow.</value>
+                <value>Extensive and complicated, nonsensical.</value>
+                <value>Enforced by a cheerful drunken sheriff.</value>
+                <value>Enforced by a rigid soldier-turned-sheriff.</value>
+            </table>
+            <table name="Power Players: Within or outside the government, power is held by..." short="Power Players" id="city_power">
+                <value>A ruthless assassins’ guild.</value>
+                <value>A populist demagogue.</value>
+                <value>The captain of a mercenary company.</value>
+                <value>A champion knight or arena fighter.</value>
+                <value>One or more crafting guilds.</value>
+                <value>A dangerous crime boss.</value>
+                <value>One or more criminal gangs.</value>
+                <value>A charismatic cult leader.</value>
+                <value>One or more merchant guilds.</value>
+                <value>A scheming noble lord or lady.</value>
+                <value>An outspoken philosopher or scholar.</value>
+                <value>A celebrated poet and playwright.</value>
+                <value>A popular priest or priestess.</value>
+                <value>A secret society of lorekeepers.</value>
+                <value>Smugglers and black market dealers.</value>
+                <value>The son or daughter of a deposed ruler.</value>
+                <value>A wealthy trader of exotic goods.</value>
+                <value>A conniving vampire or fiend.</value>
+                <value>A bold war hero.</value>
+                <value>A clever witch or wizard.</value>
+            </table>
+            <table name="Vignettes, encounters, and color" short="Flavor" id="city_flavor">
+                <value>A group of dogs chewing on fallen guardsmen after a street battle</value>
+                <value region_start="0" region_end="14" region_include="spider">A giant spider, seen out of the corner of your eye, pulls a struggling something back into a dark alley</value>
+                <value>A group of beggars in rags huddle together for warmth against the chill of the winter morning</value>
+                <value>A man and a woman, speaking to a stone carver about what to put on their child's headstone</value>
+                <value>A burned out drug den with charred corpses outside and city guards keeping gawkers away</value>
+                <value>A man doling out rations inside a besieged city. Only those able to fight still get full portions</value>
+                <value>A carriage passing through a rutted street with armed guards and a dangerous looking wizard riding shotgun</value>
+                <value>A tailor trying hopelessly to impress a noble women with a variety of dresses, all of which she scoffs at</value>
+                <value region_start="0" region_end="18" region_include="gang">A gang of ruffians scoping out potential victims. They give you a nod of acknowledgement, one predator to another</value>
+                <value>A strumpet with a face like a raccoon checks you out, then resignedly starts walking towards your party while putting on a fake smile</value>
+                <value>A group of guards escorts a morose prisoner to the gallows</value>
+                <value>A group of crows flies away from several bodies hanging at the gallows when people approach</value>
+                <value>A group of elves pass the party, holding handkerchiefs to their noses</value>
+                <value>A leper approaches the party and starts begging for alms</value>
+                <value>The king's guard execute a man in the street for a petty crime</value>
+                <value>A passing wagon hits a puddle and sprays the party with vile mud</value>
+                <value>A carriage tramples a club footed beggar who was too slow to move out of the way</value>
+                <value>A loan shark approaches the party to make an offer</value>
+                <value>A thick fog rolls in covering the city in damp mist</value>
+                <value>A church bell sounds mournfully, its ring swallowed up by the fog</value>
+            </table>
+            <member name="Locations" include="locations" />
+        </category>

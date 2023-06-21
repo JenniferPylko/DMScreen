@@ -1,0 +1,17 @@
+            <category name="Fighter" id="fighter">
+                <name name="The fighter's name is..." />
+                <table name="You have heard of this fighter because..." id="heard">
+                    <value region_start="26" region_end="30" region_include="nobleman">He was drummed out of the king's legion and was sent to prison by a military court.</value>
+                    <value>His skills are rumored to be a fraud, but no one has come forward with proof.</value>
+                    <value>He's a dangerous hired killer. For the right price he'll take any dirty job.</value>
+                    <value>He's a mercenary giant killer. His prices are exorbitant, but he's worth the money. The common folk consider him a hero.</value>
+                    <value region_start="85" region_end="89" region_include="nobleman">He's an up-and-coming dragon slaying folk hero. He's in it for personal reasons. The king fears he'll draw negative attention.</value>
+                    <value>He's a wandering troubleshooter. He's got a good heart, but even good folks have to have money to eat.</value>
+                    <value>He's a slow witted thug. Only the simple things in life, money, fighting, wenching, interest him.</value>
+                    <value region_start="61" region_end="65" region_include="nobleman">He's the best swordsman in the land and the right arm of the king.</value>
+                    <value region_start="19" region_end="28" region_include="mercenary">He's a hard bitten mercenary with a keen mind for stacking the odds.</value>
+                    <value region_start="16" region_end="34" region_include="legendary_weapon">His weapon is a legendary artifact recovered during a dangerous quest.</value>
+                    <value region_start="43" region_end="50" region_include="goblinclan">He single-handedly held off an invasion of goblins</value>
+                    <value region_start="21" region_end="34" region_include="gang">He's the leader of a gang of thugs</value>
+                </table>
+            </category>

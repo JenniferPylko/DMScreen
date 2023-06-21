@@ -1,0 +1,268 @@
+<category name="Silly Insult" id="insults">
+    <table name="Insult" id="insult_is">
+        <patterns>
+            <pattern>{adj} {noun} {verb}</pattern>
+            <pattern>{adj} {noun}</pattern>
+            <pattern>{adj} {adj} {noun}</pattern>
+        </patterns>
+        <list type="adj">
+            <item>Mundane</item>
+            <item>Cantankerous</item>
+            <item>Helpless</item>
+            <item>Ratty</item>
+            <item>Putrid</item>
+            <item>Thick</item>
+            <item>Dense</item>
+            <item>Slow</item>
+            <item>Mewling</item>
+            <item>Obnoxious</item>
+            <item>Tasteless</item>
+            <item>Inconsiderate</item>
+            <item>Asinine</item>
+            <item>Half-faced</item>
+            <item>Shaky</item>
+            <item>Dopey</item>
+            <item>Goblin-eared</item>
+            <item>Unconsionable</item>
+            <item>Vacuous</item>
+            <item>Tainted</item>
+            <item>Outrageous</item>
+            <item>Rotten</item>
+            <item>Infantile</item>
+            <item>Immature</item>
+            <item>Stale</item>
+            <item>Callous</item>
+            <item>Grubby</item>
+            <item>Unthinking</item>
+            <item>Frail</item>
+            <item>Clay-brained</item>
+            <item>Daft</item>
+            <item>Thoughtless</item>
+            <item>Odd</item>
+            <item>Flap-mouthed</item>
+            <item>Unforgivable</item>
+            <item>Cross-eyed</item>
+            <item>Shrill</item>
+            <item>Cruel</item>
+            <item>Awful</item>
+            <item>Salty</item>
+            <item>Dull</item>
+            <item>Clumsy</item>
+            <item>Cowardly</item>
+            <item>Unintelligent</item>
+            <item>Lowly</item>
+            <item>Half-witted</item>
+            <item>Flatulent</item>
+            <item>Pimple-faced</item>
+            <item>Pock-marked</item>
+            <item>Ill-bred</item>
+            <item>Inexcusable</item>
+            <item>Urchin-snouted</item>
+            <item>Old</item>
+            <item>Deceitful</item>
+            <item>Hell-hated</item>
+            <item>Imp-faced</item>
+            <item>Doltish</item>
+            <item>Catty</item>
+            <item>Gutless</item>
+            <item>Evil</item>
+            <item>Revolting</item>
+            <item>Dribbling</item>
+            <item>Low-down</item>
+            <item>Soggy</item>
+            <item>Soft-toothed</item>
+            <item>Conceited</item>
+            <item>Ill-bred</item>
+            <item>Fat</item>
+            <item>Disturbed</item>
+            <item>Limp-wristed</item>
+            <item>Fool-born</item>
+            <item>Inbred</item>
+            <item>Flaky</item>
+            <item>Daft</item>
+            <item>Senseless</item>
+            <item>Slack-jawed</item>
+            <item>Indefensible</item>
+            <item>Greasy</item>
+            <item>Idiotic</item>
+            <item>Flatfooted</item>
+            <item>Crazy</item>
+            <item>Ruined</item>
+            <item>Blubbering</item>
+            <item>Weak</item>
+            <item>Colossal</item>
+            <item>Idle-headed</item>
+            <item>Smutty</item>
+            <item>Icy</item>
+            <item>Lame</item>
+            <item>Abhorrent</item>
+            <item>Slope-shouldered</item>
+            <item>Below average</item>
+            <item>Clammy</item>
+            <item>Feces-ridden</item>
+            <item>Dirty</item>
+            <item>Lice-ridden</item>
+            <item>Swag-bellied</item>
+            <item>Mangy</item>
+            <item>Hare brained</item>
+            <item>Lousy</item>
+            <item>Wart-ridden</item>
+            <item>Grotesque</item>
+            <item>Immense</item>
+            <item>Witless</item>
+            <item>Banal</item>
+            <item>Faint</item>
+            <item>Creepy</item>
+            <item>Clumsy</item>
+            <item>Elf-skinned</item>
+            <item>Unprincipled</item>
+            <item>Foolish</item>
+            <item>Abyss-spawned</item>
+            <item>Bent-fingered</item>
+            <item>Cantrip-flinging</item>
+            <item>Dragon-breath</item>
+            <item>Drow-fondling</item>
+            <item>Eye-averting</item>
+            <item>Ghoul-skinned</item>
+            <item>Gnoll-punching</item>
+            <item>Goblin-fiddling</item>
+            <item>Knife-eared</item>
+            <item>Hissy fitting</item>
+            <item>Hog-rubbing</item>
+            <item>Hussy</item>
+            <item>Jaded</item>
+            <item>Lemon-smelling</item>
+            <item>Lentil weaving</item>
+            <item>Limp wrist</item>
+            <item>Moss-growing</item>
+            <item>Netherese</item>
+            <item>Noggin-filching</item>
+            <item>Numbskulled</item>
+            <item>Otyugh-attracting</item>
+            <item>Pantaloon-gathering</item>
+            <item>Pie-eating</item>
+            <item>Pit-yacking</item>
+            <item>Plonker-waddling</item>
+            <item>Quipper-seething</item>
+            <item>Rubber-faced</item>
+            <item>Slack-jawed</item>
+            <item>Slant-legged</item>
+            <item>Snot-eating</item>
+            <item>Sobbing</item>
+            <item>Spider-licking</item>
+            <item>Bed-staining</item>
+            <item>Stirge-infested</item>
+            <item>Tattling</item>
+            <item>Troll-smelling</item>
+            <item>Turnip-swindling</item>
+            <item>Weave-breaking</item>
+            <item>Wizened</item>
+            <item>Woggish</item>
+        </list>
+        <list type="noun">
+            <item>windbag</item>
+            <item>oaf</item>
+            <item>goblin-licker</item>
+            <item>chicken liver</item>
+            <item>wretch</item>
+            <item>ogre-sucker</item>
+            <item>layabout</item>
+            <item>dullard</item>
+            <item>bonehead</item>
+            <item>moron</item>
+            <item>kook</item>
+            <item>scullion</item>
+            <item>smegger</item>
+            <item>blister</item>
+            <item>slop-bucket</item>
+            <item>ninny</item>
+            <item>gargoyle</item>
+            <item>cow</item>
+            <item>pig-farmer</item>
+            <item>fungus</item>
+            <item>mouth breather</item>
+            <item>tea leaf</item>
+            <item>kobold-hugger</item>
+            <item>dolt</item>
+            <item>trollson</item>
+            <item>dullard</item>
+            <item>zero</item>
+            <item>nerf-herder</item>
+            <item>chicken</item>
+            <item>miscreant</item>
+            <item>phony</item>
+            <item>milk-drinker</item>
+            <item>goat lover</item>
+            <item>mite</item>
+            <item>trollspawn</item>
+            <item>hick</item>
+            <item>geezer</item>
+            <item>stain-sniffer</item>
+            <item>hedge-pig</item>
+            <item>maggot pie</item>
+            <item>cur</item>
+            <item>coward</item>
+            <item>goblin-lover</item>
+            <item>fart</item>
+            <item>trollop</item>
+            <item>vomit-chugger</item>
+            <item>creeper</item>
+            <item>buffoon</item>
+            <item>slop-mouth</item>
+            <item>bastard</item>
+            <item>black pudding</item>
+            <item>bugbear</item>
+            <item>churl</item>
+            <item>crone</item>
+            <item>cur</item>
+            <item>country bumpkin</item>
+            <item>fomorian</item>
+            <item>goon</item>
+            <item>hobgoblin</item>
+            <item>lob</item>
+            <item>wart</item>
+            <item>pimple</item>
+            <item>marmozet</item>
+            <item>milksop</item>
+            <item>pillock</item>
+            <item>pissant</item>
+            <item>plum</item>
+            <item>quim</item>
+            <item>quisling</item>
+            <item>rapscallion</item>
+            <item>rascal</item>
+            <item>scag</item>
+            <item>scalawag</item>
+            <item>scamp</item>
+            <item>schmuck</item>
+            <item>scoundrel</item>
+            <item>serf</item>
+            <item>shrew</item>
+            <item>simpleton</item>
+            <item>slag</item>
+            <item>slubberdegullion</item>
+            <item>snake-flipper</item>
+            <item>sonnova yea-sayin' cheapskirt</item>
+            <item>toe rag</item>
+            <item>wazzock</item>
+            <item>wildcat</item>
+            <item>yokel</item>
+        </list>
+        <list type="verb">
+            <item>who ate all the pies!</item>
+            <item>with no friends!</item>
+            <item>who even magic missiles avoid!</item>
+            <item>that makes trolls seem endearing!</item>
+            <item>with breath like the south end of a north bound ogre.</item>
+            <item>who's so filthy even an otyugh would spit you out.</item>
+            <item>who's so shabbily dressed you look like an orphaned kobold.</item>
+            <item>with all the personality of a gelatinous cube.</item>
+            <item>who's so ugly it looks like you're half way through a polymorph.</item>
+            <item>that smells like a duergar's beard.</item>
+            <item>with the conversational skills of an owlbear.</item>
+            <item>who's as graceful as a one-legged zombie.</item>
+            <item>with an intellect that couldn't light a candle with a struck match.</item>
+            <item>who's as useful as a mirror to a vampire.</item>
+        </list>
+    </table>
+</category>

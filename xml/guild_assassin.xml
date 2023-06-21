@@ -1,0 +1,143 @@
+<category name="Assassins' Guild" id="assassinsguild">
+    <table name="The guild's symbol is..." id="symbol">
+        <value>A skull</value>
+        <value>An eye</value>
+        <value>A flame</value>
+        <value>A dagger</value>
+        <value>A scythe</value>
+        <value>An arrow</value>
+        <value>A fish</value>
+        <value>A crow</value>
+        <value region_start="2" region_end="5" region_include="rat">A rat</value>
+        <value>A scorpion</value>
+        <value region_start="2" region_end="8" region_include="spider">A spider</value>
+        <value>A snake</value>
+    </table>
+    <table name="The guild's preferred method of execution is..." id="execution">
+        <value region_start="9" region_end="15" region_include="poisons">Ingested poison or allergic reaction</value>
+        <value region_start="47" region_end="54" region_include="disease">Exposure to deadly (but not highly contagious) disease</value>
+        <value region_start="8" region_end="14" region_include="poisons">Contact poison applied to a weapon</value>
+        <value>Arrow/bolt from range</value>
+        <value>Knife in the chest or back</value>
+        <value>Multiple stab wounds</value>
+        <value>Slitting throats</value>
+        <value>Gutting or eviscerating</value>
+        <value>Flaying or scalping</value>
+        <value>Beheading</value>
+        <value>Strangulation</value>
+        <value>Hanging</value>
+        <value>Burying alive</value>
+        <value>Drowning</value>
+        <value>Boiling alive</value>
+        <value>Throwing off a roof</value>
+        <value>Acid (pouring or submersion)</value>
+        <value>Fiery explosion</value>
+        <value>Burning alive</value>
+        <value>Feeding to animals</value>
+    </table>
+    <table name="Guild members typically arm themselves with..." id="armed">
+        <value>Poisoned daggers and short swords</value>
+        <value>Throwing knives</value>
+        <value>Over-sized daggers</value>
+        <value>Serrated daggers</value>
+        <value>Daggers and crossbows</value>
+        <value>Axes and knives</value>
+        <value>Bows and arrows</value>
+        <value>Short swords and crossbows</value>
+        <value>Sickles and scythes</value>
+        <value>Garrotes and daggers</value>
+        <value>Exortic blades and blowguns</value>
+        <value>Bolas and poisoned projectiles</value>
+    </table>
+    <table name="Guild members typically operate" id="operate">
+        <value>Alone</value>
+        <value>In pairs</value>
+        <value>In small groups</value>
+        <value>By infiltrating an organization</value>
+        <value>By impersonating a specific individual</value>
+        <value>In plain sight</value>
+    </table>
+    <table name="Guild members typically know..." id="know">
+        <value>Very few other guild members</value>
+        <value>Several other guild members</value>
+        <value>The details of the guild's organization</value>
+        <value>Nothing about the guild's leadership</value>
+        <value>The names of the guild's leaders, though they've never met any of them</value>
+        <value>One of the guild's leading members and no other guild members</value>
+        <value>Everyone knows the guild's leaders, but not one realizes everyone knows</value>
+    </table>
+    <table name="The guild refuses to take contracts to kill..." id="contracts">
+        <value>Women</value>
+        <value>Young children</value>
+        <value>Nobles and prominent citizens</value>
+        <value>Priests and monks</value>
+        <value>Peasants and poor folk</value>
+        <value>Foreigners and travelers</value>
+        <value>Members of the client's family</value>
+        <value>Fellow criminals</value>
+    </table>
+    <table name="Guild members typically strike with..." id="strike">
+        <value>Hit-and-run-tactics</value>
+        <value>Ambush tactics</value>
+        <value>Diversionary tactics</value>
+        <value>A precisely planned attack strategy</value>
+        <value>A well-planned escape strategy</value>
+        <value>The element of surprise</value>
+        <value>Announcing their presence</value>
+        <value>No thought of escape</value>
+    </table>
+    <table name="The guild's headquarters is hidden in or near..." id="hq">
+        <value region_start="4|21" region_end="13|27" region_include="__noun__|assassin_leader">The residence of the leader</value>
+        <value region_start="4|19" region_end="13|38" region_include="__noun__|assassin">The residence of a senior guild member</value>
+        <value region_start="3|13" region_end="10|17" region_include="crafter_artistan|__noun__">An artisan's shop</value>
+        <value region_start="2" region_end="11" region_include="__noun__">A guildhall</value>
+        <value region_start="0" region_end="10" region_include="merchant">A merchant's office</value>
+        <value region_start="2" region_end="8" region_include="tavern">A tavern</value>
+        <value region_start="2" region_end="9" region_include="brothel">A brothel</value>
+        <value region_start="2" region_end="11" region_include="__noun__">A warehouse</value>
+        <value region_start="2" region_end="10" region_include="__noun__">A shipyard</value>
+        <value region_start="0" region_end="8" region_include="temple">A temple complex</value>
+        <value region_start="0" region_end="10" region_include="city">The city's sewers</value>
+        <value region_start="4|9" region_end="8|13" region_include="village|__noun__">The town hall</value>
+        <value region_start="13" region_end="22" region_include="__noun__">An abandoned guildhall</value>
+        <value region_start="13" region_end="22" region_include="__noun__">An abandoned warehouse</value>
+        <value region_start="2" region_end="10" region_include="__noun__">A barracks</value>
+        <value region_start="4" region_end="9" region_include="__noun__">An armory</value>
+        <value region_start="19" region_end="37" region_include="__noun__">The residence of a wealthy individual</value>
+        <value region_start="19" region_end="36" region_include="__noun__">The residence of a prominent citizen</value>
+    </table>
+    <table name="The guild is feared or respected by..." id="feared">
+        <value>Fishermen and sailors</value>
+        <value>Beggars and orphans</value>
+        <value>Merchants and moneychangers</value>
+        <value>Nobles and rulers</value>
+        <value>Politicians and magistrates</value>
+        <value>Guilds and sherriffs</value>
+        <value>Soldiers and warriors</value>
+        <value>Thieves and criminals</value>
+        <value>Servants and slaves</value>
+        <value>Priests and sages</value>
+        <value>Women and children</value>
+        <value>Other assassins</value>
+    </table>
+    <!--
+    <member name="Guild Leader" id="assassin_leader" id="leader">
+        <name name="The guild leader's name is..."/>
+        <table name="The guild's leader is...">
+            <value>A dangerous megalomaniac</value>
+            <value>A charismatic demagogue</value>
+            <value region_start="13" region_end="22" region_include="nation">A mysterious foreigner</value>
+            <value region_start="11" region_end="16" region_include="thief">A talented thief</value>
+            <value region_start="13" region_end="26" region_include="__noun__">A well-known public figure</value>
+            <value region_start="11" region_end="17" region_include="killer">A ruthless killer</value>
+            <value>A femme fatale</value>
+            <value region_start="11" region_end="16" region_include="rogue">A charming rogue</value>
+            <value>A dashing swashbucker</value>
+            <value>A brutish thug</value>
+            <value region_start="2" region_end="11" region_include="__noun__">A religious fanatic</value>
+            <value region_start="10" region_end="17" region_include="soldier">A veteran soldier</value>
+        </table>
+    </member>
+    -->
+    <member name="Assassin" include="assassin" />
+</category>

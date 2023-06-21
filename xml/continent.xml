@@ -1,0 +1,549 @@
+        <category name="Continent" id="continent">
+            <table name="Size: The continent is..." short="Size" id="continent_size">
+                <value>Massive; It spans most of the world</value>
+                <value>Large; It makes an impact on the shape of the world</value>
+                <value>Medium; About as average as average gets</value>
+                <value>Small; It may be hard to find with out exploration</value>
+                <value>Tiny; It's practically an island</value>
+            </table>
+            <table name="Location: The continent is located..." short="Location" id="continent_location">
+                <value>Polar; It sits one of of the polar ends of the world</value>
+                <value>Equatorial; It straddles the world's equator</value>
+                <value>Far North; The sun never sets in the summer, and never rises in the winter</value>
+                <value>Far South; The sun never sets in the winter, and never rises in the summer</value>
+                <value>Northern Hemisphere</value>
+                <value>Southern Hemisphere</value>
+                <value>Runs laterally across both hemispheres</value>
+                <value>Hidden; It can not be easily found</value>
+            </table>
+            <table name="Sub-Climates: Compared to the rest of the world, the continent is..." short="Sub-Climate" id="continent_climate">
+                <value>Warmer than usual</value>
+                <value>Colder than usual</value>
+                <value>Windier than usual</value>
+                <value>Rainier than usual</value>
+                <value>Rather average</value>
+                <value>More tropical than usual</value>
+                <value>Incredibly Hot</value>
+                <value>Incredibly Cold</value>
+                <value>Incredibly wet</value>
+                <value>More humid than usual</value>
+            </table>
+            <table name="A unique characteristic of this continent is..." short="Flavor" id="continent_flavor">
+                <value>It is home to an ancient volcano that has been erupting for generations</value>
+                <value>It is said to be protected by a god</value>
+                <value>It is the only place to find gold</value>
+                <value>It is the only place to find silver</value>
+                <value>It is the only place to find copper</value>
+                <value>It is the only place to find adamantine</value>
+                <value>It is the only place to find titanium</value>
+                <value>It is the only place to find tungsten</value>
+                <value>It is the only place to find platinum</value>
+                <value>It is the only place to find electrum</value>
+                <value>It is the only place to find uranium</value>
+                <value>It is the only place to find unobtanium</value>
+                <value>It is home to the tallest mountain in the world</value>
+                <value>It is home to the largest lake in the world</value>
+                <value>An unnaturally massive number of chickens roam the wild</value>
+                <value>Most of it is below sea level</value>
+                <value>It is pock marked with craters</value>
+                <value>A powerful enchantment has befallen it</value>
+                <value>It has been afflicted by a powerful curse</value>
+                <value>It is landlocked</value>
+                <value>It has no neighbouring continents</value>
+                <value>It was recently ravaged by a massive meteor changed the entire landscape</value>
+                <value>It was recently ravaged by a massive volcano that erupted, blacking out the sky</value>
+                <value>It was recently ravaged by a drought that caused massive dust storms, and food became scarce</value>
+                <value>It was recently ravaged by massive floods that wiped out anyone that was not prepared</value>
+                <value>It was recently ravaged by a god that became angry and punished the people by scorching the land</value>
+                <value>It was recently ravaged by a pandemic spread like wildfire, killing 60 percent of the population</value>
+                <value>Massive storms make the coast uninhabitable</value>
+                <value>At the center is a font of wild magic</value>
+                <value region_start="31" region_end="39" region_include="artifacts">It is said to hide a legendary artifact</value>
+                <value>It was claimed by a legendary hero</value>
+                <value>It was claimed by a legendary villain</value>
+                <value>It used to be joined with another continent, but was split asunder.</value>
+                <value>It is dominated by mountains</value>
+                <value>It is dominated by deserts</value>
+                <value>It is dominated by forests</value>
+                <value>It is dominated by jungles</value>
+                <value>It is dominated by tundra</value>
+                <value>It is dominated by plains</value>
+                <value>It is dominated by lakes</value>
+                <value>It is dominated by rivers</value>
+                <value>It is dominated by swamp / marshlands</value>
+                <value>It is dominated by canyons</value>
+            </table>
+            <table name="Discovery: The continent was discovered..." short="Discovered" id="continent_discovered">
+                <value>Long before memory or written history</value>
+                <value>Centuries ago</value>
+                <value>A few generations ago</value>
+                <value>A generation ago</value>
+                <value>Very recently</value>
+                <value>It has not yet been discovered</value>
+            </table>
+            <table name="Discovery: The continent was discovered by..." short="Discovered By" id="continent_discovered_by">
+                <value>A travelling merchant looking for new riches</value>
+                <value>A nomadic tribe wandering aimlessly</value>
+                <value>A small group of pilgrims looking for greener pastures</value>
+                <value>Refugees from a massive war</value>
+                <value>Colonists sent by the ruler of another land seeking to expand his borders</value>
+                <value>Explorers looking for something new and exciting</value>
+                <value>Map makers looking for fill in gaps of a map</value>
+                <value>A small civilization escaping from a stronger, more dominant monster</value>
+                <value>A small civilization seeking better a better climate</value>
+                <value>Frontiersman pushing the edges of the know world.</value>
+                <value>No one, it was the cradle of civilization</value>
+                <value>Priests seeking worshippers</value>
+            </table>
+            <table name="Domestic Creatures: Creatures unique to this continent include..." short="Domestic Creatures" id="continent_creatures_domestic" type="pattern">
+                <patterns>
+                    <pattern>{noun} and {noun}</pattern>
+                    <pattern>{noun}, {noun} and {noun}</pattern>
+                    <pattern>{noun}, {noun}, {noun} and {noun}</pattern>
+                    <pattern>{noun}, {noun}, {noun}, {noun} and {noun}</pattern>
+                    <pattern>{noun}, {noun}, {noun}, {noun}, {noun} and {noun}</pattern>
+                    <pattern>{noun}, {noun}, {noun}, {noun}, {noun}, {noun} and {noun}</pattern>
+                    <pattern>{noun}, {noun}, {noun}, {noun}, {noun}, {noun}, {noun} and {noun}</pattern>
+                    <pattern>{noun}, {noun}, {noun}, {noun}, {noun}, {noun}, {noun} and {noun}</pattern>
+                </patterns>
+                <list type="noun">
+                    <item>Monkeys</item>
+                    <item>Apes</item>
+                    <item>Baboons</item>
+                    <item>Pelicans</item>
+                    <item>Deer</item>
+                    <item>Cows</item>
+                    <item>Elk</item>
+                    <item>Bison</item>
+                    <item>Coyotes</item>
+                    <item>Dingos</item>
+                    <item>Wolves</item>
+                    <item>Swans</item>
+                    <item>Lions</item>
+                    <item>Tigers</item>
+                    <item>Brown Bears</item>
+                    <item>Grizzly Bears</item>
+                    <item>Polar Bears</item>
+                    <item>Tarantulas</item>
+                    <item>Blink Dogs</item>
+                    <item>Badgers</item>
+                    <item>Wolverines</item>
+                    <item>Black Bears</item>
+                    <item>Giraffes</item>
+                    <item>Llamas</item>
+                    <item>Alpacas</item>
+                    <item>Chickens</item>
+                    <item>Hawks</item>
+                    <item>Eagles</item>
+                    <item>Tortoises</item>
+                    <item>Boars</item>
+                    <item>Cougars</item>
+                    <item>Mere Cats</item>
+                    <item>Camels</item>
+                    <item>Panthers</item>
+                    <item>Boa Constrictors</item>
+                    <item>Crocodiles</item>
+                    <item>Alligators</item>
+                    <item>Horses</item>
+                    <item>Pandas</item>
+                    <item>Koalas</item>
+                    <item>Kangaroos</item>
+                    <item>Wallabies</item>
+                    <item>Death Dogs</item>
+                    <item>Axe Beaks</item>
+                    <item>Elephants</item>
+                    <item>Flying Snakes</item>
+                    <item>Scorpions</item>
+                    <item>Hyenas</item>
+                    <item>Vultures</item>
+                    <item>Goats</item>
+                    <item>Jackals</item>
+                    <item>Mammoths</item>
+                    <item>Phase Spiders</item>
+                    <item>Rhinoceroses</item>
+                    <item>Saber-Toothed tigers</item>
+                    <item>Worgs</item>
+                    <item>Dire Wolves</item>
+                    <item>Giant Badgers</item>
+                    <item>Giant Rats</item>
+                    <item>Giant Spiders</item>
+                    <item>Dire Chickens</item>
+                    <item>Giant Eagles</item>
+                    <item>Giant Boars</item>
+                    <item>Giant Centipedes</item>
+                    <item>Giant Bats</item>
+                    <item>Giant Snakes</item>
+                    <item>Giant Crabs</item>
+                    <item>Giant Crocodiles</item>
+                    <item>Giant Elk</item>
+                    <item>Giant Fire Beetle</item>s
+                    <item>Giant Frogs</item>
+                    <item>Giant Goats</item>
+                    <item>Giant Hyenas</item>
+                    <item>Giant Lizards</item>
+                    <item>Iguanas</item>
+                    <item>Giant Owls</item>
+                    <item>Giant Scorpions</item>
+                    <item>Giant Toads</item>
+                    <item>Giant Vultures</item>
+                    <item>Giant Wasps</item>
+                    <item>Giant Weasels</item>
+                    <item>Weasels</item>
+                    <item>Giant Wolf Spiders</item>
+                    <item>Owlbears</item>
+                    <item>Sloths</item>
+                    <item>Dodo Birds</item>
+                    <item>Basilisks</item>
+                    <item>Cockatrice</item>
+                    <item>Griffons</item>
+                    <item>Hippogriffs</item>
+                    <item>Squirrels</item>
+                    <item>Chipmunks</item>
+                    <item>Buffalo</item>
+                    <item>Ostriches</item>
+                    <item>Zebras</item>
+                    <item>Geese</item>
+                    <item>Mongooses</item>
+                    <item>Lemurs</item>
+                    <item>Pigs</item>
+                    <item>Platypuses</item>
+                </list>
+            </table>
+            <table name="Foreign Creatures: Creatures imported to this continent include..." short="Foreign Creatures" id="continent_creatures_foreign" type="pattern">
+                <patterns>
+                    <pattern>{noun}</pattern>
+                    <pattern>{noun} and {noun}</pattern>
+                    <pattern>{noun}, {noun} and {noun}</pattern>
+                    <pattern>{noun}, {noun}, {noun} and {noun}</pattern>
+                    <pattern>{noun}, {noun}, {noun}, {noun} and {noun}</pattern>
+                </patterns>
+                <list type="noun">
+                    <item>Monkeys</item>
+                    <item>Apes</item>
+                    <item>Baboons</item>
+                    <item>Pelicans</item>
+                    <item>Deer</item>
+                    <item>Cows</item>
+                    <item>Elk</item>
+                    <item>Bison</item>
+                    <item>Coyotes</item>
+                    <item>Dingos</item>
+                    <item>Wolves</item>
+                    <item>Swans</item>
+                    <item>Lions</item>
+                    <item>Tigers</item>
+                    <item>Brown Bears</item>
+                    <item>Grizzly Bears</item>
+                    <item>Polar Bears</item>
+                    <item>Tarantulas</item>
+                    <item>Blink Dogs</item>
+                    <item>Badgers</item>
+                    <item>Wolverines</item>
+                    <item>Black Bears</item>
+                    <item>Giraffes</item>
+                    <item>Llamas</item>
+                    <item>Alpacas</item>
+                    <item>Chickens</item>
+                    <item>Hawks</item>
+                    <item>Eagles</item>
+                    <item>Tortoises</item>
+                    <item>Boars</item>
+                    <item>Cougars</item>
+                    <item>Mere Cats</item>
+                    <item>Camels</item>
+                    <item>Panthers</item>
+                    <item>Boa Constrictors</item>
+                    <item>Crocodiles</item>
+                    <item>Alligators</item>
+                    <item>Horses</item>
+                    <item>Pandas</item>
+                    <item>Koalas</item>
+                    <item>Kangaroos</item>
+                    <item>Wallabies</item>
+                    <item>Death Dogs</item>
+                    <item>Axe Beaks</item>
+                    <item>Elephants</item>
+                    <item>Flying Snakes</item>
+                    <item>Scorpions</item>
+                    <item>Hyenas</item>
+                    <item>Vultures</item>
+                    <item>Goats</item>
+                    <item>Jackals</item>
+                    <item>Mammoths</item>
+                    <item>Phase Spiders</item>
+                    <item>Rhinoceroses</item>
+                    <item>Saber-Toothed tigers</item>
+                    <item>Worgs</item>
+                    <item>Dire Wolves</item>
+                    <item>Giant Badgers</item>
+                    <item>Giant Rats</item>
+                    <item>Giant Spiders</item>
+                    <item>Dire Chickens</item>
+                    <item>Giant Eagles</item>
+                    <item>Giant Boars</item>
+                    <item>Giant Centipedes</item>
+                    <item>Giant Bats</item>
+                    <item>Giant Snakes</item>
+                    <item>Giant Crabs</item>
+                    <item>Giant Crocodiles</item>
+                    <item>Giant Elk</item>
+                    <item>Giant Fire Beetle</item>s
+                    <item>Giant Frogs</item>
+                    <item>Giant Goats</item>
+                    <item>Giant Hyenas</item>
+                    <item>Giant Lizards</item>
+                    <item>Iguanas</item>
+                    <item>Giant Owls</item>
+                    <item>Giant Scorpions</item>
+                    <item>Giant Toads</item>
+                    <item>Giant Vultures</item>
+                    <item>Giant Wasps</item>
+                    <item>Giant Weasels</item>
+                    <item>Weasels</item>
+                    <item>Giant Wolf Spiders</item>
+                    <item>Owlbears</item>
+                    <item>Sloths</item>
+                    <item>Dodo Birds</item>
+                    <item>Basilisks</item>
+                    <item>Cockatrice</item>
+                    <item>Griffons</item>
+                    <item>Hippogriffs</item>
+                    <item>Squirrels</item>
+                    <item>Chipmunks</item>
+                    <item>Buffalo</item>
+                    <item>Ostriches</item>
+                    <item>Zebras</item>
+                    <item>Geese</item>
+                    <item>Mongooses</item>
+                    <item>Lemurs</item>
+                    <item>Pigs</item>
+                    <item>Platypuses</item>
+                </list>
+            </table>
+            <table name="Domestic Plants: Plants unique to this continent include..." short="Domestic Plants" id="continent_plants_domestic" type="pattern">
+                <patterns>
+                    <pattern>{noun} and {noun}</pattern>
+                    <pattern>{noun}, {noun} and {noun}</pattern>
+                    <pattern>{noun}, {noun}, {noun} and {noun}</pattern>
+                    <pattern>{noun}, {noun}, {noun}, {noun} and {noun}</pattern>
+                    <pattern>{noun}, {noun}, {noun}, {noun}, {noun} and {noun}</pattern>
+                    <pattern>{noun}, {noun}, {noun}, {noun}, {noun}, {noun} and {noun}</pattern>
+                    <pattern>{noun}, {noun}, {noun}, {noun}, {noun}, {noun}, {noun} and {noun}</pattern>
+                    <pattern>{noun}, {noun}, {noun}, {noun}, {noun}, {noun}, {noun} and {noun}</pattern>
+                </patterns>
+                <list type="noun">
+                    <item>Roses</item>
+                    <item>Ferns</item>
+                    <item>Pine Trees</item>
+                    <item>Maple Trees</item>
+                    <item>Birch Trees</item>
+                    <item>Black Ash Trees</item>
+                    <item>White Ash Trees</item>
+                    <item>Aspens</item>
+                    <item>Willows</item>
+                    <item>Butternut Trees</item>
+                    <item>Black Cherry Trees</item>
+                    <item>Chestnut Trees</item>
+                    <item>Cottonwood Trees</item>
+                    <item>Elms</item>
+                    <item>Firs</item>
+                    <item>Hemlock</item>
+                    <item>Hickory</item>
+                    <item>Oak Trees</item>
+                    <item>Spruce Trees</item>
+                    <item>Sycamores</item>
+                    <item>Walnut Trees</item>
+                    <item>Peach Trees</item>
+                    <item>Orange Trees</item>
+                    <item>Plum Trees</item>
+                    <item>Apple Trees</item>
+                    <item>Baobab Trees</item>
+                    <item>Olive Trees</item>
+                    <item>Cedars</item>
+                    <item>Banyan Trees</item>
+                    <item>Yews</item>
+                    <item>Mulberry Trees</item>
+                    <item>Lavender</item>
+                    <item>Beech Trees</item>
+                    <item>Poplars</item>
+                    <item>Pear Trees</item>
+                    <item>Redwoods</item>
+                    <item>Junipers</item>
+                    <item>Strawberries</item>
+                    <item>Blueberries</item>
+                    <item>Blackberries</item>
+                    <item>Raspberries</item>
+                    <item>Potatoes</item>
+                    <item>Carrots</item>
+                    <item>Poppies</item>
+                    <item>Azaleas</item>
+                    <item>Begonias</item>
+                    <item>Bloodroot</item>
+                    <item>Carnations</item>
+                    <item>Chrysanthemum</item>
+                    <item>Tumbleweed</item>
+                    <item>Geranium</item>
+                    <item>Hyacinth</item>
+                    <item>Iris</item>
+                    <item>Celery</item>
+                    <item>Lavender</item>
+                    <item>Morning Glory</item>
+                    <item>Bell Pepper</item>
+                    <item>Mint</item>
+                    <item>Cumin</item>
+                    <item>Oregano</item>
+                    <item>Garlic</item>
+                    <item>Orchid</item>
+                    <item>Sunflower</item>
+                    <item>Tulip</item>
+                    <item>Poison Ivy</item>
+                    <item>Poison Oak</item>
+                    <item>Onions</item>
+                    <item>Spinach</item>
+                    <item>Watermelon</item>
+                    <item>Mustard</item>
+                    <item>Apricot Trees</item>
+                    <item>Banana Trees</item>
+                    <item>Pineapple</item>
+                    <item>Mangos</item>
+                    <item>Palm Trees</item>
+                    <item>Dragonfruit Trees</item>
+                    <item>Avocados</item>
+                    <item>Fig Trees</item>
+                    <item>Grapes</item>
+                    <item>Guava</item>
+                    <item>Kiwifruit</item>
+                    <item>Lemon Trees</item>
+                    <item>Line Trees</item>
+                    <item>Papaya Trees</item>
+                    <item>Pomegranate Trees</item>
+                    <item>Tomatoes</item>
+                    <item>Rice</item>
+                    <item>Brussel Sprouts</item>
+                    <item>Cabbage</item>
+                    <item>Pumpkin</item>
+                    <item>Radishes</item>
+                    <item>Turnips</item>
+                    <item>Corn</item>
+                    <item>Wheat</item>
+                    <item>Bok Choy</item>
+                    <item>Arugula</item>
+                    <item>Ivy</item>
+                    <item>Chickweed</item>
+                    <item>Dandelion</item>
+                    <item>Dill</item>
+                </list>
+            </table>
+            <table name="Foreign Plants: Plants imported to this continent include..." short="Foreign Plants" id="continent_plants_foreign" type="pattern">
+                <patterns>
+                    <pattern>{noun}</pattern>
+                    <pattern>{noun} and {noun}</pattern>
+                    <pattern>{noun}, {noun} and {noun}</pattern>
+                    <pattern>{noun}, {noun}, {noun} and {noun}</pattern>
+                </patterns>
+                <list type="noun">
+                    <item>Roses</item>
+                    <item>Ferns</item>
+                    <item>Pine Trees</item>
+                    <item>Maple Trees</item>
+                    <item>Birch Trees</item>
+                    <item>Black Ash Trees</item>
+                    <item>White Ash Trees</item>
+                    <item>Aspens</item>
+                    <item>Willows</item>
+                    <item>Butternut Trees</item>
+                    <item>Black Cherry Trees</item>
+                    <item>Chestnut Trees</item>
+                    <item>Cottonwood Trees</item>
+                    <item>Elms</item>
+                    <item>Firs</item>
+                    <item>Hemlock</item>
+                    <item>Hickory</item>
+                    <item>Oak Trees</item>
+                    <item>Spruce Trees</item>
+                    <item>Sycamores</item>
+                    <item>Walnut Trees</item>
+                    <item>Peach Trees</item>
+                    <item>Orange Trees</item>
+                    <item>Plum Trees</item>
+                    <item>Apple Trees</item>
+                    <item>Baobab Trees</item>
+                    <item>Olive Trees</item>
+                    <item>Cedars</item>
+                    <item>Banyan Trees</item>
+                    <item>Yews</item>
+                    <item>Mulberry Trees</item>
+                    <item>Lavender</item>
+                    <item>Beech Trees</item>
+                    <item>Poplars</item>
+                    <item>Pear Trees</item>
+                    <item>Redwoods</item>
+                    <item>Junipers</item>
+                    <item>Strawberries</item>
+                    <item>Blueberries</item>
+                    <item>Blackberries</item>
+                    <item>Raspberries</item>
+                    <item>Potatoes</item>
+                    <item>Carrots</item>
+                    <item>Poppies</item>
+                    <item>Azaleas</item>
+                    <item>Begonias</item>
+                    <item>Bloodroot</item>
+                    <item>Carnations</item>
+                    <item>Chrysanthemum</item>
+                    <item>Tumbleweed</item>
+                    <item>Geranium</item>
+                    <item>Hyacinth</item>
+                    <item>Iris</item>
+                    <item>Celery</item>
+                    <item>Lavender</item>
+                    <item>Morning Glory</item>
+                    <item>Bell Pepper</item>
+                    <item>Mint</item>
+                    <item>Cumin</item>
+                    <item>Oregano</item>
+                    <item>Garlic</item>
+                    <item>Orchid</item>
+                    <item>Sunflower</item>
+                    <item>Tulip</item>
+                    <item>Poison Ivy</item>
+                    <item>Poison Oak</item>
+                    <item>Onions</item>
+                    <item>Spinach</item>
+                    <item>Watermelon</item>
+                    <item>Mustard</item>
+                    <item>Apricot Trees</item>
+                    <item>Banana Trees</item>
+                    <item>Pineapple</item>
+                    <item>Mangos</item>
+                    <item>Palm Trees</item>
+                    <item>Dragonfruit Trees</item>
+                    <item>Avocados</item>
+                    <item>Fig Trees</item>
+                    <item>Grapes</item>
+                    <item>Guava</item>
+                    <item>Kiwifruit</item>
+                    <item>Lemon Trees</item>
+                    <item>Line Trees</item>
+                    <item>Papaya Trees</item>
+                    <item>Pomegranate Trees</item>
+                    <item>Tomatoes</item>
+                    <item>Rice</item>
+                    <item>Brussel Sprouts</item>
+                    <item>Cabbage</item>
+                    <item>Pumpkin</item>
+                    <item>Radishes</item>
+                    <item>Turnips</item>
+                    <item>Corn</item>
+                    <item>Wheat</item>
+                    <item>Bok Choy</item>
+                    <item>Arugula</item>
+                    <item>Ivy</item>
+                    <item>Chickweed</item>
+                    <item>Dandelion</item>
+                    <item>Dill</item>
+                </list>
+            </table>
+            <member name="Nation" include="nation" />
+            <member name="Wilderness" include="wilderness" />
+        </category>

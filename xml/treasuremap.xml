@@ -1,0 +1,121 @@
+<category name="Treasure Map" id="treasuremap">
+    <table name="Find the..." id="find">
+        <value>Big cracked boulder</value>
+        <value>Lightning-blasted oak tree</value>
+        <value>Rock shaped like a horse</value>
+        <value>Stone wall with a piece of volcanic glass</value>
+        <value region_start="20" region_end="27" region_include="village">Exact center of the village</value>
+        <value>Exact center of the town</value>
+        <value region_start="20" region_end="24" region_include="city">Exact center of the city</value>
+        <value>Statue of a famous person</value>
+        <value>Shipwreck of an infamous pirate ship</value>
+        <value>Bones of the black dragon</value>
+        <value region_start="0" region_end="6" region_include="cavern">Cavern near the waterfall</value>
+        <value>Top of the volcano</value>
+        <value>Exact center of the lake</value>
+        <value region_start="10" region_end="16" region_include="temple">Abandoned Temple</value>
+        <value>Old fort</value>
+        <value>Old standing circle</value>
+        <value>Road marker leading south</value>
+        <value>Exact center of the longest bridge</value>
+        <value>Hangman's scaffold</value>
+        <value>Crossroads</value>
+        <value>Largest tomb in the cemetery</value>
+    </table>
+    <table name="Then..." id="find_then">
+        <value>Go north for 1d4 miles</value>
+        <value>Go south for 1d4 miles</value>
+        <value>Go east for 1d4 miles</value>
+        <value>Go west for 1d4 miles</value>
+        <value>Go northeast for 1d4 miles</value>
+        <value>Go northwest for 1d4 miles</value>
+        <value>Go southeast for 1d4 miles</value>
+        <value>Go southwest for 1d4 miles</value>
+    </table>
+    <table name="Until you find the..." id="find2">
+        <value region_start="0" region_end="8" region_include="mountain">Mountain shaped like a tooth</value>
+        <value>Hill shaped like a saddle</value>
+        <value>Cliffs of red stone</value>
+        <value>Tiny caves in a white hill</value>
+        <value>Old fortress ruins</value>
+        <value>Dried up creek bed</value>
+        <value>Swift-running river</value>
+        <value>Waterfall</value>
+        <value region_start="10" region_end="17" region_include="village">Abandoned village</value>
+        <value>Tree with a large hole in it</value>
+        <value region_start="20" region_end="25" region_include="deity">Toppled statue of a deity</value>
+        <value>Landslide of shale and gravel</value>
+        <value>Steep-sided valley with blue flowers</value>
+        <value>Beach strewn with black seashells</value>
+        <value>Broken remains of a watchtower</value>
+        <value>Road marker pointing east</value>
+        <value>Dilapidated hunter's shack</value>
+        <value>Crossroads</value>
+        <value>Hand-cut stairway into the hillside</value>
+        <value>The canyon with natural stairs leading down</value>
+    </table>
+    <table name="Then..." id="find2__then">
+        <value>Go north for 1d4 miles</value>
+        <value>Go south for 1d4 miles</value>
+        <value>Go east for 1d4 miles</value>
+        <value>Go west for 1d4 miles</value>
+        <value>Go northeast for 1d4 miles</value>
+        <value>Go northwest for 1d4 miles</value>
+        <value>Go southeast for 1d4 miles</value>
+        <value>Go southwest for 1d4 miles</value>
+    </table>
+    <table name="Until you find the..." id="find3">
+        <value>Rock shaped like a heart</value>
+        <value region_start="0" region_end="8" region_include="mountain">Mountain shaped like a bird's head</value>
+        <value region_start="10" region_end="16" region_include="naturalforest">Petrified forest</value>
+        <value>Salt lake</value>
+        <value region_start="9" region_end="18" region_include="swamp">Dried up swampland</value>
+        <value>Broken bridge</value>
+        <value>Old abandoned mill</value>
+        <value region_start="7|25" region_end="12|29" region_include="magetower|wizard">Ruined tower of a famous mage</value>
+        <value>Ancient cemetery</value>
+        <value>Mossy limestone cliffs</value>
+        <value>Old granite quarry</value>
+        <value>Abandoned campgrounds</value>
+        <value>Vandalized statue of a former ruler</value>
+        <value>Crossroads</value>
+        <value>Road marker pointing west</value>
+        <value>Shipwreck of a well-known war ship</value>
+        <value>Minaret</value>
+        <value>Quicksand</value>
+        <value>Hills honeycomb with caves</value>
+        <value region_start="11" region_end="17" region_include="naturalforest">Old king's forest</value>
+    </table>
+    <table name="Then..." id="find3_then">
+        <value>Go north for 1d4 miles</value>
+        <value>Go south for 1d4 miles</value>
+        <value>Go east for 1d4 miles</value>
+        <value>Go west for 1d4 miles</value>
+        <value>Go northeast for 1d4 miles</value>
+        <value>Go northwest for 1d4 miles</value>
+        <value>Go southeast for 1d4 miles</value>
+        <value>Go southwest for 1d4 miles</value>
+    </table>
+    <table name="You'll find the treasure..." id="where">
+        <value region_start="22" region_end="27" region_include="__noun__">Buried at a foot of a cliff</value>
+        <value>Buried under a mighty oak tree</value>
+        <value>Buried under some tower ruins</value>
+        <value>Buried under a pile of skulls</value>
+        <value region_start="32" region_end="38" region_include="appearance">Buried in the grave of a famous person</value>
+        <value region_start="28" region_end="33" region_include="__noun__">Hidden at the top of an old tower</value>
+        <value region_start="21" region_end="29" region_include="__noun__">Hidden behind an old painting</value>
+        <value>Hidden at the bottom of an old rabbit's warren</value>
+        <value>Hidden in the bole of an ancient elm tree</value>
+        <value region_start="12" region_end="16" region_include="ship">Hidden in a shipwreck's hold</value>
+        <value>Guarded by assassins</value>
+        <value region_start="11" region_end="19" region_include="monsters">Guarded by monsters</value>
+        <value region_start="11" region_end="19" region_include="military">Guarded by soldiers</value>
+        <value region_start="11" region_end="18" region_include="undead">Guarded by spirits</value>
+        <value region_start="17" region_end="24" region_include="monsters">Guarded by a big monster</value>
+        <value region_start="13" region_end="26" region_include="__noun__">Protected by magical wards</value>
+        <value region_start="13" region_end="25" region_include="__noun__">Protected by astral locks</value>
+        <value region_start="22" region_end="27" region_include="traps">Protected by physical traps</value>
+        <value region_start="13" region_end="31" region_include="__noun__">Protected by necromantic curses</value>
+        <value region_start="13" region_end="30" region_include="__noun__">Protected by spiritual prayers</value>
+    </table>
+</category>

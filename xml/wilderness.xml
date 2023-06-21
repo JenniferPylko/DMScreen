@@ -1,0 +1,17 @@
+<categories id="wilderness">
+    <category name="Desert" id="desert">
+        <category name="Natural Desert" id="desert_natural" />
+        <category name="Flame-Scorched Desert" id="desert_flame" />
+        <category name="Shadowy Desert" id="desert_shadow" />
+    </category>
+    <category name="Forest" id="forest">
+        <category name="Natural Forest" id="forest_natural" />
+        <category name="Enchanted Forest" id="forest_enchanted" />
+        <category name="Haunted Forest" id="forest_haunted" />
+    </category>
+    <category name="Jungle" id="jungle" />
+    <category name="Plains" id="plains" />
+    <category name="Mountain" id="mountain" />
+    <category name="Swamp" id="swamp" />
+    <category name="Underdark" id="underdark" />
+</categories>

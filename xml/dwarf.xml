@@ -1,0 +1,63 @@
+            <category name="Dwarf" id="dwarf" link="appearance">
+                <table name="The dwarf is..." id="dwarf_is">
+                    <value id="dwarf_prospector">A greedy prospector</value>
+                    <value id="dwarf_miner">A hard-working miner</value>
+                    <value region_start="11" region_end="22" region_include="smith/smith_is/smith_is_weaponsmith">A talented weaponsmith</value>
+                    <value>A meticulous gem-cutter</value>
+                    <value region_start="17" region_end="24" region_include="armorer">A highly skilled armorer</value>
+                    <value>A capable stonemason</value>
+                    <value id="dwarf_soldier">A battle-hardened soldier</value>
+                    <value>A fearsome berserk warrior</value>
+                    <value id="dwarf_treasurehunter">A wily treasure hunter</value>
+                    <value>A short-tempered circus performer</value>
+                    <value id="dwarf_cook">A hardy cook</value>
+                    <value id="dwarf_mapmaker">A studious mapmaker</value>
+                </table>
+                <table name="The dwarf's beard is..." id="beard">
+                    <value>Snowy white</value>
+                    <value>Stony grey</value>
+                    <value>Fiery red</value>
+                    <value>Black as coal</value>
+                    <value>Earthly brown</value>
+                    <value>Tangled</value>
+                    <value>Braided</value>
+                    <value>Down to the floor</value>
+                    <value>Neatly trimmed</value>
+                    <value>Magnificent</value>
+                </table>
+                <table name="The dwarf is looking to..." id="looking">
+                    <value region_start="16" region_end="31" region_include="__noun__">Re-establish an ancestral claim</value>
+                    <value>Find a new source for precious gems</value>
+                    <value region_start="37" region_end="51" region_include="__noun__">Find some knowledge about an ancient event or place</value>
+                    <value>Drink some ale and swap tales of treasure</value>
+                    <value>Drink some ale and sing a bawdy song</value>
+                    <value>Drink some ale and start a fight</value>
+                </table>
+                <table name="The dwarf wears..." id="wears">
+                    <value>A traveler's cloak with a black hood</value>
+                    <value>A traveler's cloak with a blue hood</value>
+                    <value>A traveler's cloak with a grey hood</value>
+                    <value>A traveler's cloak with a gold hood</value>
+                    <value>A leather baldric with a hard leather cap</value>
+                    <value>Shining, silvered chainmail</value>
+                    <value region_start="46" region_end="56" region_include="armorer">Chainmail armor, patched with boiled leather (crafted by)</value>
+                    <value region_start="55" region_end="65" region_include="armorer">A burnished breastplate with an open-faced steel helm (crafted by)</value>
+                    <value region_start="37" region_end="47" region_include="armorer">A breastplate emblazoned with runes (crafted by)</value>
+                    <value region_start="37" region_end="47" region_include="armorer">Scale armor made of blackened steel (crafted by)</value>
+                    <value region_start="33" region_end="43" region_include="armorer">Nearly impenetrable plate armor (crafted by)</value>
+                </table>
+                <table name="The dwarf carries..." id="carries">
+                    <value>An old battleaxe with a razor sharp edge</value>
+                    <value>A highly polished warhammer and a steel shield</value>
+                    <value>A huge greataxe and some throwing axes</value>
+                    <value region_start="2|38" region_end="6|41" region_include="__noun__|__noun__">A rune-carved sword and an incomplete map</value>
+                    <value>Several handaxes and a crossbow</value>
+                    <value>A heavy battleaxe and a wooden shield</value>
+                    <value>A hammer and a sack full of climbing gear</value>
+                    <value>A pick-ax and an old map</value>
+                    <value>A sathcel of potions, tonics, and remedies</value>
+                    <value>A book of archaic earth magic and a bundle of notes</value>
+                    <value>A knife, some lockpicks, and a lamp</value>
+                    <value>A pair of magnifying glasses and a set of scales</value>
+                </table>
+            </category>

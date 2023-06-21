@@ -1,0 +1,22 @@
+        <category name="Guide" id="guide">
+            <name name="The guide's name is..."/>
+            <include name="Race" include="npc_race" />
+            <table name="The guide is..." id="is">
+                <value>A nomadic herder</value>
+                <value>A strange hermit</value>
+                <value>A skilled hunter</value>
+                <value region_start="9" region_end="16" region_include="fighter">A savage warrior</value>
+            </table>
+            <table name="The guide is looking to..." id="looking">
+                <value region_start="5" region_end="16" region_include="caravan">Help the caravan in any way</value>
+                <value region_start="5" region_end="16" region_include="caravan">Lead the caravan astray</value>
+                <value>Fill his purse with gold</value>
+                <value>Eat, drink, and be merry</value>
+            </table>
+            <table name="The guide carries" id="carries">
+                <value region_start="11" region_end="14" region_include="__noun__">An unusual map</value>
+                <value region_start="9" region_end="16" region_include="__noun__">A unique trinket of piece of jewelry</value>
+                <value>A spear or walking staff</value>
+                <value>A large knife and some rope</value>
+            </table>
+        </category>

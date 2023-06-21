@@ -1,0 +1,58 @@
+<category name="Alternative Nightmare..." id="nightmares2">
+    <table name="Setting..." id="setting">
+        <value>At sea</value>
+        <value>At home</value>
+        <value>Surrounded by darkness</value>
+        <value>Surrounded by light</value>
+        <value>World full of gnashing teeth and grasping hands</value>
+        <value>Strange Aeons</value>
+        <value>Arena</value>
+        <value>Tomb</value>
+        <value>Temple</value>
+        <value>Torture Chamber</value>
+        <value>City</value>
+        <value>Unknown country</value>
+    </table>
+    <table name="Action you are engaged in..." id="action">
+        <value>Knitting a hat for an enemy</value>
+        <value>Enjoying a tasty beverage made of the tears of unwashed children</value>
+        <value>Writing a letter to an archfiend</value>
+        <value>Jousing a friend</value>
+        <value>Constructing a golem by removing parts of yourself</value>
+        <value>Building an altar to an unknown god</value>
+        <value>Making candles out of bones</value>
+        <value>Ripping holes in reality with a strange knife</value>
+        <value>Fighting a mirror (and losing)</value>
+        <value>Eating the flesh of your loved ones</value>
+        <value>Slowly morphing into another lifeform</value>
+        <value>Your face is melting and you are trying to hold it together with hands that are also melting</value>
+    </table>
+    <table name="Outside forces influencing your action..." id="forces">
+        <value>Disembodied voices of children</value>
+        <value>A demonic handis castrating you</value>
+        <value>The air is turning into acid</value>
+        <value>You keep seeing the faces of everyone you love laughing at you</value>
+        <value>A sword keeps piercing your lungs, over and over</value>
+        <value>A feeling of being watched by a being beyond time</value>
+        <value>A vampire is chasing you</value>
+        <value>You are being eaten alive by thoushands of tiny bugs</value>
+        <value>The room you are in is getting smaller</value>
+        <value>Gravity keeps increasing</value>
+        <value>A king keeps giving you orders</value>
+        <value>An ancient dragon repeatedly breaks your teeth</value>
+    </table>
+    <table name="Cause of nightmare" id="cause">
+        <value>Bad Food</value>
+        <value>Anxiety</value>
+        <value>Unresolved Grief</value>
+        <value>Apprentice Magician</value>
+        <value>Angered fiend</value>
+        <value region_start="12" region_end="15" region_include="deity">Mischievous god</value>
+        <value>Extra-panar entity trying to communicate</value>
+        <value>Illness</value>
+        <value>You fell asleep in a place sacred to the Fey</value>
+        <value>Hungry Mindflayer</value>
+        <value>Incubus/Succubus</value>
+        <value>Abeloth</value>
+    </table>
+</category>

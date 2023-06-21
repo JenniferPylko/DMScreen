@@ -1,0 +1,22 @@
+<category name="Smith" id="smith">
+    <name name="The smith's name is..."/>
+    <include name="Race" include="npc_race" />
+    <table name="The smith is..." id="smith_is">
+        <value region_start="0" region_end="10" region_include="armorer">An armorer</value>
+        <value id="smith_is_blacksmith">A blacksmith</value>
+        <value id="smith_is_farrier">A farrier</value>
+        <value id="smith_is_weaponsmith">A weaponsmith</value>
+    </table>
+    <table name="The smith is looking for..." id="looking">
+        <value>A new apprentice</value>
+        <value>A journeyman craftsman</value>
+        <value region_start="5" region_end="11" region_include="__noun__">Rare metals</value>
+        <value>A mug of strong ale</value>
+    </table>
+    <table name="The smith carries..." id="carries">
+        <value>A hammer</value>
+        <value region_start="8" region_end="15" region_include="__noun__">A metal trinket made by the smith</value>
+        <value>A contract commissioning a sword</value>
+        <value>Little more than a few coins</value>
+    </table>
+</category>

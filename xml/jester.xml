@@ -1,0 +1,30 @@
+<category name="Fool / Jester" id="jester">
+    <name name="The fool's name is..."/>
+    <include name="Race" include="npc_race" />
+    <table name="The fool is..." id="jester_is">
+        <value region_start="2" region_end="7" region_include="dwarf">A dwarf</value>
+        <value>Morbidly obese</value>
+        <value>Wearing a mask</value>
+        <value>Dressed in motley</value>
+        <value>Dressed as a faux knight</value>
+        <value>Dressed as a faux wizard</value>
+    </table>
+    <table name="The fool gets the most laughs from..." id="jester_laughs">
+        <value>Falling stunts</value>
+        <value>Gorging himself with food or drink</value>
+        <value>Singing silly songs</value>
+        <value>Being hit over the head</value>
+        <value>Lewd gestures</value>
+        <value>Juggling sharp objects</value>
+        <value>Swallowing flames</value>
+        <value>Witty jokes and observations</value>
+    </table>
+    <table name="The fool wants nothing more than to..." id="jester_wants">
+        <value>Bring smiles to other's faces</value>
+        <value region_start="21" region_end="27" region_include="castle">Get as far from this castle as he can</value>
+        <value region_start="32" region_end="37" region_include="noble">Exact vengeance against a cruel noble</value>
+        <value>Kiss a pretty woman</value>
+        <value>Have a drink and be merry</value>
+        <value>Get drunk and feel numb</value>
+    </table>
+</category>

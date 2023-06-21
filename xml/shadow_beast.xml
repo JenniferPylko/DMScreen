@@ -1,0 +1,45 @@
+<category name="Shadow Beast" id="shadow_beast">
+    <table name="The shadow beast is..." id="is">
+        <value>A bat.</value>
+        <value>A centipede.</value>
+        <value region_start="2" region_end="8" region_include="monkey">A monkey.</value>
+        <value>An owl.</value>
+        <value>A panther.</value>
+        <value region_start="2" region_end="5" region_include="rat">A rat</value>
+        <value>A raven.</value>
+        <value>A serpent.</value>
+        <value region_start="2" region_end="8" region_include="spider">A spider.</value>
+        <value>A vulture.</value>
+        <value region_start="2" region_end="6" region_include="wolf">A wolf.</value>
+        <value>A wyvern.</value>
+    </table>
+    <table name="The beast has..." id="has">
+        <value>Dark, sinister eyes.</value>
+        <value>Pale, glowing eyes.</value>
+        <value>Dark stripes or markings.</value>
+        <value>Eerie grey coloration.</value>
+        <value>Venomous fangs.</value>
+        <value>Blackened teeth.</value>
+        <value>An aura of gloom.</value>
+        <value>An odor of death.</value>
+    </table>
+    <table name="..and..." id="has_and">
+        <value>Can disappear into shadows.</value>
+        <value>Can teleport in a swirl of shadows.</value>
+        <value>Moves without a sound.</value>
+        <value>Speaks in rhymes and riddles.</value>
+        <value>Gives you an uneasy feeling.</value>
+        <value>A mournful howl or cry.</value>
+    </table>
+    <table name="The beast is looking for..." id="looking
+        ">
+        <value>A soul to devour.</value>
+        <value>Dead flesh to eat.</value>
+        <value>Something to kill.</value>
+        <value>A place to lair among ghosts.</value>
+        <value region_start="4|27|34" region_end="12|31|38" region_include="wilderness|undead|tomb">The location of an ancient lich's tomb.</value>
+        <value>A dark hole in which to wait for prey.</value>
+        <value region_start="8" region_end="12" region_include="__noun__">Share a tale of terror and death.</value>
+        <value region_start="14" region_end="18" region_include="wizard">The loathsome mage who summoned it.</value>
+    </table>
+</category>

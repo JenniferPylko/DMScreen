@@ -1,0 +1,160 @@
+<category name="Lycanthrope" id="lycanthrope">
+    <table name="The beastshifter transforms into..." id="transform">
+        <value>A grizzly bear</value>
+        <value>A black bear</value>
+        <value>A wild boar</value>
+        <value region_start="19" region_end="22" region_include="rat">An oversized black rat</value>
+        <value region_start="14" region_end="17" region_include="rat">A large brown rat</value>
+        <value region_start="13" region_end="16" region_include="rat">A lanky grey rat</value>
+        <value>A fierce tiger</value>
+        <value region_start="7" region_end="11" region_include="wolf">A grey wolf</value>
+        <value region_start="25" region_end="29" region_include="wolf">A mottled brown and grey wolf</value>
+        <value region_start="16" region_end="20" region_include="wolf">A reddish brown wolf</value>
+        <value region_start="22" region_end="26" region_include="wolf">A dark brown or black wolf</value>
+        <value region_start="8" region_end="12" region_include="__noun__">A white wolf</value>
+        <value>A badger</value>
+        <value region_start="2" region_end="5" region_include="bat">A bat</value>
+        <value>A cat</value>
+        <value>A crocodile</value>
+        <value>A dog</value>
+        <value>A dolphin</value>
+        <value>A fox</value>
+        <value>A hyena</value>
+        <value>A jackal</value>
+        <value>A jaguar</value>
+        <value>A leopard</value>
+        <value>A lion</value>
+        <value>An owl</value>
+        <value>A panther</value>
+        <value>A raven</value>
+        <value>A seal</value>
+        <value>A serpent</value>
+        <value>A shark</value>
+        <value>A spider</value>
+        <value>A swine</value>
+    </table>
+    <table name="The beastshifter transforms involuntarily..." id="when">
+        <value>Whenever it is in moonlight</value>
+        <value>On nights when a full moon occurs</value>
+        <value>On nights when the moon is half full or more</value>
+        <value>Whenever the leader of its pack or clan transforms</value>
+        <value>Whenever it becomes enraged</value>
+        <value>Never; it is in complete control of its powers</value>
+    </table>
+    <table name="While transformed, the beastshifter behaves..." id="behave">
+        <value>Mostly as a normal beast of its type</value>
+        <value>As an unusually intelligent version of the beast of its type</value>
+        <value>More like a human than a beast</value>
+        <value>As a skilled hunter</value>
+        <value>As a cautious predator</value>
+        <value>As a savage predator</value>
+        <value>As a frightened beast</value>
+        <value>Violently, spreading blood and chaos</value>
+    </table>
+    <table name="The beastshifter lives..." id="lives">
+        <value>Alone among humans, hiding its powers</value>
+        <value>Along among humans who know and accept its powers</value>
+        <value>Alone as an outcast from human society</value>
+        <value>Among other beastshifters integrated into human society</value>
+        <value>Among other beastshifters as outcasts from human society</value>
+        <value>Among other beastshifters, hiding their powers from society</value>
+        <value>Among other beastshifters, apart from human society</value>
+        <value>Alone as an outcast from its pack or clan</value>
+    </table>
+    <table name="The beastshifter makes its home..." id="home">
+        <value region_start="5" region_end="9" region_include="cavern">In a cave</value>
+        <value region_start="5" region_end="10" region_include="swamp">In a swamp</value>
+        <value region_start="10" region_end="15" region_include="plains">On a vast plain</value>
+        <value region_start="5" region_end="11" region_include="forest">In a forest</value>
+        <value region_start="20" region_end="25" region_include="forest">In a cottage in the woods</value>
+        <value region_start="14" region_end="23" region_include="mountain">Hidden in the mountains</value>
+        <value region_start="11" region_end="18" region_include="village">In a quiet village</value>
+        <value region_start="21" region_end="28" region_include="village">Just outside a quiet village</value>
+        <value region_start="25" region_end="29" region_include="city">Down a dark alley in the city</value>
+        <value region_start="7" region_end="11" region_include="city">In the city sewers</value>
+        <value region_start="33" region_end="41" region_include="city">On a quiet residential street in the city</value>
+        <value region_start="13" region_end="19" region_include="castle">In or near a castle or palace</value>
+    </table>
+    <table name="The beastshifter has a tendency to..." id="tendency">
+        <value>Lose its temper easily</value>
+        <value>Speak in low growls (or squeaks), making it difficult for others to understand when excited</value>
+        <value>Recoil from touching anything made of silver</value>
+        <value>Get nervous in moonlight</value>
+        <value>Lick its lips hungrily all the time</value>
+        <value>Fidget or pace when in indoor spaces</value>
+        <value>Daydream about hunting in its beast form</value>
+        <value>Sniff people upon meeting them</value>
+    </table>
+    <table name="In humanoid form, the beastshifter fights with..." id="human_fight">
+        <value>Hit-and-run tactics</value>
+        <value>Making a mad charge</value>
+        <value>Kicking and stomping</value>
+        <value>Sharp claws</value>
+        <value>Sharp teeth</value>
+        <value>Lots of taunts and jeers</value>
+        <value>Lots of screaming and shouting</value>
+        <value>Lots of head-butting</value>
+    </table>
+    <table name="In humanoid form, the beastshifter presents itself as..." id="himan_present">
+        <value region_start="2" region_end="7" region_include="farmfolk">A farmer</value>
+        <value region_start="2" region_end="8" region_include="__noun__">A herder</value>
+        <value region_start="2" region_end="7" region_include="miner">A miner</value>
+        <value region_start="2" region_end="8" region_include="fisherfolk">A fisher</value>
+        <value region_start="2" region_end="8" region_include="__noun__">A beggar or urchin</value>
+        <value region_start="2" region_end="7" region_include="noble">A noble</value>
+        <value region_start="2" region_end="8" region_include="knight">A knight</value>
+        <value region_start="2" region_end="9" region_include="barkeep">A barkeep</value>
+        <value region_start="2" region_end="9" region_include="barkeep">A barmaid</value>
+        <value region_start="2" region_end="11" region_include="barbarian">A barbarian</value>
+        <value region_start="2" region_end="11" region_include="gladiator">A gladiator</value>
+        <value region_start="3" region_end="12" region_include="__noun__">An herbalist</value>
+        <value region_start="2" region_end="8" region_include="healer">A healer</value>
+        <value region_start="2" region_end="9" region_include="soldier">A soldier</value>
+        <value region_start="2" region_end="11" region_include="mercenary">A sellsword</value>
+        <value region_start="2" region_end="8" region_include="__noun__">A hunter</value>
+        <value region_start="3" region_end="11" region_include="assassin">An assassin</value>
+        <value region_start="2" region_end="7" region_include="thief">A thief</value>
+        <value region_start="2" region_end="8" region_include="__noun__">A bandit</value>
+        <value region_start="2" region_end="10" region_include="smuggler">A smuggler</value>
+        <value region_start="2" region_end="12" region_include="__noun__">A con artist</value>
+        <value region_start="2" region_end="8" region_include="sailor">A sailor</value>
+        <value region_start="2" region_end="8" region_include="pirate">A pirate</value>
+    </table>
+    <table name="In humanoid form, the beastshifter's face has..." id="human_face">
+        <value>Unsightly nose and ear hair</value>
+        <value>A garish earring</value>
+        <value>An empty eye socket</value>
+        <value>A grisly scar</value>
+        <value>A grim look</value>
+        <value>Sad puppy-dog eyes</value>
+        <value>A nervous grin</value>
+        <value>A toothy grin</value>
+        <value>A frame of long, beautiful hair</value>
+        <value>Ferocious sideburns</value>
+        <value>An unruly beard</value>
+        <value>An intimidating mustache</value>
+        <value>Deep eye sockets</value>
+    </table>
+    <table name="The beastshifter's favorite prey are..." id="prey">
+        <value>Foreigners and travelers</value>
+        <value>Beggars and drunks</value>
+        <value>Young men</value>
+        <value>Young women</value>
+        <value>Old women</value>
+        <value>Old noblewomen</value>
+        <value>Priests and monks</value>
+        <value>Priestesses</value>
+        <value>Harlots and madames</value>
+        <value>Farmwives and peasant girls</value>
+        <value>Young children</value>
+        <value>Rabbits and hares</value>
+        <value>Squirrels and chipmunks</value>
+        <value>Pheasants and other gamefowl</value>
+        <value>Ducks and other waterfowl</value>
+        <value>Mice and rats</value>
+        <value>Pigeons and doves</value>
+        <value>Sheep and goats</value>
+        <value>Chickens and turkeys</value>
+        <value>Dogs and cats</value>
+    </table>
+</category>

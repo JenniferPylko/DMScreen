@@ -1,0 +1,26 @@
+        <category name="Elf Enclave" id="elfenclave">
+            <name name="The enclave's name is..." src="cities" />
+            <table name="Vignettes, encounters, and color" id="vignette">
+                <value>A lane, marked with carefully trimmed trees</value>
+                <value>A single early blooming flower with the snow carefully pushed away</value>
+                <value>A group of birds, twittering in tune with a druid's flute</value>
+                <value>A group of border guards who appear as if from nowhere behind the party</value>
+                <value>A fletcher cutting shafts for new arrows from a well tended grove of saplings</value>
+                <value region_start="0" region_end="7" region_include="druid">A druid, protected by magic carefully harvesting honey from well cared for bee hives</value>
+                <value>A group of weavers, spinning fabric that seems to fade into the background even as it's being woven</value>
+                <value>An elven cobbler, making fine boots for those with dainty feet</value>
+                <value region_start="31" region_end="36" region_include="druid">A group of wizards cornering a druid and interrogating him about a plant they've taken an interest in</value>
+                <value region_start="0" region_end="11" region_include="nobleman">An elf lord, noble in bearing, who dismisses his retinue so that he may walk through the woods undisturbed for a moment</value>
+                <value>A neatly stacked pile of bows, arrows, and tanglefoot bags on the edge of a small camp</value>
+                <value>A large, fine tent, its fabric nearly invisible against the trees</value>
+                <value>A rope hanging from the trees, its destination lost in the branches above</value>
+                <value>A group of youth's skipping their classes. The youngest appears to be in his 80's</value>
+                <value>An elf maid painting a landscape on fine canvas</value>
+                <value>An elf carpenter using magic to bend wood into fine bowls and dinner ware</value>
+                <value>A grand vista of the valley opens up just around a turn in the path. It's breath taking</value>
+                <value>A dwarf crafting a chest with an intricate lock for an elf wizard who looks on</value>
+                <value>A group of guards leads an orc prisoner away, bound and gagged</value>
+                <value>A ranger, bloody and bandaged, limps into the encampment and demands to see the king immediately</value>
+            </table>
+            <member name="Locations" include="locations" />
+        </category>

@@ -1,0 +1,66 @@
+<category name="Lizardfolk" id="lizardfolk">
+    <table name="Coloring: The lizardfolk's scales are..." id="scale">
+        <value>Mottled green and brown</value>
+        <value>Dull and green</value>
+        <value>Shiny and green</value>
+        <value>Green with black stripes</value>
+        <value>Black and grey</value>
+        <value>Brown with black stripes</value>
+        <value>Mottled black and brown</value>
+        <value>Brown and grey</value>
+    </table>
+    <table name="Mannerism: The lizardfolk has..." id="mannerism">
+        <value>An unsavory habit of locking its lips</value>
+        <value>Shifty eyes</value>
+        <value>A nervous, hissing laugh</value>
+        <value>Eyes that never blink</value>
+        <value>A tongue that protrudes when it speaks</value>
+        <value>A crest atop its head</value>
+        <value>Two ridges starting above the brow and running down its head and neck</value>
+        <value>Sagging folds of skin on its throat</value>
+    </table>
+    <table name="Profession: The lizardfolk is..." id="profession">
+        <value>A savvy hunter</value>
+        <value>A deadly tracker</value>
+        <value>A skilled scout</value>
+        <value>A savage berserker</value>
+        <value>A dim-witted brute</value>
+        <value>A celebrated warrior</value>
+        <value>A powerful shaman</value>
+        <value>An eerie mystic</value>
+        <value>A scaly shapeshifter</value>
+        <value>A cold-blooded killer</value>
+    </table>
+    <table name="Goals: The lizardfolk is looking for..." id="looking">
+        <value>New waters for fishing and hunting</value>
+        <value region_start="17" region_end="25" region_include="__noun__">The tracks of an intruder in the region</value>
+        <value region_start="26" region_end="31" region_include="beast">The lair of a troublesome beast</value>
+        <value>Safe nesting grounds</value>
+        <value>Decent arms and armor</value>
+        <value>Fresh meat</value>
+    </table>
+    <table name="Possessions: The lizardfolk carries..." id="possession">
+        <value>A scimitar and a wooden shield</value>
+        <value>A scimitar and a short bow</value>
+        <value>A spear and a blowgun</value>
+        <value>A curved dagger and a blowgun</value>
+        <value>A curved dagger with feathers on the hilt</value>
+        <value>A hand axe and a shortbow</value>
+        <value>An oversized club</value>
+        <value>A wooden club and a wooden shield</value>
+        <value>A milky white gem fasted about the neck</value>
+        <value>A string of trophy ears fastened about the neck</value>
+        <value>A string of trophy finger bones fastened about the neck</value>
+        <value>A string of trophy scalps fastened about the neck</value>
+        <value>A string of trophy teeth fastened about the neck</value>
+        <value>A gnarled wooden staff</value>
+        <value>A string of bone beads</value>
+        <value>A string of clay beads</value>
+        <value>A string of copper beads</value>
+        <value>A string of silver beads</value>
+        <value>A string of stone beads</value>
+        <value>A string of teeth beads</value>
+        <value>A string of tin beads</value>
+        <value>A string of wood beads</value>
+    </table>
+</category>

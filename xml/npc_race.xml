@@ -1,0 +1,58 @@
+<table name="The character's race is..." id="npc_race" short="Race">
+    <value>Aaasimar</value>
+    <value>Aarakocra</value>
+    <value>Bugbear</value>
+    <value>Changling</value>
+    <value region_start="0" region_end="8" region_include="darkelf">Dark Elf</value>
+    <value>Dragonborn</value>
+    <value>Gith</value>
+    <value region_start="0" region_end="5" region_include="gnome">Gnome</value>
+    <value>Half-Orc</value>
+    <value>Half-Elf</value>
+    <value region_start="0" region_end="8" region_include="halfling">Halfling</value>
+    <value region_start="0" region_end="8" region_include="highelf">High Elf</value>
+    <value region_start="0" region_end="10" region_include="dwarf">Hill Dwarf</value>
+    <value>Human</value>
+    <value region_start="0" region_end="14" region_include="dwarf">Mountain Dwarf</value>
+    <value>Tiefling</value>
+    <value region_start="0" region_end="8" region_include="woodelf">Wood Elf</value>
+    <value>Centaur</value>
+    <value>Dryad</value>
+    <value>Duergar</value>
+    <value>Kalashtar</value>
+    <value>Kenku</value>
+    <value region_start="0" region_end="6" region_include="kobold">Kobold</value>
+    <value>Genasi</value>
+    <value region_start="0" region_end="6" region_include="goblin">Goblin</value>
+    <value>Goliath</value>
+    <value>Grung</value>
+    <value>Loxodon</value>
+    <value>Hobgoblin</value>
+    <value>Locathah</value>
+    <value>Medusa</value>
+    <value>Minotaur</value>
+    <value region_start="0" region_end="10" region_include="lizardfolk">Lizardfolk</value>
+    <value>Ogre</value>
+    <value>Orc</value>
+    <value>Owlin</value>
+    <value>Fairy</value>
+    <value>Harengon</value>
+    <value>Pixie</value>
+    <value>Revenant</value>
+    <value>Satyr</value>
+    <value>Shadar-kai</value>
+    <value>Shifter</value>
+    <value>Simic Hybrid</value>
+    <value>Tabaxi</value>
+    <value>Tortle</value>
+    <value>Triton</value>
+    <value>Troll</value>
+    <value region_start="0" region_end="7" region_include="vampire">Vampire</value>
+    <value>Vedalken</value>
+    <value>Verdan</value>
+    <value>Warforged</value>
+    <value region_start="0" region_end="8" region_include="lycanthrope">Werebear</value>
+    <value region_start="0" region_end="7" region_include="lycanthrope">Wererat</value>
+    <value region_start="0" region_end="8" region_include="lycanthrope">Werewolf</value>
+    <value>Yuan-ti Pureblood</value>
+</table>

@@ -1,0 +1,88 @@
+        <category name="Treasure Chest" id="chests">
+            <table name="The chest's style is..." id="chest_is">
+                <value>Crude</value>
+                <value>Standard</value>
+                <value>Fancy</value>
+                <value>Elven</value>
+                <value>Bejewed</value>
+                <value>Draconic</value>
+                <value>Dwarven</value>
+                <value>Pretty Princess</value>
+                <value>Pirate</value>
+                <value>Woven</value>
+                <value>Creepy</value>
+                <value>Heavy Duty</value>
+            </table>
+            <table name="It's construction material is..." id="chest_material">
+                <value>Old, rotting wood</value>
+                <value>Sturdy oak</value>
+                <value>Diamondwood</value>
+                <value>Iron</value>
+                <value>Steel</value>
+                <value>Bone</value>
+                <value>Obsidian</value>
+                <value>Glass</value>
+                <value>Ice</value>
+                <value>Silver</value>
+                <value>Gold</value>
+                <value>Ebony</value>
+            </table>
+            <table name="It has hinges and trim made from..." id="chest_hinges">
+                <value>Iron</value>
+                <value>Steel</value>
+                <value>Brass</value>
+                <value>Silver</value>
+                <value>Gold</value>
+                <value>Bronze</value>
+                <value>Ebony</value>
+                <value>Leather</value>
+                <value>Wood</value>
+                <value>Mithril</value>
+                <value>Adamantite</value>
+                <value>Dragon Leather</value>
+            </table>
+            <table name="The chest's definitive marking is..." id="chest_marking">
+                <value>Artistic scrollwork</value>
+                <value>Tree pattern</value>
+                <value>Dwarven runes</value>
+                <value>Elvish script</value>
+                <value>Lion emblem</value>
+                <value>Carving of a dragon</value>
+                <value>Decorative skull</value>
+                <value>Glowing Crystals</value>
+                <value>Mystic Sigils</value>
+                <value>Staring Eyes</value>
+                <value>Claw-like feet</value>
+                <value>Bas-relief of a battle</value>
+            </table>
+            <table name="Trap used..." id="chest_used">
+                <value>Poison dart</value>
+                <value>Arrow</value>
+                <value>Small explosion</value>
+                <value>Alarm</value>
+                <value>Pit trap</value>
+                <value>Boulder trap</value>
+                <value>Heavy blade</value>
+                <value>Spears</value>
+                <value>Water fills room</value>
+                <value>Sand fills room</value>
+                <value>Poison gas</value>
+                <value>Random spell</value>
+            </table>
+            <table name="Lock type" id="chest_lock">
+                <value>Padlock</value>
+                <value>Internal mechanism</value>
+                <value>Combination</value>
+                <value>Puzzle lock</value>
+                <value>Password</value>
+                <value>Hidden lock mechanism</value>
+            </table>
+            <table name="Key location" id="chest_key">
+                <value>Hidden in same room</value>
+                <value>Plain sight</value>
+                <value>On guardian</value>
+                <value>Another room</value>
+                <value>Held by owner</value>
+                <value>Lost</value>
+            </table>
+        </category>

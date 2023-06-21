@@ -1,0 +1,162 @@
+<category name="Princess" id="princess">
+    <name name="The princess's name is..." />
+    <include name="Race" include="npc_race" />
+    <table name="The princess is the daughter of..." id="daughter">
+        <value region_start="13" region_end="17" region_include="nobleman">A tyrannical king.</value>
+        <value region_start="12" region_end="16" region_include="nobleman">A foolhardy king.</value>
+        <value region_start="8" region_end="13" region_include="noblewoman">An evil queen.</value>
+        <value region_start="10" region_end="15" region_include="noblewoman">A beloved queen.</value>
+        <value region_start="13" region_end="20" region_include="noble">A benevolent monarch.</value>
+        <value region_start="2|10" region_end="9|17" region_include="nation|noble">A foreign monarch.</value>
+        <value region_start="9" region_end="18" region_include="sorcerer">A wicked sorceress.</value>
+        <value region_start="23" region_end="34" region_include="noblehouse">The head of an ancient noble house.</value>
+        <value region_start="9" region_end="16" region_include="barbarian">A brutal warlord.</value>
+        <value region_start="2" region_end="6" region_include="nobleman">A lord of middling power and influence.</value>
+        <value region_start="10" region_end="18" region_include="merchant">A wealthy merchant.</value>
+        <value region_start="12" region_end="21" region_include="__noun__">A brilliant conqueror.</value>
+    </table>
+    <table name="Everyone has heard of this princess, she is..." id="heard">
+        <value>Rather ugly.</value>
+        <value>Rather vain.</value>
+        <value>Comically tall.</value>
+        <value>Comically fat.</value>
+        <value>Extremely arrogant.</value>
+        <value>Extremely rich.</value>
+        <value region_start="22|30" region_end="29|39" region_include="nation|__noun__">Known for insulting a foreign dignitary.</value>
+        <value region_start="27" region_end="32" region_include="__noun__">The survivor of a horrible curse.</value>
+        <value>The survivor of a terrible ordeal of captivity.</value>
+        <value region_start="2" region_end="8" region_include="bard">A singer of legendary talent.</value>
+        <value region_start="39" region_end="44" region_include="world">The second most beautiful woman in the world.</value>
+        <value region_start="32" region_end="37" region_include="world">The most beautiful woman in the world.</value>
+    </table>
+    <table name="The princess has..."  id="has">
+        <value>Long, dark hair.</value>
+        <value>Wavy, golden hair.</value>
+        <value>Neatly braided hair.</value>
+        <value>Wild, curly hair.</value>
+        <value>Beautiful, bright eyes.</value>
+        <value>Dark, captivating eyes.</value>
+        <value>An inviting smile.</value>
+        <value>An arrogant sneer.</value>
+        <value>Lush, full lips.</value>
+        <value>Thoughtful, pursed lips.</value>
+        <value>Dainty feet.</value>
+        <value>Over-sized feet.</value>
+    </table>
+    <table name="The princess's family hopes to marry her to..." id="marry">
+        <value region_start="10" region_end="14" region_include="nobleman">A wealthy lord.</value>
+        <value region_start="10" region_end="16" region_include="nobleman">The crown prince.</value>
+        <value region_start="4|19" region_end="7|24" region_include="nobleman|noblehouse">The son of a rival house.</value>
+        <value region_start="4|21" region_end="7|26" region_include="nobleman|noblehouse">The son of an allied house.</value>
+        <value region_start="2" region_end="9" region_include="nation">A foreign tyrant.</value>
+        <value region_start="2" region_end="9" region_include="nation">A foreign prince.</value>
+        <value region_start="9" region_end="15" region_include="knight">A heroic knight.</value>
+        <value region_start="21" region_end="30" region_include="__noun__">A legendary military commander.</value>
+        <value region_start="15" region_end="19" region_include="nobleman">An old widowed king.</value>
+        <value region_start="2" region_end="16" region_include="__noun__">A rival claimant to the crown.</value>
+        <value region_start="11" region_end="19" region_include="merchant">A powerful merchant.</value>
+        <value region_start="28" region_end="34" region_include="nobleman">No one; her place is at her father's side.</value>
+        <value region_start="28" region_end="34" region_include="noblewoman">No one; her place is at her mother's side.</value>
+    </table>
+    <table name="The princess, however, can picture herself running off with..." id="runnning">
+        <value region_start="7" region_end="14" region_include="__noun__">A poor farmboy.</value>
+        <value region_start="14" region_end="24" region_include="smith">A hunky young blacksmith.</value>
+        <value region_start="8" region_end="12" region_include="nobleman">A young lord of low-standing.</value>
+        <value region_start="12|21" region_end="15|32" region_include="__noun__|noblehouse">The bastard son of a noble house.</value>
+        <value region_start="10" region_end="18" region_include="huntsman">A skilled huntsman.</value>
+        <value region_start="12" region_end="19" region_include="__noun__">A brilliant scholar.</value>
+        <value region_start="12" region_end="18" region_include="priest">A sensitive priest.</value>
+        <value region_start="11" region_end="17" region_include="knight">A handsome knight.</value>
+        <value region_start="11" region_end="17" region_include="bard">A charming singer.</value>
+        <value region_start="9" region_end="14" region_include="thief">A daring thief.</value>
+        <value region_start="10" region_end="16" region_include="pirate">A dashing pirate.</value>
+        <value region_start="13" region_end="22" region_include="__noun__">Her favorite attendant.</value>
+    </table>
+    <table name="The princess's closest friend and confidant is..." id="friend">
+        <value region_start="4" region_end="10" region_include="noblewoman">Her mother.</value>
+        <value region_start="4" region_end="10" region_include="princess">Her sister.</value>
+        <value region_start="4" region_end="11" region_include="nobleman">Her brother.</value>
+        <value region_start="4" region_end="8" region_include="maidservant">Her maid.</value>
+        <value region_start="4" region_end="13" region_include="__noun__">Her chaperone.</value>
+        <value region_start="4" region_end="9" region_include="sage">Her tutor.</value>
+        <value region_start="4" region_end="7" region_include="__noun__">Her cat</value>
+        <value region_start="2" region_end="7" region_include="horse">A horse</value>
+        <value region_start="2" region_end="7" region_include="__noun__">A hound</value>
+        <value region_start="2" region_end="10" region_include="__noun__">A songbird</value>
+        <value region_start="4" region_end="17" region_include="guard_captain">The guard captain.</value>
+        <value region_start="12" region_end="18" region_include="knight">A household knight.</value>
+        <value region_start="2" region_end="8" region_include="priest">A priest</value>
+        <value region_start="2" region_end="11" region_include="priest">A priestess</value>
+        <value region_start="4|22" region_end="10|29" region_include="nobleman|__noun__">Her father's personal nemesis.</value>
+        <value region_start="4|22" region_end="10|29" region_include="nobleman|__noun__">Her mother's personal nemesis</value>
+        <value region_start="4|13" region_end="10|17" region_include="nobleman|fool">Her father's fool</value>
+        <value region_start="4|13" region_end="10|17" region_include="nobleman|fool">Her mother's fool</value>
+    </table>
+    <table name="The princess is well-versed in..." id="versed">
+        <value>Painting.</value>
+        <value>Poetry.</value>
+        <value>Dancing.</value>
+        <value>Playing the flute</value>
+        <value>Playing the harp</value>
+        <value>Playing the harpsichord</value>
+        <value>Playing the violin.</value>
+        <value>Crochet</value>
+        <value>Knitting.</value>
+        <value>Embroidery</value>
+        <value>Cross-stitch.</value>
+        <value>Quilting</value>
+        <value>Appliqué.</value>
+        <value>Sewing</value>
+        <value>Weaving.</value>
+        <value>History</value>
+        <value>Heraldry.</value>
+        <value>Politics</value>
+        <value>Diplomacy.</value>
+        <value>Hymns</value>
+        <value>Prayers.</value>
+        <value>Seduction.</value>
+    </table>
+    <table name="...and she's also pretty good at..." id="good">
+        <value>Archery.</value>
+        <value>Swordplay.</value>
+        <value>Falconry.</value>
+        <value>Hunting and tracking.</value>
+        <value>Horseback riding.</value>
+        <value>Sailing.</value>
+        <value>Drinking.</value>
+        <value>Spells and potions.</value>
+        <value>Making inappropriate, but witty jokes.</value>
+        <value>Impersonation.</value>
+        <value>Lying.</value>
+        <value>Sneaking.</value>
+    </table>
+    <table name="The princess may have gotten into some trouble when she..." id="trouble">
+        <value region_start="14|32" region_end="19|38" region_include="rogue|tavern">Met a dashing rogue at a common tavern.</value>
+        <value region_start="14|36" region_end="18|42" region_include="forest|knight">Rode into the woods with a handsome knight.</value>
+        <value region_start="8|26" region_end="13|31" region_include="__noun__|witch">Asked a favor of a tricky witch.</value>
+        <value region_start="26" region_end="31" region_include="witch">Trespassed in a reclusive witch's garden</value>.
+        <value region_start="13" region_end="29" region_include="undead">Spoke with a ghostly presence.</value>
+        <value region_start="17" region_end="21" region_include="book">Read a forbidden book of lore.</value>
+        <value region_start="11|18" region_end="15|22" region_include="noblewoman|maidservant">Followed a lady's maid after a feast.</value>
+        <value region_start="11|13" region_end="10|23" region_include="nobleman|squire">Followed a lord's valet after a feast.</value>
+        <value region_start="38" region_end="43" region_include="fiend">Attracted the attention of a powerful devil</value>
+        <value region_start="38" region_end="45" region_include="vampire">Attracted the attention of a powerful vampire.</value>
+        <value region_start="35" region_end="41" region_include="castle">Discovered a hidden passage in the castle.</value>
+        <value region_start="43" region_end="47" region_include="noblewoman">Made a pact with another mischievous young lady.</value>
+        <value>Ran away from home.</value>
+    </table>
+    <table name="The princess is..." id="is">
+        <value region_start="57" region_end="61" region_include="maidservant">Utterly incompetent; she can't dress herself without her maid's help.</value>
+        <value>Pretty vapid; she's not going to be able to handle this problem on her own.</value>
+        <value>Rather brash; her boldness often gets her into trouble.</value>
+        <value>A bit too proud; she hates to ask for help, even when she needs it.</value>
+        <value>Two-faced; she'll sell out her friends if its to her advantage.</value>
+        <value>Naive; she's going to get into more trouble if someone doesn't guide her.</value>
+        <value>Enchanting; she'll charm her way out of her present trouble.</value>
+        <value>Fearless; she's always poised in the face of danger.</value>
+        <value>Stubborn; there is no arguing with her once she sets her mind on something.</value>
+        <value>Clever; she always has a plan to turn any bad situation on its head.</value>
+        <value>Shrewd; she's capable of outwitting both you and the source of her present trouble.</value>
+        <value>A badass; don't get in her way.</value>
+    </table>
+</category>

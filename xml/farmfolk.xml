@@ -1,0 +1,78 @@
+        <category name="Farm Folk" id="farmfolk">
+            <name name="The farmer's name is..."/>
+            <include name="Race" include="npc_race" />
+            <table name="The farmer is..." id="is">
+                <value>An old farmer</value>
+                <value>A middle-aged farmer</value>
+                <value>A young farmer</value>
+                <value>A farm boy</value>
+                <value>An old farmwife</value>
+                <value>A young maid</value>
+                <value>A country girl</value>
+            </table>
+            <table name="The farmer seeks someone to..." id="seeks">
+                <value region_start="17" region_end="31" region_include="__noun__">Lend a hand on a laborious task</value>
+                <value region_start="17" region_end="35" region_include="__noun__">Repair a tool or farming implements</value>
+                <value region_start="22" region_end="27" region_include="__noun__">Help locate a missing beast</value>
+                <value region_start="22" region_end="28" region_include="__noun__">Help locate a missing person</value>
+                <value region_start="33" region_end="37" region_include="nobleman">Help secure an audience with the lord</value>
+                <value region_start="33" region_end="37" region_include="noblewoman">Help secure an audience with the lady</value>
+                <value>Purchase or distribute crops</value>
+                <value>Purchase some livestock</value>
+                <value>Listen to a tale of woe</value>
+            </table>
+            <table name="The farmer's primary crops and market fare include" id="crop">
+                <value>Barley</value>
+                <value>Oats</value>
+                <value>Corn</value>
+                <value>Rice</value>
+                <value>Rye</value>
+                <value>Wheat</value>
+                <value>Beef</value>
+                <value>Chicken</value>
+                <value>Duck</value>
+                <value>Goat</value>
+                <value>Goose</value>
+                <value>Pigeon</value>
+                <value>Pork</value>
+                <value>Mutton</value>
+                <value>Apples</value>
+                <value>Blackberries</value>
+                <value>Blueberries</value>
+                <value>Cherries</value>
+                <value>Lemons</value>
+                <value>Pears</value>
+                <value>Plums</value>
+                <value>Raspberries</value>
+                <value>Beans</value>
+                <value>Beets</value>
+                <value>Broccoli</value>
+                <value>Cabbages</value>
+                <value>Carrots</value>
+                <value>Cauliflower</value>
+                <value>Mushrooms</value>
+                <value>Peas</value>
+                <value>Radishes</value>
+                <value>Squash</value>
+                <value>Cow's milk</value>
+                <value>Goat's milk</value>
+                <value>Sheep's milk</value>
+                <value>Hard cheese</value>
+                <value>Mild cheese</value>
+                <value>Pungent cheese</value>
+                <value>Sharp cheese</value>
+                <value>Soft cheese</value>
+                <value>Eggs</value>
+                <value>Goose eggs</value>
+                <value>Basil</value>
+                <value>Garlic</value>
+                <value>Ginger</value>
+                <value>Mint</value>
+                <value>Oregano</value>
+                <value>Parsley</value>
+                <value>Pepper</value>
+                <value>Rosemary</value>
+                <value>Sage</value>
+                <value>Thyme</value>
+            </table>
+        </category>

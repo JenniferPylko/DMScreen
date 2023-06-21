@@ -1,0 +1,22 @@
+            <category name="Horse master" id="horsemaster">
+                <name name="The horse master's name is..."/>
+                <include name="Race" include="npc_race" />
+                <table name="The horse master is..." id="horsemaster_is">
+                    <value region_start="2" region_end="8" region_include="knight">A knight lamed in combat years ago</value>
+                    <value region_start="13" region_end="20" region_include="maidservant">The son of a servant to the liege's family</value>
+                    <value>A genius for breeding horses</value>
+                    <value region_start="2" region_end="11" region_include="nation">A foreigner who grew up in the saddle</value>
+                </table>
+                <table name="The horse master has..." id="horsemaster_has">
+                    <value>A sackful of oats strapped to his belt</value>
+                    <value>A calm demeanor</value>
+                    <value>A soft-spoken manner</value>
+                    <value>A pointed beard</value>
+                </table>
+                <table name="The horse master wants to..." id="horsemaster_wants">
+                    <value>Have the fastest horses ready to carry his liege's messages</value>
+                    <value>Tell a tale of a grueling ride</value>
+                    <value>Bring honor to his family name</value>
+                    <value>Boast about a prized young mare</value>
+                </table>
+            </category>

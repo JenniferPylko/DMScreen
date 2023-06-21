@@ -1,0 +1,95 @@
+        <category name="Dinner at a Hunters' Lodge" id="dinner_hunter">
+            <table name="Tonight, we dine on..." id="dine">
+                <patterns>
+                    <pattern>{prep} {dish}</pattern>
+                </patterns>
+                <list type="prep">
+                    <item>Stewed</item>
+                    <item>Roasted</item>
+                    <item>Skewered</item>
+                    <item>Braised</item>
+                    <item>Smoked</item>
+                    <item>Grilled</item>
+                    <item>Seared</item>
+                    <item>Flame-broiled</item>
+                    <item>Salted</item>
+                    <item>Peppered</item>
+                </list>
+                <list type="dish">
+                    <item>rabbit</item>
+                    <item>quail</item>
+                    <item>duck</item>
+                    <item>swan</item>
+                    <item>boar</item>
+                    <item>aurochs</item>
+                    <item>pheasant</item>
+                    <item>goose</item>
+                    <item>trout</item>
+                    <item>pike</item>
+                    <item>clams</item>
+                    <item>bear</item>
+                    <item>venison</item>
+                    <item>hare</item>
+                    <item>beaver</item>
+                    <item>wolf</item>
+                    <item>squirrel</item>
+                    <item>otter</item>
+                    <item>hind</item>
+                    <item>mockingbird</item>
+                </list>
+            </table>
+            <table name="...with..." id="dine_with">
+                <value>Potatoes.</value>
+                <value>Red cabbage.</value>
+                <value>White cabbage.</value>
+                <value>Leeks.</value>
+                <value>Lentils.</value>
+                <value>Rhubarb.</value>
+                <value>Peas.</value>
+                <value>Turnips.</value>
+                <value>Parsnips.</value>
+                <value>String beans.</value>
+                <value>Chives.</value>
+                <value>Onions.</value>
+            </table>
+            <table name="...and..." id="dine_and">
+                <value>Carrots.</value>
+                <value>Apples.</value>
+                <value>Cherries.</value>
+                <value>Wild mushrooms.</value>
+                <value>Sliced mushrooms.</value>
+                <value>Black mushrooms.</value>
+                <value>Truffles.</value>
+                <value>Rosemary.</value>
+                <value>Sage.</value>
+                <value>Parsley.</value>
+                <value>Pine nuts.</value>
+                <value>Raisins.</value>
+            </table>
+            <table name="Side dish..." id="side">
+                <value>Rye bread.</value>
+                <value>Wheat bread.</value>
+                <value>Crusty bread.</value>
+                <value>Sesame bread.</value>
+                <value>Oat cake.</value>
+                <value>Pumpernickel bread.</value>
+                <value>Hard tack.</value>
+                <value>Dry flatbread.</value>
+                <value>Honey cake.</value>
+                <value>Deer sausage.</value>
+                <value>Boar's feet.</value>
+                <value>Sow's ear.</value>
+            </table>
+            <table name="Beverage..."  id="beverage">
+                <value>Dark ale.</value>
+                <value>Pale ale.</value>
+                <value>Lager.</value>
+                <value>Stout.</value>
+                <value>Strong wine.</value>
+                <value>Sweet wine.</value>
+                <value>White wine.</value>
+                <value>Red wine.</value>
+                <value>Tea.</value>
+                <value>Whisky.</value>
+            </table>
+        </category>

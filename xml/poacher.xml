@@ -1,0 +1,69 @@
+<category name="Poacher" id="poacher">
+    <name name="The poacher's name is..."/>
+    <include name="Race" include="npc_race" />
+    <table name="The poachers' favorite prey includes"  id="prey">
+        <value>Bears</value>
+        <value>Eagles</value>
+        <value>Falcons</value>
+        <value>Hawks</value>
+        <value>Owls</value>
+        <value>Boars</value>
+        <value>Deer</value>
+        <value>Elk</value>
+        <value>Moose</value>
+        <value>Stags</value>
+        <value>Behemoths</value>
+        <value>Elephants</value>
+        <value>Griffons</value>
+        <value>Hippogriffs</value>
+        <value>Lions</value>
+        <value>Owl Bears</value>
+        <value>Tigers</value>
+        <value>Wyverns</value>
+        <value>Doves</value>
+        <value>Grouses</value>
+        <value>Partidges</value>
+        <value>Pheasants</value>
+        <value>Quails</value>
+        <value>Turkeys</value>
+        <value>Ducks</value>
+        <value>Geese</value>
+        <value>Herons</value>
+        <value>Puffins</value>
+        <value>Snipes</value>
+        <value>Swans</value>
+        <value>Beavers</value>
+        <value>Ermines</value>
+        <value>Otters</value>
+        <value>Raccoons</value>
+        <value>Sables</value>
+        <value>Skunks</value>
+        <value>Badgers</value>
+        <value>Coyotes</value>
+        <value>Foxes</value>
+        <value>Wolverines</value>
+        <value>Wolves</value>
+    </table>
+    <table name="The poacher hunts..." id="hunts">
+        <value>For sport</value>
+        <value>To feed their families</value>
+        <value>To feed the impoverished peasants</value>
+        <value>To exact revenge on the lawnowner</value>
+        <value>To sell the beasts' meat</value>
+        <value>To sell the beasts' pelts</value>
+    </table>
+    <table name="Distinguishing features: The poacher has..." id="feature">
+        <value>A flashy earring</value>
+        <value>Shiny leather boots</value>
+        <value>A hole in the toe of one boot</value>
+        <value>A dagger in each boot</value>
+        <value>A mask on the face</value>
+        <value>A wide-brimmed hat</value>
+        <value>A dragon tattoo on the forearm</value>
+        <value>A flame tattoo around the arm</value>
+        <value>A maniacal laugh</value>
+        <value>A bent, broken nose</value>
+        <value>An open shirt and a very hairy chest</value>
+        <value>Extravagant mustaches</value>
+    </table>
+</category>

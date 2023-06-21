@@ -1,0 +1,62 @@
+<category name="Mutant Creature" id="mutant">
+    <table name="The mutant creature is a..." id="mutant_is">
+        <value>Tiny</value>
+        <value>Small.</value>
+        <value>Medium.</value>
+        <value>Large.</value>
+        <value>Huge.</value>
+        <value>Bloated.</value>
+        <value>Skeletal.</value>
+        <value>Sickly.</value>
+        <value>Two-headed.</value>
+        <value>Regenerating.</value>
+    </table>
+    <table name="...creature..." id="mutant_type">
+        <value>Ape.</value>
+        <value region_start="0" region_end="3" region_include="bat">Bat.</value>
+        <value>Boar.</value>
+        <value>Bull.</value>
+        <value>Crocodile.</value>
+        <value>Goat.</value>
+        <value>Lion.</value>
+        <value>Serpent.</value>
+        <value region_start="0" region_end="6" region_include="spider">Spider.</value>
+        <value region_start="0" region_end="4" region_include="wolf">Wolf.</value>
+    </table>
+    <table name="...crossed with a/an..." id="mutant_crossed">
+        <value>Displacer beast.</value>
+        <value region_start="0" region_end="6" region_include="dragon">Dragon.</value>
+        <value>Ethereal marauder.</value>
+        <value>Fire beetle.</value>
+        <value>Griffon.</value>
+        <value>Nightmare.</value>
+        <value region_start="0" region_end="4" region_include="ooze">Ooze.</value>
+        <value>Owlbear.</value>
+        <value>Rust monster.</value>
+        <value>Stirge.</value>
+    </table>
+    <table name="The creature's special abilities include..." id="mutant_ability">
+        <value>Blindsight.</value>
+        <value>Blood-sucking life drain.</value>
+        <value>Burrowing.</value>
+        <value>A flyby attack.</value>
+        <value>A poisonous sting.</value>
+        <value>A psionic blast.</value>
+        <value>Swallowing prey whole.</value>
+        <value>A tentacle grab.</value>
+        <value>Teleportation.</value>
+        <value>Tremorsense.</value>
+    </table>
+    <table name="...and it exudes an aura of..." id="mutant_aura">
+        <value>Befuddlement.</value>
+        <value>Crackling lightning.</value>
+        <value>Darkness.</value>
+        <value>Decay.</value>
+        <value>Flames.</value>
+        <value>Freezing cold.</value>
+        <value>Madness.</value>
+        <value>Mists.</value>
+        <value>Sleepiness.</value>
+        <value>Terror.</value>
+    </table>
+</category>

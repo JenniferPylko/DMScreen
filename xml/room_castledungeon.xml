@@ -1,0 +1,36 @@
+<category name="Castle Dungeon" id="room_castledungeon">
+    <table name="This chamber is..." id="is">
+        <value>A dungeon cell</value>
+        <value>Another dungeon cell</value>
+        <value>A passageway connecting cell blocks</value>
+        <value>A guardroom</value>
+        <value>The barracks</value>
+        <value>The jailer's quarters</value>
+        <value>A yard or large indoor space for exercise</value>
+        <value>A small dining room</value>
+        <value>An interrogation room</value>
+        <value>A torture chamber</value>
+    </table>
+    <table name="You notice..." id="notice">
+        <value>A wooden door reinforced with steel bands</value>
+        <value>Steel bars where you expected a stone wall</value>
+        <value>Empty manales along the wall</value>
+        <value>An empty sconce to hold a torch</value>
+        <value>Distant torchlight</value>
+        <value>The floor is uneven</value>
+        <value>A crack in the stone floor</value>
+        <value>A mouse skittering underfoot</value>
+        <value>The stench of rotting flesh</value>
+        <value>The scent of stale urine</value>
+        <value>A putrid smell</value>
+        <value>A dank and moldy odor</value>
+        <value>An uncomfortable groaning</value>
+        <value>A faint scratching sound</value>
+        <value>An odd tapping sound</value>
+        <value>The squeaking of rats</value>
+        <value>The shouting of distant voices</value>
+        <value>Howls of agony</value>
+        <value>Horrific screams</value>
+        <value>The clanking of chains</value>
+    </table>
+</category>

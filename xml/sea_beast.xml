@@ -1,0 +1,44 @@
+<category name="Sea Beast" id="sea_beast">
+    <table name="The sea beast is..." id="is">
+        <value>A beetle.</value>
+        <value>A centipede.</value>
+        <value>A drake.</value>
+        <value>A horse.</value>
+        <value>A lion.</value>
+        <value region_start="2" region_end="8" region_include="monkey">A monkey.</value>
+        <value>A scorpion.</value>
+        <value>A serpent.</value>
+        <value region_start="2" region_end="8" region_include="spider">A spider.</value>
+        <value>A turtle.</value>
+        <value>A worm.</value>
+        <value>A wyvern.</value>
+    </table>
+    <table name="The beast has..." id="has">
+        <value>Lidless, golden eyes.</value>
+        <value>Unblinking, green eyes.</value>
+        <value>Iridescent scales or fur.</value>
+        <value>Dull, bluish grey scales or fur.</value>
+        <value>Brightly colored scales or fur.</value>
+        <value>Wide gills.</value>
+        <value>A long fin running down its back.</value>
+        <value>Oversized webbed feet or flippers.</value>
+    </table>
+    <table name="...and..." id="has_and">
+        <value>Swims with a slithering motion.</value>
+        <value>Swims with powerful fins or flippers.</value>
+        <value>Propels itself with its strong, finned tail.</value>
+        <value>A wide-open, fish-like mouth.</value>
+        <value>Rows of wicked looking teeth.</value>
+        <value>Scuttles along the sea floor.</value>
+        <value>Waits to strike from a nook in a reef.</value>
+        <value>Waits to strike from a hole in the sea floor.</value>
+    </table>
+    <table name="The beast is looking for..." id="looking">
+        <value>Some fish to eat.</value>
+        <value>Something warm-blooded to eat.</value>
+        <value>A new place to hide.</value>
+        <value>A mate or a nesting site.</value>
+        <value>Shiny baubles and trinkets.</value>
+        <value>A place where food is plentiful.</value>
+    </table>
+</category>

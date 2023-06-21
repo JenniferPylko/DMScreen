@@ -1,0 +1,95 @@
+        <category name="Dinner at a Country Inn" id="dinner_inn">
+            <table name="Tonight, we dine on..." id="dine">
+                <patterns>
+                    <pattern>{prep} {dish}</pattern>
+                </patterns>
+                <list type="prep">
+                    <item>Stewed</item>
+                    <item>Roasted</item>
+                    <item>Fried</item>
+                    <item>Boiled</item>
+                    <item>Baked</item>
+                    <item>Grilled</item>
+                    <item>Seared</item>
+                    <item>Steamed</item>
+                    <item>Salted</item>
+                    <item>Pickled</item>
+                </list>
+                <list type="dish">
+                    <item>rabbit</item>
+                    <item>chicken</item>
+                    <item>duck</item>
+                    <item>mutton</item>
+                    <item>pork</item>
+                    <item>beef</item>
+                    <item>pheasant</item>
+                    <item>goose</item>
+                    <item>trout</item>
+                    <item>clams</item>
+                    <item>pork sausage</item>
+                    <item>duck sausage</item>
+                </list>
+            </table>
+            <table name="...with..." id="dine_with">
+                <value>Dumplings.</value>
+                <value>Red cabbage.</value>
+                <value>White cabbage.</value>
+                <value>Shredded cabbage.</value>
+                <value>Leeks.</value>
+                <value>Lentils.</value>
+                <value>Broccoli.</value>
+                <value>Peas.</value>
+                <value>Cauliflower.</value>
+                <value>Kidney beans.</value>
+                <value>String beans.</value>
+                <value>White beans.</value>
+                <value>Turnip mash.</value>
+                <value>Sliced turnips.</value>
+                <value>Asparagus.</value>
+                <value>Sprouts.</value>
+                <value>Sweet peppers.</value>
+                <value>Red potatoes.</value>
+                <value>Golden potatoes.</value>
+                <value>Yams.</value>
+            </table>
+            <table name="...and..." id="dine_and">
+                <value>Carrots.</value>
+                <value>Apples.</value>
+                <value>Cherries.</value>
+                <value>Tomatoes.</value>
+                <value>Blueberries.</value>
+                <value>Strawberries.</value>
+                <value>Beets.</value>
+                <value>Mushrooms.</value>
+                <value>Radishes.</value>
+                <value>Squash.</value>
+                <value>Sweet onions.</value>
+                <value>Red onions.</value>
+            </table>
+            <table name="Side dish..." id="dine_side">
+                <value>Corn bread.</value>
+                <value>Corn mash.</value>
+                <value>Fresh bread.</value>
+                <value>Crusty bread.</value>
+                <value>Sesame bread.</value>
+                <value>Oat bread.</value>
+                <value>Pumpernickel bread.</value>
+                <value>Pretzel bread.</value>
+                <value>Fried egg.</value>
+                <value>Bacon.</value>
+                <value>Sharp cheese.</value>
+                <value>Soft cheese.</value>
+            </table>
+            <table name="Beverage..." id="beverage">
+                <value>Water.</value>
+                <value>Wheat ale.</value>
+                <value>Porter.</value>
+                <value>Mead.</value>
+                <value>White wine.</value>
+                <value>Red wine.</value>
+                <value>Sweet wine.</value>
+                <value>Milk.</value>
+                <value>Coffee.</value>
+                <value>Brandy.</value>
+            </table>
+        </category>

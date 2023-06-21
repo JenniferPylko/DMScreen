@@ -1,0 +1,62 @@
+<category name="Nightmare" id="nightmares">
+    <table name="You find yourself in..." id="in">
+        <value>A graveyard, a blood-red moon hangs above</value>
+        <value>The bedreem from your childhood. There is no door to exit the room</value>
+        <value>The roo you fell asleep in</value>
+        <value>Absolute darkness. In the silence you can hear your own heart beat</value>
+        <value>An open field. Next to you is a dead oak tree with an epty noose swinging in the breeze</value>
+        <value>A dark forest. In the corner of your eye you can see something is following you</value>
+        <value>A dark cave. A low, rhythmic chanting echoes around you</value>
+        <value>A prison cell. The walls are scratched and your fingernails are bloodied</value>
+        <value>A long hallway with a door at the end. The door doesn't get closer at you approach</value>
+        <value>Knee deep swamp water. You can feel something touching your leg under the surface</value>
+    </table>
+    <table name="You see..." id="see">
+        <value>A boy/girl</value>
+        <value>A young man/woman</value>
+        <value>An elderly man/woman</value>
+        <value>Yourself</value>
+        <value>A large dog</value>
+        <value>Your parents</value>
+        <value>A shadowy figure</value>
+        <value>A small toy doll, standing upright</value>
+        <value region_start="8" region_end="12" region_include="wolf">A large wolf, standing on it's hind legs</value>
+        <value region_start="8" region_end="11" region_include="cat">A large cat</value>
+    </table>
+    <table name="Description: The figure..." id="figure">
+        <value>Has it's eyes and mouth sewn shut</value>
+        <value>Is decaying. It's flesh and hair are falling ot the ground</value>
+        <value>Is wheezing loudly. You can feel your throat dying and it gets harder to breath</value>
+        <value>Blood slowly trickles from the corners of it's mouth, then eyes, and finally it appears to be sweating blood</value>
+        <value>Its chest bursts open and maggots and worms tumble out, writing on the floor</value>
+        <value>Has it's throat slit. You see the wound open and close slightly with it's breathing</value>
+        <value>Has mismatching limbs. It looks to be sewn together using mismatching pieces</value>
+        <value>Has the lower body of an arachnid</value>
+        <value>Has fingernails that continue to grow. They look sharp</value>
+        <value>Is starting to crumble away as if it were made of ask</value>
+    </table>
+    <table name="Action: The figure..." id="action">
+        <value>Sprints at you</value>
+        <value>Begins walking slowly toward you</value>
+        <value>Throws it's head back and starts cackling wildly</value>
+        <value>Triest to speak, but spiders begin pouring out it's mouth</value>
+        <value>Catches fire at it's feet and it quickly spreads up it's body</value>
+        <value>Vanishes and reappears inches from your face</value>
+        <value>Grows double it's size and begins chase you</value>
+        <value>Grows horrible, black, leathery wings and begins flying towards you</value>
+        <value>Begins systematically breaking its fingers while staring you in the eye</value>
+        <value>Starts ripping the flesh from it's face</value>
+    </table>
+    <table name="You wake up in a cold sweat..." id="sweat">
+        <value>Inches from your face is the figure</value>
+        <value>In the darkness you can see the outline of the figure</value>
+        <value>The figure is sprinting towards you, roll initiative. [Player wakes as soon as the figure reaches them. All spells fail and attacks miss against figure]</value>
+        <value>The door to the room opens slowly and the figure walks in</value>
+        <value>The party member closest to them is replaced with the figure</value>
+        <value>Standing over you is the figure</value>
+        <value>As you are about to go to sleep you blink, and the figure is in front of you</value>
+        <value>The figure is walking toward you slowly. You cannot move</value>
+        <value>The figure is dragging away a party member. It looks up and makes eye contact with you</value>
+        <value>Inside of a new nightmare. Take it from the top</value>
+    </table>
+</category>

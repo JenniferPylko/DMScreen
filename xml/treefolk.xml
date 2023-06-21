@@ -1,0 +1,78 @@
+<category name="Treefolk" id="treefolk">
+    <table name="The treeperson is..." id="is">
+        <value>A dryad enchantress</value>
+        <value>A dryad protector</value>
+        <value>A dryad witch</value>
+        <value>A dryad oracle</value>
+        <value>A treant loreseeker</value>
+        <value>A treant guardian</value>
+        <value>A treant lorekeeper</value>
+        <value>A treant elder</value>
+    </table>
+    <table name="Appearance: The treeperson could be described as..." id="appearance">
+        <value>Tall</value>
+        <value>Very tall</value>
+        <value>Slender</value>
+        <value>Sturdy</value>
+        <value>Unwavering</value>
+        <value>Bent</value>
+        <value>Gnarled</value>
+        <value>Knotty</value>
+        <value>Weathered</value>
+        <value>Moss-covered</value>
+        <value>Withered</value>
+        <value>Stumpy</value>
+    </table>
+    <table name="Features: the treeperson's bark and leaves are reminiscent of..." id="bark">
+        <value>An apple or pear tree</value>
+        <value>An ash</value>
+        <value>A birch</value>
+        <value>A beech</value>
+        <value>A cedar or juniper</value>
+        <value>A cherry or plum tree</value>
+        <value>A chestnut or hazel tree</value>
+        <value>A cypress</value>
+        <value>An elm</value>
+        <value>A fir</value>
+        <value>Hawthorn or hemlock</value>
+        <value>A hickory or walnut tree</value>
+        <value>A linden or lime tree</value>
+        <value>A maple</value>
+        <value>An oak</value>
+        <value>A pine</value>
+        <value>A poplar</value>
+        <value>A spruce</value>
+        <value>A willow</value>
+        <value>A yew or holly tree</value>
+    </table>
+    <table name="Personality: The tree person is..." id="personality">
+        <value>Sappy</value>
+        <value>Soft-spoken</value>
+        <value>Rooted</value>
+        <value>Dry</value>
+        <value>Patient</value>
+        <value>Green</value>
+        <value>Flowery</value>
+        <value>Steady</value>
+        <value>Prickly</value>
+        <value>Thorny</value>
+    </table>
+    <table name="The treeperson is looking to..." id="looking">
+        <value>Drive away intruders</value>
+        <value>Warn intruders of dangers ahead</value>
+        <value region_start="20" region_end="31" region_include="__noun__">find a spot where a rare flower grows</value>
+        <value region_start="11" region_end="24" region_include="__noun__">Nurture an ancient grove back to health</value>
+        <value region_start="12" region_end="23" region_include="__noun__">Protect the oldest tree in the forest</value>
+        <value>Eliminate any threats to the forest</value>
+        <value>Plant trees where others been felled</value>
+        <value>Talk after centuries of silence</value>
+    </table>
+    <table name="The treeperson carries..." id="carries">
+        <value>A magic acorn, nut or other seed</value>
+        <value>A clipping of ancient wood</value>
+        <value region_start="2" region_end="11" region_include="__noun__">A rare moss with healing properties</value>
+        <value region_start="10" region_end="16" region_include="poisons">A deathly poison mushroom</value>
+        <value>A sapling from an ancient tree</value>
+        <value region_start="33" region_end="47" region_include="__noun__">A cudgel made from the wood of a legendary tree</value>
+    </table>
+</category>

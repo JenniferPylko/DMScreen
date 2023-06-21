@@ -1,0 +1,26 @@
+<category name="Squire / Valet" id="squire">
+    <name name="The retainer's name is..."/>
+    <include name="Race" include="npc_race" />
+    <table name="The retainer is..." id="squire_is">
+        <value region_start="2|17" region_end="8|34" region_include="squire|noblehouse">A squire from a lesser noble house</value>
+        <value>A frightened link boy</value>
+        <value>A long-time valet or squire</value>
+        <value>A reformed criminal-turned valet</value>
+        <value>A prisoner of war</value>
+        <value region_start="13" region_end="22" region_include="nation">A mysterious foreigner</value>
+    </table>
+    <table name="The retainer has..." id="squire_has">
+        <value>A black eye</value>
+        <value>Wild, shaggy hair</value>
+        <value>A terrible stutter</value>
+        <value>A lot of self-confidence</value>
+    </table>
+    <table name="The retainer wants to..." id="squire_wants">
+        <value>Earn a little silver</value>
+        <value>Train with weapons to become a hero</value>
+        <value region_start="26" region_end="32" region_include="knight">Earn the affection of his master</value>
+        <value>Bring honor to his family name</value>
+        <value>Avoid entangling himself in a scandal</value>
+        <value>Have a drink and rest</value>
+    </table>
+</category>

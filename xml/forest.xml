@@ -1,0 +1,5 @@
+<categories name="Forest" id="forest">
+    <category name="Natural Forest" id="forest_natural" />
+    <category name="Enchanted Forest" id="forest_enchanted" />
+    <category name="Haunted Forest" id="forest_haunted" />
+</categories>

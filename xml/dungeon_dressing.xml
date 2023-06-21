@@ -1,0 +1,418 @@
+<category name="Dungeon Dressing" id="dungeon_dressing">
+        <table name="Air" short = "Air" id="dressing_air">
+            <value>Clear</value>
+            <value>Foggy (or steamy)</value>
+            <value>Foggy near floor (or steamy)</value>
+            <value>Hazy (dust)</value>
+            <value>Misty</value>
+        </table>
+        <table name="Air currents" short="Air Current" id="dressing_current">
+                <value>Slight breeze</value>
+                <value>Slight damp breeze</value>
+                <value>Gusting breeze</value>
+                <value>Cold</value>
+                <value>Slight downdraft</value>
+                <value>Strong downdraft</value>
+                <value>Still</value>
+                <value>Still, very chill</value>
+                <value>Still, warm (or hot)</value>
+                <value>Slight Updraft</value>
+                <value>Strong Updraft</value>
+                <value>Strong Wind</value>
+                <value>Strong gusting wind</value>
+                <value>Strong moaning wind</value>
+            </table>
+        <table name="General features" short="Feature" id="dressing_feature">
+                <value>Broken arrow</value>
+                <value>Ashes</value>
+                <value>Bones</value>
+                <value>Broken bottle</value>
+                <value>Corroded chain</value>
+                <value>Splintered club</value>
+                <value>Cobwebs</value>
+                <value>Bent copper coin</value>
+                <value>Cracks in the ceiling</value>
+                <value>Cracks in the floor</value>
+                <value>Cracks in a wall.</value>
+                <value>Dagger hilt</value>
+                <value>Damp ceiling</value>
+                <value>Damp wall</value>
+                <value>Dripping</value>
+                <value>Dried blood</value>
+                <value>Dung</value>
+                <value>Dust</value>
+                <value>Cracked flask</value>
+                <value>Food scraps</value>
+                <value>Common fungi</value>
+                <value>Guano</value>
+                <value>Bits of hair or fur</value>
+                <value>Cracked hammer head</value>
+                <value>Badly dented helmet</value>
+                <value>Bent, rusted iron bar</value>
+                <value>Blunt javelin head</value>
+                <value>Leather boot</value>
+                <value>Dry leaves and twigs</value>
+                <value>Common mold</value>
+                <value>Pick handle</value>
+                <value>Broken pole</value>
+                <value>Pottery shards</value>
+                <value>Rags</value>
+                <value>Rotten rope</value>
+                <value>Rubble and dirt</value>
+                <value>Torn sack</value>
+                <value>Slimy coating on the ceiling.</value>
+                <value>Slimy coating on the floor.</value>
+                <value>Slimy coating on the wall.</value>
+                <value>Rusted spike</value>
+                <value>Sticks</value>
+                <value>Small stones</value>
+                <value>Straw</value>
+                <value>Broken sword blade</value>
+                <value>Scattered teeth or fangs</value>
+                <value>Torch stub</value>
+                <value>Scratchings on a wall</value>
+                <value>Small puddle of water</value>
+                <value>Large puddle of water</value>
+                <value>Trickle of water</value>
+                <value>Candle stub</value>
+                <value>Rotting pieces of wood</value>
+            </table>
+        <table name="Furnishing and Appointments, General" short="Furnishing" id="dressing_furnishings">
+                <value>Altar</value>
+                <value>Armchair</value>
+                <value>Armoire</value>
+                <value>Cross</value>
+                <value>Bag</value>
+                <value>Barrel</value>
+                <value>Bed</value>
+                <value>Bench</value>
+                <value>Blanket</value>
+                <value>Large Box</value>
+                <value>Brazier and charcoal</value>
+                <value>Bucket</value>
+                <value>Buffet</value>
+                <value>Bunks</value>
+                <value>Cabinet</value>
+                <value>Candelabrum</value>
+                <value>Large Carpet</value>
+                <value>Cask</value>
+                <value>Chandelier</value>
+                <value>Charcoal</value>
+                <value>Chair</value>
+                <value>Padded chair</value>
+                <value>Padded armchair</value>
+                <value>Large chest</value>
+                <value>Medium chest</value>
+                <value>Chest of drawers</value>
+                <value>Closet (wardrobe)</value>
+                <value>Coal</value>
+                <value>Couch</value>
+                <value>Crate</value>
+                <value>Cresset</value>
+                <value>Cupboard</value>
+                <value>Cushion</value>
+                <value>Dias</value>
+                <value>Desk</value>
+                <value>Fireplace and wood</value>
+                <value>Fireplace with mantle</value>
+                <value>Firkin</value>
+                <value>Fountain</value>
+                <value>Fresco</value>
+                <value>Grindstone</value>
+                <value>Hamper</value>
+                <value>Hassock</value>
+                <value>Hogshead</value>
+                <value>Large Idol</value>
+                <value>Keg</value>
+                <value>Loom</value>
+                <value>Mat</value>
+                <value>Mattress</value>
+                <value>Pail</value>
+                <value>Painting</value>
+                <value>Pallet</value>
+                <value>Pedestal</value>
+                <value>Pegs</value>
+                <value>Pillow</value>
+                <value>Pipe</value>
+                <value>Quilt</value>
+                <value>Small Rug</value>
+                <value>Rushes</value>
+                <value>Sack</value>
+                <value>Wall Sconce</value>
+                <value>Screen</value>
+                <value>Sheet</value>
+                <value>Shelf</value>
+                <value>Shrine</value>
+                <value>Sideboard</value>
+                <value>Sofa</value>
+                <value>Staff</value>
+                <value>Stand</value>
+                <value>Statue</value>
+                <value>High stool</value>
+                <value>Stool</value>
+                <value>Large table</value>
+                <value>Long table</value>
+                <value>Low table</value>
+                <value>Round table</value>
+                <value>Small table</value>
+                <value>Trestle table</value>
+                <value>Tapestry</value>
+                <value>Throne</value>
+                <value>Trunk</value>
+                <value>Tub</value>
+                <value>Tun</value>
+                <value>Urn</value>
+                <value>Wall basin and font</value>
+                <value>Wood billets</value>
+                <value>Workbench</value>
+            </table>
+        <table name="Magic-user furnishings" short="Magic-user Furnishing" id="dressing_magic">
+                <value>Alembic</value>
+                <value>Balance and weights</value>
+                <value>Beaker</value>
+                <value>Bellows</value>
+                <value>Bladder</value>
+                <value>Bottle</value>
+                <value>Book</value>
+                <value>Bowl</value>
+                <value>Box</value>
+                <value>Brazier</value>
+                <value>Cage</value>
+                <value>Cauldron</value>
+                <value>Candle</value>
+                <value>Candlestick</value>
+                <value>Carafe</value>
+                <value>Chalk</value>
+                <value>Crucible</value>
+                <value>Cruet</value>
+                <value>Crystal ball</value>
+                <value>Decanter</value>
+                <value>Desk</value>
+                <value>Dish</value>
+                <value>Flask</value>
+                <value>Funnel</value>
+                <value>Furnace</value>
+                <value>Herbs</value>
+                <value>Horn</value>
+                <value>Hourglass</value>
+                <value>Jar</value>
+                <value>Jug</value>
+                <value>Kettle</value>
+                <value>Ladle</value>
+                <value>Lamp</value>
+                <value>Lens</value>
+                <value>Magic circle</value>
+                <value>Mortar and pestle</value>
+                <value>Pan</value>
+                <value>Parchment</value>
+                <value>Pentacle</value>
+                <value>Pentagram</value>
+                <value>Phial</value>
+                <value>Pipette</value>
+                <value>Pot</value>
+                <value>Prism</value>
+                <value>Quill</value>
+                <value>Retort</value>
+                <value>Rod</value>
+                <value>Scroll</value>
+                <value>Scroll tube</value>
+                <value>Sheet</value>
+                <value>Skin</value>
+                <value>Skull</value>
+                <value>Spatula</value>
+                <value>Measuring spoon</value>
+                <value>Stand</value>
+                <value>Stool</value>
+                <value>Stuffed animal</value>
+                <value>Tongs</value>
+                <value>Tripod</value>
+                <value>Tube</value>
+                <value>Piping</value>
+                <value>Tweezers</value>
+                <value>Vial</value>
+                <value>Waterclock</value>
+                <value>Wire</value>
+                <value>Workbench</value>
+            </table>
+        <table name="Odors" short="Odor" id="dressing_odor">
+                <value>Acrid</value>
+                <value>Chlorine</value>
+                <value>Dank and moldy</value>
+                <value>Earthy</value>
+                <value>Manure</value>
+                <value>Metallic</value>
+                <value>Ozone</value>
+                <value>Putrid</value>
+                <value>Rotting vegetation</value>
+                <value>Salty and wet</value>
+                <value>Smoky</value>
+                <value>Stale and fetid</value>
+                <value>Sulphur</value>
+                <value>Urine</value>
+            </table>
+        <table name="Religious articles and furnishings" short="Religious Furnishing" id="dressing_religious">
+            <value>Altar</value>
+            <value>Bell(s)</value>
+            <value>Brazier(s)</value>
+            <value>Candelabra</value>
+            <value>Candles</value>
+            <value>Candlesticks</value>
+            <value>Cassocks</value>
+            <value>Chime(s)</value>
+            <value>Altar cloth</value>
+            <value>Columns or pillars</value>
+            <value>Curtain or tapestry</value>
+            <value>Drum</value>
+            <value>Font</value>
+            <value>Gong</value>
+            <value>Holy or unholy symbol(s)</value>
+            <value>Holy or unholy writings</value>
+            <value>Idol(s)</value>
+            <value>Incense burner(s)</value>
+            <value>Kneeling bench</value>
+            <value>Lamp(s)</value>
+            <value>Lectern</value>
+            <value>Mosaics</value>
+            <value>Offertory container</value>
+            <value>Paintings or frescoes</value>
+            <value>Pews</value>
+            <value>Musical pipes</value>
+            <value>Prayer rug</value>
+            <value>Pulpit</value>
+            <value>Rail</value>
+            <value>Robes</value>
+            <value>Sanctuary</value>
+            <value>Screen</value>
+            <value>Shrine</value>
+            <value>Side chair(s)</value>
+            <value>Stand</value>
+            <value>Statues(s)</value>
+            <value>Throne</value>
+            <value>Thurible</value>
+            <value>Tripod</value>
+            <value>Vestry</value>
+            <value>Vestments</value>
+            <value>Votive light</value>
+            <value>Whistle</value>
+        </table>
+        <table name="Unexplained sounds and weird noises" short="Sounds" id="dressing_sounds">
+                <value>Bang, slam</value>
+                <value>Bellow(ing)</value>
+                <value>Bong</value>
+                <value>Buzzing</value>
+                <value>Chanting</value>
+                <value>Chiming</value>
+                <value>Chirping</value>
+                <value>Clanking</value>
+                <value>Clashing</value>
+                <value>Clicking</value>
+                <value>Coughing</value>
+                <value>Creaking</value>
+                <value>Drumming</value>
+                <value>Footsteps</value>
+                <value>Giggling</value>
+                <value>Gong</value>
+                <value>Grating</value>
+                <value>Groaning</value>
+                <value>Grunting.</value>
+                <value>Hissing</value>
+                <value>Hooting</value>
+                <value>Horn/trumpet sounding</value>
+                <value>Howling</value>
+                <value>Humming</value>
+                <value>Jingling</value>
+                <value>Knocking</value>
+                <value>Laughter</value>
+                <value>Moaning</value>
+                <value>Murmuring</value>
+                <value>Music</value>
+                <value>Rattling</value>
+                <value>Ringing</value>
+                <value>Roar(ing)</value>
+                <value>Rustling</value>
+                <value>Scratching/scrabbling</value>
+                <value>Scream(ing)</value>
+                <value>Scuttling</value>
+                <value>Shuffling</value>
+                <value>Slithering</value>
+                <value>Snapping</value>
+                <value>Sneezing</value>
+                <value>Sobbing</value>
+                <value>Splashing</value>
+                <value>Splintering</value>
+                <value>Squeaking</value>
+                <value>Squealing</value>
+                <value>Tapping</value>
+                <value>Thud</value>
+                <value>Thumping</value>
+                <value>Tinkling</value>
+                <value>Twanging</value>
+                <value>Whining</value>
+                <value>Whispering</value>
+                <value>Whistling</value>
+            </table>
+        <table name="Torture chamber furnishings" short="Torture Chamber Furnishing" id="dressing_torture">
+                <value>Bastinadoes</value>
+                <value>Bell.</value>
+                <value>Bench</value>
+                <value>Iron boots</value>
+                <value>Branding irons</value>
+                <value>Brazier</value>
+                <value>Cage</value>
+                <value>Chains</value>
+                <value>Chair with straps</value>
+                <value>Clamps</value>
+                <value>Cressets</value>
+                <value>Fetters</value>
+                <value>Fire pit</value>
+                <value>Grill</value>
+                <value>Hooks</value>
+                <value>Iron maiden</value>
+                <value>Knives</value>
+                <value>Manacles</value>
+                <value>Oubliette</value>
+                <value>Barrel of Oil</value>
+                <value>Pillory</value>
+                <value>Pincers</value>
+                <value>Pliers</value>
+                <value>Pot</value>
+                <value>Rack</value>
+                <value>Ropes</value>
+                <value>Stocks</value>
+                <value>Stool</value>
+                <value>Strappado</value>
+                <value>Straw</value>
+                <value>Table</value>
+                <value>Thongs</value>
+                <value>Thumb screws</value>
+                <value>Torches</value>
+                <value>&quot;U&quot; rack</value>
+                <value>Vice</value>
+                <value>Well</value>
+                <value>Wheel</value>
+                <value>Whips</value>
+            </table>
+        <table name="Vignette, encounters and color" short="Vignette" id="dressing_vignette">
+                <value region_start="2" region_end="5" region_include="rat">A rat scuttles past carrying a finger bone with a ring on it</value>
+                <value>You hear a card game going on in the next room. It sounds like someone is losing their shirt</value>
+                <value region_start="0" region_end="12" region_include="orc">A sleepy orc pushes the party to one side and says &quot;Otta my way cur. Yer blocking the way tot he mess hall&quot;</value>
+                <value>A voice shouts from ahead &quot;My god! What did you do to the loo?&quot;</value>
+                <value>Blood drips from a hole in the ceiling and pools on the floor</value>
+                <value>You hear the sound of a whip crack from up ahead</value>
+                <value>You find a room of corpses. One has a hand outstretched towards a glowing gem</value>
+                <value>A second has stabbed the first in the back with a dagger</value>
+                <value>A paper boat floats past on an underground stream. If plucked from the water it has a letter written inside</value>
+                <value>A prisoner in a cage sees the party and yells &quot;Turn back! Runaway!&quot;</value>
+                <value>Cave paintings cover one of the walls, obviously the work of bored hands</value>
+                <value region_start="30|46" region_end="34|50" region_include="trap|trap">A side corridor has an active trap and deadly trap. A broken treasure chest at the far end spills a few coins</value>
+                <value>A grate in the wall allows you to see a mimic finish consuming an adventurer and scuttle off</value>
+                <value>Wind howls mournfully as you cross a rop bridge strewn with arrow riddled adventurers</value>
+                <value region_start="0" region_end="17" region_include="orc">A hunchbacked orc with his back to you tinkers with something in the wall and complains loudly about always being the one who has to reset the traps</value>
+                <value>A large man sits near a pile of treasure reading a book. If approached he changes into a wisp of smoke and retreats to a lamp. Any amount of rubbing on the lamp produces only &quot;Go away! We're closed&quot;</value>
+                <value>A displacer beast and blink dog come thrashing through a cross corridor</value>
+                <value region_start="2" region_end="18" region_include="undead">A dead man's ghost continues searching for a key to a door. A long dead rogue lies nearby</value>
+                <value region_start="10" region_end="16" region_include="dragon">A grouchy dragon stomps around a vast cave shouting &quot;Igor! Where's the ledger listing my gold coins?!&quot;</value>
+                <value region_start="69" region_end="72" region_include="deity">A dusty side corridor holds a tiny, rough made shrine to an unlikely god, and a dusty body with it's hands still clasped in prayer</value>
+                <value>A hole broken in the brick walls leads to a very, very dark tunnel</value>
+            </table>
+</category>

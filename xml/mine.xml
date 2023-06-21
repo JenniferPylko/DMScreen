@@ -1,0 +1,231 @@
+<category name="Mine" id="mine" link="dungeon_dressing">
+    <table name="We dig..." id="mine_dig">
+        <value>Chalk</value>
+        <value>Coal</value>
+        <value>Copper</value>
+        <value>Gold</value>
+        <value>Iron</value>
+        <value>Lead</value>
+        <value>Lime</value>
+        <value>Nickel</value>
+        <value>Platinum</value>
+        <value>Salt</value>
+        <value>Silver</value>
+        <value>Zinc</value>
+        <value>Diamonds</value>
+        <value>Emeralds</value>
+        <value>Jade</value>
+        <value>Rubies</value>
+        <value>Sapphires</value>
+        <value>Turquoise</value>
+        <value>Amethyst</value>
+        <value>Aquamarine</value>
+        <value>Garnet</value>
+        <value>Opal</value>
+        <value>Peridot</value>
+        <value>Tanzanite</value>
+        <value>Topaz</value>
+        <value>Zirconium</value>
+        <value>Adamantine</value>
+        <value>Mithral</value>
+        <value>Orium</value>
+    </table>
+    <table name="The mine is located..." id="mine_located">
+        <value region_start="15" region_end="24" region_include="mountain">Beneath a cold mountain.</value>
+        <value region_start="16" region_end="25" region_include="mountain">Beneath a fiery mountain.</value>
+        <value region_start="21" region_end="29" region_include="mountain">Near a well-traveled mountain pass.</value>
+        <value region_start="14" region_end="20" region_include="forest">Deep within a forest.</value>
+        <value region_start="14" region_end="20" region_include="desert">Deep within a desert.</value>
+        <value region_start="11" region_end="14" region_include="__noun__">Beside the sea.</value>
+        <value region_start="6" region_end="12" region_include="__noun__">On an island.</value>
+        <value region_start="19" region_end="23" region_include="city">Beneath a bustling city.</value>
+        <value region_start="31" region_end="35" region_include="city">Beneath the ruin of an ancient city.</value>
+        <value region_start="21" region_end="27" region_include="castle">Beneath a well-known castle</value>
+        <value region_start="21" region_end="30" region_include="monastery">Beneath a well-known monastery.</value>
+        <value region_start="28" region_end="34" region_include="castle">Beneath the ruins of an old castle</value>
+        <value region_start="28" region_end="37" region_include="monastery">Beneath the ruins of an old monastery.</value>
+        <value>In a place reachable only by magic.</value>
+    </table>
+    <table name="The mine's entrance is..." id="mine_entrance">
+        <value region_start="26" region_end="30" region_include="__noun__">Up a winding trail from a camp</value>
+        <value region_start="24" region_end="33" region_include="village">Up a winding trail from a village</value>
+        <value region_start="22" region_end="31" region_include="village">Up a steep trail from a camp or village</value>
+        <value region_start="16" region_end="26" region_include="__noun__">A wide, natural cave mouth</value>
+        <value region_start="12" region_end="15" region_include="__noun__">A wide open pit</value>
+        <value region_start="23" region_end="30" region_include="__noun__">An easy to spot narrow passage</value>
+        <value region_start="25" region_end="31" region_include="__noun__">A steep, slippery sloped tunnel</value>
+        <value region_start="2" region_end="8" region_include="__noun__">A tunnel reinforced with wood beams</value>
+        <value region_start="22" region_end="28" region_include="__noun__">A partially collapsed tunnel, impassable without excavation</value>
+        <value region_start="22" region_end="28" region_include="__noun__">A partially collapsed tunnel, impassable without excavation</value>
+        <value region_start="20" region_end="25" region_include="__noun__">Marked with several signs</value>
+        <value region_start="10" region_end="18" region_include="__noun__">Hidden by boulders</value>
+        <value region_start="12" region_end="21" region_include="__noun__">Hidden by a waterfall</value>
+        <value region_start="12" region_end="25" region_include="__noun__">Hidden by a rocky overhang</value>
+        <value region_start="12" region_end="19" region_include="__noun__">Hidden by a hillock</value>
+        <value region_start="13" region_end="18" region_include="__noun__">Up or down a cliff face</value>
+        <value region_start="12" region_end="16" region_include="__noun__">Down a deep hole</value>
+        <value region_start="11|17" region_end="16|23" region_include="__noun__|__noun__">In an underwater tunnel</value>
+        <value region_start="11" region_end="29" region_include="__noun__">Through an illusory rock wall</value>
+    </table>
+    <table name="Most of the mine is..." id="mine_is">
+        <value>A sprawling maze of twisting tunnels</value>
+        <value>A sprawling maze of narrow tunnels</value>
+        <value>A series of tunnels connecting large natural caverns</value>
+        <value>A wide open-pit quarry</value>
+        <value>A series of tunnels connecting large open pits or sinkholes</value>
+        <value>A sprawling maze of open trenches</value>
+    </table>
+    <table name="Material excavated from the mine is..." id="mine_material">
+        <value region_start="24" region_end="39" region_include="__noun__">Floated on rafts down a stream or river</value>
+        <value>Hauled out on pack mules</value>
+        <value>Hauled out on mule-drawn carts</value>
+        <value>Hauled out on sure-footed ponies</value>
+        <value>Hauled out on on-drawn carts</value>
+        <value>Hauled out on the back of bears</value>
+        <value>Hauled out on the backs of giant lizards</value>
+        <value>Hauled out on the backs of goats</value>
+        <value>Hauled out on the backs of undead horses</value>
+        <value>Rolled out in single mine carts</value>
+        <value>Rolled out in long trains of mine carts</value>
+    </table>
+    <table name="Hazards/Obstacles" id="mine_hazard">
+        <value region_start="22" region_end="31" region_include="__noun__">A colony of poisonous mushrooms</value>
+        <value region_start="17" region_end="21" region_include="__noun__">A patch of toxic mold</value>
+        <value>A sudden cave in</value>
+        <value>Several rocks tumble down a sloped wall</value>
+        <value>The floor is very slippery</value>
+        <value>Your foot misses the floor as you step into a pit or chasm</value>
+        <value region_start="19" region_end="29" region_include="__noun__">A heap of unstable explosives</value>
+        <value>A sudden explosion in another part of the mine shakes the floor</value>
+        <value>The floor is writhing with beetles</value>
+        <value>The floor is writhing with centipedes</value>
+        <value>The floor is writhing with rats</value>
+        <value>The floor is writhing with spiders</value>
+    </table>
+    <table name="If you dig deep, you'll find..." id="mine_deep">
+        <value>Carrion crawler</value>
+        <value>Cloaker</value>
+        <value>Darkmantle</value>
+        <value>Drider</value>
+        <value>Fungi</value>
+        <value>Gargoyle</value>
+        <value region_start="0" region_end="6" region_include="undead">Ghosts</value>
+        <value>Gricks</value>
+        <value>Hook horror</value>
+        <value>Mimics</value>
+        <value>Myconids</value>
+        <value region_start="0" region_end="4" region_include="ooze">Ooze</value>
+        <value>Otyugh</value>
+        <value>Piercer</value>
+        <value>Roper</value>
+        <value>Rust monster</value>
+        <value region_start="0" region_end="6" region_include="undead">Skeletons</value>
+        <value>Stirges</value>
+        <value>Umber hulk</value>
+        <value region_start="0" region_end="6" region_include="undead">Wraith</value>
+    </table>
+    <table name="The creature is..." id="mine_creature">
+        <value>A predator or a hunter</value>
+        <value>A food source for other denizens</value>
+        <value>A recently-arrived squatter or invader</value>
+        <value>A long-time resident</value>
+        <value>A parasite or a scavenger</value>
+        <value>A host or the dominant species</value>
+        <value>Unusually abundant</value>
+        <value>Living in deliberate isolation</value>
+        <value>Living in unintentional isolation</value>
+        <value>Severely out of place in this mine</value>
+    </table>
+    <table name="The miners complain of trouble from a nearby colony of..." id="mine_colony">
+        <value>Cyclops</value>
+        <value>Duergar</value>
+        <value region_start="0" region_end="7" region_include="dwarf">Dwarves</value>
+        <value region_start="0" region_end="10" region_include="darkelf">Dark Elves</value>
+        <value>Deep Gnomes</value>
+        <value region_start="0" region_end="7" region_include="goblinclan">Goblins</value>
+        <value>Grimlocks</value>
+        <value>Hobgoblins</value>
+        <value region_start="0" region_end="7" region_include="kobold">Kobolds</value>
+        <value region_start="0" region_end="4" region_include="orcclan">Orcs</value>
+        <value>Troglodytes</value>
+        <value>Trolls</value>
+    </table>
+    <table name="Distinguishing Landmarks" id="mine_landmark">
+        <value>A trickle of water flowing down the walls and across the floor</value>
+        <value region_start="15" region_end="19" region_include="__noun__">An underground lake of potable water</value>
+        <value region_start="2" region_end="6" region_include="__noun__">A pool of stagnant water</value>
+        <value region_start="10|24" region_end="16|29" region_include="__noun__|__noun__">A rickety bridge over a chasm</value>
+        <value region_start="9" region_end="14" region_include="__noun__">A narrow chasm with walls close enough to climb between</value>
+        <value region_start="7" region_end="12" region_include="__noun__">A deep chasm with no bottom in sight</value>
+        <value region_start="11" region_end="19" region_include="__noun__">A group of boulders arranged in a circle</value>
+        <value region_start="28" region_end="32" region_include="__noun__">A damp wall covered in soft mold</value>
+        <value region_start="39" region_end="43" region_include="__noun__">A recess in the wall, covered in slimy mold</value>
+        <value region_start="20" region_end="26" region_include="__noun__">A large patch of soft fungus</value>
+        <value region_start="2" region_end="8" region_include="cave">A cavern with a strong echo</value>
+        <value>A claustrophobic tunnel with a low ceiling</value>
+        <value>A forked path with tracks for mine carts</value>
+        <value region_start="14" region_end="23" region_include="__noun__">An overturned mine cart</value>
+        <value region_start="9" region_end="14" region_include="__noun__">An unlit lantern mounted to the wall</value>
+        <value region_start="10" region_end="15" region_include="__noun__">A glowing lantern mounted to the wall</value>
+        <value region_start="19" region_end="22" region_include="__noun__">A swirling vein of ore visible in the wall</value>
+        <value region_start="15" region_end="18" region_include="__noun__">A wide vein of ore visible in the wall</value>
+        <value region_start="42" region_end="45" region_include="__noun__">A partially excavated wall with plentiful ore</value>
+        <value region_start="20" region_end="24" region_include="__noun__">A heap of excavated rock</value>
+    </table>
+    <table name="You notice..." id="mine_notice">
+        <value region_start="19" region_end="28" region_include="__noun__">Some broken mining equipment</value>
+        <value region_start="13" region_end="18" region_include="__noun__">Some old dry bones</value>
+        <value region_start="0|28" region_end="8|38" region_include="__noun__|__noun__">Evidence of a recent, brief encampment</value>
+        <value region_start="0|25" region_end="8|33" region_include="__noun__|__noun__">Evidence of an abandoned campsite</value>
+        <value region_start="12" region_end="22" region_include="__noun__">An enormous spider web</value>
+        <value region_start="25" region_end="29" region_include="__noun__">A wide slippery patch of mold on the floor</value>
+        <value>The clatter of rocks falling</value>
+        <value>Loose stones underfoot</value>
+        <value>The clang of a pick breaking rock</value>
+        <value>The distant sound of hammers at work</value>
+        <value region_start="15" region_end="19" region_include="__noun__">A prospector's mark scratched on the wall</value>
+        <value>A cracked wooden beam overhead</value>
+    </table>
+    <table name="The mine is widely believed to be..." id="mine_believed">
+        <value>Full of riches</value>
+        <value>A productive place to dig</value>
+        <value>Becoming increasingly unprofitable</value>
+        <value>Nearly dried up</value>
+        <value region_start="24" region_end="29" region_include="__noun__">A passageway to another realm</value>
+        <value>Cursed</value>
+        <value region_start="15" region_end="28" region_include="__noun__">The home of an ancient being</value>
+    </table>
+    <table name="The mine is controlled by..." id="mine_controlled">
+        <value region_start="23" region_end="36" region_include="merchantguild">A powerful, well-known merchant guild</value>
+        <value region_start="10" region_end="21" region_include="noblehouse">A wealthy noble house</value>
+        <value region_start="23" region_end="33" region_include="__noun__">A partnership of a few prospectors</value>
+        <value region_start="24" region_end="30" region_include="__noun__">A clan or collective of locals</value>
+        <value>No one in particular; finders keepers</value>
+        <value region_start="19" region_end="28" region_include="merchantguild">A shadowy cabal of merchants</value>
+        <value region_start="10" region_end="17" region_include="barbarian">A vicious warlord or mercenary captain</value>
+        <value region_start="2" region_end="12" region_include="__noun__">A crime boss who's never visited the site</value>
+    </table>
+    <table name="Most of the miners are..." id="mine_miners">
+        <value>Free men working for wages</value>
+        <value region_start="23" region_end="28" region_include="guilds">Low-level members of a guild</value>
+        <value>Paid with a fraction of what they haul out</value>
+        <value region_start="20" region_end="30" region_include="merchant">Paid with credit at a merchant's store</value>
+        <value>Prisoners</value>
+        <value>Slaves</value>
+    </table>
+    <table name="Deep within the mine is..." id="mine_deepis">
+        <value region_start="12" region_end="18" region_include="criminal">A dangerous outlaw.</value>
+        <value region_start="3" region_end="12" region_include="__noun__">An elemental lord.</value>
+        <value region_start="2" region_end="9" region_include="vampire">A vampire.</value>
+        <value region_start="2" region_end="6" region_include="undead">A lich.</value>
+        <value region_start="2" region_end="7" region_include="fiend">A demon.</value>
+        <value region_start="2" region_end="7" region_include="fiend">A devil.</value>
+        <value region_start="3" region_end="6" region_include="orc">An orc warlord.</value>
+        <value region_start="2" region_end="11" region_include="__noun__">A hobgoblin commander.</value>
+        <value region_start="3" region_end="20" region_include="__noun__">An aberrant presence.</value>
+        <value region_start="2" region_end="7" region_include="witch">A witch.</value>
+        <value region_start="2" region_end="7" region_include="__noun__">A giant.</value>
+        <value region_start="2" region_end="8" region_include="dragon">A dragon.</value>
+    </table>
+    <member name="Miner" include="miner" />
+</category>

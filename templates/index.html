@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chatbot</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+        #chatbox {
+            width: 500px;
+            height: 400px;
+            border: 1px dashed black;
+            overflow: auto;
+            margin-bottom: 10px;
+        }
+
+        #question {
+            width: 450px;
+            margin-bottom: 10px;
+        }
+
+        .collapsible {
+            background-color: #777;
+            color: white;
+            cursor: pointer;
+            padding: 18px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 15px;
+        }
+
+        .active, .collapsible:hover {
+            background-color: #555;
+        }
+
+        .content {
+            padding: 0 18px;
+            display: none;
+            overflow: hidden;
+            background-color: #f1f1f1;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="chatbox"></div>
+    <form id="chat-form">
+        <input type="text" name="question" id="question" placeholder="Ask something..." required>
+        <input type="submit" value="Ask">
+        <!-- add a temperature slider that goes from 0.0 to 1.0 -->
+        <br/>Temperature: <input type="range" id="temp" name="temp" min="0.0" max="1.0" step="0.1" value="0.5">
+
+        <!-- add checkboxes to select which books to use in the search -->
+        <button type="button" class="collapsible">Modules</button>
+        <div class="content">
+            <button type="button" class="collapsible">Core</button>
+            <div class="content">
+                <input type="checkbox" name="Core" id="Core" value="true"> All<br/>
+                <input type="checkbox" name="Player's Handbook" id="PlayersHandbook" value="true"> Player's Handbook<br>
+                <input type="checkbox" name="Dungeons Masters Guide" id="DungeonMastersGuide" value="true"> Dungeon Master's Guide<br>
+                <input type="checkbox" name="Monster Manual" id="MonsterManual" value="true"> Monster Manual<br>
+            </div>
+            <button type="button" class="collapsible">Adventures</button>
+            <div class="content">
+                <input type="checkbox" name="Adventures" id="Adventures" value="true"> All<br/>
+                <input type="checkbox" name="Lost Mines of Phandelver" id="lmop" value="true"> Lost Mines of Phandelver<br>
+                <input type="checkbox" name="Hoard of the Dragon Queen" id="hotdq" value="true"> Hoard of the Dragon Queen<br>
+                <input type="checkbox" name="Rise of Tiamat" id="rot" value="true"> Rise of Tiamat<br>
+                <input type="checkbox" name="Princes of the Apocalypse" id="pota" value="true"> Princes of the Apocalypse<br>
+                <input type="checkbox" name="Out of the Abyss" id="oota" value="true"> Out of the Abyss<br>
+                <input type="checkbox" name="Curse of Strahd" id="cos" value="true"> Curse of Strahd<br>
+                <input type="checkbox" name="Storm King's Thunder" id="skt" value="true"> Storm King's Thunder<br>
+                <input type="checkbox" name="Tales from the Yawning Portal" id="tftyp" value="true"> Tales from the Yawning Portal<br>
+                <input type="checkbox" name="Tomb of Annihilation" id="toa" value="true"> Tomb of Annihilation<br>
+                <input type="checkbox" name="Waterdeep: Dragon Heist" id="wdh" value="true"> Waterdeep: Dragon Heist<br>
+                <input type="checkbox" name="Waterdeep: Dungeon of the Mad Mage" id="wdotmm" value="true"> Waterdeep: Dungeon of the Mad Mage<br>
+                <input type="checkbox" name="Ghosts of Saltmarsh" id="gos" value="true"> Ghosts of Saltmarsh<br>
+                <input type="checkbox" name="Baldur's Gate: Descent into Avernus" id="bgdia" value="true"> Baldur's Gate: Descent into Avernus<br>
+                <input type="checkbox" name="Icewind Dale: Rime of the Frostmaiden" id="idrotf" value="true"> Icewind Dale: Rime of the Frostmaiden<br>
+                <input type="checkbox" name="Candlekeep Mysteries" id="cm" value="true"> Candlekeep Mysteries<br>
+                <input type="checkbox" name="The Wild Beyond the Witchlight" id="twbtw" value="true"> The Wild Beyond the Witchlight<br>
+                <input type="checkbox" name="Rrakkma" id="rrakkma" value="true"> Rrakkma<br>
+                <input type="checkbox" name="Lost Laboratory of Kwalish" id="llok" value="true"> Lost Laboratory of Kwalish<br>
+                <input type="checkbox" name="Hunt for the Thessalhydra" id="hftr" value="true"> Hunt for the Thessalhydra<br>
+                <input type="checkbox" name="Dragon of Icespire Peak" id="doip" value="true"> Dragon of Icespire Peak<br>
+                <input type="checkbox" name="Storm Lord's Wrath" id="slw"  value="true"> Storm Lord's Wrath<br>
+                <input type="checkbox" name="Sleeping Dragon's Wake" id="sdw" value="true"> Sleeping Dragon's Wake<br>
+                <input type="checkbox" name="Divine Contention" id="dc" value="true"> Divine Contention<br>
+                <input type="checkbox" name="Infernal Machine Rebuild" id="imr" value="true"> Infernal Machine Rebuild<br>
+                <input type="checkbox" name="Frozen Sick" id="fs" value="true"> Frozen Sick<br>
+                <input type="checkbox" name="Call of the Netherdeep" id="cotn" value="true"> Call of the Netherdeep<br>
+                <input type="checkbox" name="The Radiant Citadel" id="trc" value="true"> The Radiant Citadel<br>
+                <input type="checkbox" name="Journeys Through the Radiant Citadel" id="jttrc" value="true"> Journeys Through the Radiant Citadel<br>
+                <input type="checkbox" name="Spelljammer Academy" id="sa" value="true"> Spelljammer Academy<br>
+                <input type="checkbox" name="Dragons of Stormwreck Isle" id="dosi" value="true"> Dragons of Stormwreck Isle<br>
+                <input type="checkbox" name="Dragonlance: Shadow of the Dragon Queen" id="dsotdq" value="true"> Dragonlance: Shadow of the Dragon Queen<br>
+                <input type="checkbox" name="Prisoner 13" id="p13" value="true"> Prisoner 13<br>
+                <input type="checkbox" name="Keys from the Golden Vault" id="kftgv" value="true"> Keys from the Golden Vault<br>
+                </div>
+            <button type="button" class="collapsible">Supplements</button>
+            <div class="content">
+                <input type="checkbox" name="Supplements" id="Supplements" value="true"> All<br/>
+                <input type="checkbox" name="Volo's Guide to Monsters" id="vgm" value="true"> Volo's Guide to Monsters<br>
+                <input type="checkbox" name="Mordenkainen's Tome of Foes" id="mtf" value="true"> Mordenkainen's Tome of Foes<br>
+                <input type="checkbox" name="Xanathar's Guide to Everything" id="xge" value="true"> Xanathar's Guide to Everything<br>
+                <input type="checkbox" name="Guildmaster's Guide to Ravnica" id="ggtr" value="true"> Guildmaster's Guide to Ravnica<br>
+                <input type="checkbox" name="Eberron: Rising from the Last War" id="erftlw" value="true"> Eberron: Rising from the Last War<br>
+                <input type="checkbox" name="Explorer's Guide to Wildemount" id="egtw" value="true"> Explorer's Guide to Wildemount<br>
+                <input type="checkbox" name="Mythic Odysseys of Theros" id="mot" value="true"> Mythic Odysseys of Theros<br>
+                <input type="checkbox" name="Tasha's Cauldron of Everything" id="tce" value="true"> Tasha's Cauldron of Everything<br>
+                <input type="checkbox" name="Van Richten's Guide to Ravenloft" id="vrgr" value="true"> Van Richten's Guide to Ravenloft<br>
+                <input type="checkbox" name="Fizban's Treasury of Dragons" id="ftd" value="true"> Fizban's Treasury of Dragons<br>
+                <input type="checkbox" name="Spelljammer: Light of Xaryxis" id="slox" value="true"> Spelljammer: Light of Xaryxis<br>
+                <input type="checkbox" name="Spelljammer: Boo's Astral Menagrie" id="sbaa" value="true"> Spelljammer: Boo's Astral Menagerie<br>
+                <input type="checkbox" name="Spelljammer: Astral Adventurer's Guide" id="saag" value="true"> Spelljammer: Astral Adventurer's Guide<br>
+                <input type="checkbox" name="Mordenkainen Presents: Monsters of the Multiverse" id="mpmotm" value="true"> Mordenkainen Presents: Monsters of the Multiverse<br>
+                <input type="checkbox" name="Sword Coast Adventurer's Guide" id="scag" value="true"> Sword Coast Adventurer's Guide<br>
+                <input type="checkbox" name="The Tortle Package" id="ttp" value="true"> The Tortle Package<br>
+                <input type="checkbox" name="One Grung Above" id="oga" value="true"> One Grung Above<br>
+                <input type="checkbox" name="Wayfinder's Guide to Eberron" id="wgte" value="true"> Wayfinder's Guide to Eberron<br>
+                <input type="checkbox" name="Acquisitions Incorporated" id="ai" value="true"> Acquisitions Incorporated<br>
+                <input type="checkbox" name="Locathah Rising" id="lr" value="true"> Locathah Rising<br>
+                <input type="checkbox" name="Mordenkainen's Fiendish Folio Volume 1" id="mffv1" value="true"> Mordenkainen's Fiendish Folio Volume 1<br>
+                <input type="checkbox" name="Strixhaven: A Curriculum of Chaos" id="saccoc" value="true"> Strixhaven: A Curriculum of Chaos<br>
+                <input type="checkbox" name="Monstrous Compendium Annual Volume 1" id="mcav1" value="true"> Monstrous Compendium Annual Volume 1<br>
+                <input type="checkbox" name="The Vecna Dossier" id="tvd" value="true"> The Vecna Dossier<br>
+                <input type="checkbox" name="Monstrous Compendium Annual Volume 2" id="mcav2" value="true"> Monstrous Compendium Annual Volume 2<br>
+                <input type="checkbox" name="Thieve's Gallery" id="tg" value="true"> Thieve's Gallery<br>
+                <input type="checkbox" name="Legendary Magic Items" id="lmi" value="true"> Legendary Magic Items<br>
+                <input type="checkbox" name="Misplaced Monsters" id="misplaced" value="true"> Misplaced Monsters<br>
+            </div>
+            <button type="button" class="collapsible">3rd Party</button>
+            <div class="content">
+                <input type="checkbox" name="3rd Party" id="3rdParty" value="true"> All<br/>
+                <input type="checkbox" name="Dawn of the Necromancer" id="dotn" value="true"> Dawn of the Necromancer<br>
+                <input type="checkbox" name="Beyond Damage Dice" id="bdd" value="true"> Beyond Damage Dice<br>
+                <input type="checkbox" name="Homefield Advantage: A Compendium of Lair Actions" id="hfa" value="true"> Home-field Advantage: A Compendium of Lair Actions<br>
+                <input type="checkbox" name="Sandy Petersen's Cthulhu Mythos for 5e" id="spcm" value="true"> Sandy Petersen's Cthulhu Mythos for 5e<br>
+                <input type="checkbox" name="The Draconomicon" id="spcm" value="true"> The Draconomicon<br>
+            </div>
+        </div>
+    </form>
+
+    <script>
+        $('#chat-form').on('submit', function(e) {
+            e.preventDefault();
+            var question = $('#question').val();
+            $('#chatbox').append('<p>You: ' + question + '</p>');
+            $('#question').val('');
+            var checkedValues = [];
+            $('#chat-form input[type="checkbox"]:checked').each((input) => {
+                checkedValues.push($('#chat-form input[type="checkbox"]:checked')[input].name);
+            })
+            $('#chatbox').scrollTop($('#chatbox')[0].scrollHeight);
+            $.post('/ask', { 
+                question: question,
+                modules: checkedValues.join(','),
+                temperature: $('#temp').val()
+            }, function(response) {
+                let r = JSON.parse(response);
+                //r_formatted = r[0].replace(/(?:\r\n|\r|\n)/g, '<br>');
+                //console.log(r_formatted)
+                r_formatted = r;
+                $('#chatbox').append('<div><div>Bot: ' + r_formatted[0] + '</div><div><small><ul><li>' + r[1] + "</li></ul></small></div></div>");
+                $('#chatbox').scrollTop($('#chatbox')[0].scrollHeight);
+            });
+        });
+
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+        for (i = 0; i < coll.length; i++) {
+          coll[i].addEventListener("click", function() {
+              this.classList.toggle("active");
+              var content = this.nextElementSibling;
+              if (content.style.display === "block") {
+                  content.style.display = "none";
+              } else {
+                  content.style.display = "block";
+              }
+          });
+        }
+
+        $('#Core').on('click', function(e) {
+            $('#PlayersHandbook').prop('checked', $('#Core').prop('checked'));
+            $('#DungeonMastersGuide').prop('checked', $('#Core').prop('checked'));
+            $('#MonsterManual').prop('checked', $('#Core').prop('checked'));
+            $('#Core').prop('checked', $('#Core').prop('checked'));
+        })
+
+        // Iterate over the checkboxes and check if the "All" checkbox is checked
+        $('#Adventures').on('click', function(e) {
+            $('#lmop').prop('checked', $('#Adventures').prop('checked'));
+            ['lmop', 'hotdq', 'rot', 'pota', 'oota', 'cos', 'skt', 'tftyp', 'toa', 'wdh', 'wdotmm', 'gos', 'bgdia', 'idrotf', 'cm', 'twbtw', 'rrakkma', 'llok', 'hftr', 'doip', 'slw', 'sdw', 'dc', 'imr', 'fs', 'cotn', 'trc', 'jttrc', 'sa', 'dosi', 'dsotdq', 'p13', 'kftgv'].forEach((adventure) => {
+                $('#' + adventure).prop('checked', $('#Adventures').prop('checked'));
+            })
+        })
+
+        $('#Supplements').on('click', function(e) {
+            ['vgm', 'mtf', 'xge', 'ggtr', 'erftlw', 'egtw', 'mot', 'tce', 'vrgr', 'ftd', 'slox', 'sbaa', 'saag', 'mpmotm', 'scag', 'ttp', 'oga', 'wgte', 'ai', 'lr', 'mffv1', 'saccoc', 'mcav1', 'tvd', 'mcav2', 'tg', 'legendary', 'lmi', 'misplaced'].forEach((supplement) => {
+                $('#' + supplement).prop('checked', $('#Supplements').prop('checked'));
+            })
+        })
+
+        $('#3rdParty').on('click', function(e) {
+            ['dotn'].forEach((thirdParty) => {
+                $('#' + thirdParty).prop('checked', $('#3rdParty').prop('checked'));
+            })
+        })
+    </script>
+</body>
+</html>

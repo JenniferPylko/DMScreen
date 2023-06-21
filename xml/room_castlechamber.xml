@@ -1,0 +1,56 @@
+<category name="Castle Chamber" id="room_castlechamber">
+    <table name="This chamber is..." id="chamber_is">
+        <value>An antechamber or waiting room</value>
+        <value>An armory</value>
+        <value>An aviary, dovecote, owlery or rookery</value>
+        <value>A banquet hall</value>
+        <value>The barracks</value>
+        <value>A bath or privy</value>
+        <value>A simple bedroom</value>
+        <value>A comfortable bedroom</value>
+        <value>A luxurious bedroom</value>
+        <value>A chapel or shrine</value>
+        <value>A crypt</value>
+        <value>An intimate or informal dining room</value>
+        <value>A dressing room</value>
+        <value>An armor and weaponry gallery</value>
+        <value>A gallery of paintings</value>
+        <value>A gallery of sculptures</value>
+        <value>A gallery of tapestries</value>
+        <value>A gallery of hunting trophies</value>
+        <value>A gallery of trophies of war</value>
+        <value>A guardroom</value>
+        <value>A kennel, menagerie, or stable</value>
+        <value>The kitchen</value>
+        <value>A library or study</value>
+        <value>A pantry</value>
+        <value>Store room for mundane supplies or a cistern for drinking water</value>
+        <value>The throne room</value>
+        <value>A treasure vault (likely hidden and/or protected by traps)</value>
+    </table>
+    <table name="You notice..." id="chamber_notice">
+        <value region_start="3|27" region_end="11|34" region_include="__noun__|__noun__">An armchair flanked by two sconces</value>
+        <value region_start="8" region_end="15" region_include="__noun__">A large armoire</value>
+        <value region_start="8" region_end="22" region_include="__noun__">A large buffet cabinet</value>
+        <value region_start="2|15" region_end="7|22" region_include="__noun__|__noun__">A bench with a cushion</value>
+        <value region_start="2" region_end="9" region_include="__noun__">A brazier</value>
+        <value region_start="25" region_end="30" region_include="__noun__">A candelabrum on a large table</value>
+        <value region_start="8|23" region_end="13|29" region_include="__noun__|__noun__">A plain chair beside a window</value>
+        <value region_start="15" region_end="20" region_include="chests">A heavy wooden chest</value>
+        <value region_start="2|26" region_end="18|33" region_include="__noun__|__noun__">A chest of drawers with a blanket on top</value>
+        <value region_start="2|17|30" region_end="6|23|39" region_include="__noun__|__noun__|__noun__">A desk with some quills and a parchment</value>
+        <value region_start="2" region_end="11" region_include="__noun__">a fireplace with a mantle</value>
+        <value region_start="2" region_end="11" region_include="__noun__">A fireplace with a small pile of wood</value>
+        <value region_start="2" region_end="8" region_include="__noun__">A fresco with a padded chair beneath it</value>
+        <value region_start="14" region_end="19" region_include="nobleman">Portrait of a noble</value>
+        <value region_start="16" region_end="25" region_include="wilderness">A painting of a landscape</value>
+        <value region_start="16" region_end="24" region_include="__noun__">A painting of a seascape</value>
+        <value region_start="2" region_end="6" region_include="__noun__">A bust on a pedestal</value>
+        <value region_start="19" region_end="24" region_include="book">A shelf containing books</value>
+        <value region_start="19" region_end="31" region_include="junk">A shelf containing knick knacks</value>
+        <value region_start="32" region_end="36" region_include="__noun__">A low table in front of a small sofa</value>
+        <value region_start="24" region_end="34" region_include="__noun__">A large table beneath a chandelier</value>
+        <value region_start="10" region_end="18" region_include="__noun__">An ornate tapestry</value>
+        <value region_start="13" region_end="27" region_include="__noun__">A small wall basin and font</value>
+    </table>
+</category>

@@ -1,0 +1,49 @@
+<category name="Legendary Beast" id="legendary_beast">
+    <table name="The legendary beast is..." id="is">
+        <value>A basilisk.</value>
+        <value>A bear.</value>
+        <value>A chimera.</value>
+        <value>A drake.</value>
+        <value>An eagle.</value>
+        <value>A griffon.</value>
+        <value>A hound.</value>
+        <value>A kraken.</value>
+        <value>A lion.</value>
+        <value>A manticore.</value>
+        <value>An owlbear.</value>
+        <value>A serpent.</value>
+        <value>A shark.</value>
+        <value region_start="2" region_end="8" region_include="spider">A spider.</value>
+        <value>A stag.</value>
+        <value>A tiger.</value>
+        <value>A unicorn.</value>
+        <value>A whale.</value>
+        <value region_start="2" region_end="6" region_include="wolf">A wolf.</value>
+        <value>A wyvern.</value>
+    </table>
+    <table name="The beast has..." id="has">
+        <value>Unnatural intelligence.</value>
+        <value>The power of speech.</value>
+        <value>An especially savage manner.</value>
+        <value>A frightening howl or cry.</value>
+        <value>A mournful howl or cry.</value>
+        <value>An immense size.</value>
+        <value>Unusual coloration or markings.</value>
+        <value>A terrible scar on its face.</value>
+        <value>A terrible scar on its body.</value>
+        <value>A missing eye.</value>
+    </table>
+    <table name="The beast is known for" id="known">
+        <value region_start="21" region_end="25" region_include="npc">Slaying a well-known hero.</value>
+        <value region_start="20" region_end="27" region_include="villain">Slaying a notorious villain.</value>
+        <value region_start="17" region_end="21" region_include="city">Laying ruin to a city</value>
+        <value region_start="10" region_end="14" region_include="ship">Sinking a ship</value>
+        <value region_start="13" region_end="20" region_include="caravan">Scattering a caravan.</value>
+        <value>Leaving a trail of destruction in its wake.</value>
+        <value region_start="13" region_end="28" region_include="dungeons">Lairing in a dangerous place.</value>
+        <value region_start="13" region_end="23" region_include="__noun__">Lairing in a holy place.</value>
+        <value region_start="31" region_end="35" region_include="__noun__">Hunting along a well-travelled road.</value>
+        <value>Toying with its prey before the kill.</value>
+        <value region_start="15" region_end="21" region_include="__noun__">Protecting the people who live near it.</value>
+    </table>
+</category>

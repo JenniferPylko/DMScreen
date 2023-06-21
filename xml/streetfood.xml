@@ -1,0 +1,273 @@
+<category name="Urban Street Food" id="streetfood">
+    <table name="Varieties: The dish is..." id="dish">
+        <value>Exotic / Unusual (roll again and choose something outlandish/rare).</value>
+        <value>Fruits.</value>
+        <value>Meats.</value>
+        <value>Savories: These include cheese, nuts and seeds.</value>
+        <value>Seafood: This includes shellfish and ocean plants.</value>
+        <value>Vegetables.</value>
+    </table>
+    <table name="Flavor: The dish is..." id="flavor">
+        <value>Sweet; flavored with sugar.</value>
+        <value>Sweet; flavored with molasses.</value>
+        <value>Sweet; flavored with honey.</value>
+        <value>Sweet; flavored with glaze (roll on fruits table).</value>
+        <value>Sweet; flavored with jam (roll on fruits table).</value>
+        <value>Sweet; flavored with pixie parts.</value>
+        <value>Spicy; flavored with curry.</value>
+        <value>Spicy; flavored with cumin.</value>
+        <value>Spicy; flavored with black pepper.</value>
+        <value>Spicy; flavored with red pepper.</value>
+        <value>Spicy; flavored with chili powder.</value>
+        <value>Spicy; flavored with cinnamon.</value>
+        <value>Spicy; flavored with green chili pepper.</value>
+        <value>Spicy; flavored with ghost chili pepper.</value>
+        <value>Spicy; flavored with paprika.</value>
+        <value>Spicy; flavored with sriracha.</value>
+        <value>Spicy; flavored with red dragon oil.</value>
+        <value>Spicy; flavored with flecks of salamander.</value>
+        <value>Spicy; flavored with sour.</value>
+        <value>Spicy; flavored with savory.</value>
+        <value>Sour; flavored with yogurt.</value>
+        <value>Sour; flavored with sour cream.</value>
+        <value>Sour; flavored with sour fruit juice.</value>
+        <value>Sour; flavored with white wine vinegar</value>
+        <value>Sour; flavored with white red vinegar</value>
+        <value>Sour; flavored with white fruit vinegar</value>
+        <value>Sour; flavored with white digester juice</value>
+    </table>
+    <table name="Preparation: The dish is..." id="prep">
+        <value>Baked.</value>
+        <value>Boiled.</value>
+        <value>Broiled.</value>
+        <value>Fried.</value>
+        <value>Grilled.</value>
+        <value>Poached.</value>
+        <value>Roasted.</value>
+        <value>Sauteed.</value>
+        <value>Seared.</value>
+        <value>Steamed.</value>
+    </table>
+    <table name="Presentation: The dish is served on or with..." id="served">
+        <value>Bread.</value>
+        <value>Leaf/Skewer.</value>
+        <value>Pastry.</value>
+        <value>Rice.</value>
+    </table>
+    <table name="Beverages: Enjoy this dish with..." id="beverage">
+        <value>Cider.</value>
+        <value>Juice.</value>
+        <value>Mead.</value>
+        <value>Milk / Kefir.</value>
+        <value>Tea / Coffee / Chocolate.</value>
+        <value>Wine.</value>
+        <value>Beer.</value>
+        <value>Spirits / Cocktails.</value>
+    </table>
+    <table name="Fruits: The dish is made with..." id="fruit">
+        <value>Lemon.</value>
+        <value>Lime.</value>
+        <value>Grapes.</value>
+        <value>Apple.</value>
+        <value>Orange.</value>
+        <value>Cherry.</value>
+        <value>Pear.</value>
+        <value>Plum.</value>
+        <value>Peach.</value>
+        <value>Mango.</value>
+        <value>Coconut.</value>
+        <value>Banana.</value>
+        <value>Papaya.</value>
+        <value>Blueberries.</value>
+        <value>Raspberries.</value>
+        <value>Blackberries.</value>
+        <value>Watermelon.</value>
+        <value>Cantaloupe.</value>
+        <value>Honeydew.</value>
+        <value>Dryad melons.</value>
+    </table>
+    <table name="Vegetables: The dish is made with..." id="vegetable">
+        <value>Asparagus.</value>
+        <value>Arugula.</value>
+        <value>Broccoli.</value>
+        <value>Carrots.</value>
+        <value>Cucumber.</value>
+        <value>Cauliflower.</value>
+        <value>Black beans</value>
+        <value>Red beans</value>
+        <value>String beans</value>
+        <value>White beans</value>
+        <value>Bell peppers</value>
+        <value>Chili peppers</value>
+        <value>Hot peppers</value>
+        <value>Sweet peppers</value>
+        <value>Green onion</value>
+        <value>Red onion</value>
+        <value>Sweet onion</value>
+        <value>Yellow onion</value>
+        <value>Corn.</value>
+        <value>Parsnips.</value>
+        <value>Green cabbage</value>
+        <value>Red cabbage</value>
+        <value>Purple cabbage</value>
+        <value>White cabbage</value>
+        <value>Turnips.</value>
+        <value>Radishes.</value>
+        <value>Beets.</value>
+        <value>Peas.</value>
+        <value>Spinach.</value>
+        <value>Sprouts.</value>
+        <value>Butter lettuce</value>
+        <value>Iceberg lettuce</value>
+        <value>Romaine lettuce</value>
+        <value>Weedy lettuce</value>
+        <value>Butternut squash</value>
+        <value>Pumpkin</value>
+        <value>Summer squash</value>
+        <value>Zucchini</value>
+    </table>
+    <table name="Savories: The dish is made with..." id="savories">
+        <value>White cheese.</value>
+        <value>Sharp cheese.</value>
+        <value>Mild cheese.</value>
+        <value>Stinky cheese.</value>
+        <value>Pungent cheese.</value>
+        <value>Blue cheese.</value>
+        <value>Yellow cheese.</value>
+        <value>Goat cheese.</value>
+        <value>Sheep's milk cheese.</value>
+        <value>Sunflower seeds.</value>
+        <value>Pumpkin seeds.</value>
+        <value>Poppy seeds.</value>
+        <value>Soybeans.</value>
+        <value>Pine nuts.</value>
+        <value>Almonds.</value>
+        <value>Pecans.</value>
+        <value>Hickory nuts.</value>
+        <value>Peanuts.</value>
+        <value>Pistachios.</value>
+        <value>Walnuts.</value>
+    </table>
+    <table name="Seafood: The dish is made with..." id="with">
+        <value>Clams.</value>
+        <value>Crab.</value>
+        <value>Herring.</value>
+        <value>Lobster.</value>
+        <value>Mussels.</value>
+        <value>Oysters.</value>
+        <value>Salmon.</value>
+        <value>Smelt.</value>
+        <value>Haddock.</value>
+        <value>Mackerel.</value>
+        <value>Squid.</value>
+        <value>Shrimp.</value>
+        <value>Prawns.</value>
+        <value>Tuna.</value>
+        <value>Halibut.</value>
+        <value>Cod.</value>
+        <value>Sardines.</value>
+        <value>Anchovies.</value>
+        <value>Scallops.</value>
+        <value>Sea bass.</value>
+    </table>
+    <table name="Unusual seafood: This dish is made with..." id="seafood">
+        <value>Skate.</value>
+        <value>Cuttlefish.</value>
+        <value>Flounder.</value>
+        <value>Grouper.</value>
+        <value>Marlin.</value>
+        <value>Snapper.</value>
+        <value>Monkfish.</value>
+        <value>Shark.</value>
+        <value>Swordfish.</value>
+        <value>Electric eel.</value>
+        <value>Dolphin.</value>
+        <value>Whale.</value>
+        <value>Seal.</value>
+        <value>Walrus.</value>
+        <value>Sea cucumber.</value>
+        <value>Starfish.</value>
+        <value>Jellyfish.</value>
+        <value>Kraken suckers.</value>
+        <value>Mermaid fin.</value>
+        <value>Aberrant tentacles.</value>
+    </table>
+    <table name="Meats: The dish is made with..." id="meat">
+        <value>Beef.</value>
+        <value>Pork.</value>
+        <value>Mutton.</value>
+        <value>Chicken.</value>
+        <value>Turkey.</value>
+        <value>Duck.</value>
+        <value>Goose.</value>
+        <value>Venison.</value>
+        <value>Horse.</value>
+        <value>Ox.</value>
+        <value>Lamb.</value>
+        <value>Veal.</value>
+        <value>Pheasant.</value>
+        <value>Quail.</value>
+        <value>Rabbit.</value>
+        <value>Boar.</value>
+        <value>Goat.</value>
+        <value>Pigeon.</value>
+    </table>
+    <table name="Uncommon meats: The dish is made with..." id="rare_meat">
+        <value>Squirrel</value>
+        <value>Gopher</value>
+        <value>Cat</value>
+        <value>Dog</value>
+        <value>Bear</value>
+        <value>Wolf</value>
+        <value>Crocodile</value>
+        <value>Lizard</value>
+        <value>Snake</value>
+        <value>Rat</value>
+        <value>Panther</value>
+        <value>Beaver</value>
+        <value>Bat</value>
+        <value>Beetles</value>
+        <value>Crickets</value>
+        <value>Maggots</value>
+        <value>Frog</value>
+        <value>Turtle</value>
+        <value>Lion</value>
+        <value>Antelope</value>
+    </table>
+    <table name="Weird meats: The dish is made with..." id="weird_meat">
+        <value>Giant spider.</value>
+        <value>Ghoulflesh.</value>
+        <value>Rump of the satyr.</value>
+        <value>Centipede.</value>
+        <value>Medusa hair.</value>
+        <value>Manticore.</value>
+        <value>Dragonflesh (not usually from a real dragon, but a wyvern or drake).</value>
+        <value>Displacer beast.</value>
+        <value>Hellhound.</value>
+        <value>Aberrant eyes.</value>
+        <value>Gelatinous cube.</value>
+        <value region_start="0" region_end="8" region_include="halfling">Halfling</value>
+        <value>Tarrasque testicles.</value>
+        <value>Devil's tongue.</value>
+        <value>Demon lips.</value>
+        <value>Otyugh feet.</value>
+        <value>Stirge wings.</value>
+        <value>Owlbear (the cheek is the best, the best places serve it plated with the beak intact).</value>
+        <value>Umber hulk.</value>
+        <value>Virgin priestess.</value>
+    </table>
+    <table name="Breads: The bread portion of the dish is..." id="bread">
+        <value>Sourdough baguette.</value>
+        <value>Whole-grain baguette.</value>
+        <value>Bread bowl.</value>
+        <value>Crusty roll.</value>
+        <value>Soft roll.</value>
+        <value>Pumpernickel roll.</value>
+        <value>Sesame seed bun.</value>
+        <value>Tortilla.</value>
+        <value>Pita.</value>
+        <value>Flat bread.</value>
+        <value>Mini pizza.</value>
+        <value>Hot pocket.</value>
+    </table>
+</category>

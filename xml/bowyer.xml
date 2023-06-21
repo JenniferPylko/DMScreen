@@ -1,0 +1,22 @@
+            <category name="Bowyer / Fletcher" id="bowyer">
+                <name name="The bowyer's name is..."/>
+                <include name="Race" include="npc_race" />
+                <table name="The bowyer is..." id="bowyer_is">
+                    <value>A patient craftsman</value>
+                    <value>An old archer, blind in one eye</value>
+                    <value region_start="2" region_end="11" region_include="nation">A foreigner who puts unusual touches on the bows and feathers he makes</value>
+                    <value>Skilled at mending bows and arrows, but not so good at making them from raw materials</value>
+                </table>
+                <table name="The bowyer is looking for..." id="bowyer_looking">
+                    <value>Someone who can fletch arrows</value>
+                    <value>Stray arrowheads</value>
+                    <value>Intact arrow shafts</value>
+                    <value>A mug of strong ale</value>
+                </table>
+                <table name="The bowyer carries..." id="bowyer_carries">
+                    <value>A whittling knife</value>
+                    <value>A quiver of arrows to be mended</value>
+                    <value>A quiver of newly made arrows</value>
+                    <value>A bundle of fresh wood cuttings</value>
+                </table>
+            </category>

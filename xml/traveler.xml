@@ -1,0 +1,31 @@
+<category name="Traveler" id="traveler">
+    <name name="The traveler's name is..."/>
+    <include name="Race" include="npc_race" />
+    <table name="The traveler is..." id="is">
+        <value region_start="3" region_end="8" region_include="__noun__">An exile</value>
+        <value region_start="2" region_end="10" region_include="bard">A minstrel</value>
+        <value region_start="2" region_end="9" region_include="vendor">A peddler</value>
+        <value region_start="2" region_end="9" region_include="__noun__">A refugee</value>
+        <value region_start="2" region_end="11" region_include="mercenary">A sellsword</value>
+        <value region_start="2" region_end="13" region_include="bard/bardis/storyteller">A storyteller</value>
+        <value region_start="2" region_end="17" region_include="__noun__">A treasure hunter</value>
+    </table>
+    <table name="The traveler is seeking..." id="seeking">
+        <value region_start="17" region_end="22" region_include="__noun__">Accomplices on a quest</value>
+        <value region_start="16" region_end="22" region_include="__noun__">The answer to a riddle</value>
+        <value>An audience to entertain</value>
+        <value region_start="12" region_end="18" region_include="__noun__">A long lost friend</value>
+        <value region_start="14" region_end="23" region_include="__noun__">The return of something stolen</value>
+        <value region_start="25" region_end="30" region_include="castle">Revenge against a bitter rival</value>
+        <value>A permanent home</value>
+        <value>Steady work</value>
+        <value>Traveling companions</value>
+        <value>Drinking companions</value>
+    </table>
+    <table name="The traveler is looking for..." id="looking">
+        <value>A little company</value>
+        <value>An opportunity to earn a little coin</value>
+        <value region_start="18" region_end="26" region_include="castle">Someone to hear a sad tale</value>
+        <value>Drinking companions</value>
+    </table>
+</category>

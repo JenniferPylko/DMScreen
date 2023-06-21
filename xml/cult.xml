@@ -1,0 +1,159 @@
+<category name="Cult" id="cult">
+    <table name="The cultists revere..." id="cult_rever">
+        <value region_start="2" region_end="8" region_include="dragon">A dragon</value>
+        <value region_start="2" region_end="12" region_include="fiend">A demon lord</value>
+        <value region_start="3" region_end="12" region_include="fiend">An archdevil</value>
+        <value region_start="20" region_end="24" region_include="npc">A long-dead ancient hero</value>
+        <value region_start="20" region_end="27" region_include="villain">A long-dead ancient villain</value>
+        <value region_start="7" region_end="10" region_include="deity">A dead god</value>
+        <value region_start="12" region_end="20" region_include="aberrant_beast">An aberrant creature</value>
+        <value region_start="13" region_end="21" region_include="beast">An elemental creature</value>
+        <value region_start="2" region_end="10" region_include="__noun__">A primordial</value>
+        <value region_start="7" region_end="14" region_include="__noun__">Primal spirits</value>
+        <value region_start="3|15" region_end="10|18" region_include="__noun__|deity">An exarch of a god</value>
+        <value region_start="15" region_end="21" region_include="cultist">The cult's own leader</value>
+    </table>
+    <table name="The cultists meet in..." id="cult_meet">
+        <value region_start="33" region_end="39" region_include="temple">A secret chamber in a well-known temple</value>
+        <value region_start="24" region_end="30" region_include="tavern">The cellar of a popular tavern</value>
+        <value region_start="33" region_end="42" region_include="__noun__">A secret chamber in a well-known guildhall</value>
+        <value region_start="14" region_end="24" region_include="merchant">The cellar of a wealthy merchant's house</value>
+        <value region_start="4" region_end="8" region_include="city">The city sewers</value>
+        <value region_start="30" region_end="34" region_include="city">Ancient catacombs beneath the city</value>
+        <value region_start="2|15" region_end="7|26" region_include="__noun__|__noun__">A cabin in the countryside</value>
+        <value region_start="15" region_end="19" region_include="cavern">A creepy, dark cave</value>
+        <value region_start="35" region_end="41" region_include="castle">A heavily guarded chamber within a castle</value>
+        <value region_start="29" region_end="36" region_include="tavern">The stacks of a well-stocked library</value>
+    </table>
+    <table name="The cult's leader is..." id="cult_leader">
+        <value region_start="10" region_end="17" region_include="__noun__">A devoted acolyte</value>
+        <value region_start="11" region_end="18" region_include="__noun__">A dogmatic teacher</value>
+        <value region_start="9" region_end="14" region_include="healer">An adept healer</value>
+        <value region_start="14" region_end="22" region_include="__noun__">A charismatic preacher</value>
+        <value region_start="13" region_end="20" region_include="__noun__">An eccentric scholar</value>
+        <value region_start="13" region_end="19" region_include="__noun__">An outspoken zealot</value>
+        <value>A dangerous megalomaniac</value>
+        <value>A charismatic demagogue</value>
+        <value region_start="13" region_end="22" region_include="nation">A mysterious foreigner</value>
+        <value region_start="13" region_end="26" region_include="__noun__">A well-known public figure</value>
+        <value region_start="11" region_end="17" region_include="killer">A ruthless killer</value>
+        <value>A femme fatale</value>
+        <value region_start="11" region_end="16" region_include="rogue">A charming rogue</value>
+        <value region_start="11" region_end="16" region_include="noble">A powerful noble</value>
+        <value region_start="11" region_end="17" region_include="__noun__">A talented artist</value>
+        <value region_start="2" region_end="19" region_include="__noun__">A religious fanatic</value>
+        <value region_start="10" region_end="17" region_include="soldier">A veteran soldier</value>
+        <value region_start="9" region_end="16" region_include="tavern">A humble artisan</value>
+        <value region_start="11" region_end="15" region_include="npc">An ancient hero reborn</value>
+        <value region_start="23" region_end="26" region_include="deity">The second coming of a god</value>
+    </table>
+    <table name="The cult's membership is primarily made up of..." id="cult_membership">
+        <value>The poor and downtrodden (beggars)</value>
+        <value>The poor and downtrodden (laborers)</value>
+        <value>The poor and downtrodden (servants)</value>
+        <value>The poor and downtrodden (slaves)</value>
+        <value>The wealthy elite (guildmasters)</value>
+        <value>The wealthy elite (merchants)</value>
+        <value>The wealthy elite (nobles)</value>
+        <value>The wealthy elite (royalty)</value>
+        <value>A segment of another religion's population (Sun God)</value>
+        <value>A segment of another religion's population (Earth Mother)</value>
+        <value>A segment of another religion's population (Death God)</value>
+        <value>A segment of another religion's population (Huntress)</value>
+        <value>A segment of another religion's population (Goddess of Love)</value>
+        <value region_start="44" region_end="53" region_include="deity/deity_domain/deity_domain_storms">A segment of another religion's population (Storm God)</value>
+        <value>A segment of another religion's population (Trickster God)</value>
+        <value>A segment of another religion's population (War)</value>
+    </table>
+    <table name="The cult's practice involve (leadership and believers could adhere to different practices)..." id="cult_practice">
+        <value>Animal sacrifice (bulls)</value>
+        <value>Animal sacrifice (calves)</value>
+        <value>Animal sacrifice (cats)</value>
+        <value>Animal sacrifice (chickens)</value>
+        <value>Animal sacrifice (dogs)</value>
+        <value>Animal sacrifice (goats)</value>
+        <value>Animal sacrifice (pigeons)</value>
+        <value>Animal sacrifice (rabbits)</value>
+        <value>Animal sacrifice (rams)</value>
+        <value>Animal sacrifice (songbirds)</value>
+        <value>Human sacrifice (children)</value>
+        <value>Human sacrifice (elderly)</value>
+        <value>Human sacrifice (harlots)</value>
+        <value>Human sacrifice (nonbelievers)</value>
+        <value>Human sacrifice (priests and priestesses)</value>
+        <value>Human sacrifice (virgins)</value>
+        <value>Self-mutilation (arm)</value>
+        <value>Self-mutilation (back)</value>
+        <value>Self-mutilation (cheek)</value>
+        <value>Self-mutilation (chest)</value>
+        <value>Self-mutilation (ear)</value>
+        <value>Self-mutilation (eye)</value>
+        <value>Self-mutilation (feet)</value>
+        <value>Self-mutilation (finger)</value>
+        <value>Self-mutilation (genitalia)</value>
+        <value>Self-mutilation (nose)</value>
+        <value>Burnt offerings (herbs)</value>
+        <value>Burnt offerings (incense)</value>
+        <value>Burnt offerings (meat)</value>
+        <value>Burnt offerings (prisoners)</value>
+        <value>Offers of gold, gems, and valuables</value>
+        <value>Strange incantations</value>
+        <value>Public acts of violence (beatings)</value>
+        <value>Public acts of violence (looting)</value>
+        <value>Public acts of violence (murders)</value>
+        <value>Public acts of violence (riots)</value>
+        <value>Ritualistic sexual acts (beasiality)</value>
+        <value>Ritualistic sexual acts (breedings)</value>
+        <value>Ritualistic sexual acts (deflowerings)</value>
+        <value>Ritualistic sexual acts (orgies)</value>
+    </table>
+    <table name="The cult's goals (leadership and believers could have different goals)..." id="cult_goals">
+        <value region_start="18" region_end="22" region_include="city">Domination of the city</value>
+        <value region_start="18" region_end="24" region_include="__noun__">Domination of the region</value>
+        <value region_start="15" region_end="23" region_include="city">Destruction of the city</value>
+        <value region_start="19" region_end="25" region_include="__noun__">Destruction of the region</value>
+        <value region_start="29" region_end="35" region_include="__noun__">Reincarnation of a long-dead entity</value>
+        <value region_start="24" region_end="36" region_include="city">Declaration of war against a rival city</value>
+        <value region_start="35" region_end="41" region_include="__noun__">Declaration of war against a rival nation</value>
+        <value region_start="22" region_end="26" region_include="city">Rebellion against the city's elite</value>
+        <value region_start="22" region_end="28" region_include="__noun__">Rebellion against the nation's elite</value>
+        <value>Death to non-believers</value>
+        <value region_start="28" region_end="33" region_include="__noun__">Opening a portal to another plane</value>
+        <value region_start="30" region_end="36" region_include="__noun__">Release of a powerful captive entity</value>
+    </table>
+    <table name="The cult's members must follow a strict rule regarding" id="cult_rule">
+        <value>Wearing a lilly in the hair or on the lapel</value>
+        <value>Wearing a orchid in the hair or on the lapel</value>
+        <value>Wearing a rose in the hair or on the lapel</value>
+        <value>Wearing a tulip in the hair or on the lapel</value>
+        <value>Fashion trends</value>
+        <value>Maintaining their personal weapon (club)</value>
+        <value>Maintaining their personal weapon (dagger)</value>
+        <value>Maintaining their personal weapon (handaxe)</value>
+        <value>Maintaining their personal weapon (staff)</value>
+        <value>Treatment of pets</value>
+        <value>Mounting a horse</value>
+        <value>Dressing one's self for worship</value>
+        <value>Dressing one's self for day-to-day activities</value>
+        <value>Diet</value>
+        <value>Exercise routines</value>
+        <value>Bathing</value>
+        <value>Styling one's hair</value>
+        <value>Brushing one's teeth</value>
+    </table>
+    <table name="The cult's members are a particularly afraid of or take special care to avoid" id="cult_afraid">
+        <value>Hallowed places</value>
+        <value>Moonlight</value>
+        <value>Sunlight</value>
+        <value>Crossing running water</value>
+        <value>Sharp wooden objects</value>
+        <value>Garlic</value>
+        <value>Silver objects</value>
+        <value>Relics of the gods</value>
+        <value>Sleeping outdoors</value>
+        <value>Milk and cheese</value>
+        <value>Eating meat</value>
+        <value>Sobriety</value>
+    </table>
+    <member name="Cultist" include="cultist" />
+</category>

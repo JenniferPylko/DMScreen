@@ -1,0 +1,7 @@
+        <table name="Air" short = "Air" id="dressing_air">
+            <value>Clear</value>
+            <value>Foggy (or steamy)</value>
+            <value>Foggy near floor (or steamy)</value>
+            <value>Hazy (dust)</value>
+            <value>Misty</value>
+        </table>

@@ -1,0 +1,74 @@
+<category name="Orc Warlord" id="orcwarlord">
+    <table name="Race: The orc is a..." id="race">
+        <value>Pureblood Orc, thoroughly orcy through and through leading through strength.</value>
+        <value region_start="59" region_end="70" region_include="orcclan">Orog, a particularly intelligent type of orc. Come to lead the warband using its intelligence and tactical skill.</value>
+        <value>Orgrillon, half orc and half ogre this warlord is massive and strong although simpleminded.</value>
+        <value region_start="75" region_end="86" region_include="orcclan" >Half Orc, potentially not from orc society, this half orc has come to lead the warband with its greater intelligence.</value>
+    </table>
+    <table name="Appearance: The warlord has..." id="appearance">
+        <value>A metal jaw replacing their own that they lost in battle. They will show this off by crushing things with it.</value>
+        <value>A metal claw like arm that it uses in combat with brutal efficiency.</value>
+        <value>Far larger than usual tusks. Large enough to be uncomfortable and give a slight lisp.</value>
+        <value>A missing nose, completely torn off in a fight.</value>
+        <value>Scarring all over their body from being set on fire once.</value>
+        <value>Missing fingers and dark patches of skin from frostbite being attacked by ice magic.</value>
+        <value>Fel-like horns that twist and gnarl from his head.</value>
+        <value>A huge blubbery body, which it proudly uses as a type of armour projectiles just being absorbed by the fat.</value>
+        <value>A very thin and lithe body for an orc.</value>
+        <value>Gold and jewels that make up his teeth, replacing its own.</value>
+        <value>Violently scarified tattoos all over its body. They display its previous victories.</value>
+        <value>A pole affixed to its armour that has the decapitated heads of every enemy jammed onto it.</value>
+        <value>Armour that is made from the bones and scales of a dragon.</value>
+        <value>Strange and differently coloured skin for an orc.</value>
+        <value>One missing eye, the socket glowing with holy energy.</value>
+        <value>Glowing tattoos all over their body, that each come with some strange meaning.</value>
+        <value>A large and ornate beard usually dripping with blood.</value>
+        <value>Chunks of bone growing out of its skin due to some horrific mutation.</value>
+        <value>Self-inflicted notch marks all over their body that count their kills and victories.</value>
+        <value>A strangely handsome appearance for an orc.</value>
+    </table>
+    <table name="Trait: The orc warlord is known because..." id="known">
+        <value>It’s a massive alcoholic. He drinks kegs and kegs of ale every day and demands ale and other drinks as payment.</value>
+        <value>He organises feasts made up of the humanoid prisoners. They’re famous throughout the clan and they aim to take as many prisoners in combat for just this reason.</value>
+        <value region_start="79" region_end="94" region_include="__noun__">It’s a fel-orc tainted by fiendish energy in a similar way to a tiefling. Some fiendish powers come from this.</value>
+        <value region_start="10" region_end="30" region_include="orcwarlord">He killed the previous warlord in a duel, brutally murdering them.</value>
+        <value>He pretends to be chosen by the gods and make it seem that he was chosen to lead his clan. He knows this is just fake but everyone seems to believe them.</value>
+        <value>He’s blind in both eyes. Strangely, he’s still just as effective in combat.</value>
+        <value>He has sired many children and trained both the girls and boys to be terrifying warriors.</value>
+        <value region_start="36" region_end="43" region_include="witch">They’re actually happily married to a witch. Although the other orcs find this strange, they’re too terrified of her to question it out loud.</value>
+        <value>It plans to organise a raid against the heavens itself! Currently they’re constructing a planar portal to get there.</value>
+        <value>Its raids are all against enemies of the orc gods. They think they can hear the gods calling to them and make every choice depending on them.</value>
+        <value>It’s known for using biological warfare and disease magic, catapulting diseased corpses into cities.</value>
+        <value>It openly is against magic in all forms and aims to hunt down all witches and magic users.</value>
+        <value>It kills any orc recruit that doesn’t perform absolutely perfectly.</value>
+        <value region_start="7" region_end="18" region_include="lycanthrope">It’s a lycanthrope who openly uses this power in combat.</value>
+        <value>It openly uses necromancy powers to rise the dead soldiers in combat.</value>
+        <value>It’s crippled and needs to use a potion to walk and fight. A secret guarded from the rest of the clan.</value>
+        <value>It’s greedy and only cares about money and jewels. Every raid is for more money.</value>
+        <value region_start="24" region_end="28" region_include="military">It’s known as a one man army who has defeated an entire enemy army before single handed.</value>
+        <value>It wants to unite all the orc clans nearby into a massive army to take over the entire realm.</value>
+        <value>It loves to use alchemy to create powerful weapons of mass destruction and magical potions to make their clan stronger.</value>
+    </table>
+    <table name="Combat: The warlord is known to fight with..." id="combat">
+        <value>A huge two handed sword and slow but powerful attacks.</value>
+        <value>Death by 1000 cuts. Fast, but tiny attacks with dual daggers.</value>
+        <value>A traditional orcish war axe.</value>
+        <value>Shamanistic elemental magic.</value>
+        <value>Stealth, trickery and traps.</value>
+        <value>A great bow and magical arrows.</value>
+        <value>A crossbow and magical arrows.</value>
+        <value>Sword and shield, the shield enchanted with power.</value>
+        <value>Warlock like magic.</value>
+        <value>Terrifyingly strong blood magic.</value>
+        <value>A common usage of potions, for strength and fire breath as well as healing.</value>
+        <value>Running away, to live another day.</value>
+        <value>Catapults and Artillery.</value>
+        <value>A large sharp flail.</value>
+        <value>Fists and spiked knuckles.</value>
+        <value>Grapples and throwing attacks.</value>
+        <value>Extremely loud magical war cries.</value>
+        <value>Two large sharp swords.</value>
+        <value>A spiked chain weapon.</value>
+        <value region_start="0" region_end="16" region_include="wizard">A mage assistant who constantly buffs them with magic and healing.</value>
+    </table>
+</category>

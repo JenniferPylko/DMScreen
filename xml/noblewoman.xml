@@ -1,0 +1,27 @@
+<category name="Noblewoman" id="noblewoman">
+    <name name="The lady's name is..."/>
+    <include name="Race" include="npc_race" />
+    <table name="The lady is..." id="noblewoman_is">
+        <value>A wise old woman</value>
+        <value>A passionate young woman</value>
+        <value>A homely young lady</value>
+        <value>An acerbic wit</value>
+        <value region_start="32" region_end="37" region_include="noblehouse">A guest, a member of a powerful house</value>
+        <value region_start="30" region_end="35" region_include="noblehouse">A guest, a member of a lesser house</value>
+    </table>
+    <table name="The lady seeks someone to..." id="noblewoman_seeks">
+        <value region_start="35" region_end="40" region_include="__noun__">Help gain revenge against a bitter rival</value>
+        <value region_start="17|38" region_end="24|43" region_include="__noun__|__noun__">Bring to light a scandal involving an enemy</value>
+        <value>Securing a beneficial marriage</value>
+        <value>Talk some sense into her husband or father</value>
+        <value region_start="10" region_end="24" region_include="__noun__">Deliver a secret message</value>
+        <value>Share some wine and gossip</value>
+    </table>
+    <table name="The lady carries..." id="noblewoman_carries">
+        <value region_start="9" region_end="17" region_include="__noun__">A family heirloom</value>
+        <value>Some very valuable jewels</value>
+        <value region_start="15" region_end="26" region_include="__noun__">A compromising love letter</value>
+        <value region_start="25" region_end="29" region_include="nobleman">A letter from a powerful lord</value>
+        <value region_start="25" region_end="29" region_include="noblewoman">A letter from a powerful lady</value>
+    </table>
+</category>

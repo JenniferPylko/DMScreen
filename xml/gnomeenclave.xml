@@ -1,0 +1,27 @@
+        <category name="Gnome Enclave" id="gnomeenclave">
+            <name name="The enclave's name is..." src="cities" />
+            <table name="Vignettes, encounters, and color" id="vignette">
+            <value>A machine, equal parts steam and brass, goes careening past with a flustered gnome in hot pursuit</value>
+            <value>A persistent turnip salesman espouses the virtue of his wares and won't tel you leave till you buy some</value>
+            <value>Gnomes, stacked 6 high are holding up a 7th who is tinkering with the insides of a clock tower</value>
+            <value>A group of four gnomes discuss the best way to fix a broken wagon wheel</value>
+            <value>A tiny gnome boy jumps up and grabs your purse. Suddenly frightened now he won't let go because he's scared of hights</value>
+            <value>A group of brownies are in town to buy goods from the &quot;big folk&quot;</value>
+            <value>A fat gnome clerk walks past with an apprentice, overburdened by books and papers in tow</value>
+            <value>A gnome running an open air cafeteria is fending off a persistent turnip merchant</value>
+            <value>Garruck has gotten stuck down the town will and a group of gnomes are standing around depating how to get him out. No rush, he was testing a new potion of water-breathing</value>
+            <value>Two gnomes are sitting outside a leather worker's shop sewing new pockets into their leather armor</value>
+            <value>A group of youths with a pilfered pie go running past. You could probably snag it</value>
+            <value>A baker is hawking the finest breads from the window of his shop</value>
+            <value>A wagon full of peddlers is off to try their luck selling gizmos to the dwarves</value>
+            <value>Two gnomish sages are discussing best irrigation practices</value>
+            <value>A gnome is having an intense conversation with a badger on the side of the street</value>
+            <value>A gnomish lord goes past on a sedan chair carried by servants. He's on eye level with you</value>
+            <value>A confused ogre is helping with a local building project. Swears he's a gnome with a growth problem. Could he be telling the truth?</value>
+            <value>You overhear a group of gnomes plotting to build a burrowing machine that will steal all the turnips from the turnip merchant's fields</value>
+            <value>You see a gaggle of gnomes desperately running towards the elven spice merchant, just arrived from distant lands. Many turnips sit abandoned</value>
+            <value region_start="60" region_end="71" region_include="village">A tiny flying machine zips past your ear as you look around the village. It suddenly reverses direction and comes zipping back towards you</value>
+        </table>
+            <member name="Locations" include="locations" />
+            <member name="Gnome" include="gnome" />
+        </category>

@@ -1,0 +1,104 @@
+<category name="Politics" id="politics">
+    <table name="At the center of it all is..." id="politics_center">
+        <value>A mayor's</value>
+        <value region_start="2" region_end="6" region_include="nobleman">A king's</value>
+        <value region_start="2" region_end="7" region_include="noblewoman">A Queen's</value>
+        <value region_start="2" region_end="8" region_include="nobleman">A prince's</value>
+        <value region_start="2" region_end="10" region_include="noblewoman">A princess's</value>
+        <value region_start="2" region_end="7" region_include="noble">A noble's</value>
+        <value region_start="2" region_end="9" region_include="npc">A citizen's</value>
+        <value region_start="2" region_end="7" region_include="guilds">A guild leader's</value>
+    </table>
+    <table name="...relation..." id="politics_relation">
+        <value>Self</value>
+        <value region_start="0" region_end="6" region_include="npc">Parent</value>
+        <value region_start="0" region_end="11" region_include="npc">Grandparent</value>
+        <value region_start="0" region_end="7" region_include="npc">Sibling</value>
+        <value region_start="5" region_end="11" region_include="npc">Best friend</value>
+        <value region_start="8" region_end="15" region_include="npc">Trusted adviser</value>
+        <value region_start="0" region_end="5" region_include="npc">Child</value>
+        <value region_start="0" region_end="6" region_include="npc">Cousin</value>
+        <value region_start="0" region_end="4" region_include="npc">Aunt</value>
+        <value region_start="0" region_end="5" region_include="npc">Uncle</value>
+        <value region_start="0" region_end="6" region_include="npc">Spouse</value>
+        <value region_start="0" region_end="9" region_include="npc">Courtesan</value>
+        <value region_start="9" region_end="14" region_include="guard">Personal guard</value>
+        <value region_start="0" region_end="6" region_include="npc">Nephew</value>
+        <value region_start="0" region_end="5" region_include="npc">Niece</value>
+        <value region_start="0" region_end="16" region_include="npc">Mistress / Lover</value>
+        <value region_start="0" region_end="5" region_include="npc">Rival</value>
+        <value region_start="0" region_end="20" region_include="npc">Handmaiden / Servant</value>
+        <value region_start="7" region_end="12" region_include="npc">Secret lover</value>
+        <value region_start="0" region_end="6" region_include="jester">Jester</value>
+        <value region_start="0" region_end="6" region_include="__noun__">Doctor</value>
+        <value region_start="0" region_end="4" region_include="cook">Cook</value>
+    </table>
+    <table name="Who is trying to..." id="politics_trying">
+        <value>Start a coup</value>
+        <value>Corrupt the leader</value>
+        <value>Frame the leader for corruption</value>
+        <value>Frame the leader for inappropriate relations</value>
+        <value>Frame the leader for murder</value>
+        <value>Frame the leader for embezzlement</value>
+        <value>Control the leader from the behind the scenes</value>
+        <value>Gain more power</value>
+        <value>Gain more influence</value>
+        <value>Defect</value>
+        <value>Assassinate the leader</value>
+        <value region_start="14" region_end="19" region_include="npc">Assassinate a rival</value>
+        <value>Discredit the leader</value>
+        <value region_start="12" region_end="17" region_include="npc">Discredit a rival</value>
+        <value>Force a war to start</value>
+        <value>Commit genocide</value>
+        <value>Usurp the throne</value>
+        <value>Steal money from the people</value>
+        <value region_start="21" region_end="28" region_include="nation">Steal money from the kingdom</value>
+        <value>Collect personal favors</value>
+        <value>Find a position of power for all of their friends and family</value>
+        <value region_start="15" region_end="19" region_include="__noun__">Play a massive joke on the people</value>
+        <value region_start="38" region_end="53" region_include="__noun__">Ingratiate themselves with a group of powerful people</value>
+    </table>
+    <table name="...who will..." id="politics_will">
+        <value>Trade favors for sex</value>
+        <value>Trade favors for money</value>
+        <value>Trade favors for information</value>
+        <value>Trade favors for favors</value>
+        <value>Trade favors for drugs</value>
+        <value>Trade favors for influence</value>
+        <value>Only assist family</value>
+        <value>Only assist friends</value>
+        <value>Only lookout for themselves</value>
+        <value>Do anything to achieve their goal</value>
+    </table>
+    <table name="...and is motivated because..." id="politics_motivation">
+        <value region_start="2" region_end="15" region_include="npc">A family member was killed</value>
+        <value region_start="2" region_end="8" region_include="npc">A friend was killed</value>
+        <value>They are compelled by greed</value>
+        <value>They are compelled by power</value>
+        <value region_start="45" region_end="59" region_include="secretsociety">They are being manipulated / threatened by a secret society</value>
+        <value region_start="45" region_end="53" region_include="npc">They are being manipulated / threatened by a relative</value>
+        <value region_start="45" region_end="59" region_include="npc">They are being manipulated / threatened by a personal rival</value>
+        <value region_start="56" region_end="61" region_include="npc">They are being manipulated / threatened by the leader's rival</value>
+        <value region_start="45" region_end="59" region_include="nation">They are being manipulated / threatened by a foreign nation</value>
+        <value region_start="45" region_end="50" region_include="fiend">They are being manipulated / threatened by a fiend</value>
+        <value>A warped sense of patriotism (It's for your own good!)</value>
+        <value region_start="27" region_end="34" region_include="__noun__">They wish to regain a lost station</value>
+        <value region_start="35" region_end="41" region_include="nation">It's necessary for the good of the nation</value>
+        <value>They are simply bored</value>
+        <value region_start="12" region_end="15" region_include="deity">It is their god's will</value>
+    </table>
+    <table name="Your heard about this from..." id="politics_rumor">
+        <value region_start="14" region_end="28" region_include="secretsociety">A member of a secret society</value>
+        <value region_start="0" region_end="7" region_include="npc">Someone close to the leader</value>
+        <value region_start="0" region_end="7" region_include="npc">Someone close to the leader's relation</value>
+        <value>A secretive observer</value>
+        <value>It's common knowledge</value>
+        <value region_start="12" region_end="18" region_include="tavern">Rumors in a tavern</value>
+        <value>A note left in the night</value>
+        <value>From the person themselves</value>
+        <value>From the victim of the plot</value>
+        <value>From whispers from the grave</value>
+        <value region_start="7" region_end="14" region_include="nation">From a foreign national with their own interests</value>
+        <value region_start="23" region_end="27" region_include="politics">From someone who's own plot is being hampered by this plot.</value>
+    </table>
+</category>

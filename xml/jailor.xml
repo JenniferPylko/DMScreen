@@ -1,0 +1,34 @@
+<category name="Jailer" id="jailor">
+    <name name="The jailer's name is..."/>
+    <include name="Race" include="npc_race" />
+    <table name="The jailer is..." id="is">
+        <value>A coward who likes to act tough</value>
+        <value>A bully in every sense of the word</value>
+        <value>A man who grew up among criminals</value>
+        <value>A sadistic thug</value>
+        <value>A mild-mannered man of faith</value>
+        <value>A resentful cripple</value>
+    </table>
+    <table name="The jailer is concerned about..." id="concerned">
+        <value region_start="22" region_end="36" region_include="__noun__">Rumors of an upcoming escape attempt</value>
+        <value region_start="29" region_end="37" region_include="prisoner">Losing his job after a messy prisoner death</value>
+        <value region_start="7" region_end="17" region_include="prisoner">Facing a prisoner who creeps him out</value>
+        <value>Ways to make a litter extra silver</value>
+    </table>
+    <table name="The jailer is looking to..." id="looking">
+        <value>Abuse someone who is defenseless</value>
+        <value>Make himself feel powerful</value>
+        <value region_start="25" region_end="33" region_include="prisoner">Reach out to a disturbed prisoner</value>
+        <value>Swap grisly tales</value>
+    </table>
+    <table name="The jailer carries..." id="carries">
+        <value>A large rink of keys</value>
+        <value>A large knife and a sap</value>
+        <value>A pail of cold porridge from the kitchens</value>
+        <value>Loot seized from several prisoners</value>
+        <value>A pocket-sized prayer book</value>
+        <value>A spiked club</value>
+        <value>A sourge of whip</value>
+        <value>A wineskin</value>
+    </table>
+</category>

@@ -1,0 +1,108 @@
+<category name="Jungle" id="jungle">
+    <table name="Interesting Location: You find..." id="find">
+        <value region_start="2|18" region_end="8|27" region_include="jungle_cavern|__noun__">A cavern behind a waterfall.</value>
+        <value region_start="13" region_end="24" region_include="jungle_riverboat">The wreck of a riverboat.</value>
+        <value region_start="2" region_end="6" region_include="jungle_cavern">A cave behind a curtain of tangled of vines.</value>
+        <value region_start="2" region_end="6" region_include="jungle_hole">A hole beneath a large tree.</value>
+        <value region_start="14" region_end="20" region_include="jungle_hole">A large, damp burrow.</value>
+        <value region_start="12" region_end="19" region_include="village">A primitive village.</value>
+        <value region_start="8" region_end="13" region_include="jungle_house">A stilt house.</value>
+        <value region_start="19" region_end="27" region_include="jungle_camp">A recently vacated campsite.</value>
+        <value region_start="20" region_end="28" region_include="jungle_cavern">A hastily abandoned campsite.</value>
+        <value>A ruined ancient stone house overgrown with vines.</value>
+        <value region_start="17" region_end="23" region_include="temple">A ruined ancient temple.</value>
+        <value region_start="0" region_end="5" region_include="jungle_ruins">Ruins of an ancient city.</value>
+    </table>
+    <table name="Distinguising Landmark: You see..." id="landmark">
+        <value>A tree bearing large, yellow fruit.</value>
+        <value>A tree bearing small, red fruit.</value>
+        <value>A large, hollow tree.</value>
+        <value>A pair of trees from the same root.</value>
+        <value>A tree growing over a boulder.</value>
+        <value>A thicket of brambles.</value>
+        <value>A wide, shallow pool at a river bend.</value>
+        <value>A wide, shallow river with a single large tree growing in its main channel.</value>
+        <value>A moss-covered boulder in the midst of a gently flowing river.</value>
+        <value>Several gentle rapids.</value>
+        <value>A pair of dangerous rapids.</value>
+        <value>A large, gnarled log half-buried in mud.</value>
+        <value>A tree felled by lightning.</value>
+        <value>A colony of colorful mushrooms.</value>
+        <value>An enormous mushroom.</value>
+        <value>A large rock with a mossy overhang.</value>
+        <value>A large, hollow log.</value>
+        <value>A large, rotting log.</value>
+        <value>An old tree with an oddly shaped knot.</value>
+        <value>The stump of an enormous tree.</value>
+    </table>
+    <table name="Feature: You notice..." id="feature">
+        <value>A flock of birds scatter.</value>
+        <value>A woodpecker drumming.</value>
+        <value>A bird singing sweetly.</value>
+        <value>A brightly colored bird flies away.</value>
+        <value>Birds chirping.</value>
+        <value region_start="2" region_end="7" region_include="monkey">A monkey drops a fruit or nut from above.</value>
+        <value region_start="2" region_end="7" region_include="monkey">A monkey leaps from one tree to another.</value>
+        <value>Large dragonflies buzzing about.</value>
+        <value>Cicadas chirping loudly.</value>
+        <value>Butterflies fluttering about.</value>
+        <value>A centipede scuttles beneath a rock.</value>
+        <value>An eerie silence.</value>
+        <value>Rain falls lightly.</value>
+        <value>The heat and humidity increase.</value>
+        <value>The sound of leaves rustling above.</value>
+        <value>A vine gently swaying.</value>
+        <value>A small snake slithers off.</value>
+        <value>Brightly, colored berries.</value>
+        <value>The scent of flowers.</value>
+        <value>The smell of decay.</value>
+    </table>
+    <table name="Encounters: You come upon..." id="encounter">
+        <value>Torrential rains.</value>
+        <value>A place where you sink into the mud.</value>
+        <value>A predatory plant with grasping vines.</value>
+        <value region_start="15" region_end="18" region_include="cat">A large jungle cat.</value>
+        <value region_start="16" region_end="19" region_include="cat">A small hunting cat.</value>
+        <value region_start="9" region_end="14" region_include="spider">A giant spider.</value>
+        <value>Several giant spiders.</value>
+        <value>A troop of protective apes.</value>
+        <value>A lone great ape.</value>
+        <value>A rare flightless bird.</value>
+        <value region_start="13" region_end="18" region_include="undead">A malevolent ghost.</value>
+        <value>A pair of lizardfolk hunters.</value>
+        <value>A lizardfolk shaman.</value>
+        <value>A yuan-ti patrol.</value>
+        <value>An ogre.</value>
+        <value>A pair of primitive scouts.</value>
+        <value>A skilled primitive hunter.</value>
+        <value region_start="7" region_end="12" region_include="witch">An old witch.</value>
+        <value>A curious herbalist.</value>
+        <value>A ruthless big-game hunter.</value>
+    </table>
+    <table name="Flower Color: The flowers are..." id="flower_color">
+        <value>Deep crimson.</value>
+        <value>Blood red.</value>
+        <value>Iridescent orange.</value>
+        <value>Pale yellow.</value>
+        <value>Brilliant yellow.</value>
+        <value>Dark bluish purple.</value>
+        <value>Pale purple.</value>
+        <value>Dark purple.</value>
+        <value>Magenta.</value>
+        <value>Shockingly pink.</value>
+        <value>Pale pink.</value>
+        <value>White.</value>
+    </table>
+    <table name="Flower Shape: The petals are..." id="flower_shape">
+        <value>Radiating in a spiraling pattern</value>
+        <value>Radiating from a hemispherical center</value>
+        <value>Radiating from a conical center</value>
+        <value>Radiating in a narrow stalk in the center</value>
+        <value>Paired and curling back from the center</value>
+        <value>Triangular and flat</value>
+        <value>Triangular and curled.</value>
+        <value>Ellipsoidal and flat</value>
+        <value>Ellipsoidal and curled</value>
+        <value>The largest petals you’ve ever seen</value>
+    </table>
+</category>

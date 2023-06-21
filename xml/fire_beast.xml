@@ -1,0 +1,44 @@
+            <category name="Fire Beast" id="fire_beast">
+                <table name="The fire beast is..." id="is">
+                    <value>A basilisk.</value>
+                    <value>A bat.</value>
+                    <value>A beetle.</value>
+                    <value>A drake.</value>
+                    <value>A fox.</value>
+                    <value>A griffon.</value>
+                    <value>A hawk.</value>
+                    <value>A hound.</value>
+                    <value>A lizard.</value>
+                    <value>A scorpion.</value>
+                    <value>A serpent.</value>
+                    <value>A worm.</value>
+                </table>
+                <table name="The beast has..." id="has">
+                    <value>Glowing red eyes.</value>
+                    <value>Bright, golden eyes.</value>
+                    <value>Reddish skin around the face.</value>
+                    <value>A blackened beak or set of teeth.</value>
+                    <value>An burnt odor.</value>
+                    <value>An odor of brimstone.</value>
+                    <value>An aura of flickering flames.</value>
+                    <value>An aura of choking smoke.</value>
+                </table>
+                <table name="..and..." id="has_and">
+                    <value>Exhales smoke when it breathes.</value>
+                    <value>Can exhale a spout of flame.</value>
+                    <value>Gives off an uncomfortable amount of heat.</value>
+                    <value>Leaves a trail of flames in its wake.</value>
+                    <value>Can set things ablaze with a touch.</value>
+                    <value>Can disappear in a blinding flash of fire.</value>
+                    <value>Explodes in a fiery cloud if it is slain.</value>
+                    <value>Sheds dim, orange light.</value>
+                </table>
+                <table name="The beast is looking for..." id="looking">
+                    <value>Something to burn and to consume.</value>
+                    <value>A lair with walls that can withstand flames.</value>
+                    <value region_start="3|29" region_end="13|35" region_include="__noun__|__noun__">An individual marked by its master.</value>
+                    <value> region_start="31" region_end="37" region_include="__noun__"An opportunity to impress its master.</value>
+                    <value region_start="34" region_end="44" region_include="__noun__">The scorched skull of a long-dead fire titan.</value>
+                    <value region_start="3" region_end="7" region_include="__noun__">An item that grants mastery over flames.</value>
+                </table>
+            </category>

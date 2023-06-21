@@ -1,0 +1,76 @@
+        <category name="Woodsman" id="woodsman">
+            <name name="The woodsman's name is..."/>
+            <include name="Race" include="npc_race" />
+            <table name="Facial feature: The woodsman has...">
+                <value>A nose that's been broken</value>
+                <value>A twinkle in his eye</value>
+                <value>A sour grimace</value>
+                <value>A face like stone</value>
+                <value>Eyes that do not smile</value>
+                <value>A long, hooked nose</value>
+                <value>A scar across the brow</value>
+                <value>A neatly trimmed beard</value>
+                <value>A long, tangled beard</value>
+                <value>A thick, lush mistache</value>
+            </table>
+            <table name="Apparel: The woodsman wears...">
+                <value>Scuffed leather boots</value>
+                <value>Hardy boots and a large belt-buckle</value>
+                <value>A boot with a hole in the toe</value>
+                <value>A thick bear fur cloak</value>
+                <value>A thick otter fur cloak</value>
+                <value>A thick sable fur cloak</value>
+                <value>A thick wolf fur cloak</value>
+                <value>A rough-spun cloak of sable or grey</value>
+                <value>Pants with patched knees</value>
+                <value>A beaver fur cap</value>
+                <value>A fox fur cap</value>
+                <value>A raccoon fur cap</value>
+                <value>A skunk fur cap</value>
+                <value>An open shirt and a very hairy chest</value>
+            </table>
+            <table name="Mannerism: The woodsman has...">
+                <value>A heart laugh</value>
+                <value>A forced laugh</value>
+                <value>An easy grin</value>
+                <value>Shift eyes</value>
+                <value>A habit of looking away when speaking</value>
+                <value>A slow way of speaking</value>
+                <value>Few things to say</value>
+                <value>A habit of staring</value>
+            </table>
+            <table name="Profession: The woodsman is...">
+                <value>A strange hearbalist</value>
+                <value>A scholarly botanist</value>
+                <value>A skilled hunter</value>
+                <value>A desperate poacher</value>
+                <value region_start="2" region_end="10" region_include="criminal">A fugitive from justice</value>
+                <value>A reclusive trapper</value>
+                <value>A poor woodcitter</value>
+                <value>A bearded lumberjack</value>
+            </table>
+            <table name="Goal: The woodsman is looking to...">
+                <value region_start="17" region_end="22" region_include="beast">Track an unusual beast</value>
+                <value region_start="24" region_end="29" region_include="beast">Find the lair of a rare beast</value>
+                <value region_start="25" region_end="31" region_include="__noun__">Find a spot where a rare flower grows</value>
+                <value>Find a place where game is plentiful</value>
+                <value>find a place where the trees grow tall</value>
+                <value>Purchase salt, spices, and other hard-to-come-by supplies</value>
+                <value>Sell some of his wares</value>
+                <value>Learn some new campfire recipes</value>
+                <value>Swap tales and rumors</value>
+                <value>Meet a nice girl and settle down</value>
+            </table>
+            <table name="Possessions: The woodsman carries or wears...">
+                <value>A sturdy hatchet</value>
+                <value>A bundle of firewood</value>
+                <value>A spear of walking staff</value>
+                <value>A large knife and a hunting trap</value>
+                <value>A finely made longbow</value>
+                <value region_start="2" region_end="8" region_include="__noun__">A trophy or piece of a wild beast</value>
+                <value>An unusual, curved blade</value>
+                <value>A double-bladed axe</value>
+                <value>A memento from a faraway sweetheart</value>
+                <value>A cotton handkerchief</value>
+            </table>
+        </category>

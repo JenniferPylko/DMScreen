@@ -1,0 +1,221 @@
+<category name="World" id="world">
+    <table name="Size: The world is..." wb_required="true" short="Size" id="world_size" instruction="calculate_world_size">
+        <value calcval="8">Absolutely Massive. Generations could explore the world, and never see everything</value>
+        <value calcval="7">Giant. There are many world maps, showing different parts of the world, but none are complete</value>
+        <value calcval="6">Huge. With concerted effort over many generations, a world map can be created, with many gaps</value>
+        <value calcval="5">Large. The world is known, but no one man can see it all in a lifetime</value>
+        <value calcval="4">Medium. While most people don't know then extend of the world, scholars have been able to build some good maps</value>
+        <value calcval="3">Small. Most people have heard of most parts of the world, even if they have never travelled there</value>
+        <value calcval="2">Tiny. World-wide commerce is not unheard of</value>
+        <value calcval="1">Minuscule. The common person could get from one side of the world to the other.</value>
+    </table>
+    <table name="Land Masses: The world is composed of..." wb_required="true" short="Land" id="world_land">
+        <value calcval="3">Mostly ocean, with the occasional small island</value>
+        <value calcval="0+1">A single continent, amidst a massive ocean containing the occasional island</value>
+        <value calcval="1">Several distinct continents</value>
+        <value calcval="0+1">A single land mass, an no ocean to speak of</value>
+        <value calcval="2">Many small to medium sized islands speckled throughout the ocean</value>
+        <value calcval="0+2">Two distinct continents</value>
+        <value calcval="0+1">A ring of land, with an ocean in the center</value>
+        <value calcval="0+1">A single land mass with many massive fresh-water lakes</value>
+        <value calcval="1">Many continents, some joined to others</value>
+        <value calcval="1">One large continent, surrounded by a few smaller continents</value>
+        <value calcval="1">Two to three large continents, and a few smaller continents</value>
+        <value calcval="0">No land. The entire world is one giant ocean</value>
+    </table>
+    <table name="Climate: The world is..." short="Climate" id="world_climate">
+        <value calcval="4">Diverse. There exists a little bit of any type of climate somewhere in the world</value>
+        <value calcval="1">Ice-age. The world is mostly covered in tundra</value>
+        <value calcval="2">Hot. A cold spot above-ground is difficult to find</value>
+        <value calcval="1">Dry. The world is devoid of rain</value>
+        <value calcval="2">Primitive. The world is lush, and mostly uninhabited.</value>
+        <value calcval="1">A post-apocalyptic wasteland. The world is pock marked with uninhabitable regions</value>
+        <value calcval="2">Bi-polar. A single day/night cycle can go from extremely hot, to extremely cold</value>
+        <value calcval="1">Volcanic. Mountains and volcanoes are not uncommon, spewing gasses into the atmosphere</value>
+        <value calcval="4">Lush. It rains frequently. Jungles cover must of the world, and other regions are a vibrant green</value>
+        <value calcval="2">Stormy. The world is mostly under a cloud cover, with violent winds, rains, thunder and lightning.</value>
+        <value calcval="3">Windy. High-velocity winds scour the land</value>
+        <value calcval="4">Mild. There exists a comfortable amount of sun, rain and cloud-cover.</value>
+    </table>
+    <table name="Magic in the world is..." short="Magic" id="world_magic">
+        <value>Non-existent</value>
+        <value>Extremely rare. Though there are a few practitioners of magic, it is mostly in the realm of rumour or legend.</value>
+        <value>Rare. There is usually only one or two people in a region that practice the magical arts</value>
+        <value>Uncommon. Magic is real, but magical feats are considered impressive.</value>
+        <value>Common. It's not unusual to see magic in use</value>
+        <value>Extremely common. Magic is a part of daily life.</value>
+        <value>Powering everything. Magic is so inundated in every contraption, it seems futuristic</value>
+        <value>Wild. Results are never predictable, and strange things occur naturally</value>
+    </table>
+    <table name="Technology in the world is..." short="Technology" id="world_tech">
+        <value>Primitive. A pulley system is considered complex</value>
+        <value>Technology comes from relics of an age past. No one really understands how it works</value>
+        <value>Basic. There is no electricity nor steam.</value>
+        <value>Steam-powered. Steam powered contraptions can be found</value>
+        <value>Slightly advanced. Gunpowder can be found, as well as steam power contraptions</value>
+        <value>Advanced. Electricity has been discovered</value>
+    </table>
+    <table name="A unique characteristic of this world is..." short="Flavor" id="world_flavor">
+        <value region_start="19" region_end="24" region_include="world">There are multiple moons</value>
+        <value region_start="19" region_end="23" region_include="__noun__">There are multiple suns</value>
+        <value>The sun rarely sets</value>
+        <value>The world is in the midts of an apocalypse.</value>
+        <value>The world is hollow. Entire civilizations can be found inside the world</value>
+        <value>Most people live underground</value>
+        <value>The air is toxic</value>
+        <value>The gods have disappeared</value>
+        <value region_start="65" region_end="68" region_include="deity">The pantheon of gods have been replaced by a single all-powerful god</value>
+        <value region_start="2" region_end="10" region_include="__noun__">A pandemic ravages the world</value>
+        <value>The sun is red</value>
+        <value>The sun is blue</value>
+        <value>The sun is green</value>
+        <value>The sun is white</value>
+        <value>The sun is black</value>
+        <value>The sun is violet</value>
+        <value>The sun is purple</value>
+        <value>The sun is prismatic</value>
+        <value region_start="2" region_end="14" region_include="__noun__">A civilization lives on the moon</value>
+        <value>The gods walk among the men</value>
+        <value>There is no sun. The world is shrouded in darkness.</value>
+        <value>There is an over-abundance of gold</value>
+        <value>There is an over-abundance of silver</value>
+        <value>There is an over-abundance of copper</value>
+        <value>There is an over-abundance of lead</value>
+        <value>There is an over-abundance of granite</value>
+        <value>There is an over-abundance of adamantine</value>
+        <value>There is an over-abundance of titanium</value>
+        <value>There is an over-abundance of iron</value>
+        <value>There is an over-abundance of aluminium</value>
+        <value>There is an over-abundance of tin</value>
+        <value>There is an over-abundance of salt</value>
+        <value>There is an over-abundance of sulfur</value>
+        <value>There is an over-abundance of cobalt</value>
+        <value>There is an over-abundance of nickle</value>
+        <value>There is an over-abundance of zinc</value>
+        <value>There is an over-abundance of tungsten</value>
+        <value>There is an over-abundance of platinum</value>
+        <value>There is an over-abundance of electrum</value>
+        <value>There is an over-abundance of mercury</value>
+        <value>There is an over-abundance of uranium</value>
+        <value>There is a scarcity of gold</value>
+        <value>There is a scarcity of silver</value>
+        <value>There is a scarcity of copper</value>
+        <value>There is a scarcity of lead</value>
+        <value>There is a scarcity of granite</value>
+        <value>There is a scarcity of adamantine</value>
+        <value>There is a scarcity of titanium</value>
+        <value>There is a scarcity of iron</value>
+        <value>There is a scarcity of aluminium</value>
+        <value>There is a scarcity of tin</value>
+        <value>There is a scarcity of salt</value>
+        <value>There is a scarcity of sulfur</value>
+        <value>There is a scarcity of cobalt</value>
+        <value>There is a scarcity of nickle</value>
+        <value>There is a scarcity of zinc</value>
+        <value>There is a scarcity of tungsten</value>
+        <value>There is a scarcity of platinum</value>
+        <value>There is a scarcity of electrum</value>
+        <value>There is a scarcity of mercury</value>
+        <value>There is a scarcity of uranium</value>
+        <value>Seasons last for a very long time</value>
+        <value>Rain is toxic</value>
+        <value>No child has been born in a generation</value>
+        <value>No one lives after attaining adulthood</value>
+        <value>It is flat</value>
+    </table>
+    <table name="Races: Naturally occurring races include..." short="Races" id="world_races">
+        <value>Only humans</value>
+        <value>Only a single type of demi-human</value>
+        <value>Humans and demi-humans</value>
+        <value>Humans, demi-humans, and extra-planar beings</value>
+        <value>Only humans, and a single type of demi-humans</value>
+        <value>Demi-humans are common, but humans are rare</value>
+        <value>Sub-humans, such as goblins, and orcs</value>
+        <value>Evolved, intelligent monsters along side humans and demi-humans</value>
+    </table>
+    <table name="A cataclysm that faced this world in the past was..." short="Recent Cataclysm" id="world_cataclysm">
+        <value>Meteors that ravaged the land</value>
+        <value>An ice-age, of which only the strong could survive</value>
+        <value>A world-wide flood that only the smart could survive</value>
+        <value>A world-wide dust storm that lasted for a generation</value>
+        <value>An advanced civilization that destroyed their own planet, leaving only what you see</value>
+        <value>Famine wracked the land for many generations</value>
+        <value>A war between gods spilled out into the material plane, and nearly destroyed it</value>
+        <value>A war between dragons decimated any semblance of society</value>
+        <value>Invasions from an extra-planar species</value>
+        <value>The birth of magic.</value>
+        <value>Magic became wild and unpredictable</value>
+        <value>Overpopulation. There just weren't enough resources to support all of the people living in the world, and 99% of them died of hunger</value>
+        <value>A man made super-weapon that destroyed the world</value>
+        <value>The core of the world became unstable, and it was being torn asunder.</value>
+        <value>Dragons were born or discovered and tried to take over the world.</value>
+        <value>Mind-flayers were born or discovered and tried to take over the world.</value>
+        <value>Dark-elves were born or discovered and tried to take over the world.</value>
+        <value>A vampire was born or discovered and tried to take over the world.</value>
+        <value>A lich was born or discovered and tried to take over the world.</value>
+        <value>A fiend was born or discovered and tried to take over the world.</value>
+        <value>A celestial was born or discovered and tried to take over the world.</value>
+        <value>A beholder was born or discovered and tried to take over the world.</value>
+        <value>Dinosaurs were born or discovered and tried to take over the world.</value>
+        <value>Dopplegangers were born or discovered and tried to take over the world.</value>
+        <value>Titans was born or discovered and tried to take over the world.</value>
+        <value>Mimics were born or discovered and tried to take over the world.</value>
+        <value>The living never stayed dead, and the undead nearly overran everything</value>
+        <value>A fool wizard performed a wish spell that tore at the very fabric of existence</value>
+        <value>The material plane crossed with the astral plane causing the planes to bleed into each other</value>
+        <value>The material plane crossed with the ethereal plane causing the planes to bleed into each other</value>
+        <value>The material plane crossed with The Feywild plane causing the planes to bleed into each other</value>
+        <value>The material plane crossed with Shadowfell plane causing the planes to bleed into each other</value>
+        <value>The material plane crossed with The elemental plane of air causing the planes to bleed into each other</value>
+        <value>The material plane crossed with The elemental plane of water causing the planes to bleed into each other</value>
+        <value>The material plane crossed with the elemental plane of fire causing the planes to bleed into each other</value>
+        <value>The material plane crossed with the elemental plane of earth causing the planes to bleed into each other</value>
+        <value>The material plane crossed with Pandemonium causing the planes to bleed into each other</value>
+        <value>The material plane crossed with The Abyss causing the planes to bleed into each other</value>
+        <value>The material plane crossed with The Blessed Fields of Elysium causing the planes to bleed into each other</value>
+        <value>The material plane crossed with The Wilderness of the Beastlands causing the planes to bleed into each other</value>
+        <value>The material plane crossed with The Olympian Glades of Arborea causing the planes to bleed into each other</value>
+        <value>The material plane crossed with The Heroic Domains of Ysgard causing the planes to bleed into each other</value>
+        <value>The material plane crossed with The Ever-Changing Chaos of Limbo causing the planes to bleed into each other</value>
+        <value>The material plane crossed with The Tarterian Depths of Carceri causing the planes to bleed into each other</value>
+        <value>The material plane crossed with The Gray Waste of Hades causing the planes to bleed into each other</value>
+        <value>The material plane crossed with The Bleak Eternity of Gehenna causing the planes to bleed into each other</value>
+        <value>The material plane crossed with The Nine Hells of Baator causing the planes to bleed into each other</value>
+        <value>The material plane crossed with The Infinite Battlefield of Acheron causing the planes to bleed into each other</value>
+        <value>The magnetic polar fields switched</value>
+        <value>The world was split down the middle, now two worlds orbit each other in close proximity.</value>
+    </table>
+    <table name="The world was created by (Individual legends may vary)..." short="Creation" id="world_creation">
+        <value>Billions of years of evolution</value>
+        <value>A single creator god</value>
+        <value>A momentary merge of the elemental planes</value>
+        <value>As a peace offering between two warring gods</value>
+        <value>As an offering of love from one god in love with another</value>
+        <value>By a young, defiant god attempting to create something unheard of</value>
+        <value>By an ancient civilization searching for the question to the answer of life, the universe, and everything</value>
+        <value>It was hatched from the egg of a world-bearing chicken</value>
+        <value>It wasn't. It has always been, and will always be</value>
+        <value>It is one of many created by an immortal governing council.</value>
+        <value>As the result of a wish spell</value>
+        <value>It only exists in a snow globe created by a child, who in turn lives in a snow globe created by a child, who in turn...</value>
+        <value>It started in the realm of imagination and become wholly realized through a chance run-in with the astral plane.</value>
+        <value>A council of dragons pieced it together from favored parts of their home worlds</value>
+        <value>It was created as an experiment run-amok by a god</value>
+        <value>World creation was a pass-time of bored gods, who frequently made worlds, trying to one-up each other</value>
+        <value>It was created as one of many experiments by a council of gods trying to discover the soul</value>
+        <value>It was created as one of many experiments by a council of gods trying to discover true sentience and free-will</value>
+        <value>It was created as one of many experiments by a council of gods trying to discover the meaning of love</value>
+        <value>It was created as one of many experiments by a council of gods trying to discover a purpose for their eternity</value>
+        <value>It was created as one of many experiments by a council of gods trying to discover a new form of magic</value>
+        <value>It was created as one of many experiments by a council of gods trying to discover a superior species that would some day replace them</value>
+        <value>It was created as one of many experiments by a council of gods trying to discover a superior species that would some day serve them</value>
+        <value>It was created as one of many experiments by a council of gods trying to discover a superior species that would be put against another council's species in a game of war</value>
+        <value>It was created as one of many experiments by a council of gods trying to discover a non-naturally occurring material, such as plastic</value>
+        <value>Two worlds colliding together</value>
+        <value>It was born in the belly of a god-dragon, where her god-children warred, and was later cut out of her belly when one of her children committed matricide</value>
+        <value>A world-dragon was butchered and its parts were turned into the sky, water, land, etc.</value>
+    </table>
+    <member name="Continent" include="continent" />
+    <member name="Nation" include="nation" />
+    <member name="Wilderness" include="wilderness" />
+</category>

@@ -1,0 +1,95 @@
+        <category name="Dinner among Swampfolk" id="dinner_swamp">
+            <table name="Tonight, you dine on..." id="dine">
+                <patterns>
+                    <pattern>{prep} {dish}</pattern>
+                </patterns>
+                <list type="prep">
+                    <item>Stewed</item>
+                    <item>Roasted</item>
+                    <item>Skewered</item>
+                    <item>Charred</item>
+                    <item>Smoked</item>
+                    <item>Grilled</item>
+                    <item>Sauteed</item>
+                    <item>Battered</item>
+                    <item>Salted</item>
+                    <item>Peppered</item>
+                    <item>Pickled</item>
+                    <item>Fried</item>
+                </list>
+                <list type="dish">
+                    <item>bass</item>
+                    <item>catfish</item>
+                    <item>crayfish</item>
+                    <item>crocodile</item>
+                    <item>eel</item>
+                    <item>prawns</item>
+                    <item>snake</item>
+                    <item>swamp rat</item>
+                    <item>frog</item>
+                    <item>gar</item>
+                    <item>duck</item>
+                    <item>pelican</item>
+                    <item>sunfish</item>
+                    <item>baby eel</item>
+                    <item>lizard</item>
+                    <item>boar</item>
+                    <item>turtle</item>
+                    <item>clams</item>
+                    <item>oysters</item>
+                    <item>carp</item>
+                </list>
+            </table>
+            <table name="...with..." id="dine_with">
+                <value>Potatoes.</value>
+                <value>Red cabbage.</value>
+                <value>Leeks.</value>
+                <value>Chickpeas.</value>
+                <value>Corn.</value>
+                <value>String beans.</value>
+                <value>Red beans.</value>
+                <value>White beans.</value>
+                <value>Black beans.</value>
+                <value>Leafy greens.</value>
+                <value>Bitter greens.</value>
+                <value>Chopped tomatoes.</value>
+            </table>
+            <table name="...and..." id="dine_and">
+                <value>Sweet onions.</value>
+                <value>Green onions.</value>
+                <value>Mushrooms.</value>
+                <value>Sweet peppers.</value>
+                <value>Hot peppers.</value>
+                <value>Fire peppers.</value>
+                <value>Lemon.</value>
+                <value>Tomato sauce.</value>
+                <value>Pecans.</value>
+                <value>Mixed berries.</value>
+            </table>
+            <table name="Side dish..." id="side">
+                <value>Crusty bread.</value>
+                <value>Honey cake.</value>
+                <value>Corn bread.</value>
+                <value>Oat cake.</value>
+                <value>Rum cake.</value>
+                <value>Fluffy biscuit.</value>
+                <value>Hard biscuit.</value>
+                <value>Crocodile sausage.</value>
+                <value>Dried fish.</value>
+                <value>Bacon.</value>
+                <value>Fried egg.</value>
+                <value>Turtle soup.</value>
+            </table>
+            <table name="Beverage..." id="beverage">
+                <value>Black tea.</value>
+                <value>Sweet tea.</value>
+                <value>Pale ale.</value>
+                <value>Skunky ale.</value>
+                <value>Strong wine.</value>
+                <value>Sweet wine.</value>
+                <value>Absinthe.</value>
+                <value>Spiced rum.</value>
+                <value>Rum punch.</value>
+                <value>Whisky.</value>
+            </table>
+        </category>

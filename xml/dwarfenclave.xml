@@ -1,0 +1,26 @@
+<category name="Dwarf Enclave" id="dwarfenclave">
+    <name name="The enclave's name is..." src="cities" />
+    <table name="Vignette, encounters, and color" id="vignette">
+        <value region_start="0" region_end="10" region_include="merchant">A merchant loading up on his wares for a long journey</value>
+        <value>A brewer rolling a large barrel down the street to a tavern</value>
+        <value>A group of miners singing a work song with a rhythmic cadence</value>
+        <value region_start="2" region_end="7" region_include="smith">A smith pounding hot metal at an open air forge</value>
+        <value region_start="0" region_end="18" region_include="military">A group of militia practicing formation fighting</value>
+        <value region_start="0" region_end="18" region_include="military">A group of militia discussing the weak points on a giant's body</value>
+        <value>A crier hawking fine mushrooms</value>
+        <value>A group of unbearded youths fleeing the scene of a mushroom heist</value>
+        <value>A group of dwarves comparing beards and ornaments</value>
+        <value region_start="8" region_end="13" region_include="nobleman">A dwarf noble passes by with a gigantic mustache, ponderous and regal.</value>
+        <value>A tinker mending pots and pans</value>
+        <value>A peddler just returned from distant lands is unloading his wagon to set up a stall</value>
+        <value>A roaring fire surrounded by several dwarves turning meat on spits</value>
+        <value>A dwarf guiding a party fro one of the other races around the community. They receive distrusting stares</value>
+        <value region_start="0" region_end="15" region_include="dwarf/dwarf_is/dwarf_cook">A dwarf butcher moving roasts in and out of a smoke house</value>
+        <value>A shrewish dwarf-wife berating her husband from a window while he chops wood in the yard</value>
+        <value region_start="8|34" region_end="18|43" region_include="dwarf|dwarf">A stout dwarf maid dragging a burly dwarf man off behind a building by his beard with a glint of mischief in her eye</value>
+        <value region_start="24" region_end="31" region_include="village">A dwarf trapper and the village rat catcher, both dressed in pelts, stomp past hauling a small wagon full of cages</value>
+        <value region_start="0" region_end="13" region_include="wizard">An elf wizard enchanting a sword of the finest dwarf make</value>
+        <value>Human envoys from distant lands, decked in gems, awaiting a chance to meet with the leader of the enclave</value>
+    </table>
+    <member name="Locations" include="locations" />
+</category>

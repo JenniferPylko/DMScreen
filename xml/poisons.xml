@@ -1,0 +1,93 @@
+<category name="Poison" id="poisons">
+    <table name="The poison will cause or induce..." id="poison_induce">
+        <value>Wounds to bleed more profusely.</value>
+        <value>A splitting headache.</value>
+        <value>Aches all over the body.</value>
+        <value>Infection in and near open wounds.</value>
+        <value>Fever and chills.</value>
+        <value>Airway constriction and/or shortness of breath.</value>
+        <value>Excess mucus production, making breathing difficult.</value>
+        <value>Blurry vision and/or blindness.</value>
+        <value>A painful rash.</value>
+        <value>Itchy hives.</value>
+        <value>Loss of coordination and/or impaired walking.</value>
+        <value>Weakness in limbs and/or exhaustion.</value>
+        <value>Nausea and/or indigestion.</value>
+        <value>Vomiting and/or diarrhea.</value>
+        <value>Drowsiness and/or loss of consciousness.</value>
+        <value>Memory loss.</value>
+        <value>Inability to focus and/or to think clearly.</value>
+        <value>Nightmares and/or hallucinations.</value>
+        <value>Paranoia and/or insomnia.</value>
+        <value>Impotence, infertility, and/or miscarriage.</value>
+    </table>
+    <table name="The poison is..." id="poison_is">
+        <value>A thick paste.</value>
+        <value>A thin paste.</value>
+        <value>A flaky powder.</value>
+        <value>A fluffy powder.</value>
+        <value>Made of fine crystals.</value>
+        <value>Made of coarse crystals.</value>
+        <value>A pungent potion.</value>
+        <value>A fragrant potion.</value>
+        <value>An odorless potion.</value>
+        <value>A foul-smelling potion.</value>
+        <value>An oily liquid.</value>
+        <value>A thick, gloopy liquid.</value>
+    </table>
+    <table name="The poison's color is..." id="poison_color">
+        <value>Pale green.</value>
+        <value>Dark green.</value>
+        <value>Blue green.</value>
+        <value>Olive green.</value>
+        <value>Yellow.</value>
+        <value>Red.</value>
+        <value>White.</value>
+        <value>Grey.</value>
+        <value>Brown.</value>
+        <value>Black.</value>
+        <value>Blue.</value>
+        <value>Violet.</value>
+    </table>
+    <table name="The main ingredient is harvested from..." id="poison_ingredient">
+        <value>A basilisk or cockatrice.</value>
+        <value>A centipede.</value>
+        <value>A demon.</value>
+        <value>A devil.</value>
+        <value>A dragon or wyvern.</value>
+        <value>A drider or ettercap.</value>
+        <value>A flower or fruit.</value>
+        <value>A fungus</value>
+        <value region_start="3" region_end="7" region_include="oozes">An ooze.</value>
+        <value>A jellyfish or coral.</value>
+        <value>A leaf or grass.</value>
+        <value>A medusa or naga.</value>
+        <value>A metal or salt.</value>
+        <value>A mushroom or mold.</value>
+        <value>A myconid or shrieker.</value>
+        <value>An otyugh or carrion crawler.</value>
+        <value>A scorpion.</value>
+        <value>A nut or seed.</value>
+        <value>A root or tree bark.</value>
+        <value>A snake.</value>
+        <value>A spider.</value>
+    </table>
+    <table name="The poison is prepared by..." id="poison_prepared">
+        <value>Boiling slowly.</value>
+        <value>Boiling rapidly.</value>
+        <value>Brining.</value>
+        <value>Burning</value>
+        <value>Desiccating.</value>
+        <value>Fermenting.</value>
+        <value>Roasting.</value>
+        <value>Smoking.</value>
+    </table>
+    <table name="The poison is most effective when..." id="poison_effective">
+        <value>Ingested with food.</value>
+        <value>Ingested with alcohol.</value>
+        <value>Inhaled deeply.</value>
+        <value>Spread over a large area of the skin.</value>
+        <value>Applied to a weapon that pierces the flesh.</value>
+        <value>Applied to a weapon that slashes the flesh.</value>
+    </table>
+</category>

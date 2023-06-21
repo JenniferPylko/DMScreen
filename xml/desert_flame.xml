@@ -1,0 +1,127 @@
+<category name="Flame-Scorched Desert" id="flamedesert">
+    <table name="Interesting Location: You find..." id="scorcheddesert_interest">
+        <value region_start="2" region_end="8" region_include="flamedesert_cavern">A cavern in a canyon wall</value>
+        <value region_start="2" region_end="6" region_include="flamedesert_cavern">A cave entrance, hidden by a bould</value>
+        <value region_start="2" region_end="6" region_include="flamedesert_hole">A hole under a large boulder.</value>
+        <value region_start="8" region_end="14" region_include="flamedesert_hole">A large burrow.</value>
+        <value region_start="2" region_end="12" region_include="flamedesert_cavern">A small cave next to a dry river bed.</value>
+        <value region_start="12" region_end="16" region_include="flamedesert_tent">A peculiar tent.</value>
+        <value region_start="2" region_end="13" region_include="flamedesert_house">A stone house sheltered by a canyon, gorge, or bluff.</value>
+        <value>Some nomads’ camp.</value>
+        <value>An abandoned stone house.</value>
+        <value region_start="13" region_end="21" region_include="flamedesert_camp">An abandoned campsite.</value>
+        <value region_start="2" region_end="20" region_include="caravan">A merchant caravan’s camp.</value>
+        <value region_start="15" region_end="27" region_include="flamedesert_cavern">An entrance to a rocky cave.</value>
+        <value region_start="0" region_end="11" region_include="flamedesert_cavern">An old mine in a canyon.</value>
+        <value>An active mining camp.</value>
+        <value region_start="2" region_end="9" region_include="village">A village of primitive canyon dwellers.</value>
+        <value region_start="11" region_end="20" region_include="monastery">A secluded monastery.</value>
+        <value region_start="0" region_end="5" region_include="flamedesert_ruins">Ruins of an ancient city.</value>
+        <value region_start="2" region_end="8" region_include="temple">A temple ruin.</value>
+        <value region_start="11" region_end="15" region_include="tomb">An ancient tomb.</value>
+        <value region_start="7" region_end="17" region_include="flamedesert_tower">An old watchtower.</value>
+    </table>
+    <table name="Distinguising Landmark: You see..." id="scorcheddesert_landmark">
+        <value>An oasis with only a puddle of water.</value>
+        <value>An oasis with a burnt tree.</value>
+        <value>An unusually large, prickly desert plant.</value>
+        <value>A pair of prickly plants from the same root.</value>
+        <value>A patch of desert flowers in a shady spot.</value>
+        <value>A patch of coarse grass in the shade of a large boulder.</value>
+        <value>A rocky bluff.</value>
+        <value>A boulder shaped like a face.</value>
+        <value>A pair of identical boulders, side by side.</value>
+        <value>A boulder sitting atop a larger boulder.</value>
+        <value>A small, dry, rocky canyon.</value>
+        <value>A deep, dry, rocky canyon.</value>
+        <value>A dry river bed.</value>
+        <value>A solid bed of rock, formed from a lava flow.</value>
+        <value>A muddy river bed.</value>
+        <value>A ridge of wind-eroded rock.</value>
+        <value>A ridge of jagged rock.</value>
+        <value region_start="25" region_end="33" region_include="__noun__">A mostly-buried, ancient monument.</value>
+        <value>Twelve large stones, deliberately arranged in a ring.</value>
+        <value>A sheer rock wall of volcanic glass.</value>
+    </table>
+    <table name="Feature: You notice..." id="scorcheddesert_feature">
+        <value>A buzzard circles overhead.</value>
+        <value>A vulture screams.</value>
+        <value>A scorpion scuttles away.</value>
+        <value>A large beetle scuttles away.</value>
+        <value>A lizard crawls under a rock.</value>
+        <value>A jackal barks.</value>
+        <value>A snake slithers away.</value>
+        <value>A swarm of locusts buzz past.</value>
+        <value>A rattlesnake sounds.</value>
+        <value>An unusual bird chirps.</value>
+        <value>A gentle breeze blows.</value>
+        <value>The wind blows harder.</value>
+        <value>The wind kicks up dust.</value>
+        <value>Small lose stones tumble down a slope.</value>
+        <value>A prickly plant with scorch marks.</value>
+        <value>A strange desert flower.</value>
+        <value>A dead palm tree.</value>
+        <value>Several small prickly plants.</value>
+        <value>The smell of sulfur in the air.</value>
+        <value>The smell of ash and smoke.</value>
+    </table>
+    <table name="Landscape: The desert is..." id="scorcheddesert_landscape">
+        <value>Rocky</value>
+        <value>Hilly</value>
+        <value>Bleak</value>
+        <value>Rugged</value>
+        <value>Boulder-strewn</value>
+        <value>Forbidding</value>
+        <value>Jagged</value>
+        <value>Wind-swept</value>
+    </table>
+    <table name="Ground: The earth beneath your feet is..." id="scorcheddesert_ground">
+        <value>Sandy</value>
+        <value>Pebbly</value>
+        <value>Cracked</value>
+        <value>Hard-packed</value>
+        <value>Muddy brown</value>
+        <value>Deep red</value>
+        <value>Grey</value>
+    </table>
+    <table name="Encounters: You come upon..." id="scorcheddesert_encounter">
+        <value>A flame snake.</value>
+        <value>A swarm of scorpions.</value>
+        <value>A giant scorpion</value>
+        <value>A giant centipede.</value>
+        <value>A pack of jackals.</value>
+        <value>A hungry jackalwere.</value>
+        <value>A fire drake.</value>
+        <value>The ghost of a traveler.</value>
+        <value>A pair of salamanders.</value>
+        <value>A pair of bandits.</value>
+        <value>An gith monk.</value>
+        <value>A barbarian war band.</value>
+        <value>A phoenix on the wing.</value>
+        <value>A wyvern on the wing.</value>
+        <value>A strange hermit.</value>
+        <value>A lost traveler.</value>
+        <value>A poor nomad.</value>
+        <value>A bold prospector.</value>
+        <value>A conniving fiend.</value>
+        <value>A terrifying dragon.</value>
+    </table>
+    <table name="Hazards/Obstacles: You run into..." id="scorcheddesert_hazard">
+        <value>A rock slide coming down a canyon wall.</value>
+        <value>A boulder rolling down a canyon wall.</value>
+        <value>A rapidly moving lava flow.</value>
+        <value>A slow-moving river of lava.</value>
+        <value>Persistent, strong winds kicking up dust.</value>
+        <value>A sudden, swirling dust storm.</value>
+        <value>A mirage of a city.</value>
+        <value>A mirage of an oasis.</value>
+    </table>
+    <table name="Climate: The rains come to this desert..." id="scorcheddesert_climate">
+        <value>Once a year for a few days straight.</value>
+        <value>On a few days scattered through the year.</value>
+        <value>During the winter months.</value>
+        <value>Never; the land floods briefly once a year.</value>
+        <value>Never; it only rains fire in these lands.</value>
+        <value>Never; this place hasn’t had water in years.</value>
+    </table>
+</category>

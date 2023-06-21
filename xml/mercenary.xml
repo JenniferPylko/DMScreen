@@ -1,0 +1,271 @@
+<category name="Mercenary" id="mercenary">
+    <name name="The mercenary's name is..."/>
+    <include name="Race" include="npc_race" />
+    <table name="This mercenary is..."  id="mercenary_is">
+        <value region_start="11" region_end="17" region_include="outlaw">A grizzled outlaw.</value>
+        <value>A lifelong wanderer.</value>
+        <value>A disillusioned deserter.</value>
+        <value>A bawdy adventurer.</value>
+        <value>A cold professional.</value>
+        <value>A glory-seeking soldier of fortune.</value>
+        <value>A seeker of knowledge and experiences.</value>
+        <value region_start="8" region_end="15" region_include="fighter">A proud warrior on a quest to find a worthy opponent.</value>
+        <value>A commoner looking to make some easy money.</value>
+        <value>A lovable scoundrel.</value>
+        <value>A reputable veteran.</value>
+        <value>A bloodthirsty sadist.</value>
+        <value>An ascended beggar.</value>
+        <value>A hardened refugee.</value>
+        <value region_start="31" region_end="35" region_include="military">A former member of a disbanded army.</value>
+        <value>A devious sellsword.</value>
+        <value>On a quest to cleanse the world of bandits or monsters.</value>
+        <value region_start="16" region_end="24" region_include="soldier">Dishonored city watchman.</value>
+        <value>A runaway slave.</value>
+        <value region_start="0" region_end="10" region_include="merchant">A merchant who has taken up killing</value>
+        <value>A well-trained soldier</value>
+        <value>A self-taught militia veteran</value>
+        <value>A veteran of gladiatorial combat</value>
+        <value>A veteran of warfare</value>
+        <value region_start="2" region_end="10" region_include="prisoner">A prisoner of war</value>
+        <value region_start="12" region_end="20" region_include="prisoner">A political prisoner</value>
+        <value>The son of a poor man</value>
+        <value>A drunk</value>
+        <value region_start="11" region_end="19" region_include="criminal">A fugitive criminal</value>
+        <value region_start="9" region_end="15" region_include="pirate">A former pirate</value>
+        <value region_start="13" region_end="19" region_include="priest">A de-frocked priest</value>
+        <value>A favorite among the ladies</value>
+    </table>
+    <table name="The mercenary's primary skillset is that of..." id="mercenary_skillset">
+        <value region_start="2" region_end="9" region_include="fighter">A warrior</value>
+        <value region_start="2" region_end="11" region_include="barbarian">A barbarian.</value>
+        <value region_start="2" region_end="8" region_include="__noun__">A hunter</value>
+        <value region_start="2" region_end="9" region_include="__noun__">A trapper.</value>
+        <value region_start="2" region_end="7" region_include="rogue">A rogue</value>
+        <value region_start="2" region_end="10" region_include="assassin">A assassin.</value>
+        <value region_start="2" region_end="6" region_include="wizard">A mage</value>
+        <value region_start="2" region_end="11" region_include="__noun__">A enchanter.</value>
+        <value region_start="2" region_end="11" region_include="alchemist">A alchemist.</value>
+        <value region_start="2" region_end="8" region_include="healer">A healer</value>
+        <value region_start="2" region_end="16" region_include="monsterhunter">A monster hunter</value>
+        <value region_start="3" region_end="15" region_include="__noun__">An exterminator.</value>
+        <value region_start="2" region_end="10" region_include="__noun__">A pugilist.</value>
+        <value region_start="2" region_end="11" region_include="gladiator">A gladiator</value>
+        <value region_start="2" region_end="14" region_include="__noun__">A swashbuckler</value>
+        <value region_start="2" region_end="9" region_include="__noun__">A duelist.</value>
+        <value region_start="2" region_end="8" region_include="__noun__">A cleric</value>
+        <value region_start="2" region_end="8" region_include="priest">A priest.</value>
+        <value region_start="12" region_end="16" region_include="bard">A singer or bard.</value>
+    </table>
+    <table name="The mercenary's primary weapon is..." id="mercenary_weapon">
+        <value>A longsword.</value>
+        <value>A longsword and a shield</value>
+        <value>A battleaxe.</value>
+        <value>A scimitar.</value>
+        <value>A halberd.</value>
+        <value>A bow.</value>
+        <value>A shortsword and dagger.</value>
+        <value>A shortsword and a shield</value>
+        <value>A crossbow.</value>
+        <value>A warmace</value>
+        <value>A staff.</value>
+        <value>A hammer.</value>
+        <value>A bastard sword</value>
+        <value>A greatsword</value>
+        <value>A heavy flail</value>
+        <value>A huge axe</value>
+        <value>A warhammer</value>
+        <value>A scimitar and a shield</value>
+        <value>A morning star</value>
+    </table>
+    <table name="The mercenary's weapon is..." id="mercenary_weaponis">
+        <value region_start="11" region_end="27" region_include="__noun__">Covered in mysterious runes.</value>
+        <value region_start="11" region_end="27" region_include="__noun__">Made of an unusual material.</value>
+        <value>Emitting a supernatural hum or glow.</value>
+        <value>Obviously mastercrafted.</value>
+        <value region_start="3" region_end="10" region_include="nation">Of foreign design.</value>
+        <value>Poorly maintained and dirty.</value>
+        <value>Battered to the point of breaking.</value>
+        <value region_start="16" region_end="20" region_include="__noun__">Engraved with a name.</value>
+    </table>
+    <table name="The mercenary is also good at..." id="mercenary_good">
+        <value>Legends and folklore</value>
+        <value>Languages</value>
+        <value>Military strategy and logistics</value>
+        <value>Politics and high society</value>
+        <value>Street code</value>
+        <value>Engineering</value>
+        <value>Cards</value>
+        <value>Dice</value>
+        <value>Arm wrestling</value>
+        <value>Board strategy games</value>
+        <value>Slap jack</value>
+        <value>Horseshoe throwing</value>
+        <value>Wielding throwing knives</value>
+        <value>Wielding a javelin</value>
+        <value>Wielding a flail</value>
+        <value>Unarmed combat</value>
+        <value>Wielding darts</value>
+        <value>Wielding a whip.</value>
+        <value>Singing</value>
+        <value>Dancing</value>
+        <value>Storytelling</value>
+        <value>Acting</value>
+        <value>Juggling</value>
+        <value>Playing a musical instrument.</value>
+        <value>Smithing</value>
+        <value>Construction</value>
+        <value>Tailoring</value>
+        <value>Brewing</value>
+        <value>Carpentry</value>
+        <value>Cooking.</value>
+        <value>Geography or navigation</value>
+        <value>Lockpicking</value>
+        <value>Equipment maintenance</value>
+        <value>Shadowing</value>
+        <value>Riding</value>
+        <value>Trade</value>
+    </table>
+    <table name="Additionally, the mercenary..." id="mercenary_more">
+        <value region_start="38" region_end="48" region_include="armorer">Wears unusually light or heavy armor (crafted by)</value>
+        <value>Wears colorful clothing.</value>
+        <value>Has a disfiguring facial scar.</value>
+        <value>Has an unwillingness to do certain types of jobs.</value>
+        <value region_start="13" region_end="20" region_include="nation">Is obviously foreign in origin.</value>
+        <value region_start="16" region_end="34" region_include="__noun__">Wears a strange hairstyle or color.</value>
+        <value>Exudes an aura of fear, respect, or professionalism.</value>
+        <value region_start="38" region_end="46" region_include="criminal">Looks remarkably similar to a certain criminal being searched for a few towns over.</value>
+        <value>Is always either drunk or hungover.</value>
+        <value>Has an unusual level of attractiveness.</value>
+        <value>Flaunts expensive jewelry.</value>
+        <value region_start="15" region_end="29" region_include="__noun__">Has an unusual fighting style.</value>
+        <value region_start="17" region_end="35" region_include="__noun__">Wears protective charms and amulets.</value>
+        <value>Talks very little.</value>
+        <value region_start="27" region_end="32" region_include="nobleman">Displays the colors of his liege or realm of origin.</value>
+        <value>Is always looking to bed someone.</value>
+        <value>Speaks with extreme profanity.</value>
+        <value region_start="6" region_end="9" region_include="__noun__">Has a pet.</value>
+        <value>Has very bad teeth.</value>
+        <value>Smokes a pipe.</value>
+        <value>Is very old.</value>
+        <value region_start="7" region_end="24" region_include="__noun__">Sports religious symbols.</value>
+        <value>Has a loud, penetrating voice.</value>
+        <value>Is currently wounded.</value>
+        <value region_start="13" region_end="19" region_include="__noun__">Is wearing a trophy.</value>
+        <value>Is carrying a small book in a satchel.</value>
+        <value>Is fat.</value>
+        <value>Has heterochromatic eyes.</value>
+        <value>Has a speech impediment.</value>
+        <value>Is always eating something.</value>
+        <value>Wears an eye patch.</value>
+        <value>Walks with a limp.</value>
+        <value>Is clad in black.</value>
+        <value>Is good with children.</value>
+        <value>Looks depressed or dead inside.</value>
+        <value>Is missing an ear.</value>
+        <value>Is clothed inappropriately for the weather.</value>
+        <value>Spits on the ground frequently.</value>
+        <value>Has an annoying laugh.</value>
+        <value region_start="31" region_end="35" region_include="coins">Is constantly fidgeting with a coin.</value>
+    </table>
+    <table name="The mercenary's level of competence could be described as..." id="mercenary_competence">
+        <value>Poor.</value>
+        <value>Average.</value>
+        <value>Good.</value>
+        <value>Excellent.</value>
+    </table>
+    <table name="The mercenary's pricing is..." id="mercenary_price">
+        <value>Unbelievably cheap.</value>
+        <value>Low.</value>
+        <value>Affordable.</value>
+        <value>Above average.</value>
+        <value>High.</value>
+        <value>Exorbitant.</value>
+    </table>
+    <table name="The mercenary is armored in..." id="mercenary_armor">
+        <value>Exotic robes</value>
+        <value>Leather armor</value>
+        <value>Studded leather armor</value>
+        <value>Hide armor</value>
+        <value region_start="10" region_end="20" region_include="armorer">Ringmail (crafted by)</value>
+        <value region_start="11" region_end="21" region_include="armorer">Chainmail (crafted by</value>
+        <value region_start="13" region_end="23" region_include="armorer">Scale armor (crafted by)</value>
+        <value region_start="13" region_end="23" region_include="armorer">Plate armor (crafted by)</value>
+    </table>
+    <table name="the mercenary's armor is..." id="mercenary_armoris">
+        <value>Shiny and new</value>
+        <value>In excellent condition</value>
+        <value>Obviously repaired, but serviceable</value>
+        <value>Covered in dings and dents</value>
+        <value>Dirty and well-worn</value>
+        <value>Barely held together</value>
+    </table>
+    <table name="the mercenary fights with..." id="mercenary_fights">
+        <value>Hit-and-run tactics</value>
+        <value>Making a direct assault</value>
+        <value>Fancy footwork</value>
+        <value>Unpredictable lurches</value>
+        <value>Masterful combat maneuvers</value>
+        <value>No mercy</value>
+        <value>Lots of taunts and jeers</value>
+        <value>Dirty tactics</value>
+    </table>
+    <table name="The mercenary fights for..." id="mercenary_fightsfor">
+        <value>The love of gold</value>
+        <value>Pure bloodlust</value>
+        <value>A chance to deal out sadistic torment</value>
+        <value region_start="12" region_end="21" region_include="__noun__">A chance at vengeance</value>
+        <value>Gold to repay debts</value>
+        <value region_start="14" region_end="27" region_include="__noun__">Gold to aid a family member</value>
+        <value>Gold to secure a marriage</value>
+        <value>Fortune and glory</value>
+    </table>
+    <table name="On the mercenary's face is..." id="mercenary_face">
+        <value>An eye-catching mole</value>
+        <value region_start="9" region_end="16" region_include="__noun__">A garish earring</value>
+        <value>An empty eye socket</value>
+        <value>A grisly scar</value>
+        <value>A haughty sneer</value>
+        <value>A look of sadness</value>
+        <value>A stupid grin</value>
+        <value>A frame of long, beautiful long hair</value>
+        <value>Ferocious sideburns</value>
+        <value>An unruly beard</value>
+        <value>An intimidating mustache</value>
+    </table>
+    <table name="The mercenary carries..." id="mercenary_carry">
+        <value>A blade with a gem embedded in the pommel</value>
+        <value>A blade with soft leather tassels dangling from the pommel</value>
+        <value>A blade with a carved ivory hilt</value>
+        <value>A blade with a carved jade hilt</value>
+        <value>A blade with a carved soapstone hilt</value>
+        <value>A blade with a carved ebony hilt</value>
+        <value>A blade with a carved mahogany hilt</value>
+        <value>A blade with a carved oak hilt</value>
+        <value>A blade with a gently curved hilt</value>
+        <value>A blade with dragons sculpted into the steel of the guard</value>
+        <value>A blade with wolves sculpted into the steel of the guard</value>
+        <value>A blade with lions sculpted into the steel of the guard</value>
+        <value>A blade with scorpions sculpted into the steel of the guard</value>
+        <value>A blade with snakes sculpted into the steel of the guard</value>
+        <value>A blade with spiders sculpted into the steel of the guard</value>
+        <value>A blade made of blackened steel</value>
+        <value>A highly polished blade</value>
+        <value region_start="13" region_end="18" region_include="__noun__">A blade with runes carved into it</value>
+        <value>Arrows/bolts tipped with black steel</value>
+        <value>Arrows/bolts with bronzed tips</value>
+        <value>Arrows/bolts fletched with crow feathers</value>
+        <value>Arrows/bolts fletched with peacock feathers</value>
+    </table>
+    <table name="The mercenary is seeking..." id="mercenary_seeking">
+        <value>Accomplices on a mission</value>
+        <value region_start="2" region_end="10" region_include="criminal">A fugitive on whom a bounty has been declared</value>
+        <value>A song to serve as a distraction from personal troubles</value>
+        <value region_start="12" region_end="18" region_include="__noun__">A long lost friend</value>
+        <value region_start="14" region_end="30" region_include="__noun__">The return of something stolen</value>
+        <value region_start="25" region_end="30" region_include="__noun__">Revenge against a bitter rival</value>
+        <value>Steady employment</value>
+        <value>A big pay day</value>
+        <value>Traveling companions</value>
+        <value>Drinking companions</value>
+    </table>
+</category>

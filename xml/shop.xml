@@ -1,0 +1,184 @@
+<category name="Merchant's Shop" id="shop">
+    <table name="The Shop sells..." id="shop_sells">
+        <value>Weapons</value>
+        <value>Armor</value>
+        <value>Magical items</value>
+        <value>Fresh food</value>
+        <value>Cured food</value>
+        <value>Livestock</value>
+        <value>Slaves</value>
+        <value>Services</value>
+        <value region_start="7" region_end="11" region_include="junk">Mostly junk</value>
+        <value>Artwork</value>
+        <value>Jewellery</value>
+        <value>Gems and Ores</value>
+        <value>Mining tools</value>
+        <value>Household goods</value>
+        <value>Farming tools</value>
+        <value>Animal feed</value>
+        <value>Crafting tools</value>
+        <value>Ales and Liqueur</value>
+        <value>Items of interest from a previous generation</value>
+        <value>Items of interest from a far-away land</value>
+        <value>Clothing</value>
+        <value>Gnomish gadgets</value>
+        <value region_start="0" region_end="7" region_include="potions">Potions</value>
+        <value region_start="0" region_end="7" region_include="poisons">Poisons</value>
+        <value>Alchemical Supplies</value>
+        <value>Magical supplies</value>
+        <value>Musical instruments</value>
+        <value>Fabrics</value>
+        <value>A little bit of everything</value>
+        <value>Spices</value>
+        <value>Hunting Tools</value>
+        <value>Herbs</value>
+        <value>Remedies and tonics</value>
+        <value region_start="0" region_end="5" region_include="book">Books</value>
+        <value>Dolls</value>
+        <value>Toys</value>
+        <value>Exotic animals</value>
+        <value>Furs and pelts</value>
+        <value>Ilicit goods</value>
+        <value>Cheese</value>
+        <value>Meats</value>
+        <value>Pack Animals</value>
+        <value>Building supplies</value>
+        <value>Fruits and vegetables</value>
+        <value region_start="21" region_end="26" region_include="guilds">Supplies for a local guild</value>
+        <value>Leather goods</value>
+        <value>Goods crafted from rare metals</value>
+        <value>Beauty and hygiene supplies</value>
+        <value>Magical creatures</value>
+        <value>Wagon wheels</value>
+        <value>Jams and jellies</value>
+        <value>Sweets</value>
+        <value>Shoes</value>
+        <value id="shop_sells_pottery">Pottery</value>
+    </table>
+    <table name="The shop's type is..." id="is">
+        <value  region_start="16" region_end="33" region_include="__noun__">A building in a merchant district</value>
+        <value region_start="16" region_end="24" region_include="merchant">Attached to the merchant's home</value>
+        <value>A wagon pulled by a horse or ox team</value>
+        <value>Under a tent</value>
+        <value region_start="11" region_end="17" region_include="__noun__">In an open bazaar on a rug</value>
+        <value region_start="16" region_end="22" region_include="__noun__">In a stall in a bazaar</value>
+        <value region_start="28" region_end="32" region_include="shop">In the back room of another shop</value>
+        <value region_start="11" region_end="18" region_include="caravan">A merchant caravan</value>
+        <value region_start="5" region_end="10" region_include="__noun__">In a place only accessibly by magic</value>
+        <value>A franchise. The shop can be found in multiple places</value>
+    </table>
+    <table name="The shop is owned by..." id="owned">
+        <value region_start="13" region_end="23" region_include="npc">A beady-eyed accountant</value>
+        <value region_start="2" region_end="7" region_include="guilds">A guild leader</value>
+        <value region_start="2" region_end="5" region_include="noble">A noble</value>
+        <value region_start="24" region_end="29" region_include="gnome">An obsessive-compulsive gnome</value>
+        <value region_start="9" region_end="14" region_include="dwarf">A greedy dwarf</value>
+        <value region_start="9" region_end="16" region_include="soldier">A former soldier</value>
+        <value region_start="2" region_end="8" region_include="farmer">A farmer's wife</value>
+        <value region_start="9" region_end="17" region_include="highelf">A snobby high elf</value>
+        <value region_start="12" region_end="20" region_include="halfling">A forgetful halfling</value>
+        <value region_start="14" region_end="19" region_include="__noun__">An oppressive brute</value>
+        <value region_start="7" region_end="12" region_include="__noun__">An old crone</value>
+        <value region_start="7" region_end="15" region_include="__noun__">A lazy half-orc</value>
+    </table>
+    <table name="The shop's condition is..."  id="condition">
+        <value>Brand new. Everything has a place, and is in its place</value>
+        <value>Well maintained. It is cleaned regularly</value>
+        <value>Average. A little dusty</value>
+        <value>Unkempt. Bugs and rodents scurry away from your footsteps</value>
+        <value>Dark. There is no natural light. Only a candle or two light the shop</value>
+        <value>Decrepit. The building should be condemned</value>
+    </table>
+    <table name="The condition of the items for sale is..." id="items">
+        <value>Pristine. Kept in the best possible condition</value>
+        <value>Cleaned regularly</value>
+        <value>Mixed. Some items look new, while some look like they have been there a long time</value>
+        <value>Dusty and dirty</value>
+        <value>Falling apart</value>
+        <value>Ancient</value>
+    </table>
+    <table name="The shop is gets its supplies from..." id="supplies">
+        <value region_start="36" region_end="44" region_include="merchant">They are crafted or attained by the merchant himself</value>
+        <value region_start="36" region_end="44" region_include="merchant">They are crafted or attained by the merchant's apprentices</value>
+        <value region_start="4|15" region_end="12|31" region_include="merchant|__noun__">The merchant's business partner</value>
+        <value region_start="17" region_end="26" region_include="__noun__">They are crafted elsewhere in bulk, and sold in the shop</value>
+        <value>They are purchased from other people in town and resold</value>
+        <value>No one knows, and no one asks</value>
+    </table>
+    <table name="The items are priced..." id="price">
+        <value>Fairly</value>
+        <value>Below value</value>
+        <value>Above value</value>
+        <value>Exorbitantly</value>
+        <value>Everything is for barter</value>
+        <value region_start="1" region_end="6" region_include="__noun__">"Other" means of payment are encouraged</value>
+        <value>Based on the merchant's mood</value>
+        <value>Based on how much the merchant thinks the customer need it.</value>
+    </table>
+    <table name="The shop's size is..." id="size">
+        <value>Giant. Multiple rooms</value>
+        <value>Large. One big room</value>
+        <value>Average. One room big enough to hold what is needed</value>
+        <value>Small. The room feels cluttered</value>
+        <value>Tiny. The merchant practically operates out of a pack</value>
+    </table>
+    <table name="How busy is the shop..." id="busy">
+        <value>It's one of the most popular places to visit</value>
+        <value>A few people mill in and out of the shop</value>
+        <value>Not very busy. You are the only people there</value>
+        <value>It rarely sees a customer</value>
+    </table>
+    <table name="Something interesting you find..." id="find">
+        <value region_start="4|26" region_end="14|30" region_include="merchant|__noun__">The shopkeeper lives in a room attached to the shop</value>
+        <value region_start="11|43" region_end="22|56" region_include="__noun__|__noun__">There is a secret room in the back to sell illicit wares</value>
+        <value region_start="4" region_end="14" region_include="merchant">The shopkeeper does not seem to belong there</value>
+        <value region_start="11" region_end="16" region_include="__noun__">One of the items does not seem to belong there</value>
+        <value>A bell rings every time someone enters the shop</value>
+        <value region_start="4" region_end="14" region_include="merchant">The shopkeeper is unusually friendly</value>
+        <value region_start="4" region_end="14" region_include="merchant">The shopkeeper does not seem to want any business</value>
+        <value region_start="5" region_end="10" region_include="__noun__">Some items are oddly magical (or non-magical)</value>
+        <value region_start="12" region_end="27" region_include="__noun__">You feel an unseen presence watching you</value>
+        <value region_start="0" region_end="16" region_include="__noun__">Magical barriers prevent people from handling the merchandise</value>
+        <value region_start="2" region_end="8" region_include="goblin">A goblin is handling some of the wares</value>
+        <value>A ogre is leashed to one of the walls</value>
+        <value>A couple dogs keep an eye on you, while chewing on a bone</value>
+        <value region_start="2" region_end="5" region_include="cat">A cat follows you around the shop</value>
+        <value region_start="2" region_end="6" region_include="__noun__">A goat seems to be keeping guard outside the shop</value>
+        <value>A rat's nest is forming in a secluded corner</value>
+        <value region_start="2" region_end="14" region_include="__noun__">A talking bird insists on yelling obscenities at you</value>
+        <value>Many items are being packed for sale</value>
+        <value>A new shipment has just arrived, and is being stocked</value>
+        <value region_start="9" region_end="15" region_include="__noun__">You hear noises from the roof or room above the shop</value>
+        <value>The floor is cracked</value>
+        <value region_start="4|31" region_end="12|35" region_include="merchant|__noun__">The merchant is cleaning up an item that was ruined on the shop floor</value>
+        <value region_start="4|32" region_end="12|40" region_include="merchant|__noun__">The shopkeeper is arguing with an employee</value>
+        <value region_start="2" region_end="8" region_include="monkey">A monkey follows you and tries to hand merchandise to you</value>
+        <value>Footprints lead directly into a wall</value>
+        <value region_start="2" region_end="7" region_include="__noun__">A raven tries to steal items from your bag</value>
+        <value region_start="4" region_end="12" region_include="merchant">The merchant's young children are trying unsuccessfully at a hard sale</value>
+        <value region_start="4" region_end="12" region_include="merchant">The merchant does not speak common</value>
+        <value>Items change when you're not looking</value>
+        <value region_start="0" region_end="5" region_include="__noun__">Music is playing throughout the shop</value>
+        <value region_start="4" region_end="12" region_include="merchant">The merchant can tell a story behind everything he sells</value>
+        <value region_start="12" region_end="17" region_include="__noun__">Some of the items appear stolen</value>
+        <value>The shop is only open at night</value>
+        <value>The shop is closed for the day</value>
+        <value region_start="11" region_end="15" region_include="__noun__">An unusual item is for sale with a dark backstory</value>
+        <value region_start="37" region_end="45" region_include="merchant">A couple of thugs are holding up the merchant</value>
+        <value region_start="11" region_end="20" region_include="__noun__">One of the customers is trying to shoplift</value>
+        <value>The shop has a strong odor of mildew</value>
+        <value region_start="23" region_end="52" region_include="__noun__">The shop is owned by a friend or former party member</value>
+        <value region_start="2" region_end="7" region_include="undead">A ghost is browsing the merchandise</value>
+        <value region_start="4" region_end="14" region_include="merchant">The shopkeeper is fast asleep</value>
+        <value region_start="4" region_end="14" region_include="merchant">The shopkeeper has a pungent and offensive smell</value>
+        <value region_start="4" region_end="14" region_include="merchant">The shopkeeper is a forceful salesman</value>
+        <value region_start="2" region_end="18" region_include="legendary_weapon">A legendary weapon is on display, but not for sale</value>
+        <value region_start="0" region_end="6" region_include="__noun__">Murals line the walls</value>
+        <value region_start="4" region_end="12" region_include="merchant">The merchant insists he is from an ancient line of powerful merchants</value>
+        <value region_start="4" region_end="12" region_include="merchant">The merchant dresses much better than expected</value>
+        <value region_start="4" region_end="12" region_include="merchant">The merchant looks like a beggar</value>
+        <value region_start="24" region_end="29" region_include="guards">Constables or the local guard are interviewing everyone in the shop</value>
+        <value region_start="4" region_end="14" region_include="merchant">The shopkeeper just died</value>
+    </table>
+    <member name="Shopkeeper" include="merchant" />
+</category>

@@ -1,0 +1,85 @@
+        <category name="Dinner among Desert Nomads..." id="dinner_desert">
+            <table name="Main course..." id="main">
+                <patterns>
+                    <pattern>{prep} {dish}</pattern>
+                </patterns>
+                <list type="prep">
+                    <item>Fried</item>
+                    <item>Roasted</item>
+                    <item>Sun-cured</item>
+                    <item>Smoked</item>
+                    <item>Sun-baked</item>
+                    <item>Toasted</item>
+                    <item>Seared</item>
+                    <item>Salted</item>
+                </list>
+                <list type="dish">
+                    <item>goat</item>
+                    <item>mutton</item>
+                    <item>camel</item>
+                    <item>horse</item>
+                    <item>hare</item>
+                    <item>antelope</item>
+                    <item>lizard</item>
+                    <item>snake</item>
+                    <item>rattlesnake</item>
+                    <item>buzzard</item>
+                    <item>toad</item>
+                    <item>beetles</item>
+                </list>
+            </table>
+            <table name="...with..." id="main_with">
+                <value>Chickpeas.</value>
+                <value>White beans.</value>
+                <value>Red beans.</value>
+                <value>Black beans.</value>
+                <value>Lentils.</value>
+                <value>Corn mash.</value>
+                <value>Couscous.</value>
+                <value>Crisp bread.</value>
+                <value>Flat bread.</value>
+                <value>Dry crackers.</value>
+            </table>
+            <table name="...and..." id="main_and">
+                <value>Wild mushrooms.</value>
+                <value>Almond butter.</value>
+                <value>Cashew butter.</value>
+                <value>Goat cheese.</value>
+                <value>Camel's milk cheese.</value>
+                <value>Onions.</value>
+                <value>Sweet peppers.</value>
+                <value>Hot peppers.</value>
+                <value>Lemons.</value>
+                <value>Oranges.</value>
+                <value>Green olives.</value>
+                <value>Red olives.</value>
+            </table>
+            <table name="Side dish..." id="side">
+                <value>Almonds.</value>
+                <value>Cashews.</value>
+                <value>Pistachios.</value>
+                <value>Pine nuts.</value>
+                <value>Sunflower seeds.</value>
+                <value>Melon seeds.</value>
+                <value>Dried figs.</value>
+                <value>Dried berries.</value>
+                <value>Raisins.</value>
+                <value>Prunes.</value>
+                <value>Sun-dried tomatoes.</value>
+                <value>Dried root vegetables.</value>
+            </table>
+            <table name="Beverage..." id="beverage">
+                <value>Skunky beer.</value>
+                <value>Cornmeal ale.</value>
+                <value>Golden ale.</value>
+                <value>Oatmeal stout.</value>
+                <value>Honeyed mead.</value>
+                <value>Honeyed wine.</value>
+                <value>Sour wine.</value>
+                <value>Strong wine.</value>
+                <value>Tea.</value>
+                <value>Water.</value>
+                <value>Fermented mare's milk.</value>
+                <value>Fermented camel's milk.</value>
+            </table>
+        </category>

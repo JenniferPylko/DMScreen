@@ -1,0 +1,101 @@
+        <category name="Dwarven Dinner" id="dinner_dwarf">
+            <table name="Tonight, we dine on..." id="dine">
+                <patterns>
+                    <pattern>{prep} {dish}</pattern>
+                </patterns>
+                <list type="prep">
+                    <item>Stewed</item>
+                    <item>Flame-roasted</item>
+                    <item>Glazed and skewered</item>
+                    <item>Braised</item>
+                    <item>Smoked</item>
+                    <item>Battered and fried</item>
+                    <item>Glazed and seared</item>
+                    <item>Flame-broiled</item>
+                    <item>Salted and grilled</item>
+                    <item>Peppered and grilled</item>
+                    <item>Stone oven-roasted</item>
+                    <item>Stone oven-baked</item>
+                </list>
+                <list type="dish">
+                    <item>rabbit</item>
+                    <item>duck</item>
+                    <item>goose</item>
+                    <item>boar</item>
+                    <item>pork</item>
+                    <item>ox</item>
+                    <item>trout</item>
+                    <item>salmon</item>
+                    <item>venison</item>
+                    <item>mutton</item>
+                    <item>steak</item>
+                    <item>pheasant</item>
+                </list>
+            </table>
+            <table name="...with..." id="dine_with">
+                <value>Red potatoes.</value>
+                <value>Golden potatoes.</value>
+                <value>Red cabbage.</value>
+                <value>White cabbage.</value>
+                <value>Green cabbage.</value>
+                <value>Peas.</value>
+                <value>Sliced turnips.</value>
+                <value>Turnip mash.</value>
+                <value>White onions.</value>
+                <value>Red onions.</value>
+            </table>
+            <table name="...and..." id="dine_and">
+                <value>Carrots.</value>
+                <value>Apples.</value>
+                <value>Cherries.</value>
+                <value>Cave mushrooms.</value>
+                <value>Purple mushrooms.</value>
+                <value>Wild mushrooms.</value>
+                <value>Truffles.</value>
+                <value>Thick gravy.</value>
+                <value>Rich gravy.</value>
+                <value>Garlic.</value>
+            </table>
+            <table name="Side dish..." id="side">
+                <value>Rye bread.</value>
+                <value>Wheat bread.</value>
+                <value>Crusty bread.</value>
+                <value>Honey cake.</value>
+                <value>Oat cake.</value>
+                <value>Poppyseed cake.</value>
+                <value>Hard biscuit.</value>
+                <value>Fluffy biscuit.</value>
+                <value>Pork sausage.</value>
+                <value>Deer sausage.</value>
+                <value>Bacon.</value>
+                <value>Ham.</value>
+            </table>
+            <table name="Beverage..." id="beverage">
+                <value>Black ale.</value>
+                <value>Pale ale.</value>
+                <value>Brown ale.</value>
+                <value>Red ale.</value>
+                <value>White ale.</value>
+                <value>Wheat ale.</value>
+                <value>Pilsner.</value>
+                <value>Lager.</value>
+                <value>Chocolate stout.</value>
+                <value>Coffee stout.</value>
+                <value>Black porter.</value>
+                <value>Brown porter.</value>
+            </table>
+            <table name="...this is just a bit..." id="bit">
+                <value>Too dark in color.</value>
+                <value>Too light in color.</value>
+                <value>Too strong in flavor.</value>
+                <value>Too mild in flavor.</value>
+                <value>Too foamy.</value>
+                <value>Too fizzy.</value>
+                <value>Too flat.</value>
+                <value>Too bitter.</value>
+                <value>On the nutty side.</value>
+                <value>On the floral side.</value>
+                <value>On the sweet side.</value>
+                <value>Chewy.</value>
+            </table>
+        </category>

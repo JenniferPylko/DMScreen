@@ -1,0 +1,209 @@
+<category name="Underdark" id="underdark">
+    <table name="Entrance: The cave mouth is..." id="underdark_entrance">
+        <value>Wide and tall, letting much daylight into the entry chamber.</value>
+        <value>A wide sinkhole.</value>
+        <value region_start="24" region_end="31" region_include="__noun__">An easy to spot, narrow passage.</value>
+        <value region_start="25" region_end="31" region_include="__noun__">A steep, slippery sloped tunnel.</value>
+        <value region_start="11" region_end="17" region_include="__noun__">A man-made tunnel.</value>
+        <value region_start="12" region_end="18" region_include="__noun__">A collapsed tunnel, impassable without excavation.</value>
+        <value>Marked with several warning signs.</value>
+        <value>Hidden by some boulders</value>
+        <value>Hidden by a waterfall</value>
+        <value>Hidden by a rocky overhang</value>
+        <value>Hidden by a hillock.</value>
+        <value>Hidden by a briar patch</value>
+        <value>Hidden by a curtain of moss</value>
+        <value>Hidden by enormous tree roots</value>
+        <value>Hidden by overgrown vines.</value>
+        <value>up or down a cliff face</value>
+        <value>down a deep hole</value>
+        <value>in an underwater tunnel</value>
+        <value>through an illusory rock or wall.</value>
+    </table>
+    <table name="Denizens: What lives in the cave?" id="underdark_denizens">
+        <value>Bullywug.</value>
+        <value>Carrion crawler.</value>
+        <value>Chuul.</value>
+        <value>Cloaker.</value>
+        <value>Crawling claw.</value>
+        <value>Cyclops.</value>
+        <value>Darkmantle.</value>
+        <value>Shadow dragon.</value>
+        <value>Drider.</value>
+        <value>Duergar.</value>
+        <value>Elves, dark.</value>
+        <value>Ettin.</value>
+        <value>Fomorian.</value>
+        <value>Fungi.</value>
+        <value>Galeb duhr.</value>
+        <value>Gargoyle.</value>
+        <value>Ghost.</value>
+        <value>Ghoul.</value>
+        <value>Giant, hill.</value>
+        <value>Giant, stone.</value>
+        <value>Gibbering mouther.</value>
+        <value region_start="0" region_end="7" region_include="goblinclan">Goblins.</value>
+        <value>Grell.</value>
+        <value>Grick.</value>
+        <value>Grimlock.</value>
+        <value>Hobgoblins.</value>
+        <value>Hook Horror.</value>
+        <value region_start="0" region_end="7" region_include="kobold">Kobolds.</value>
+        <value>Mephits.</value>
+        <value>Mimic.</value>
+        <value>Myconids.</value>
+        <value>Ogres.</value>
+        <value region_start="0" region_end="5" region_include="oozes">Oozes.</value>
+        <value>Orcs.</value>
+        <value>Otyugh.</value>
+        <value>Piercer.</value>
+        <value>Purple worm.</value>
+        <value>Roper.</value>
+        <value>Rust monster.</value>
+        <value>Shadow.</value>
+        <value>Skeleton.</value>
+        <value>Spectre.</value>
+        <value>Stirge.</value>
+        <value>Troglodyte.</value>
+        <value>Troll.</value>
+        <value>Umber hulk.</value>
+        <value>Wraith.</value>
+        <value>Xorn.</value>
+        <value>Yuan-ti.</value>
+        <value>Zombies.</value>
+    </table>
+    <table name="Ecology: The creature is..." id="underdark_ecology">
+        <value>A predator or a hunter.</value>
+        <value>A food source for other denizens.</value>
+        <value>A recently-arrived squatter or invader.</value>
+        <value>A long-time resident.</value>
+        <value>A parasite or a scavenger.</value>
+        <value>A host or the dominant species.</value>
+        <value>Unusually abundant.</value>
+        <value>Living in deliberate isolation.</value>
+        <value>Living in unintentional isolation.</value>
+        <value>Severely out of place in this cave.</value>
+    </table>
+    <table name="Distinguising Landmark: You see..." id="underdark_landmark">
+        <value>A trickle of water flowing down the walls and across the floor.</value>
+        <value>An underground lake of potable water.</value>
+        <value>A pool of stagnant water.</value>
+        <value>A natural bridge over a chasm.</value>
+        <value>A narrow chasm with walls close enough to climb between.</value>
+        <value>A deep chasm with no bottom in sight.</value>
+        <value>A shaft in the ceiling with no light coming from it.</value>
+        <value>A shaft in the ceiling with dim light coming from it.</value>
+        <value>A group of stalagmites arranged in a circle.</value>
+        <value>An arrangement of two large stalactites and two large stalagmites, reminiscent of fangs in a yawning mouth.</value>
+        <value>A pair of natural columns.</value>
+        <value>A large stalactite that has broken off from the ceiling and fallen to the floor.</value>
+        <value>An array of many small stalactites spreading across the ceiling.</value>
+        <value region_start="28" region_end="32" region_include="__noun__">A damp wall covered in soft mold.</value>
+        <value region_start="39" region_end="43" region_include="__noun__">A recess in the wall, covered in slimy mold.</value>
+        <value>A large patch of glowing fungus.</value>
+        <value>A large patch of small mushrooms.</value>
+        <value>A group of enormous mushrooms.</value>
+        <value>A large cavern with a strong echo.</value>
+        <value>A claustrophobic tunnel with a low ceiling.</value>
+    </table>
+    <table name="Features: You notice..." id="underdark_feature">
+        <value>A cache of abandoned, decrepit mining equipment.</value>
+        <value>Some old dry bones.</value>
+        <value>Many bones underfoot.</value>
+        <value region_start="21" region_end="31" region_include="__noun__">Evidence of a recent encampment.</value>
+        <value>An enormous spider web.</value>
+        <value region_start="25" region_end="29" region_include="__noun__">A wide slippery patch of mold on the floor.</value>
+        <value>The clatter of rocks falling.</value>
+        <value>Loose stones underfoot.</value>
+        <value>An unstable ceiling.</value>
+        <value>A distant sound—a scream, hammers at work, footsteps, or drums.</value>
+        <value>The name of a previous traveler carved into a wall.</value>
+        <value>Several ancient runes carved into the wall.</value>
+    </table>
+    <table name="The cave wall is..." id="underdark_cavewall">
+        <value>Slightly damp.</value>
+        <value>Dripping wet.</value>
+        <value>Slick with mold.</value>
+        <value>Covered in soft fungi.</value>
+        <value>Dry as a bone.</value>
+        <value>Rough and dry.</value>
+        <value>Dry and smooth.</value>
+        <value>Jagged.</value>
+        <value>Pockmarked.</value>
+        <value>Crumbling, with loose bits flaking off.</value>
+        <value>Crumbling, with large chunks falling off at a touch.</value>
+        <value>Covered in an unidentifiable slime.</value>
+    </table>
+    <table name="The cave ceiling is..." id="underdark_caveceiling">
+        <value>Uncomfortably close to your head.</value>
+        <value>Covered in stalactites (watch your head!).</value>
+        <value>Smooth as glass.</value>
+        <value>Rough and jagged.</value>
+        <value>Connected to the floor by natural columns.</value>
+        <value>So high it’s difficult to see.</value>
+    </table>
+    <table name="Hazards/Obstacles: You find..." id="underdark_hazard">
+        <value>A colony of poisonous mushrooms.</value>
+        <value>A patch of toxic mold.</value>
+        <value>The ceiling caves in.</value>
+        <value>Several rocks tumble down a sloped wall.</value>
+        <value>The floor is very slippery.</value>
+        <value>Your foot misses the floor as you step into a pit or chasm.</value>
+    </table>
+    <table name="Travelers/Visitors: You come upon..." id="underdark_visitor">
+        <value region_start="10" region_end="18" region_include="halfling">A duergar explorer</value>
+        <value region_start="2" region_end="8" region_include="goblin">A goblin explorer</value>
+        <value region_start="2" region_end="7" region_include="appearance">A human explorer</value>
+        <value region_start="2" region_end="9" region_include="kobold">A kobold explorer.</value>
+        <value region_start="17" region_end="22" region_include="dwarf">An escaped slave dwarf</value>
+        <value region_start="17" region_end="23" region_include="goblin">An escaped slave goblin</value>
+        <value region_start="17" region_end="22" region_include="gnome">An escaped slave gnome</value>
+        <value region_start="17" region_end="25" region_include="halfling">An escaped slave halfling</value>
+        <value region_start="17" region_end="22" region_include="appearance">An escaped slave human</value>
+        <value region_start="17" region_end="24" region_include="kobold">An escaped slave kobold.</value>
+        <value region_start="10" region_end="17" region_include="__noun__">A duergar forager</value>
+        <value region_start="2" region_end="8" region_include="goblin">A goblin forager</value>
+        <value region_start="2" region_end="9" region_include="kobold">A kobold forager</value>
+        <value region_start="3" region_end="6" region_include="orc">An orc forager.</value>
+        <value region_start="11" region_end="18" region_include="__noun__">A fugitive heretic</value>
+        <value region_start="11" region_end="17" region_include="killer">A fugitive killer</value>
+        <value region_start="11" region_end="19" region_include="smuggler">A fugitive smuggler</value>
+        <value region_start="11" region_end="16" region_include="thief">A fugitive thief.</value>
+        <value region_start="7|15" region_end="14|30" region_include="dwarf|__noun__">A lost dwarven treasure hunter</value>
+        <value region_start="16" region_end="31" region_include="__noun__">A lost half-elf treasure hunter</value>
+        <value region_start="7|16" region_end="15|31" region_include="highelf|__noun__">A lost high elf treasure hunter</value>
+        <value region_start="7|13" region_end="12|28" region_include="appearance|__noun__">A lost human treasure hunter.</value>
+        <value region_start="2" region_end="9" region_include="dwarf">A dwarven mapmaker</value>
+        <value region_start="2" region_end="8" region_include="goblin">A goblin mapmaker</value>
+        <value region_start="2" region_end="7" region_include="gnome">A gnome mapmaker</value>
+        <value region_start="14" region_end="22" region_include="__noun__">A svirfneblin mapmaker.</value>
+        <value region_start="2" region_end="10" region_include="darkelf">A dark elf messenger</value>
+        <value region_start="2" region_end="8" region_include="goblin">A goblin messenger</value>
+        <value region_start="2" region_end="7" region_include="gnome">A gnome messenger</value>
+        <value region_start="14" region_end="23" region_include="__noun__">A svirfneblin messenger.</value>
+        <value region_start="2" region_end="9" region_include="dwarf">A dwarven miner</value>
+        <value region_start="2" region_end="7" region_include="gnome">A gnome miner</value>
+        <value region_start="2" region_end="8" region_include="goblin">A goblin miner</value>
+        <value region_start="8" region_end="13" region_include="miner">A human miner</value>
+        <value region_start="2" region_end="8" region_include="kobold">A kobold miner</value>
+        <value region_start="14" region_end="19" region_include="miner">A svirfneblin miner.</value>
+        <value region_start="2" region_end="9" region_include="dwarf">A dwarven prospector</value>
+        <value region_start="2" region_end="7" region_include="gnome">A gnome prospector</value>
+        <value region_start="2" region_end="7" region_include="appearance">A human prospector</value>
+        <value region_start="14" region_end="24" region_include="__noun__">A svirfneblin prospector.</value>
+        <value region_start="2" region_end="10" region_include="darkelf">A dark elf scout</value>
+        <value region_start="2" region_end="8" region_include="goblin">A goblin scout</value>
+        <value region_start="2" region_end="8" region_include="kobold">A kobold scout</value>
+        <value region_start="3" region_end="6" region_include="orc">An orc scout.</value>
+        <value region_start="2" region_end="10" region_include="darkelf">A dark elf soldier</value>
+        <value region_start="10" region_end="17" region_include="soldier">A duergar soldier</value>
+        <value region_start="2|8" region_end="7|15" region_include="dwarf|soldier">A dwarf soldier</value>
+        <value region_start="2|9" region_end="8|16" region_include="goblin|soldier">A goblin soldier</value>
+        <value region_start="2|9" region_end="8|16" region_include="kobold|soldier">A kobold soldier</value>
+        <value region_start="3|7" region_end="6|14" region_include="orc|soldier">An orc soldier.</value>
+        <value region_start="2" region_end="10" region_include="darkelf">A dark elf spy</value>
+        <value region_start="10" region_end="13" region_include="__noun__">A duergar spy</value>
+        <value region_start="2" region_end="8" region_include="goblin">A goblin spy</value>
+        <value region_start="2" region_end="8" region_include="kobold">A kobold spy.</value>
+    </table>
+</category>

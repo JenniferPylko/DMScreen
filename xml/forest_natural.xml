@@ -1,0 +1,126 @@
+    <category name="Natural Forest" id="naturalforest">
+        <table name="Interesting Location: You find..." id="natrualforest_interest">
+            <value region_start="2|18" region_end="8|27" region_include="cavern|__noun__">A cavern behind a waterfall.</value>
+            <value region_start="2|30" region_end="12|35" region_include="cavern|__noun__">A small cave in the bank of a creek.</value>
+            <value region_start="15" region_end="27" region_include="cavern">An entrance to a rocky cave.</value>
+            <value region_start="2" region_end="6" region_include="__noun__">A hole under a large tree.</value>
+            <value region_start="8" region_end="14" region_include="__noun__">A large burrow.</value>
+            <value region_start="11" region_end="18" region_include="__noun__">A peculiar cottage.</value>
+            <value region_start="2" region_end="12" region_include="woodsman">A woodsman's cabin.</value>
+            <value region_start="13" region_end="18" region_include="__noun__">An abandoned cabin.</value>
+            <value region_start="13" region_end="21" region_include="__noun__">An abandoned campsite.</value>
+            <value>A sacred grove.</value>
+            <value region_start="2" region_end="7" region_include="__noun__">A grave with an illegible headstone.</value>
+            <value region_start="8" region_end="13" region_include="__noun__">Ancient ruins.</value>
+        </table>
+        <table name="Distinguising Landmark: You see..." id="natrualforest_landmark">
+            <value>A fruit tree.</value>
+            <value>A large, hollow tree.</value>
+            <value>A pair of trees from the same root.</value>
+            <value>A tree growing over a boulder.</value>
+            <value>A clearing with wildflowers.</value>
+            <value>A grassy clearing.</value>
+            <value>A moss-covered boulder.</value>
+            <value>A thicket of brambles.</value>
+            <value>A babbling brook.</value>
+            <value>A brook in a deep ravine.</value>
+            <value>A brook, with gentle rapids.</value>
+            <value>A dry creekbed.</value>
+            <value>A small pool at a creek's bend.</value>
+            <value>A patch of mushrooms.</value>
+            <value>An enormous mushroom.</value>
+            <value>A large, hollow log.</value>
+            <value>A large, rotting log.</value>
+            <value>A tree felled by lightning.</value>
+            <value>An old gnarled tree.</value>
+            <value>The stump of an enormous tree.</value>
+        </table>
+        <table name="Feature: You notice..." id="natrualforest_feature">
+            <value>A flock of birds scatter.</value>
+            <value>A hawk cries.</value>
+            <value>A woodpecker drumming.</value>
+            <value>An owl hoots.</value>
+            <value>Birds chirping.</value>
+            <value>A chipmunk scurrying.</value>
+            <value>A deer dashes away.</value>
+            <value>A deer watches curiously.</value>
+            <value>A squirrel leaps from one tree to another.</value>
+            <value>A wolf howls.</value>
+            <value>Butterflies fluttering about.</value>
+            <value>Squirrels chittering.</value>
+            <value>An eerie silence.</value>
+            <value>The breeze stops.</value>
+            <value>The wind blows harder.</value>
+            <value>A twig snaps.</value>
+            <value>Brightly, colored berries.</value>
+            <value>Leaves rustling.</value>
+            <value>The scent of flowers.</value>
+            <value>The smell of decay.</value>
+        </table>
+        <table name="Dominant Species: Many of the trees are..." id="natrualforest_species">
+            <value>Apple or pear trees.</value>
+            <value>Ashes.</value>
+            <value>Birches.</value>
+            <value>Beeches.</value>
+            <value>Cedars or junipers.</value>
+            <value>Cherry or plum trees.</value>
+            <value>Chestnut or hazel trees.</value>
+            <value>Cypresses.</value>
+            <value>Elms.</value>
+            <value>Firs.</value>
+            <value>Hawthorns or hemlocks.</value>
+            <value>Hickory or walnut trees.</value>
+            <value>Linden or lime trees.</value>
+            <value>Maples.</value>
+            <value>Oaks.</value>
+            <value>Pines.</value>
+            <value>Poplars.</value>
+            <value>Spruces.</value>
+            <value>Willows.</value>
+            <value>Yew or holly trees.</value>
+        </table>
+        <table name="Encounters: You come upon..." id="natrualforest_encounter">
+            <value>A large bear.</value>
+            <value>A bear cub.</value>
+            <value>A giant spider.</value>
+            <value>Several giant spiders.</value>
+            <value>A pack of wolves.</value>
+            <value region_start="7" region_end="11" region_include="wolf">A lone wolf.</value>
+            <value region_start="10" region_end="13" region_include="cat">A hunting cat.</value>
+            <value region_start="10" region_end="15" region_include="undead">A wailing ghost.</value>
+            <value region_start="13" region_end="18" region_include="undead">A malevolent ghost.</value>
+            <value>A pair of goblin scouts.</value>
+            <value>A goblin patrol.</value>
+            <value>An ogre.</value>
+            <value>A pair of outlaws.</value>
+            <value>A beggarly bandit.</value>
+            <value>An old witch.</value>
+            <value>A curious herbalist.</value>
+            <value>A lost child.</value>
+            <value>A woodcutter busy with the day’s work.</value>
+            <value>An intrepid hunter.</value>
+            <value>An elvish ranger.</value>
+        </table>
+        <table name="Vignettes, and color" id="naturalforest_vignette">
+            <value>The song of a mocking bird changes mid-tune to an ominous imitation</value>
+            <value>Elves follow you from a distance but never approach</value>
+            <value region_start="2" region_end="8" region_include="dragon">A dragon flies overhead</value>
+            <value>An ancient tree whispers softly to you as you pass</value>
+            <value>A break in the tree cover lets down a welcome ray of sunshine</value>
+            <value>Wolves howl in the distance</value>
+            <value>This part of the forest is gray and quiet. You notice a low fog as come in and the sounds of birds have stopped</value>
+            <value>A giant dead tree has fallen and blocked the road</value>
+            <value>A deer bounds across the road with a puma in close pursuit</value>
+            <value region_start="27" region_end="32" region_include="fiend">You've heard tales about a devil living in these woods. You keep seeing movement from the corner of your eye</value>
+            <value region_start="2" region_end="7" region_include="druid">A druid sits on a stone speaking to the birds</value>
+            <value>A great shaggy wolfhound approaches the party. He asks if you are lost</value>
+            <value>The underbrush tapers off and there is nothing left but the trunks of trees and impenetrable leaves overhead</value>
+            <value>A ground bird is building a nest nearby. A colorful piece of cloth flutters among the twigs</value>
+            <value>An ancient shrine looms around a corner in the path. It's long abandoned, but the workmanship was once fine</value>
+            <value>A camped group of travelers in the distance notice the players approach, grab what gear they can and hide</value>
+            <value region_start="61" region_end="66" region_include="horse">A wolverine feeds on the corpse of a fallen traveler and his horse. It growls if you get too close</value>
+            <value>A courier wearing the king's livery pauses at the edge of the forest, gathers his courage, and enters down the path</value>
+            <value>An undertaker lives in a cottage near the entrance to the forest. He makes a point of measuring the players before they departy. He's only concerned with their height from the neck down</value>
+            <value>The party hears the sounds of a chase in the brush at night. Later, a werewolf approaches the party and demands to know if they have seen the &quot;would-be hunter&quot; pass this way</value>
+        </table>
+    </category>

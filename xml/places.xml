@@ -1,0 +1,252 @@
+<category name="Strange Place" id="places">
+    <table name="Source" id="source">
+        <value>Rumors speak of a...</value>
+        <value>When wanting to scare the children, locals tell an old tale of a...</value>
+        <value>In the corner of the taverns sits a group of pale figures, with low voices they're talking about a...</value>
+        <value>Legend speaks of a...</value>
+        <value>An old man walking around town speaks of a...</value>
+        <value>Etched into a stone is the warning of a...</value>
+        <value>In the hand of the corpse of a woman along the road is a map with a drawing of a...</value>
+        <value>Nailed to a tree is a small note with a warning to all about a...</value>
+        <value>Underneath a lage stone is a weather-worn diary. The last page is about a...</value>
+        <value>Passers-by talking about the dissappearance of someone. They mention a...</value>
+    </table>
+    <table name="Descriptor 1" id="desc1">
+        <value>haunted...</value>
+        <value>cursed...</value>
+        <value>dark...</value>
+        <value>musty old...</value>
+        <value>ruined...</value>
+        <value>unfinished...</value>
+        <value>hidden...</value>
+        <value>foul smelling...</value>
+        <value>strange...</value>
+        <value>living...</value>
+        <value>shapeshifting...</value>
+        <value>overgrown...</value>
+        <value>ordinary looking...</value>
+        <value>enchanted...</value>
+        <value>strangely alluring...</value>
+        <value>growling...</value>
+        <value>singing...</value>
+        <value>ever burning...</value>
+        <value>hovering...</value>
+        <value>damp...</value>
+    </table>
+    <table name="Place" id="place">
+        <value>house</value>
+        <value>villa</value>
+        <value>small community of houses</value>
+        <value>estate</value>
+        <value region_start="0" region_end="6" region_include="castle">castle</value>
+        <value>fort</value>
+        <value>fortress</value>
+        <value>underground complex</value>
+        <value region_start="0" region_end="6" region_include="temple">temple</value>
+        <value region_start="0" region_end="9" region_include="monestery">monestery</value>
+        <value>graveyard</value>
+        <value>monument</value>
+        <value>statue</value>
+        <value>tree</value>
+        <value>basement</value>
+        <value>mausoleum</value>
+        <value>giant nest</value>
+        <value>water-mill</value>
+        <value>granary</value>
+        <value>barrack</value>
+        <value>mansion</value>
+        <value>warehouse</value>
+        <value>stable</value>
+        <value>kennel</value>
+        <value>sign post</value>
+        <value>deep hole in the ground</value>
+        <value>shop</value>
+        <value>marketplace</value>
+        <value>ship</value>
+        <value>gate</value>
+        <value>tower</value>
+        <value>wall</value>
+        <value>inn</value>
+        <value region_start="0" region_end="6" region_include="tavern">tavern</value>
+        <value>hotel</value>
+        <value>quary</value>
+        <value region_start="0" region_end="4" region_include="mine">mine</value>
+        <value>gate</value>
+        <value>shrine</value>
+        <value>door</value>
+        <value>hatch</value>
+        <value>ladder</value>
+        <value>bridge</value>
+        <value>bedroll</value>
+        <value>tent</value>
+        <value>tree house</value>
+        <value>log cabin</value>
+        <value>hut</value>
+        <value>shed</value>
+        <value>obelisk</value>
+        <value>monolith</value>
+        <value>column</value>
+        <value region_start="0" region_end="4" region_include="city">city block</value>
+        <value>guard house</value>
+        <value>hospital</value>
+        <value>townhouse</value>
+        <value>hamlet</value>
+        <value>community</value>
+        <value>township</value>
+        <value>dwelling</value>
+        <value>park</value>
+        <value>field</value>
+        <value>property</value>
+        <value>area</value>
+        <value>row of townhouses</value>
+        <value>lodge</value>
+        <value>lumber camp</value>
+        <value>fisherman's hut</value>
+        <value>sanctuary</value>
+        <value>chapel</value>
+        <value>holy site</value>
+        <value>crossroads</value>
+        <value>small sized town</value>
+        <value>medium sized town</value>
+        <value>large sized town</value>
+        <value region_start="12" region_end="22" region_include="town">small sized settlement</value>
+        <value region_start="13" region_end="23" region_include="town">medium sized settlement</value>
+        <value region_start="12" region_end="22" region_include="town">large sized settlement</value>
+        <value region_start="12" region_end="19" region_include="village">small sized village</value>
+        <value region_start="13" region_end="20" region_include="village">medium sized village</value>
+        <value region_start="12" region_end="19" region_include="village">large sized village</value>
+        <value>compound</value>
+        <value>construction site</value>
+        <value>gravestone</value>
+        <value region_start="0" region_end="4" region_include="tomb">tomb</value>
+        <value>cairn</value>
+        <value>mural</value>
+        <value>garden</value>
+        <value>greenhouse</value>
+        <value>observatory</value>
+        <value>museum</value>
+        <value>manor</value>
+        <value>chateau</value>
+        <value>palace</value>
+        <value>citadel</value>
+        <value>keep</value>
+        <value>stronghold</value>
+        <value>den</value>
+        <value>lair</value>
+    </table>
+    <table name="Descriptor 2" id="desc2">
+        <value>long forgotten...</value>
+        <value>long abandoned...</value>
+        <value>with the markings of a terrible beast...</value>
+        <value>with the markings of a group of terrible beasts...</value>
+        <value>covered in etchings of dark teachings...</value>
+        <value>with a glowing aura of a silvery light...</value>
+        <value>said to be owned by an old man or woman...</value>
+        <value region_start="33" region_end="38" region_include="crime">aid to be the site of a terrible crime</value>
+        <value>said to be the site of a spell going terribly wrong</value>
+        <value>letting off the feeling of a strange presence</value>
+        <value>with the etchings of a dark ritual</value>
+        <value>said to be home to evil spirits</value>
+        <value>said to be corrupted by dark forces</value>
+        <value>said to house something truly abnormal</value>
+        <value>said to hold a cursed item</value>
+        <value>said to be the location of a decadent monthly feast with masked guests</value>
+        <value>said to be a fantastic place to visit</value>
+        <value>said to be a place of madness</value>
+        <value>covered in eldritch symbols</value>
+        <value>said to be a place fro where no one ever returns</value>
+    </table>
+    <table name="Area" id="area">
+        <value region_start="11" region_end="15" region_include="city">within the city walls</value>
+        <value>not far from town</value>
+        <value>near the outpost</value>
+        <value region_start="7" region_end="17" region_include="wilderness">in the wilderness</value>
+        <value region_start="7" region_end="16" region_include="mountain">in the mountains</value>
+        <value region_start="7" region_end="13" region_include="naturalforest">in the forest</value>
+        <value>in the ocean</value>
+        <value region_start="7" region_end="12" region_include="swamp">in the swamp</value>
+        <value region_start="7" region_end="13" region_include="naturaldesert">in the desert</value>
+        <value region_start="13" region_end="19" region_include="plains">on the great plains</value>
+        <value>along the coast</value>
+        <value>along the road</value>
+        <value>on a magical plane</value>
+        <value region_start="12" region_end="16" region_include="caverns">in a nearby cave</value>
+        <value>by the lake</value>
+        <value region_start="10" region_end="14" region_include="city">below the city</value>
+        <value region_start="10" region_end="18" region_include="mountain">below the mountain</value>
+        <value>in the neighboring nation</value>
+        <value>far away</value>
+        <value>unknown</value>
+    </table>
+    <table name="Situation - if asked further, people will tell you, that..." id="situation">
+        <value>It's definitely just a myth and you shouldn't worry</value>
+        <value>people who've seen it are not the same</value>
+        <value>it makes people mad</value>
+        <value>it turns people homicidal</value>
+        <value>it is also said to hold great treasure</value>
+        <value>people who've seen it start rambling in a strange language</value>
+        <value>It should be avoided at all cost</value>
+        <value>another strange fellow also asked everyone about it not too long ago</value>
+        <value>a group of adventurers went there a few days ago and haven't been seen since</value>
+        <value>the town idiot returned from there and said it really isn't as bad as people say it is.</value>
+    </table>
+    <table name="Person" id="person">
+        <value region_start="4" region_end="24" region_include="guard_captain">The captain of the guard...</value>
+        <value>An interested archivist...</value>
+        <value region_start="11" region_end="16" region_include="nobleman">A visiting noble...</value>
+        <value>A worried local craftsman...</value>
+        <value>The parent of a missing girl...</value>
+        <value region_start="12" region_end="19" region_include="merchant">A traveling merchant...</value>
+        <value>The local ruler...</value>
+        <value region_start="2" region_end="8" region_include="priest">A priest at a local temple...</value>
+        <value>A strange man at the in...</value>
+        <value>A collector of sorts...</value>
+        <value>The child...</value>
+        <value region_start="4" region_end="14" region_include="smith/smith_is/smith_is_blacksmith">The blacksmith...</value>
+        <value region_start="8" region_end="13" region_include="nobleman">A local noble...</value>
+        <value region_start="31" region_end="34" region_include="nobleman">A man at the court of the local lord...</value>
+        <value>The gravedigger...</value>
+        <value region_start="8" region_end="19" region_include="merchant">A local shopkeeper...</value>
+        <value>A local beggar</value>
+        <value>A random hobo...</value>
+        <value>Another adventurer...</value>
+        <value>A farm boy at a nearby estate...</value>
+        <value>The sheepherder...</value>
+        <value>The librarian...</value>
+        <value>The biologist...</value>
+        <value region_start="10" region_end="18" region_include="traveler">A passing traveler...</value>
+        <value>A breeder of rare birds...</value>
+        <value>A local mason...</value>
+        <value>A famous artist...</value>
+        <value>A failed local artist...</value>
+        <value>An old tinkerer...</value>
+        <value region_start="9" region_end="17" region_include="stranger">A hooded stranger...</value>
+        <value region_start="2" region_end="10" region_include="stranger">A stranger whose name is always forgotten...</value>
+        <value region_start="2" region_end="10" region_include="stranger">A stranger without a name...</value>
+        <value region_start="2" region_end="10" region_include="stranger">A stranger who only communicates in writing</value>
+        <value region_start="2" region_end="10" region_include="stranger">A stranger who just leaves a letter on a PC's pillow</value>
+        <value>An old friend of a PC</value>
+        <value>An eerie faceless person</value>
+    </table>
+    <table name="Action" id="action">
+        <value>starts crying when asked about the place</value>
+        <value>asks of the players to travel there with him</value>
+        <value>asks the players to go explore</value>
+        <value>asks the players to destroy it</value>
+        <value>asks the players to collect something from there</value>
+        <value>asks for a souvenir from there</value>
+        <value>invites the players to a party, when asked about the place</value>
+        <value>faints, when asked about the place</value>
+        <value>suddenly disappears, when asked about the place</value>
+        <value>starts growling, when asked about the place</value>
+        <value>calls the guard, when asked about the place</value>
+        <value>hushes on the players and leads them to his/her home, when asked about the place</value>
+        <value>tries to kill the players in their sleep</value>
+        <value>is seen with a map leading there</value>
+        <value>tries to rally people on the street to go there together for some reason</value>
+        <value>has covered all the walls of his house with drawings of the place</value>
+        <value>freezes for a second before completely ignoring the players and walking away, when asked about the place</value>
+        <value>starts singing and dancing, when asked about the place</value>
+        <value>says it's already too late</value>
+    </table>
+</category>

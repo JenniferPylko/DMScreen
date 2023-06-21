@@ -1,0 +1,142 @@
+<category name="Legendary Weapon" id="legendary_weapon">
+    <table name="The weapon is..." id="is">
+        <value>A longsword</value>
+        <value>A short sword</value>
+        <value>A great sword</value>
+        <value>A spear</value>
+        <value>A scythe</value>
+        <value>A dagger</value>
+        <value>A battle axe</value>
+        <value>A great axe</value>
+        <value>A crossbow</value>
+        <value>A long bow</value>
+        <value>A short bow</value>
+        <value>A composite bow</value>
+        <value>A heavy crossbow</value>
+        <value>A light crossbow</value>
+        <value>A hand crossbow</value>
+        <value>A spear</value>
+        <value>A staff</value>
+        <value>A main gauche</value>
+        <value>A falchion</value>
+        <value>A scimitar</value>
+        <value>A tulwar</value>
+        <value>A rapier</value>
+        <value>A sabre</value>
+        <value>A mace</value>
+        <value>A broadsword</value>
+        <value>A claymore</value>
+        <value>A hand axe</value>
+        <value>A war hammer</value>
+        <value>A war pick</value>
+        <value>A morning star</value>
+        <value>A flail</value>
+        <value>A javelin</value>
+        <value>A trident</value>
+        <value>A pike</value>
+        <value>A lance</value>
+        <value>A halbred</value>
+        <value>A glaive</value>
+        <value>A whip</value>
+        <value>A bola</value>
+        <value>A shield</value>
+    </table>
+    <table name="The blade is made of..." id="blade">
+        <value>Obsidian</value>
+        <value>Diamond</value>
+        <value>Simple steel, forged to perfect</value>
+        <value>Steel cooled in demon's blood</value>
+        <value>Steel cooled in dragon's blood</value>
+        <value>Adamantium</value>
+        <value>Dragon fang</value>
+        <value>Flame</value>
+        <value>Ice</value>
+        <value>Lightning</value>
+        <value>Wind</value>
+        <value>Stone</value>
+        <value>Glass</value>
+        <value>Enchanted wood</value>
+        <value>Bone</value>
+    </table>
+    <table name="The shaft is made of..." id="shaft">
+        <value>Polished elm</value>
+        <value>Bone</value>
+        <value>Gold</value>
+        <value>Rough Oak</value>
+        <value>Iron</value>
+        <value>Bronze</value>
+        <value>Silver</value>
+        <value>Blackened steel</value>
+        <value>Ancient oak</value>
+        <value>The weapon is made of one piece. The shaft is the same as the blade</value>
+        <value>Demon bone</value>
+        <value>Dragon bone</value>
+    </table>
+    <table name="The maker was..." id="maker">
+        <value region_start="2" region_end="7" region_include="dwarf">A dwarf</value>
+        <value region_start="2" region_end="10" region_include="__noun__">A tiefling</value>
+        <value region_start="2" region_end="7" region_include="appearance">A human</value>
+        <value region_start="3" region_end="6" region_include="highelf">An elf</value>
+        <value region_start="2" region_end="12" region_include="__noun__">A dragonborn</value>
+        <value region_start="2" region_end="5" region_include="deity">A god</value>
+        <value region_start="3" region_end="6" region_include="orc">An orc</value>
+        <value>A hobgoblin</value>
+        <value region_start="2" region_end="10" region_include="__noun__">A half-elf</value>
+        <value region_start="0" region_end="7" region_include="fiend">A fiend</value>
+    </table>
+    <table name="Who was..." id="maker_was">
+        <value region_start="2" region_end="12" region_include="smith/smith_is/smith_is_blacksmith">A blacksmith</value>
+        <value region_start="2" region_end="13" region_include="smith/smith_is/smith_is_weaponsmith">A weaponsmith</value>
+        <value region_start="3" region_end="10" region_include="armorer">An armorer</value>
+        <value region_start="2" region_end="6" region_include="nobleman">A king</value>
+        <value region_start="2" region_end="10" region_include="__noun__">A magician</value>
+        <value region_start="2" region_end="6" region_include="npc">A hero</value>
+        <value region_start="2" region_end="8" region_include="priest">A priest</value>
+        <value region_start="3" region_end="13" region_include="npc">An adventurer</value>
+        <value region_start="2" region_end="9" region_include="fighter">A warrior</value>
+        <value region_start="2" region_end="8" region_include="__noun__">A hunter</value>
+        <value region_start="2" region_end="16" region_include="deity">A God or Goddess</value>
+        <value region_start="2" region_end="10" region_include="sorcerer">A Sorcerer</value>
+        <value region_start="3" region_end="12" region_include="sorcerer">An Enchanter</value>
+        <value region_start="2" region_end="7" region_include="__noun__">A Nomad</value>
+        <value region_start="2" region_end="8" region_include="dragon">A Dragon</value>
+        <value region_start="2" region_end="13" region_include="necromancer">A Necromancer</value>
+    </table>
+    <table name="The weapon is famous because..." id="famous">
+        <value region_start="17" region_end="22" region_include="monsters">It slew a mighty beast</value>
+        <value region_start="28" region_end="32" region_include="military">It was used to lead a great army</value>
+        <value>It killed kings</value>
+        <value region_start="4|35" region_end="9|39" region_include="__noun__|military">Its owner stood, alone, against an army, and won</value>
+        <value region_start="4" region_end="9" region_include="__noun__">Its owner was a paragon of virtue</value>
+        <value region_start="12" region_end="15" region_include="deity">It killed a god</value>
+        <value region_start="18" region_end="23" region_include="fiend">It killed a great demon</value>
+        <value>It has slain hundreds of thousands</value>
+        <value region_start="10" region_end="16" region_include="dragon">It slew a dragon</value>
+        <value region_start="35" region_end="39" region_include="npc">It contains the soul of an ancient hero</value>
+        <value region_start="35" region_end="42" region_include="villain">It contains the soul of an ancient villain</value>
+    </table>
+    <table name="Other interesting things include..." id="interesting">
+        <value>A diamond where the shaft meets the blade</value>
+        <value>An emerald where the shaft meets the blade</value>
+        <value>A ruby where the shaft meets the blade</value>
+        <value>A sapphire where the shaft meets the blade</value>
+        <value>A crystal where the shaft meets the blade</value>
+        <value>Its maker was killed to stop him from making a better weapon</value>
+        <value>It has fine metal work along the blade (even if the blade is made of an elemental substance)</value>
+        <value>It cannot be sheathed without tasting blood</value>
+        <value>It was tempered in an icy lake</value>
+        <value>It was forged in a volcano</value>
+        <value>It was decorated with symbols where the shaft meets the blade</value>
+        <value>It was cooled in a full moon's light</value>
+        <value>It can only be wielded by the pure of heart</value>
+        <value>It can only be wielded by the just</value>
+        <value>It can only be wielded by the truely evil</value>
+        <value>It binds to its weilder for life</value>
+        <value>It makes no sound</value>
+        <value>A diamond is embedded in the blade</value>
+        <value>An emerald is embedded in the blade</value>
+        <value>A ruby is embedded in the blade</value>
+        <value>A sapphire is embedded in the blade</value>
+        <value>A crystal is embedded in the blade</value>
+    </table>
+</category>

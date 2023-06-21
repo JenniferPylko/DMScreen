@@ -1,0 +1,23 @@
+        <table name="Vignette, encounters and color" short="Vignette" id="dressing_vignette">
+                <value region_start="2" region_end="5" region_include="rat">A rat scuttles past carrying a finger bone with a ring on it</value>
+                <value>You hear a card game going on in the next room. It sounds like someone is losing their shirt</value>
+                <value region_start="0" region_end="12" region_include="orc">A sleepy orc pushes the party to one side and says &quot;Otta my way cur. Yer blocking the way tot he mess hall&quot;</value>
+                <value>A voice shouts from ahead &quot;My god! What did you do to the loo?&quot;</value>
+                <value>Blood drips from a hole in the ceiling and pools on the floor</value>
+                <value>You hear the sound of a whip crack from up ahead</value>
+                <value>You find a room of corpses. One has a hand outstretched towards a glowing gem</value>
+                <value>A second has stabbed the first in the back with a dagger</value>
+                <value>A paper boat floats past on an underground stream. If plucked from the water it has a letter written inside</value>
+                <value>A prisoner in a cage sees the party and yells &quot;Turn back! Runaway!&quot;</value>
+                <value>Cave paintings cover one of the walls, obviously the work of bored hands</value>
+                <value region_start="30|46" region_end="34|50" region_include="trap|trap">A side corridor has an active trap and deadly trap. A broken treasure chest at the far end spills a few coins</value>
+                <value>A grate in the wall allows you to see a mimic finish consuming an adventurer and scuttle off</value>
+                <value>Wind howls mournfully as you cross a rop bridge strewn with arrow riddled adventurers</value>
+                <value region_start="0" region_end="17" region_include="orc">A hunchbacked orc with his back to you tinkers with something in the wall and complains loudly about always being the one who has to reset the traps</value>
+                <value>A large man sits near a pile of treasure reading a book. If approached he changes into a wisp of smoke and retreats to a lamp. Any amount of rubbing on the lamp produces only &quot;Go away! We're closed&quot;</value>
+                <value>A displacer beast and blink dog come thrashing through a cross corridor</value>
+                <value region_start="2" region_end="18" region_include="undead">A dead man's ghost continues searching for a key to a door. A long dead rogue lies nearby</value>
+                <value region_start="10" region_end="16" region_include="dragon">A grouchy dragon stomps around a vast cave shouting &quot;Igor! Where's the ledger listing my gold coins?!&quot;</value>
+                <value region_start="69" region_end="72" region_include="deity">A dusty side corridor holds a tiny, rough made shrine to an unlikely god, and a dusty body with it's hands still clasped in prayer</value>
+                <value>A hole broken in the brick walls leads to a very, very dark tunnel</value>
+            </table>

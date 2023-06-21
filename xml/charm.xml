@@ -1,0 +1,120 @@
+        <category name="Charm" id="charm">
+            <table name="The charm is a..." id="charm_is">
+                <value>Necklace</value>
+                <value>Broach</value>
+                <value>Ring</value>
+                <value>Old piece of cloth</value>
+                <value>Statuette</value>
+                <value>Stick</value>
+                <value>Smooth stone</value>
+                <value>Shirt</value>
+                <value>Socks</value>
+                <value>Hat</value>
+                <value>Pair of pants</value>
+                <value>Underwear</value>
+                <value>Gloves</value>
+                <value>Mask</value>
+                <value>Shoe</value>
+                <value>Belt</value>
+                <value>Glasses</value>
+                <value>Skirt</value>
+                <value region_start="17" region_end="22" region_include="beast">Tooth of a slain beast</value>
+                <value region_start="16" region_end="21" region_include="beast">Claw of a slain beast</value>
+                <value region_start="17" region_end="22" region_include="beast">Skull of a slain beast</value>
+                <value region_start="26" region_end="31" region_include="beast">Preserved head of a slain beast</value>
+                <value region_start="17" region_end="22" region_include="beast">Heart of a slain beast</value>
+                <value region_start="15" region_end="20" region_include="beast">Eye of a slain beast</value>
+                <value region_start="17" region_end="22" region_include="beast">Liver of a slain beast</value>
+                <value region_start="16" region_end="21" region_include="beast">Hand of a slain beast</value>
+                <value region_start="17" region_end="22" region_include="beast">Tongue of a slain beast</value>
+                <value region_start="16" region_end="21" region_include="beast">Bone of a slain beast</value>
+                <value region_start="27" region_end="32" region_include="beast">Vial of blood from a slain beast</value>
+                <value region_start="26" region_end="31" region_include="beast">Shrunken skull of a slain beast</value>
+                <value region_start="0" region_end="4" region_include="coins">Coin</value>
+                <value>Gem</value>
+                <value>Piece of twine</value>
+                <value region_start="0" region_end="4" region_include="book">Book</value>
+                <value>Trinket of unknown origin, and alien design</value>
+                <value>Children's toy</value>
+                <value region_start="14" region_end="23" region_include="__noun__">Letter from a loved one</value>
+                <value>Lute</value>
+                <value>Flute</value>
+                <value>Horn</value>
+                <value>Hand drums</value>
+                <value>Harp</value>
+                <value>Jaw harp</value>
+                <value>Vial of holy water</value>
+                <value>Dog</value>
+                <value region_start="0" region_end="3" region_include="cat">Cat</value>
+                <value region_start="0" region_end="4" region_include="wolf">Wolf</value>
+                <value>Chicken</value>
+                <value>Bird</value>
+                <value>Squirrel</value>
+                <value>Fish in a bowl</value>
+                <value>Ferret</value>
+                <value>Piece of furniture</value>
+                <value>Large stone</value>
+                <value>Wagon cart</value>
+                <value>Cow</value>
+            </table>
+            <table name="The charm has a unique feature..." id="charm_feature">
+                <value>It is smaller than normal</value>
+                <value>It has a horrible smell</value>
+                <value>It is an odd color</value>
+                <value>It is an odd shape</value>
+                <value>It is made of odd materials</value>
+                <value>It is oversized</value>
+                <value>It is extremely normal, and plain</value>
+                <value>It has an affinity for evil</value>
+                <value>It has an affinity for good</value>
+                <value>It is easily lost, and turns up at odd times, or in strange places</value>
+                <value>It is difficult to look at</value>
+                <value>It is hard to not look at it</value>
+            </table>
+            <table name="The charm is lucky when..." id="charm_when">
+                <value>It is worn, or held</value>
+                <value>It can not be seen</value>
+                <value>It can be seen</value>
+                <value>During the day</value>
+                <value>At night</value>
+                <value>Only the owner knows of its existence</value>
+                <value>Everyone believes it's lucky</value>
+                <value>The owner's eyes are closed</value>
+            </table>
+            <table name="How is the charm lucky? It is believed that..." id="charm_how">
+                <value>The owner will win at physical games</value>
+                <value>The owner will win at mental games</value>
+                <value>The owner will encounter love</value>
+                <value>The owner will encounter money</value>
+                <value>The owner will be a better negotiator</value>
+                <value>The owner will encounter good weather</value>
+                <value>The owner will get what he wants</value>
+                <value>The owner will always be better than average at everything</value>
+                <value>The owner will always make the right decision</value>
+                <value>The owner will learn faster</value>
+                <value>The owner will be stronger</value>
+                <value>The owner will be faster</value>
+                <value>The owner will be better looking</value>
+                <value>The owner will be wiser</value>
+                <value>The owner will be smarter</value>
+                <value>The owner will be healthier</value>
+                <value>The owner can read other people better</value>
+                <value>The owner will be happier</value>
+                <value>The owner see through deception</value>
+                <value>It's just lucky.</value>
+            </table>
+            <table name="The charm was obtained..." id="charm_obtained">
+                <value>It was brought to him by a favorite pet</value>
+                <value>It fell from the sky</value>
+                <value region_start="26" region_end="39" region_include="appearance">It was passed down from a family member</value>
+                <value region_start="54" region_end="60" region_include="appearance">It was removed from the corpse of a &quot;lucky&quot; person</value>
+                <value region_start="27" region_end="32" region_include="appearance">It was hand crafted by the owner</value>
+                <value region_start="21" region_end="30" region_include="appearance">It was a gift from a loved one</value>
+                <value region_start="23" region_end="30" region_include="dungeon">It was found deep in a dungeon</value>
+                <value region_start="22" region_end="27" region_include="__noun__">It was stolen from an enemy</value>
+                <value>It was won at a raffle</value>
+                <value>It was one of a hundred gifts given to the townsfolk</value>
+                <value region_start="30" region_end="36" region_include="merchant">It was purchased from a shady vendor</value>
+                <value>It was purchased at a bazaar</value>
+            </table>
+        </category>

@@ -1,0 +1,84 @@
+        <category name="Dungeon of Elemental Water" id="dungeon_elemental_water" link="dungeon_dressing">
+            <table name="This place is a..." id="dungeon_elemental_water_is">
+                <value>Sea cave.</value>
+                <value>Series of flooded tunnels deep underground.</value>
+                <value region_start="20" region_end="34" region_include="__noun__">Stronghold built by aquatic beings.</value>
+                <value region_start="29" region_end="32" region_include="deity/deity_domain/deity_domain_sea">Temple dedicated to a watery god.</value>
+                <value region_start="18" region_end="38" region_include="__noun__">Palace built by a water elemental lord.</value>
+                <value>Sewer gone wrong.</value>
+            </table>
+            <table name="Water level: The chambers in this place..." id="water">
+                <value>Are always flooded up to the ceiling.</value>
+                <value>Are always flooded in the lower levels.</value>
+                <value>Are always flooded up to the waist.</value>
+                <value>Fill with water at high tide.</value>
+                <value>Fill with water seasonally.</value>
+                <value region_start="34" region_end="48" region_include="nobleman">Fill with water at the whim of an elemental lord.</value>
+            </table>
+            <table name="Major feature: You see a/an..." id="major_feature">
+                <value>Air pocket.</value>
+                <value>Altar to a watery god.</value>
+                <value>Heavy chest.</value>
+                <value>Rack of harpoons and/or spears.</value>
+                <value region_start="22" region_end="28" region_include="random_npc">Skeleton of a drowned mortal.</value>
+                <value>Teeming reef.</value>
+            </table>
+            <table name="Minor feature: You see a..." id="minor_feature">
+                <value>Little stream of bubbles.</value>
+                <value region_start="17" region_end="20" region_include="deity/deity_domain/deity_domain_sea">Icon of a watery god.</value>
+                <value region_start="21" region_end="25" region_include="ship">Debris from a broken boat.</value>
+                <value>School of fish.</value>
+                <value>Ragged piece of cloth.</value>
+                <value>Pocket of cool water.</value>
+            </table>
+            <table name="NPC: You meet a/an…" id="npc">
+                <value region_start="11" region_end="16" region_include="undead">Smuggler’s ghost.</value>
+                <value>Curious mermaid.</value>
+                <value>Suspicious sea elf.</value>
+                <value region_start="10" region_end="25" region_include="__noun__">Eccentric treasure hunter.</value>
+                <value region_start="19" region_end="26" region_include="cultist">Half-mad elemental cultist.</value>
+                <value>Reclusive were-dolphin.</value>
+                <value>Reclusive were-giant-clam.</value>
+                <value>Reclusive were-lobster.</value>
+                <value>Reclusive were-octopus.</value>
+                <value>Reclusive were-seal.</value>
+                <value>Reclusive were-shark.</value>
+            </table>
+            <table name="Secondary monster: You come upon a/an…" id="monster">
+                <value>Aberrant dolphin.</value>
+                <value>Aberrant giant clam.</value>
+                <value>Aberrant lobster.</value>
+                <value>Aberrant octopus.</value>
+                <value>Aberrant seal.</value>
+                <value>Aberrant shark.</value>
+                <value>Swarm of crabs or carnivorous fish.</value>
+                <value>Kuo-toa.</value>
+                <value>Sahuagin.</value>
+                <value>Sea hag.</value>
+                <value>Water elemental.</value>
+            </table>
+            <table name="Primary monster: This place is currently ruled by a…" id="ruled">
+                <value>Aboleth.</value>
+                <value region_start="5" region_end="11" region_include="dragon/dragon_color/dragon_color_blue">Blue dragon.</value>
+                <value>Kraken.</value>
+                <value region_start="8" region_end="14" region_include="nobleman">Maridan prince.</value>
+                <value>Storm giant.</value>
+                <value region_start="6" region_end="14" region_include="sorcerer">Storm sorcerer.</value>
+            </table>
+            <table name="Traps/hazard: You must survive the…" id="traps">
+                <value>Electric eels.</value>
+                <value>Poisonous jellyfish.</value>
+                <value>Poisoned dart trap.</value>
+                <value>Flooding airlock trap.</value>
+                <value>Swirling currents.</value>
+                <value>Curse of rotting death.</value>
+            </table>
+            <table name="Reward/treasure: If you survive, you may find..." id="treasure">
+                <value>Pirate captain’s hoard.</value>
+                <value>Staff of elemental power.</value>
+                <value>Ancient weapon forged of coral.</value>
+                <value>Legendary gemstone lost at sea.</value>
+                <value>Key to opening a portal to another realm.</value>
+                <value region_start="16" region_end="24" region_include="noblewoman">Captive mermaid princess.</value>
+            </table>
+        </category>

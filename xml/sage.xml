@@ -1,0 +1,32 @@
+<category name="Tutor / Sage" id="sage">
+    <name name="The tutor's name is..."/>
+    <include name="Race" include="npc_race" />
+    <table name="The tutor is..." id="is">
+        <value region_start="23" region_end="33" region_include="__noun__">A scholar trained at a university</value>
+        <value region_start="2|23" region_end="8|30" region_include="wizard|__noun__">A wizard trained at an academy</value>
+        <value region_start="2" region_end="8" region_include="wizard">A wizard who has apprenticed to another</value>
+        <value>A self-taught scholar of noble birth</value>
+        <value region_start="2" region_end="6" region_include="monk">A monk of an order famed for wisdom</value>
+        <value region_start="2" region_end="8" region_include="__noun__">A priest dedicated to spreading knowledge</value>
+    </table>
+    <table name="The tutor's charges view him/her as..." id="sage_view">
+        <value>A trusted friend</value>
+        <value>A second father/mother</value>
+        <value>A weakling to be antagonized and bullied</value>
+        <value>A tyrant to be feared</value>
+    </table>
+    <table name="The tutor is particularly well-versed in..." id="sage_versed">
+        <value>Alchemy</value>
+        <value>Ancient mysteries</value>
+        <value>Astronomy</value>
+        <value>Herb lore</value>
+        <value>Mathematics</value>
+        <value>Mineralogy</value>
+        <value>Military history</value>
+        <value>Music</value>
+        <value>Poetry and songs</value>
+        <value>Political history</value>
+        <value>Theater and dance</value>
+        <value>Theology</value>
+    </table>
+</category>

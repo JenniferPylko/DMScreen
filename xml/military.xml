@@ -1,0 +1,119 @@
+<category name="Military Company" id="military">
+    <table name="The company's colors are..." id="colors">
+        <value>Black</value>
+        <value>Red / Scarlet</value>
+        <value>Gold</value>
+        <value>Forest Green</value>
+        <value>Royal Blue</value>
+        <value>Violet</value>
+        <value>Silver / Light Grey</value>
+        <value>Bronze</value>
+        <value>Tan / Khaki</value>
+        <value>Brown / Beaver</value>
+        <value>Dark Grey / Gunmetal</value>
+        <value>White</value>
+        <value>Maroon</value>
+        <value>Sky Blue</value>
+        <value>Navy Blue</value>
+        <value>Dark Brown / Chocolate</value>
+        <value>Teal / Turquoise</value>
+        <value>Yellow</value>
+        <value>Orange</value>
+        <value>Olive Green</value>
+    </table>
+    <table name="The company's banner features..." id="banner">
+        <value>A skull</value>
+        <value>A clenched fist</value>
+        <value>A flame</value>
+        <value>A shield</value>
+        <value>An arrow</value>
+        <value>An axe</value>
+        <value>A hammer</value>
+        <value>A sword</value>
+        <value>The sun</value>
+        <value>The moon</value>
+        <value>A bear</value>
+        <value>A bull</value>
+        <value>A dragon</value>
+        <value>A falcon</value>
+        <value>A lion</value>
+        <value>A raven</value>
+        <value>A scorpion</value>
+        <value>A snake</value>
+        <value>A stag</value>
+        <value>A wolf</value>
+    </table>
+    <table name="The company's commander is..." id="commander">
+        <value>A brilliant strategist</value>
+        <value region_start="25" region_end="31" region_include="noblehouse">A scion from a prominent family</value>
+        <value region_start="28" region_end="34" region_include="noblehouse">An outcast from a prominent family</value>
+        <value>A dashing swashbuckler</value>
+        <value>A brutish thug</value>
+        <value>A celebrated war hero</value>
+        <value region_start="12" region_end="18" region_include="knight">A disgraced knight</value>
+        <value region_start="12" region_end="18" region_include="knight">An anointed knight</value>
+        <value region_start="9" region_end="16" region_include="soldier">A career soldier</value>
+        <value region_start="9|15" region_end="14|23" region_include="arena|gladiator">A former arena champion</value>
+    </table>
+    <table name="The company's attitude toward their commander is..." id="attitude">
+        <value>Friendly and loyal</value>
+        <value>Respectful and business-like</value>
+        <value>Cautious and uncertain</value>
+        <value>Terrified and tight-lipped</value>
+        <value>Disappointed and disrespectful</value>
+        <value>Agitated and restless</value>
+    </table>
+    <table name="The company specializes in..." id="specialize">
+        <value>Siege-breaking</value>
+        <value>Holding redoubts</value>
+        <value>Frontal assaults</value>
+        <value>Skirmishes</value>
+        <value>Patrolling</value>
+        <value>Flanking maneuvers</value>
+        <value>Guerrilla tactics</value>
+        <value>Foraging</value>
+    </table>
+    <table name="The company is notorious for..." id="notorious">
+        <value>Taking no prisoners</value>
+        <value>Scarring or branding prisoners</value>
+        <value>Incompetence</value>
+        <value>Cowardice</value>
+        <value>Singing bawdy songs</value>
+        <value>Romantic escapades</value>
+        <value>Eating everything that is available</value>
+        <value>Drinking too much ale and wine</value>
+    </table>
+    <table name="Most soldiers in the company are outfitted with..." id="outfit">
+        <value>Patched leather armor</value>
+        <value region_start="46" region_end="56" region_include="nobleman">Leather armor marked with the symbol of their liege lord</value>
+        <value region_start="59" region_end="69" region_include="nobleman">Helms and breastplates emblazoned with the symbol of their liege lord</value>
+        <value region_start="27" region_end="37" region_include="armorer">Well-maintained chainmail (crafted by)</value>
+        <value region_start="23" region_end="33" region_include="armorer">Well-worn scale armor (crafted by)</value>
+        <value region_start="26" region_end="36" region_include="armorer">Newly-forged scale armor (crafted by)</value>
+    </table>
+    <table name="Most soldiers in the company are equipped with..." id="equipped">
+        <value>Longswords and shortbows</value>
+        <value>Longswords and crossbows</value>
+        <value>Longswords and shields</value>
+        <value>Shortswords and longbows</value>
+        <value>Shortswords and shields</value>
+        <value>Morningstars and crossbows</value>
+        <value>Battleaxes and handaxes</value>
+        <value>Warhammers and shields</value>
+        <value>Spears and shields</value>
+        <value>Longspears and shortswords</value>
+        <value>Pikes and shortswords</value>
+        <value>Halberds and handaxes</value>
+    </table>
+    <table name="Most soldiers in the company are..." id="soldiers">
+        <value>Trained men-at-arms</value>
+        <value>Militia men</value>
+        <value>Veterans of war</value>
+        <value>Prisoners of war</value>
+        <value region_start="18" region_end="22" region_include="city">Conscripts from a city</value>
+        <value>Conscripts from peasant villages</value>
+        <value>Convicted criminals</value>
+        <value>Green boys</value>
+    </table>
+    <member name="Soldier" include="soldier" />
+</category>

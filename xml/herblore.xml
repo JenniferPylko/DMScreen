@@ -1,0 +1,106 @@
+        <category name="Herb Lore" id="herblore">
+            <table name="The herbal concoction will help..." id="help">
+                <value>A wound to heal more quickly</value>
+                <value>Reduce pain</value>
+                <value>Prevent infection in a wound</value>
+                <value>Lower a fever</value>
+                <value>Clear out congestion</value>
+                <value>Reduce itchiness</value>
+                <value>Prevent nausea</value>
+                <value>Cure indigestion</value>
+                <value>One stay awake</value>
+                <value>One fall asleep</value>
+                <value>Make one fertile or virile</value>
+            </table>
+            <table name="The herbal concoction is..." id="is">
+                <value>A thick paste</value>
+                <value>A thin paste</value>
+                <value>Specifically treated leaf</value>
+                <value>A fluffly powder</value>
+                <value>A crystalline substance</value>
+                <value>A lotion or balm</value>
+                <value>An unpalatable potion</value>
+                <value>A sweet-tasting potion</value>
+                <value>A strong tea</value>
+                <value>A fragrant tea</value>
+            </table>
+            <table name="The herbal concoction's color could be described as..." id="color">
+                <value>Pale green</value>
+                <value>Dark green</value>
+                <value>Blue green</value>
+                <value>Olive green</value>
+                <value>Yellowish green</value>
+                <value>Greenish gold</value>
+                <value>Brownish gold</value>
+                <value>Deep red</value>
+                <value>Brownish red</value>
+                <value>White</value>
+                <value>Pale grey</value>
+                <value>Dark grey</value>
+                <value>Bluish grey</value>
+                <value>Purplish grey</value>
+                <value>Greenish grey</value>
+                <value>Brownish grey</value>
+                <value>Black</value>
+                <value>Light brown</value>
+                <value>Dark brown</value>
+                <value>Reddish brown</value>
+            </table>
+            <table name="The herbal concoction contains..." id="contains">
+                <value>Root hairs</value>
+                <value>Ground roots</value>
+                <value>Shredded roots</value>
+                <value>Ground tree bark</value>
+                <value>Wood shavings</value>
+                <value>Fresh leaves</value>
+                <value>Dried leaves</value>
+                <value>Crumbled leaves</value>
+                <value>Leaf buds</value>
+                <value>Flower petals</value>
+                <value>Pollen</value>
+                <value>Fruit peels</value>
+                <value>Berries</value>
+                <value>Moss</value>
+                <value>Mushrooms</value>
+                <value>Fuzzy bold</value>
+                <value>Spores</value>
+                <value>Ground thorns</value>
+                <value>Seeds</value>
+                <value>A shrubbery</value>
+            </table>
+            <table name="The herbal concoction preparation involves..." id="involves">
+                <value>Vigorous mixing</value>
+                <value>Boiling slowly</value>
+                <value>Boiling rapidly</value>
+                <value>Roasting</value>
+                <value>Smoking</value>
+                <value>Sun-drying</value>
+                <value>Soaking</value>
+                <value>Brining</value>
+                <value>Brewing</value>
+                <value>Steeping</value>
+            </table>
+            <table name="The herbal concoction must be..." id="must">
+                <value>Consumed immediately after preparation</value>
+                <value>Consumed after it ages for a few hours</value>
+                <value>Consumed after it ages for a few years</value>
+                <value>Applied topically to the target area</value>
+                <value>Taken with food</value>
+                <value>Taken with water</value>
+                <value>Taken before going to bed</value>
+                <value>Taken with caution; side effects are likely</value>
+                <value>Taken with a supplement to ameliorate the side effects</value>
+                <value>Taken on the spring equinox</value>
+                <value>Taken on the summer solstice</value>
+                <value>Taken on the autumn equinox</value>
+                <value>Taken on the winter solstice</value>
+                <value>Taken on the new moon</value>
+                <value>Taken on a waxing moon</value>
+                <value>Taken on a full moon</value>
+                <value>Taken on a waning moon</value>
+                <value>Taken at dawn</value>
+                <value>Taken at midday</value>
+                <value>Taken at dusk</value>
+                <value>Taken at midnight</value>
+            </table>
+        </category>

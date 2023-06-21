@@ -1,0 +1,225 @@
+<category name="Witch" id="witch">
+    <name name="The witch's name is..."/>
+    <include name="Race" include="npc_race"/>
+    <table name="The witch is..." id="witch_is">
+        <value>A femme fatale</value>
+        <value region_start="14" region_end="20" region_include="farmfolk">The wife of a farmer</value>
+        <value region_start="12" region_end="23" region_include="fisherfolk">The wife of a fisherman</value>
+        <value region_start="12" region_end="19" region_include="miner">The wife of a miner</value>
+        <value region_start="12" region_end="21" region_include="soldier">The wife of a soldier</value>
+        <value region_start="7" region_end="17" region_include="__noun__">An old seamstress</value>
+        <value region_start="7" region_end="13" region_include="__noun__">An old weaver</value>
+        <value>A peasant girl</value>
+        <value region_start="2" region_end="13" region_include="noblewoman">A noble woman</value>
+        <value region_start="2" region_end="7" region_include="__noun__">A slave</value>
+        <value region_start="2" region_end="9" region_include="maidservant">A servant</value>
+        <value region_start="14" region_end="24" region_include="merchant">An attractive shopkeeper</value>
+        <value region_start="8" region_end="15" region_include="barkeep">A stern barmaid</value>
+        <value region_start="7" region_end="21" region_include="__noun__">An old fortune teller</value>
+        <value region_start="11" region_end="17" region_include="__noun__">A talented dancer</value>
+        <value region_start="11" region_end="17" region_include="bard">A talented singer</value>
+        <value region_start="12" region_end="21" region_include="priest">A heretical priestess</value>
+        <value region_start="3" region_end="12" region_include="__noun__">An herbalist</value>
+        <value region_start="2" region_end="8" region_include="healer">A healer</value>
+        <value region_start="10" region_end="16" region_include="__noun__">A skilled hunter</value>
+        <value>A very young girl</value>
+        <value region_start="16" region_end="23" region_include="thief">The daughter of a thief</value>
+        <value region_start="16" region_end="24" region_include="sailor">The daughter of a sailor</value>
+        <value>An old crone</value>
+        <value>An old widow</value>
+        <value>An attractive young window</value>
+    </table>
+    <table name="The witch learned her craft from..." id="witch_learned">
+        <value region_start="9" region_end="14" region_include="witch">A fellow witch who kidnapped her as a young girl</value>
+        <value region_start="9" region_end="14" region_include="witch">A fellow witch who aided her in a time of need</value>
+        <value region_start="2" region_end="10" region_include="__noun__">A neighbor</value>
+        <value region_start="4" region_end="10" region_include="__noun__">Her mother</value>
+        <value region_start="10" region_end="16" region_include="__noun__">Her older sister</value>
+        <value region_start="4" region_end="15" region_include="__noun__">Her grandmother</value>
+        <value>Books of forbidden lore</value>
+        <value>Communication with the spirits of the dead</value>
+        <value region_start="18" region_end="24" region_include="__noun__">Consorting with a friend</value>
+        <value>Participating in bacchanalian fey orgies</value>
+    </table>
+    <table name="The witch specializes in..." id="witch_specialize">
+        <value>Charms</value>
+        <value>Clairvoyance</value>
+        <value>Communing with the dead</value>
+        <value>Conjuring evil spirits</value>
+        <value>Curses</value>
+        <value>Demonology</value>
+        <value>Enchantments</value>
+        <value>Herbalism</value>
+        <value>Hexes</value>
+        <value>Poisons</value>
+        <value>Potions</value>
+        <value>Prophecies</value>
+    </table>
+    <table name="Trade: For coin or barter, the witch will..." id="witch_trade">
+        <value>Read your palm</value>
+        <value>Gaze into her crystal ball</value>
+        <value>Contact a dead relative or friend</value>
+        <value>Place a hex on an enemy</value>
+        <value>Give you a piece of forbidden magical lore</value>
+        <value>Enchant an item</value>
+        <value>Curse an item</value>
+        <value>Prepare an herbal rememdy</value>
+        <value>Prepare a potion</value>
+        <value>Give you an old family recipe</value>
+    </table>
+    <table name="The witch is seeking..." id="witch_seeking">
+        <value region_start="20" region_end="27" region_include="fiend">The means to summon a fiend</value>
+        <value region_start="21" region_end="28" region_include="fiend">The means to control a fiend</value>
+        <value>Eternal youth and beauty</value>
+        <value region_start="12" region_end="29" region_include="npcs">The soul of a specific person</value>
+        <value region_start="18" region_end="35" region_include="npcs">Vengeance against a powerful person</value>
+        <value region_start="12" region_end="18" region_include="__noun__">A long lost recipe</value>
+        <value region_start="28" region_end="34" region_include="__noun__">Instructions for a powerful ritual</value>
+        <value region_start="4|24" region_end="8|29" region_include="wands|witch">The wand of a legendary witch</value>
+        <value region_start="4|24" region_end="8|30" region_include="wands|wizard">The wand of a legendary wizard</value>
+        <value region_start="4|24" region_end="9|29" region_include="__noun__|witch">The staff of an ancient witch</value>
+        <value region_start="4|24" region_end="9|30" region_include="__noun__|wizard">The staff of an ancient wizard</value>
+        <value region_start="25" region_end="33" region_include="divination">The meaning of a cryptic prophecy</value>
+        <value region_start="2" region_end="21" region_include="__noun__">A baby or young child to steal</value>
+        <value region_start="2" region_end="21" region_include="__noun__">A baby or young child to eat</value>
+    </table>
+    <table name="The witch has uncovered dark secrets. She cannot be killed by..." id="witch_notkilled">
+        <value>Hanging or strangulation</value>
+        <value>Drowning</value>
+        <value>Burning</value>
+        <value>Disease</value>
+        <value>Poisoning</value>
+        <value>The hand of a mortal man</value>
+        <value>Falling from a great height</value>
+        <value>Old age</value>
+    </table>
+    <table name="The witch prefers to travel by..." id="witch_travel">
+        <value>Flying broomstick</value>
+        <value>Flying mount (giant owl or hippogriff)</value>
+        <value>Horseback</value>
+        <value>Walking</value>
+        <value region_start="20" region_end="23" region_include="bat">Transforming into a bat</value>
+        <value region_start="20" region_end="23" region_include="cat">Transforming into a cat</value>
+        <value>Transforming into a fox</value>
+        <value region_start="20" region_end="25" region_include="horse">Transforming into a horse</value>
+        <value>Transforming into a owl</value>
+        <value region_start="20" region_end="23" region_include="rat">Transforming into a rat</value>
+        <value>Transforming into a raven</value>
+        <value region_start="20" region_end="24" region_include="wolf">Transforming into a wolf</value>
+    </table>
+    <table name="The witch's home is..." id="witch_home">
+        <value region_start="2" region_end="8" region_include="cavern">In a cave</value>
+        <value region_start="5" region_end="10" region_include="swamp">In a swamp</value>
+        <value region_start="6" region_end="12" region_include="castle">On an island</value>
+        <value region_start="24" region_end="32" region_include="forest">Beneath a large tree in a forest</value>
+        <value region_start="20" region_end="25" region_include="forest">In a cottage in the woods</value>
+        <value region_start="14" region_end="23" region_include="mountain">Hidden in the mountains</value>
+        <value region_start="11" region_end="18" region_include="village">In a quiet village</value>
+        <value region_start="21" region_end="28" region_include="village">Just outside a quiet village</value>
+        <value region_start="25" region_end="29" region_include="city">Down a dark alley in the city</value>
+        <value region_start="7" region_end="13" region_include="castle">In the castle or palace of a lord</value>
+    </table>
+    <table name="Distinguishing Feature: The witch has..." id="witch_feature">
+        <value>A large wart on her nose</value>
+        <value>An oversized, crooked nose</value>
+        <value>A cute little button nose</value>
+        <value>A beauty mark on her cheek</value>
+        <value>A hairy mole on her cheek</value>
+        <value>A jagged scar on her cheek</value>
+        <value>An obnoxious cackling laugh</value>
+        <value>A hideous belting laugh</value>
+        <value>A nervous twittering laugh</value>
+        <value>Long straggly hair</value>
+        <value>Long beautiful hair</value>
+        <value>Her hair pulled up</value>
+    </table>
+    <table name="Poti
+        on Brewing: The witch's brew is percolating in..." id="witch_potion">
+        <value>A delicate ceramic tea kettle</value>
+        <value>A large cast iron cauldron</value>
+        <value>A heavy-bottomed iron pot</value>
+        <value>A thick cast iron vat</value>
+        <value>A copper tea kettle</value>
+        <value>A thick copper vat</value>
+        <value>A heavy steel cook-pot</value>
+        <value>A blackened steel cauldron</value>
+        <value>A thick bronze cauldron</value>
+        <value>A large bronze cook-pot</value>
+    </table>
+    <table name="Potion Brewing: The witch's brew is in the cauldron contains..." id="witch_potionhas">
+        <value>Eye of newt</value>
+        <value>Toe of frog</value>
+        <value>Wool of bat</value>
+        <value>Tongue of dog</value>
+        <value>Adder's fork</value>
+        <value>Blind-worm's sting</value>
+        <value>Lizard's leg</value>
+        <value>Howlet's wing</value>
+        <value>Monkey's paw</value>
+        <value>Pint of blood</value>
+        <value>Pound of flesh</value>
+        <value>Cup of mud</value>
+        <value>Beak of duck</value>
+        <value>Housecat's tail</value>
+        <value>Glob of mold</value>
+        <value>Rusty nail</value>
+        <value>Garlic bulb</value>
+        <value>Cob of corn</value>
+        <value>Stirge's foot</value>
+        <value>Dryad's thorn</value>
+    </table>
+    <table name="Potion Brewing: The witch is currently brewing..." id="witch_potionis">
+        <value>A love potion</value>
+        <value>A fertility tonic</value>
+        <value>Magical cure-all</value>
+        <value>A terrible poison</value>
+        <value>A component for a summoning ritual</value>
+        <value>A component for a necromatic ritual</value>
+        <value>A component for a polymorphing hex</value>
+        <value>A component for a beguiling charm</value>
+    </table>
+    <table name="Familiars: The witch's familiar is..." id="witch_familiar">
+        <value>An air elemental spirit</value>
+        <value>An earth elemental spirit</value>
+        <value>An fire elemental spirit</value>
+        <value>An ice elemental spirit</value>
+        <value>An mud elemental spirit</value>
+        <value>An storm elemental spirit</value>
+        <value>An stone elemental spirit</value>
+        <value>An water elemental spirit</value>
+        <value>An animated toadstool</value>
+        <value>A pixie</value>
+        <value>A sprite</value>
+        <value>A talking songbird</value>
+        <value region_start="2|21" region_end="7|25" region_include="__noun__|book">A demon trapped in a book</value>
+        <value region_start="2|21" region_end="7|24" region_include="__noun__|__noun__">A devil trapped in a gem</value>
+        <value>An imp</value>
+        <value>A quasit</value>
+        <value>A crawling crawl</value>
+        <value>A disembodied voice</value>
+        <value>A floating skull</value>
+        <value>A formless ghost</value>
+        <value region_start="2" region_end="5" region_include="bat">A bat</value>
+        <value region_start="2" region_end="5" region_include="cat">A cat</value>
+        <value>An owl</value>
+        <value>A snake</value>
+        <value region_start="2" region_end="8" region_include="spider">A spider</value>
+        <value>A raven</value>
+        <value region_start="2" region_end="5" region_include="rat">A rat</value>
+        <value>A toad</value>
+    </table>
+    <table name="Familiars: The witch's familiar's manner is..." id="witch_familiarmanner">
+        <value>Calculating</value>
+        <value>Clever</value>
+        <value>Coy</value>
+        <value>Cruel</value>
+        <value>Gleeful</value>
+        <value>Grumpy</value>
+        <value>Insolent</value>
+        <value>Shy</value>
+        <value>Skittish</value>
+        <value>Surly</value>
+        <value>Suspicious</value>
+        <value>Talkative</value>
+    </table>
+</category>

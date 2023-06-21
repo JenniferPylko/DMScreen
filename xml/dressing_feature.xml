@@ -1,0 +1,55 @@
+        <table name="General features" short="Feature" id="dressing_feature">
+                <value>Broken arrow</value>
+                <value>Ashes</value>
+                <value>Bones</value>
+                <value>Broken bottle</value>
+                <value>Corroded chain</value>
+                <value>Splintered club</value>
+                <value>Cobwebs</value>
+                <value>Bent copper coin</value>
+                <value>Cracks in the ceiling</value>
+                <value>Cracks in the floor</value>
+                <value>Cracks in a wall.</value>
+                <value>Dagger hilt</value>
+                <value>Damp ceiling</value>
+                <value>Damp wall</value>
+                <value>Dripping</value>
+                <value>Dried blood</value>
+                <value>Dung</value>
+                <value>Dust</value>
+                <value>Cracked flask</value>
+                <value>Food scraps</value>
+                <value>Common fungi</value>
+                <value>Guano</value>
+                <value>Bits of hair or fur</value>
+                <value>Cracked hammer head</value>
+                <value>Badly dented helmet</value>
+                <value>Bent, rusted iron bar</value>
+                <value>Blunt javelin head</value>
+                <value>Leather boot</value>
+                <value>Dry leaves and twigs</value>
+                <value>Common mold</value>
+                <value>Pick handle</value>
+                <value>Broken pole</value>
+                <value>Pottery shards</value>
+                <value>Rags</value>
+                <value>Rotten rope</value>
+                <value>Rubble and dirt</value>
+                <value>Torn sack</value>
+                <value>Slimy coating on the ceiling.</value>
+                <value>Slimy coating on the floor.</value>
+                <value>Slimy coating on the wall.</value>
+                <value>Rusted spike</value>
+                <value>Sticks</value>
+                <value>Small stones</value>
+                <value>Straw</value>
+                <value>Broken sword blade</value>
+                <value>Scattered teeth or fangs</value>
+                <value>Torch stub</value>
+                <value>Scratchings on a wall</value>
+                <value>Small puddle of water</value>
+                <value>Large puddle of water</value>
+                <value>Trickle of water</value>
+                <value>Candle stub</value>
+                <value>Rotting pieces of wood</value>
+            </table>

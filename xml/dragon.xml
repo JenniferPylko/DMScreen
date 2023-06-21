@@ -1,0 +1,347 @@
+        <category name="Dragon" id="dragon">
+            <name name="The dragon's name is..." src="dragons" />
+            <table name="Age: The Dragon is a..." id="dragon_age">
+                <value id="wyrmling">Wyrmling</value>
+                <value id="youngling">Youngling</value>
+                <value id="adult">Adult</value>
+                <value id="ancient">Ancient One</value>
+            </table>
+            <table name="Color: The dragon is colored..." id="dragon_color">
+                <value id="dragon_color_black">Black, a sadistic beast fond of torture.</value>
+                <value id="dragon_color_blue">Blue, as proud as it is deadly.</value>
+                <value>Green, treacherously cunning.</value>
+                <value>Red, fiery and mad.</value>
+                <value>White, a primal beast of ice.</value>
+                <value>Brass, always fond of a nice chat.</value>
+                <value>Copper, a crafty jokester.</value>
+                <value>Gold, majestic and wealthy.</value>
+                <value>Silver, friendly and caring.</value>
+                <value>Bronze, a dragon of the coast.</value>
+            </table>
+            <table name="Appearance: The dragon has a unique appearance..." id="appearance">
+                <value>It has very sleek and soft scales that blend together and shine.</value>
+                <value>Is relatively normal for its colour.</value>
+                <value>It has very tough and overgrown scales like barbaric plate armour.</value>
+                <value>Shards of bone grow out of its body painfully at every angle.</value>
+                <value>Crystal grows out of its scales seemingly brimming with magical power.</value>
+                <value>It has runes carved into every scale each one with magical meaning.</value>
+                <value>It is albino and while mistaken for a White Dragon may actually have a very different appearance.</value>
+                <value>Its entire body is covered in thick shaggy fur.</value>
+                <value>It has multiple sets of small sharp wings.</value>
+                <value>Its wings are coated in feathers giving it an oddly angelic appearance.</value>
+                <value>It radiates its chosen element making it glow with power under its scales.</value>
+                <value>It has weapons of all kinds in its scales which the dragon wears proudly.</value>
+                <value>It’s covered in thick chains. Most likely result of it losing a fight long ago.</value>
+                <value>Large scars cut into its body.</value>
+                <value>Shadows seem to cling to its form like a cloak, no matter how bright the area is.</value>
+                <value>A long slender body like a great serpent.</value>
+                <value>An extra set of arms with strong muscle and sharp claws.</value>
+                <value>Mottled scale colours that give it a patchy look between two colors.</value>
+                <value>A bloated and obese body that makes it exceedingly large.</value>
+                <value>An insect like mandible instead of a normal maw.</value>
+                <value>A mouth so large it has trouble shutting with rows and rows of sharp teeth.</value>
+                <value>A slimy goo like substance all over its body.</value>
+                <value>Appears to be changing colours at all times like an optical illusion.</value>
+                <value>Bark or stone all over its body.</value>
+                <value>Multiple sets of eyes that glow with arcane power.</value>
+                <value>Large ancient gauntlet like constructs on its claws that it uses in combat.</value>
+                <value>Extra armour added to its body, adamantine or mithral.</value>
+                <value>A thin almost skeletal form.</value>
+                <value>Ugly diseased marks on its scales and a sickly pallor.</value>
+                <value>Its front legs are its wings in a way similar to a wyvern.</value>
+                <value>It wears the trophies of its kills on its body, covered in heads and hands.</value>
+                <value>Areas of its body are completely devoid of scales. Its skin has grown tough and leathery to make up for that.</value>
+                <value>Has fish like adaptations to living at deep sea.</value>
+                <value>Has some kind of weakness and wears an exosuit like harness over their body to make them stronger.</value>
+                <value>A second head on its tail that can also shoot breath weapons.</value>
+                <value>Two heads, both with different personalities like an ettin.</value>
+                <value>It has an aura of its elemental power around it at all times, such as a bubble of flame uncontrollably burning.</value>
+                <value>The dragon has no mouth and speaks entirely telepathically. Its breath weapon is magical instead.</value>
+                <value>The dragon seems blind, and relies on extremely strong smell and sound to find prey.</value>
+                <value>It has sharp monstrous barbs all over its body.</value>
+                <value>It has a very soft underbelly of a different colour that is weaker than its other scales.</value>
+                <value>Has gemstones and coins inset into its scales like a traditional dragon, gaining it strength and armour.</value>
+                <value>It has sharp scythe like claws that make up its front claws.</value>
+                <value>Its claws are very long and slender but have great tactile control.</value>
+                <value>It has a very long tongue that it eagerly uses like an extra arm.</value>
+                <value>It has a face eerily similar to a humanoids.</value>
+                <value>Its form is slightly more humanoid than usual, with the typical muscles more prominent and obvious than usual.</value>
+                <value>Has ridges of horn like spines over its back each one just as sharp.</value>
+                <value>Has very long curled horns like a minotaur that it will use on headbutting goring attacks.</value>
+                <value>It has only one but very large horn like a unicorn.</value>
+                <value>It seems to have no claws at all instead relying on hard slamming attacks.</value>
+                <value>It’s missing one of its limbs entirely.</value>
+                <value>It has half of its face missing, revealing the bone and muscle beneath.</value>
+                <value>Its scales are slightly translucent allowing one to see its insides.</value>
+                <value>A cobra like hood on its neck.</value>
+                <value>Bandages and wrappings around a good deal of its body.</value>
+                <value>A somewhat bird like beak instead of a traditional dragon maw.</value>
+                <value>Has eerily human like hands instead of claws.</value>
+                <value>A disturbing number of multiple scuttling legs.</value>
+                <value>Huge crab like claws.</value>
+                <value>A beholder like eye with several twisting eyestalks.</value>
+                <value>A huge twisting wurm like body.</value>
+                <value>A sharp bladed tail that it uses as a weapon.</value>
+                <value>A bloody stump where the tail was meant to be.</value>
+                <value>Smoke and clouds around its body at all times.</value>
+                <value>Huge and actually somewhat uncomfortable wings that sweep around it.</value>
+                <value>It stands on its hind legs similar to a humanoid.</value>
+                <value>Carefully manicured claws in sword like shapes.</value>
+                <value>Broad fan like tail fins.</value>
+                <value>Wreaths of flowers and plants around its body.</value>
+            </table>
+            <table name="Appearance: It also has..." id="has">
+                <value>One horn missing sharply removed.</value>
+                <value>Light scarring around the eyes.</value>
+                <value>A heavy mace like tail which it will happily use as a weapon.</value>
+                <value>A mane of &quot;hair&quot; by its head.</value>
+                <value>A crown of horns around the top of its skull.</value>
+                <value>A face that looks like a skull.</value>
+                <value>A pair of overly large fangs.</value>
+                <value region_start="11" region_end="19" region_include="artifacts">A powerful artifact of some kind embedded in its forehead.</value>
+                <value>An extra tail.</value>
+                <value>Each eye is a different colour and extra vibrant.</value>
+                <value>A hungry and yet charming grin.</value>
+                <value>A beard of hanging scales.</value>
+                <value>Scales of varying shininess and hue.</value>
+                <value>Far brighter colours than normal.</value>
+                <value>Far darker colours than normal.</value>
+                <value>Often covered in mud or dirt.</value>
+                <value>Appears to have used some kind of make up.</value>
+                <value>Has painted tattoos on its scales.</value>
+                <value>Several missing teeth.</value>
+                <value>A single missing scale making a small weak point.</value>
+                <value>Missing a single wing.</value>
+                <value>Has stripe like patterns to its scales.</value>
+                <value>Has one single magical eye.</value>
+                <value>A pet that constantly stays by its side.</value>
+                <value>Brand like markings burnt onto its body.</value>
+                <value>Smoke constantly billowing from its mouth and nostrils.</value>
+                <value>A thin slender form.</value>
+                <value>A cuddly stocky form.</value>
+                <value>A spiney ridge on their back.</value>
+                <value>Wears very large custom made eyeglasses.</value>
+                <value>A large ridge on its head like a triceratops.</value>
+                <value>Shackles on its legs.</value>
+                <value>Plants growing on its body.</value>
+                <value>A very long tail, several times the lengths of its body.</value>
+                <value>Large fins on its tail.</value>
+                <value>A vastly different than normal hue.</value>
+                <value>Fins on its limbs.</value>
+                <value>A large over-biting jaw.</value>
+                <value>A large underbiting jaw.</value>
+                <value>Fake horns.</value>
+            </table>
+            <table name="Traits: The dragon is..." id="is">
+                <value>A dire dragon seemingly mutated someway by fel energies. Larger and more violent than even most dragons.</value>
+                <value>The runt of the litter. It’s smaller than average and weaker, yet more intelligent and stealthy.</value>
+                <value>A new parent protecting its eggs. It is proud and excited for them but will protect them to the death.</value>
+                <value>Part of a long family lineage of dragons and trying to live up to the expectations of that.</value>
+                <value>The survivor of an attack that haunts it. Whatever this attack is deeply disturbs the dragon whenever anything similar happens, for example causing the dragon to freeze and panic around fire.</value>
+                <value>One half of a pair of twins. Very connected to their twin.</value>
+                <value>Fond of staying in human form. They live as a human, or similar race, living the normal life of a mortal and enjoying it greatly.</value>
+                <value>A powerful wild mage. It uses its spells as breath attacks that often cause completely unexpected chaotic surges of magic.</value>
+                <value>A powerful wizard who has a large tome of magic. It adores magic and tries to learn as much as possible.</value>
+                <value>Tainted by fiends, becoming demonic. More evil than normal and the lord of many minor demons that do its bidding.</value>
+                <value>Tainted by celestials making it holy and good. Worshipped by many due to its holiness.</value>
+                <value>A fey dragon, giving it an attenuation to the feywild and an affinity to nature. It seems constantly surrounded by flowers and fairies and seems to be quite the trickster.</value>
+                <value>Loves building, and has actually tried to make its lair into the perfect dungeon. It will eagerly lure in and tempt people into it. It would even be excited if someone survived the entire dungeon.</value>
+                <value>Considers itself to be a mercenary hunting down either heroes or evildoers. It hunts down these people and fights them mercilessly.</value>
+                <value>Fond of meditation and has spent years reaching inner enlightenment and tranquillity.</value>
+                <value>Very eager to make friends. Although making friends for a dragon often involves ‘playing’ with them in ways similar to a cat playing with a mouse.</value>
+                <value>Trying to become the most infamous dragon in the entire realm. Almost to the extent of making itself a brand.</value>
+                <value>Part of a pair mated for life. They’re very unwilling to separate.</value>
+                <value>Actually very stealthy. Will lay traps and bait an enemy and attack from the shadows.</value>
+                <value>Undead but trying to cling to what it once was, and not lose its soul and its mind.</value>
+                <value>Not afraid of using technology. It has learnt from Rock Gnomes various steam and clockwork powered technologies, and will create auto turrets to use in its fight.</value>
+                <value region_start="35" region_end="38" region_include="deity">Highly religious. It worships its god or gods strongly and will go to the extent of performing great rituals or sacrifices.</value>
+                <value>Has a cult of followers who worship them like a god. It of course loves this as it strokes their ego.</value>
+                <value>Highly emotional and will go through manic swings with their emotions. Kind and caring one day, destructive the other.</value>
+                <value>Connected to the environment around its lair in a great way, able to manipulate the surrounding area and protects it.</value>
+                <value>Considers itself a scientist and uses arcane magic to do twisted experiments on itself and others. Its lair is full of these experiments.</value>
+                <value>Has an agreement with a monster hunting guild to kill those applicants that get annoying after they pay in their initial application payments.</value>
+                <value>Respects mortals and smaller creatures. Sees meaning in all life, even something as small as an insect.</value>
+                <value>Is a king of a small land. Complete with crown. May be a harsh king but the locals won't argue with a huge dragon.</value>
+                <value>Is very interested in medicine and will heal and fix up anyone near death, even those trying to kill them. They will then keep them in a dungeon until they regain strength.</value>
+                <value>Is almost entirely feral and primal.</value>
+                <value>Likes to live in animal form, experiencing the wild. It has picked up many animal like traits due to this.</value>
+                <value>Is extremely intelligent, or thinks it is. Tries to use its mind to solve problems. And of course thinks it’s better than everything else.</value>
+                <value>Is very charming and charismatic. Will actually talk its way out of, or into situations.</value>
+                <value>Was created by magic or some other source, not a blood born dragon. This makes it confused about its life and creation.</value>
+                <value>Was raised by mortals. If they were kind, it loves mortals. If they hurt it, it caused a hatred for mortals that caused their madness.</value>
+                <value>Is entirely insane. Perhaps caused by magic or some kind of drug abuse.</value>
+                <value>Always flies, tries to touch the ground as little as possible. Even flies in its sleep floating above the ground.</value>
+                <value>Never leaves the ground, despite having wings. Has learnt to burrow instead when it needs to fly.</value>
+                <value>Is not particularly strong, but is extremely fast and agile. Able to dish out many attacks at one go that deal small but biting damage.</value>
+                <value>Slow, lumbering… but deadly. When this dragon eventually gets to combat its blows are entirely destructive.</value>
+                <value>Has a strange honour system, only ever wanting to fight when it follows its exact set of rules. When people break this honoured battle system, the dragon uses its true power and gets angry.</value>
+                <value>The dragon is part of a large community of friendly or not so friendly dragons who send messages and gifts to eachother on a regular basis.</value>
+                <value>Hibernates for centuries at a time… leading to a lot of confusion. Its snoring is so loud it is mistaken for wind.</value>
+                <value>Tries to be the opposite alignment of its natural state… While it tries hard it still feels urges and can lose control.</value>
+                <value>Considers itself a master bard and will write songs and music. They may be good, but dragons are not the best at singing or playing the lute.</value>
+                <value>Cursed with vampirism. While this doesn’t work exactly the same it has given the dragon a huge hunger for blood.</value>
+                <value>Cursed with lycanthropy. While it doesn’t work the same, the dragon is amazingly violent on a full moon and hades silver.</value>
+                <value region_start="15" region_end="22" region_include="disease">Has a terminal disease and is either trying to help or hinder the world as much as possible in its dying days.</value>
+                <value>Runs a shop to those that are strong enough to survive the trip through its lair to get there.</value>
+                <value>Thinks itself an intelligent mastermind, a game master that plays with its pawns in one huge game, a game of dungeons and dragons.</value>
+                <value>Follows ‘the law’ of the land. Very strenuously stretching laws to let it do what it wants.</value>
+                <value>It will be kind to those that give it gifts that it deems exciting enough.</value>
+                <value>quite the nymphomaniac. Which can be rather dangerous especially when it gets its eye on a party member.</value>
+                <value>Endorses adventurers or mercenaries across the land, giving them funds to do things the dragon is simply to lazy to do.</value>
+                <value>A glutton. For food, drink, just about everything.</value>
+                <value>Full of Pride. As are all dragons, but this one has trouble looking away from the mirror.</value>
+                <value>Greedy, more than most dragons. If anyone has any treasure in any way, the dragon needs it.</value>
+                <value>Lazy. Why do anything when you can rest. It doesn’t want to bother any one as much as it just wants to sleep and be by itself.</value>
+                <value>Vengeful. If someone slightly wrongs this dragon they will come at them, their children, their children's children as well as every town they have been through ever.</value>
+                <value region_start="25" region_end="33" region_include="artifacts">Is protecting a powerful artifact of intense magical power.</value>
+                <value>Lonely, and only wants to find friends.</value>
+                <value>Bullies all the other dragons and monsters in the area, becoming their leader.</value>
+                <value>Works intensely on illusions and creates illusionary traps and environments.</value>
+                <value>Demands protection money and food from nearby settlements.</value>
+                <value>Serious social anxiety and doesn’t want to talk to anyone.</value>
+                <value>It in its human form is influencing the entire realm and doing dark dealings.</value>
+                <value>It only leaves its lair during a certain season each year.</value>
+                <value>It wants to die in such a way that legends and songs will be created after it. Will actually try and orchestrate this.</value>
+                <value>Is sick. A dragon sneezing is a powerful, but embarrassing weapon.</value>
+            </table>
+            <table name="Speech: When it comes to conversation..." id="speech">
+                <value>It is offended by those who will not speak Draconic and refuses to speak in any other tongue.</value>
+                <value>It knows many languages and loves to talk.</value>
+                <value>Is mute and refuses to talk.</value>
+                <value>Talks very slowly and conservatively.</value>
+                <value>Speaks its mind very simply.</value>
+                <value>Speaks only in riddles and metaphors.</value>
+                <value>Tends to ask constant questions but give no answers.</value>
+                <value>Very flirty. Uncomfortably so.</value>
+                <value>Mimics anyone that talks to them.</value>
+                <value>Will find any excuse to argue.</value>
+                <value>Uses its breath weapon as violent punctuation.</value>
+                <value>Speaks using illusions like charades.</value>
+                <value>Is very friendly until someone swears and then is extremely offended and angry.</value>
+                <value>Laughs darkly almost whenever possible.</value>
+                <value>Growls out most of its words.</value>
+                <value>Speaks very broken language.</value>
+                <value>Refers to itself in third person.</value>
+                <value>Only speaks through a scribe interpreter.</value>
+                <value>It gets uncomfortably close as it speaks.</value>
+                <value>It seems to know everything about everyone it talks too.</value>
+            </table>
+            <table name="Hoard: Each dragon is compelled to hoard, but many hoard in different ways. This dragon's hoard is..." id="hoard">
+                <value>Made of gold and coins. A sea of gold and silver coins.</value>
+                <value>Gold but only the currency of one race, oddly not the race in the nearby areas.</value>
+                <value>Carefully organised money in stacks and every treasure is organised using a complex system.</value>
+                <value>All famous art, paintings and statues. It will commission paintings of itself, and go to art shows in disguise.</value>
+                <value>Food. The Dragon loves to eat and sees food as a potential to be an art form. Actually hires chefs to cook the best food possible.</value>
+                <value>The frozen or petrified statuesque forms of adventurers that try to kill it. It will tell the tales of their attempts proudly and with great interest.</value>
+                <value>Stories and legends. It loves to hear and tell stories and has an obsession with bards.</value>
+                <value>Music. It constantly needs music playing in its lair, and gets very agitated if there is none.</value>
+                <value>A zoo of various monsters and creatures. It aims to have two of every race at one point, a male and female.</value>
+                <value>Buildings. This dragon hoards real estate and territory. In disguise it owns and buys land. The land is more important than the people that live there, but will help the people if it helps them get more land.</value>
+                <value>Gemstones. This dragon has little time for money but loves gemstones. Preferably cut.</value>
+                <value>A library of books and stories. Knowledge is its passion.</value>
+                <value>Magical artifacts, from all across the world.</value>
+                <value>A very beautiful mansion that it uses like a doll house, getting the finest appearance possible.</value>
+                <value>People it deems interesting that are either enslaved or convinced to stay.</value>
+                <value>Narcotics. The dragon loves to try different types of drugs, such as pipeweeds and psychotropic mushrooms. Of course it needs large amounts to work.</value>
+                <value>A large and beautiful garden that it keeps and tends for.</value>
+                <value>Their children. The dragon has many pure and half blood children and takes care of them greatly.</value>
+                <value>Potions and all kinds of strange alchemical creations.</value>
+                <value>The corpses and remains of other dragons. Particularly interested in weapons and armours made of dragonscales.</value>
+                <value>Artisan jewellery that the dragon actually wears on its body.</value>
+                <value>Literally everything. Or tries. This leads to this dragon's hoard being very random and chaotic.</value>
+                <value>Objects of power linked to its element.</value>
+                <value>Minions that swear loyalty to the dragon.</value>
+                <value>Gemstones and other things the same colour as the dragon.</value>
+                <value>Very sparsely laid out with a treasure each dedicated to a room.</value>
+                <value>Very compact with a large amount of treasure forced into one small room.</value>
+                <value>Hidden, the dragon assumed someone was coming and hid the hoard away.</value>
+                <value>Up for being shared. The dragon will often share its hoard to those that need it, endorsing heroes. Often though this is a loan to be repaid.</value>
+                <value>Has been passed down for generations and only grown in size.</value>
+            </table>
+            <table name="Lair: Dragons have a home. Often a large dungeon. This dragon's lair is..." id="lair">
+                <value>An ancient ruin from an ancient race.</value>
+                <value>The peak of the tallest mountain, with few paths up to the lair.</value>
+                <value>A temple built for the dragon personally by its worshippers or people enslaved.</value>
+                <value>A flying island above the land. Lush or barren, still a very safe place for a dragon.</value>
+                <value>An underwater wreckage of a galley. Perhaps with caverns and ruins below it.</value>
+                <value>An abandoned mine. The mineshafts are filled with minions to defend the dragon.</value>
+                <value>A cavern carved out of the stone by the dragon. The walls are full of these sharp cuts scraped by the dragon and the chambers are shaped similarly to the dragon's wingspan.</value>
+                <value>A reclaimed castle. The surrounding area is plains or desert, the castle most likely abandoned by its old owners.</value>
+                <value>A desert pyramid, surrounded by dangerous deserts.</value>
+                <value>A giant tree. Perhaps dead, or in a lush environment, a tree large enough to hold a dragon is impressive.</value>
+                <value>Underdark Caverns. The underdark can be a great place for a dragon that’s trying to hide away.</value>
+                <value>A volcano. The heat is perfect for a red fire dragon, but also presents for defence from attackers.</value>
+                <value region_start="13" region_end="23" region_include="town">An abandoned settlement. The town's walls now protect the dragon, who claims the empty town.</value>
+                <value>A tomb. Dragons have little respect for the dead of mortals, so a tomb can be turned into a useful lair.</value>
+                <value>A lonely island away from most of the world.</value>
+                <value>Built by minions, a ramshackle base made by goblins and the sort. It seems like it will fall apart at any times.</value>
+                <value>A flat mesa. High up but with a flat environment perfect for dragon duels.</value>
+                <value>Behind a waterfall. Hidden behind the waterfall is a large cave system.</value>
+                <value>Nomadic. The dragon has no fixed home, and is travelling for some reason.</value>
+                <value>A large roost community of several young dragons.</value>
+                <value>A pocket dimension of its own creation.</value>
+                <value>A realm designed to imprison it. Perhaps the dragon took control of the realm after.</value>
+                <value>An elemental plane linked to the dragon.</value>
+                <value>A citadel designed to imprison the dragon. And perhaps also other beings of similar power waiting to be freed.</value>
+                <value>A site of a great battle. The ground littered with corpses, perfect stomping ground for a dragon.</value>
+                <value>A ravine where the dragon can enter with ease.</value>
+                <value>Built by the dragon. The best homes are made yourself.</value>
+                <value>An arctic glacier. Cold and far away.</value>
+                <value region_start="6" region_end="18" region_include="town">Under a settlement. Most likely hidden from the population.</value>
+                <value region_start="0" region_end="10" region_include="mountain">A mountain top shrine.</value>
+            </table>
+            <table name="Lair: The lair also has..." id="lair_has">
+                <value>A place of magical power. A layline that lets the dragon tap into raw magic.</value>
+                <value>A place of elemental power.</value>
+                <value>A portal between realms.</value>
+                <value>Skinned monsters in every hallway. The decorator has a macabre sense of style.</value>
+                <value>A library of ancient tomes.</value>
+                <value>A room of the dragons concubines of various races.</value>
+                <value>Puzzles that require a dragon's strength to operate.</value>
+                <value>Arcane traps.</value>
+                <value>Murals of the dragons personal conquests.</value>
+                <value>A clutch of dragon eggs.</value>
+                <value>Magic playing tricks on all that enter.</value>
+                <value>Shed lizard skin all over the floors.</value>
+                <value>A fake hoard filled with a sea of coin mimics.</value>
+                <value>Several holes in the roof where the dragon takes off from.</value>
+                <value>Friendly inhabitants that live with the dragon.</value>
+                <value>Many statues and paintings of the dragon.</value>
+                <value>Maze like corridors.</value>
+                <value>Puzzles that are easy if one understands draconic.</value>
+                <value>A huge chess set with pawns the size of people.</value>
+                <value>The bones of the dragons mother/father.</value>
+                <value>Warding stones outside from several races warning of danger.</value>
+                <value>A spectator summoned to guard the lair and politely turn away invaders.</value>
+                <value>A cloud of smoke and mist around it at all times.</value>
+                <value>A huge pantry of all kinds of raw meats.</value>
+                <value>An illusionary fake dragon to try and bait out enemy spells.</value>
+                <value>Strange music travelling throughout the whole lair.</value>
+                <value>An alarming amount of mould and decay</value>
+                <value>Strange and violent weather all around.</value>
+                <value>Flooded caverns of waterborne monsters.</value>
+                <value>One huge chamber with pillars breaking it up.</value>
+            </table>
+            <table name="Henchmen: The lair is defended by..." id="henchmen">
+                <value>Goblins who worship the dragon out of fear. The dragon would not care for their lives and hire them en masse.</value>
+                <value>Mercenaries hired by the dragon to keep it safe. The races and skills do not matter to the dragon, so would be varied.</value>
+                <value>Hobgoblin soldiers. More trained professionals.</value>
+                <value>The dragons children. Purebred and half-dragon children.</value>
+                <value>The nightmares of all that enter.</value>
+                <value region_start="0" region_end="7" region_include="kobold">Kobolds with the intelligence of toddlers. They just want to help.</value>
+                <value>Mortal cultists.</value>
+                <value>A sect of mortal dragon knights.</value>
+                <value>Wild beasts. Lured in by the dragon.</value>
+                <value>Intelligent beasts.</value>
+                <value>Mephits and elementals suiting the dragon.</value>
+                <value>Gensai linked to the dragons element.</value>
+                <value>Undead.</value>
+                <value>Fiends.</value>
+                <value>Shadowy versions of the party raiding the dungeon.</value>
+                <value>Seemingly harmless warning signs that hold deadly curses.</value>
+                <value>Terrified peasants.</value>
+                <value>Arcane defence turrets.</value>
+                <value>Giant Insects.</value>
+                <value>Smaller dragon like creatures.</value>
+            </table>
+        </category>

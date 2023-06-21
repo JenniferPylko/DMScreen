@@ -1,0 +1,524 @@
+<manifest version="0">
+	<files>
+		<file name="castle.xml" version="2" />
+		<file name="cavern.xml" version="1" />
+		<file name="castle_dungeon.xml" version="1" />
+		<file name="dungeon_elemental_water.xml" version="1" />
+		<file name="dungeon_elemental_fire.xml" version="1" />
+		<file name="dungeon_elemental_air.xml" version="1" />
+		<file name="mine.xml" version="1" />
+		<file name="monastery.xml" version="1" />
+		<file name="prison.xml" version="1" />
+		<file name="temple.xml" version="1" />
+		<file name="tomb.xml" version="1" />
+		<file name="dungeon_dressing.xml" version="1" />
+		<file name="cult.xml" version="1" />
+		<file name="goblingang.xml" version="1" />
+		<file name="guilds.xml" version="1" />
+		<file name="lycanthropepack.xml" version="1" />
+		<file name="mercenaries.xml" version="1" />
+		<file name="caravan.xml" version="1" />
+		<file name="military.xml" version="1" />
+		<file name="noblehouse.xml" version="1" />
+		<file name="orcclan.xml" version="1" />
+		<file name="outlaws.xml" version="1" />
+		<file name="pirates.xml" version="1" />
+		<file name="savagehordes.xml" version="1" />
+		<file name="secretsociety.xml" version="1" />
+		<file name="gang.xml" version="1" />
+		<file name="watchmen.xml" version="1" />
+		<file name="breakfast_camp.xml" version="1" />
+		<file name="breakfast_cafe.xml" version="1" />
+		<file name="breakfast_inn.xml" version="1" />
+		<file name="dinner_desert.xml" version="2" />
+		<file name="dinner_eastern.xml" version="1" />
+		<file name="dinner_island.xml" version="2" />
+		<file name="dinner_jungle.xml" version="1" />
+		<file name="dinner_swamp.xml" version="1" />
+		<file name="dinner_inn.xml" version="1" />
+		<file name="dinner_tavern.xml" version="1" />
+		<file name="dinner_mage.xml" version="1" />
+		<file name="dinner_goblin.xml" version="1" />
+		<file name="dinner_hunter.xml" version="1" />
+		<file name="dinner_mining.xml" version="1" />
+		<file name="dinner_seasidecafe.xml" version="1" />
+		<file name="dinner_witch.xml" version="1" />
+		<file name="dinner_orc.xml" version="1" />
+		<file name="dinner_undead.xml" version="1" />
+		<file name="dinner_dwarf.xml" version="1" />
+		<file name="dinner_elf.xml" version="1" />
+		<file name="fish.xml" version="1" />
+		<file name="streetfood.xml" version="1" />
+		<file name="mishaps.xml" version="1" />
+		<file name="divination.xml" version="1" />
+		<file name="herblore.xml" version="1" />
+		<file name="legendary_weapon.xml" version="1" />
+		<file name="wands.xml" version="1" />
+		<file name="aberrant_beast.xml" version="2" />
+		<file name="bat.xml" version="1" />
+		<file name="cat.xml" version="1" />
+		<file name="celestial_beast.xml" version="1" />
+		<file name="demonic_beast.xml" version="1" />
+		<file name="fey_beast.xml" version="1" />
+		<file name="fire_beast.xml" version="1" />
+		<file name="horse.xml" version="1" />
+		<file name="infernal_beast.xml" version="1" />
+		<file name="legendary_beast.xml" version="1" />
+		<file name="monkey.xml" version="1" />
+		<file name="rat.xml" version="1" />
+		<file name="sea_beast.xml" version="1" />
+		<file name="shadow_beast.xml" version="1" />
+		<file name="spider.xml" version="1" />
+		<file name="storm_beast.xml" version="1" />
+		<file name="undead_beast.xml" version="1" />
+		<file name="winter_beast.xml" version="1" />
+		<file name="wolf.xml" version="1" />
+		<file name="deity.xml" version="1" />
+		<file name="dragon.xml" version="1" />
+		<file name="faerie.xml" version="1" />
+		<file name="fiend.xml" version="1" />
+		<file name="goblin.xml" version="1" />
+		<file name="golem.xml" version="1" />
+		<file name="kobold.xml" version="1" />
+		<file name="lizardfolk.xml" version="1" />
+		<file name="lycanthrope.xml" version="1" />
+		<file name="merfolk.xml" version="1" />
+		<file name="mutant.xml" version="1" />
+		<file name="oozes.xml" version="1" />
+		<file name="orc.xml" version="1" />
+		<file name="orcwarlord.xml" version="1" />
+		<file name="treefolk.xml" version="1" />
+		<file name="undead.xml" version="1" />
+		<file name="vampire.xml" version="1" />
+		<file name="book.xml" version="1" />
+		<file name="coins.xml" version="1" />
+		<file name="disease.xml" version="1" />
+		<file name="charm.xml" version="1" />
+		<file name="heirloom.xml" version="1" />
+		<file name="pickpocketloot.xml" version="1" />
+		<file name="poisons.xml" version="1" />
+		<file name="potions.xml" version="2" />
+		<file name="insults.xml" version="1" />
+		<file name="traps.xml" version="1" />
+		<file name="chests.xml" version="1" />
+		<file name="unholyaltar.xml" version="1" />
+		<file name="junk.xml" version="1" />
+		<file name="wines.xml" version="1" />
+		<file name="appearance.xml" version="1" />
+		<file name="npc.xml" version="1" />
+		<file name="alchemist.xml" version="1" />
+		<file name="animalhandler.xml" version="1" />
+		<file name="crafter_apprentice.xml" version="1" />
+		<file name="crafter_artisan.xml" version="1" />
+		<file name="assassin.xml" version="1" />
+		<file name="barkeep.xml" version="1" />
+		<file name="caravan_master.xml" version="1" />
+		<file name="caravan_owner.xml" version="1" />
+		<file name="archer.xml" version="1" />
+		<file name="armorer.xml" version="1" />
+		<file name="bowyer.xml" version="1" />
+		<file name="chaplain.xml" version="1" />
+		<file name="jester.xml" version="1" />
+		<file name="guard_captain.xml" version="1" />
+		<file name="horsemaster.xml" version="1" />
+		<file name="huntsman.xml" version="1" />
+		<file name="kennelmaster.xml" version="1" />
+		<file name="knight.xml" version="1" />
+		<file name="maidservant.xml" version="1" />
+		<file name="nobleman.xml" version="1" />
+		<file name="noblewoman.xml" version="1" />
+		<file name="squire.xml" version="1" />
+		<file name="stablehand.xml" version="1" />
+		<file name="steward.xml" version="1" />
+		<file name="sage.xml" version="1" />
+		<file name="barbarian.xml" version="1" />
+		<file name="bard.xml" version="1" />
+		<file name="druid.xml" version="1" />
+		<file name="fighter.xml" version="1" />
+		<file name="paladin.xml" version="1" />
+		<file name="priest.xml" version="1" />
+		<file name="ranger.xml" version="1" />
+		<file name="rogue.xml" version="1" />
+		<file name="sorcerer.xml" version="1" />
+		<file name="warlock.xml" version="1" />
+		<file name="wizard.xml" version="1" />
+		<file name="cook.xml" version="1" />
+		<file name="criminal.xml" version="1" />
+		<file name="cultist.xml" version="1" />
+		<file name="cultist_snake.xml" version="1" />
+		<file name="farmfolk.xml" version="1" />
+		<file name="fisherfolk.xml" version="1" />
+		<file name="gangmember.xml" version="1" />
+		<file name="gladiator.xml" version="1" />
+		<file name="graverobber.xml" version="1" />
+		<file name="guard.xml" version="1" />
+		<file name="guide.xml" version="1" />
+		<file name="harlot.xml" version="1" />
+		<file name="healer.xml" version="1" />
+		<file name="investigator.xml" version="1" />
+		<file name="jailor.xml" version="2" />
+		<file name="lawofficial.xml" version="1" />
+		<file name="mercenary.xml" version="1" />
+		<file name="merchant.xml" version="1" />
+		<file name="miner.xml" version="1" />
+		<file name="monk.xml" version="1" />
+		<file name="monsterhunter.xml" version="1" />
+		<file name="necromancer.xml" version="1" />
+		<file name="pirate.xml" version="1" />
+		<file name="poacher.xml" version="1" />
+		<file name="princess.xml" version="1" />
+		<file name="prisoner.xml" version="1" />
+		<file name="quartermaster.xml" version="1" />
+		<file name="darkelf.xml" version="1" />
+		<file name="dwarf.xml" version="1" />
+		<file name="gnome.xml" version="1" />
+		<file name="halfling.xml" version="1" />
+		<file name="highelf.xml" version="1" />
+		<file name="woodelf.xml" version="1" />
+		<file name="dragonborn.xml" version="1" />
+		<file name="robber.xml" version="1" />
+		<file name="sailor.xml" version="1" />
+		<file name="seer.xml" version="1" />
+		<file name="killer.xml" version="1" />
+		<file name="shopkeeper.xml" version="1" />
+		<file name="smith.xml" version="1" />
+		<file name="smuggler.xml" version="1" />
+		<file name="soldier.xml" version="1" />
+		<file name="stranger.xml" version="1" />
+		<file name="thief.xml" version="1" />
+		<file name="torturer.xml" version="1" />
+		<file name="traveler.xml" version="1" />
+		<file name="vendor.xml" version="1" />
+		<file name="witch.xml" version="1" />
+		<file name="woodsman.xml" version="1" />
+		<file name="villain.xml" version="1" />
+		<file name="damsel.xml" version="1" />
+		<file name="nightmares.xml" version="1" />
+		<file name="nightmares2.xml" version="1" />
+		<file name="politics.xml" version="1" />
+		<file name="reputation.xml" version="1" />
+		<file name="songs.xml" version="1" />
+		<file name="places.xml" version="1" />
+		<file name="treasuremap.xml" version="1" />
+		<file name="crime.xml" version="1" />
+		<file name="gossip.xml" version="1" />
+		<file name="arena.xml" version ="1" />
+		<file name="brothel.xml" version="1" />
+		<file name="landmark.xml" version="2" />
+		<file name="dwarfenclave.xml" version="1" />
+		<file name="elfenclave.xml" version="1" />
+		<file name="fishingboat.xml" version="1" />
+		<file name="gnomeenclave.xml" version="2" />
+		<file name="library.xml" version="1" />
+		<file name="magetower.xml" version="1" />
+		<file name="mageshop.xml" version="2" />
+		<file name="marketplace.xml" version="1" />
+		<file name="shop.xml" version="1" />
+		<file name="militarycamp.xml" version="1" />
+		<file name="orcenclave.xml" version="1" />
+		<file name="ship.xml" version="1" />
+		<file name="streetname.xml" version="2" />
+		<file name="tavern.xml" version="1" />
+		<file name="desert.xml" version="1" />
+		<file name="forest.xml" version="1" />
+		<file name="jungle.xml" version="1" />
+		<file name="mountain.xml" version="1" />
+		<file name="plains.xml" version="1" />
+		<file name="swamp.xml" version="1" />
+		<file name="underdark.xml" version="1" />
+		<file name="continent.xml" version="1" />
+		<file name="nation.xml" version="1" />
+		<file name="town.xml" version="1" />
+		<file name="village.xml" version="1" />
+		<file name="world.xml" version="1" />
+		<file name="city.xml" version="1" />
+		<file name="room_castledungeon.xml" version="1" />
+		<file name="room_castlechamber.xml" version="1" />
+	</files>
+	<skeleton>
+		<category name="Dungeons" id="dungeons">
+			<category id="castle" />
+			<category id="cavern" />
+			<category id="castle_dungeon" />
+			<category id="dungeon_elemental_water" />
+			<category id="dungeon_elemental_fire" />
+			<category id="dungeon_elemental_air" />
+			<category id="mine" />
+			<category id="monastery" />
+			<category id="prison" />
+			<category id="temple" />
+			<category id="tomb" />
+			<category id="dungeon_dressing" />
+		</category>
+		<category name="Factions / Groups" id="groups">
+			<category id="cult" />
+			<category id="goblingang" />
+			<category id="guilds" />
+			<category id="lycanthropepack" />
+			<category id="mercenaries" />
+			<category id="caravan" />
+			<category id="military" />
+			<category id="noblehouse" />
+			<category id="orcclan" />
+			<category id="outlaws" />
+			<category id="pirates" />
+			<category id="savagehordes" />
+			<category id="secretsociety" />
+			<category id="gang" />
+			<category id="watchmen" />
+		</category>
+		<category name="Food" id="food">
+			<category id="breakfast_camp" />
+			<category id="breakfast_cafe" />
+			<category id="breakfast_inn" />
+			<category id="dinner_desert" />
+			<category id="dinner_eastern" />
+			<category id="dinner_island" />
+			<category id="dinner_jungle" />
+			<category id="dinner_swamp" />
+			<category id="dinner_inn" />
+			<category id="dinner_tavern" />
+			<category id="dinner_mage" />
+			<category id="dinner_goblin" />
+			<category id="dinner_hunter" />
+			<category id="dinner_mining" />
+			<category id="dinner_seasidecafe" />
+			<category id="dinner_witch" />
+			<category id="dinner_orc" />
+			<category id="dinner_undead" />
+			<category id="dinner_dwarf" />
+			<category id="dinner_elf" />
+			<category id="fish" />
+			<category id="streetfood" />
+			<category id="wines" />
+		</category>
+		<category name="Magic" id="magic">
+			<category id="mishaps" />
+			<category id="divination" />
+			<category id="herblore" />
+			<category id="potions" />
+			<category id="legendary_weapon" />
+			<category id="wands" />
+		</category>
+		<category name="Monsters" id="monsters">
+			<category name="Beasts" id="beast">			
+				<category id="aberrant_beast" />
+				<category id="bat" />
+				<category id="cat" />
+				<category id="celestial_beast" />
+				<category id="demonic_beast" />
+				<category id="fey_beast" />
+				<category id="fire_beast" />
+				<category id="horse" />
+				<category id="infernal_beast" />
+				<category id="legendary_beast" />
+				<category id="monkey" />
+				<category id="rat" />
+				<category id="sea_beast" />
+				<category id="shadow_beast" />
+				<category id="spider" />
+				<category id="storm_beast" />
+				<category id="undead_beast" />
+				<category id="winter_beast" />
+				<category id="wolf" />
+			</category>
+			<category id="deity" />
+			<category id="dragon" />
+			<category id="faerie" />
+			<category id="fiend" />
+			<category id="goblin" />
+			<category id="golem" />
+			<category id="kobold" />
+			<category id="lizardfolk" />
+			<category id="lycanthrope" />
+			<category id="merfolk" />
+			<category id="mutant" />
+			<category id="oozes" />
+			<category id="orc" />
+			<category id="orcwarlord" />
+			<category id="treefolk" />
+			<category id="undead" />
+			<category id="vampire" />
+		</category>
+		<category name="Objects, Items and Misc" id="items">
+			<category id="book" />
+			<category id="coins" />
+			<category id="disease" />
+			<category id="charm" />
+			<category id="heirloom" />
+			<category id="legendary_weapon" />
+			<category id="pickpocketloot" />
+			<category id="poisons" />
+			<category id="potions" />
+			<category id="insults" />
+			<category id="traps" />
+			<category id="chests" />
+			<category id="unholyaltar" />
+			<category id="junk" />
+			<category id="wines" />
+		</category>
+		<category name="NPCs" id="npcs">
+			<category id="appearance" />
+			<category id="npc" />
+			<category id="alchemist" />
+			<category id="animalhandler" />
+			<category id="crafter_apprentice" />
+			<category id="archer" />
+			<category id="armorer" />
+			<category id="crafter_artisan" />
+			<category id="assassin" />
+			<category id="barkeep" />
+			<category id="bowyer" />
+			<category id="caravan_master" />
+			<category id="caravan_owner" />
+			<category name="Castle Inhabitants" id="castle_inhabitants">
+				<category id="archer" />
+				<category id="bowyer" />
+				<category id="chaplain" />
+				<category id="jester" />
+				<category id="guard_captain" />
+				<category id="horsemaster" />
+				<category id="huntsman" />
+				<category id="kennelmaster" />
+				<category id="knight" />
+				<category id="maidservant" />
+				<category name="Nobility" id="noble">
+					<category id="nobleman" />
+					<category id="noblewoman" />
+				</category>
+				<category id="squire" />
+				<category id="stablehand" />
+				<category id="steward" />
+				<category id="sage" />
+			</category>
+			<category name="Classes" id="classes">
+				<category id="barbarian" />
+				<category id="bard" />
+				<category id="druid" />
+				<category id="fighter" />
+				<category id="paladin" />
+				<category id="priest" />
+				<category id="ranger" />
+				<category id="rogue" />
+				<category id="sorcerer" />
+				<category id="warlock" />
+				<category id="wizard" />
+			</category>
+			<category id="cook" />
+			<category id="criminal" />
+			<category id="cultist" />
+			<category id="cultist_snake" />
+			<category id="farmfolk" />
+			<category id="fisherfolk" />
+			<category id="jester" />
+			<category id="gangmember" />
+			<category id="gladiator" />
+			<category id="graverobber" />		
+			<category id="guard" />			
+			<category id="guard_captain" />
+			<category id="guide" />
+			<category id="harlot" />
+			<category id="healer" />
+			<category id="horsemaster" />
+			<category id="huntsman" />
+			<category id="investigator" />
+			<category id="jailor" />
+			<category id="kennelmaster" />
+			<category id="knight" />
+			<category id="lawofficial" />
+			<category id="maidservant" />
+			<category id="mercenary" />
+			<category id="merchant" />
+			<category id="miner" />
+			<category id="monk" />
+			<category id="monsterhunter" />
+			<category id="necromancer" />
+			<category id="pirate" />
+			<category id="poacher" />
+			<category id="princess" />
+			<category id="prisoner" />
+			<category id="quartermaster" />
+			<category name="Race" id="race">
+				<category id="darkelf" />
+				<category id="dwarf" />
+				<category id="gnome" />
+				<category id="halfling" />
+				<category id="highelf" />
+				<category id="woodelf" />
+				<category id="dragonborn" />
+			</category>
+			<category id="robber" />
+			<category id="sailor" />
+			<category id="seer" />
+			<category id="killer" />
+			<category id="shopkeeper" />
+			<category id="smith" />
+			<category id="smuggler" />
+			<category id="soldier" />
+			<category id="squire" />
+			<category id="stablehand" />
+			<category id="steward" />
+			<category id="stranger" />
+			<category id="thief" />
+			<category id="torturer" />
+			<category id="traveler" />
+			<category id="sage" />
+			<category id="vendor" />
+			<category id="witch" />
+			<category id="woodsman" />
+			<category id="villain" />
+		</category>
+		<category name="Plot" id="plot">
+			<category id="damsel" />
+			<category id="nightmares" />
+			<category id="nightmares2" />
+			<category id="politics" />
+			<category id="reputation.xml" />
+			<category id="songs.xml" />
+			<category id="places.xml" />
+			<category id="treasuremap.xml" />
+			<category id="crime.xml" />
+			<category id="gossip.xml" />
+		</category>
+		<category name="Locations" id="locations">
+			<category id="arena" />
+			<category id="brothel" />
+			<category id="landmark" />
+			<category id="dwarfenclave" />
+			<category id="elfenclave" />
+			<category id="fishingboat" />
+			<category id="gnomeenclave" />
+			<category id="library" />
+			<category id="magetower" />
+			<category id="mageshop" />
+			<category id="marketplace" />
+			<category id="shop" />
+			<category id="militarycamp" />
+			<category id="orcenclave" />
+			<category id="ship" />
+			<category id="streetname" />
+			<category id="tavern" />
+		</category>
+		<category name="Wilderness" id="wilderness">
+			<category id="desert" />
+			<category id="forest" />
+			<category id="jungle" />
+			<category id="plains" />
+			<category id="mountain" />
+			<category id="swamp" />
+			<category id="underdark" />
+		</category>
+		<category name="Worldbuilding" id="worldbuilding">
+			<category id="continent" />
+			<category id="nation" />
+			<category id="town" />
+			<category id="village" />
+			<category id="world" />
+			<category id="city" />
+		</category>
+		<category name="Rooms" id="rooms">
+			<category id="room_castledungeon" />
+			<category id="room_castlechamber" />
+		</category>
+	</skeleton>
+</manifest>

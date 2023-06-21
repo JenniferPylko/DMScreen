@@ -1,0 +1,16 @@
+        <table name="Air currents" short="Air Current" id="dressing_current">
+                <value>Slight breeze</value>
+                <value>Slight damp breeze</value>
+                <value>Gusting breeze</value>
+                <value>Cold</value>
+                <value>Slight downdraft</value>
+                <value>Strong downdraft</value>
+                <value>Still</value>
+                <value>Still, very chill</value>
+                <value>Still, warm (or hot)</value>
+                <value>Slight Updraft</value>
+                <value>Strong Updraft</value>
+                <value>Strong Wind</value>
+                <value>Strong gusting wind</value>
+                <value>Strong moaning wind</value>
+            </table>

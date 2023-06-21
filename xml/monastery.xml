@@ -1,0 +1,511 @@
+<category name="Monastery" id="monastery" link="dungeon_dressing">
+    <table name="The monastery's name is..." type="name" type_name="Monastery" id="name">
+        <patterns>
+            <pattern>{type} of the {noun}</pattern>
+            <pattern>The {adj} {noun}</pattern>
+            <pattern>The {adj} {type}</pattern>
+            <pattern>The {markov}</pattern>
+            <pattern>{type} of {verb}</pattern>
+            <pattern>{type} of {noun}s</pattern>
+        </patterns>
+        <list type="type">
+            <item>Sanctuary</item>
+            <item>Shrine</item>
+            <item>Church</item>
+            <item>Altar</item>
+            <item>Pantheon</item>
+            <item>Synagogue</item>
+            <item>Temple</item>
+            <item>House</item>
+            <item>Mosque</item>
+            <item>Pagoda</item>
+            <item>Chapel</item>
+        </list>
+        <list type="noun">
+            <item>Chicken</item>
+            <item>Warrior</item>
+            <item>Druid</item>
+            <item>Bull</item>
+            <item>Bear</item>
+            <item>Shepherd</item>
+            <item>Arrow</item>
+            <item>Buck</item>
+            <item>Cup</item>
+            <item>Stars</item>
+            <item>Coin</item>
+            <item>World</item>
+            <item>Hammer</item>
+            <item>Sword</item>
+            <item>Shield</item>
+            <item>Dagger</item>
+            <item>Axe</item>
+            <item>Spear</item>
+            <item>Sickle</item>
+            <item>Key</item>
+            <item>Lion</item>
+            <item>Dragon</item>
+            <item>Serpent</item>
+            <item>Hermit</item>
+            <item>Martyr</item>
+            <item>Saviour</item>
+            <item>Pony</item>
+            <item>Mason</item>
+            <item>Rose</item>
+            <item>Daisy</item>
+            <item>Thorn</item>
+            <item>Cat</item>
+            <item>Dog</item>
+            <item>Sheep</item>
+            <item>Cow</item>
+            <item>Phoenix</item>
+            <item>Naga</item>
+            <item>Hydra</item>
+            <item>Lamb</item>
+            <item>Calf</item>
+            <item>Stranger</item>
+            <item>Straggler</item>
+            <item>Judge</item>
+            <item>Jury</item>
+            <item>Traveler</item>
+            <item>Merchant</item>
+            <item>Nymph</item>
+            <item>Wish</item>
+            <item>Immortal</item>
+            <item>Butcher</item>
+            <item>Tailor</item>
+            <item>Fiend</item>
+            <item>Demon</item>
+            <item>Wizard</item>
+            <item>Staff</item>
+            <item>Wench</item>
+            <item>Donkey</item>
+            <item>Goose</item>
+            <item>Fowl</item>
+            <item>Raven</item>
+            <item>Crow</item>
+            <item>Duck</item>
+            <item>Unicorn</item>
+            <item>Hound</item>
+            <item>Goat</item>
+            <item>Steer</item>
+            <item>Ram</item>
+            <item>Fox</item>
+            <item>Coyote</item>
+            <item>Dingo</item>
+            <item>Angel</item>
+            <item>Eagle</item>
+            <item>Hawk</item>
+            <item>Falcon</item>
+            <item>Owl</item>
+            <item>Pigeon</item>
+            <item>Hare</item>
+            <item>Rabbit</item>
+            <item>Mare</item>
+            <item>Stag</item>
+            <item>Fist</item>
+            <item>Centaur</item>
+            <item>Hoof</item>
+            <item>Bard</item>
+            <item>Priest</item>
+            <item>Priestess</item>
+            <item>Hero</item>
+            <item>Heroine</item>
+            <item>Hand</item>
+            <item>Paladin</item>
+            <item>Wizard</item>
+            <item>Mage</item>
+            <item>Sorcerer</item>
+            <item>Harpy</item>
+            <item>Imp</item>
+            <item>Wanderer</item>
+            <item>Ronin</item>
+            <item>Archer</item>
+            <item>Mercenary</item>
+            <item>Horseman</item>
+            <item>Scribe</item>
+            <item>Scholar</item>
+            <item>Peasant</item>
+            <item>Vixen</item>
+            <item>Pearl</item>
+            <item>Ruby</item>
+            <item>Onyx</item>
+            <item>Garnet</item>
+            <item>Gem</item>
+            <item>Gazebo</item>
+            <item>Troll</item>
+            <item>Minotaur</item>
+            <item>Highwayman</item>
+            <item>Alchemist</item>
+            <item>Brew</item>
+            <item>Herbalist</item>
+            <item>River</item>
+            <item>Stream</item>
+            <item>Sea</item>
+            <item>Ocean</item>
+            <item>Tenacity</item>
+            <item>Resolve</item>
+            <item>Devotion</item>
+            <item>Restoration</item>
+            <item>Isle</item>
+            <item>Crystal</item>
+            <item>Lake</item>
+            <item>Pool</item>
+            <item>Tranquillity</item>
+            <item>Reflection</item>
+            <item>Forest</item>
+            <item>Mountain</item>
+            <item>Desert</item>
+            <item>Field</item>
+            <item>Meadow</item>
+            <item>Prairie</item>
+            <item>Swamp</item>
+            <item>Hills</item>
+            <item>Spirit</item>
+            <item>Regrets</item>
+            <item>Light</item>
+            <item>Dark</item>
+            <item>Decay</item>
+            <item>Yew</item>
+            <item>Doom</item>
+            <item>Refugees</item>
+            <item>Termination</item>
+            <item>Creation</item>
+            <item>Oasis</item>
+            <item>Souls</item>
+            <item>Emergencies</item>
+            <item>Pond</item>
+            <item>Confidence</item>
+            <item>Shadows</item>
+            <item>Ice</item>
+            <item>Fire</item>
+            <item>Wind</item>
+            <item>Earth</item>
+            <item>Water</item>
+            <item>Sky</item>
+            <item>Sun</item>
+            <item>War</item>
+            <item>Fertility</item>
+            <item>Garden</item>
+            <item>Monolith</item>
+            <item>Healing</item>
+            <item>Nature</item>
+            <item>Equality</item>
+            <item>Superiority</item>
+            <item>Mother</item>
+            <item>Father</item>
+            <item>Patron</item>
+            <item>Saint</item>
+            <item>Purgatory</item>
+            <item>Planes</item>
+            <item>Amnesia</item>
+            <item>Brook</item>
+            <item>Judgement</item>
+            <item>Universe</item>
+            <item>Opportunities</item>
+            <item>Omen</item>
+            <item>Grove</item>
+            <item>Monument</item>
+            <item>Myths</item>
+            <item>Reliance</item>
+            <item>Consequences</item>
+            <item>Dreams</item>
+            <item>Visions</item>
+            <item>Prophecy</item>
+            <item>Future</item>
+            <item>Island</item>
+            <item>Vitality</item>
+            <item>Mending</item>
+            <item>Perfection</item>
+            <item>Air</item>
+            <item>Fates</item>
+            <item>Fate</item>
+            <item>Grove</item>
+            <item>Insight</item>
+        </list>
+        <list type="adj">
+            <item>Vile</item>
+            <item>Ghostly</item>
+            <item>Radiant</item>
+            <item>Timeless</item>
+            <item>Tribal</item>
+            <item>Omen</item>
+            <item>Imperious</item>
+            <item>Pious</item>
+            <item>Perpetual</item>
+            <item>Forgotten</item>
+            <item>Eternal</item>
+            <item>Sanctified</item>
+            <item>Putrid</item>
+            <item>Exalted</item>
+            <item>Guilty</item>
+            <item>Ethereal</item>
+            <item>Cerulean</item>
+            <item>Premonition</item>
+            <item>Solemn</item>
+            <item>Foul</item>
+            <item>Ancestral</item>
+            <item>Ancient</item>
+            <item>Modern</item>
+            <item>Devout</item>
+            <item>Pure</item>
+            <item>Spirit</item>
+            <item>Magical</item>
+            <item>Lost</item>
+            <item>Silver</item>
+            <item>Golden</item>
+            <item>White</item>
+            <item>Red</item>
+            <item>Wicked</item>
+            <item>Argent</item>
+            <item>Blue</item>
+            <item>Yellow</item>
+            <item>Green</item>
+            <item>Orange</item>
+            <item>Black</item>
+            <item>Lonely</item>
+            <item>Angelic</item>
+            <item>Demonic</item>
+            <item>Fiendish</item>
+            <item>Pristine</item>
+            <item>Flying</item>
+            <item>Naked</item>
+            <item>Begging</item>
+            <item>Heavenly</item>
+            <item>Celestial</item>
+            <item>Brazen</item>
+            <item>Bloody</item>
+            <item>Destitute</item>
+            <item>Vulgar</item>
+            <item>Quiet</item>
+            <item>Laughing</item>
+            <item>Staggering</item>
+            <item>Bold</item>
+            <item>Angry</item>
+            <item>Happy</item>
+            <item>Sad</item>
+            <item>Rogue</item>
+            <item>Toothless</item>
+            <item>Weary</item>
+            <item>Devious</item>
+            <item>Holy</item>
+            <item>Uhholy</item>
+            <item>Weeping</item>
+            <item>Timid</item>
+            <item>Pearl</item>
+        </list>
+        <list type="verb">
+            <item>Perfection</item>
+            <item>Piety</item>
+            <item>Radiance</item>
+            <item>Time</item>
+            <item>Eternity</item>
+            <item>Omens</item>
+            <item>Sancitity</item>
+            <item>Exaltation</item>
+            <item>Guile</item>
+            <item>Visions</item>
+            <item>Divination</item>
+            <item>Solemnity</item>
+            <item>Ancestry</item>
+            <item>Purity</item>
+            <item>Spirituality</item>
+            <item>Vulgarity</item>
+            <item>Destitution</item>
+            <item>Destruction</item>
+            <item>Silence</item>
+            <item>Laughter</item>
+        </list>
+    </table>
+    <table name="Visitors to the monastery come seeking..." id="monasery_seeking">
+        <value region_start="0" region_end="17" region_include="__noun__">Ancient knowledge</value>
+        <value region_start="0" region_end="13" region_include="__noun__">Mystic wisdom</value>
+        <value>Spiritual guidance</value>
+        <value>Prayers and healing</value>
+        <value region_start="0|16" region_end="4|21" region_include="__noun__|__noun__">Ales and other goods made on-site</value>
+        <value>Refuge from war</value>
+        <value>Shelter on a long journey</value>
+        <value region_start="5" region_end="10" region_include="__noun__">The secret of true happiness</value>
+        <value>Physical perfection</value>
+        <value region_start="31" region_end="36" region_include="__noun__">The means to travel to another realm</value>
+        <value region_start="14" region_end="35" region_include="__noun__">Training in a unique fighting style</value>
+        <value>The tools and training to exact vengeance</value>
+    </table>
+    <table name="The monastery is known for its..." id="monasery_known">
+        <value>Compassionate healers</value>
+        <value>Sacred music</value>
+        <value>Ancient wisdom</value>
+        <value>Dark prophecies</value>
+        <value>Stunning architecture</value>
+        <value>Unusual architecture</value>
+        <value>A famous sculpture or painting</value>
+        <value>Lengthy prayer services and vigils</value>
+        <value region_start="10" region_end="17" region_include="__noun__">Extensive library and scholarly debates</value>
+        <value>Master brewers or vintners</value>
+        <value>Powerful mystics</value>
+        <value>Indefatigable warriors</value>
+    </table>
+    <table name="The monastery complex is located..." id="monasery_located">
+        <value region_start="45" region_end="52" region_include="village">On a hilltop far from any cities, but with a village below</value>
+        <value region_start="26" region_end="38" region_include="city">On a hilltop not far from a large city</value>
+        <value region_start="12" region_end="23" region_include="mountain">On a remote mountaintop</value>
+        <value region_start="17" region_end="25" region_include="mountain">On the side of a mountain</value>
+        <value region_start="14" region_end="20" region_include="naturalforest">Deep within a forest</value>
+        <value region_start="7" region_end="13" region_include="naturaldesert">Near a desert oasis</value>
+        <value region_start="6" region_end="12" region_include="wilderness">Below ground</value>
+        <value region_start="16" region_end="22" region_include="city">In the heart of a city</value>
+        <value region_start="15" region_end="24" region_include="mountain">Beneath a cold mountain.</value>
+        <value region_start="16" region_end="25" region_include="mountain">Beneath a fiery mountain.</value>
+        <value region_start="21" region_end="29" region_include="mountain">Near a well-traveled mountain pass.</value>
+        <value region_start="14" region_end="20" region_include="forest">Deep within a forest.</value>
+        <value region_start="14" region_end="20" region_include="desert">Deep within a desert.</value>
+        <value region_start="11" region_end="14" region_include="__noun__">Beside the sea.</value>
+        <value region_start="6" region_end="12" region_include="__noun__">On an island.</value>
+        <value region_start="19" region_end="23" region_include="city">Beneath a bustling city.</value>
+        <value region_start="31" region_end="35" region_include="city">Beneath the ruin of an ancient city.</value>
+        <value region_start="21" region_end="27" region_include="castle">Beneath a well-known castle</value>
+        <value region_start="21" region_end="30" region_include="monastery">Beneath a well-known monastery.</value>
+        <value region_start="28" region_end="34" region_include="castle">Beneath the ruins of an old castle</value>
+        <value region_start="28" region_end="37" region_include="monastery">Beneath the ruins of an old monastery.</value>
+        <value>In a place reachable only by magic.</value>
+    </table>
+    <table name="The monastery complex is..." id="monasery_is">
+        <value>A tight cluster of buildings (or chambers)</value>
+        <value>A cluster of buildings with gardens, lawns, and yards in the spaces between</value>
+        <value>A cluster of interconnected buildings</value>
+        <value>A cluster of buildings ringed by a fence or low wall</value>
+        <value>A cluster of buildings ringed by a defensible stone wall</value>
+        <value>A single large building</value>
+        <value>A large main building with several small support buildings located nearby</value>
+        <value>A fortress with walls and watchtowers or sentry towers</value>
+        <value>A labyrinthine series of small buildings</value>
+        <value>Symmetrically divided into two or more wings</value>
+    </table>
+    <table name="This monastery was built by..." id="monasery_builtby">
+        <value region_start="3" region_end="8" region_include="__noun__">An order of elementalist monks</value>
+        <value region_start="3" region_end="8" region_include="__noun__">An order of mystics</value>
+        <value region_start="3" region_end="8" region_include="__noun__">An order of shadow monks</value>
+        <value region_start="3" region_end="8" region_include="__noun__">An order of warrior monks</value>
+        <value region_start="3" region_end="8" region_include="__noun__">An order of demonic monks.</value>
+        <value region_start="23" region_end="28" region_include="__noun__">An extremely secretive order of monks</value>
+        <value region_start="11" region_end="16" region_include="__noun__">An unknown order of monks</value>
+    </table>
+    <table name="Many of the monastery's ceilings are..." id="monasery_ceiling">
+        <value>Uncomfortably close to your head</value>
+        <value>Connected to the floor by columns</value>
+        <value>Painted with mythological scenes</value>
+        <value>Domes or cupolas</value>
+    </table>
+    <table name="The buildings/chambers are..." id="monasery_chambers">
+        <value>Decorated with statues</value>
+        <value>Decorated with stone arches and columns</value>
+        <value>Colorful structures of painted wood and plaster</value>
+        <value>Sturdy structures of finished wood</value>
+        <value>Solid structures of oven-fired clay bricks</value>
+        <value>Behind large brass doors</value>
+        <value>Behind large bronze doors</value>
+        <value>Behind large gold doors</value>
+        <value>Behind large iron doors</value>
+        <value>Behind large steel doors</value>
+        <value>Behind large tin doors</value>
+    </table>
+    <table name="Many of the monastery's interior walls are..." id="monasery_walls">
+        <value>Rough hewn stone</value>
+        <value>Smooth cut stone</value>
+        <value>Painted or lacquered wood</value>
+        <value>Unfinished hardwood</value>
+        <value>Decorated with intricate mosaics</value>
+        <value>Decorated with elaborate murals</value>
+        <value>Decorated with relief carvings</value>
+        <value>Decorated with sacred texts and runes</value>
+    </table>
+    <table name="The monastery guards the secret to..." id="monasery_secret">
+        <value>World peace</value>
+        <value>Inner peace</value>
+        <value>Spiritual enlightenment</value>
+        <value>Total consciousness</value>
+        <value>Apotheosis</value>
+        <value>Armageddon</value>
+        <value region_start="29" region_end="32" region_include="deity">Ritual transformation into a god's avatar</value>
+        <value>Unsealing a portal to another realm</value>
+        <value>Instant and irreversible death</value>
+        <value>The perfect pint of ale</value>
+    </table>
+    <table name="The monastery's secret is known to..." id="monasery_secretknown">
+        <value>Everyone, but the specifics are hidden</value>
+        <value>Monks that perform a particular service</value>
+        <value>Several of the monastery's masters</value>
+        <value>A single master and a single student</value>
+    </table>
+    <table name="Held safe in the monastery is..." id="monasery_safe">
+        <value region_start="0|12" region_end="6|29" region_include="legendary_weapon|fighter">Weapon of a legendary warrior.</value>
+        <value region_start="0|17" region_end="4|22" region_include="wands|witch">Wand of a famous witch.</value>
+        <value region_start="0|17" region_end="4|23" region_include="wands|wizard">Wand of a famous wizard.</value>
+        <value region_start="0|25" region_end="9|29" region_include="book|wizard">Spellbook of a notorious mage.</value>
+        <value region_start="0|28" region_end="14|34" region_include="__noun__|pirate">Treasure stash of a notable pirate.</value>
+        <value region_start="0|16" region_end="5|22" region_include="__noun__|dragon">Hoard of an old dragon.</value>
+        <value region_start="0|23" region_end="8|37" region_include="__noun__|__noun__">Treasury of an ancient dwarvish realm</value>
+        <value region_start="0|16" region_end="8|22" region_include="artifacts|highelf">Artifacts of an elvish hero.</value>
+        <value region_start="0|23" region_end="6|29" region_include="__noun__|priest">Relics of a celebrated priest.</value>
+        <value region_start="35" region_end="39" region_include="ship">Chests of silver carried by a lost ship</value>
+        <value region_start="35" region_end="42" region_include="caravan">Chests of silver carried by a lost caravan.</value>
+        <value region_start="28" region_end="33" region_include="noblewoman">Crown jewels of a long-dead queen.</value>
+        <value>Largest diamond found in this part of the world.</value>
+        <value region_start="0|21" region_end="5|29" region_include="__noun__|sorcerer">Staff of an infamous sorcerer</value>
+        <value region_start="0|21" region_end="5|32" region_include="__noun__|necromancer">Staff of an infamous necromancer.</value>
+    </table>
+    <member name="Monk" include="monk" />
+    <member name="Priest" include="priest" />
+    <member name="Building / Chamber">
+        <table name="This building/chamber is">
+            <value>A chapel or shrine</value>
+            <value>A dormitory</value>
+            <value>A cloister</value>
+            <value>A refectory (dining hall)</value>
+            <value>A library</value>
+            <value>A balneary (bath)</value>
+            <value>An infirmary</value>
+            <value>A sanatorium or hospice</value>
+            <value>A school</value>
+            <value>A forge</value>
+            <value>A brewery</value>
+            <value>A barn</value>
+            <value>A garden</value>
+        </table>
+        <table name="Feature: You notice...">
+            <value>A small altar set in the alcove in the wall</value>
+            <value>The sound of bells ringing in a tower</value>
+            <value>A wall sconce holding many candles</value>
+            <value>Tall candles on holders, taller than a man</value>
+            <value>The tinkle of chimes from a nearby room</value>
+            <value region_start="23" region_end="41" region_include="__noun__">A tapestry depicting a mythological scene</value>
+            <value>A small fountain or reflecting pool</value>
+            <value>The sound of a gong from another room</value>
+            <value region_start="8" region_end="19" region_include="__noun__">A large holy symbol embedded in the wall</value>
+            <value region_start="7" region_end="11" region_include="book">A huge book of sacred texts or prayers</value>
+            <value>The scent of incense burning nearby</value>
+            <value region_start="26" region_end="40" region_include="__noun__">A kneeler beneath a small statue or icon</value>
+            <value>An oil lamp with colored glass panels</value>
+            <value>A mosaic set into the floor of the room</value>
+            <value region_start="35" region_end="53" region_include="__noun__">A wide fresco or mural depicting a mythological scene</value>
+            <value>The pipes of an indoor plumbing system running along the wall</value>
+            <value>Robes and cassocks hanging on hooks</value>
+            <value>An ornamental rug</value>
+            <value>The sound of chanting from another room</value>
+            <value region_start="27" region_end="33" region_include="__noun__">A statue of a recognizable figure</value>
+        </table>
+    </member>
+    <member name="Encounter: You come upon...">
+        <value>A bright-eyed student</value>
+        <value>An exhausted student</value>
+        <value>A patient initiate</value>
+        <value>A fierce martial artist</value>
+        <value>A dogmatic teacher</value>
+        <value>An eccentric scholar</value>
+        <value>A wise old master</value>
+        <value region_start="0" region_end="27" region_include="traveler">A traveler from afar</value>
+        <value>A member of the monastery's serving staff</value>
+        <value region_start="28" region_end="33" region_include="guard">A member of the monastery's guard</value>
+        <value>A strange energy</value>
+        <value>A feeling that you're being watched</value>
+    </member>
+</category>

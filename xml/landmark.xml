@@ -1,0 +1,56 @@
+<category name="City Landmark and District" id="landmark">
+    <table name="Landmark: You see a/an..." id="see">
+        <value>Academy or university</value>
+        <value>Ancient ruin</value>
+        <value>Arena</value>
+        <value>Cemetery</value>
+        <value>Civic hall</value>value>
+        <value>Council hall</value>
+        <value region_start="0" region_end="5" region_include="guilds">Guild hall</value>
+        <value>Common or greenway</value>
+        <value>Fortress</value>
+        <value>Gateway or arch</value>
+        <value>Library</value>
+        <value>Lighthouse or watchtower</value>
+        <value>Marketplace</value>
+        <value>Memorial mausoleum</value>
+        <value>Memorial reflecting pool</value>
+        <value>Large memorial statue</value>
+        <value>Memorial botanical garden</value>
+        <value>Colossus Monument</value>
+        <value>Monument Column</value>
+        <value>Monument obelisk</value>
+        <value>Monument Plaque</value>
+        <value>Monument Statue Garden</value>
+        <value>Monument Wall</value>
+        <value>Palace</value>
+        <value>Parade grounds or drilling yard</value>
+        <value>Pier, marina, or traveler's bazaar</value>
+        <value>Plaza or public square</value>
+        <value>Temple</value>
+        <value>Theater</value>
+        <value>Stockyards</value>
+    </table>
+    <table name="This part of the city is the..." id="city">
+        <value>Slums</value>
+        <value>Residential district, poor</value>
+        <value>Residential district, middle class</value>
+        <value>Residential district, upper class</value>
+        <value>Palace district</value>
+        <value>Temple district</value>
+        <value>Crafting district</value>
+        <value>Docks district</value>
+        <value>Riverfront district</value>
+        <value>Harbor district</value>
+        <value>University district</value>
+        <value>Military district</value>
+        <value>Market district</value>
+        <value>Garden district</value>
+        <value>Monument district</value>
+        <value>Necropolis</value>
+        <value>Theater district</value>
+        <value>Civic center</value>
+        <value>Ethnic enclave</value>
+        <value>Foreign enclave</value>
+    </table>
+</category>

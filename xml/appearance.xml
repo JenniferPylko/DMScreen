@@ -1,0 +1,2635 @@
+        <category name="Appearance and personality" id="appearance">
+            <name name="The person's name is..."/>
+            <table name="Eyes: The person has..." id="appearance_eyes">
+                <value>Sleepy eyes</value>
+                <value>Shifty eyes</value>
+                <value>Watery eyes</value>
+                <value>Bright eyes</value>
+                <value>Cold eyes</value>
+                <value>Smiling eyes</value>
+                <value>Close-set eyes</value>
+                <value>Wild eyes</value>
+                <value>Distant eyes</value>
+                <value>A lazy eye</value>
+                <value>Piercing eyes</value>
+                <value>Watchful eyes</value>
+                <value>Dark eyes</value>
+                <value>Hooded eyes</value>
+                <value>Eyes of two different colors</value>
+                <value>Slightly crossed eyes</value>
+                <value>Wide eyes</value>
+                <value>Beautiful eyes</value>
+                <value>Beady eyes</value>
+                <value>Penetrating eyes</value>
+                <value>Fierce eyes</value>
+            </table>
+            <table name="Ears: The person has..." id="appearance_ears">
+                <value>Over-sides ears</value>
+                <value>Long ear lobes</value>
+                <value>Small ears</value>
+                <value>Uneven ears</value>
+                <value>Hairy ears</value>
+                <value>Pointy ears</value>
+                <value>Short ears lobes</value>
+                <value>Ears that stick out</value>
+                <value>Jug-handle ears</value>
+                <value>Elaborately pierced ears</value>
+                <value>Cauliflower ears</value>
+                <value>Ears with improbable tufts of hair</value>
+            </table>
+            <table name="Mouth: The person has..." id="appearance_mouth">
+                <value>Full lips</value>
+                <value>Buck-teeth</value>
+                <value>Thin lips</value>
+                <value>Rotting teeth</value>
+                <value>Crooked teeth</value>
+                <value>A broken or missing tooth</value>
+                <value>Pursed lips</value>
+                <value>Dry, cracked lips</value>
+                <value>One or more false teeth</value>
+                <value>A mouth that hangs open</value>
+            </table>
+            <table name="Nose: The person has..." id="appearance_nose">
+                <value>A crooked nose</value>
+                <value>A bulbous nose</value>
+                <value>A narrow nose</value>
+                <value>A button nose</value>
+                <value>A long nose</value>
+                <value>A broad nose</value>
+                <value>An angular nose</value>
+                <value>A round nose</value>
+                <value>A broken nose</value>
+                <value>A hawk-lkne nose</value>
+                <value>A wide nose</value>
+                <value>A delicate nose</value>
+            </table>
+            <table name="Chin or jaw: The person has..." id="appearance_chin">
+                <value>A pronounced chin</value>
+                <value>A cleft chin</value>
+                <value>A dimple on the chin</value>
+                <value>A rounded chin</value>
+                <value>A sharp jawline</value>
+                <value>A square jaw</value>
+                <value>A round jaw</value>
+                <value>An underbite</value>
+            </table>
+            <table name="Hair: The person has..." id="appearance_hair">
+                <value>Thick hair</value>
+                <value>Wispy hair</value>
+                <value>Straight hair</value>
+                <value>Wavy hair</value>
+                <value>Curly hair</value>
+                <value>Wiry hair</value>
+                <value>Oily hair</value>
+                <value>Lush hair</value>
+                <value>Poofy hair</value>
+                <value>Long braids</value>
+                <value>Braids tight against the head</value>
+                <value>Very long hair</value>
+                <value>Greasy hair</value>
+                <value>Unruly hair</value>
+                <value>An unusual hairstyle</value>
+                <value>An outdated hairstyle</value>
+                <value>A high-maintenance hairstyle</value>
+                <value>Short-cropped hair</value>
+                <value>A shaved head</value>
+                <value>No hair at all</value>
+            </table>
+            <table name="Other: The person's face has..." id="appearance_other">
+                <value>High cheekbones</value>
+                <value>Tight, drawn cheeks</value>
+                <value>Chubby cheeks</value>
+                <value>An unpleasant pustule</value>
+                <value>A large mole</value>
+                <value>A beauty mark</value>
+                <value>Freckles</value>
+                <value>Terrible scarring</value>
+            </table>
+            <table name="Height: The person is..." id="appearance_height">
+                <value>Unusually short</value>
+                <value>Short in statue</value>
+                <value>Average height</value>
+                <value>Slightly above average height</value>
+                <value>Well above average height</value>
+                <value>Unusually tall</value>
+            </table>
+            <table name="Body: The person's body is..." id="appearance_body">
+                <value>Thin and delicate</value>
+                <value>Of average build</value>
+                <value>Well-muscled</value>
+                <value>Slightly overweight</value>
+                <value>Grotesquely obese</value>
+                <value>Lean and lanky</value>
+                <value>Lithe and lean</value>
+                <value>Thin and wiry</value>
+                <value>Sinewy and strong</value>
+                <value>Flabby and weak</value>
+                <value>Lumpy or bent</value>
+                <value>Thin and flimsy</value>
+                <value>Soft and chubby</value>
+                <value>Thin and petite</value>
+                <value>Pudgy</value>
+                <value>Big and broad</value>
+                <value>Stocky and strong</value>
+                <value>Bony</value>
+                <value>Wide and ponderious</value>
+                <value>Covered in hair</value>
+                <value>Thin but muscular</value>
+            </table>
+            <table name="Hands: The person has..." id="appearance_hands">
+                <value>Powerful hands</value>
+                <value>Delicate hands</value>
+                <value>Rough hands</value>
+                <value>Soft hands</value>
+                <value>A light touch</value>
+                <value>A heavy touch</value>
+            </table>
+            <table name="Scar: The person has..." id="appearance_scar">
+                <value>A jagged scar</value>
+                <value>A dark purple scar</value>
+                <value>An angry scar</value>
+                <value>A long, thin scar</value>
+            </table>
+            <table name="Tattoo: The person has..." id="appearance_tattoo">
+                <value>A dagger tattoo</value>
+                <value>An arrow tattoo</value>
+                <value>An anchor tattoo</value>
+                <value>A skull tattoo</value>
+                <value>A pair of crossed bones tattoo</value>
+                <value>A snake tattoo</value>
+                <value>A scorpion tattoo</value>
+                <value>A spider web tattoo</value>
+                <value>A heart tattoo</value>
+                <value>A ring of thorns tattoo</value>
+                <value>A mermaid tattoo</value>
+                <value>A dragon tattoo</value>
+            </table>
+            <table name="Jewelery: The person wears" id="appearance_jewelry">
+                <value>An earring</value>
+                <value>Two earrings</value>
+                <value>A small chain about the neck</value>
+                <value>A large chain about the neck</value>
+                <value>A tight choker about the neck</value>
+                <value>A brooch</value>
+                <value>A ring</value>
+                <value>Several rings</value>
+                <value>A bracelet</value>
+                <value>A nose ring</value>
+                <value>A medallion</value>
+                <value>An ornate belt</value>
+            </table>
+            <table name="Jewelery: the jewelery is made of..." id="appearance_jewelry_made">
+                <value>Steel</value>
+                <value>Bronze</value>
+                <value>Pewter</value>
+                <value>Silver</value>
+                <value>Gold</value>
+                <value>Platinum</value>
+                <value>Copper</value>
+                <value>One or more amethyst</value>
+                <value>One or more crystal</value>
+                <value>One or more diamond</value>
+                <value>One or more emerald</value>
+                <value>One or more jade</value>
+                <value>One or more obsidian</value>
+                <value>One or more opal</value>
+                <value>One or more pearl</value>
+                <value>One or more ruby</value>
+                <value>One or more sapphire</value>
+                <value>One or more topaz</value>
+                <value>One or more turquoise</value>
+            </table>
+            <table name="Clothes: The person's clothing is..." id="appearance_clothing">
+                <value>Crisp and new</value>
+                <value>Fashionable and hip</value>
+                <value>A bit old-fashioned</value>
+                <value>Of the highest quality</value>
+                <value>Faded, but in good condition</value>
+                <value>Faded and patched</value>
+                <value>Torn in places; missing buttons</value>
+                <value>Tattered and worn</value>
+            </table>
+            <table name="Emotions and attitude: Calm Trait: When calm, the person is typically..." id="appearance_calm">
+                <value>Able</value>
+                <value>Abrasive</value>
+                <value>Abrupt</value>
+                <value>Absent Minded</value>
+                <value>Abusive</value>
+                <value>Accepting</value>
+                <value>Accident Prone</value>
+                <value>Accommodating</value>
+                <value>Accomplished</value>
+                <value>Action Oriented</value>
+                <value>Active</value>
+                <value>Adaptable</value>
+                <value>Addict</value>
+                <value>ADHD</value>
+                <value>Adorable</value>
+                <value>Adventurous</value>
+                <value>Affable</value>
+                <value>Affected</value>
+                <value>Affectionate</value>
+                <value>Afraid Of Commitment</value>
+                <value>Afraid</value>
+                <value>Aggressive</value>
+                <value>Agnostic</value>
+                <value>Agreeable</value>
+                <value>Alert</value>
+                <value>Alluring</value>
+                <value>Aloof</value>
+                <value>Altruistic</value>
+                <value>Always Hungry</value>
+                <value>Always Late</value>
+                <value>Ambiguous</value>
+                <value>Ambitious</value>
+                <value>Amiable</value>
+                <value>Amused</value>
+                <value>Amusing</value>
+                <value>Angry</value>
+                <value>Animated</value>
+                <value>Annoyed</value>
+                <value>Annoying</value>
+                <value>Anti-Social</value>
+                <value>Anxious</value>
+                <value>Apathetic</value>
+                <value>Apologetic</value>
+                <value>Appreciative</value>
+                <value>Apprehensive</value>
+                <value>Approachable</value>
+                <value>Argumentative</value>
+                <value>Aristocratic</value>
+                <value>Arrogant</value>
+                <value>Artistic</value>
+                <value>Ashamed</value>
+                <value>Aspiring</value>
+                <value>Assertive</value>
+                <value>Astonished</value>
+                <value>Attentive</value>
+                <value>Audacious</value>
+                <value>Austere</value>
+                <value>Authoritarian</value>
+                <value>Authoritative</value>
+                <value>Available</value>
+                <value>Average</value>
+                <value>Awful</value>
+                <value>Awkward</value>
+                <value>Babbling</value>
+                <value>Babyish</value>
+                <value>Bad</value>
+                <value>Bashful</value>
+                <value>Beautiful</value>
+                <value>Belligerent</value>
+                <value>Bewildered</value>
+                <value>Biter</value>
+                <value>Blames Others</value>
+                <value>Blasé</value>
+                <value>Blow-hard</value>
+                <value>Boastful</value>
+                <value>Boisterous</value>
+                <value>Bold</value>
+                <value>Boorish</value>
+                <value>Bored</value>
+                <value>Boring</value>
+                <value>Bossy</value>
+                <value>Boundless</value>
+                <value>Brainy</value>
+                <value>Brash</value>
+                <value>Bratty</value>
+                <value>Brave</value>
+                <value>Brazen</value>
+                <value>Carefree</value>
+                <value>Cautious</value>
+                <value>Cheerful</value>
+                <value>Childish</value>
+                <value>Chivalrous</value>
+                <value>Civilized</value>
+                <value>Classy</value>
+                <value>Clean</value>
+                <value>Clever</value>
+                <value>Closed</value>
+                <value>Clumsy</value>
+                <value>Coarse</value>
+                <value>Cocky</value>
+                <value>Coherent</value>
+                <value>Cold Hearted</value>
+                <value>Cold</value>
+                <value>Combative</value>
+                <value>Comfortable</value>
+                <value>Committed</value>
+                <value>Communicative</value>
+                <value>Compassionate</value>
+                <value>Competent</value>
+                <value>Complacent</value>
+                <value>Compliant</value>
+                <value>Composed</value>
+                <value>Compulsive</value>
+                <value>Conceited</value>
+                <value>Concerned</value>
+                <value>Condescending</value>
+                <value>Confident</value>
+                <value>Confused</value>
+                <value>Congenial</value>
+                <value>Conscientious</value>
+                <value>Considerate</value>
+                <value>Consistent</value>
+                <value>Constricting</value>
+                <value>Content</value>
+                <value>Contented</value>
+                <value>Contrarian</value>
+                <value>Contrite</value>
+                <value>Controlling</value>
+                <value>Conversational</value>
+                <value>Cooperative</value>
+                <value>Coquettish</value>
+                <value>Courageous</value>
+                <value>Courteous</value>
+                <value>Covetous</value>
+                <value>Cowardly</value>
+                <value>Cowering</value>
+                <value>Coy</value>
+                <value>Crabby</value>
+                <value>Crafty</value>
+                <value>Cranky</value>
+                <value>Crazy</value>
+                <value>Creative</value>
+                <value>Credible</value>
+                <value>Creepy</value>
+                <value>Critical</value>
+                <value>Cross</value>
+                <value>Crude</value>
+                <value>Cruel</value>
+                <value>Cuddly</value>
+                <value>Cultured</value>
+                <value>Curious</value>
+                <value>Cut-throat</value>
+                <value>Cynical</value>
+                <value>Dainty</value>
+                <value>Dangerous</value>
+                <value>Daring</value>
+                <value>Dark</value>
+                <value>Dashing</value>
+                <value>Dauntless</value>
+                <value>Dazzling</value>
+                <value>Debonair</value>
+                <value>Deceitful</value>
+                <value>Deceiving</value>
+                <value>Decent</value>
+                <value>Decisive</value>
+                <value>Decorous</value>
+                <value>Deep</value>
+                <value>Defeated</value>
+                <value>Defective</value>
+                <value>Deferential</value>
+                <value>Defiant</value>
+                <value>Deliberate</value>
+                <value>Delicate</value>
+                <value>Delightful</value>
+                <value>Demanding</value>
+                <value>Demonic</value>
+                <value>Devout</value>
+                <value>Disillusioned</value>
+                <value>Disinterested</value>
+                <value>Disloyal</value>
+                <value>Dismayed</value>
+                <value>Disorderly</value>
+                <value>Disorganized</value>
+                <value>Disparaging</value>
+                <value>Disrespectful</value>
+                <value>Dissatisfied</value>
+                <value>Dissolute</value>
+                <value>Distant</value>
+                <value>Distraught</value>
+                <value>Distressed</value>
+                <value>Disturbed</value>
+                <value>Dogmatic</value>
+                <value>Domineering</value>
+                <value>Dorky</value>
+                <value>Doubtful</value>
+                <value>Dour</value>
+                <value>Downtrodden</value>
+                <value>Draconian</value>
+                <value>Dramatic</value>
+                <value>Dreamer</value>
+                <value>Dreamy</value>
+                <value>Dreary</value>
+                <value>Driven</value>
+                <value>Dubious</value>
+                <value>Dull</value>
+                <value>Dumb</value>
+                <value>Dutiful</value>
+                <value>Dynamic</value>
+                <value>Eager</value>
+                <value>Easygoing</value>
+                <value>Eccentric</value>
+                <value>Educated</value>
+                <value>Effervescent</value>
+                <value>Efficient</value>
+                <value>Egocentric</value>
+                <value>Egotistic</value>
+                <value>Elated</value>
+                <value>Eloquent</value>
+                <value>Embarrassed</value>
+                <value>Embittered</value>
+                <value>Embraces Change</value>
+                <value>Eminent</value>
+                <value>Emotional</value>
+                <value>Empathetic</value>
+                <value>Enchanting</value>
+                <value>Encouraging</value>
+                <value>Enduring</value>
+                <value>Energetic</value>
+                <value>Engaging</value>
+                <value>Enigmatic</value>
+                <value>Entertaining</value>
+                <value>Enthusiastic</value>
+                <value>Envious</value>
+                <value>Equable</value>
+                <value>Erratic</value>
+                <value>Ethical</value>
+                <value>Evasive</value>
+                <value>Evil</value>
+                <value>Exacting</value>
+                <value>Excellent</value>
+                <value>Excessive</value>
+                <value>Excitable</value>
+                <value>Excited</value>
+                <value>Exclusive</value>
+                <value>Expansive</value>
+                <value>Expert</value>
+                <value>Extravagant</value>
+                <value>Extreme</value>
+                <value>Exuberant</value>
+                <value>Fabulous</value>
+                <value>Facetious</value>
+                <value>Faded</value>
+                <value>Fair</value>
+                <value>Faith In Self</value>
+                <value>Faithful</value>
+                <value>Faithless</value>
+                <value>Fake</value>
+                <value>Fanatical</value>
+                <value>Fanciful</value>
+                <value>Fantastic</value>
+                <value>Fatalistic</value>
+                <value>Fearful</value>
+                <value>Fearless</value>
+                <value>Feisty</value>
+                <value>Ferocious</value>
+                <value>Fidgety</value>
+                <value>Foolish</value>
+                <value>Frantic</value>
+                <value>Fresh</value>
+                <value>Fretful</value>
+                <value>Friendly</value>
+                <value>Frightened</value>
+                <value>Frigid</value>
+                <value>Frugal</value>
+                <value>Frustrated</value>
+                <value>Fuddy Duddy</value>
+                <value>Fun Loving</value>
+                <value>Fun-loving</value>
+                <value>Fun</value>
+                <value>Funny</value>
+                <value>Furious</value>
+                <value>Furtive</value>
+                <value>Fussy</value>
+                <value>Gabby</value>
+                <value>Garrulous</value>
+                <value>Gaudy</value>
+                <value>Generous</value>
+                <value>Genial</value>
+                <value>Gentle</value>
+                <value>Giddy</value>
+                <value>Giggly</value>
+                <value>Gives Up Easily</value>
+                <value>Giving</value>
+                <value>Glamorous</value>
+                <value>Gloomy</value>
+                <value>Glorious</value>
+                <value>Glum</value>
+                <value>Goal Orientated</value>
+                <value>Good</value>
+                <value>Goofy</value>
+                <value>Graceful</value>
+                <value>Gracious</value>
+                <value>Grandiose</value>
+                <value>Grateful</value>
+                <value>Greedy</value>
+                <value>Gregarious</value>
+                <value>Grieving</value>
+                <value>Grouchy</value>
+                <value>Gruesome</value>
+                <value>Gruff</value>
+                <value>Grumpy</value>
+                <value>Guarded</value>
+                <value>Guilt Ridden</value>
+                <value>Guilty</value>
+                <value>Gullible</value>
+                <value>Haggling</value>
+                <value>Handsome</value>
+                <value>Happy</value>
+                <value>Hard Working</value>
+                <value>Hard</value>
+                <value>Hardy</value>
+                <value>Harmonious</value>
+                <value>Harried</value>
+                <value>Harsh</value>
+                <value>Hateful</value>
+                <value>Haughty</value>
+                <value>Healthy</value>
+                <value>Heart Broken</value>
+                <value>Heartless</value>
+                <value>Heavy Hearted</value>
+                <value>Hedonistic</value>
+                <value>Helpful</value>
+                <value>Helpless</value>
+                <value>Hesitant</value>
+                <value>High Self Esteem</value>
+                <value>High</value>
+                <value>Hilarious</value>
+                <value>Homeless</value>
+                <value>Honest</value>
+                <value>Honor Bound</value>
+                <value>Honorable</value>
+                <value>Hopeful</value>
+                <value>Hopeless</value>
+                <value>Hormonal</value>
+                <value>Horrible</value>
+                <value>Hospitable</value>
+                <value>Hostile</value>
+                <value>Hot Headed</value>
+                <value>Huffy</value>
+                <value>Humble</value>
+                <value>Humorous</value>
+                <value>Hurt</value>
+                <value>Hysterical</value>
+                <value>Indiscriminate</value>
+                <value>Indolent</value>
+                <value>Indulgent</value>
+                <value>Industrious</value>
+                <value>Inefficient</value>
+                <value>Inept</value>
+                <value>Inflexible</value>
+                <value>Inimitable</value>
+                <value>Innocent</value>
+                <value>Inquisitive</value>
+                <value>Insecure</value>
+                <value>Insensitive</value>
+                <value>Insightful</value>
+                <value>Insincere</value>
+                <value>Insipid</value>
+                <value>Insistent</value>
+                <value>Insolent</value>
+                <value>Instinctive</value>
+                <value>Insulting</value>
+                <value>Intellectual</value>
+                <value>Intelligent</value>
+                <value>Intense</value>
+                <value>Interested</value>
+                <value>Interrupting</value>
+                <value>Intimidating</value>
+                <value>Intolerant</value>
+                <value>Intrepid</value>
+                <value>Introspective</value>
+                <value>Introverted</value>
+                <value>Intuitive</value>
+                <value>Inventive</value>
+                <value>Involved</value>
+                <value>Irresolute</value>
+                <value>Irresponsible</value>
+                <value>Irreverent</value>
+                <value>Irritable</value>
+                <value>Irritating</value>
+                <value>Jackass</value>
+                <value>Jaded</value>
+                <value>Jealous</value>
+                <value>Jittery</value>
+                <value>Joking</value>
+                <value>Jolly</value>
+                <value>Jovial</value>
+                <value>Joyful</value>
+                <value>Joyous</value>
+                <value>Judgemental</value>
+                <value>Keen</value>
+                <value>Kind Hearted</value>
+                <value>Kittenish</value>
+                <value>Knowledgeable</value>
+                <value>Lackadaisical</value>
+                <value>Lacking</value>
+                <value>Languid</value>
+                <value>Lascivious</value>
+                <value>Late</value>
+                <value>Lazy</value>
+                <value>Leader</value>
+                <value>Lean</value>
+                <value>Lethargic</value>
+                <value>Level</value>
+                <value>Lewd</value>
+                <value>Liar</value>
+                <value>Licentious</value>
+                <value>Light-Hearted</value>
+                <value>Likeable</value>
+                <value>Limited</value>
+                <value>Lineat</value>
+                <value>Lingering</value>
+                <value>Lively</value>
+                <value>Logical</value>
+                <value>Lonely</value>
+                <value>Loquacious</value>
+                <value>Lordly</value>
+                <value>Loud-mouthed</value>
+                <value>Loud</value>
+                <value>Lovable</value>
+                <value>Lovely</value>
+                <value>Loves Challenge</value>
+                <value>Loving</value>
+                <value>Low Confidence</value>
+                <value>Lowly</value>
+                <value>Loyal</value>
+                <value>Lucky</value>
+                <value>Lunatic</value>
+                <value>Manipulative</value>
+                <value>Mischievous</value>
+                <value>Modern</value>
+                <value>Modest</value>
+                <value>Moody</value>
+                <value>Moping</value>
+                <value>Moralistic</value>
+                <value>Motherly</value>
+                <value>Motivated</value>
+                <value>Mysterious</value>
+                <value>Nagging</value>
+                <value>Naive</value>
+                <value>Narcissistic</value>
+                <value>Narrow-Minded</value>
+                <value>Nasty</value>
+                <value>Naughty</value>
+                <value>Neat</value>
+                <value>Needy</value>
+                <value>Negative</value>
+                <value>Negligent</value>
+                <value>Nervous</value>
+                <value>Neurotic</value>
+                <value>Never Hungry</value>
+                <value>Nibbler</value>
+                <value>Nice</value>
+                <value>Night Owl</value>
+                <value>Nihilistic</value>
+                <value>Nimble</value>
+                <value>Nit Picker</value>
+                <value>No Purpose</value>
+                <value>No Self Confidence</value>
+                <value>Noble</value>
+                <value>Noisy</value>
+                <value>Nonchalant</value>
+                <value>Nosy</value>
+                <value>Nuanced</value>
+                <value>Nuisance</value>
+                <value>Nurturing</value>
+                <value>Nut</value>
+                <value>Obedient</value>
+                <value>Obese</value>
+                <value>Obliging</value>
+                <value>Obnoxious</value>
+                <value>Obscene</value>
+                <value>Obsequious</value>
+                <value>Observant</value>
+                <value>Obstinate</value>
+                <value>Odd</value>
+                <value>Odious</value>
+                <value>Open-Minded</value>
+                <value>Open</value>
+                <value>Opinionated</value>
+                <value>Opportunistic</value>
+                <value>Optimistic</value>
+                <value>Orcish</value>
+                <value>Orderly</value>
+                <value>Organized</value>
+                <value>Ornery</value>
+                <value>Ossified</value>
+                <value>Ostentatious</value>
+                <value>Outgoing</value>
+                <value>Outrageous</value>
+                <value>Outspoken</value>
+                <value>Overbearing</value>
+                <value>Overweight</value>
+                <value>Overwhelmed</value>
+                <value>Overwhelming</value>
+                <value>Paces</value>
+                <value>Pacifistic</value>
+                <value>Painstaking</value>
+                <value>Panicky</value>
+                <value>Paranoid</value>
+                <value>Particular</value>
+                <value>Passionate</value>
+                <value>Passive-Aggressive</value>
+                <value>Passive</value>
+                <value>Pathetic</value>
+                <value>Patient</value>
+                <value>Patriotic</value>
+                <value>Peaceful</value>
+                <value>Penitent</value>
+                <value>Pensive</value>
+                <value>Perfect</value>
+                <value>Perfectionist</value>
+                <value>Performer</value>
+                <value>Perseverant</value>
+                <value>Petty</value>
+                <value>Possessive</value>
+                <value>Practical</value>
+                <value>Precise</value>
+                <value>Predictable</value>
+                <value>Preoccupied</value>
+                <value>Pretentious</value>
+                <value>Prim</value>
+                <value>Primitive</value>
+                <value>Productive</value>
+                <value>Profane</value>
+                <value>Professional</value>
+                <value>Promiscuous</value>
+                <value>Proper</value>
+                <value>Protective</value>
+                <value>Proud</value>
+                <value>Prudent</value>
+                <value>Psychotic</value>
+                <value>Puckish</value>
+                <value>Punctilious</value>
+                <value>Punctual</value>
+                <value>Purposeful</value>
+                <value>Pushy</value>
+                <value>Puzzled</value>
+                <value>Quarrelsome</value>
+                <value>Queer</value>
+                <value>Quick Tempered</value>
+                <value>Quick</value>
+                <value>Quiet</value>
+                <value>Quirky</value>
+                <value>Quixotic</value>
+                <value>Rambunctious</value>
+                <value>Random</value>
+                <value>Rash</value>
+                <value>Rational</value>
+                <value>Raw-boned</value>
+                <value>Realistic</value>
+                <value>Reasonable</value>
+                <value>Rebellious</value>
+                <value>Recalcitrant</value>
+                <value>Receptive</value>
+                <value>Reckless</value>
+                <value>Reclusive</value>
+                <value>Refined</value>
+                <value>Reflective</value>
+                <value>Regretful</value>
+                <value>Rejects Change</value>
+                <value>Relaxed</value>
+                <value>Relents</value>
+                <value>Reliable</value>
+                <value>Relieved</value>
+                <value>Religious</value>
+                <value>Reluctant</value>
+                <value>Remorseful</value>
+                <value>Repugnant</value>
+                <value>Repulsive</value>
+                <value>Resentful</value>
+                <value>Reserved</value>
+                <value>Resilient</value>
+                <value>Resolute</value>
+                <value>Resourceful</value>
+                <value>Respectful</value>
+                <value>Responsible</value>
+                <value>Responsive</value>
+                <value>Restless</value>
+                <value>Retiring</value>
+                <value>Rhetorical</value>
+                <value>Rich</value>
+                <value>Right</value>
+                <value>Righteous</value>
+                <value>Rigid</value>
+                <value>Risk-Taking</value>
+                <value>Romantic</value>
+                <value>Rough</value>
+                <value>Rowdy</value>
+                <value>Rude</value>
+                <value>Rugged</value>
+                <value>Ruthless</value>
+                <value>Sacrificing</value>
+                <value>Sad</value>
+                <value>Sadistic</value>
+                <value>Safe</value>
+                <value>Sagely</value>
+                <value>Saintly</value>
+                <value>Salient</value>
+                <value>Sanctimonious</value>
+                <value>Self-Reliant</value>
+                <value>Self-Serving</value>
+                <value>Selfish</value>
+                <value>Selfless</value>
+                <value>Senile</value>
+                <value>Sensitive</value>
+                <value>Sensual</value>
+                <value>Sentimental</value>
+                <value>Serene</value>
+                <value>Serious</value>
+                <value>Sexual</value>
+                <value>Sexy</value>
+                <value>Shallow</value>
+                <value>Shameless</value>
+                <value>Sharp-Tongued</value>
+                <value>Sharp-Witted</value>
+                <value>Sharp</value>
+                <value>Sheepish</value>
+                <value>Shiftless</value>
+                <value>Shifty</value>
+                <value>Short</value>
+                <value>Shrewd</value>
+                <value>Shy</value>
+                <value>Silent</value>
+                <value>Silky</value>
+                <value>Silly</value>
+                <value>Simian</value>
+                <value>Simple</value>
+                <value>Sincere</value>
+                <value>Sisterly</value>
+                <value>Skillful</value>
+                <value>Sleazy</value>
+                <value>Sloppy</value>
+                <value>Slovenly</value>
+                <value>Slow Paced</value>
+                <value>Sly</value>
+                <value>Small-Minded</value>
+                <value>Smart</value>
+                <value>Smiling</value>
+                <value>Smooth</value>
+                <value>Sneaky</value>
+                <value>Snob</value>
+                <value>Sociable</value>
+                <value>Soft-Hearted</value>
+                <value>Soft-Spoken</value>
+                <value>Solitary</value>
+                <value>Sophisticated</value>
+                <value>Sore</value>
+                <value>Sorry</value>
+                <value>Sour</value>
+                <value>Spendthrift</value>
+                <value>Spiteful</value>
+                <value>Splendid</value>
+                <value>Spoiled</value>
+                <value>Spontaneous</value>
+                <value>Spunky</value>
+                <value>Squeamish</value>
+                <value>Stately</value>
+                <value>Static</value>
+                <value>Steadfast</value>
+                <value>Sterile</value>
+                <value>Stern</value>
+                <value>Stimulating</value>
+                <value>Stingy</value>
+                <value>Stoical</value>
+                <value>Stolid</value>
+                <value>Straight Laced</value>
+                <value>Strange</value>
+                <value>Strict</value>
+                <value>Strident</value>
+                <value>Strong Willed</value>
+                <value>Strong</value>
+                <value>Stubborn</value>
+                <value>Studious</value>
+                <value>Stupid</value>
+                <value>Suave</value>
+                <value>Submissive</value>
+                <value>Successful</value>
+                <value>Succinct</value>
+                <value>Sulky</value>
+                <value>Sullen</value>
+                <value>Sultry</value>
+                <value>Supercilious</value>
+                <value>Superstitious</value>
+                <value>Supportive</value>
+                <value>Thorough</value>
+                <value>Thoughtful</value>
+                <value>Thoughtless</value>
+                <value>Threatening</value>
+                <value>Thrifty</value>
+                <value>Thrilled</value>
+                <value>Tight</value>
+                <value>Timid</value>
+                <value>Tired</value>
+                <value>Tireless</value>
+                <value>Tiresome</value>
+                <value>Tolerant</value>
+                <value>Touchy</value>
+                <value>Tough</value>
+                <value>Trivial</value>
+                <value>Troubled</value>
+                <value>Truculent</value>
+                <value>Trusting</value>
+                <value>Trustworthy</value>
+                <value>Truthful</value>
+                <value>Typical</value>
+                <value>Ugly</value>
+                <value>Unappreciative</value>
+                <value>Unassuming</value>
+                <value>Unbending</value>
+                <value>Unbiased</value>
+                <value>Uncaring</value>
+                <value>Uncommitted</value>
+                <value>Unconcerned</value>
+                <value>Uncontrolled</value>
+                <value>Unconventional</value>
+                <value>Uncooperative</value>
+                <value>Uncoordinated</value>
+                <value>Uncouth</value>
+                <value>Undependable</value>
+                <value>Understanding</value>
+                <value>Undesirable</value>
+                <value>Undisciplined</value>
+                <value>Unenthusiastic</value>
+                <value>Unfeeling</value>
+                <value>Unfocused</value>
+                <value>Unforgiving</value>
+                <value>Unfriendly</value>
+                <value>Ungrateful</value>
+                <value>Unhappy</value>
+                <value>Unhelpful</value>
+                <value>Uninhibited</value>
+                <value>Uninterested</value>
+                <value>Unkind</value>
+                <value>Unmotivated</value>
+                <value>Unpredictable</value>
+                <value>Unreasonable</value>
+                <value>Unreceptive</value>
+                <value>Unreliable</value>
+                <value>Unresponsive</value>
+                <value>Unrestrained</value>
+                <value>Unruly</value>
+                <value>Unscrupulous</value>
+                <value>Unselfish</value>
+                <value>Unsure</value>
+                <value>Unsympathetic</value>
+                <value>Unsystematic</value>
+                <value>Untrustworthy</value>
+                <value>Unusual</value>
+                <value>Unwilling</value>
+                <value>Upbeat</value>
+                <value>Upset</value>
+                <value>Uptight</value>
+                <value>Useful</value>
+                <value>Vacant</value>
+                <value>Vague</value>
+                <value>Vain</value>
+                <value>Valiant</value>
+                <value>Vengeful</value>
+                <value>Venomous</value>
+                <value>Verbose</value>
+                <value>Versatile</value>
+                <value>Vigorous</value>
+                <value>Vindictive</value>
+                <value>Violent</value>
+                <value>Virtuous</value>
+                <value>Visual</value>
+                <value>Vivacious</value>
+                <value>Volatile</value>
+                <value>Voracious</value>
+                <value>Vulgar</value>
+                <value>Vulnerable</value>
+                <value>Warlike</value>
+                <value>Weak-willed</value>
+            </table>
+            <table name="Emotions and attitude: Stress Trait: When stressed this person often becomes..." id="appearance_stress">
+                <value>Able</value>
+                <value>Abrasive</value>
+                <value>Abrupt</value>
+                <value>Absent Minded</value>
+                <value>Abusive</value>
+                <value>Accepting</value>
+                <value>Accident Prone</value>
+                <value>Accommodating</value>
+                <value>Accomplished</value>
+                <value>Action Oriented</value>
+                <value>Active</value>
+                <value>Adaptable</value>
+                <value>Addict</value>
+                <value>ADHD</value>
+                <value>Adorable</value>
+                <value>Adventurous</value>
+                <value>Affable</value>
+                <value>Affected</value>
+                <value>Affectionate</value>
+                <value>Afraid Of Commitment</value>
+                <value>Afraid</value>
+                <value>Aggressive</value>
+                <value>Agnostic</value>
+                <value>Agreeable</value>
+                <value>Alert</value>
+                <value>Alluring</value>
+                <value>Aloof</value>
+                <value>Altruistic</value>
+                <value>Always Hungry</value>
+                <value>Always Late</value>
+                <value>Ambiguous</value>
+                <value>Ambitious</value>
+                <value>Amiable</value>
+                <value>Amused</value>
+                <value>Amusing</value>
+                <value>Angry</value>
+                <value>Animated</value>
+                <value>Annoyed</value>
+                <value>Annoying</value>
+                <value>Anti-Social</value>
+                <value>Anxious</value>
+                <value>Apathetic</value>
+                <value>Apologetic</value>
+                <value>Appreciative</value>
+                <value>Apprehensive</value>
+                <value>Approachable</value>
+                <value>Argumentative</value>
+                <value>Aristocratic</value>
+                <value>Arrogant</value>
+                <value>Artistic</value>
+                <value>Ashamed</value>
+                <value>Aspiring</value>
+                <value>Assertive</value>
+                <value>Astonished</value>
+                <value>Attentive</value>
+                <value>Audacious</value>
+                <value>Austere</value>
+                <value>Authoritarian</value>
+                <value>Authoritative</value>
+                <value>Available</value>
+                <value>Average</value>
+                <value>Awful</value>
+                <value>Awkward</value>
+                <value>Babbling</value>
+                <value>Babyish</value>
+                <value>Bad</value>
+                <value>Bashful</value>
+                <value>Beautiful</value>
+                <value>Belligerent</value>
+                <value>Bewildered</value>
+                <value>Biter</value>
+                <value>Blames Others</value>
+                <value>Blasé</value>
+                <value>Blow-hard</value>
+                <value>Boastful</value>
+                <value>Boisterous</value>
+                <value>Bold</value>
+                <value>Boorish</value>
+                <value>Bored</value>
+                <value>Boring</value>
+                <value>Bossy</value>
+                <value>Boundless</value>
+                <value>Brainy</value>
+                <value>Brash</value>
+                <value>Bratty</value>
+                <value>Brave</value>
+                <value>Brazen</value>
+                <value>Carefree</value>
+                <value>Cautious</value>
+                <value>Cheerful</value>
+                <value>Childish</value>
+                <value>Chivalrous</value>
+                <value>Civilized</value>
+                <value>Classy</value>
+                <value>Clean</value>
+                <value>Clever</value>
+                <value>Closed</value>
+                <value>Clumsy</value>
+                <value>Coarse</value>
+                <value>Cocky</value>
+                <value>Coherent</value>
+                <value>Cold Hearted</value>
+                <value>Cold</value>
+                <value>Combative</value>
+                <value>Comfortable</value>
+                <value>Committed</value>
+                <value>Communicative</value>
+                <value>Compassionate</value>
+                <value>Competent</value>
+                <value>Complacent</value>
+                <value>Compliant</value>
+                <value>Composed</value>
+                <value>Compulsive</value>
+                <value>Conceited</value>
+                <value>Concerned</value>
+                <value>Condescending</value>
+                <value>Confident</value>
+                <value>Confused</value>
+                <value>Congenial</value>
+                <value>Conscientious</value>
+                <value>Considerate</value>
+                <value>Consistent</value>
+                <value>Constricting</value>
+                <value>Content</value>
+                <value>Contented</value>
+                <value>Contrarian</value>
+                <value>Contrite</value>
+                <value>Controlling</value>
+                <value>Conversational</value>
+                <value>Cooperative</value>
+                <value>Coquettish</value>
+                <value>Courageous</value>
+                <value>Courteous</value>
+                <value>Covetous</value>
+                <value>Cowardly</value>
+                <value>Cowering</value>
+                <value>Coy</value>
+                <value>Crabby</value>
+                <value>Crafty</value>
+                <value>Cranky</value>
+                <value>Crazy</value>
+                <value>Creative</value>
+                <value>Credible</value>
+                <value>Creepy</value>
+                <value>Critical</value>
+                <value>Cross</value>
+                <value>Crude</value>
+                <value>Cruel</value>
+                <value>Cuddly</value>
+                <value>Cultured</value>
+                <value>Curious</value>
+                <value>Cut-throat</value>
+                <value>Cynical</value>
+                <value>Dainty</value>
+                <value>Dangerous</value>
+                <value>Daring</value>
+                <value>Dark</value>
+                <value>Dashing</value>
+                <value>Dauntless</value>
+                <value>Dazzling</value>
+                <value>Debonair</value>
+                <value>Deceitful</value>
+                <value>Deceiving</value>
+                <value>Decent</value>
+                <value>Decisive</value>
+                <value>Decorous</value>
+                <value>Deep</value>
+                <value>Defeated</value>
+                <value>Defective</value>
+                <value>Deferential</value>
+                <value>Defiant</value>
+                <value>Deliberate</value>
+                <value>Delicate</value>
+                <value>Delightful</value>
+                <value>Demanding</value>
+                <value>Demonic</value>
+                <value>Devout</value>
+                <value>Disillusioned</value>
+                <value>Disinterested</value>
+                <value>Disloyal</value>
+                <value>Dismayed</value>
+                <value>Disorderly</value>
+                <value>Disorganized</value>
+                <value>Disparaging</value>
+                <value>Disrespectful</value>
+                <value>Dissatisfied</value>
+                <value>Dissolute</value>
+                <value>Distant</value>
+                <value>Distraught</value>
+                <value>Distressed</value>
+                <value>Disturbed</value>
+                <value>Dogmatic</value>
+                <value>Domineering</value>
+                <value>Dorky</value>
+                <value>Doubtful</value>
+                <value>Dour</value>
+                <value>Downtrodden</value>
+                <value>Draconian</value>
+                <value>Dramatic</value>
+                <value>Dreamer</value>
+                <value>Dreamy</value>
+                <value>Dreary</value>
+                <value>Driven</value>
+                <value>Dubious</value>
+                <value>Dull</value>
+                <value>Dumb</value>
+                <value>Dutiful</value>
+                <value>Dynamic</value>
+                <value>Eager</value>
+                <value>Easygoing</value>
+                <value>Eccentric</value>
+                <value>Educated</value>
+                <value>Effervescent</value>
+                <value>Efficient</value>
+                <value>Egocentric</value>
+                <value>Egotistic</value>
+                <value>Elated</value>
+                <value>Eloquent</value>
+                <value>Embarrassed</value>
+                <value>Embittered</value>
+                <value>Embraces Change</value>
+                <value>Eminent</value>
+                <value>Emotional</value>
+                <value>Empathetic</value>
+                <value>Enchanting</value>
+                <value>Encouraging</value>
+                <value>Enduring</value>
+                <value>Energetic</value>
+                <value>Engaging</value>
+                <value>Enigmatic</value>
+                <value>Entertaining</value>
+                <value>Enthusiastic</value>
+                <value>Envious</value>
+                <value>Equable</value>
+                <value>Erratic</value>
+                <value>Ethical</value>
+                <value>Evasive</value>
+                <value>Evil</value>
+                <value>Exacting</value>
+                <value>Excellent</value>
+                <value>Excessive</value>
+                <value>Excitable</value>
+                <value>Excited</value>
+                <value>Exclusive</value>
+                <value>Expansive</value>
+                <value>Expert</value>
+                <value>Extravagant</value>
+                <value>Extreme</value>
+                <value>Exuberant</value>
+                <value>Fabulous</value>
+                <value>Facetious</value>
+                <value>Faded</value>
+                <value>Fair</value>
+                <value>Faith In Self</value>
+                <value>Faithful</value>
+                <value>Faithless</value>
+                <value>Fake</value>
+                <value>Fanatical</value>
+                <value>Fanciful</value>
+                <value>Fantastic</value>
+                <value>Fatalistic</value>
+                <value>Fearful</value>
+                <value>Fearless</value>
+                <value>Feisty</value>
+                <value>Ferocious</value>
+                <value>Fidgety</value>
+                <value>Foolish</value>
+                <value>Frantic</value>
+                <value>Fresh</value>
+                <value>Fretful</value>
+                <value>Friendly</value>
+                <value>Frightened</value>
+                <value>Frigid</value>
+                <value>Frugal</value>
+                <value>Frustrated</value>
+                <value>Fuddy Duddy</value>
+                <value>Fun Loving</value>
+                <value>Fun-loving</value>
+                <value>Fun</value>
+                <value>Funny</value>
+                <value>Furious</value>
+                <value>Furtive</value>
+                <value>Fussy</value>
+                <value>Gabby</value>
+                <value>Garrulous</value>
+                <value>Gaudy</value>
+                <value>Generous</value>
+                <value>Genial</value>
+                <value>Gentle</value>
+                <value>Giddy</value>
+                <value>Giggly</value>
+                <value>Gives Up Easily</value>
+                <value>Giving</value>
+                <value>Glamorous</value>
+                <value>Gloomy</value>
+                <value>Glorious</value>
+                <value>Glum</value>
+                <value>Goal Orientated</value>
+                <value>Good</value>
+                <value>Goofy</value>
+                <value>Graceful</value>
+                <value>Gracious</value>
+                <value>Grandiose</value>
+                <value>Grateful</value>
+                <value>Greedy</value>
+                <value>Gregarious</value>
+                <value>Grieving</value>
+                <value>Grouchy</value>
+                <value>Gruesome</value>
+                <value>Gruff</value>
+                <value>Grumpy</value>
+                <value>Guarded</value>
+                <value>Guilt Ridden</value>
+                <value>Guilty</value>
+                <value>Gullible</value>
+                <value>Haggling</value>
+                <value>Handsome</value>
+                <value>Happy</value>
+                <value>Hard Working</value>
+                <value>Hard</value>
+                <value>Hardy</value>
+                <value>Harmonious</value>
+                <value>Harried</value>
+                <value>Harsh</value>
+                <value>Hateful</value>
+                <value>Haughty</value>
+                <value>Healthy</value>
+                <value>Heart Broken</value>
+                <value>Heartless</value>
+                <value>Heavy Hearted</value>
+                <value>Hedonistic</value>
+                <value>Helpful</value>
+                <value>Helpless</value>
+                <value>Hesitant</value>
+                <value>High Self Esteem</value>
+                <value>High</value>
+                <value>Hilarious</value>
+                <value>Homeless</value>
+                <value>Honest</value>
+                <value>Honor Bound</value>
+                <value>Honorable</value>
+                <value>Hopeful</value>
+                <value>Hopeless</value>
+                <value>Hormonal</value>
+                <value>Horrible</value>
+                <value>Hospitable</value>
+                <value>Hostile</value>
+                <value>Hot Headed</value>
+                <value>Huffy</value>
+                <value>Humble</value>
+                <value>Humorous</value>
+                <value>Hurt</value>
+                <value>Hysterical</value>
+                <value>Indiscriminate</value>
+                <value>Indolent</value>
+                <value>Indulgent</value>
+                <value>Industrious</value>
+                <value>Inefficient</value>
+                <value>Inept</value>
+                <value>Inflexible</value>
+                <value>Inimitable</value>
+                <value>Innocent</value>
+                <value>Inquisitive</value>
+                <value>Insecure</value>
+                <value>Insensitive</value>
+                <value>Insightful</value>
+                <value>Insincere</value>
+                <value>Insipid</value>
+                <value>Insistent</value>
+                <value>Insolent</value>
+                <value>Instinctive</value>
+                <value>Insulting</value>
+                <value>Intellectual</value>
+                <value>Intelligent</value>
+                <value>Intense</value>
+                <value>Interested</value>
+                <value>Interrupting</value>
+                <value>Intimidating</value>
+                <value>Intolerant</value>
+                <value>Intrepid</value>
+                <value>Introspective</value>
+                <value>Introverted</value>
+                <value>Intuitive</value>
+                <value>Inventive</value>
+                <value>Involved</value>
+                <value>Irresolute</value>
+                <value>Irresponsible</value>
+                <value>Irreverent</value>
+                <value>Irritable</value>
+                <value>Irritating</value>
+                <value>Jackass</value>
+                <value>Jaded</value>
+                <value>Jealous</value>
+                <value>Jittery</value>
+                <value>Joking</value>
+                <value>Jolly</value>
+                <value>Jovial</value>
+                <value>Joyful</value>
+                <value>Joyous</value>
+                <value>Judgemental</value>
+                <value>Keen</value>
+                <value>Kind Hearted</value>
+                <value>Kittenish</value>
+                <value>Knowledgeable</value>
+                <value>Lackadaisical</value>
+                <value>Lacking</value>
+                <value>Languid</value>
+                <value>Lascivious</value>
+                <value>Late</value>
+                <value>Lazy</value>
+                <value>Leader</value>
+                <value>Lean</value>
+                <value>Lethargic</value>
+                <value>Level</value>
+                <value>Lewd</value>
+                <value>Liar</value>
+                <value>Licentious</value>
+                <value>Light-Hearted</value>
+                <value>Likeable</value>
+                <value>Limited</value>
+                <value>Lineat</value>
+                <value>Lingering</value>
+                <value>Lively</value>
+                <value>Logical</value>
+                <value>Lonely</value>
+                <value>Loquacious</value>
+                <value>Lordly</value>
+                <value>Loud-mouthed</value>
+                <value>Loud</value>
+                <value>Lovable</value>
+                <value>Lovely</value>
+                <value>Loves Challenge</value>
+                <value>Loving</value>
+                <value>Low Confidence</value>
+                <value>Lowly</value>
+                <value>Loyal</value>
+                <value>Lucky</value>
+                <value>Lunatic</value>
+                <value>Manipulative</value>
+                <value>Mischievous</value>
+                <value>Modern</value>
+                <value>Modest</value>
+                <value>Moody</value>
+                <value>Moping</value>
+                <value>Moralistic</value>
+                <value>Motherly</value>
+                <value>Motivated</value>
+                <value>Mysterious</value>
+                <value>Nagging</value>
+                <value>Naive</value>
+                <value>Narcissistic</value>
+                <value>Narrow-Minded</value>
+                <value>Nasty</value>
+                <value>Naughty</value>
+                <value>Neat</value>
+                <value>Needy</value>
+                <value>Negative</value>
+                <value>Negligent</value>
+                <value>Nervous</value>
+                <value>Neurotic</value>
+                <value>Never Hungry</value>
+                <value>Nibbler</value>
+                <value>Nice</value>
+                <value>Night Owl</value>
+                <value>Nihilistic</value>
+                <value>Nimble</value>
+                <value>Nit Picker</value>
+                <value>No Purpose</value>
+                <value>No Self Confidence</value>
+                <value>Noble</value>
+                <value>Noisy</value>
+                <value>Nonchalant</value>
+                <value>Nosy</value>
+                <value>Nuanced</value>
+                <value>Nuisance</value>
+                <value>Nurturing</value>
+                <value>Nut</value>
+                <value>Obedient</value>
+                <value>Obese</value>
+                <value>Obliging</value>
+                <value>Obnoxious</value>
+                <value>Obscene</value>
+                <value>Obsequious</value>
+                <value>Observant</value>
+                <value>Obstinate</value>
+                <value>Odd</value>
+                <value>Odious</value>
+                <value>Open-Minded</value>
+                <value>Open</value>
+                <value>Opinionated</value>
+                <value>Opportunistic</value>
+                <value>Optimistic</value>
+                <value>Orcish</value>
+                <value>Orderly</value>
+                <value>Organized</value>
+                <value>Ornery</value>
+                <value>Ossified</value>
+                <value>Ostentatious</value>
+                <value>Outgoing</value>
+                <value>Outrageous</value>
+                <value>Outspoken</value>
+                <value>Overbearing</value>
+                <value>Overweight</value>
+                <value>Overwhelmed</value>
+                <value>Overwhelming</value>
+                <value>Paces</value>
+                <value>Pacifistic</value>
+                <value>Painstaking</value>
+                <value>Panicky</value>
+                <value>Paranoid</value>
+                <value>Particular</value>
+                <value>Passionate</value>
+                <value>Passive-Aggressive</value>
+                <value>Passive</value>
+                <value>Pathetic</value>
+                <value>Patient</value>
+                <value>Patriotic</value>
+                <value>Peaceful</value>
+                <value>Penitent</value>
+                <value>Pensive</value>
+                <value>Perfect</value>
+                <value>Perfectionist</value>
+                <value>Performer</value>
+                <value>Perseverant</value>
+                <value>Petty</value>
+                <value>Possessive</value>
+                <value>Practical</value>
+                <value>Precise</value>
+                <value>Predictable</value>
+                <value>Preoccupied</value>
+                <value>Pretentious</value>
+                <value>Prim</value>
+                <value>Primitive</value>
+                <value>Productive</value>
+                <value>Profane</value>
+                <value>Professional</value>
+                <value>Promiscuous</value>
+                <value>Proper</value>
+                <value>Protective</value>
+                <value>Proud</value>
+                <value>Prudent</value>
+                <value>Psychotic</value>
+                <value>Puckish</value>
+                <value>Punctilious</value>
+                <value>Punctual</value>
+                <value>Purposeful</value>
+                <value>Pushy</value>
+                <value>Puzzled</value>
+                <value>Quarrelsome</value>
+                <value>Queer</value>
+                <value>Quick Tempered</value>
+                <value>Quick</value>
+                <value>Quiet</value>
+                <value>Quirky</value>
+                <value>Quixotic</value>
+                <value>Rambunctious</value>
+                <value>Random</value>
+                <value>Rash</value>
+                <value>Rational</value>
+                <value>Raw-boned</value>
+                <value>Realistic</value>
+                <value>Reasonable</value>
+                <value>Rebellious</value>
+                <value>Recalcitrant</value>
+                <value>Receptive</value>
+                <value>Reckless</value>
+                <value>Reclusive</value>
+                <value>Refined</value>
+                <value>Reflective</value>
+                <value>Regretful</value>
+                <value>Rejects Change</value>
+                <value>Relaxed</value>
+                <value>Relents</value>
+                <value>Reliable</value>
+                <value>Relieved</value>
+                <value>Religious</value>
+                <value>Reluctant</value>
+                <value>Remorseful</value>
+                <value>Repugnant</value>
+                <value>Repulsive</value>
+                <value>Resentful</value>
+                <value>Reserved</value>
+                <value>Resilient</value>
+                <value>Resolute</value>
+                <value>Resourceful</value>
+                <value>Respectful</value>
+                <value>Responsible</value>
+                <value>Responsive</value>
+                <value>Restless</value>
+                <value>Retiring</value>
+                <value>Rhetorical</value>
+                <value>Rich</value>
+                <value>Right</value>
+                <value>Righteous</value>
+                <value>Rigid</value>
+                <value>Risk-Taking</value>
+                <value>Romantic</value>
+                <value>Rough</value>
+                <value>Rowdy</value>
+                <value>Rude</value>
+                <value>Rugged</value>
+                <value>Ruthless</value>
+                <value>Sacrificing</value>
+                <value>Sad</value>
+                <value>Sadistic</value>
+                <value>Safe</value>
+                <value>Sagely</value>
+                <value>Saintly</value>
+                <value>Salient</value>
+                <value>Sanctimonious</value>
+                <value>Self-Reliant</value>
+                <value>Self-Serving</value>
+                <value>Selfish</value>
+                <value>Selfless</value>
+                <value>Senile</value>
+                <value>Sensitive</value>
+                <value>Sensual</value>
+                <value>Sentimental</value>
+                <value>Serene</value>
+                <value>Serious</value>
+                <value>Sexual</value>
+                <value>Sexy</value>
+                <value>Shallow</value>
+                <value>Shameless</value>
+                <value>Sharp-Tongued</value>
+                <value>Sharp-Witted</value>
+                <value>Sharp</value>
+                <value>Sheepish</value>
+                <value>Shiftless</value>
+                <value>Shifty</value>
+                <value>Short</value>
+                <value>Shrewd</value>
+                <value>Shy</value>
+                <value>Silent</value>
+                <value>Silky</value>
+                <value>Silly</value>
+                <value>Simian</value>
+                <value>Simple</value>
+                <value>Sincere</value>
+                <value>Sisterly</value>
+                <value>Skillful</value>
+                <value>Sleazy</value>
+                <value>Sloppy</value>
+                <value>Slovenly</value>
+                <value>Slow Paced</value>
+                <value>Sly</value>
+                <value>Small-Minded</value>
+                <value>Smart</value>
+                <value>Smiling</value>
+                <value>Smooth</value>
+                <value>Sneaky</value>
+                <value>Snob</value>
+                <value>Sociable</value>
+                <value>Soft-Hearted</value>
+                <value>Soft-Spoken</value>
+                <value>Solitary</value>
+                <value>Sophisticated</value>
+                <value>Sore</value>
+                <value>Sorry</value>
+                <value>Sour</value>
+                <value>Spendthrift</value>
+                <value>Spiteful</value>
+                <value>Splendid</value>
+                <value>Spoiled</value>
+                <value>Spontaneous</value>
+                <value>Spunky</value>
+                <value>Squeamish</value>
+                <value>Stately</value>
+                <value>Static</value>
+                <value>Steadfast</value>
+                <value>Sterile</value>
+                <value>Stern</value>
+                <value>Stimulating</value>
+                <value>Stingy</value>
+                <value>Stoical</value>
+                <value>Stolid</value>
+                <value>Straight Laced</value>
+                <value>Strange</value>
+                <value>Strict</value>
+                <value>Strident</value>
+                <value>Strong Willed</value>
+                <value>Strong</value>
+                <value>Stubborn</value>
+                <value>Studious</value>
+                <value>Stupid</value>
+                <value>Suave</value>
+                <value>Submissive</value>
+                <value>Successful</value>
+                <value>Succinct</value>
+                <value>Sulky</value>
+                <value>Sullen</value>
+                <value>Sultry</value>
+                <value>Supercilious</value>
+                <value>Superstitious</value>
+                <value>Supportive</value>
+                <value>Thorough</value>
+                <value>Thoughtful</value>
+                <value>Thoughtless</value>
+                <value>Threatening</value>
+                <value>Thrifty</value>
+                <value>Thrilled</value>
+                <value>Tight</value>
+                <value>Timid</value>
+                <value>Tired</value>
+                <value>Tireless</value>
+                <value>Tiresome</value>
+                <value>Tolerant</value>
+                <value>Touchy</value>
+                <value>Tough</value>
+                <value>Trivial</value>
+                <value>Troubled</value>
+                <value>Truculent</value>
+                <value>Trusting</value>
+                <value>Trustworthy</value>
+                <value>Truthful</value>
+                <value>Typical</value>
+                <value>Ugly</value>
+                <value>Unappreciative</value>
+                <value>Unassuming</value>
+                <value>Unbending</value>
+                <value>Unbiased</value>
+                <value>Uncaring</value>
+                <value>Uncommitted</value>
+                <value>Unconcerned</value>
+                <value>Uncontrolled</value>
+                <value>Unconventional</value>
+                <value>Uncooperative</value>
+                <value>Uncoordinated</value>
+                <value>Uncouth</value>
+                <value>Undependable</value>
+                <value>Understanding</value>
+                <value>Undesirable</value>
+                <value>Undisciplined</value>
+                <value>Unenthusiastic</value>
+                <value>Unfeeling</value>
+                <value>Unfocused</value>
+                <value>Unforgiving</value>
+                <value>Unfriendly</value>
+                <value>Ungrateful</value>
+                <value>Unhappy</value>
+                <value>Unhelpful</value>
+                <value>Uninhibited</value>
+                <value>Uninterested</value>
+                <value>Unkind</value>
+                <value>Unmotivated</value>
+                <value>Unpredictable</value>
+                <value>Unreasonable</value>
+                <value>Unreceptive</value>
+                <value>Unreliable</value>
+                <value>Unresponsive</value>
+                <value>Unrestrained</value>
+                <value>Unruly</value>
+                <value>Unscrupulous</value>
+                <value>Unselfish</value>
+                <value>Unsure</value>
+                <value>Unsympathetic</value>
+                <value>Unsystematic</value>
+                <value>Untrustworthy</value>
+                <value>Unusual</value>
+                <value>Unwilling</value>
+                <value>Upbeat</value>
+                <value>Upset</value>
+                <value>Uptight</value>
+                <value>Useful</value>
+                <value>Vacant</value>
+                <value>Vague</value>
+                <value>Vain</value>
+                <value>Valiant</value>
+                <value>Vengeful</value>
+                <value>Venomous</value>
+                <value>Verbose</value>
+                <value>Versatile</value>
+                <value>Vigorous</value>
+                <value>Vindictive</value>
+                <value>Violent</value>
+                <value>Virtuous</value>
+                <value>Visual</value>
+                <value>Vivacious</value>
+                <value>Volatile</value>
+                <value>Voracious</value>
+                <value>Vulgar</value>
+                <value>Vulnerable</value>
+                <value>Warlike</value>
+                <value>Weak-willed</value>
+            </table>
+            <table name="Emotions and attitude: Mood: Now, ther person is..." id="appearance_mood">
+                <value>Able</value>
+                <value>Abrasive</value>
+                <value>Abrupt</value>
+                <value>Absent Minded</value>
+                <value>Abusive</value>
+                <value>Accepting</value>
+                <value>Accident Prone</value>
+                <value>Accommodating</value>
+                <value>Accomplished</value>
+                <value>Action Oriented</value>
+                <value>Active</value>
+                <value>Adaptable</value>
+                <value>Addict</value>
+                <value>ADHD</value>
+                <value>Adorable</value>
+                <value>Adventurous</value>
+                <value>Affable</value>
+                <value>Affected</value>
+                <value>Affectionate</value>
+                <value>Afraid Of Commitment</value>
+                <value>Afraid</value>
+                <value>Aggressive</value>
+                <value>Agnostic</value>
+                <value>Agreeable</value>
+                <value>Alert</value>
+                <value>Alluring</value>
+                <value>Aloof</value>
+                <value>Altruistic</value>
+                <value>Always Hungry</value>
+                <value>Always Late</value>
+                <value>Ambiguous</value>
+                <value>Ambitious</value>
+                <value>Amiable</value>
+                <value>Amused</value>
+                <value>Amusing</value>
+                <value>Angry</value>
+                <value>Animated</value>
+                <value>Annoyed</value>
+                <value>Annoying</value>
+                <value>Anti-Social</value>
+                <value>Anxious</value>
+                <value>Apathetic</value>
+                <value>Apologetic</value>
+                <value>Appreciative</value>
+                <value>Apprehensive</value>
+                <value>Approachable</value>
+                <value>Argumentative</value>
+                <value>Aristocratic</value>
+                <value>Arrogant</value>
+                <value>Artistic</value>
+                <value>Ashamed</value>
+                <value>Aspiring</value>
+                <value>Assertive</value>
+                <value>Astonished</value>
+                <value>Attentive</value>
+                <value>Audacious</value>
+                <value>Austere</value>
+                <value>Authoritarian</value>
+                <value>Authoritative</value>
+                <value>Available</value>
+                <value>Average</value>
+                <value>Awful</value>
+                <value>Awkward</value>
+                <value>Babbling</value>
+                <value>Babyish</value>
+                <value>Bad</value>
+                <value>Bashful</value>
+                <value>Beautiful</value>
+                <value>Belligerent</value>
+                <value>Bewildered</value>
+                <value>Biter</value>
+                <value>Blames Others</value>
+                <value>Blasé</value>
+                <value>Blow-hard</value>
+                <value>Boastful</value>
+                <value>Boisterous</value>
+                <value>Bold</value>
+                <value>Boorish</value>
+                <value>Bored</value>
+                <value>Boring</value>
+                <value>Bossy</value>
+                <value>Boundless</value>
+                <value>Brainy</value>
+                <value>Brash</value>
+                <value>Bratty</value>
+                <value>Brave</value>
+                <value>Brazen</value>
+                <value>Carefree</value>
+                <value>Cautious</value>
+                <value>Cheerful</value>
+                <value>Childish</value>
+                <value>Chivalrous</value>
+                <value>Civilized</value>
+                <value>Classy</value>
+                <value>Clean</value>
+                <value>Clever</value>
+                <value>Closed</value>
+                <value>Clumsy</value>
+                <value>Coarse</value>
+                <value>Cocky</value>
+                <value>Coherent</value>
+                <value>Cold Hearted</value>
+                <value>Cold</value>
+                <value>Combative</value>
+                <value>Comfortable</value>
+                <value>Committed</value>
+                <value>Communicative</value>
+                <value>Compassionate</value>
+                <value>Competent</value>
+                <value>Complacent</value>
+                <value>Compliant</value>
+                <value>Composed</value>
+                <value>Compulsive</value>
+                <value>Conceited</value>
+                <value>Concerned</value>
+                <value>Condescending</value>
+                <value>Confident</value>
+                <value>Confused</value>
+                <value>Congenial</value>
+                <value>Conscientious</value>
+                <value>Considerate</value>
+                <value>Consistent</value>
+                <value>Constricting</value>
+                <value>Content</value>
+                <value>Contented</value>
+                <value>Contrarian</value>
+                <value>Contrite</value>
+                <value>Controlling</value>
+                <value>Conversational</value>
+                <value>Cooperative</value>
+                <value>Coquettish</value>
+                <value>Courageous</value>
+                <value>Courteous</value>
+                <value>Covetous</value>
+                <value>Cowardly</value>
+                <value>Cowering</value>
+                <value>Coy</value>
+                <value>Crabby</value>
+                <value>Crafty</value>
+                <value>Cranky</value>
+                <value>Crazy</value>
+                <value>Creative</value>
+                <value>Credible</value>
+                <value>Creepy</value>
+                <value>Critical</value>
+                <value>Cross</value>
+                <value>Crude</value>
+                <value>Cruel</value>
+                <value>Cuddly</value>
+                <value>Cultured</value>
+                <value>Curious</value>
+                <value>Cut-throat</value>
+                <value>Cynical</value>
+                <value>Dainty</value>
+                <value>Dangerous</value>
+                <value>Daring</value>
+                <value>Dark</value>
+                <value>Dashing</value>
+                <value>Dauntless</value>
+                <value>Dazzling</value>
+                <value>Debonair</value>
+                <value>Deceitful</value>
+                <value>Deceiving</value>
+                <value>Decent</value>
+                <value>Decisive</value>
+                <value>Decorous</value>
+                <value>Deep</value>
+                <value>Defeated</value>
+                <value>Defective</value>
+                <value>Deferential</value>
+                <value>Defiant</value>
+                <value>Deliberate</value>
+                <value>Delicate</value>
+                <value>Delightful</value>
+                <value>Demanding</value>
+                <value>Demonic</value>
+                <value>Devout</value>
+                <value>Disillusioned</value>
+                <value>Disinterested</value>
+                <value>Disloyal</value>
+                <value>Dismayed</value>
+                <value>Disorderly</value>
+                <value>Disorganized</value>
+                <value>Disparaging</value>
+                <value>Disrespectful</value>
+                <value>Dissatisfied</value>
+                <value>Dissolute</value>
+                <value>Distant</value>
+                <value>Distraught</value>
+                <value>Distressed</value>
+                <value>Disturbed</value>
+                <value>Dogmatic</value>
+                <value>Domineering</value>
+                <value>Dorky</value>
+                <value>Doubtful</value>
+                <value>Dour</value>
+                <value>Downtrodden</value>
+                <value>Draconian</value>
+                <value>Dramatic</value>
+                <value>Dreamer</value>
+                <value>Dreamy</value>
+                <value>Dreary</value>
+                <value>Driven</value>
+                <value>Dubious</value>
+                <value>Dull</value>
+                <value>Dumb</value>
+                <value>Dutiful</value>
+                <value>Dynamic</value>
+                <value>Eager</value>
+                <value>Easygoing</value>
+                <value>Eccentric</value>
+                <value>Educated</value>
+                <value>Effervescent</value>
+                <value>Efficient</value>
+                <value>Egocentric</value>
+                <value>Egotistic</value>
+                <value>Elated</value>
+                <value>Eloquent</value>
+                <value>Embarrassed</value>
+                <value>Embittered</value>
+                <value>Embraces Change</value>
+                <value>Eminent</value>
+                <value>Emotional</value>
+                <value>Empathetic</value>
+                <value>Enchanting</value>
+                <value>Encouraging</value>
+                <value>Enduring</value>
+                <value>Energetic</value>
+                <value>Engaging</value>
+                <value>Enigmatic</value>
+                <value>Entertaining</value>
+                <value>Enthusiastic</value>
+                <value>Envious</value>
+                <value>Equable</value>
+                <value>Erratic</value>
+                <value>Ethical</value>
+                <value>Evasive</value>
+                <value>Evil</value>
+                <value>Exacting</value>
+                <value>Excellent</value>
+                <value>Excessive</value>
+                <value>Excitable</value>
+                <value>Excited</value>
+                <value>Exclusive</value>
+                <value>Expansive</value>
+                <value>Expert</value>
+                <value>Extravagant</value>
+                <value>Extreme</value>
+                <value>Exuberant</value>
+                <value>Fabulous</value>
+                <value>Facetious</value>
+                <value>Faded</value>
+                <value>Fair</value>
+                <value>Faith In Self</value>
+                <value>Faithful</value>
+                <value>Faithless</value>
+                <value>Fake</value>
+                <value>Fanatical</value>
+                <value>Fanciful</value>
+                <value>Fantastic</value>
+                <value>Fatalistic</value>
+                <value>Fearful</value>
+                <value>Fearless</value>
+                <value>Feisty</value>
+                <value>Ferocious</value>
+                <value>Fidgety</value>
+                <value>Foolish</value>
+                <value>Frantic</value>
+                <value>Fresh</value>
+                <value>Fretful</value>
+                <value>Friendly</value>
+                <value>Frightened</value>
+                <value>Frigid</value>
+                <value>Frugal</value>
+                <value>Frustrated</value>
+                <value>Fuddy Duddy</value>
+                <value>Fun Loving</value>
+                <value>Fun-loving</value>
+                <value>Fun</value>
+                <value>Funny</value>
+                <value>Furious</value>
+                <value>Furtive</value>
+                <value>Fussy</value>
+                <value>Gabby</value>
+                <value>Garrulous</value>
+                <value>Gaudy</value>
+                <value>Generous</value>
+                <value>Genial</value>
+                <value>Gentle</value>
+                <value>Giddy</value>
+                <value>Giggly</value>
+                <value>Gives Up Easily</value>
+                <value>Giving</value>
+                <value>Glamorous</value>
+                <value>Gloomy</value>
+                <value>Glorious</value>
+                <value>Glum</value>
+                <value>Goal Orientated</value>
+                <value>Good</value>
+                <value>Goofy</value>
+                <value>Graceful</value>
+                <value>Gracious</value>
+                <value>Grandiose</value>
+                <value>Grateful</value>
+                <value>Greedy</value>
+                <value>Gregarious</value>
+                <value>Grieving</value>
+                <value>Grouchy</value>
+                <value>Gruesome</value>
+                <value>Gruff</value>
+                <value>Grumpy</value>
+                <value>Guarded</value>
+                <value>Guilt Ridden</value>
+                <value>Guilty</value>
+                <value>Gullible</value>
+                <value>Haggling</value>
+                <value>Handsome</value>
+                <value>Happy</value>
+                <value>Hard Working</value>
+                <value>Hard</value>
+                <value>Hardy</value>
+                <value>Harmonious</value>
+                <value>Harried</value>
+                <value>Harsh</value>
+                <value>Hateful</value>
+                <value>Haughty</value>
+                <value>Healthy</value>
+                <value>Heart Broken</value>
+                <value>Heartless</value>
+                <value>Heavy Hearted</value>
+                <value>Hedonistic</value>
+                <value>Helpful</value>
+                <value>Helpless</value>
+                <value>Hesitant</value>
+                <value>High Self Esteem</value>
+                <value>High</value>
+                <value>Hilarious</value>
+                <value>Homeless</value>
+                <value>Honest</value>
+                <value>Honor Bound</value>
+                <value>Honorable</value>
+                <value>Hopeful</value>
+                <value>Hopeless</value>
+                <value>Hormonal</value>
+                <value>Horrible</value>
+                <value>Hospitable</value>
+                <value>Hostile</value>
+                <value>Hot Headed</value>
+                <value>Huffy</value>
+                <value>Humble</value>
+                <value>Humorous</value>
+                <value>Hurt</value>
+                <value>Hysterical</value>
+                <value>Indiscriminate</value>
+                <value>Indolent</value>
+                <value>Indulgent</value>
+                <value>Industrious</value>
+                <value>Inefficient</value>
+                <value>Inept</value>
+                <value>Inflexible</value>
+                <value>Inimitable</value>
+                <value>Innocent</value>
+                <value>Inquisitive</value>
+                <value>Insecure</value>
+                <value>Insensitive</value>
+                <value>Insightful</value>
+                <value>Insincere</value>
+                <value>Insipid</value>
+                <value>Insistent</value>
+                <value>Insolent</value>
+                <value>Instinctive</value>
+                <value>Insulting</value>
+                <value>Intellectual</value>
+                <value>Intelligent</value>
+                <value>Intense</value>
+                <value>Interested</value>
+                <value>Interrupting</value>
+                <value>Intimidating</value>
+                <value>Intolerant</value>
+                <value>Intrepid</value>
+                <value>Introspective</value>
+                <value>Introverted</value>
+                <value>Intuitive</value>
+                <value>Inventive</value>
+                <value>Involved</value>
+                <value>Irresolute</value>
+                <value>Irresponsible</value>
+                <value>Irreverent</value>
+                <value>Irritable</value>
+                <value>Irritating</value>
+                <value>Jackass</value>
+                <value>Jaded</value>
+                <value>Jealous</value>
+                <value>Jittery</value>
+                <value>Joking</value>
+                <value>Jolly</value>
+                <value>Jovial</value>
+                <value>Joyful</value>
+                <value>Joyous</value>
+                <value>Judgemental</value>
+                <value>Keen</value>
+                <value>Kind Hearted</value>
+                <value>Kittenish</value>
+                <value>Knowledgeable</value>
+                <value>Lackadaisical</value>
+                <value>Lacking</value>
+                <value>Languid</value>
+                <value>Lascivious</value>
+                <value>Late</value>
+                <value>Lazy</value>
+                <value>Leader</value>
+                <value>Lean</value>
+                <value>Lethargic</value>
+                <value>Level</value>
+                <value>Lewd</value>
+                <value>Liar</value>
+                <value>Licentious</value>
+                <value>Light-Hearted</value>
+                <value>Likeable</value>
+                <value>Limited</value>
+                <value>Lineat</value>
+                <value>Lingering</value>
+                <value>Lively</value>
+                <value>Logical</value>
+                <value>Lonely</value>
+                <value>Loquacious</value>
+                <value>Lordly</value>
+                <value>Loud-mouthed</value>
+                <value>Loud</value>
+                <value>Lovable</value>
+                <value>Lovely</value>
+                <value>Loves Challenge</value>
+                <value>Loving</value>
+                <value>Low Confidence</value>
+                <value>Lowly</value>
+                <value>Loyal</value>
+                <value>Lucky</value>
+                <value>Lunatic</value>
+                <value>Manipulative</value>
+                <value>Mischievous</value>
+                <value>Modern</value>
+                <value>Modest</value>
+                <value>Moody</value>
+                <value>Moping</value>
+                <value>Moralistic</value>
+                <value>Motherly</value>
+                <value>Motivated</value>
+                <value>Mysterious</value>
+                <value>Nagging</value>
+                <value>Naive</value>
+                <value>Narcissistic</value>
+                <value>Narrow-Minded</value>
+                <value>Nasty</value>
+                <value>Naughty</value>
+                <value>Neat</value>
+                <value>Needy</value>
+                <value>Negative</value>
+                <value>Negligent</value>
+                <value>Nervous</value>
+                <value>Neurotic</value>
+                <value>Never Hungry</value>
+                <value>Nibbler</value>
+                <value>Nice</value>
+                <value>Night Owl</value>
+                <value>Nihilistic</value>
+                <value>Nimble</value>
+                <value>Nit Picker</value>
+                <value>No Purpose</value>
+                <value>No Self Confidence</value>
+                <value>Noble</value>
+                <value>Noisy</value>
+                <value>Nonchalant</value>
+                <value>Nosy</value>
+                <value>Nuanced</value>
+                <value>Nuisance</value>
+                <value>Nurturing</value>
+                <value>Nut</value>
+                <value>Obedient</value>
+                <value>Obese</value>
+                <value>Obliging</value>
+                <value>Obnoxious</value>
+                <value>Obscene</value>
+                <value>Obsequious</value>
+                <value>Observant</value>
+                <value>Obstinate</value>
+                <value>Odd</value>
+                <value>Odious</value>
+                <value>Open-Minded</value>
+                <value>Open</value>
+                <value>Opinionated</value>
+                <value>Opportunistic</value>
+                <value>Optimistic</value>
+                <value>Orcish</value>
+                <value>Orderly</value>
+                <value>Organized</value>
+                <value>Ornery</value>
+                <value>Ossified</value>
+                <value>Ostentatious</value>
+                <value>Outgoing</value>
+                <value>Outrageous</value>
+                <value>Outspoken</value>
+                <value>Overbearing</value>
+                <value>Overweight</value>
+                <value>Overwhelmed</value>
+                <value>Overwhelming</value>
+                <value>Paces</value>
+                <value>Pacifistic</value>
+                <value>Painstaking</value>
+                <value>Panicky</value>
+                <value>Paranoid</value>
+                <value>Particular</value>
+                <value>Passionate</value>
+                <value>Passive-Aggressive</value>
+                <value>Passive</value>
+                <value>Pathetic</value>
+                <value>Patient</value>
+                <value>Patriotic</value>
+                <value>Peaceful</value>
+                <value>Penitent</value>
+                <value>Pensive</value>
+                <value>Perfect</value>
+                <value>Perfectionist</value>
+                <value>Performer</value>
+                <value>Perseverant</value>
+                <value>Petty</value>
+                <value>Possessive</value>
+                <value>Practical</value>
+                <value>Precise</value>
+                <value>Predictable</value>
+                <value>Preoccupied</value>
+                <value>Pretentious</value>
+                <value>Prim</value>
+                <value>Primitive</value>
+                <value>Productive</value>
+                <value>Profane</value>
+                <value>Professional</value>
+                <value>Promiscuous</value>
+                <value>Proper</value>
+                <value>Protective</value>
+                <value>Proud</value>
+                <value>Prudent</value>
+                <value>Psychotic</value>
+                <value>Puckish</value>
+                <value>Punctilious</value>
+                <value>Punctual</value>
+                <value>Purposeful</value>
+                <value>Pushy</value>
+                <value>Puzzled</value>
+                <value>Quarrelsome</value>
+                <value>Queer</value>
+                <value>Quick Tempered</value>
+                <value>Quick</value>
+                <value>Quiet</value>
+                <value>Quirky</value>
+                <value>Quixotic</value>
+                <value>Rambunctious</value>
+                <value>Random</value>
+                <value>Rash</value>
+                <value>Rational</value>
+                <value>Raw-boned</value>
+                <value>Realistic</value>
+                <value>Reasonable</value>
+                <value>Rebellious</value>
+                <value>Recalcitrant</value>
+                <value>Receptive</value>
+                <value>Reckless</value>
+                <value>Reclusive</value>
+                <value>Refined</value>
+                <value>Reflective</value>
+                <value>Regretful</value>
+                <value>Rejects Change</value>
+                <value>Relaxed</value>
+                <value>Relents</value>
+                <value>Reliable</value>
+                <value>Relieved</value>
+                <value>Religious</value>
+                <value>Reluctant</value>
+                <value>Remorseful</value>
+                <value>Repugnant</value>
+                <value>Repulsive</value>
+                <value>Resentful</value>
+                <value>Reserved</value>
+                <value>Resilient</value>
+                <value>Resolute</value>
+                <value>Resourceful</value>
+                <value>Respectful</value>
+                <value>Responsible</value>
+                <value>Responsive</value>
+                <value>Restless</value>
+                <value>Retiring</value>
+                <value>Rhetorical</value>
+                <value>Rich</value>
+                <value>Right</value>
+                <value>Righteous</value>
+                <value>Rigid</value>
+                <value>Risk-Taking</value>
+                <value>Romantic</value>
+                <value>Rough</value>
+                <value>Rowdy</value>
+                <value>Rude</value>
+                <value>Rugged</value>
+                <value>Ruthless</value>
+                <value>Sacrificing</value>
+                <value>Sad</value>
+                <value>Sadistic</value>
+                <value>Safe</value>
+                <value>Sagely</value>
+                <value>Saintly</value>
+                <value>Salient</value>
+                <value>Sanctimonious</value>
+                <value>Self-Reliant</value>
+                <value>Self-Serving</value>
+                <value>Selfish</value>
+                <value>Selfless</value>
+                <value>Senile</value>
+                <value>Sensitive</value>
+                <value>Sensual</value>
+                <value>Sentimental</value>
+                <value>Serene</value>
+                <value>Serious</value>
+                <value>Sexual</value>
+                <value>Sexy</value>
+                <value>Shallow</value>
+                <value>Shameless</value>
+                <value>Sharp-Tongued</value>
+                <value>Sharp-Witted</value>
+                <value>Sharp</value>
+                <value>Sheepish</value>
+                <value>Shiftless</value>
+                <value>Shifty</value>
+                <value>Short</value>
+                <value>Shrewd</value>
+                <value>Shy</value>
+                <value>Silent</value>
+                <value>Silky</value>
+                <value>Silly</value>
+                <value>Simian</value>
+                <value>Simple</value>
+                <value>Sincere</value>
+                <value>Sisterly</value>
+                <value>Skillful</value>
+                <value>Sleazy</value>
+                <value>Sloppy</value>
+                <value>Slovenly</value>
+                <value>Slow Paced</value>
+                <value>Sly</value>
+                <value>Small-Minded</value>
+                <value>Smart</value>
+                <value>Smiling</value>
+                <value>Smooth</value>
+                <value>Sneaky</value>
+                <value>Snob</value>
+                <value>Sociable</value>
+                <value>Soft-Hearted</value>
+                <value>Soft-Spoken</value>
+                <value>Solitary</value>
+                <value>Sophisticated</value>
+                <value>Sore</value>
+                <value>Sorry</value>
+                <value>Sour</value>
+                <value>Spendthrift</value>
+                <value>Spiteful</value>
+                <value>Splendid</value>
+                <value>Spoiled</value>
+                <value>Spontaneous</value>
+                <value>Spunky</value>
+                <value>Squeamish</value>
+                <value>Stately</value>
+                <value>Static</value>
+                <value>Steadfast</value>
+                <value>Sterile</value>
+                <value>Stern</value>
+                <value>Stimulating</value>
+                <value>Stingy</value>
+                <value>Stoical</value>
+                <value>Stolid</value>
+                <value>Straight Laced</value>
+                <value>Strange</value>
+                <value>Strict</value>
+                <value>Strident</value>
+                <value>Strong Willed</value>
+                <value>Strong</value>
+                <value>Stubborn</value>
+                <value>Studious</value>
+                <value>Stupid</value>
+                <value>Suave</value>
+                <value>Submissive</value>
+                <value>Successful</value>
+                <value>Succinct</value>
+                <value>Sulky</value>
+                <value>Sullen</value>
+                <value>Sultry</value>
+                <value>Supercilious</value>
+                <value>Superstitious</value>
+                <value>Supportive</value>
+                <value>Thorough</value>
+                <value>Thoughtful</value>
+                <value>Thoughtless</value>
+                <value>Threatening</value>
+                <value>Thrifty</value>
+                <value>Thrilled</value>
+                <value>Tight</value>
+                <value>Timid</value>
+                <value>Tired</value>
+                <value>Tireless</value>
+                <value>Tiresome</value>
+                <value>Tolerant</value>
+                <value>Touchy</value>
+                <value>Tough</value>
+                <value>Trivial</value>
+                <value>Troubled</value>
+                <value>Truculent</value>
+                <value>Trusting</value>
+                <value>Trustworthy</value>
+                <value>Truthful</value>
+                <value>Typical</value>
+                <value>Ugly</value>
+                <value>Unappreciative</value>
+                <value>Unassuming</value>
+                <value>Unbending</value>
+                <value>Unbiased</value>
+                <value>Uncaring</value>
+                <value>Uncommitted</value>
+                <value>Unconcerned</value>
+                <value>Uncontrolled</value>
+                <value>Unconventional</value>
+                <value>Uncooperative</value>
+                <value>Uncoordinated</value>
+                <value>Uncouth</value>
+                <value>Undependable</value>
+                <value>Understanding</value>
+                <value>Undesirable</value>
+                <value>Undisciplined</value>
+                <value>Unenthusiastic</value>
+                <value>Unfeeling</value>
+                <value>Unfocused</value>
+                <value>Unforgiving</value>
+                <value>Unfriendly</value>
+                <value>Ungrateful</value>
+                <value>Unhappy</value>
+                <value>Unhelpful</value>
+                <value>Uninhibited</value>
+                <value>Uninterested</value>
+                <value>Unkind</value>
+                <value>Unmotivated</value>
+                <value>Unpredictable</value>
+                <value>Unreasonable</value>
+                <value>Unreceptive</value>
+                <value>Unreliable</value>
+                <value>Unresponsive</value>
+                <value>Unrestrained</value>
+                <value>Unruly</value>
+                <value>Unscrupulous</value>
+                <value>Unselfish</value>
+                <value>Unsure</value>
+                <value>Unsympathetic</value>
+                <value>Unsystematic</value>
+                <value>Untrustworthy</value>
+                <value>Unusual</value>
+                <value>Unwilling</value>
+                <value>Upbeat</value>
+                <value>Upset</value>
+                <value>Uptight</value>
+                <value>Useful</value>
+                <value>Vacant</value>
+                <value>Vague</value>
+                <value>Vain</value>
+                <value>Valiant</value>
+                <value>Vengeful</value>
+                <value>Venomous</value>
+                <value>Verbose</value>
+                <value>Versatile</value>
+                <value>Vigorous</value>
+                <value>Vindictive</value>
+                <value>Violent</value>
+                <value>Virtuous</value>
+                <value>Visual</value>
+                <value>Vivacious</value>
+                <value>Volatile</value>
+                <value>Voracious</value>
+                <value>Vulgar</value>
+                <value>Vulnerable</value>
+                <value>Warlike</value>
+                <value>Weak-willed</value>
+            </table>
+            <table name="Faith and beliefs: This person is a..." id="appearance_faith">
+                <value>Quiet true believer</value>
+                <value>Causual observer</value>
+                <value>Critical student</value>
+                <value>Outspiken cynic</value>
+                <value>Open-minded seeker</value>
+                <value>Broken heretic</value>
+                <value>Cautious listener</value>
+                <value>Fanatical true believer</value>
+            </table>
+            <table name="Faith and beliefs: The person is prejudice against..." id="appearance_prejudice">
+                <value>Other genders</value>
+                <value>Children</value>
+                <value>Teenagers</value>
+                <value>Elderly</value>
+                <value>The rulling class and authority figures</value>
+                <value>Powerful rich</value>
+                <value>Destitute poor</value>
+                <value>Beggars</value>
+                <value>Drunks</value>
+                <value>Drug-users</value>
+                <value>Farmers</value>
+                <value>Artists</value>
+                <value>Clergy</value>
+                <value>Soldiers</value>
+                <value>Fishers</value>
+                <value>Harlots</value>
+                <value>Miners</value>
+                <value>Merchants</value>
+                <value>Scholars</value>
+                <value>Herders</value>
+                <value>Sailors</value>
+                <value>Mages</value>
+                <value>Dwarves</value>
+                <value>Elves</value>
+                <value>Gnomes</value>
+                <value>Goblins</value>
+                <value>Half-breeds</value>
+                <value>Halflings</value>
+                <value>Humans</value>
+                <value>Orcs</value>
+                <value>Reptilians</value>
+            </table>
+            <table name="Flaws: The person..." id="appearance_flaw">
+                <value>Fidgets</value>
+                <value>Drinks too much</value>
+                <value>Eats too much</value>
+                <value>Swears often</value>
+                <value>Has poor hygiene</value>
+                <value>Can't resist flirting</value>
+                <value>Can't stop staring</value>
+                <value>Sweats profusely and easily</value>
+                <value>Is a habitual liar</value>
+                <value>Embellishes the truth</value>
+                <value>Exagerates details</value>
+                <value>Has a short temper</value>
+                <value>Is melodramatic</value>
+                <value>Gossips</value>
+                <value>Chews with an open mouth</value>
+                <value>Often sniffs audibly</value>
+                <value>Believes what you tell him/her</value>
+                <value>Is skeptical of everything</value>
+                <value>Paces</value>
+                <value>Makes poor eye contact</value>
+            </table>
+        </category>

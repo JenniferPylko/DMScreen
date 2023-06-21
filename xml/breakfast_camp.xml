@@ -1,0 +1,71 @@
+        <category name="Breakfast at a Camp Fire" id="breakfast_camp">
+            <table name="Tonight, we dine on..." id="dine">
+                <patterns>
+                    <pattern>{prep} {dish}</pattern>
+                </patterns>
+                <list type="prep">
+                    <item>Stewed</item>
+                    <item>Roasted</item>
+                    <item>Skewered</item>
+                    <item>Boiled</item>
+                    <item>Smoked</item>
+                    <item>Grilled</item>
+                    <item>Seared</item>
+                    <item>Flame-broiled</item>
+                    <item>Salted</item>
+                    <item>Peppered</item>
+                </list>
+                <list type="dish">
+                    <item>rabbit</item>
+                    <item>duck</item>
+                    <item>pork</item>
+                    <item>fish</item>
+                    <item>venison</item>
+                    <item>deer</item>
+                    <item>squirrel</item>
+                    <item>pheasant</item>
+                    <item>mutton</item>
+                    <item>lamb</item>
+                </list>
+            </table>
+            <table name="...with..." id="dine_with">
+                <value>Potatoes.</value>
+                <value>Lentils.</value>
+                <value>White beans.</value>
+                <value>Red beans.</value>
+                <value>Black beans.</value>
+                <value>Peas.</value>
+                <value>Turnips.</value>
+                <value>Onions.</value>
+            </table>
+            <table name="...and..." id="dine_and">
+                <value>Carrots.</value>
+                <value>Raisins.</value>
+                <value>Dried cherries.</value>
+                <value>Wild mushrooms.</value>
+                <value>Sliced mushrooms.</value>
+                <value>Rosemary.</value>
+                <value>Pine nuts.</value>
+                <value>Cashews.</value>
+                <value>Almonds.</value>
+                <value>Olives.</value>
+                <value>Dried berries.</value>
+                <value>Sunflower seeds.</value>
+            </table>
+            <table name="Side dish..." id="side">
+                <value>Rye bread.</value>
+                <value>Hard tack.</value>
+                <value>Crusty bread.</value>
+                <value>Sesame bread.</value>
+                <value>Hard cheese.</value>
+                <value>Sharp cheese.</value>
+            </table>
+            <table name="Beverage..." id="beverage">
+                <value>Water.</value>
+                <value>Watery ale.</value>
+                <value>Strong ale.</value>
+                <value>White wine</value>
+                <value>Red wine.</value>
+                <value>Tea.</value>
+            </table>
+        </category>

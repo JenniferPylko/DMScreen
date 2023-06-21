@@ -1,0 +1,99 @@
+<category name="Merchant guilds" id="merchantguild">
+    <table name="The guild is controlled by..." id="controlled">
+        <value region_start="14" region_end="21" region_include="__noun__">A no-nonsense kingpin who despises bureaucracy</value>
+        <value region_start="25" region_end="30" region_include="gnome">A small and pinched-face gnome with a sinister desire for money</value>
+        <value region_start="17" region_end="28" region_include="nobleman">An inexperienced young noble with a petulant need for a full purse</value>
+        <value>A council of the heads of local crafting guilds</value>
+        <value region_start="43" region_end="47" region_include="city">An argumentative mass democracy of all the city's merchants</value>
+        <value region_start="68" region_end="75" region_include="watchmen">A longstanding and ancient charter that applies to all merchants, and the militia acting as the charter's executors</value>
+        <value region_start="17" region_end="25" region_include="merchant">The most wealthy merchant in the city</value>
+        <value region_start="17" region_end="21" region_include="monk">A city-appointed monk, who has sworn away worldly wealth</value>
+    </table>
+    <table name="This guild's illicit affairs comprise..." id="illicit">
+        <value>Literally nothing, they are paragons of upright morality</value>
+        <value>Staying well within the law, in flipping on a few taxes due to ignorance of course</value>
+        <value>Knowing how to play the political game, they garner a few indirect favors from officials</value>
+        <value region_start="83" region_end="87" region_include="city">Guild leaders having dollar signs for eyes, and setting advantageous prices in the city</value>
+        <value>Price floors becoming commonplace, and officials are often bribed in order to overlook some minor illicit activities</value>
+        <value>A variety of upper-level bribes, some minor scams, and the dismay of local priests</value>
+        <value region_start="56" region_end="60" region_include="city">Rampant corruption, with large-scale bribery of various city officials and contracts with theeves guild and occasionally an assassin</value>
+        <value>Pacts with devils, large-scale counterfeiting, and treasonous activities are a normal Tuesday morning for this guild</value>
+    </table>
+    <table name="The guild's status and control is..." id="status">
+        <value>Poor; though once great, this guild has fallen on hard times and is struggling to maintain its power</value>
+        <value>Brand new, and frantically recruiting members in order to snatch power</value>
+        <value>Exponentially rising, a recent boon has granted them great profits</value>
+        <value>Absolute, they have complete dominance in their field</value>
+        <value>Spotty, depending on the will of the coin, and the market this guild may be drinking Elven wine or rotten grog</value>
+        <value>Unquestioned, they exert complete dominance over all other guilds in the area</value>
+        <value>Questionable, though they claim to have control, some operators have undermined it</value>
+    </table>
+    <table name="The guild's headquarters is..." id="hq">
+        <value>The leader's or leaders' personal residence, a large manor</value>
+        <value region_start="26" region_end="30" region_include="city">The dusty basement of the city's capital hall</value>
+        <value>A single, thin, and very tall townhouse that leans slightly into the street</value>
+        <value region_start="9" region_end="13" region_include="ship">A moored ship, especially curious in landlocked cities</value>
+        <value region_start="37" region_end="41" region_include="city">An open-air pavilion centered in the city's bazaar</value>
+        <value>Doubling as a large and prestigious bank</value>
+        <value>An opulent demiplane hidden in a shady back-alley</value>
+        <value region_start="38" region_end="46" region_include="city">Jointly shared with all the guilds of the city, and the thieves guild lurks in the sewers below</value>
+    </table>
+    <table name="Minor Quest: The guild has been having some trouble with..." id="minor">
+        <value region_start="0" region_end="10" region_include="merchant">A merchant was recently shaken down by a lowly thug, send a message</value>
+        <value>Gold stores, perhaps you should make a donation of 500 gold pieces?</value>
+        <value>Transporting a semi-rare magical item to a nearby branch</value>
+        <value region_start="2" region_end="9" region_include="caravan">A caravan that doesn't feel comfortable going through a newly discovered path in the nearby woods, escort them</value>
+        <value region_start="7" region_end="21" region_include="solider">A city militia member getting nosy</value>
+        <value region_start="2" region_end="16" region_include="craftingguild">A crafting guild hesitant to sign up for the merchant guild's special loyalty program</value>
+        <value>A rat infestation</value>
+        <value>A rat infestation (that actually is a rift to the Plane of Rats or similar filthy location)</value>
+    </table>
+    <table name="Standard Quest: The guild needs you to handle..." id="standard">
+        <value region_start="2" region_end="9" region_include="caravan">A caravan gone missing in a nearby region</value>
+        <value>A rising thieves' guild that seems uncooperative</value>
+        <value region_start="2" region_end="6" region_include="city">A city official hellbent on stamping out capitalism</value>
+        <value region_start="12" region_end="25" region_include="merchantguild">A competing merchant guild that has begun to outpace the guild</value>
+        <value>A recent trade blockade -- you need to resolve the tensions or clear the blockade</value>
+        <value>Rumors of aberrations in the night that have driven away trade</value>
+        <value>A board member who has decided to go rogue and has stolen from the coffers</value>
+        <value>A very large rat infestation (the rift has become a permanent Gate to the Plane of Rats or similar filthy location)</value>
+    </table>
+    <table name="Major Quest: A matter of great import, the guild is faced with..." id="major">
+        <value region_start="2|44" region_end="16|48" region_include="mercenaries|city">A mercenary army that has laid siege to the city!</value>
+        <value>Mass corruption from the inside, half the board is revealed to be mind flayers</value>
+        <value region_start="10" region_end="19" region_include="__noun__">A massive religious revival that causes the entire population to scorn material pursuits and cut deep into the bottom line</value>
+        <value region_start="2|29" region_end="13|36" region_include="undead|caravan">A mummy king who has taken a caravan with most of the guild coffer's investments hostage</value>
+        <value region_start="40" region_end="53" region_include="__noun__">Political revolution that threatens the guild coffers with looking, protect our stores but civilians cannot be harmed</value>
+        <value>An investigation from the King's spymaster into the extend of the guild's illicit activities</value>
+        <value>A planar being has supplanted the guild master, who is imprisoned in a planar cage</value>
+        <value>Waves of rats that threatenedd the entire guild hall's basement (the rift has become a gigantic faucet of rats) where an Avatar of the God of Rats has taken up residence</value>
+    </table>
+    <table name="Trading Company: This trading company's specific specialty or purpose is..." id="specialty">
+        <value>Long-range sea trade, exploration and transport</value>
+        <value>Long-range aerial trade; accomplished with airships, aarakocra messengers, and the occasional roc or dragon</value>
+        <value>The hunting and trapping of exotic monsters and animals</value>
+        <value>Acting as a puppet agency for a local kingdom manipulating global trade</value>
+        <value>Securing and creating long-range caravans, and the low growth of roads (and maybe even railroads)</value>
+        <value>Exploring and exploiting newly discovered lands or planes</value>
+    </table>
+    <table name="Trading Company: This trading company is controlled by..." id="trading_controlled">
+        <value region_start="38" region_end="46" region_include="merchant">A planar being disguised as a wealthy merchant</value>
+        <value>A joint council of Masters of Coin from all civilized kingdoms of the world</value>
+        <value region_start="2" region_end="15" region_include="goblin">A savant goblin who has achieved immortality by divine blessing</value>
+        <value region_start="11" region_end="24" region_include="npc_class">A grizzled ex-adventurer</value>
+        <value>A council of investors</value>
+        <value>An argumentative mass democracy of all the company's merchants</value>
+        <value region_start="20" region_end="34" region_include="caravan_master">A massively wealthy caravan master who found a lost city of gold</value>
+        <value>A large and grotesque slave master</value>
+    </table>
+    <table name="Currency: Besides coin, the merchant will trade in..." id="currency">
+        <value>Gems and jewelry</value>
+        <value>Gold and silver bullion</value>
+        <value>Water, provisions, and other goods</value>
+        <value>Shells, beads, and trinkets</value>
+        <value>Favors</value>
+        <value>Scandalous information</value>
+    </table>
+    <member name="Shopkeeper" include="shopkeeper" />
+    <member name="Merchant" include="merchant" />
+</category>

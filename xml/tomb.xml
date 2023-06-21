@@ -1,0 +1,291 @@
+<category name="Tomb" id="tomb" link="dungeon_dressing">
+    <table name="This tomb was built for..." id="tomb_builtfor">
+        <value region_start="11" region_end="15" region_include="nobleman">An ancient king</value>
+        <value region_start="11" region_end="16" region_include="noblewoman">An ancient queen</value>
+        <value region_start="16" region_end="22" region_include="priest">An ancient high priest or priestess</value>
+        <value region_start="11" region_end="19" region_include="sorcerer">An ancient sorcerer</value>
+        <value region_start="9" region_end="16" region_include="barbarian">A mighty warrior</value>
+        <value region_start="11" region_end="18" region_include="villain">A terrible villain</value>
+        <value region_start="12" region_end="22" region_include="npc_class">A legendary adventurer</value>
+        <value region_start="13" region_end="21" region_include="npc_class">A celebrated war hero</value>
+        <value region_start="16" region_end="20" region_include="nobleman">An unscrupulous king</value>
+        <value region_start="16" region_end="21" region_include="noblewoman">An unscrupulous queen</value>
+        <value region_start="7" region_end="12" region_include="__noun__">A vain mayor or town master</value>
+        <value region_start="33" region_end="40" region_include="barbarian">A powerful military commander or warlord</value>
+        <value region_start="11" region_end="16" region_include="witch">A powerful witch</value>
+        <value region_start="11" region_end="17" region_include="wizard">A powerful wizard</value>
+        <value region_start="11" region_end="30" region_include="priest">A powerful priest or priestess</value>
+        <value region_start="10" region_end="19" region_include="noble">A beloved sovereign</value>
+        <value region_start="10" region_end="18" region_include="merchant">A wealthy merchant</value>
+        <value region_start="2|14" region_end="8|25" region_include="noble|noblehouse">A member of a noble house</value>
+        <value region_start="2|12" region_end="8|28" region_include="noble|noblehouse">A member of the royal family</value>
+        <value region_start="4|22" region_end="8|28" region_include="__noun__|__noun__">The wife of a wealthy person</value>
+        <value region_start="4|22" region_end="8|27" region_include="__noun__|noble">The wife of a wealthy ruler</value>
+        <value region_start="4|24" region_end="10|30" region_include="__noun__|__noun__">The mother of a wealthy person</value>
+        <value region_start="4|24" region_end="10|29" region_include="__noun__|noble">The mother of a wealthy ruler</value>
+        <value region_start="4|23" region_end="9|29" region_include="__noun__|__noun__">The child of a wealthy person</value>
+        <value region_start="4|23" region_end="9|28" region_include="__noun__|noble">The child of a wealthy ruler</value>
+    </table>
+    <table name="This tomb was built by..." id="tomb_builtby">
+        <value region_start="11" region_end="24" region_include="__noun__">An ancient dwarvish clan.</value>
+        <value region_start="11|15" region_end="14|21" region_include="highelf|nobleman">An ancient elf prince.</value>
+        <value region_start="11" region_end="17" region_include="wizard">A powerful wizard.</value>
+        <value region_start="7" region_end="16" region_include="sorcerer">A dark sorceress.</value>
+        <value region_start="2" region_end="16" region_include="nation">A foreign empire.</value>
+        <value region_start="11" region_end="20" region_include="__noun__">Prosperous merchants.</value>
+        <value region_start="10" region_end="17" region_include="__noun__">Religious zealots.</value>
+        <value region_start="19" region_end="25" region_include="__noun__">An ancient race of giants.</value>
+        <value region_start="13" region_end="17" region_include="nobleman">A tyrannical king of old.</value>
+        <value region_start="23" region_end="27" region_include="cavern">No one; it's a natural cave.</value>
+    </table>
+    <table name="This tomb is located..." id="tomb_located">
+        <value region_start="15" region_end="24" region_include="mountain">Beneath a cold mountain.</value>
+        <value region_start="16" region_end="25" region_include="mountain">Beneath a fiery mountain.</value>
+        <value region_start="21" region_end="29" region_include="mountain">Near a well-traveled mountain pass.</value>
+        <value region_start="14" region_end="20" region_include="forest">Deep within a forest.</value>
+        <value region_start="14" region_end="20" region_include="desert">Deep within a desert.</value>
+        <value region_start="11" region_end="14" region_include="__noun__">Beside the sea.</value>
+        <value region_start="6" region_end="12" region_include="__noun__">On an island.</value>
+        <value region_start="19" region_end="23" region_include="city">Beneath a bustling city.</value>
+        <value region_start="31" region_end="35" region_include="city">Beneath the ruin of an ancient city.</value>
+        <value region_start="21" region_end="27" region_include="castle">Beneath a well-known castle</value>
+        <value region_start="21" region_end="30" region_include="monastery">Beneath a well-known monastery.</value>
+        <value region_start="28" region_end="34" region_include="castle">Beneath the ruins of an old castle</value>
+        <value region_start="28" region_end="37" region_include="monastery">Beneath the ruins of an old monastery.</value>
+        <value>In a place reachable only by magic.</value>
+    </table>
+    <table name="The tomb's entrance is..." id="tomb_entrance">
+        <value>Yawning open, letting much daylight into the entry chamber</value>
+        <value region_start="22" region_end="33" region_include="__noun__">Behind a huge pair of brass doors</value>
+        <value region_start="22" region_end="34" region_include="__noun__">Behind a huge pair of bronze doors</value>
+        <value region_start="22" region_end="32" region_include="__noun__">Behind a huge pair of gold doors</value>
+        <value region_start="22" region_end="32" region_include="__noun__">Behind a huge pair of iron doors</value>
+        <value region_start="10" region_end="20" region_include="__noun__">Beneath a stone slab</value>
+        <value>A simple wooden door framed in stone</value>
+        <value>A heavy wooden door framed in stone</value>
+        <value>Behind a heavy stone door</value>
+        <value region_start="23" region_end="27" region_include="__noun__">Beneath a gnarled, old tree</value>
+        <value region_start="11" region_end="18" region_include="__noun__">Beneath an obelisk or similar monument</value>
+        <value region_start="16" region_end="22" region_include="__noun__">Beneath a large statue</value>
+        <value>Hidden by boulders</value>
+        <value region_start="12" region_end="21" region_include="__noun__">Hidden by a waterfall</value>
+        <value>Hidden by a rocky overhang</value>
+        <value>Hidden by a hillock</value>
+        <value>Hidden by a brier patch</value>
+        <value>Hidden by a curtain of moss</value>
+        <value region_start="22" region_end="26" region_include="__noun__">Hidden by an enormous tree's roots</value>
+        <value>Hidden by overgrown vines</value>
+        <value region_start="13" region_end="18" region_include="__noun__">Up or down a cliff face</value>
+        <value region_start="12" region_end="16" region_include="__noun__">Down a deep hole</value>
+        <value region_start="11" region_end="16" region_include="__noun__">In an underwater tunnel</value>
+        <value>Through an illusory rock or wall</value>
+    </table>
+    <table name="The tomb's entrance is guarded by..." id="tomb_guard">
+        <value region_start="8" region_end="13" region_include="__noun__">A sworn order of devout warriors</value>
+        <value region_start="0" region_end="10" region_include="mercenaries">Sellswords</value>
+        <value>Large frightening statues of bats</value>
+        <value>Large frightening statues of bears</value>
+        <value>Large frightening statues of dragons</value>
+        <value>Large frightening statues of eagles</value>
+        <value>Large frightening statues of lions</value>
+        <value>Large frightening statues of ravens</value>
+        <value>Large frightening statues of snakes</value>
+        <value>Large frightening statues of wolves</value>
+        <value>Impressive, colossal statues of warriors</value>
+        <value>Crumbling statues</value>
+        <value region_start="55" region_end="59" region_include="traps">Statues of beautiful maidens, beckoning visitors into a trap</value>
+        <value region_start="18" region_end="25" region_include="__noun__">Several crumbling statues</value>
+        <value region_start="0" region_end="17" region_include="undead">Skeletal warriors</value>
+        <value region_start="29" region_end="34" region_include="__noun__">An unsettling arrangement of bones</value>
+        <value region_start="2" region_end="17" region_include="outlaws">A band of outlaws who are carefully delving its secrets</value>
+        <value region_start="2" region_end="17" region_include="goblingang">A band of goblins</value>
+        <value>A beholder</value>
+        <value>Grimlocks</value>
+        <value region_start="0" region_end="8" region_include="cult">Cultists</value>
+        <value>A pack of gnolls</value>
+        <value>Mummies</value>
+        <value>Nothing; the tomb is rather homey and welcoming</value>
+    </table>
+    <table name="The tomb's grand crypt is located..." id="tomb_crypt">
+        <value>Just beyond a heavy door in the entry chamber</value>
+        <value>Down a steep set of spiraling stairs from the entry chamber</value>
+        <value>At the end of a long passageway lined with lesser crypts</value>
+        <value region_start="39" region_end="46" region_include="__noun__">At the end of a long passage line with statues</value>
+        <value>At the end of a long passageway line with passageways leading to lesser crypts</value>
+        <value>Several levels below the entry chamber</value>
+    </table>
+    <table name="The tomb's layout is..." id="tomb_layout">
+        <value>Simple; a large grand crypt with a handful of smaller crypts and rooms adjoining</value>
+        <value>Simple with a large entry chamber; the entry chamber leads off to smaller crypts and other rooms</value>
+        <value>Multi-layered; access to the lower layers is easy to find</value>
+        <value>Multi-layered; access to the lower layers is difficult to find</value>
+        <value>Multi-winged; access to some wings is difficult to find</value>
+        <value>A series of rooms arranged in a concentric fashion; the grand crypt is located among the inner rooms</value>
+        <value>Labyrinthine; designed to deliberately confuse intruders</value>
+        <value>Simple with an intricate complex hidden beneath the grand crypt</value>
+    </table>
+    <table name="Many of the tomb's interior walls are..." id="tomb_walls">
+        <value>Rough hewn stone</value>
+        <value>Smooth cut stone</value>
+        <value>Painted or lacquered wood</value>
+        <value>Unfinished hardwood</value>
+        <value region_start="25" region_end="32" region_include="__noun__">Decorated with intricate mosaics</value>
+        <value region_start="25" region_end="31" region_include="__noun__">Decorated with elaborate murals</value>
+        <value region_start="15|25" region_end="20|30" region_include="__noun__|__noun__">Decorated with bones and icons of death</value>
+        <value region_start="15|32" region_end="27|37" region_include="__noun__|__noun__">Decorated with sacred texts and runes</value>
+    </table>
+    <table name="Many of the tomb's ceilings are..." id="tomb_ceilings">
+        <value>Uncomfortably close to your head</value>
+        <value>Stone, smooth as glass</value>
+        <value>Stone, rough and jagged</value>
+        <value>Connected to the floor by columns</value>
+        <value>Painted or carved with iconic scenes</value>
+        <value>Crossed by wooden beams</value>
+    </table>
+    <table name="The tomb is rumored to..." id="tomb_rumor">
+        <value region_start="16" region_end="24" region_include="__noun__">Hold tremendous treasure</value>
+        <value>Be heavily trapped to guard against intruders</value>
+        <value region_start="7" region_end="22" region_include="legendary_weapon">Hold a legendary weapon</value>
+        <value region_start="17" region_end="25" region_include="artifacts">Hold a legendary artifact</value>
+        <value region_start="18" region_end="23" region_include="__noun__">Bestow a powerful curse on intruders</value>
+        <value region_start="21" region_end="28" region_include="__noun__">House the remains of someone whose body is widely believed to have been lost</value>
+        <value>Have already been cleared of monsters and gold by treasure hunters</value>
+    </table>
+    <table name="Hidden in the tomb is..." id="tomb_hidden">
+        <value region_start="0|12" region_end="6|29" region_include="legendary_weapon|fighter">Weapon of a legendary warrior.</value>
+        <value region_start="0|17" region_end="4|22" region_include="wands|witch">Wand of a famous witch.</value>
+        <value region_start="0|17" region_end="4|23" region_include="wands|wizard">Wand of a famous wizard.</value>
+        <value region_start="0|25" region_end="9|29" region_include="book|wizard">Spellbook of a notorious mage.</value>
+        <value region_start="0|28" region_end="14|34" region_include="__noun__|pirate">Treasure stash of a notable pirate.</value>
+        <value region_start="0|16" region_end="5|22" region_include="__noun__|dragon">Hoard of an old dragon.</value>
+        <value region_start="0|23" region_end="8|37" region_include="__noun__|__noun__">Treasury of an ancient dwarvish realm</value>
+        <value region_start="0|16" region_end="8|22" region_include="artifacts|highelf">Artifacts of an elvish hero.</value>
+        <value region_start="0|23" region_end="6|29" region_include="__noun__|priest">Relics of a celebrated priest.</value>
+        <value region_start="35" region_end="39" region_include="ship">Chests of silver carried by a lost ship</value>
+        <value region_start="35" region_end="42" region_include="caravan">Chests of silver carried by a lost caravan.</value>
+        <value region_start="28" region_end="33" region_include="noblewoman">Crown jewels of a long-dead queen.</value>
+        <value>Largest diamond found in this part of the world.</value>
+        <value region_start="0|21" region_end="5|29" region_include="__noun__|sorcerer">Staff of an infamous sorcerer</value>
+        <value region_start="0|21" region_end="5|32" region_include="__noun__|necromancer">Staff of an infamous necromancer.</value>
+    </table>
+    <table name="Undead Denizens: What haunts this tomb?" id="tomb_undead">
+        <value>A swarm of crawling claws</value>
+        <value region_start="11" region_end="16" region_include="undead">A covetous wight</value>
+        <value region_start="11" region_end="19" region_include="undead">An ancient demilich</value>
+        <value>Malevolent ghosts</value>
+        <value>Zombie warriors</value>
+        <value>A skeletal hound</value>
+        <value region_start="13" region_end="20" region_include="vampire">A newly-made vampire</value>
+        <value>A huge, animated pile of bones</value>
+        <value>Twisted humanoid skeletons</value>
+        <value region_start="2|27" region_end="8|37" region_include="undead|npc">A zombie made from a fallen adventurer</value>
+        <value region_start="10" region_end="15" region_include="undead">A hateful mummy</value>
+        <value>Skeletal guardians</value>
+        <value>Phantom soldiers</value>
+        <value region_start="4" region_end="9" region_include="undead">The ghost of a fair maiden</value>
+        <value>Hungry ghouls</value>
+        <value region_start="6" region_end="12" region_include="undead">A mad wraith</value>
+        <value region_start="10" region_end="15" region_include="undead">A playful ghost</value>
+        <value region_start="14" region_end="37" region_include="__noun__">A treacherous spellcaster-turned-lich</value>
+        <value region_start="11" region_end="23" region_include="__noun__">A vengeful death knight</value>
+    </table>
+    <table name="Living Denizens: What lives in the tomb now?" id="tomb_living">
+        <value>Carrion crawler</value>
+        <value>Cloaker</value>
+        <value>Darkmantle</value>
+        <value>Fungi</value>
+        <value>Mimics</value>
+        <value>Myconids</value>
+        <value region_start="0" region_end="4" region_include="ooze">Ooze</value>
+        <value>Otyugh</value>
+        <value>Piercer</value>
+        <value>Roper</value>
+        <value>Stirges</value>
+        <value>Umber hulk</value>
+    </table>
+    <table name="Deep within the tomb hides..." id="tomb_deep">
+        <value region_start="12" region_end="18" region_include="criminal">A dangerous outlaw.</value>
+        <value region_start="3" region_end="12" region_include="__noun__">An elemental lord.</value>
+        <value region_start="2" region_end="9" region_include="vampire">A vampire.</value>
+        <value region_start="2" region_end="6" region_include="undead">A lich.</value>
+        <value region_start="2" region_end="7" region_include="fiend">A demon.</value>
+        <value region_start="2" region_end="7" region_include="fiend">A devil.</value>
+        <value region_start="3" region_end="6" region_include="orc">An orc warlord.</value>
+        <value region_start="2" region_end="11" region_include="__noun__">A hobgoblin commander.</value>
+        <value region_start="3" region_end="20" region_include="__noun__">An aberrant presence.</value>
+        <value region_start="2" region_end="7" region_include="witch">A witch.</value>
+        <value region_start="2" region_end="7" region_include="__noun__">A giant.</value>
+        <value region_start="2" region_end="8" region_include="dragon">A dragon.</value>
+    </table>
+    <table name="Who has entered the tomb of late?" id="tomb_visitor">
+        <value region_start="14" region_end="33" region_include="priest">A devoted old priest or priestess</value>
+        <value region_start="16" region_end="35" region_include="priest">A curious young priest or priestess</value>
+        <value region_start="2" region_end="10" region_include="traveler">A traveler from afar</value>
+        <value region_start="2" region_end="9" region_include="__noun__">A scholar from afar</value>
+        <value region_start="2|16" region_end="8|26" region_include="__noun__|__noun__">A member of the deceased's family</value>
+        <value region_start="9" region_end="24" region_include="__noun__">A greedy treasure hunter</value>
+        <value region_start="2" region_end="9" region_include="__noun__">A student of necromancy</value>
+        <value region_start="11" region_end="24" region_include="killer">A fugitive serial killer</value>
+        <value region_start="20" region_end="30" region_include="npc">A brave but foolish adventurer</value>
+    </table>
+    <member name="Room" id="tomb_room">
+        <table name="The purpose of this room is..." id="tomb_room_is">
+            <value region_start="20" region_end="26" region_include="__noun__">An antechamber to a chapel</value>
+            <value region_start="20" region_end="25" region_include="__noun__">An antechamber to a crypt</value>
+            <value region_start="2" region_end="7" region_include="__noun__">A chapel dedicated to protecting the souls of the deceased</value>
+            <value region_start="2" region_end="7" region_include="__noun__">A chapel dedicated to aiding the journey of the souls of the deceased</value>
+            <value region_start="31" region_end="35" region_include="npc">A grand crypt for a well-known hero</value>
+            <value region_start="25" region_end="31" region_include="priest">A grand crypt for a high priest</value>
+            <value region_start="29" region_end="34" region_include="noble">A grand crypt for a powerful noble</value>
+            <value region_start="28" region_end="36" region_include="merchant">A grand crypt for a wealthy merchant</value>
+            <value>A false crypt to attract and to trap graverobbers and treasure hunters</value>
+            <value region_start="22" region_end="36" region_include="__noun__">A crypt for immediate family members</value>
+            <value>A crypt for previous generations of the family</value>
+            <value region_start="16" region_end="22" region_include="__noun__">A crypt for the spouse of the deceased</value>
+            <value>A crypt of unmarked graves</value>
+            <value>A reflecting pool or fountain</value>
+            <value>A crypt for devoted servants or slaves</value>
+            <value>A room dedicated for divination rituals</value>
+            <value>A room dedicated for funerary rituals</value>
+            <value>A room dedicated for necromatic rituals</value>
+            <value region_start="39" region_end="47" region_include="__noun__">Gallery dedicated to the deceased with trophies</value>
+            <value region_start="39" region_end="46" region_include="__noun__">Gallery dedicated to the deceased with statues</value>
+            <value region_start="39" region_end="48" region_include="__noun__">Gallery dedicated to the deceased with paintings</value>
+            <value>A guardroom with ghost guards</value>
+            <value>A guardroom with golem guards</value>
+            <value>A guardroom with knight guards</value>
+            <value>A guardroom with sellsword guards</value>
+            <value>A guardroom with cultist guards</value>
+            <value>A guardroom with skeleton guards</value>
+            <value>A guardroom with wight guards</value>
+            <value>A guardroom with zombie guards</value>
+            <value>A priest's robing room</value>
+            <value>Storage room for embalming tools</value>
+            <value>Storage room for tools and material to maintain the tomb</value>
+            <value>Workshop for embalming the dead</value>
+            <value region_start="20|52" region_end="31|58" region_include="__noun__|__noun__">A crypt hidden by a secret door where the most important person in the tomb rests</value>
+            <value>A priest's quarters</value>
+        </table>
+        <table name="Features: you notice...">
+            <value region_start="8" region_end="13" region_include="__noun__">A small altar set in an alcove in the wall</value>
+            <value region_start="2|26" region_end="8|33" region_include="__noun__|__noun__">A plaque listing a family lineage</value>
+            <value region_start="2" region_end="8" region_include="__noun__">A plaque noting birth and death dates</value>
+            <value>A wall sconce holding several candles</value>
+            <value>An empty wall sconce for holding a torch</value>
+            <value>A rotten, earthly stench</value>
+            <value>A musty, moldy odor</value>
+            <value>The scent of decaying flesh</value>
+            <value region_start="20" region_end="38" region_include="__noun__">A mural depicting a mythological scene</value>
+            <value>A small fountain or reflecting pool</value>
+            <value region_start="7" region_end="11" region_include="book">A huge book of sacred texts or prayers</value>
+            <value>An ornate oil lamp</value>
+            <value region_start="2" region_end="8" region_include="__noun__">A mosaic set into the floor of the room</value>
+            <value region_start="35" region_end="67" region_include="__noun__">A wide fresco or mural depicting a mythological or historical scene</value>
+            <value region_start="9" region_end="20" region_include="__noun__">A gilded sarcophagus</value>
+            <value region_start="31" region_end="37" region_include="__noun__">A finely-crafted, heavy wooden coffin</value>
+            <value region_start="24" region_end="30" region_include="__noun__">A simple, sturdy wooden coffin</value>
+            <value region_start="8" region_end="14" region_include="__noun__">A stone coffin marked with dates</value>
+            <value region_start="9" region_end="15" region_include="__noun__">An empty coffin</value>
+        </table>
+    </member>
+</category>

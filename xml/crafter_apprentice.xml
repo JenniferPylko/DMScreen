@@ -1,0 +1,16 @@
+        <category name="Apprentice Crafter" id="crafter_apprentice" hasa="craftingguild">
+            <name name="The apprentice's name is..."/>
+            <include name="Race" include="npc_race" />
+            <table name="The apprentice is..." id="crafter_apprentice_is">
+                <value>Bored</value>
+                <value>Eager to learn</value>
+                <value>Frustrated by his or her own mistakes</value>
+                <value>Nervously looking about</value>
+            </table>
+            <table name="The apprentice seeks someone to..." id="crafter_apprentice_seeks">
+                <value region_start="22" region_end="31" region_include="__noun__">Give him some tips in the craft</value>
+                <value region_start="12" region_end="16" region_include="__noun__">Purchase an item made by the apprentice</value>
+                <value>Tell a tale that inspires creativity</value>
+                <value>Sneak off for a drink and some kisses</value>
+            </table>
+        </category>

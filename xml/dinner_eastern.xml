@@ -1,0 +1,107 @@
+        <category name="Dinner among Easterlings" id="dinner_eastern">
+            <table name="Tonight, we dine on..." id="dine">
+                <patterns>
+                    <pattern>{prep} {dish}</pattern>
+                </patterns>
+                <list type="prep">
+                    <item>Stewed</item>
+                    <item>Roasted</item>
+                    <item>Fried</item>
+                    <item>Boiled</item>
+                    <item>Baked</item>
+                    <item>Grilled</item>
+                    <item>Seared</item>
+                    <item>Steamed</item>
+                    <item>Salted</item>
+                    <item>Pickled</item>
+                </list>
+                <list type="dish">
+                    <item>rabbit</item>
+                    <item>chicken</item>
+                    <item>duck</item>
+                    <item>pork</item>
+                    <item>beef</item>
+                    <item>trout</item>
+                    <item>catfish</item>
+                    <item>eel</item>
+                    <item>squid</item>
+                    <item>crab</item>
+                    <item>pork sausage</item>
+                    <item>duck sausage</item>
+                </list>
+            </table>
+            <table name="...with..." id="dine_with">
+                <value>Dumplings.</value>
+                <value>Egg noodles.</value>
+                <value>Rice noodles.</value>
+                <value>Long noodles.</value>
+                <value>Sticky rice.</value>
+                <value>Long-grain rice.</value>
+                <value>Yellow rice.</value>
+                <value>Soybeans.</value>
+                <value>Lentils.</value>
+                <value>String beans.</value>
+                <value>Red beans.</value>
+                <value>Mushrooms.</value>
+            </table>
+            <table name="...and..." id="dine_and">
+                <value>Carrots.</value>
+                <value>Cabbage.</value>
+                <value>Onions.</value>
+                <value>Water chestnuts.</value>
+                <value>Leeks.</value>
+                <value>Lentils.</value>
+                <value>Broccoli.</value>
+                <value>Peas.</value>
+                <value>Sprouts.</value>
+                <value>Sweet peppers.</value>
+                <value>Hot peppers.</value>
+                <value>Oranges.</value>
+            </table>
+            <table name="...doused with..." id="doused">
+                <value>Soy sauce.</value>
+                <value>Sweet-and-sour sauce.</value>
+                <value>Spicy vinegar.</value>
+                <value>Hot mustard.</value>
+                <value>Sweet mustard.</value>
+                <value>Pepper oil.</value>
+                <value>Peanut oil.</value>
+                <value>Ginger.</value>
+                <value>Spicy curry.</value>
+                <value>Hot curry.</value>
+            </table>
+            <table name="Side dish..." id="side">
+                <value>Raw tuna.</value>
+                <value>Raw skate.</value>
+                <value>Raw trout.</value>
+                <value>Raw herring.</value>
+                <value>Raw horse.</value>
+                <value>Dog meat.</value>
+                <value>Pickled cabbage.</value>
+                <value>Pickled onion.</value>
+                <value>Pickled radish.</value>
+                <value>Pickled cucumber.</value>
+                <value>Pickled fish.</value>
+                <value>Honey bee larva.</value>
+                <value>Fried grasshopper.</value>
+                <value>Red bean paste.</value>
+                <value>Sticky bread.</value>
+                <value>Fresh baked bread.</value>
+                <value>Crispy fried dough.</value>
+                <value>Fried egg.</value>
+                <value>Balut.</value>
+                <value>Bird's nest soup.</value>
+            </table>
+            <table name="Beverage..." id="beverage">
+                <value>Water.</value>
+                <value>White tea.</value>
+                <value>Green tea.</value>
+                <value>Red tea.</value>
+                <value>Black tea.</value>
+                <value>Herbal tea.</value>
+                <value>Floral tea.</value>
+                <value>Bitter wine.</value>
+                <value>Rice wine.</value>
+                <value>Fire-water.</value>
+            </table>
+        </category>

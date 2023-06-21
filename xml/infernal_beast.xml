@@ -1,0 +1,44 @@
+<category name="Infernal Beast" id="infernal_beast">
+    <table name="The infernal beast appears in the form of..." id="form">
+        <value>A bat.</value>
+        <value>A drake.</value>
+        <value>A hound.</value>
+        <value>A horse.</value>
+        <value>A falcon.</value>
+        <value>A lizard.</value>
+        <value>A panther.</value>
+        <value>A raven.</value>
+        <value>A scorpion.</value>
+        <value>A serpent.</value>
+        <value>A worm.</value>
+        <value>A wyvern.</value>
+    </table>
+    <table name="The infernal beast has..." id="has">
+        <value>Glowing red eyes.</value>
+        <value>Pale, sinister eyes.</value>
+        <value>Reddish skin around the face.</value>
+        <value>Several short horns or tusks.</value>
+        <value>Curled horns or tusks.</value>
+        <value>Long pointy horns.</value>
+        <value>An odor of brimstone.</value>
+        <value>An aura of choking smoke.</value>
+    </table>
+    <table name="..and..." id="and">
+        <value>Powerful hind legs for leaping and pouncing.</value>
+        <value>Speaks in a hissing voice.</value>
+        <value>Speaks in a growling voice.</value>
+        <value>A forked tongue.</value>
+        <value>Poisonous fangs.</value>
+        <value>Red or black, leathery wings.</value>
+        <value>Black or grey, feathered wings.</value>
+        <value>A tail with a venomous stinger.</value>
+    </table>
+    <table name="The beast is looking for..." id="looking">
+        <value region_start="2" region_end="8" region_include="__noun__">A mortal to tempt and to corrupt.</value>
+        <value region_start="2|26" region_end="6|32" region_include="__noun__|__noun__">A soul to collect for its master.</value>
+        <value region_start="2" region_end="6" region_include="__noun__">A soul to torment.</value>
+        <value region_start="32" region_end="38" region_include="__noun__">An opportunity to overthrow its master.</value>
+        <value region_start="2" region_end="17" region_include="__noun__">A specific mortal who sold his or her soul.</value>
+        <value region_start="3" region_end="7" region_include="__noun__">An item of great power and evil.</value>
+    </table>
+</category>

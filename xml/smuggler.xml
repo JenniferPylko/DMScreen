@@ -1,0 +1,36 @@
+<category name="Smuggler" id="smuggler">
+    <name name="The smuggler's name is..."/>
+    <include name="Race" include="npc_race" />
+    <table name="The smuggling ring's primary modus operandi involves..." id="modus">
+        <value>Undergorund tunnels</value>
+        <value>Secret compartments</value>
+        <value>Stealth watercraft</value>
+        <value>Humanoid mules</value>
+        <value>Bribery of officials</value>
+        <value>A network of safehouses</value>
+    </table>
+    <table name="The ring is supported by..." id="supported">
+        <value region_start="12" region_end="20" region_include="merchant">A prominent merchant</value>
+        <value region_start="13" region_end="35" region_include="__noun__">An important minister or magistrate</value>
+        <value region_start="8" region_end="18" region_include="__noun__">A major crime boss</value>
+        <value region_start="2" region_end="16" region_include="pirate">A pirate captain</value>
+        <value region_start="3" region_end="10" region_include="__noun__">An admiral</value>
+        <value region_start="2" region_end="22" region_include="__noun__">A group of subversives</value>
+        <value region_start="4" region_end="24" region_include="guard_captain">The captain of the guard of a local sheriff</value>
+        <value region_start="4|21" region_end="13|26" region_include="noble|__noun__">The sovereign's main rival</value>
+    </table>
+    <table name="Distinguishing features: The smuggler has..." id="feature">
+        <value region_start="9" region_end="16" region_include="__noun__">A flashy earring</value>
+        <value>Shiny leather boots</value>
+        <value>A hole in the toe of one boot</value>
+        <value>A dagger in each boot</value>
+        <value>A mask on the face</value>
+        <value>A wide-brimmed hat</value>
+        <value>A dragon tattoo on the forearm</value>
+        <value>A flame tattoo around the arm</value>
+        <value>A maniacal laugh</value>
+        <value>A bent, broken nose</value>
+        <value>An open shirt and a very hairy chest</value>
+        <value>Extravagant mustaches</value>
+    </table>
+</category>

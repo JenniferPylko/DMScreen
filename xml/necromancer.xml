@@ -1,0 +1,132 @@
+<category name="Necromancer" id="necromancer">
+    <name name="The necromancer's name is..."/>
+    <include name="Race" include="npc_race" />
+    <table name="The necromancer is..." id="is">
+        <value region_start="12" region_end="19" region_include="__noun__">A brilliant academy graduate</value>
+        <value region_start="13" region_end="20" region_include="villain">A well-known villain</value>
+        <value>A violent maniac</value>
+        <value region_start="13" region_end="17" region_include="wizard">An ambitious mage</value>
+        <value region_start="23" region_end="36" region_include="graverobber">The son or daughter of a gravedigger</value>
+        <value region_start="9" region_end="19" region_include="merchant">A creepy shopkeeper</value>
+        <value region_start="12" region_end="18" region_include="priest">A heretical priest or priestess</value>
+        <value>An adept poisonmaker</value>
+        <value>A soft-spoken scholar</value>
+        <value>A determined loreseeker</value>
+    </table>
+    <table name="The necromancer learned his/her craft from..." id="learned">
+        <value region_start="9" region_end="20" region_include="necromancer">A fellow necromancer to who he/she apprenticed</value>
+        <value region_start="34" region_end="45">A parent or grandparent who was a necromancer</value>
+        <value>Books of necromantic lore</value>
+        <value region_start="13" region_end="20" region_include="__noun__">Attending an academy</value>
+        <value>Books of forbidden lore</value>
+        <value>Communication with the spirits of the dead</value>
+        <value region_start="16" region_end="23" region_include="fiend">Consorting with a fiend</value>
+        <value>Trial and error</value>
+    </table>
+    <table name="The necromancer specializes in..." id="specializes">
+        <value>Animating corpses</value>
+        <value>Commining with ghosts</value>
+        <value>Conjuring malevolent spirits</value>
+        <value>Crafting flesh golems</value>
+        <value>Commanding undead creatures</value>
+        <value>Rotting curses</value>
+        <value>Curses of undeath</value>
+        <value>Deadly poisons</value>
+    </table>
+    <table name="The necromancer is looking for..." id="looking">
+        <value>Test subjects</value>
+        <value>A body - fresh if possible, decomposed just as good</value>
+        <value>Gullible souls</value>
+        <value>A drink of absinthe and a ghost story</value>
+        <value>The means to summon and bind a wraith</value>
+        <value>The soul of a specific person</value>
+        <value region_start="20" region_end="35" region_include="__noun__">Vengeance against a powerful person</value>
+        <value region_start="18" region_end="33" region_include="__noun__">Instruction for a powerful ritual</value>
+        <value region_start="4|24" region_end="8|29" region_include="wands|witch">The wand of a legendary witch</value>
+        <value region_start="4|24" region_end="8|30" region_include="wands|wizard">The wand of a legendary wizard</value>
+        <value region_start="24" region_end="29" region_include="witch">The staff of an ancient witch</value>
+        <value region_start="24" region_end="30" region_include="wizard">The staff of an ancient wizard</value>
+        <value region_start="25" region_end="33" region_include="divination">The meaning of a cryptic prophecy</value>
+        <value region_start="16" region_end="32" region_include="tomb">The entrance to a legendary tomb</value>
+    </table>
+    <table name="The necromancer has uncovered dark secrets. He/she cannot be killed by..." id="cannot_kill">
+        <value>Hanging or strangulation</value>
+        <value>Drowing</value>
+        <value>Burning</value>
+        <value>Disease</value>
+        <value>Poisoning</value>
+        <value>The hand of a mortal man</value>
+        <value>Falling from a great height</value>
+        <value>Old age</value>
+    </table>
+    <table name="The necromancer has taken precautions. If killed he/she rises as..." id="rises">
+        <value>A lingering, malevolent ghost</value>
+        <value>A powerful lich</value>
+        <value>A dangerious revenant</value>
+        <value>A mighty wight</value>
+        <value>A terrifying wraith</value>
+        <value>An unstoppable, intelligent zombie</value>
+    </table>
+    <table name="The necromancer's lair is..." id="lair">
+        <value region_start="5" region_end="9" region_include="cavern">In a cave</value>
+        <value region_start="5" region_end="10" region_include="swamp">In a swamp</value>
+        <value region_start="10" region_end="16" region_include="naturalforest">In a dark forest</value>
+        <value region_start="26" region_end="30" region_include="tomb">Near a well-known ancient tomb</value>
+        <value region_start="16" region_end="29" region_include="__noun__">Near an ancient burial ground</value>
+        <value region_start="14" region_end="22" region_include="__noun__">Adjacent to a cemetery</value>
+        <value region_start="11" region_end="18" region_include="village">In a quiet village</value>
+        <value region_start="13" region_end="20" region_include="village">Just outside a quiet village</value>
+        <value region_start="23" region_end="27" region_include="city">Down a dark alley in a city</value>
+        <value region_start="27" region_end="33" region_include="nobleman">In the castle or palace of a lord</value>
+    </table>
+    <table name="The necromancer carries..." id="carries">
+        <value>A twisted blackwood staff</value>
+        <value>A tome of necromatic lore</value>
+        <value>A rare alchemical substance</value>
+        <value>A razor-sharp ceremonial dagger</value>
+        <value region_start="11" region_end="17" region_include="potions">An unusual potion</value>
+        <value>A chunk of rotting flesh</value>
+        <value>A severed hand</value>
+        <value>A severed head</value>
+        <value>A severed finger</value>
+        <value>A severed foot</value>
+        <value>Several empty glass vials</value>
+        <value>A black stone that radiates evil</value>
+        <value>A small notebook filled with notes on anatomy</value>
+        <value>A small notebook filled with notes on behavior of zombies</value>
+        <value>A small notebook filled with notes on crypt architecture</value>
+        <value>A small notebook filled with notes on ghostly hauntings</value>
+    </table>
+    <table name="Familiars: The necromancer's familiar is..." id="familiar">
+        <value region_start="0" region_end="16" region_include="fiend">A fiendish demon trapped in a book</value>
+        <value region_start="0" region_end="16" region_include="fiend">A fiendish devil trapped in a gem</value>
+        <value region_start="0" region_end="14" region_include="fiend">A fiendish imp</value>
+        <value region_start="0" region_end="17" region_include="fiend">A fiendish quasit</value>
+        <value>A crawling crawl</value>
+        <value>A disembodied voice</value>
+        <value>A floating skull</value>
+        <value region_start="0" region_end="16" region_include="undead">A formless ghost</value>
+        <value region_start="2" region_end="5" region_include="bat">A bat</value>
+        <value region_start="2" region_end="5" region_include="cat">A cat</value>
+        <value>An owl</value>
+        <value>A snake</value>
+        <value region_start="0" region_end="8" region_include="spider">A spider</value>
+        <value>A raven</value>
+        <value region_start="2" region_end="5" region_include="rat">A rat</value>
+        <value>A toad</value>
+    </table>
+    <table name="Familiars: The necromancer's familiar's manner is..." id="familiar_manner">
+        <value>Calculating</value>
+        <value>Clever</value>
+        <value>Coy</value>
+        <value>Cruel</value>
+        <value>Gleeful</value>
+        <value>Grumpy</value>
+        <value>Insolent</value>
+        <value>Shy</value>
+        <value>Skittish</value>
+        <value>Surly</value>
+        <value>Suspicious</value>
+        <value>Talkative</value>
+    </table>
+</category>

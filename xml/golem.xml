@@ -1,0 +1,334 @@
+        <category name="Golem" id="golem">
+            <table name="The golem is..." id="is">
+                <value>Tiny.</value>
+                <value>Compact.</value>
+                <value>Humanoid.</value>
+                <value>Four-legged.</value>
+                <value>Enormous.</value>
+                <value>Shifting.</value>
+                <value>Thickset.</value>
+                <value>Willowy.</value>
+                <value>Round.</value>
+                <value>Foldable.</value>
+                <value>Paunchy.</value>
+                <value>Slight.</value>
+            </table>
+            <table name="The golem is made of..." id="made">
+                <value>Clay.</value>
+                <value>Rock.</value>
+                <value>Iron.</value>
+                <value>Steel.</value>
+                <value>Titanium.</value>
+                <value>Orichalcum.</value>
+                <value>Glass.</value>
+                <value>Bone and tooth.</value>
+                <value>Ivory.</value>
+                <value>Wood.</value>
+                <value>Chalk.</value>
+                <value>Ice.</value>
+                <value>Gold.</value>
+                <value>Silver.</value>
+                <value>Bronze.</value>
+                <value>Copper.</value>
+                <value>Brass.</value>
+                <value>Dirt.</value>
+                <value>Grass and vines.</value>
+                <value>Sky iron.</value>
+                <value>Scarletite.</value>
+                <value>Diamond.</value>
+                <value>Garnet.</value>
+                <value>Amethyst.</value>
+                <value>Flesh.</value>
+                <value>Shaped Souls.</value>
+                <value>Quartz.</value>
+                <value>Obsidian.</value>
+                <value>Chains.</value>
+                <value>Ash.</value>
+                <value>Gears.</value>
+                <value>Magnetic rock.</value>
+                <value>Mud.</value>
+                <value>Web.</value>
+                <value>Demonic flesh.</value>
+                <value>Scales.</value>
+                <value>Dragonbone.</value>
+                <value>Hellfire.</value>
+                <value>Sand.</value>
+                <value>Marble.</value>
+                <value>Books.</value>
+                <value>Straw.</value>
+                <value>Coral.</value>
+                <value>Amber.</value>
+                <value>Shadow.</value>
+                <value>Lightning.</value>
+                <value>Blood glob.</value>
+                <value>Rope and string.</value>
+                <value>Jelly.</value>
+                <value>Wax.</value>
+                <value>Water.</value>
+                <value>Slate.</value>
+                <value>Plastic.</value>
+                <value>Fur.</value>
+                <value>Quicksilver.</value>
+                <value>Honey.</value>
+                <value>Locusts.</value>
+                <value>Paper.</value>
+                <value>Fabric.</value>
+                <value>Vapour.</value>
+                <value>Mercury.</value>
+                <value>Aluminium.</value>
+                <value>Platinum.</value>
+                <value>Tin.</value>
+                <value>Gravestone.</value>
+                <value>Brick.</value>
+                <value>Springs.</value>
+                <value>Feathers.</value>
+                <value>Vegetables.</value>
+                <value>Sponge.</value>
+            </table>
+            <table name="The golem is powered by..." id="powered">
+                <value>Clockwork.</value>
+                <value>Steam.</value>
+                <value>Bound souls.</value>
+                <value>A magical-mechanical rune system.</value>
+                <value>Divine will.</value>
+                <value>A purpose inherent to the universe.</value>
+                <value>Arcane force.</value>
+                <value>A system of weight lifts and pendulums.</value>
+                <value>Life Essence.</value>
+                <value>Electricity.</value>
+                <value>Tapping into mana veins.</value>
+                <value>A reality shaping force or spell.</value>
+                <value>Elementals.</value>
+                <value>Strings to a puppet master.</value>
+                <value>Sunlight.</value>
+                <value>Food.</value>
+                <value region_start="2" region_end="10" region_include="__noun__">A symbiote.</value>
+                <value>Fuel combustion.</value>
+                <value>The wind.</value>
+                <value>Liquid pumps.</value>
+            </table>
+            <table name="The golem..." id="age">
+                <value>Is brand new.</value>
+                <value>Is recent.</value>
+                <value>Has been around for a while.</value>
+                <value>Is old.</value>
+                <value>Is very old.</value>
+                <value>Is ancient.</value>
+            </table>
+            <table name="The golem was built for..." id="built">
+                <value>Mining.</value>
+                <value>Guarding.</value>
+                <value>Soldiering.</value>
+                <value>Defending.</value>
+                <value>Forging.</value>
+                <value>Alchemy.</value>
+                <value>Carrying.</value>
+                <value>Searching.</value>
+                <value>Intimidating.</value>
+                <value>Storing knowledge.</value>
+                <value>Aesthetics.</value>
+                <value>Hunting.</value>
+                <value>Collecting.</value>
+                <value>Farming.</value>
+                <value>Constructing.</value>
+                <value>Transporting.</value>
+                <value>Policing.</value>
+                <value>Exploring.</value>
+                <value>Advising.</value>
+                <value>Arena fighting.</value>
+                <value>Healing.</value>
+                <value>Powering.</value>
+                <value>Entertaining.</value>
+                <value>Sexual gratification.</value>
+                <value>Teaching.</value>
+                <value>Guiding.</value>
+                <value>Recording.</value>
+                <value>Drawing.</value>
+                <value>Observing.</value>
+                <value>Holding.</value>
+                <value>Exterminating.</value>
+                <value>Brewing.</value>
+                <value>Tabulating.</value>
+                <value>Informing.</value>
+                <value>Illuminating.</value>
+                <value>Fetching.</value>
+                <value>Handling.</value>
+                <value>Taming.</value>
+                <value>Playing.</value>
+                <value>Cooking.</value>
+                <value>Sorting.</value>
+                <value>Casting spells.</value>
+                <value>Grave digging.</value>
+                <value>Investigating.</value>
+                <value>Breaking things down.</value>
+                <value>Maintaining.</value>
+                <value>Cutting.</value>
+                <value>Protesting.</value>
+                <value>Heating.</value>
+                <value>Road building.</value>
+                <value>Climbing.</value>
+                <value>Stealing.</value>
+                <value>Consuming.</value>
+                <value>Reciting.</value>
+                <value>Accounting.</value>
+                <value>Following.</value>
+                <value>Reading.</value>
+                <value>Shearing.</value>
+                <value>Tanning.</value>
+                <value>Assembling.</value>
+                <value>Monitoring.</value>
+                <value>Flight.</value>
+                <value>Keeping secrets.</value>
+                <value>Deciphering.</value>
+                <value>Spelljamming.</value>
+                <value>Sealing.</value>
+                <value>Sparring.</value>
+                <value>Generating.</value>
+                <value>Enchanting.</value>
+                <value>Grinding.</value>
+            </table>
+            <table name="The golem was created by..." id="created">
+                <value region_start="2" region_end="8" region_include="priest">A priest.</value>
+                <value region_start="2" region_end="6" region_include="undead">A lich.</value>
+                <value region_start="2" region_end="6" region_include="wizard">A mage.</value>
+                <value region_start="3" region_end="10" region_include="__noun__">An artisan.</value>
+                <value region_start="2" region_end="5" region_include="deity">A god.</value>
+                <value region_start="2" region_end="7" region_include="fiend">A demon.</value>
+                <value region_start="2" region_end="9" region_include="barbarian">A warlord.</value>
+                <value region_start="2" region_end="9" region_include="__noun__">A factory.</value>
+                <value region_start="2" region_end="9" region_include="__noun__">A general.</value>
+                <value region_start="2" region_end="6" region_include="nobleman">A king.</value>
+                <value>Nature.</value>
+                <value region_start="2" region_end="7" region_include="druid">A druid.</value>
+                <value region_start="3" region_end="12" region_include="__noun__">An alchemist.</value>
+                <value region_start="2" region_end="9" region_include="__noun__">A scholar.</value>
+                <value region_start="2" region_end="9" region_include="cultist">A cultist.</value>
+                <value region_start="2" region_end="8" region_include="dragon">A dragon.</value>
+                <value region_start="2" region_end="10" region_include="merchant">A merchant.</value>
+                <value region_start="2" region_end="10" region_include="criminal">A criminal.</value>
+                <value region_start="3" region_end="18" region_include="__noun__">An experimentalist.</value>
+            </table>
+            <table name="...who imbued it with..." id="imbued">
+                <value>Knowledge of magic</value>
+                <value>Knowledge of creatures and plants </value>
+                <value>Knowledge of alchemy and medicine</value>
+                <value>Knowledge of strategy and tactics</value>
+                <value>Knowledge of economics and craftsmanship</value>
+                <value>Knowledge of people and cultures.</value>
+                <value>human-level speech</value>
+                <value>true empathy</value>
+                <value>an ability to manipulate people</value>
+                <value>language translation</value>
+                <value>understanding of group psychology</value>
+                <value>understanding of body language.</value>
+                <value>a grappling hook</value>
+                <value>an automatic saw</value>
+                <value>a powerful lamp</value>
+                <value>a trap placer</value>
+                <value>a number of hidden compartments</value>
+                <value>a gyroscope of perfect balance.</value>
+                <value>night vision</value>
+                <value>magical sensitivity</value>
+                <value>acute senses</value>
+                <value>presence of spirits, demons and curses</value>
+                <value>lie detection</value>
+                <value>absolute direction.</value>
+                <value>rage</value>
+                <value>melancholy</value>
+                <value>sadness</value>
+                <value>happiness</value>
+                <value>fear</value>
+                <value>hatred.</value>
+                <value>compassion</value>
+                <value>rudeness</value>
+                <value>curiosity</value>
+                <value>aggressiveness</value>
+                <value>joyfulness</value>
+                <value>mischievousness.</value>
+                <value>A demonic force</value>
+                <value>A holy force</value>
+                <value>An elemental force</value>
+                <value>An arcane force</value>
+                <value>A wild magic force</value>
+                <value>A void force.</value>
+                <value>self-repair</value>
+                <value>extreme temperature and environmental resistance</value>
+                <value>self-destruct sequence</value>
+                <value>perfect memory</value>
+                <value>alternate form</value>
+                <value>gain additional armour or summon a protective force field.</value>
+            </table>
+            <table name="Distinguishing Feature: The golem has or is..." id="feature">
+                <value>An extra pair of limbs.</value>
+                <value region_start="22" region_end="28" region_include="__noun__">A vibrant and unusual colour.</value>
+                <value>The complete lack of any facial features.</value>
+                <value>An inability to move.</value>
+                <value>A set of predatory fangs.</value>
+                <value region_start="50" region_end="58" region_include="__noun__">A section that has been repaired with a different material.</value>
+                <value region_start="8" region_end="13" region_include="__noun__">Glowing runes.</value>
+                <value region_start="0|26" region_end="12|40" region_include="__noun__|__noun__">Instructions written in a strange script displayed prominently.</value>
+                <value region_start="19" region_end="30" region_include="__noun__">Rich and elaborate decorations.</value>
+                <value region_start="24" region_end="35" region_include="noblehouse">The crest or sigil of a noble house</value>
+                <value region_start="25" region_end="37" region_include="__noun__">The crest or sigil of an organization.</value>
+                <value region_start="46" region_end="52" region_include="__noun__">A face made to resemble a real living or dead person.</value>
+                <value>Brightly shining eyes.</value>
+                <value region_start="29" region_end="35" region_include="__noun__">A head shaped to resemble an animal's.</value>
+                <value>Part of the head is shaped to resemble a crown.</value>
+                <value region_start="35" region_end="43" region_include="__noun__">Been prominently built of a second material</value>
+                <value>It is designed to look like a statue.</value>
+                <value region_start="21" region_end="28" region_include="__noun__">Obviously made by an amateur.</value>
+                <value>Parts are chipped off or well worn.</value>
+                <value>Colour differences seem to indicate being made in different stages.</value>
+                <value region_start="19|28" region_end="23|43" region_include="__noun__|__noun__">It is inlaid with gems and precious metals.</value>
+                <value>Magical strains and strings are visible.</value>
+                <value>Overgrown.</value>
+                <value>Wearing clothes.</value>
+                <value>No eyes.</value>
+                <value>Its material is polished to almost mirror-like qualities.</value>
+                <value region_start="43" region_end="52" region_include="__noun__">Its material was shaped to resemble a fancy hairstyle.</value>
+                <value>Elaborate scrollwork.</value>
+                <value>Carrier bags.</value>
+                <value>A single Cyclopean eye.</value>
+                <value>Oddly shaped shoulders.</value>
+                <value>A veil.</value>
+                <value>Hooks and eyelets placed all over.</value>
+                <value>A custom suit of armour.</value>
+                <value>Etched geometric or themed patterns.</value>
+                <value>Covered in fur.</value>
+                <value>Reinforced joints.</value>
+                <value>Some of the inner workings is visible.</value>
+                <value>A fan or chutes for heat dissipation.</value>
+                <value region_start="28" region_end="45" region_include="__noun__">It's designed to resemble a mythical creature.</value>
+                <value>A strange hum emanating from its core.</value>
+            </table>
+            <table name="The golem defends itself with..." id="defend">
+                <value region_start="10" region_end="16" region_include="__noun__">A massive hammer</value>
+                <value>Unarmed combat</value>
+                <value region_start="11" region_end="17" region_include="__noun__">sharp twin blades</value>
+                <value region_start="2" region_end="9" region_include="__noun__">a trident</value>
+                <value region_start="2" region_end="7" region_include="__noun__">a spear</value>
+                <value region_start="2" region_end="12" region_include="__noun__">a broadsword</value>
+                <value region_start="2" region_end="11" region_include="__noun__">a battleaxe.</value>
+                <value region_start="17" region_end="25" region_include="__noun__">a fixed repeater crossbow</value>
+                <value>a mounted grenade launcher</value>
+                <value>a blade or shuriken thrower in the wrist</value>
+                <value>a flamethrower</value>
+                <value>a directed force coil</value>
+                <value region_start="2" region_end="8" region_include="__noun__">a liquid spray.</value>
+                <value>elemental force</value>
+                <value>holy smiting</value>
+                <value>necrotic corruption</value>
+                <value>arcane energy</value>
+                <value>terrible curses</value>
+                <value>wild power.</value>
+                <value>Nothing; it can't defend itself.</value>
+            </table>
+            <table name="The golem's condition might be described as..." id="condition">
+                <value>Pristine.</value>
+                <value>Well-maintained.</value>
+                <value>Showing a little wear from active duty.</value>
+                <value>In need of some maintenance.</value>
+                <value>In need of repair and soon.</value>
+                <value>Barely holding together.</value>
+            </table>
+        </category>

@@ -1,0 +1,85 @@
+        <category name="Dungeon of Elemental Air" id="dungeon_elemental_air">
+            <table name="This place is a..." id="is">
+                <value region_start="33" region_end="37" region_include="nobleman">Palace built by an air elemental lord.</value>
+                <value>Series of caves in a floating earth mote.</value>
+                <value>Series of deep tunnels with constant, howling wind.</value>
+                <value>Stronghold built by beings of elemental air.</value>
+                <value region_start="27" region_end="30" region_include="deity">Temple dedicated to a wind god.</value>
+                <value>Maze of semi-solid clouds.</value>
+            </table>
+            <table name="Ambient sounds: You hear a/an..." id="sound">
+                <value>Constant howl of wind.</value>
+                <value>Constant rush of air.</value>
+                <value>Constant monotone whistling.</value>
+                <value>Eerie, shifting succession of musical chords.</value>
+                <value>Intermittent clap of thunder.</value>
+                <value>Flute playing somewhere.</value>
+            </table>
+            <table name="Major feature: You see a/an..." id="major_feature">
+                <value>Intersection with swiftly shifting winds.</value>
+                <value>Large cloud sculpture.</value>
+                <value>Shimmering, eerie fog.</value>
+                <value>Barrel of feathered arrows.</value>
+                <value region_start="16" region_end="19" region_include="deity">Altar to a wind god.</value>
+                <value>Tremendous beanstalk or staircase descending far below where you stand.</value>
+            </table>
+            <table name="Minor feature: You notice a/an..." id="minor_feature">
+                <value>Small cloud shaped like an animal.</value>
+                <value>Floating lamp.</value>
+                <value region_start="15" region_end="18" region_include="deity">Icon of a wind god.</value>
+                <value>Rush of cool air.</value>
+                <value>Sudden shrill whistle in the distance.</value>
+                <value>Swirl of dust.</value>
+            </table>
+            <table name="NPC: You meet a/an…" id="npc">
+                <value>Ghost of an unfortunate explorer.</value>
+                <value region_start="19" region_end="26" region_include="cultist">Half-mad elemental cultist.</value>
+                <value>Nervous Were-raven.</value>
+                <value>Nervous Were-bat.</value>
+                <value>Nervous Were-hawk.</value>
+                <value>Nervous Were-Pterodactyl.</value>
+                <value region_start="14" region_end="18" region_include="monk">Contemplative monk.</value>
+                <value>Interplanar traveler.</value>
+                <value region_start="0" region_end="8" region_include="__noun__">Inventor with a flying contraption.</value>
+            </table>
+            <table name="Beast: You meet a/an…" id="beast">
+                <value>Raven.</value>
+                <value>Bat.</value>
+                <value>Hawk.</value>
+                <value>Giant bee.</value>
+                <value>Pterodactyl.</value>
+                <value>Swarm of moths.</value>
+            </table>
+            <table name="Secondary Monster: You come upon a/an…" id="monster">
+                <value>Air elemental.</value>
+                <value>Arrowhawk.</value>
+                <value>Invisible stalker.</value>
+                <value>Wyvern.</value>
+                <value>Spectre.</value>
+                <value>Roc.</value>
+            </table>
+            <table name="Primary monster: This place is currently ruled by a/an…" id="ruled">
+                <value>Djinn prince</value>.
+                <value>Cloud giant.</value>
+                <value>Giant eagle.</value>
+                <value>Evil entropomancer.</value>
+                <value>Beholder.</value>
+                <value>Wraith.</value>
+            </table>
+            <table name="Traps/hazard: You must survive the…" id="trap">
+                <value>Trap door to a tremendous fall.</value>
+                <value>Poisoned dart trap.</value>
+                <value>Magic crossbow turret trap.</value>
+                <value>Runes that explode in bursts of lightning.</value>
+                <value>Sealing chamber that turns into a vacuum.</value>
+                <value>Curse of listlessness.</value>
+            </table>
+            <table name="Reward/treasure: If you survive, you may find a/an..." id="reward">
+                <value region_start="0" region_end="14" region_include="__noun__">Infamous giant’s treasure hoard.</value>
+                <value region_start="21" region_end="28" region_include="__noun__">Wreck of a legendary airship.</value>
+                <value>Rod of elemental power.</value>
+                <value region_start="32" region_end="36" region_include="npc_class">Bow that belonged to an ancient hero.</value>
+                <value region_start="9" region_end="15" region_include="wizard">Powerful wizard’s lost spellbook.</value>
+                <value region_start="11" region_end="17" region_include="cultist">Imprisoned dragon.</value>
+            </table>
+        </category>

@@ -1,0 +1,76 @@
+        <category name="Fisher Folk" id="fisherfolk">
+            <name name="The fisherman's name is..."/>
+            <include name="Race" include="npc_race" />
+            <table name="The fisherman fishes in..." id="fish_in">
+                <value region_start="8" region_end="13" region_include="__noun__">A quiet creek</value>
+                <value region_start="7" region_end="12" region_include="__noun__">A wide river</value>
+                <value region_start="8" region_end="12" region_include="__noun__">A small pond</value>
+                <value region_start="2" region_end="7" region_include="swamp">A swamp</value>
+                <value region_start="2" region_end="7" region_include="swamp">A marsh</value>
+                <value region_start="12" region_end="15" region_include="__noun__">A protected bay</value>
+                <value region_start="10" region_end="16" region_include="__noun__">A natural harbor</value>
+                <value region_start="9" region_end="16" region_include="__noun__">A narrow channel</value>
+                <value region_start="9" region_end="14" region_include="__noun__">The open ocean</value>
+            </table>
+            <table name="The fisherman typically fishes from..." id="fish_from">
+                <value region_start="17" region_end="22" region_include="__noun__">A sandy or rocky beach</value>
+                <value region_start="14" region_end="30" region_include="__noun__">An embankment sandbar or levee</value>
+                <value region_start="2" region_end="16" region_include="__noun__">A pier or bridge</value>
+                <value region_start="12" region_end="16" region_include="ship">His/her own boat</value>
+                <value region_start="2|16" region_end="6|28" region_include="ship|__noun__">A boat owned by someone else</value>
+                <value>Wherever the fish can be reached</value>
+            </table>
+            <table name="The fisherman uses" id="uses">
+                <value>A rod and reel with a baited hook</value>
+                <value>A rod and reel with a lure</value>
+                <value>Baited lines</value>
+                <value>Baited traps</value>
+                <value>Nets</value>
+                <value>Baited lines and nets</value>
+                <value>Baited lines and baited traps</value>
+                <value>A harbpoon</value>
+                <value>A spear</value>
+                <value>Bare hands</value>
+                <value region_start="10" region_end="15" region_include="__noun__">A trained beast</value>
+            </table>
+            <table name="The fisherman prefers to fish..." id="prefer">
+                <value>Alone, in silence</value>
+                <value>Alone, while whistling or humming</value>
+                <value>Alone, but withen earshot of other fishermen</value>
+                <value region_start="5" region_end="21" region_include="fisherfolk">With a trusted partner</value>
+                <value region_start="5" region_end="28" region_include="fisherfolk">With an apprentice fisherman</value>
+                <value region_start="5" region_end="29" region_include="fisherfolk">With an experienced fisherman</value>
+            </table>
+            <table name="The fisherman is seeking..." id="seeking">
+                <value>A new apprentice</value>
+                <value region_start="16" region_end="22" region_include="__noun__">The answer to a riddle</value>
+                <value>To tell the tale of the one that got away</value>
+                <value>Rumors of new locations to fish</value>
+                <value region_start="16" region_end="23" region_include="fisherfolk">Revenge against a rival</value>
+                <value region_start="27" region_end="27" region_include="ship">Assistance repairing a boat, net, or some other fishing gear</value>
+                <value>Fishing companions</value>
+                <value>Drinking companions</value>
+            </table>
+            <table name="The fisherman has..." id="has">
+                <value>An anchor tattoo</value>
+                <value>A pair of crossed boanes tattoo</value>
+                <value>A fish tattoo</value>
+                <value>An octopus tattoo</value>
+                <value>A whale tattoo</value>
+                <value>A lobster tattoo</value>
+                <value>A mermaid tattoo</value>
+                <value>A dragon tattoo</value>
+            </table>
+            <table name="Distinguishing feature: The fisherman has..." id="feature">
+                <value>A wooden pipe</value>
+                <value>Rotten teeth</value>
+                <value>A gold tooth</value>
+                <value>A terrible scar on the forearm</value>
+                <value>A handkerchief tied atop the head</value>
+                <value>Wild eyes</value>
+                <value>A trimmed black beard</value>
+                <value>A long, hooked nose</value>
+                <value>An open shirt and a very hairy chest</value>
+                <value>Long mutton chop sideburns</value>
+            </table>
+        </category>

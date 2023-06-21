@@ -1,0 +1,44 @@
+            <category name="Demonic Beast" id="demonic_beast">
+                <table name="The demonic beast appears in the form of..." id="form">
+                    <value>An ape.</value>
+                    <value>A boar.</value>
+                    <value>A drake.</value>
+                    <value>A goat.</value>
+                    <value>A horse.</value>
+                    <value>A hyena.</value>
+                    <value>A manticore.</value>
+                    <value>A scorpion.</value>
+                    <value>A serpent.</value>
+                    <value region_start="2" region_end="8" region_include="spider">A spider.</value>
+                    <value>A vulture.</value>
+                    <value region_start="2" region_end="6" region_include="wolf">A wolf.</value>
+                </table>
+                <table name="The demonic beast has..." id="has">
+                    <value>Glowing red eyes.</value>
+                    <value>Dark, sinister eyes.</value>
+                    <value>Unsettling stripes or markings.</value>
+                    <value>Unusually long, sharp claws or talons.</value>
+                    <value>A pincer where you expect a claw or foot.</value>
+                    <value>Huge horns or tusks.</value>
+                    <value>An unwholesome odour.</value>
+                    <value>An odour of decay.</value>
+                </table>
+                <table name="...and..." id="has_and">
+                    <value>Powerful hind legs for leaping and pouncing.</value>
+                    <value>A slavering maw.</value>
+                    <value>Rows of wicked looking teeth.</value>
+                    <value>Vicious fangs.</value>
+                    <value>Bony spikes running down its back.</value>
+                    <value>Fins or ridges running down its back.</value>
+                    <value>Black or grey, leathery wings.</value>
+                    <value>A ferocious howl or roar.</value>
+                </table>
+                <table name="The beast is looking for..." id="looking">
+                    <value>Blood to spill.</value>
+                    <value>Bones to crunch.</value>
+                    <value>A soul to burn.</value>
+                    <value>A soul to devour.</value>
+                    <value>A fight.</value>
+                    <value region_start="14" region_end="18" region_include="wizard">The loathsome mage who summoned it.</value>
+                </table>
+            </category>

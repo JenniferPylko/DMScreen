@@ -1,0 +1,5 @@
+<categories id="noble">
+	<category name="Nobleman" id="nobleman" />
+	<category name="Noblewoman" id="noblewoman" />
+	<category name="Princess" id="princess" />
+</categories>

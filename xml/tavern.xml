@@ -1,0 +1,779 @@
+<category name="Tavern / Inn" id="tavern">
+    <table name="The tavern's name is..." type="name" type_name="Tavern">
+        <patterns>
+            <pattern>The {noun} and the {noun}</pattern>
+            <pattern>The {noun}'s {noun}</pattern>
+            <pattern>The {noun}</pattern>
+            <pattern>The {adj} {noun}</pattern>
+            <pattern>The {num} {noun}s</pattern>
+            <pattern>The {sequence} {noun}</pattern>
+            <pattern>The {adj} Inn</pattern>
+        </patterns>
+        <list type="noun">
+            <item>Chicken</item>
+            <item>Warrior</item>
+            <item>Druid</item>
+            <item>Bull</item>
+            <item>Bear</item>
+            <item>Shepherd</item>
+            <item>Arrow</item>
+            <item>Buck</item>
+            <item>Castle</item>
+            <item>Crown</item>
+            <item>Cup</item>
+            <item>Hammer</item>
+            <item>Sword</item>
+            <item>Shield</item>
+            <item>Dagger</item>
+            <item>Axe</item>
+            <item>Spear</item>
+            <item>Sickle</item>
+            <item>Key</item>
+            <item>Lion</item>
+            <item>Dragon</item>
+            <item>Serpent</item>
+            <item>Hermit</item>
+            <item>Pony</item>
+            <item>Mason</item>
+            <item>Arm</item>
+            <item>King</item>
+            <item>Queen</item>
+            <item>Rose</item>
+            <item>Daisy</item>
+            <item>Thorn</item>
+            <item>Tulip</item>
+            <item>Oak</item>
+            <item>Siren</item>
+            <item>Eye</item>
+            <item>Medusa</item>
+            <item>Head</item>
+            <item>Nuttery</item>
+            <item>Cock</item>
+            <item>Cat</item>
+            <item>Fiddle</item>
+            <item>Dog</item>
+            <item>Sheep</item>
+            <item>Cow</item>
+            <item>Phoenix</item>
+            <item>Naga</item>
+            <item>Hydra</item>
+            <item>Lamb</item>
+            <item>Calf</item>
+            <item>Fountain</item>
+            <item>Stranger</item>
+            <item>Straggler</item>
+            <item>Bullseye</item>
+            <item>Prayer</item>
+            <item>Coach</item>
+            <item>Judge</item>
+            <item>Jury</item>
+            <item>Traveler</item>
+            <item>Merchant</item>
+            <item>Sack</item>
+            <item>Mandolin</item>
+            <item>Horn</item>
+            <item>Lute</item>
+            <item>Nymph</item>
+            <item>Wish</item>
+            <item>Cauldron</item>
+            <item>Immortal</item>
+            <item>Butcher</item>
+            <item>Tailor</item>
+            <item>Fiend</item>
+            <item>Demon</item>
+            <item>Wizard</item>
+            <item>Staff</item>
+            <item>Wench</item>
+            <item>Donkey</item>
+            <item>Goose</item>
+            <item>Fowl</item>
+            <item>Raven</item>
+            <item>Crow</item>
+            <item>Bridge</item>
+            <item>Brigade</item>
+            <item>Grave</item>
+            <item>Duck</item>
+            <item>Unicorn</item>
+            <item>Duke</item>
+            <item>Hound</item>
+            <item>Goat</item>
+            <item>Steer</item>
+            <item>Ram</item>
+            <item>Fox</item>
+            <item>Coyote</item>
+            <item>Dingo</item>
+            <item>Cooper</item>
+            <item>Angel</item>
+            <item>Eagle</item>
+            <item>Hawk</item>
+            <item>Falcon</item>
+            <item>Owl</item>
+            <item>Pigeon</item>
+            <item>Hare</item>
+            <item>Rabbit</item>
+            <item>Mare</item>
+            <item>Stag</item>
+            <item>Fist</item>
+            <item>Centaur</item>
+            <item>Hoof</item>
+            <item>Tail</item>
+            <item>Bard</item>
+            <item>Priest</item>
+            <item>Hero</item>
+            <item>Hand</item>
+            <item>Potion</item>
+            <item>Herb</item>
+            <item>Duchess</item>
+            <item>Duke</item>
+            <item>Paladin</item>
+            <item>Wizard</item>
+            <item>Mage</item>
+            <item>Sorcerer</item>
+            <item>Harpy</item>
+            <item>Prince</item>
+            <item>Princess</item>
+            <item>Imp</item>
+            <item>Orc</item>
+            <item>Goblin</item>
+            <item>Breath</item>
+            <item>Wanderer</item>
+            <item>Ronin</item>
+            <item>Archer</item>
+            <item>Mercenary</item>
+            <item>Horseman</item>
+            <item>Scribe</item>
+            <item>Scholar</item>
+            <item>Peasant</item>
+            <item>Vixen</item>
+            <item>Pearl</item>
+            <item>Ruby</item>
+            <item>Onyx</item>
+            <item>Garnet</item>
+            <item>Gem</item>
+            <item>Gazebo</item>
+            <item>Troll</item>
+            <item>Minotaur</item>
+            <item>Cloak</item>
+            <item>Highwayman</item>
+            <item>Alchemist</item>
+            <item>Brew</item>
+            <item>Herbalist</item>
+            <value>Warhorse</value>
+            <value>Horseman</value>
+            <value>Maiden</value>
+            <value>Mage</value>
+            <value>Bachelor</value>
+            <value>King</value>
+            <value>Magistrate</value>
+            <value>Warchief</value>
+            <value>Warrior</value>
+            <value>Mare</value>
+            <value>Wolf</value>
+            <value>Fox</value>
+            <value>Lion</value>
+            <value>Lamb</value>
+            <value>Warden</value>
+            <value>Mule</value>
+            <value>Assassin</value>
+            <value>Swordsman</value>
+            <value>Lady</value>
+            <value>Knight</value>
+            <value>Soldier</value>
+            <value>Wizard</value>
+            <value>Warlock</value>
+            <value>Ranger</value>
+            <value>Bard</value>
+            <value>Druid</value>
+            <value>Monk</value>
+            <value>Paladin</value>
+            <value>Sorcerer</value>
+            <value>Rogue</value>
+            <value>Cleric</value>
+            <value>Bear</value>
+            <value>Goblin</value>
+            <value>Kobold</value>
+            <value>Gnome</value>
+            <value>Halfling</value>
+            <value>Dwarf</value>
+            <value>Fool</value>
+            <value>Virgin</value>
+            <value>Horde</value>
+            <value>Squire</value>
+            <value>Eagle</value>
+            <value>Rooster</value>
+            <value>Piglet</value>
+            <value>Thief</value>
+            <value>Priest</value>
+            <value>Friar</value>
+            <value>Blacksmith</value>
+            <value>Guard</value>
+            <value>Stag</value>
+            <value>Hag</value>
+            <value>Devil</value>
+            <value>Angel</value>
+            <value>Serpent</value>
+            <value>Snake</value>
+            <value>Rat</value>
+            <value>Mouse</value>
+            <value>Bandit</value>
+            <value>Chieftain</value>
+            <value>Griffon</value>
+            <value>Dragon</value>
+            <value>Lizard</value>
+            <value>Pony</value>
+            <value>Baron</value>
+            <value>Heifer</value>
+            <value>Bull</value>
+            <value>Hound</value>
+            <value>Goat</value>
+            <value>Toad</value>
+            <value>Stallion</value>
+            <value>Monster</value>
+            <value>Vermin</value>
+            <value>Beholder</value>
+            <value>Monkey</value>
+            <value>Elephant</value>
+            <value>Boar</value>
+            <value>Beagle</value>
+            <value>Bat</value>
+            <value>Demon</value>
+            <value>Imp</value>
+            <value>Sprite</value>
+            <value>Fey</value>
+            <value>Spirit</value>
+            <value>Bitch</value>
+            <value>Starling</value>
+            <value>Minotaur</value>
+            <value>Barbarian</value>
+            <value>Prophet</value>
+            <value>Merchant</value>
+            <value>Cobbler</value>
+            <value>Unicorn</value>
+            <value>Ogre</value>
+            <value>Nymph</value>
+            <value>Butcher</value>
+            <value>Captain</value>
+            <value>Angler</value>
+            <value>Lover</value>
+            <value>Mason</value>
+            <value>Tinker</value>
+            <value>Whale</value>
+            <value>Mount</value>
+            <value>Saddle</value>
+            <value>Guild</value>
+            <value>Fangs</value>
+            <value>Man</value>
+            <value>Pardon</value>
+            <value>Pleasure</value>
+            <value>Belt</value>
+            <value>Staff</value>
+            <value>Shield</value>
+            <value>Prince</value>
+            <value>Master</value>
+            <value>Servant</value>
+            <value>Meal</value>
+            <value>Prince</value>
+            <value>Favor</value>
+            <value>Love</value>
+            <value>Word</value>
+            <value>Scribe</value>
+            <value>Apprentice</value>
+            <value>Acolyte</value>
+            <value>Dress</value>
+            <value>Goddess</value>
+            <value>God</value>
+            <value>Gold</value>
+            <value>Purse</value>
+            <value>Trap</value>
+            <value>King</value>
+            <value>Son</value>
+            <value>Sister</value>
+            <value>Mother</value>
+            <value>Daughter</value>
+            <value>Cry</value>
+            <value>Shout</value>
+            <value>Cupboard</value>
+            <value>Pantry</value>
+            <value>Queen</value>
+            <value>Wealth</value>
+            <value>Star</value>
+            <value>Void</value>
+            <value>Woman</value>
+            <value>Man</value>
+            <value>Whore</value>
+            <value>Butcher</value>
+            <value>Anvil</value>
+            <value>Tome</value>
+            <value>Sacrifice</value>
+            <value>Armor</value>
+            <value>Cup</value>
+            <value>Pot</value>
+            <value>Stove</value>
+            <value>Stool</value>
+            <value>Princess</value>
+            <value>Chain</value>
+            <value>Sword</value>
+            <value>Pork</value>
+            <value>Grain</value>
+            <value>Tooth</value>
+            <value>Lance</value>
+            <value>Axe</value>
+            <value>Scabbard</value>
+            <value>Knife</value>
+            <value>Dagger</value>
+            <value>Spear</value>
+            <value>Bow</value>
+            <value>Crossbow</value>
+            <value>Quarterstaff</value>
+            <value>Staff</value>
+            <value>Fire</value>
+            <value>Ice</value>
+            <value>Wind</value>
+            <value>Earth</value>
+            <value>Water</value>
+            <value>Stone</value>
+            <value>Ladle</value>
+            <value>Monastery</value>
+            <value>Chalice</value>
+            <value>Goblet</value>
+            <value>Dungeon</value>
+            <value>Lust</value>
+            <value>Lantern</value>
+            <value>Bone</value>
+            <value>Life</value>
+            <value>Stone</value>
+            <value>Mistress</value>
+            <value>Mind</value>
+            <value>Treasure</value>
+            <value>Barter</value>
+            <value>Armorer</value>
+            <value>Butler</value>
+            <value>Page</value>
+            <value>Tome</value>
+            <value>Feather</value>
+            <value>Shadow</value>
+            <value>Friend</value>
+            <value>Labyrinth</value>
+            <value>Mountain</value>
+            <value>Hope</value>
+            <value>Boot</value>
+            <value>Gauntlet</value>
+        </list>
+        <list type="adj">
+            <item>Headless</item>
+            <item>Magical</item>
+            <item>Lost</item>
+            <item>Silver</item>
+            <item>Golden</item>
+            <item>White</item>
+            <item>Red</item>
+            <item>Blue</item>
+            <item>Yellow</item>
+            <item>Green</item>
+            <item>Orange</item>
+            <item>Black</item>
+            <item>Lonely</item>
+            <item>Prancing</item>
+            <item>Angelic</item>
+            <item>Demonic</item>
+            <item>Fiendish</item>
+            <item>Royal</item>
+            <item>Crooked</item>
+            <item>Cross</item>
+            <item>Dirty</item>
+            <item>Pristine</item>
+            <item>Flying</item>
+            <item>Armored</item>
+            <item>Naked</item>
+            <item>Begging</item>
+            <item>Heavenly</item>
+            <item>Celestial</item>
+            <item>Brazen</item>
+            <item>Bloody</item>
+            <item>Destitute</item>
+            <item>Excited</item>
+            <item>Vulgar</item>
+            <item>Quiet</item>
+            <item>Laughing</item>
+            <item>Staggering</item>
+            <item>Bold</item>
+            <item>Angry</item>
+            <item>Happy</item>
+            <item>Sad</item>
+            <item>Silly</item>
+            <item>Studious</item>
+            <item>Rogue</item>
+            <item>Toothless</item>
+            <item>Weary</item>
+            <item>Devious</item>
+            <item>Empty</item>
+            <item>Holy</item>
+            <item>Uhholy</item>
+            <item>Weeping</item>
+            <item>Bawdy</item>
+            <item>Timid</item>
+            <value>Moping</value>
+            <value>Drowning</value>
+            <value>Hanging</value>
+            <value>Belching</value>
+            <value>Running</value>
+            <value>Walking</value>
+            <value>Hunting</value>
+            <value>Fighting</value>
+            <value>Swinging</value>
+            <value>Breaking</value>
+            <value>Working</value>
+            <value>Fermenting</value>
+            <value>Flowering</value>
+            <value>Worrying</value>
+            <value>Following</value>
+            <value>Flowing</value>
+            <value>Complaining</value>
+            <value>Standing</value>
+            <value>Joking</value>
+            <value>Laughing</value>
+            <value>Panting</value>
+            <value>Boarding</value>
+            <value>Lounging</value>
+            <value>Cutting</value>
+            <value>Singing</value>
+            <value>Staring</value>
+            <value>Goading</value>
+            <value>Disappointing</value>
+            <value>Faltering</value>
+            <value>Binding</value>
+            <value>Winding</value>
+            <value>Sundering</value>
+            <value>Longing</value>
+            <value>Fumbling</value>
+            <value>Bumbling</value>
+            <value>Stumbling</value>
+            <value>Pining</value>
+            <value>Whining</value>
+            <value>Flying</value>
+            <value>Hoarding</value>
+            <value>Whoring</value>
+            <value>Warring</value>
+            <value>Winking</value>
+            <value>Skittering</value>
+            <value>Slithering</value>
+            <value>Snoring</value>
+            <value>Snorting</value>
+            <value>Playing</value>
+            <value>Practicing</value>
+            <value>Grappling</value>
+            <value>Burning</value>
+            <value>Flaming</value>
+            <value>Freezing</value>
+            <value>Poisoning</value>
+            <value>Burying</value>
+            <value>Throwing</value>
+            <value>Sparking</value>
+            <value>Steaming</value>
+            <value>Smiting</value>
+            <value>Chittering</value>
+            <value>Chattering</value>
+            <value>Mumbling</value>
+            <value>Grating</value>
+            <value>Plowing</value>
+            <value>Biting</value>
+            <value>Howling</value>
+            <value>Roaring</value>
+            <value>Shouting</value>
+            <value>Pouring</value>
+            <value>Squeaking</value>
+            <value>Stinging</value>
+            <value>Charging</value>
+            <value>Bleating</value>
+            <value>Stabbing</value>
+            <value>Goring</value>
+            <value>Poking</value>
+            <value>Swallowing</value>
+            <value>Sucking</value>
+            <value>Drinking</value>
+            <value>Sneaking</value>
+            <value>Hiding</value>
+            <value>Slashing</value>
+            <value>Limping</value>
+            <value>Tripping</value>
+            <value>Shifting</value>
+            <value>Sliding</value>
+            <value>Blinding</value>
+            <value>Piercing</value>
+            <value>Bludgeoning</value>
+            <value>Crushing</value>
+            <value>Hopping</value>
+            <value>Thundering</value>
+            <value>Hushing</value>
+            <value>Crying</value>
+            <value>Wailing</value>
+            <value>Mourning</value>
+            <value>Darkening</value>
+            <value>Piling</value>
+            <value>Digging</value>
+            <value>Flinging</value>
+            <value>Wayward</value>
+            <value>Quiet</value>
+            <value>Jolly</value>
+            <value>Good</value>
+            <value>Crooked</value>
+            <value>White</value>
+            <value>Gray</value>
+            <value>Blackened</value>
+            <value>Harried</value>
+            <value>Crimson</value>
+            <value>Silver</value>
+            <value>Golden</value>
+            <value>Disturbed</value>
+            <value>Filthy</value>
+            <value>Ugly</value>
+            <value>Bastard</value>
+            <value>Faltering</value>
+            <value>Glorious</value>
+            <value>Beautiful</value>
+            <value>Handsome</value>
+            <value>Wrinkled</value>
+            <value>Unhappy</value>
+            <value>Intelligent</value>
+            <value>Lovely</value>
+            <value>Ignorant</value>
+            <value>Senile</value>
+            <value>Sour</value>
+            <value>Sweet</value>
+            <value>Lonely</value>
+            <value>Green</value>
+            <value>Blind</value>
+            <value>Hungry</value>
+            <value>Worried</value>
+            <value>Educated</value>
+            <value>Stupid</value>
+            <value>Emboldened</value>
+            <value>Honorary</value>
+            <value>Stinky</value>
+            <value>Bottomless</value>
+            <value>Greasy</value>
+            <value>Sloppy</value>
+            <value>Stylish</value>
+            <value>Distressed</value>
+            <value>Harrowed</value>
+            <value>Tormented</value>
+            <value>Mortified</value>
+            <value>Lopsided</value>
+            <value>Broken</value>
+            <value>Moldy</value>
+            <value>Gooey</value>
+            <value>Fermented</value>
+            <value>Blighted</value>
+            <value>Ornate</value>
+            <value>Drowned</value>
+            <value>Murdered</value>
+            <value>Widowed</value>
+            <value>Hanged</value>
+            <value>Angry</value>
+            <value>Lusty</value>
+            <value>Haunted</value>
+            <value>Strong</value>
+            <value>Withered</value>
+            <value>Comely</value>
+            <value>Pious</value>
+            <value>Penitent</value>
+            <value>Patient</value>
+            <value>Drunk</value>
+            <value>Worthy</value>
+            <value>Wealthy</value>
+            <value>Loathsome</value>
+            <value>Weak</value>
+            <value>Miniscule</value>
+            <value>Miniature</value>
+            <value>Enormous</value>
+            <value>Enlarged</value>
+            <value>Engorged</value>
+            <value>Lecherous</value>
+            <value>Despicable</value>
+            <value>Lewd</value>
+            <value>Portly</value>
+            <value>Violent</value>
+            <value>Bumbling</value>
+            <value>Faulty</value>
+            <value>Pristine</value>
+            <value>Cleanly</value>
+            <value>Cracked</value>
+            <value>Splintered</value>
+            <value>Jeweled</value>
+            <value>Superior</value>
+            <value>Flawless</value>
+            <value>Common</value>
+            <value>Exquisite</value>
+            <value>Elegant</value>
+            <value>Fine</value>
+            <value>Dull</value>
+            <value>Brittle</value>
+            <value>Fragile</value>
+            <value>Effeminate</value>
+            <value>Masculine</value>
+            <value>Supine</value>
+        </list>
+        <list type="num">
+            <item>Two</item>
+            <item>Three</item>
+            <item>Four</item>
+            <item>Five</item>
+            <item>Six</item>
+            <item>Seven</item>
+            <item>Eight</item>
+            <item>Nine</item>
+            <item>Ten</item>
+            <item>Eleven</item>
+            <item>Twelve</item>
+            <item>Thirteen</item>
+        </list>
+        <list type="sequence">
+            <item>Original</item>
+            <item>First</item>
+            <item>Second</item>
+            <item>Third</item>
+            <item>Fourth</item>
+            <item>Fifth</item>
+            <item>Sixth</item>
+            <item>Seventh</item>
+            <item>Eighth</item>
+            <item>Ninth</item>
+            <item>Tenth</item>
+            <item>Eleventh</item>
+            <item>Twelfth</item>
+            <item>Thirteenth</item>
+            <item>Last</item>
+        </list>
+    </table>
+    <table name="Games, Contests, and Events" id="game">
+        <value>A group of commoners is playing horse shoes out back</value>
+        <value>The party is surprised to find the country darts league in full swing as they enter. The waitresses are used to the chaos and dodge darts easily. The half ogre bouncer is using lawn darts</value>
+        <value>A group of hill dwarves are in the middle of a drinking contest, and two of them are passed out already. The prize is a solid platinum stein</value>
+        <value>Wet chainmail contest!</value>
+        <value>Four large barbarians are loudly sledging each other during an arm wrestling competition</value>
+        <value>A shy teenage girl is reciting bad poetry in a corner. No one is paying the slightest bit of attention to her</value>
+        <value>It's trivia night! Those scholars from the School of History are the Arts and the University always win, but tonight, we represent and the School of Alchemy will show those smug book-snops what it means to be a nerd</value>
+        <value>A promoter is working his way around the bales looking for challengers to finght the local champion pugilist</value>
+        <value>It's a sausage fest! The place is packed with dwarves eager to devour the all-you-can-eat sausage special</value>
+        <value>An over-sized brute is arm-wrestling curshing the hand of everyone in sight</value>
+        <value>Some goblins are throwing dice with some animated skeletons at a table in the corner</value>
+        <value region_start="0" region_end="8" region_include="goblin">A goblin is doing a poor job at cheating at a dice game, while a skeleton is doing an excellentjob at cheating</value>
+        <value>A 7 foot, 2 inch red dragonborn with a five foot bastard sword is having a drinking contest with a dwarf. The dragonborn has a 4-pint tankard, and is almost managing to keep pace</value>
+        <value>A party sits in the corner booth playing cards. All of them are cheating, except the paladin, who, curiously, is winning</value>
+        <value>A mountain of a man in barbarian leathers is arm wrestling a small dragon and winning</value>
+        <value>An awakened Roper is winning two games of billards at once</value>
+        <value>A group of drunken pixies is playing hide and seek by hiding behind patrons</value>
+        <value>The players have stumbled into a regional card championship being held that night. The buy in is huge, but so is the pot</value>
+        <value region_start="16" region_end="32" region_include="gnome">A shady looking gnomish inventor is proudly showing off his latest invention. He calls it a &quot;slot machine&quot;</value>
+        <value region_start="14" region_end="26" region_include="bard">A grey haired story teller is sitting near the fire holding a contest. He'll give a large purse for a story he hasn't heard yet, but so far no one has won</value>
+    </table>
+    <table name="Entertainment" id="entertainment">
+        <value region_start="0|120" region_end="13|136" region_include="barkeep|wizard">The bartender tells elaborate stories about where the stuffed wyrmling dragon on the mantel came from. In reality, he’s a retired wizard and it’s his familiar which grew sick and died. He keeps it as a memento.</value>
+        <value region_start="2" region_end="6" region_include="bard">A bard is telling a story about the player’s latest act of daring do. He’s embellishing quite a bit. When he recognizes the party he makes a big spectacle.</value>
+        <value region_start="2" region_end="6" region_include="bard">A bard is telling the story of the player’s latest exploit. It’s an obvious character assassination.</value>
+        <value>A local bardic group, The Rolling Boulders, are performing, and a large crowd of drunken groupies will not stop screaming.</value>
+        <value>A beggar offers to sing for a few coppers. You heard him singing to the last table. He's awful.</value>
+        <value>A sassy fortune teller has set up shop in a corner booth. She informs you that she sees a hangover in your near future.</value>
+        <value>A stirring rendition of "The Lady and the Faerie Dragon" has the crowd calling for an encore from the minstrels.</value>
+        <value>The lute-player catches some undergarments from the crowd and drapes them across the ridiculous horned helm he wears.</value>
+        <value>On stage tonight: The Deep Tones. A quartet of dwarves with long beards and deep voices singing a capella favorites from places without light (or proper music).</value>
+        <value>On stage tonight: Shaela Windspeaker. An elf-maid singer-songwriter with a bit of a whiny voice who is slowly making her way through her most recent song of protest against the previous and the present centuries of war.</value>
+        <value>A nervous show-wizard on the small stage is doing tricks with Prestidigitation for the un-amused patrons.</value>
+        <value>There is a pair of musicians warbling well known drinking songs. They have made an impromptu stage out of several tables. One of them seems to be tilting precariously.</value>
+    </table>
+    <table name="Patrons and Staff" id="patron">
+        <value>A poor farmer is trying to pay his bar tab with a sack of potatoes and a barrel of pickles.</value>
+        <value>A sea captain has set up shop at a table and is trying to sell mementos and souvenirs from his latest great voyage of exploration. Birds, exotic coins, tiny mermaids, he has it all. Some of it looks fake though. A tiny bit looks disturbingly real.</value>
+        <value>A ranger sits alone in a corner, smoking. A hood covers most of his face. At his feet is a sleeping wolfhound. Everyone is giving him a wide berth.</value>
+        <value>A lone Troll is drinking at the end of the bar and softly crying and singing one country ballad after another.</value>
+        <value>A stoned magician is fumbling his way through one awful card trick after another.</value>
+        <value>A mixed group of Elves are drinking bad wine and holding scented handkerchiefs up to their noses to keep out the stench. One has an obsidian bow strapped to her back.</value>
+        <value>A young woman and gruff man are asking the patrons questions about themselves. When they get to the players, the woman is interested by their adventuring tales. Little do they know, they're talking to the heir apparent and he trusted guard.</value>
+        <value>Two guards are arguing at a table over who the captain likes more by comparing almost identical spears and claiming to have the better one.</value>
+        <value>A sad clown is drinking a beer alone.</value>
+        <value>A handsome young woman is holding court among some of her would-be suitors. Her father interrupts, and she stalks off embarrassed.</value>
+        <value>Some idiot is having a stag night. His friends are loud and obnoxiously harassing the barmaids.</value>
+        <value>It's ladies night! And it's not disappointing... A few pretty little things from the weavers' guild are here, a couple of attractive healers from the temple, and the beautiful new town librarian.</value>
+        <value region_start="8|65" region_end="17|68" region_include="witch|cat">A surly old witch is drinking sherry while stroking the fat grey cat sitting on her lap.</value>
+        <value region_start="4" region_end="11" region_include="barkeep">The barkeep is a marilith, mixing up four drinks at a time.</value>
+        <value region_start="4" region_end="11" region_include="barkeep">The barmaid is a succubus, she makes great tips.</value>
+        <value>The attendant in the bathroom is a foul-smelling zombie. He offers you a mint crystal.</value>
+        <value region_start="20" region_end="27" region_include="gnome">Behind the bar is a gnomish alchemist with a penchant for mixology experiments.</value>
+        <value>The toothless mop-hand reminisces with a hobgoblin military has-been over ales about how an otyugh in the loo isn't as bad as the time a carrion crawler was in there.</value>
+        <value region_start="4" region_end="11" region_include="barkeep">The barmaid is a doppelganger. When she returns to your table with your drinks she has taken the form of one of your party.</value>
+        <value region_start="0" region_end="12" region_include="priest">A fat priest is doing an excellent jiggly dance in rhythm with the music. Either that or a gelatinous cube has made it's way onto the dance floor?</value>
+    </table>
+    <table name="Questionable Drinks" id="questionable">
+        <value>Tonight's special cocktail: Pixiewine. Each glass of this crisp, floral-scented wine is served with a pixie.</value>
+        <value>Tonight's special cocktail: Suckerpunch. Each glass of this potent purple-red punch has several small writhing tentacles that reach out of the glass to attach to your face with their suckers. It actually feels kind of nice.</value>
+        <value>Tonight's special: Bring-Your-Own-Horn. Bring the horn of your favorite beast or monstrous humanoid (any size!), and we'll fill it with cheap ale or wine for 2 cp.</value>
+        <value>Tonight's special cocktail: Mindbomb. It's made with absinthe and explosive powder.</value>
+        <value>Tonight's special cocktail: Fireball. Served by wizards of 5th level or higher.</value>
+        <value>Tonight's special cocktail: Stonebones. A powerful rum cocktail made with powder gorgon horn and basilisk eye. It's only partial paralysis.</value>
+    </table>
+    <table name="Schemes, Mischief, and Trouble" id="scheme">
+        <value region_start="11" region_end="22" region_include="outlaws">A group of highway men are drunkenly, and a little too loudly, discussing the caravan they pillaged outside of town and what to do with their shares.</value>
+        <value>Adventurers are manhandling a companion turned to stone by a basilisk into the bar. The rouge is trying to pawn him off to the bartender as a hat rack. The bartender is considering it.</value>
+        <value region_start="0" region_end="13" region_include="barkeep">The bartender is out of mugs because a wizard is passed out in a corner over a table covered in mugs. His drunken familiar attacks anyone approaching the table preventing the mugs recovery.</value>
+        <value>A Faerie Dragon is passed out in the rafters. Dangling from one claw is a lacy brassiere.</value>
+        <value region_start="6" region_end="11" region_include="gnome">A fat gnome is peddling smelly cheese from a wicker basket</value>
+        <value>A drunken beholder is getting surly. Or feeling playful, it's hard to tell.</value>
+        <value>Two smugglers are talking in a booth before they start to argue. They both shoot at each other, one of them dies. Nobody's completely sure who shot first.</value>
+        <value>A man is sitting alone, speaking relatively normally to the empty seat across from him, before yelling out in anger.</value>
+        <value>A pair of Ratfolk are being harassed by a few drunken patrons. They're not fighting back.</value>
+        <value>A child is attempting to set up a prank against a less than favorable character. He's close, but you can see a flaw in his plan that you could solve.</value>
+        <value>It's ladies night! And this bar is a sausage fest.</value>
+        <value region_start="0" region_end="13" region_include="necromancer">A necromancer leads a stumbling-drunk patron out the door.</value>
+        <value region_start="19" region_end="35" region_include="goblin">The bouncer brains an unruly goblin with his morningstar. No one cares because the party is rocking.</value>
+        <value>A knife splits the bulls eye of the elves' in-progress dart game. The elves draw bows and start shooting the place up.</value>
+        <value>An illithid is telling fortunes with a deck of tarot cards on an overturned barrel out front. Some say it's cheating because he can read minds, but I say it's cheating because he can eat minds.</value>
+        <value>An otyugh made a mess in the loo again.</value>
+        <value>At the darts board, a wood elf is being hustled, and already owes a significant amount of money to the loud group of humans around him.</value>
+        <value>The tavern is full of groups of tourists, all admiring a single poster on the bulletin board. Soon you realize they're all adventuring parties, and there is only one job left. They all begin to run out the door to be the first to complete it.</value>
+        <value>A large cow sits in one end, with a wizard muttering "I'm sure this never happens babe" in its ear.</value>
+        <value>The taproom is packed from wall to wall. A regal dwarf bedecked with a large chain is standing on the bar buying everyone drinks and preaching to the merit of the Gundar the great god of revelry.</value>
+    </table>
+    <table name="You have heard of this tavern before/eaten there before because..." id="heard">
+        <value>they make a mean kirschtorte</value>
+        <value>they really know their pierogies</value>
+        <value region_start="36" region_end="41" region_include="world">they are the borscht capital of the world</value>
+        <value>their reputation for gołąbkis is unrivaled</value>
+        <value>they put bacon on everything</value>
+        <value region_start="21" region_end="29" region_include="barkeep">that one smoking hot waitress</value>
+        <value>they always have horse parking</value>
+        <value>the carrot porridge is to die for</value>
+        <value>No one knows where it is so its usually quiet.</value>
+        <value>It's open later than anything else in town.</value>
+        <value>No one except adventurers are brave enough to eat at a place built under the lightning rail so the merchants and needy townsfolk stay away.</value>
+        <value>They buy whatever meat you bring in and cook it fresh.</value>
+        <value>They ruthlessly drove the other businesses out of town and you were starving.</value>
+        <value>Tasty desserts. The cheese-pie is to die for!</value>
+        <value>Beer selection. They have a great selection of ales.</value>
+        <value>Homebrew beer. They brew their own dragon-stout in-house!</value>
+        <value>Meat. The proprietor is a hunter who goes into the woods every day to catch and to kill the main roast.</value>
+        <value>Beastly decor. The walls are covered in furs, antlers, and beast heads.</value>
+        <value>Fancy decor. The booths are separated by beautiful lace curtains and a pleasant scent of incense permeates the air.</value>
+        <value>Heroic tales. The proprietor slayed a dragon.</value>
+        <value>Sad tales. The barkeep is a stunning noblewoman who eloped with the poor sonofabitch who used to own this place before died.</value>
+        <value>Sex appeal. The barmaids wear low-cut blouses and/or tight skirts.</value>
+        <value>Friendly service. The barmaids are real friendly.</value>
+        <value>Gamblers' den. The dice game is high-stakes.</value>
+        <value>Freakish staff. The bouncer is half-troll.</value>
+        <value>Bad-ass staff. The bouncer has a dragon tattoo on his face.</value>
+        <value>High-end wines. Their wines come from some unpronounceable Elvish island.</value>
+        <value>Magical drinks. The barkeep is an alchemical wizard who serves up love potions, sleeping draughts, and mustache tonics. (Some might argue that a good mustache tonic is all the love potion one needs.)</value>
+        <value>Entertainment. The barkeep here plays a fine piano</value>
+        <value>Decorations, they have trophies from everywhere.</value>
+        <value>Reviews, some sod with a pen, paper, and those newfangled word things has written a piece on them.</value>
+        <value>Nobility, the high society types like it.</value>
+        <value>Admittance is a status symbol.</value>
+        <value>People, its where you go to find troubleshooters.</value>
+        <value>Warmth, the walls magically keep out the chill and snow.</value>
+        <value>The Dwarves built it.</value>
+        <value>It was once a library and there is a huge selection of books to read.</value>
+        <value region_start="39" region_end="42" region_include="deity">It was once a temple and the half dead god who was worshiped there still occasionally tries to smite the defilers, sometimes with more success than others.</value>
+        <value>They accept a generous line of credit</value>
+        <value>It's an exotic location, and spelljammers sometimes stop by, bringing trinkets from across the planes.</value>
+    </table>
+    <member name="Barkeep/Barmaid" include="barkeep" />
+</category>

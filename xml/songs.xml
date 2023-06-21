@@ -1,0 +1,222 @@
+<category name="Song" id="songs">
+    <table name="The song is about (roll twice)..." id="song_about">
+        <value region_start="8" region_end="15" region_include="barkeep">A young barmaid</value>
+        <value region_start="22" region_end="32" region_include="smith/smith_is/smith_is_blacksmith">A young common woman (blacksmith's daughter)</value>
+        <value region_start="22" region_end="28" region_include="farmfolk">A young common woman (farmer's daughter)</value>
+        <value region_start="22" region_end="27" region_include="miner">A young common woman (miner's daughter)</value>
+        <value>A young common woman (innkeeper's daughter)</value>
+        <value>A young common woman (harlot)</value>
+        <value>A young common woman (lady's maid)</value>
+        <value>A young common woman (scullery maid)</value>
+        <value region_start="11" region_end="18" region_include="barkeep">An elderly barmaid</value>
+        <value>A common woman (captain's wife)</value>
+        <value>A common woman (farmwife)</value>
+        <value>A common woman (fisherman's wife)</value>
+        <value>A common woman (housemaid)</value>
+        <value>A common woman (madame)</value>
+        <value>A common woman (merchant's wife)</value>
+        <value>A common woman (seamstress)</value>
+        <value region_start="0" region_end="12" region_include="noblewoman">A noblewoman (beautiful maiden)</value>
+        <value region_start="0" region_end="12" region_include="noblewoman">A noblewoman (young princess)</value>
+        <value region_start="0" region_end="12" region_include="noblewoman">A noblewoman (ugly princess)</value>
+        <value region_start="0" region_end="12" region_include="noblewoman">A noblewoman (young queen)</value>
+        <value region_start="0" region_end="12" region_include="noblewoman">A noblewoman (old queen)</value>
+        <value region_start="0" region_end="12" region_include="noblewoman">A noblewoman (wicked queen)</value>
+        <value region_start="0" region_end="12" region_include="noblewoman">A noblewoman (faerie queen)</value>
+        <value region_start="0" region_end="12" region_include="noblewoman">A noblewoman (old widow)</value>
+        <value region_start="0" region_end="11" region_include="priest">A priestess (young novice)</value>
+        <value region_start="0" region_end="11" region_include="priest">A priestess (innocent virgin)</value>
+        <value region_start="0" region_end="11" region_include="priest">A priestess (high priestess)</value>
+        <value region_start="0" region_end="11" region_include="priest">A priestess (sister of mercy)</value>
+        <value region_start="0" region_end="11" region_include="priest">A priestess (old prude)</value>
+        <value region_start="0" region_end="11" region_include="priest">A priestess (oracle)</value>
+        <value region_start="0" region_end="11" region_include="priest">A priestess (temptress)</value>
+        <value region_start="0" region_end="11" region_include="priest/priestis/zealot">A priestess (zealot)</value>
+        <value region_start="0" region_end="7" region_include="witch">A witch (crone)</value>
+        <value region_start="0" region_end="7" region_include="witch">A witch (enchantress)</value>
+        <value region_start="0" region_end="7" region_include="witch">A witch (gypsy woman)</value>
+        <value region_start="9" region_end="23" region_include="seer">A witch (fortune teller)</value>
+        <value region_start="0" region_end="7" region_include="witch">A witch (potion-maker)</value>
+        <value region_start="9" region_end="13" region_include="seer">A witch (seer)</value>
+        <value region_start="0" region_end="7" region_include="witch">A witch (dark sorceress)</value>
+        <value region_start="0" region_end="7" region_include="witch">A witch (wicked witch)</value>
+        <value region_start="10" region_end="19" region_include="alchemist">A wizard (alchemist)</value>
+        <value region_start="0" region_end="8" region_include="wizard">A wizard (conjurer)</value>
+        <value region_start="0" region_end="8" region_include="wizard">A wizard (illusionist)</value>
+        <value region_start="0" region_end="8" region_include="wizard">A wizard (magician)</value>
+        <value region_start="0" region_end="8" region_include="wizard">A wizard (necromancer)</value>
+        <value region_start="0" region_end="8" region_include="wizard">A wizard (pyromancer)</value>
+        <value region_start="0" region_end="8" region_include="wizard">A wizard (old wizard)</value>
+        <value region_start="0" region_end="8" region_include="wizard">A wizard (apprentice mage)</value>
+        <value region_start="2" region_end="11" region_include="barbarian">A barbarian</value>
+        <value region_start="2" region_end="11" region_include="gladiator">A gladiator</value>
+        <value region_start="11" region_end="24" region_include="guard_captain">A warrior (guard captain)</value>
+        <value region_start="8" region_end="14" region_include="knight">A young knight</value>
+        <value region_start="8" region_end="14" region_include="knight">A proud knight</value>
+        <value region_start="7" region_end="13" region_include="knight">An old knight</value>
+        <value region_start="13" region_end="19" region_include="knight">A mysterious knight</value>
+        <value region_start="2" region_end="11" region_include="mercenary">A sellsword</value>
+        <value region_start="2" region_end="7" region_include="rogue">A rogue (bandit)</value>
+        <value region_start="2" region_end="7" region_include="rogue">A rogue (gambler)</value>
+        <value region_start="2" region_end="8" region_include="jester">A jester</value>
+        <value region_start="3" region_end="9" region_include="outlaw">An outlaw</value>
+        <value region_start="2" region_end="8" region_include="pirate">A pirate</value>
+        <value region_start="2" region_end="8" region_include="bard">A singer</value>
+        <value region_start="2" region_end="10" region_include="smuggler">A smuggler</value>
+        <value region_start="2" region_end="7" region_include="thief">A thief</value>
+        <value region_start="0" region_end="8" region_include="priest/priestis/acolyte">A priest (young acolyte)</value>
+        <value region_start="0" region_end="8" region_include="priest/priestis/exorcist">A priest (exorcist)</value>
+        <value region_start="0" region_end="8" region_include="priest/priestis/priest_healer">A priest (healer)</value>
+        <value region_start="8" region_end="12" region_include="monk">A stoic monk</value>
+        <value region_start="0" region_end="8" region_include="priest/priestis/preacher">A priest (preacher)</value>
+        <value region_start="7" region_end="13" region_include="priest">An old priest</value>
+        <value region_start="0" region_end="8" region_include="priest/priestis/scholar">A priest (young scholar)</value>
+        <value region_start="21" region_end="27" region_include="priest">A wise, high-ranking priest</value>
+        <value region_start="14" region_end="24" region_include="smith/smith_is/smith_is_blacksmith">A common man (blacksmith)</value>
+        <value region_start="2" region_end="8" region_include="farmfolk">A farmer</value>
+        <value region_start="2" region_end="11" region_include="fisherfolk">A fisherman</value>
+        <value>A common man (herder)</value>
+        <value>An innkeeper</value>
+        <value region_start="2" region_end="7" region_include="miner">A miner</value>
+        <value region_start="14" region_end="20" region_include="sailor">A common man (sailor)</value>
+        <value>A common man (tailor)</value>
+        <value region_start="0" region_end="10" region_include="nobleman">A nobleman (foolish king)</value>
+        <value region_start="0" region_end="10" region_include="nobleman">A nobleman (tyrant king)</value>
+        <value region_start="7" region_end="11" region_include="nobleman">A wise king</value>
+        <value region_start="0" region_end="10" region_include="nobleman">A nobleman (old lord)</value>
+        <value region_start="0" region_end="10" region_include="nobleman">A nobleman (young lord)</value>
+        <value region_start="0" region_end="10" region_include="nobleman">A nobleman (cruel prince)</value>
+        <value region_start="0" region_end="10" region_include="nobleman">A nobleman (handsome prince)</value>
+        <value region_start="20" region_end="27" region_include="merchant">A nobleman (wealthy merchant)</value>
+        <value>A great beast (bear)</value>
+        <value>A great beast (boar)</value>
+        <value>A great beast (bull)</value>
+        <value region_start="15" region_end="21" region_include="dragon">A great beast (dragon)</value>
+        <value>A great beast (lion)</value>
+        <value>A great beast (ox)</value>
+        <value>A great beast (stag)</value>
+        <value>A great beast (wolf)</value>
+        <value>A diminutive beast (badger)</value>
+        <value>A diminutive beast (cat)</value>
+        <value>A diminutive beast (dog)</value>
+        <value>A diminutive beast (fox)</value>
+        <value>A diminutive beast (hedgehog)</value>
+        <value>A diminutive beast (rat)</value>
+        <value>A diminutive beast (snake)</value>
+        <value region_start="20" region_end="26" region_include="spider">A diminutive beast (spider)</value>
+        <value>An aquatic creature (crocodile)</value>
+        <value>An aquatic creature (frog)</value>
+        <value>An aquatic creature (fish)</value>
+        <value>An aquatic creature (mermaid)</value>
+        <value>An aquatic creature (octopus)</value>
+        <value>An aquatic creature (shark)</value>
+        <value>An aquatic creature (swan)</value>
+        <value>An aquatic creature (whale)</value>
+        <value>A bird (dove)</value>
+        <value>A bird (eagle)</value>
+        <value>A bird (mockingbird)</value>
+        <value>A bird (owl)</value>
+        <value>A bird (raven)</value>
+        <value>A bird (rooster)</value>
+        <value>A bird (sparrow)</value>
+        <value>A bird (vulture)</value>
+        <value>A monster (devil)</value>
+        <value>A monster (demon)</value>
+        <value>A monster (giant)</value>
+        <value region_start="11" region_end="16" region_include="undead">A monster (ghost)</value>
+        <value region_start="11" region_end="17" region_include="goblin">A monster (goblin)</value>
+        <value>A monster (griffon)</value>
+        <value>A monster (hag)</value>
+        <value>A monster (ogre)</value>
+        <value>An event (battle)</value>
+        <value>An event (captivity)</value>
+        <value>An event (death)</value>
+        <value>An event (feast or fair)</value>
+        <value>An event (illness)</value>
+        <value>An event (storm)</value>
+        <value>An event (tournament)</value>
+        <value>An event (wedding)</value>
+        <value region_start="23" region_end="27" region_include="cavern">A wilderness location (cave)</value>
+        <value region_start="23" region_end="29" region_include="desert">A wilderness location (desert)</value>
+        <value region_start="23" region_end="29" region_include="forest">A wilderness location (forest)</value>
+        <value>A wilderness location (lake)</value>
+        <value region_start="23" region_end="31" region_include="mountain">A wilderness location (mountain)</value>
+        <value>A wilderness location (river)</value>
+        <value>A wilderness location (sea)</value>
+        <value region_start="23" region_end="28" region_include="swamp">A wilderness location (swamp)</value>
+        <value region_start="2" region_end="8" region_include="castle">A castle</value>
+        <value region_start="2" region_end="8" region_include="__noun__">A garden</value>
+        <value region_start="2" region_end="10" region_include="town">A fountain</value>
+        <value region_start="3" region_end="6" region_include="tavern">An inn</value>
+        <value region_start="2" region_end="8" region_include="marketplace">A market</value>
+        <value region_start="2" region_end="8" region_include="tavern">A tavern</value>
+        <value region_start="2" region_end="8" region_include="temple">A temple</value>
+        <value region_start="2" region_end="6" region_include="tomb">A tomb</value>
+        <value region_start="19" region_end="24" region_include="coins">An item or object (coin)</value>
+        <value region_start="19" region_end="24" region_include="book">An item or object (book)</value>
+        <value>An item or object (goblet)</value>
+        <value>An item or object (map)</value>
+        <value>An item or object (shield)</value>
+        <value region_start="19" region_end="23" region_include="ship">An item or object (ship)</value>
+        <value>An item or object (sword)</value>
+        <value>An item or object (wagon)</value>
+    </table>
+    <table name="The song is popular because..." id="song_popular">
+        <value>It was written by a legendary bard</value>
+        <value>It has a subversive double meaning</value>
+        <value>It was banned by a tyrannical ruler</value>
+        <value>It was banned by a priest or priestess</value>
+        <value>It has a humorous, bawdy style</value>
+        <value>It was a popular sovereign's favorite</value>
+        <value>It was sung at a local hero's funeral</value>
+        <value>It was sung at a magnificent wedding feast</value>
+        <value>Its lyrics are completely outrageous</value>
+        <value>No good reason; it's just a catchy tune</value>
+    </table>
+    <table name="The song is commonly sung at..." id="song_sung">
+        <value>Cildren's birthdays</value>
+        <value>Pubs and civic festivals</value>
+        <value>Pubs and scholarly ceremonies</value>
+        <value>Pubs and military camps</value>
+        <value>Religious ceremonies and festivals</value>
+        <value>Royal courts and tournaments</value>
+        <value>Taverns and abroard ships</value>
+        <value>Taverns and low brothels</value>
+        <value>Taverns and mining camps</value>
+        <value>Tournaments</value>
+        <value>Wakes and funerals</value>
+        <value>Weddings</value>
+    </table>
+    <table name="The song is often sung as..." id="song_sungas">
+        <value>A solo without accompaniment</value>
+        <value>A solo with a single percussion instrument accompanying</value>
+        <value>A solo with a single stringed instrument accompanying</value>
+        <value>A solo with a variet of instruments accompanying</value>
+        <value>A duet with two male voices</value>
+        <value>A duet with a male and a female part</value>
+        <value>A duet with two female voices</value>
+        <value>A quartet of male voices without accompaniment</value>
+        <value>A chorus of singers with little to no instrumental accompaniment</value>
+        <value>A chorus of singers with a variety of instruments accompanying</value>
+        <value>A solo for hte verses with everyone joining in for the chorus</value>
+        <value>It's rarely sung; few people know the words, but everyone knows the melody</value>
+    </table>
+    <table name="The song's tempo is..." id="song_temp">
+        <value>Ponderous</value>
+        <value>Slow and steady</value>
+        <value>Andante</value>
+        <value>Allegro</value>
+        <value>Lively</value>
+        <value>Lilting</value>
+        <value>Fast-paced</value>
+        <value>Frenetic</value>
+    </table>
+    <table name="The song's melody is..." id="song_melody">
+        <value>Dominated by punctuating rhythm</value>
+        <value>Not so memorable as its harmonies</value>
+        <value>Hauntingly beautiful</value>
+        <value>Simple and easy to pick up</value>
+        <value>Incredibly catchy</value>
+        <value>Variable, depending on who's singing</value>
+    </table>
+</category>

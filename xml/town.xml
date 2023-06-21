@@ -1,0 +1,301 @@
+<category name="Town" id="town">
+    <table name="Settlement name..." type="name" type_name="Settlement">
+        <patterns>
+            <pattern>{aye} {bee}</pattern>
+            <pattern>{aye}'s {bee}</pattern>
+        </patterns>
+        <list type="aye">
+            <item>Leaf</item>
+            <item>Raven</item>
+            <item>Stone</item>
+            <item>Splint</item>
+            <item>Water</item>
+            <item>Ice</item>
+            <item>Flame</item>
+            <item>Sol</item>
+            <item>Storm</item>
+            <item>Earth</item>
+            <item>Gleam</item>
+            <item>Star</item>
+            <item>Art</item>
+            <item>War</item>
+            <item>Heart</item>
+            <item>Hard</item>
+            <item>Fall</item>
+            <item>Rock</item>
+            <item>Doom</item>
+            <item>Oak</item>
+            <item>Tear</item>
+            <item>Raven</item>
+            <item>Badger</item>
+            <item>Snake</item>
+            <item>Lion</item>
+            <item>Hell</item>
+            <item>Rage</item>
+            <item>Brine</item>
+            <item>Rat</item>
+            <item>Buck</item>
+            <item>Lily</item>
+            <item>Core</item>
+            <item>Stench</item>
+            <item>Mage</item>
+            <item>God</item>
+            <item>Soil</item>
+            <item>Pure</item>
+            <item>Mal</item>
+            <item>Cam</item>
+            <item>Fen</item>
+            <item>Clear</item>
+            <item>Split</item>
+            <item>Founder</item>
+            <item>Heir</item>
+            <item>Fair</item>
+            <item>Spin</item>
+            <item>Lord</item>
+            <item>King</item>
+            <item>Servant</item>
+            <item>Demon</item>
+            <item>Snow</item>
+            <item>Land</item>
+            <item>Ocean</item>
+        </list>
+        <list type="bee">
+            <item>Bridge</item>
+            <item>Brook</item>
+            <item>Catch</item>
+            <item>Crest</item>
+            <item>Jaw</item>
+            <item>Mark</item>
+            <item>Run</item>
+            <item>Blade</item>
+            <item>Haven</item>
+            <item>Rise</item>
+            <item>More</item>
+            <item>Light</item>
+            <item>Main</item>
+            <item>Blaze</item>
+            <item>Place</item>
+            <item>Tear</item>
+            <item>Fold</item>
+            <item>Rest</item>
+            <item>Host</item>
+            <item>Craft</item>
+            <item>Lair</item>
+            <item>Hollow</item>
+            <item>Vale</item>
+            <item>Hammer</item>
+            <item>Pike</item>
+            <item>Rail</item>
+            <item>Spike</item>
+            <item>Ring</item>
+            <item>Henge</item>
+            <item>Coil</item>
+            <item>Spring</item>
+            <item>Jaw</item>
+            <item>Mark</item>
+            <item>Hail</item>
+            <item>Loch</item>
+            <item>Child</item>
+            <item>Keep</item>
+            <item>Fort</item>
+            <item>Brook</item>
+            <item>Forth</item>
+            <item>Melt</item>
+            <item>Borourgh</item>
+            <item>Ford</item>
+            <item>Crawl</item>
+            <item>Moral</item>
+            <item>Comb</item>
+            <item>Glen</item>
+            <item>Garden</item>
+            <item>Wish</item>
+            <item>Fellow</item>
+            <item>Ridge</item>
+            <item>Ward</item>
+            <item>Town</item>
+        </list>
+    </table>
+    <table name="Main inhabitants are..." short="Inhabitants" id="inhabitants">
+        <value>Humans</value>
+        <value>Wood Elves</value>
+        <value>High Elves</value>
+        <value>Eladrin</value>
+        <value>Half-Elves</value>
+        <value>Drow</value>
+        <value>Mountain Dwarves</value>
+        <value>Hill Dwarves</value>
+        <value>Lightfoot Halflings</value>
+        <value>Stout Halflings</value>
+        <value>Rock Gnomes</value>
+        <value>Forest Gnomes</value>
+        <value>Deep Gnomes</value>
+        <value>Dragonborn</value>
+        <value>Orcs and Half-Orcs</value>
+        <value>Tieflings and Fiends</value>
+        <value>Aarakocra</value>
+        <value>Genasi and Elementals</value>
+        <value>Shifters and Lycanthropes</value>
+        <value>Goliaths and Giants</value>
+        <value>Changelings and Doppelgangers</value>
+        <value>Warforged and Constructs</value>
+        <value>Aasimar and Celestials</value>
+    </table>
+    <table name="The settlement's atmosphere is..." short="Atmosphere" id="atmosphere">
+        <value>Calm</value>
+        <value>Quaint</value>
+        <value>Peaceful</value>
+        <value>Vaguely unsettling</value>
+        <value>Decidedly sinister</value>
+        <value>Tense</value>
+        <value>Violent</value>
+        <value>Fearful</value>
+        <value>Bustling</value>
+        <value>Tumultuous</value>
+        <value>Chaotic</value>
+        <value>Pleasant</value>
+        <value>Dark</value>
+        <value>Heavy</value>
+        <value>Stifling</value>
+        <value>Relaxing</value>
+        <value>Freeing</value>
+        <value>Spiritual</value>
+        <value>Apathetic</value>
+        <value>Grief-stricken</value>
+    </table>
+    <table name="A prominent feature of the settlement is..." short="Feature" id="feature">
+        <value>Its beautiful parks</value>
+        <value>Its majestic orchards</value>
+        <value>A notable library</value>
+        <value region_start="11" region_end="16" region_include="guilds">A powerful guild</value>
+        <value>The smell of baked bread</value>
+        <value>The sounds of blacksmiths working</value>
+        <value region_start="25" region_end="45" region_include="wildlands">The abundance of game in the surrounding land</value>
+        <value>The extensive farmland surrounding it</value>
+        <value>Its exotic goods</value>
+        <value>The slums</value>
+        <value>Its criminal syndicate</value>
+        <value>Its high-class brothels</value>
+        <value>Its ban on prostitution</value>
+        <value>That it is protected by thick stone walls</value>
+        <value>That it stands atop a floating mote of earth</value>
+        <value>Its visible magic wards, which repel monsters</value>
+        <value>That it is constantly besieged</value>
+        <value>That it is ruled by a tyrant</value>
+        <value>The law is enforced harshly</value>
+        <value>The lack of government; anarchy reigns</value>
+        <value region_start="8" region_end="13" region_include="temple">A large temple</value>
+        <value>A gated cemetery larger than is warranted</value>
+        <value>A system of tunnels beneath the settlement</value>
+        <value>A planar gate</value>
+        <value>A powerful curse</value>
+        <value>That adventurers are hated by the people</value>
+        <value>A mysterious obelisk towers over other buildings</value>
+        <value region_start="9" region_end="20" region_include="bard">A famous entertainer inhabits the settlement</value>
+        <value>That magic is hated by the people</value>
+        <value>Its heavily armed, well-trained guards</value>
+        <value region_start="10" region_end="17" region_include="monsters">The tamed monster that defends it</value>
+        <value>A well-traveled trade route that runs through it</value>
+        <value>Its &quot;friendly&quot; barmaids</value>
+        <value>The local ale distillery</value>
+        <value region_start="10" region_end="22" region_include="nobleman">A keep of a noble lord</value>
+        <value>A tower in which a princess is locked up</value>
+        <value>That it's overrun with pests</value>
+        <value>That it's in an economic depression</value>
+        <value region_start="43" region_end="50" region_include="monsters">That it's being extorted by an intelligent monster</value>
+        <value>A group of refugees tenting near the settlement</value>
+        <value>That it's on the path of a gypsy caravan</value>
+        <value>That a traveling carnival often passes through</value>
+        <value>The nearby vineyards</value>
+        <value>Its history as a battleground</value>
+        <value>Its proximity to a monster stronghold</value>
+        <value>A wishing well with a local legend</value>
+        <value>That it is built in a dead magic zone</value>
+        <value>That it is built in a wild magic zone</value>
+        <value>That it was the site of a mythic event</value>
+        <value>That it was built atop ancient ruins</value>
+        <value>A statue honoring some long-dead hero</value>
+        <value>An abundance of a particular animal</value>
+        <value region_start="20" region_end="23" region_include="deity">A shrine to an evil god</value>
+        <value>An affordable periodical carrying news of the realm</value>
+        <value region_start="11" region_end="15" region_include="cult">A peaceful cult</value>
+        <value>Its wide streets</value>
+        <value>Its incredibly beautiful architecture</value>
+        <value>Its patronage of the arts</value>
+        <value>The nearby academy of magic</value>
+        <value>The rare herbs that grow nearby</value>
+        <value>The use of glowing crystal as streetlamps</value>
+        <value>The settlement's astronomy observatory</value>
+        <value>A bridge that spans a wide river</value>
+        <value>The fiercely patriotic inhabitants</value>
+        <value>A gallows erected in the main square</value>
+        <value region_start="9" region_end="14" region_include="undead">A genial ghost</value>
+        <value>Its &quot;no-weapons&quot; policy</value>
+        <value>A corrupt politician</value>
+        <value region_start="34" region_end="41" region_include="outlaws">Regular raids by a nearby group of bandits</value>
+        <value>That it was founded by cannibals, and some continue the tradition</value>
+        <value>That it's actually a bandit base</value>
+        <value>That all light except sunlight is smothered</value>
+        <value>That it was the location of a pirate's unclaimed treasure hoard</value>
+        <value region_start="11" region_end="16" region_include="mines">The nearby mines</value>
+        <value>A history of assassinations</value>
+        <value>Its very progressive attitude</value>
+        <value>Its staunch conservative attitude</value>
+        <value>Its incompetent buffoon of a leader</value>
+        <value>Its paranoia</value>
+        <value>Its xenophobia</value>
+        <value>Its tolerance of others</value>
+        <value>A coven of witches as rulers</value>
+        <value>Its predominantly male population</value>
+        <value>Its predominantly female population</value>
+        <value>Its high concentration of children</value>
+        <value>Its noticeable lack of children</value>
+        <value>Its connection to the Feywild</value>
+        <value>Its connection to the Shadowfell</value>
+        <value>Its grimy feel</value>
+        <value>The stench of sewage</value>
+        <value region_start="2" region_end="7" region_include="_noun__">A river that divides it</value>
+        <value>The undead servants that perform labor</value>
+        <value>That it's the center of a manhunt</value>
+        <value>A pony mascot with an adorable name</value>
+        <value>The overpowering smell of sulfur</value>
+        <value>A low hum that permeates the settlement with no known cause</value>
+        <value>A thousand-year-old tree in town square</value>
+        <value>That it is under the protection of friendly elemental spirits</value>
+        <value>The blistering heat of its forges</value>
+        <value>Its famous impartiality</value>
+    </table>
+    <table name="The players should care about the settlement because..." short="Noteworthy" id="care">
+        <value>It has magic item shop(s)</value>
+        <value region_start="2" region_end="9" region_include="__noun__">A dungeon was discovered nearby recently</value>
+        <value region_start="11" region_end="17" region_include="wizard">A powerful wizard lives there</value>
+        <value region_start="2" region_end="5" region_include="__noun__">A NPC the players have met before is there</value>
+        <value region_start="0" region_end="19" region_include="__noun__">Something they want is there</value>
+        <value region_start="0" region_end="7" region_include="thief">A thief stole something from them here</value>
+        <value region_start="40" region_end="49" region_include="__noun__">It was mentioned in a letter found on a slain foe</value>
+        <value region_start="18" region_end="25" region_include="__noun__">They are hired by someone in the settlement</value>
+        <value>This is the only settlement with which to resupply within leagues</value>
+        <value region_start="11|45" region_end="22|52" region_include="__noun__|__noun__">One of the inhabitants asked for help with a problem</value>
+        <value>It is the only save haven from the monster-infested surroundings</value>
+        <value region_start="25" region_end="30" region_include="crime">They are implicated in a crime and asked not to leave town</value>
+        <value region_start="27" region_end="33" region_include="__noun__">There are some interesting rumors about their foes</value>
+        <value>The players liberated some prisoners who asked to be taken there</value>
+        <value region_start="3" region_end="8" region_include="villain">An enemy has called them out</value>
+        <value region_start="19" region_end="28" region_include="__noun__">The rewards on the job board are high</value>
+        <value>Things don't quite add up; perhaps investigation is called for</value>
+        <value>It keeps getting mentioned wherever they go</value>
+        <value>The townspeople greet them like heroes</value>
+        <value>They need to take shelter from a severe storm</value>
+        <value region_start="10" region_end="14" region_include="__noun__">They need help that the settlement can provide</value>
+        <value region_start="2" region_end="20" region_include="__noun__">A child/helpless NPC is in danger and needs help</value>
+        <value region_start="10" region_end="15" region_include="__noun__">There are signs of a monster infestation</value>
+        <value region_start="2" region_end="10" region_include="monsters">A creature whose goals clash with theirs lives there</value>
+        <value region_start="2" region_end="14" region_include="npc">A powerful NPC tries to put them under a &quot;geas&quot;</value>
+        <value region_start="2" region_end="8" region_include="__noun__">A patron promises them jobs there</value>
+        <value region_start="29" region_end="39" region_include="__noun__">They hear rumors of a hidden magic item nearby</value>
+        <value region_start="0" region_end="15" region_include="crime">A strange crime is committed, peripherally involving them</value>
+        <value region_start="2" region_end="11" region_include="__noun__">A local NPC did them a favor, and wants to cash in</value>
+        <value region_start="2|32" region_end="17|36" region_include="__noun__|__noun__">A powerful entity offers them a deal there</value>
+        <value>It is their hometown</value>
+    </table>
+    <member name="Locations" include="locations" />
+</category>

@@ -1,0 +1,89 @@
+        <category name="Dinner at a Dockside Tavern" id="dinner_tavern">
+            <table name="Tonight, we dine on..." id="dine">
+                <patterns>
+                    <pattern>{prep} {dish}</pattern>
+                </patterns>
+                <list type="prep">
+                    <item>Stewed</item>
+                    <item>Breaded</item>
+                    <item>Fried</item>
+                    <item>Battered</item>
+                    <item>Baked</item>
+                    <item>Brined</item>
+                    <item>Seared</item>
+                    <item>Peppered</item>
+                    <item>Salted</item>
+                    <item>Pickled</item>
+                </list>
+                <list type="dish">
+                    <item>clams.</item>
+                    <item>crab.</item>
+                    <item>herring.</item>
+                    <item>lobster.</item>
+                    <item>mussels.</item>
+                    <item>oysters.</item>
+                    <item>dalmon.</item>
+                    <item>dmelt.</item>
+                    <item>haddock.</item>
+                    <item>mackerel.</item>
+                    <item>squid.</item>
+                    <item>shrimp.</item>
+                    <item>prawns.</item>
+                    <item>tuna.</item>
+                    <item>halibut.</item>
+                    <item>cod.</item>
+                    <item>sea bass.</item>
+                    <item>goose.</item>
+                    <item>chicken.</item>
+                    <item>mutton.</item>
+                </list>
+            </table>
+            <table name="...with..." id="dine_with">
+                <value>Golden potatoes.</value>
+                <value>Red potatoes.</value>
+                <value>Beets.</value>
+                <value>Leeks.</value>
+                <value>Lentils.</value>
+                <value>Red beans.</value>
+                <value>Black beans.</value>
+                <value>Turnip mash.</value>
+                <value>Diced turnips.</value>
+                <value>Wild rice.</value>
+            </table>
+            <table name="...and..." id="dine_and">
+                <value>Carrots.</value>
+                <value>Red cabbage.</value>
+                <value>Green cabbage.</value>
+                <value>Purple cabbage.</value>
+                <value>Dill weed.</value>
+                <value>Lemongrass.</value>
+                <value>Lemon wedges.</value>
+                <value>Parsley.</value>
+                <value>Radishes.</value>
+                <value>Peas.</value>
+                <value>Green onions.</value>
+                <value>Yellow onions.</value>
+            </table>
+            <table name="Side dish..." id="side">
+                <value>Sourdough bread.</value>
+                <value>Fresh bread.</value>
+                <value>Crusty bread.</value>
+                <value>Sweet bread.</value>
+                <value>Sesame bread.</value>
+                <value>Oat bread.</value>
+                <value>Pumpernickel bread.</value>
+                <value>Beer bread.</value>
+            </table>
+            <table name="Beverage..." id="beverage">
+                <value>Bitter ale.</value>
+                <value>Wheat ale.</value>
+                <value>Steam beer.</value>
+                <value>Porter.</value>
+                <value>Mead.</value>
+                <value>Sour wine.</value>
+                <value>Red wine.</value>
+                <value>Tea.</value>
+                <value>Spiced rum.</value>
+                <value>Dry rum.</value>
+            </table>
+        </category>

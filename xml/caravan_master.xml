@@ -1,0 +1,42 @@
+        <category name="Caravan Master" id="caravan_master">
+            <name name="The caravan master's name is..."/>
+            <include name="Race" include="npc_race" />
+            <table name="The caravan master is..." id="caravan_master_is">
+                <value region_start="13" region_end="22" region_include="nation">A mysterious foreigner</value>
+                <value region_start="9" region_end="16" region_include="soldier">A career soldier</value>
+                <value region_start="18" region_end="34" region_include="noblehouse">An outcast from a prominent family</value>
+                <value>A celebrated explorer</value>
+                <value>A femme fatale</value>
+                <value region_start="11" region_end="16" region_include="rogue">A charming rogue</value>
+                <value>A dashing swashbuckler</value>
+                <value region_start="10" region_end="14" region_include="__noun__">A brutish thug</value>
+            </table>
+            <table name="The caravan master is looking for..." id="caravan_master_looking">
+                <value region_start="26" region_end="31" region_include="__noun__">Information regarding the route ahead</value>
+                <value region_start="19" region_end="31" region_include="__noun__">The location of an ancient ruin</value>
+                <value>Extra muscle for the journey</value>
+                <value region_start="14|24" region_end="20|35" region_include="__noun__|__noun__">News from the origin or destination</value>
+                <value region_start="25" region_end="30" region_include="caravan_master">Revenge against a bitter rival</value>
+                <value region_start="14" region_end="33" region_include="caravan_owner">Ways to cheat the caravan's owner</value>
+                <value region_start="21" region_end="30" region_include="caravan">Ways to speed up the caravan's pace</value>
+                <value>Drinking companions and storytellers</value>
+            </table>
+            <table name="The caravan master is taking special care to avoid..." id="caravan_master_avoid">
+                <value>Ancient ruins and cursed places</value>
+                <value>Barbarians</value>
+                <value>Bandits</value>
+                <value>Other caravans</value>
+                <value>Thieves</value>
+                <value>Wild beasts</value>
+            </table>
+            <table name="The caravan master carries..." id="caravan_master_carries">
+                <value>A superbly crafted sword</value>
+                <value>Several daggers and a purse of gold</value>
+                <value region_start="22" region_end="25" region_include="__noun__">A trusted blade and a map</value>
+                <value region_start="2" region_end="13" region_include="__noun__">A lucky charm</value>
+                <value region_start="4" region_end="9" region_include="__noun__">The token of a faraway love</value>
+                <value>Extravagant jewels and silks</value>
+                <value>Keys of many shapes and sizes</value>
+                <value>A little jar of mustache wax</value>
+            </table>
+        </category>

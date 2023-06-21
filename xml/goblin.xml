@@ -1,0 +1,109 @@
+        <category name="Goblin" id="goblin" hasa="goblingang">
+            <name name="The goblin's name is..." src="goblins" />
+            <table name="This goblin is..." id="is">
+                <value region_start="2" region_end="7" region_include="miner">A miner.</value>
+                <value>A forager.</value>
+                <value region_start="2" region_end="9" region_include="warrior">A warrior.</value>
+                <value>A scout.</value>
+                <value>A trapmaker.</value>
+                <value region_start="3" region_end="9" region_include="archer">An archer.</value>
+                <value region_start="3" region_end="11" region_include="assassin">An assassin.</value>
+                <value>A hexer.</value>
+                <value>A wolf-rider.</value>
+                <value>A sneak.</value>
+                <value region_start="3" region_end="10" region_include="armorer">An armorer.</value>
+                <value region_start="2" region_end="6" region_include="cook">A cook.</value>
+                <value>A builder.</value>
+                <value region_start="2" region_end="14" region_include="lycanthrope">A beastshifter.</value>
+                <value>A skullcrusher.</value>
+                <value>A thug.</value>
+                <value>A warpriest.</value>
+                <value>A prankster.</value>
+                <value>A blackblade.</value>
+                <value>A worthless nobody.</value>
+            </table>
+            <table name="The goblin is particularly skilled at..." id="skilled">
+                <value>Being sneaky</value>
+                <value>Not being seen</value>
+                <value>Tracking foes</value>
+                <value>Building traps</value>
+                <value>Avoiding traps</value>
+                <value>Repairing traps</value>
+                <value>Foraging for food and water</value>
+                <value>Wrangling beasts</value>
+                <value>Digging tunnels</value>
+                <value>Crafting arms and armor</value>
+                <value>Crushing skulls</value>
+                <value>Cutting throats</value>
+            </table>
+            <table name="The goblin wields..." id="weilds">
+                <value>A rusty sword</value>
+                <value>A finely-made sword</value>
+                <value>A spiked club</value>
+                <value>A wicked looking axe</value>
+                <value>A spear decorated with feathers</value>
+                <value>Several polished daggers</value>
+                <value>A large, serrated dagger</value>
+                <value>A pair of curved daggers</value>
+                <value>A cracked wooden shield</value>
+                <value region_start="26" region_end="37" region_include="goblingang">A shield, emblazoned with the gangs's symbol</value>
+                <value>Arrows fletched with crow feathers</value>
+                <value>Arrows fletched with hawk feathers</value>
+            </table>
+            <table name="The goblin wears..." id="wears">
+                <value region_start="26" region_end="36" region_include="armorer">Armor with greasy stains (crafted by)</value>
+                <value>Patched leather armor</value>
+                <value region_start="23" region_end="33" region_include="armorer">Piecemeal chain armor (crafted by)</value>
+                <value>A leather helm</value>
+                <value>A large skull as a helm</value>
+                <value>A wolf-face helm</value>
+                <value>A lanyard of severed ears</value>
+                <value>A big hoop earring</value>
+                <value>A shiny silver belt</value>
+                <value>A wolf skin</value>
+                <value>A black cloak with a hood</value>
+                <value>A large belt purse</value>
+            </table>
+            <table name="The goblin's face has..." id="face">
+                <value>Blue warpaint</value>
+                <value>An eyepatch</value>
+                <value>Burn scars</value>
+                <value>Only one ear</value>
+                <value>No front teeth</value>
+                <value>An unusual tattoo on the forehead</value>
+                <value>Stitches closing a wound on the jaw</value>
+                <value>A topknot above it</value>
+                <value>Several muddy smudges</value>
+                <value>A boil oozing pus</value>
+                <value>A wisp of a mustache</value>
+                <value>Amazing sideburns</value>
+            </table>
+            <table name="The goblin has..." id="has">
+                <value>An unsettling stare</value>
+                <value>A lean and hungry look</value>
+                <value>A maniacal laugh</value>
+                <value>A mad cackling laugh</value>
+                <value>A high pitched twittering laugh</value>
+                <value>A tendency to snicker at everything</value>
+                <value>A nervous twitch</value>
+                <value>A difficult time standing still</value>
+                <value>A waddle</value>
+                <value>A limp</value>
+                <value>An unsavory habit of drooling</value>
+                <value>A habit of sniffing loudly</value>
+            </table>
+            <table name="Presently, the goblin is looking to..." id="looking">
+                <value>Find something to eat.</value>
+                <value>Find something to drink.</value>
+                <value>Find some coins or gems to steal.</value>
+                <value region_start="5" region_end="13" region_include="goblingang" saveas="goblingang">Warn the gang of monster hunters in the area.</value>
+                <value region_start="5" region_end="13" region_include="goblingang" saveas="goblingang">Warn the gang of a savage beast in the area.</value>
+                <value region_start="10" region_end="18" region_include="goblingang" saveas="goblingang">Report to the gang as to where to find treasure.</value>
+                <value region_start="20" region_end="30" region_include="goblingang" saveas="goblingang">Prove its mettle to the gang's boss.</value>
+                <value region_start="16" region_end="26" region_include="goblingang" saveas="goblingang">Avoid notice by the gang's boss.</value>
+                <value>Avoid notice by anyone.</value>
+                <value region_start="6" region_end="14" region_include="goblingang" saveas="goblingang">Leave the gang entirely.</value>
+                <value>Play a cruel prank.</value>
+                <value>Swap distasteful jokes.</value>
+            </table>
+        </category>

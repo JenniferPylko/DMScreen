@@ -1,0 +1,22 @@
+            <category name="Armorer / Smith" id="armorer">
+                <name name="The smith's name is..."/>
+                <include name="Race" include="npc_race" />
+                <table name="The smith is..." id="smith_is">
+                    <value>A meticulous armorsmith</value>
+                    <value>A blacksmith who makes decent swords</value>
+                    <value>A farrier who can mend swords</value>
+                    <value>A highly-skilled weaponsmith</value>
+                </table>
+                <table name="The smith is looking for..." id="smith_looking">
+                    <value>Someone who can shoe horses</value>
+                    <value>Steel of the highest quality</value>
+                    <value>Dull blades to sharpen</value>
+                    <value>A mug of strong ale</value>
+                </table>
+                <table name="The smith carries..." id="smith_carries">
+                    <value>A hammer</value>
+                    <value region_start="2" region_end="17" region_include="__noun__">A good luck charm</value>
+                    <value>A filthy rag</value>
+                    <value>Little more than a few coins</value>
+                </table>
+            </category>

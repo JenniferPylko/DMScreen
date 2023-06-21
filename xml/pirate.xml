@@ -1,0 +1,32 @@
+<category name="Pirate" id="pirate">
+    <name name="The pirate's name is..."/>
+    <include name="Race" include="npc_race" />
+    <table name="The pirate has..." id="has">
+        <value>A dagger tattoo</value>
+        <value>An anchor tattoo</value>
+        <value>A skull tattoo</value>
+        <value>A pair of crossed bones tattoo</value>
+        <value>A snake tattoo</value>
+        <value>A fish tattoo</value>
+        <value>A spider web tattoo</value>
+        <value>An octopus tattoo</value>
+        <value>A whale tattoo</value>
+        <value>A lobser tattoo</value>
+        <value>A mermaid tattoo</value>
+        <value>A dragon tattoo</value>
+    </table>
+    <table name="Distinguishing Feature: The pirate has..." id="feature">
+        <value>A nose ring</value>
+        <value>Shiny leather boots</value>
+        <value>Gold teeth</value>
+        <value>An oversized dagger in the belt</value>
+        <value>A heavy gold chain around the neck</value>
+        <value>A wide-brimmed hat</value>
+        <value>An eyepatch</value>
+        <value>A long black beard</value>
+        <value>A maniacal laugh</value>
+        <value>A long, hooked nose</value>
+        <value>An open shirt and a very hairy chest</value>
+        <value>Extravagant mustaches</value>
+    </table>
+</category>

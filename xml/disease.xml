@@ -1,0 +1,246 @@
+        <category name="Disease" id="disease">
+            <table name="The disease is called..." id="disease_called">
+                <value>Crypt Crud</value>
+                <value>Consuming Madness</value>
+                <value>Orc Flu</value>
+                <value>Black Lion</value>
+                <value>Grandgore</value>
+                <value>Bangs Fever</value>
+                <value>The Pox</value>
+                <value>The Flux</value>
+                <value>Bloody Flux</value>
+                <value>Alchemists' Bane</value>
+                <value>Death Fever</value>
+                <value>River Blindness</value>
+                <value>Haverhill Fever</value>
+                <value>Swamp Fever</value>
+                <value>Yellow Jack</value>
+                <value>Back Death</value>
+                <value>The 9 Hells</value>
+                <value>The Bull's Neck</value>
+                <value>The Red Plague</value>
+                <value>Cotton Pox</value>
+                <value>Milk Pox</value>
+                <value>Sleeper's Bane</value>
+                <value>King's Evil</value>
+                <value>White Disease</value>
+                <value>Demon Blood Corruption</value>
+                <value>Demon Phage</value>
+                <value>Devil Chills</value>
+                <value>Fossil Flesh</value>
+                <value>Greyscale</value>
+                <value>Bad Blood</value>
+            </table>
+            <table name="The disease is spread by..." id="disease_spread">
+                <value>Inhaling contaminated air</value>
+                <value>Drinking contaminated water</value>
+                <value>Consuming contaminated food</value>
+                <value>Skin-to-skin contact</value>
+                <value>Saliva, sweat, mucus, and/or blood</value>
+                <value>Sexual contact</value>
+                <value>The bite of a fly or tick</value>
+                <value>The bite of a rat or bat</value>
+                <value>Nothing; it’s a genetic condition</value>
+                <value>Nothing; it’s a chronic condition brought on by lifestyle choices</value>
+                <value>Mysterious, magic-related means</value>
+                <value>Unknown means</value>
+            </table>
+            <table name="Once exposed to the disease, a person develops symptoms..." id="disease_symptoms">
+                <value>Almost immediately (1-8 hours).</value>
+                <value>Very rapidly (4-24 hours).</value>
+                <value>Within a few days (1-4 days).</value>
+                <value>In the next week (2-8 days).</value>
+                <value>In the next few weeks (1-4 weeks).</value>
+                <value>Some time in the next 2 months (2-8 weeks).</value>
+                <value>Some time in the next year; (2-12 months).</value>
+                <value>Some time in the person’s life (2 to 40 years).</value>
+            </table>
+            <table name="This disease is most frequently encountered in regions with..." id="disease_encountered">
+                <value>A tropical climate.</value>
+                <value>An arid climate.</value>
+                <value>A Mediterranean climate.</value>
+                <value>A coastal climate.</value>
+                <value>A cold climate.</value>
+                <value>A temperate climate.</value>
+                <value>A foggy or damp climate.</value>
+                <value>Swamps, bogs, or marsh land.</value>
+                <value>Dense jungles.</value>
+                <value>High altitude.</value>
+                <value>Death an decay</value>
+                <value>No sunlight</value>
+            </table>
+            <table name="Common symptoms are..." id="disease_symptoms_common">
+                <value>exhaustion</value>
+                <value>hunger</value>
+                <value>fever</value>
+                <value>chills</value>
+                <value>blurred vision</value>
+                <value>light sensitivity</value>
+                <value>puffy eyes</value>
+                <value>poor night vision</value>
+                <value>watery eyes</value>
+                <value>yellow discharge from the eyes</value>
+                <value>double vision</value>
+                <value>difficulty focusing the eyes.</value>
+                <value>changes in mood</value>
+                <value>dissociative fugues</value>
+                <value>dizziness</value>
+                <value>drowsiness</value>
+                <value>headaches</value>
+                <value>insomnia</value>
+                <value>nightmares</value>
+                <value>shortened attention span.</value>
+                <value>chest pain</value>
+                <value>congestion</value>
+                <value>coughing fits</value>
+                <value>hives</value>
+                <value>wheezing</value>
+                <value>shortness of breath</value>
+                <value>coughing up blood</value>
+                <value>tightness in chest</value>
+                <value>hearing loss</value>
+                <value>difficulty swallowing</value>
+                <value>excessive ear wax</value>
+                <value>sore throat</value>
+                <value>swollen glands</value>
+                <value>vertigo</value>
+                <value>bleeding from the ears</value>
+                <value>loss of voice</value>
+                <value>dry scalp</value>
+                <value>hair loss</value>
+                <value>excessive gas</value>
+                <value>pimples</value>
+                <value>sinus pressure</value>
+                <value>sneezing</value>
+                <value>swollen cheeks</value>
+                <value>runny nose</value>
+                <value>bleeding from the nose</value>
+                <value>achy limbs</value>
+                <value>joint pain</value>
+                <value>muscle spasms</value>
+                <value>restless limbs</value>
+                <value>stiff joints</value>
+                <value>weakness</value>
+                <value>bruising</value>
+                <value>discoloration of the fingernails or toenails.</value>
+                <value>bleeding gums</value>
+                <value>canker sores</value>
+                <value>cracked lips</value>
+                <value>dry mouth</value>
+                <value>foamy, excessive salivation</value>
+                <value>tooth pain</value>
+                <value>tooth discoloration</value>
+                <value>dehydration</value>
+                <value>anxiety</value>
+                <value>tooth decay.</value>
+                <value>loss of sexual desire</value>
+                <value>pale genital discharge</value>
+                <value>inability to sexually climax</value>
+                <value>open genital sores</value>
+                <value>pain during urination</value>
+                <value>genital warts</value>
+                <value>itchy bumps on the genitals</value>
+                <value>bloody genital discharge.</value>
+                <value>black or purple spots</value>
+                <value>boils</value>
+                <value>itchiness</value>
+                <value>pale or yellow hue</value>
+                <value>peeling</value>
+                <value>rash</value>
+                <value>red spots</value>
+                <value>scales</value>
+                <value>bloody stool</value>
+                <value>constipation</value>
+                <value>excessive flatulence</value>
+                <value>loose stool</value>
+                <value>loss of appetite</value>
+                <value>nausea and vomiting</value>
+                <value>ulcers</value>
+                <value>vomiting blood.</value>
+                <value>diarrhea</value>
+                <value>growths on the face</value>
+                <value>hyper-activity</value>
+                <value>blindness</value>
+                <value>deafness</value>
+                <value>numbness</value>
+            </table>
+            <table name="In some rare cases, symptoms may include..." id="disease_symptoms_rare">
+                <value>Amnesia; partial or complete.</value>
+                <value>Blindness or deafness.</value>
+                <value>Coma; short-term, long-term, or indefinite.</value>
+                <value>Complete changes in personality.</value>
+                <value>Concurrent vomiting and diarrhea.</value>
+                <value>Coughing up blood.</value>
+                <value>Delusions and paranoia.</value>
+                <value>Extreme, persistent nausea.</value>
+                <value>Fits of narcolepsy.</value>
+                <value>Hallucinations.</value>
+                <value>Insomnia.</value>
+                <value>Lengthy fits of high fever.</value>
+                <value>Loss of muscle coordination.</value>
+                <value>Paralysis; partial or complete.</value>
+                <value>Periodic, temporary loss of consciousness.</value>
+                <value>Sleep walking.</value>
+                <value>Susceptibility to other illnesses.</value>
+                <value>Tumors or tumor-like growths.</value>
+                <value>Wild mood swings.</value>
+                <value>Sudden aversion to one or more familiar foods, individuals, or objects.</value>
+            </table>
+            <table name="Symptoms are..." id="disease_symptoms_more">
+                <value>Acute and curable; once the afflicted is cured, the symptoms never return.</value>
+                <value>Acute but recurring; once the afflicted is cured, symptoms may return later in life.</value>
+                <value>Chronic but completely curable; once the afflicted is cured, symptoms rarely return.</value>
+                <value>Chronic but treatable; once the afflicted is cured, symptoms will likely reoccur every few years.</value>
+            </table>
+            <table name="If untreated, the disease is..." id="disease_untreated">
+                <value>Rarely serious; running its course in a few days or weeks.</value>
+                <value>Rarely lethal; fatal complications occur in less than 1% of cases.</value>
+                <value>Sometimes debilitating, but rarely lethal; permanent disabilities occur in approximately 10% of cases, and fatal complications in less than 1% of cases</value>
+                <value>Sometimes lethal; fatal complications occur in approximately 10% of cases.</value>
+                <value>Often debilitating, and sometimes lethal; permanent disabilities occur in more than 50% of cases, and fatal complications in approximately 10% of cases.</value>
+                <value>Often lethal; fatal complications occur in more than 50% of cases.</value>
+            </table>
+            <table name="The disease can be cured with..." id="disease_cure">
+                <value>A night's rest</value>
+                <value>A week of rest</value>
+                <value region_start="9" region_end="22" region_include="__noun__">A simple herbal remedy.</value>
+                <value region_start="10" region_end="32" region_include="__noun__">A complex herbal potion or salve.</value>
+                <value>A widely available healing potion or balm.</value>
+                <value region_start="7" region_end="28" region_include="__noun__">A rare alchemical concoction.</value>
+                <value>No known earthly substances.</value>
+                <value>Basic healing spells and incantations.</value>
+                <value>Advanced healing spells and potions.</value>
+                <value>Extremely powerful and rare magic.</value>
+                <value>Kill or destroy the source of the disease</value>
+            </table>
+            <table name="The time-course of treatment is..." id="disease_treatment">
+                <value>Rapid; the afflicted is cured within 1 day.</value>
+                <value>Short; the afflicted is cured within a few days of receiving treatment.</value>
+                <value>Typical; the afflicted is cured within a few days of receiving treatment.</value>
+                <value>Lengthy; the afflicted is cured within a few weeks of receiving treatment.</value>
+                <value>Long-term; the afflicted is cured within a few months of receiving treatment.</value>
+                <value>Erratic; the time-course of treatment varies greatly among individuals or among outbreaks of the disease.</value>
+            </table>
+            <table name="Magical Maladies: The magical disease is associated with..." id="disease_magic">
+                <value>Belching up vermin.</value>
+                <value>Demonic or ghostly possession.</value>
+                <value>The desire to consume humanoid flesh.</value>
+                <value>The desire to consume rocks or dirt.</value>
+                <value>The desire to consume pixies and sprites.</value>
+                <value>The desire to dig a deep hole.</value>
+                <value>The desire to build an immense wall.</value>
+                <value>Gaining the personality of a long-dead, well-known magic-user.</value>
+                <value region_start="31" region_end="36" region_include="beast">Gradually morphing into a wild beast.</value>
+                <value region_start="36" region_end="40" region_include="oozes">Gradually morphing into a puddle of ooze.</value>
+                <value>Imitating the behaviour of a common beast.</value>
+                <value>Loss of the power of speech.</value>
+                <value>Periodic spells of befuddlement.</value>
+                <value>Purple or green splotches on the skin.</value>
+                <value>Rapid growth of facial hair.</value>
+                <value>Rapid growth of fingernails or teeth.</value>
+                <value>Rapid hair growth.</value>
+                <value>Uncontrollable fits of laughter or tears.</value>
+                <value>Uncontrollable singing or dancing.</value>
+                <value>Over-active libido.</value>
+            </table>
+        </category>

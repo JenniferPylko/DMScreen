@@ -1,0 +1,36 @@
+<category name="Robber" id="robber">
+    <name name="The robber's name is..."/>
+    <include name="Race" include="npc_race" />
+    <table name="The robber typically strike with..." id="strike">
+        <value>Swarm tactics</value>
+        <value>Hit-and-run tactics</value>
+        <value>Ambush tactics</value>
+        <value>Choreographed maneuvers</value>
+        <value>Unpredictable maneuvers</value>
+        <value>Lots of fancy footwork</value>
+    </table>
+    <table name="The robber is notorious for..." id="notorious">
+        <value>Never leaving survivors</value>
+        <value>Branding captives</value>
+        <value>Scalping captives</value>
+        <value>Burning wagons and ships</value>
+        <value>Using explosives</value>
+        <value>Romantic escapades</value>
+        <value>Singing bawdy songs</value>
+        <value>Drinking too much ale</value>
+    </table>
+    <table name="Distinguishing features: The robber has..." id="feature">
+        <value>A flashy earring</value>
+        <value>Shiny leather boots</value>
+        <value>A hole in the toe of one boot</value>
+        <value>A dagger in each boot</value>
+        <value>A mask on the face</value>
+        <value>A wide-brimmed hat</value>
+        <value>A dragon tattoo on the forearm</value>
+        <value>A flame tattoo around the arm</value>
+        <value>A maniacal laugh</value>
+        <value>A bent, broken nose</value>
+        <value>An open shirt and a very hairy chest</value>
+        <value>Extravagant mustaches</value>
+    </table>
+</category>

@@ -1,0 +1,81 @@
+    <category name="Haunted Forest" id="hauntedforest">
+        <table name="Interesting Location: You find..." id="hauntedforest_interest">
+            <value region_start="8" region_end="21" region_include="hauntedforest_mount">Ancient burial mounds.</value>
+            <value region_start="0" region_end="6" region_include="hauntedforest_hole">A hole under a large tree.</value>
+            <value region_start="0" region_end="14" region_include="hauntedforest_hole">A large burrow.</value>
+            <value region_start="11" region_end="18" region_include="hauntedforest_hole">A peculiar cottage.</value>
+            <value region_start="12" region_end="20" region_include="hauntedforest_grave">A forgotten cemetery.</value>
+            <value region_start="10" region_end="15" region_include="hauntedforest_grave">A pair of graves.</value>
+            <value region_start="13" region_end="18" region_include="hauntedforest_cabin">An abandoned cabin.</value>
+            <value>An abandoned campsite.</value>
+            <value region_start="15" region_end="27" region_include="cavern">An entrance to a rocky cave.</value>
+            <value region_start="8" region_end="13" region_include="hauntedforest_ruins">Ancient ruins.</value>
+        </table>
+        <table name="Distinguising Landmark: You see..." id="hauntedforest_landmark">
+            <value>A tree with rotten fruit all around its base.</value>
+            <value>A large, hollow tree.</value>
+            <value>A pair of trees from the same root.</value>
+            <value>A tree growing over a boulder.</value>
+            <value>A clearing with bare ground.</value>
+            <value>A clearing with an old grave marker.</value>
+            <value>A boulder marked with several notches.</value>
+            <value>A thicket of dry brambles.</value>
+            <value>A slow, silent stream.</value>
+            <value>A stream flowing quietly through a ravine.</value>
+            <value>A stream with barren banks.</value>
+            <value>A dry creekbed.</value>
+            <value>A foul smelling pond.</value>
+            <value>A patch of mushrooms.</value>
+            <value>The decaying carcass of a large animal.</value>
+            <value>A large, hollow log.</value>
+            <value>A large, rotting log.</value>
+            <value>A tree felled by lightning.</value>
+            <value>An old gnarled tree.</value>
+            <value>The stump of an enormous tree.</value>
+        </table>
+        <table name="Feature: You notice..." id="hauntedforest_feature">
+            <value>A flock of crows scatter.</value>
+            <value>A vulture screams.</value>
+            <value>A raven croaks.</value>
+            <value>An owl hoots.</value>
+            <value>A crow caws.</value>
+            <value region_start="2" region_end="5" region_include="rat">A rat scurrying.</value>
+            <value>A ghostly presence flees.</value>
+            <value>A ghostly presence watches curiously.</value>
+            <value>A bats take to wing from a tree.</value>
+            <value>A wolf howls.</value>
+            <value>A large moth flutters about.</value>
+            <value>Rats squeaking.</value>
+            <value>An eerie silence.</value>
+            <value>The breeze stops.</value>
+            <value>The wind blows harder.</value>
+            <value>A twig snaps.</value>
+            <value>The wind moans eerily.</value>
+            <value>A distant scream.</value>
+            <value>The scent of rotting flesh.</value>
+            <value>The smell of decay.</value>
+        </table>
+        <table name="Encounters: You come upon..." id="hauntedforest_encounter">
+            <value>An animated skeleton.</value>
+            <value>A pair of skeletal warriors.</value>
+            <value>A giant spider.</value>
+            <value>A swarm of spiders.</value>
+            <value>A pack of wolves.</value>
+            <value region_start="9" region_end="17" region_include="lycanthrope">A savage werewolf.</value>
+            <value region_start="8" region_end="11" region_include="bat">A giant bat</value>
+            <value>A swarm of bats.</value>
+            <value>A shadow panther.</value>
+            <value>A malevolent ghost.</value>
+            <value>A restless ghost.</value>
+            <value>A hungry ghoul.</value>
+            <value>An animated hatchet.</value>
+            <value>A pair of zombies.</value>
+            <value>A slobbering zombie.</value>
+            <value>A pair of graverobbers.</value>
+            <value>An anxious necromancer.</value>
+            <value>An old witch.</value>
+            <value>A lost child.</value>
+            <value>A gravedigger.</value>
+        </table>
+        <table name="Vignettes, and color" include="naturalforest_vignette" />
+    </category>

@@ -1,0 +1,92 @@
+        <category name="Elvish Dinner" id="dinner_elf">
+            <table name="Tonight, we dine on..." id="dine">
+                <patterns>
+                    <pattern>{prep} {dish}</pattern>
+                </patterns>
+                <list type="prep">
+                    <item>Stewed</item>
+                    <item>Roasted</item>
+                    <item>Boiled</item>
+                    <item>Simmered</item>
+                    <item>Smoked</item>
+                    <item>Baked</item>
+                    <item>Marinated</item>
+                    <item>Peppered</item>
+                </list>
+                <list type="dish">
+                    <item>boar</item>
+                    <item>rabbit</item>
+                    <item>pheasant</item>
+                    <item>goose</item>
+                    <item>trout</item>
+                    <item>pike</item>
+                    <item>clams</item>
+                    <item>chestnuts</item>
+                    <item>wild rice</item>
+                    <item>leafy greens</item>
+                    <item>white beans</item>
+                    <item>red beans</item>
+                </list>
+            </table>
+            <table name="...with..." id="dine_with">
+                <value>Green cabbage.</value>
+                <value>Sweet cabbage.</value>
+                <value>Wild arugula.</value>
+                <value>Wild rhubarb.</value>
+                <value>Sugarsnap peas.</value>
+                <value>Wild carrots.</value>
+                <value>Wild parsnips.</value>
+                <value>String beans.</value>
+                <value>Green onions.</value>
+                <value>Sweet onions.</value>
+                <value>Wild mushrooms.</value>
+                <value>Cave mushrooms.</value>
+            </table>
+            <table name="...and..." id="dine_and">
+                <value>Apples.</value>
+                <value>Pears.</value>
+                <value>Lemons.</value>
+                <value>Rose petals.</value>
+                <value>Dandelions.</value>
+                <value>Flower petals.</value>
+                <value>Elder petals.</value>
+                <value>Red berries.</value>
+                <value>Black berries.</value>
+                <value>Blueberries.</value>
+                <value>Grapes.</value>
+                <value>Plums.</value>
+            </table>
+            <table name="Side dish..." id="dine_side">
+                <value>Crispy bread.</value>
+                <value>Fluffy bread.</value>
+                <value>Oat cake.</value>
+                <value>Honey cake.</value>
+                <value>Flatbread.</value>
+                <value>Assorted fruit.</value>
+                <value>Assorted cheese.</value>
+            </table>
+            <table name="Beverage..." id="beverage">
+                <value>Spring water.</value>
+                <value>Sweet water.</value>
+                <value>Floral tea.</value>
+                <value>Strong tea.</value>
+                <value>Sweet wine.</value>
+                <value>Honey wine.</value>
+                <value>White wine.</value>
+                <value>Rosé.</value>
+                <value>Red wine.</value>
+                <value>Dark wine.</value>
+                <value>Ancient wine.</value>
+                <value>Young wine.</value>
+            </table>
+            <table name="...that leaves you feeling..." id="feeling">
+                <value>Refreshed.</value>
+                <value>Peaceful.</value>
+                <value>Content.</value>
+                <value>Carefree.</value>
+                <value>A little sleepy.</value>
+                <value>A little light-headed.</value>
+                <value>Rather nostalgic.</value>
+                <value>Rather melancholy.</value>
+            </table>
+        </category>

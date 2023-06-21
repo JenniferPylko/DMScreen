@@ -1,0 +1,33 @@
+        <category name="Caravan Owner" id="caravan_owner">
+            <name name="The merchant's name is..."/>
+            <include name="Race" include="npc_race" />
+            <table name="The merchant is..." id="caravan_owner_is">
+                <value region_start="14" region_end="26" region_include="__noun__">A member of a trading clan</value>
+                <value region_start="8" region_end="12" region_include="nobleman">A minor lord</value>
+                <value region_start="8" region_end="12" region_include="noblewoman">A minor lady</value>
+                <value>An enterprising trader</value>
+                <value region_start="14" region_end="30" region_include="noblehouse">A member of a prominent family</value>
+                <value>Of common birth</value>
+                <value region_start="9" region_end="14" region_include="caravan_owner">The real owner's representative</value>
+            </table>
+            <table name="The merchant seeks someone to..." id="caravan_owner_seeks">
+                <value region_start="20" region_end="28" region_include="artifacts">Obtain a mysterious artifact</value>
+                <value>Negotiate a trade contract</value>
+                <value>Purchase goods</value>
+                <value region_start="9" region_end="25" region_include="merchant" >Sabotage a rival merchant</value>
+                <value>Secure a marriage</value>
+                <value>Have a good time with</value>
+            </table>
+            <table name="The merchant carries..." id="caravan_owner_carries">
+                <value>A family heirloom</value>
+                <value>Several inventories and invoices</value>
+                <value>Some very valuable jewels</value>
+                <value>A compromising love letter</value>
+            </table>
+            <table name="Currency: The merchant will trade in..." id="caravan_owner_curency">
+                <value>Coins and gems</value>
+                <value>Gold and silver bullion</value>
+                <value>Water, provisions, and other goods</value>
+                <value>Shells, beads, and trinkets</value>
+            </table>
+        </category>

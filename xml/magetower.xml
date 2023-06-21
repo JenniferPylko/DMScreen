@@ -1,0 +1,145 @@
+<category name="Mage Tower" id="magetower">
+    <table name="The master of this tower is..." id="master">
+        <value region_start="9" region_end="18" region_include="sorcerer">An elven sorceress.</value>
+        <value region_start="13" region_end="18" region_include="witch">A terrifying witch.</value>
+        <value region_start="9" region_end="20" region_include="necromancer">A creepy necromancer.</value>
+        <value region_start="9" region_end="13" region_include="seer">A mystic seer.</value>
+        <value region_start="15" region_end="19" region_include="sage">A long-bearded sage.</value>
+        <value region_start="11" region_end="23" region_include="__noun__">A half-mad elementalist.</value>
+        <value region_start="12" region_end="20" region_include="__noun__">A legendary conjurer.</value>
+        <value region_start="10" region_end="18" region_include="__noun__">A retired explorer.</value>
+        <value region_start="16" region_end="21" region_include="__noun__">The leader of a cabal of tricky witches.</value>
+        <value region_start="14" region_end="28" region_include="secretsociety">The head of a secret society of wizards.</value>
+    </table>
+    <table name="The tower's shape is approximately that of..." id="shape">
+        <value>A cylinder.</value>
+        <value>A pyramid.</value>
+        <value>A stepped pyramid.</value>
+        <value>A cone.</value>
+        <value>A triangular prism.</value>
+        <value>A rectangular prism.</value>
+        <value>A pentagonal prism.</value>
+        <value>A hexagonal prism.</value>
+        <value>An octagonal prism.</value>
+        <value>An icosahedron.</value>
+    </table>
+    <table name="The tower is built of..." id="built">
+        <value>Clay bricks.</value>
+        <value>Limestone.</value>
+        <value>Sandstone.</value>
+        <value>Marble.</value>
+        <value>Obsidian.</value>
+        <value>Enchanted wood.</value>
+        <value>Crystal.</value>
+        <value>Bones.</value>
+        <value>Granite.</value>
+        <value>Solid gold.</value>
+    </table>
+    <table name="The exterior of the tower features..." id="exterior">
+        <value>Spider webs.</value>
+        <value region_start="0" region_end="4" region_include="oozes">Ooze.</value>
+        <value>Fruit-bearing vines.</value>
+        <value>Thorny vines.</value>
+        <value>Extensive repairs.</value>
+        <value>Ancient hieroglyphs.</value>
+        <value>Arcane runes.</value>
+        <value>Steel plates.</value>
+        <value>Scorch marks.</value>
+        <value>Scratch marks.</value>
+    </table>
+    <table name="The tower's entrance is guarded by..." id="entrance">
+        <value region_start="16" region_end="22" region_include="dragon">An ill-tempered dragon.</value>
+        <value>A watchful bone golem</value>
+        <value>A watchful chain golem</value>
+        <value>A watchful clay golem</value>
+        <value>A watchful flesh golem</value>
+        <value>A watchful iron golem</value>
+        <value>A watchful stone golem</value>
+        <value>An angry eldritch giant</value>
+        <value>An angry fire giant</value>
+        <value>An angry frost giant</value>
+        <value>An angry shadow giant</value>
+        <value>An angry stone giant</value>
+        <value>An angry storm giant</value>
+        <value>Cruel gargoyles.</value>
+        <value>Terrifying air elementals</value>
+        <value>Terrifying earth elementals</value>
+        <value>Terrifying fire elementals</value>
+        <value>Terrifying ice elementals</value>
+        <value>Terrifying storm elementals</value>
+        <value>Terrifying water elementals</value>
+        <value>Ghosts</value>
+        <value>Ghouls</value>
+        <value>Phantom warriors</value>
+        <value>Spectres</value>
+        <value>Wights</value>
+        <value>Zombies.</value>
+        <value>Devious traps.</value>
+        <value>A cunning sphinx.</value>
+        <value>A ferocious, talking bear</value>
+        <value>A ferocious, talking griffon</value>
+        <value>A ferocious, talking eagle</value>
+        <value>A ferocious, talking lion</value>
+        <value>A ferocious, talking serpent</value>
+        <value region_start="21" region_end="25" region_include="wolf">A ferocious, talking wolf.</value>
+        <value>A menacing, tentacled beast.</value>
+    </table>
+    <table name="The most well-protected room in the tower is..." id="protected">
+        <value region_start="4" region_end="8" region_include="wizard">The mage's laboratory.</value>
+        <value region_start="4|11" region_end="8|18" region_include="wizard|library">The mage's library.</value>
+        <value region_start="4" region_end="8" region_include="wizard">The mage's bedchamber.</value>
+        <value region_start="4" region_end="8" region_include="wizard">The mage's wine cellar.</value>
+        <value region_start="4" region_end="8" region_include="wizard">The mage's treasure vault.</value>
+        <value>A chamber specially prepared for divination rituals.</value>
+        <value>A chamber specially prepared for summoning rituals.</value>
+        <value>A chamber specially prepared for magical duels.</value>
+        <value region_start="15" region_end="21" region_include="prison">An inescapable prison.</value>
+        <value region_start="13|20" region_end="17|26" region_include="wizard|npc">The crypt of mage's master</value>
+        <value region_start="13|20" region_end="17|27" region_include="wizard|wizard">The crypt of mage's teacher</value>
+        <value region_start="13|20" region_end="17|25" region_include="wizard|npc">The crypt of mage's child</value>
+        <value region_start="13|20" region_end="17|26" region_include="wizard|npc">The crypt of mage's parent</value>
+        <value region_start="13|20" region_end="17|25" region_include="wizard|npc">The crypt of mage's lover</value>
+        <value region_start="13|31" region_end="17|36" region_include="wizard|npc">The crypt of mage's vanquished rival.</value>
+    </table>
+    <table name="The room is protected by..." id="protected_by">
+        <value>A gauntlet of mechanical traps.</value>
+        <value>A series of sophisticated magical traps.</value>
+        <value>An exploding ward.</value>
+        <value>A powerful charm that makes it easy to ignore.</value>
+        <value>A powerful charm that makes it impossible for intruders to open the door.</value>
+        <value>Illusions that make it difficult to find the door.</value>
+        <value>A powerful curse that frightens those who approach the door.</value>
+        <value>A powerful curse that causes pain in those who approach the door.</value>
+        <value>An indefatigable construct.</value>
+        <value region_start="8" region_end="13" region_include="fiend">A bound devil</value>
+        <value region_start="8" region_end="13" region_include="fiend">A bound demon</value>
+        <value>A bound elemental</value>
+        <value region_start="18" region_end="23" region_include="beast">A bound enchanted beast</value>
+        <value>A bound troll</value>
+        <value region_start="8" region_end="14" region_include="undead">A bound wraith</value>
+    </table>
+    <table name="Rumor has it that within the walls of the tower, the mage keeps..." id="rumor">
+        <value region_start="4|24" region_end="10|28" region_include="legendary_weapon|npc_class">The weapon of a storied hero.</value>
+        <value region_start="25" region_end="36" region_include="necromancer">The staff of an infamous necromancer.</value>
+        <value region_start="25" region_end="33" region_include="sorcerer">The staff of an infamous sorcerer.</value>
+        <value region_start="4|21" region_end="8|26" region_include="wand|witch">The wand of a famous witch.</value>
+        <value region_start="4|21" region_end="8|27" region_include="wand|wizard">The wand of a famous wizard.</value>
+        <value region_start="29" region_end="39" region_include="wizard">The spellbook of a notorious magic-user.</value>
+        <value region_start="4|27" region_end="13|31" region_include="artifacts|npc_class">The artifacts of an elvish hero.</value>
+        <value region_start="0|21" region_end="13|25" region_include="__noun__|wizard">Monstrosities of the mage's own creation.</value>
+        <value region_start="57" region_end="62" region_include="world">A legendary stone, mirror, or pool used for watching the world from afar.</value>
+        <value>A fabled book of demonology</value>
+        <value>A fabled book of curses of undeath</value>
+        <value>A fabled book of dream travel</value>
+        <value>A fabled book of love and war</value>
+        <value>A fabled book of planar portals</value>
+        <value>A fabled book of vile darkness.</value>
+        <value>An imprisoned aberration of terrible power</value>
+        <value region_start="14" region_end="19" region_include="fiend">An imprisoned devil of terrible power</value>
+        <value region_start="14" region_end="19" region_include="fiend">An imprisoned demon of terrible power</value>
+        <value>An imprisoned djinni of terrible power</value>
+        <value>An imprisoned efreeti of terrible power</value>
+        <value region_start="14" region_end="26" region_include="vampire">An imprisoned vampire lord of terrible power</value>
+        <value region_start="10" region_end="18" region_include="princess">A captive princess.</value>
+    </table>
+</category>

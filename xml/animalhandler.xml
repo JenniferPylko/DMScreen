@@ -1,0 +1,26 @@
+<category name="Animal Handler/Porter" id="animalhandler">
+    <name name="The animal handler's name is:"/>
+    <include name="Race" include="npc_race" />
+    <table name="The animal handler has:" id="animalhandler_has">
+        <value>An awkward gait</value>
+        <value>Incredibly large hands</value>
+        <value>Holes in the breeches</value>
+        <value region_start="9" region_end="13" region_include="__noun__">Quite an odor</value>
+        <value>A threadbare shirt</value>
+        <value>A ragged beard</value>
+    </table>
+    <table name="The animal handler wants to:" id="animalhandler_wants">
+        <value>Earn a little silver</value>
+        <value region_start="8" region_end="12" region_include="__noun__">Go back home</value>
+        <value region_start="12" region_end="19" region_include="__noun__">Survive the journey</value>
+        <value>Have a drink and a rest</value>
+    </table>
+    <table name="The animal handler carries:" id="animalhandler_carries">
+        <value region_start="2|17" region_end="9|26" region_include="__noun__|__noun__">A memento from a loved one</value>
+        <value>Several morsels of animal feed</value>
+        <value>Several morsels of food</value>
+        <value>A few copper pieces</value>
+        <value>A waterskin</value>
+        <value>A wineskin</value>
+    </table>
+</category>

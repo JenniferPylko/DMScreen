@@ -1,0 +1,56 @@
+        <category name="Harlot" id="harlot" hasa="brothel">
+            <name name="The harlot's name is..."/>
+            <include name="Race" include="npc_race" />
+            <table name="The harlot is..." id="is">
+                <value>A veteran who may have been beautiful</value>
+                <value>A passionate young woman</value>
+                <value>A homely young lady</value>
+                <value>A friendly and plump woman</value>
+                <value region_start="32" region_end="37" region_include="noblehouse">The bastard daughter of a noble house</value>
+                <value region_start="8" region_end="17" region_include="nation">A young foreigner</value>
+                <value region_start="4" region_end="8" region_include="__noun__">The boss's favorite</value>
+                <value>An exotic beauty</value>
+                <value>New to the place and always in trouble</value>
+                <value>New to the place and eager to please</value>
+            </table>
+            <table name="Everyone is beautiful, the harlot has..." id="has">
+                <value>A pretty smile</value>
+                <value>Beautiful eyes</value>
+                <value>Lovely, long eyelashes</value>
+                <value>Lush, curly locks</value>
+                <value>Short-cropped hair</value>
+                <value>A clean satin gown</value>
+            </table>
+            <table name="No one is flawless; the harlot has..." id="flaw">
+                <value>A gimpy leg</value>
+                <value>Crooked teeth</value>
+                <value>A scowl on her face</value>
+                <value>An unsightly scar</value>
+                <value>An unfortunately shaped nose</value>
+                <value>A large mole on her face</value>
+                <value>Crossed-eyes</value>
+                <value>A mustache</value>
+            </table>
+            <table name="The harlot's flaw is..." id="flaw_is">
+                <value>Barely noticable</value>
+                <value>Well-concealed by make-up or practice</value>
+                <value>Something you can look past</value>
+                <value>Intimidating</value>
+            </table>
+            <table name="The harlot is particularly skilled at..." id="skilled">
+                <value>Listening and offering emotional support</value>
+                <value>Bringing a smile to her client's faces without even touching them</value>
+                <value>Bringing a smile to her client's faces as soon as she touches them</value>
+                <value>Embroidery and sewing</value>
+                <value>Cooking and cleaning</value>
+                <value>Drinking and swearing</value>
+            </table>
+            <table name="The harlot is looking to..." id="looking">
+                <value region_start="36" region_end="41" region_include="brothel">Earn enough coin to get out of this place</value>
+                <value region_start="17|37" region_end="24|42" region_include="__noun__|harlot">Bring to light a scandal involving a rival</value>
+                <value region_start="37" region_end="42" region_include="brothel">Secure a marriage to get out of this place</value>
+                <value region_start="15" region_end="20" region_include="__noun__">Hear word of a child given away</value>
+                <value region_start="33" region_end="60" region_include="__noun__">Hatch a plan for revenge against the man who ruined her life</value>
+                <value>Drink some wine and have a laugh</value>
+            </table>
+        </category>

@@ -1,0 +1,162 @@
+        <category name="Gossip and Hearsay" id="gossip">
+            <table name="I heard that..." id="heard">
+                <value>a year ago from tonight</value>
+                <value>one night last month</value>
+                <value>twice last month</value>
+                <value>twice last week</value>
+                <value>one day last week</value>
+                <value>one night last week</value>
+                <value>three nights ago</value>
+                <value>the day before yesterday</value>
+                <value>the night before last</value>
+                <value>yesterday morning</value>
+                <value>yesterday afternoon</value>
+                <value>just before sunset</value>
+                <value>after sunset</value>
+                <value>after nightfall</value>
+                <value>before midnight</value>
+                <value>past midnight</value>
+                <value>in the wee hours</value>
+                <value>just before dawn</value>
+                <value>at daybreak</value>
+                <value>earlier today</value>
+            </table>
+            <table name="...who..." replace="true" id="who">
+                <value>the king/queen</value>
+                <value>a farmer</value>
+                <value region_start="0" region_end="10" region_include="merchant">a merchant</value>
+                <value region_start="0" region_end="8" region_include="wizard">a wizard</value>
+                <value region_start="0" region_end="9" region_include="soldier">a soldier</value>
+                <value region_start="0" region_end="8" region_include="__noun__">a cleric</value>
+                <value region_start="0" region_end="7" region_include="druid">a druid</value>
+                <value>an orphan</value>
+                <value region_start="0" region_end="8" region_include="sailor">a sailor</value>
+                <value region_start="2" region_end="7" region_include="thief">a thief</value>
+                <value region_start="0" region_end="7" region_include="miner">a miner</value>
+                <value region_start="0" region_end="6" region_include="nobleman">a lord</value>
+                <value region_start="0" region_end="8" region_include="knight">a knight</value>
+                <value>the mayor</value>
+                <value>an innkeeper</value>
+                <value region_start="0" region_end="7" region_include="dwarf">a dwarf</value>
+                <value>an elf</value>
+                <value region_start="2" region_end="8" region_include="bard">a singer</value>
+                <value region_start="0" region_end="8" region_include="pirate">a pirate</value>
+                <value region_start="0" region_end="7" region_include="witch">a witch</value>
+                <value region_start="0" region_end="7" region_include="undead">a ghost</value>
+            </table>
+            <table name="...was seen with..." id="seen">
+                <value region_start="0" region_end="12" region_include="harlot">a prostitute</value>
+                <value>a drunk</value>
+                <value region_start="3" region_end="11" region_include="artifacts">an artifact</value>
+                <value>a talking sword</value>
+                <value region_start="2" region_end="6" region_include="darkelf">a drow</value>
+                <value region_start="11" region_end="18" region_include="criminal">an escaped convict</value>
+                <value>a vial of poison</value>
+                <value>a book of spells</value>
+                <value>a talking animal</value>
+                <value>a sack of coins</value>
+                <value>the prince/princess</value>
+                <value>a fortune teller</value>
+                <value>an alchemist</value>
+                <value>an assassin</value>
+                <value region_start="2" region_end="9" region_include="barkeep">a barmaid</value>
+                <value>a beggar</value>
+                <value region_start="10" region_end="15" region_include="horse">a saddled horse</value>
+                <value>a hunting hound</value>
+                <value>a mule and cart</value>
+                <value>a fake mustache</value>
+                <value>some children</value>
+                <value>a priest</value>
+                <value>the mayor</value>
+            </table>
+            <table name="...down near..." id="near">
+                <value>the docks</value>
+                <value>the palace</value>
+                <value region_start="0" region_end="18" region_include="craftingguild">the crafters guild</value>
+                <value>the mages' guild</value>
+                <value region_start="0" region_end="11" region_include="brothel">the brothel</value>
+                <value>the merchant quarter</value>
+                <value region_start="0" region_end="10" region_include="tavern">the tavern</value>
+                <value region_start="0" region_end="10" region_include="prison">the prison</value>
+                <value>the museum</value>
+                <value>the asylum</value>
+                <value>the library</value>
+                <value>the barracks</value>
+                <value>the gatehouse</value>
+                <value>the bridge</value>
+                <value region_start="0" region_end="10" region_include="temple">the temple</value>
+                <value>the market square</value>
+                <value>the warehouse district</value>
+                <value>the garden district</value>
+                <value>the lighthouse</value>
+                <value>the riverfront</value>
+                <value>the edge of the forest</value>
+                <value>The edge of town</value>
+            </table>
+            <table name="...and nearby there was..." id="nearby">
+                <value>a dead commoner</value>
+                <value>a dead monster</value>
+                <value>an explosion</value>
+                <value>a bloody weapon</value>
+                <value>a planar gate</value>
+                <value region_start="2" region_end="7" region_include="fiend">a demon</value>
+                <value region_start="2" region_end="9" region_include="vampire">a vampire</value>
+                <value>an angry mob</value>
+                <value region_start="7" region_end="12" region_include="nobleman">a dead noble</value>
+                <value>an arcane sigil</value>
+                <value>a frightened crowd</value>
+                <value>an angel</value>
+                <value region_start="2" region_end="7" region_include="fiend">a devil</value>
+                <value>a series of claw marks</value>
+                <value>a series of scorch marks</value>
+                <value>an empty vial</value>
+                <value>a burned book</value>
+                <value>a werewolf</value>
+                <value region_start="2" region_end="7" region_include="undead">a ghost</value>
+                <value>a horde of zombies</value>
+            </table>
+            <table name="I heard it from..." id="from">
+                <value region_start="0" region_end="12" region_include="shopkeeper">a shopkeeper</value>
+                <value region_start="2" region_end="15" region_include="__noun__">a basket weaver</value>
+                <value region_start="2" region_end="8" region_include="__noun__">a grocer</value>
+                <value region_start="2" region_end="9" region_include="merchant">a peddler</value>
+                <value region_start="2" region_end="8" region_include="__noun__">a beggar</value>
+                <value region_start="3" region_end="9" region_include="__noun__">an urchin</value>
+                <value region_start="2" region_end="9" region_include="barkeep">a barkeep</value>
+                <value region_start="2" region_end="14" region_include="maidservant">a serving girl</value>
+                <value region_start="2" region_end="8" region_include="squire">a squire</value>
+                <value region_start="2" region_end="10" region_include="bard">a musician</value>
+                <value region_start="2" region_end="8" region_include="__noun__">a madame</value>
+                <value region_start="2" region_end="10" region_include="guard">a watchman</value>
+                <value region_start="2|9" region_end="6|16" region_include="ship|sailor">a ship's captain</value>
+                <value region_start="2" region_end="15" region_include="__noun__">a peasant woman</value>
+                <value region_start="2" region_end="11" region_include="fisherfolk">a fisherman's wife</value>
+                <value region_start="2" region_end="6" region_include="monk">a monk</value>
+                <value region_start="2" region_end="11" region_include="mercenary">a sellsword</value>
+                <value region_start="2" region_end="9" region_include="__noun__">a gambler</value>
+                <value region_start="5|14" region_end="8|17" region_include="__noun__|tavern">some guy in a pub</value>
+                <value>a little bird</value>
+            </table>
+            <table name="...so it..." id="truth">
+                <value>might be true</value>
+                <value>must be true</value>
+                <value>has to be true</value>
+                <value>can't be true</value>
+                <value>could be true</value>
+                <value>is definitely true</value>
+                <value>may be true</value>
+                <value>is likely true</value>
+                <value>is possibly true</value>
+                <value>is certainly true</value>
+                <value>is absolutely true</value>
+                <value>is probably true</value>
+                <value>is likely partially true</value>
+                <value>is definitely not true</value>
+                <value>can't be entirely false</value>
+                <value>isn't likely false</value>
+                <value>isn't likely entirely false</value>
+                <value>might not be true</value>
+                <value>isn't likely the whole story</value>
+                <value>is probably just idle gossip</value>
+            </table>
+        </category>

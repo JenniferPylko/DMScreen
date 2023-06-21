@@ -1,0 +1,53 @@
+<category name="Pickpocket Loot" id="pickpocketloot">
+    <table name="The thief finds..." id="pickpocketloot_find">
+        <value>A scrap of paper or parchment with an unintelligible note scribbled on it</value>
+        <value>A scrap of paper or parchment with a list of mundane items or tasks written on it</value>
+        <value>Some link or a bit of thread</value>
+        <value>An errant button or broken piece of something</value>
+        <value>An old or well-work old brass key</value>
+        <value>An old or well-work large brass key</value>
+        <value>An old or well-work thin brass key</value>
+        <value>An old or well-work heavy iron key</value>
+        <value>An old or well-work spindly iron key</value>
+        <value>An old or well-work bone key</value>
+        <value>An old or well-work bronze key</value>
+        <value>An old or well-work gold key</value>
+        <value>An old or well-work oak key</value>
+        <value>An old or well-work silver key</value>
+        <value>An old or well-work stone key</value>
+        <value>A new or little-used old brass key</value>
+        <value>A new or little-used large brass key</value>
+        <value>A new or little-used thin brass key</value>
+        <value>A new or little-used heavy iron key</value>
+        <value>A new or little-used spindly iron key</value>
+        <value>A new or little-used bone key</value>
+        <value>A new or little-used bronze key</value>
+        <value>A new or little-used gold key</value>
+        <value>A new or little-used oak key</value>
+        <value>A new or little-used silver key</value>
+        <value>A new or little-used stone key</value>
+        <value>A clean fine silk handkerchief</value>
+        <value>A clean simple cotton handkerchief</value>
+        <value>A clean lacy handkerchief</value>
+        <value>A clean threadbare handkerchief</value>
+        <value>A clean striped handkerchief</value>
+        <value>A clean spotted handkerchief</value>
+        <value>A soiled fine silk handkerchief</value>
+        <value>A soiled smile cotton handkerchief</value>
+        <value>A soiled lacy handkerchief</value>
+        <value>A soiled threadbare handkerchief</value>
+        <value>A soiled striped handkerchief</value>
+        <value>A soiled spotted handkerchief</value>
+        <value>2d4 cp</value>
+        <value>3d6 cp</value>
+        <value>1d6 sp</value>
+        <value>1d6 sp plus 1d10 cp</value>
+        <value>2d6 sp</value>
+        <value>2d6 sp plus 1d10 cp</value>
+        <value>1d4 gp</value>
+        <value>1d4 gp plus 1d10 sp</value>
+        <value>A gem or small piece of jewelery worth 5d10 gp</value>
+        <value>A gem or small piece of jewelery worth 10d10 gp</value>
+        <value>1d6 gp and roll again on this table</value>
+    </table>
+</category>
