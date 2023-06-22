@@ -4,12 +4,12 @@ import pathlib
 import json
 import logging
 import sqlite3
-import pinecone
 import openai
 import requests
 
 import dmscreenxml
 from models import NPC, NPCs, GameNotes, Game
+from chatbot import ChatBot
 
 from typing import List
 
@@ -22,23 +22,18 @@ from watchdog.observers import Observer
 from langchain.document_loaders import TextLoader
 from langchain.chat_models import ChatOpenAI
 from langchain.embeddings.openai import OpenAIEmbeddings
-from langchain.vectorstores import Chroma, Pinecone
-from langchain.text_splitter import RecursiveCharacterTextSplitter
+from langchain.vectorstores import Chroma
 from langchain.chat_models import ChatOpenAI
 from langchain.document_loaders import TextLoader
 from langchain.document_loaders import UnstructuredPDFLoader
 from langchain.prompts import PromptTemplate
 from langchain.output_parsers import PydanticOutputParser
-from langchain.llms import OpenAI
 from pydantic import BaseModel, Field, validator
 from langchain.chains.question_answering import load_qa_chain
 
 logging.basicConfig(level=logging.DEBUG)
 
 """Global Variables"""
-
-""" FLAGS """
-ENABLE_CHATBOT = True
 
 """ CONSTANTS """
 DIR_ROOT = os.path.dirname(os.path.abspath(__file__))
@@ -49,7 +44,6 @@ DIR_XML = os.path.join(DIR_ROOT, 'xml')
 
 #model_name = 'gpt-4'
 model_name = 'gpt-3.5-turbo-16k'
-reference_instance = None
 notes_instance = None
 game = None
 game_dir = None
@@ -64,12 +58,6 @@ app.config['EXPLAIN_TEMPLATE_LOADING'] = True
 if "OPENAI_API_KEY" not in os.environ:
     print("Please set the OPEN_API_KEY environment variable to your OpenAI API key.")
     exit(1)
-
-
-class ReferenceQuery(BaseModel):
-    answer: str = Field(description="answer to the users's question")
-    source: str = Field(description="The source of the answer")
-    nouns: List[str] = Field(description="A list of people's proper names in the answer. Do not include locations, spells nor groups of people")
 
 class NotesSummary(BaseModel):
     answer: str = Field(description="answer to the users's question")
@@ -127,25 +115,11 @@ class NPCQuery(BaseModel):
 class NPCKeyQuery(BaseModel):
     value: str = Field(description="The new value of the key")
 
-reference_parser = PydanticOutputParser(pydantic_object=ReferenceQuery)
 notes_summary_parser = PydanticOutputParser(pydantic_object=NotesSummary)
 names_parser = PydanticOutputParser(pydantic_object=NameList)
 npc_parser = PydanticOutputParser(pydantic_object=NPCQuery)
 npc_summary_parser = PydanticOutputParser(pydantic_object=NPCSummary)
 npc_key_parser = PydanticOutputParser(pydantic_object=NPCKeyQuery)
-
-reference_prompt = PromptTemplate(
-    template="""You are an expert on Dungeons and Dragons 5e. Your goal is to provide an
-    answer to the user's question, as it pertains to D&D. You should give factual answers only based
-    on the provided documentation, and not your own opinion. You should not provide any information
-    that is not directly related to the user's question. If you do not know the answer to the question,
-    you should say so.
-
-    {format_instructions}
-    {query}""",
-    input_variables=["query"],
-    partial_variables={"format_instructions": reference_parser.get_format_instructions()}
-)
 
 notes_prompt = PromptTemplate(
     template="""You are a High Fantasy Storyteller, like George R.R. Martin, Robert Jordan, or J.R.R. Tolkein. Give me a summary of the following game session notes as though they were a part of an epic story. Including any important NPCs, locations, and events. {format_instructions}\n\n{notes}""",
@@ -596,48 +570,6 @@ def get_names(temperature=0.9, model='text-davinci-003', game_id=None) -> list[s
             NPCs().add_npc(name)
     return names
 
-def send_message(message, temperature=0.0):
-    book_query = message
-    _input = reference_prompt.format_prompt(query=book_query)
-
-    docs = reference_instance.similarity_search(_input.to_messages()[0].content, k=4, filter={
-        "collection": "core",
-        "title": {"$or": [{"$eq":"Tyranny of Dragons"}]}
-    })
-    llm = ChatOpenAI(model_name=model_name, temperature=temperature, openai_api_key=os.environ["OPENAI_API_KEY"])
-    chain = load_qa_chain(llm, chain_type="stuff", verbose=True)
-    answer = chain.run(input_documents=docs, question=_input.to_messages()[0].content, verbose=True)
-
-    try:
-        parsed_answer = reference_parser.parse(answer)
-    except:
-        parsed_answer = ReferenceQuery(answer=answer, source="Unknown")
-
-    return parsed_answer
-
-def add_documents(loader, instance):
-    documents = loader.load()
-    text_splitter = RecursiveCharacterTextSplitter(
-        chunk_size=1000, chunk_overlap=100, separators=["\n\n", "\n", ". ", ",", " ", ""])
-    texts = text_splitter.split_documents(documents)
-    instance.add_documents(texts)
-
-def reload_documents():
-    for file in [os.path.join(dp, f) for dp, dn, fn in os.walk(os.path.expanduser(DIR_DOCS)) for f in fn]:
-        file_extension = pathlib.Path(file).suffix
-        loader = None
-        match file_extension:
-            case '.txt':
-                loader = TextLoader(file, 'utf-8')
-            case '.pdf':
-                loader = UnstructuredPDFLoader(file, 'utf-8')
-            case _:
-                print("Unsupported file type: "+file_extension)
-    
-        loader = TextLoader(file, 'utf-8')
-        print("Adding documents from "+file)
-        add_documents(loader, reference_instance)
-
 def generate_npc(npc: NPC, name:str, fields:dict={}, game_id:int=None):
     fields["game_id"] = game_id
     fields["name"] = name
@@ -648,25 +580,19 @@ def generate_npc(npc: NPC, name:str, fields:dict={}, game_id:int=None):
 @app.route('/home')
 def home():
     db = sqlite3.connect(os.path.join(DIR_ROOT, 'db.sqlite3'))
-    # create table
-    """
-    cursor = db.cursor()
-    cursor.execute("CREATE TABLE IF NOT EXISTS names(id INTEGER PRIMARY KEY, name TEXT);")
-    cursor.close()
-    db.commit()
-    db.close()
-    """
 
     todays_date = time.strftime("%m/%d/%Y")
     return render_template('dmscreen.html', **locals())
 
 @app.route('/ask', methods=['POST', 'OPTIONS'])
 def ask():
+    
     message = request.form.get('question')
     modules = request.form.get('modules')
     temperature = request.form.get('temperature')
-    gpt_response = send_message(message, temperature)
-    response = make_response([gpt_response.answer, gpt_response.source, gpt_response.nouns])
+    chatbot = ChatBot(os.getenv("OPENAI_API_KEY"), os.getenv("PINECONE_API_KEY"), os.getenv("PINECONE_ENVIRONMENT"))
+    answer = chatbot.send_message(message, temperature=temperature)
+    response = make_response([answer.answer, answer.source, answer.nouns])
     
     response.mimetype = "text/plain"
     response.headers.add('Access-Control-Allow-Origin', '*')
@@ -755,7 +681,7 @@ def savenotes(model='text-davinci-003', temperature=0.2):
     with open(notes_file, 'w') as f:
         f.write(notes_formatted)
     loader = TextLoader(notes_file, 'utf-8')
-    add_documents(loader, notes_instance)
+    #add_documents(loader, notes_instance)
 
     gpt_response = get_notes_summary(notes)
     response_text = gpt_response.answer
@@ -920,23 +846,6 @@ if __name__ == '__main__':
     PROMPT = PromptTemplate(template=template, input_variables=["modules", "message"])
     chain_type_kwargs = {"prompt": PROMPT}
     """
-    if (ENABLE_CHATBOT == True):
-        pinecone.init(api_key=os.environ["PINECONE_API_KEY"], environment=os.environ["PINECONE_ENVIRONMENT"])
-        index_name = '5e'
-
-        embeddings = OpenAIEmbeddings(openai_api_key=os.environ["OPENAI_API_KEY"])
-        reference_instance = Pinecone.from_existing_index(index_name, embedding=embeddings)
-
-        #reference_instance = Chroma(embedding_function=embeddings, persist_directory=DIR_PERSIST, )
-        #reference_instance.persist()
-
-    """Set up file watchdog in its own thread"""
-    patterns = ["*.txt", "*.pdf"]
-    ignore_patterns = None
-    ignore_directories = True
-    case_sensitive = True
-    path = DIR_DOCS
-    go_recursively = True
 
     """Start the webserver"""
     app.run(port=30003)
