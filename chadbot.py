@@ -26,16 +26,20 @@ PERSONALITY="""You are a friendly assistant named Chad that is an expert on the 
         """
 PINECONE_INDEX_NAME = "5e"
 
+if "OPEN_API_KEY" not in os.environ:
+    print("Please set the OPEN_API_KEY environment variable to your OpenAI API key.")
+    exit(1)
+
 intents = nextcord.Intents.default()
 intents.message_content = True
 
 bot = commands.Bot(description=BOT_DESCRIPTION, intents=intents, command_prefix='$')
-chat = ChatOpenAI(model_name=DEFAULT_MODEL, temperature=DEFAULT_TEMPERATURE, openai_api_key=os.environ["OPENAP_API_KEY"])
+chat = ChatOpenAI(model_name=DEFAULT_MODEL, temperature=DEFAULT_TEMPERATURE, openai_api_key=os.environ["OPENAI_API_KEY"])
 chat_history:list = [
     SystemMessage(content=PERSONALITY)
 ]
 
-embeddings = OpenAIEmbeddings(openai_api_key=os.environ["OPENAP_API_KEY"])
+embeddings = OpenAIEmbeddings(openai_api_key=os.environ["OPENAI_API_KEY"])
 reference_instance = Pinecone.from_existing_index(PINECONE_INDEX_NAME, embedding=embeddings)
 
 functions = [{
@@ -75,7 +79,7 @@ def show_help_message():
 
 def search_vectorstore(query, model_name=DEFAULT_MODEL, temperature=DEFAULT_TEMPERATURE):
     docs = reference_instance.similarity_search(query, k=4)
-    llm = ChatOpenAI(model_name="gpt-3.5-turbo", temperature=temperature, openai_api_key=os.environ["OPENAP_API_KEY"])
+    llm = ChatOpenAI(model_name="gpt-3.5-turbo", temperature=temperature, openai_api_key=os.environ["OPENAI_API_KEY"])
     chain = load_qa_chain(llm, chain_type="stuff", verbose=True)
     answer = chain.run(input_documents=docs, question=query, verbose=True)
     return answer

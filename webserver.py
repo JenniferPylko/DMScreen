@@ -15,7 +15,7 @@ from typing import List
 
 from flask import Flask, render_template, request, make_response
 
-from dotenv import dotenv_values
+from dotenv import dotenv_values, load_dotenv
 
 from watchdog.observers import Observer
 
@@ -60,6 +60,11 @@ app = Flask(__name__)
 app.config['SEND_FILE_MAX_AGE_DEFAULT'] = 0
 app.config['TEMPLATES_AUTO_RELOAD'] = True
 app.config['EXPLAIN_TEMPLATE_LOADING'] = True
+
+if "OPENAI_API_KEY" not in os.environ:
+    print("Please set the OPEN_API_KEY environment variable to your OpenAI API key.")
+    exit(1)
+
 
 class ReferenceQuery(BaseModel):
     answer: str = Field(description="answer to the users's question")
@@ -599,7 +604,7 @@ def send_message(message, temperature=0.0):
         "collection": "core",
         "title": {"$or": [{"$eq":"Tyranny of Dragons"}]}
     })
-    llm = ChatOpenAI(model_name=model_name, temperature=temperature, openai_api_key=os.environ["OPENAP_API_KEY"])
+    llm = ChatOpenAI(model_name=model_name, temperature=temperature, openai_api_key=os.environ["OPENAI_API_KEY"])
     chain = load_qa_chain(llm, chain_type="stuff", verbose=True)
     answer = chain.run(input_documents=docs, question=_input.to_messages()[0].content, verbose=True)
 
@@ -682,7 +687,7 @@ def setgame():
     else:
         game_persist_dir = os.path.join(game_dir, 'db')
 
-    embeddings = OpenAIEmbeddings(openai_api_key=os.environ["OPENAP_API_KEY"])
+    embeddings = OpenAIEmbeddings(openai_api_key=os.environ["OPENAI_API_KEY"])
     notes_instance = Chroma(embedding_function=embeddings, persist_directory=game_persist_dir)
     notes_instance.persist()
 
@@ -919,7 +924,7 @@ if __name__ == '__main__':
         pinecone.init(api_key=os.environ["PINECONE_API_KEY"], environment=os.environ["PINECONE_ENVIRONMENT"])
         index_name = '5e'
 
-        embeddings = OpenAIEmbeddings(openai_api_key=os.environ["OPENAP_API_KEY"])
+        embeddings = OpenAIEmbeddings(openai_api_key=os.environ["OPENAI_API_KEY"])
         reference_instance = Pinecone.from_existing_index(index_name, embedding=embeddings)
 
         #reference_instance = Chroma(embedding_function=embeddings, persist_directory=DIR_PERSIST, )

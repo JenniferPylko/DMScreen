@@ -1,10 +1,7 @@
-import openai
 import os
 import logging
 import glob
-import sys
 
-from langchain import OpenAI
 from langchain.chat_models import ChatOpenAI
 from langchain.chains.summarize import load_summarize_chain
 from langchain.text_splitter import RecursiveCharacterTextSplitter
@@ -14,7 +11,13 @@ logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(levelname)s - %(
 
 root_dir = os.path.dirname(os.path.abspath(__file__))
 audio_dir = os.path.join(root_dir, "audio")
-llm = ChatOpenAI(temperature=0, openai_api_key=os.environ["OPENAP_API_KEY"], model_name="gpt-4")
+
+if "OPEN_API_KEY" not in os.environ:
+    print("Please set the OPEN_API_KEY environment variable to your OpenAI API key.")
+    exit(1)
+
+
+llm = ChatOpenAI(temperature=0, openai_api_key=os.environ["OPENAI_API_KEY"], model_name="gpt-4")
 text_splitter = RecursiveCharacterTextSplitter(chunk_size=2000, chunk_overlap=100)
 
 # read transcript from file
