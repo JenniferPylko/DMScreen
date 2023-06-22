@@ -33,8 +33,6 @@ from langchain.chains.question_answering import load_qa_chain
 
 logging.basicConfig(level=logging.DEBUG)
 
-"""Global Variables"""
-
 """ CONSTANTS """
 DIR_ROOT = os.path.dirname(os.path.abspath(__file__))
 DIR_DOCS = os.path.join(DIR_ROOT, 'docs')
