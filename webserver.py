@@ -55,9 +55,11 @@ app.config['SEND_FILE_MAX_AGE_DEFAULT'] = 0
 app.config['TEMPLATES_AUTO_RELOAD'] = True
 app.config['EXPLAIN_TEMPLATE_LOADING'] = True
 
-if "OPENAI_API_KEY" not in os.environ:
-    print("Please set the OPEN_API_KEY environment variable to your OpenAI API key.")
-    exit(1)
+# Required Environment Variables
+for key in ['OPENAI_API_KEY', 'PINECONE_API_KEY', 'PINECONE_ENVIRONMENT', 'PINECONE_INDEX']:
+    if key not in os.environ:
+        print("Please set the "+key+" environment variable in .env")
+        exit(1)
 
 class NotesSummary(BaseModel):
     answer: str = Field(description="answer to the users's question")
@@ -243,7 +245,7 @@ npc_create_partial_prompt = PromptTemplate(
     partial_variables={"format_instructions": npc_parser.get_format_instructions()}
 )
 
-def get_notes_summary(notes="", temperature=0.5, model='gpt-3.5-turbo'):
+def get_notes_summary(notes="", temperature=0.5, model='gpt-3.5-turbo-0613'):
     _input = notes_prompt.format_prompt(notes=notes)
     messages = _input.to_messages()
 
@@ -480,7 +482,7 @@ def get_npc(id: int, temperature: float = 0.9, model: str = 'gpt-3.5-turbo-16k',
             else:
                 return None
 
-def get_npc_summary(id, model="gpt-3.5-turbo", temperature="0.5"):
+def get_npc_summary(id, model="gpt-3.5-turbo-0613", temperature="0.5"):
     npc = NPCs().get_npc(id)
     _input = npc_summary_prompt.format_prompt(name=npc.data["name"], npc_class=npc.data["npc_class"],
                                               background=npc.data["background"], alignment=npc.data["alignment"],
@@ -508,7 +510,7 @@ def get_npc_summary(id, model="gpt-3.5-turbo", temperature="0.5"):
     npc.update(summary=parsed_answer.summary)
     return parsed_answer.summary
 
-def regen_npc_key(id, key, model="gpt-3.5-turbo", temperature="0.5"):
+def regen_npc_key(id, key, model="gpt-3.5-turbo-0613", temperature="0.5"):
     npc = NPCs().get_npc(id)
     _input = npc_key_prompt.format_prompt(name=npc.data["name"], npc_class=npc.data["npc_class"],
                                               background=npc.data["background"], alignment=npc.data["alignment"],
