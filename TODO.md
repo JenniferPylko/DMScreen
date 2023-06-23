@@ -1,6 +1,7 @@
 # TODO
 ## DM Screen
 ### v0.1 - Personal Use
+- Craig needs to notice important events such as character death
 - Move game notes into its own object
 - Update ChatBot to use functions instead of LangChain templates
 - Improve prompt to get only proper nouns back from ChatBot
@@ -40,6 +41,7 @@
 - Support other systems and genres
 
 ## ChadBot
+- Bind ChadBot to a specific channel
 - Record Audio
 - Replace whisper.py/split_audio.py to transcribe audio
 - Improve cost effectiveness of ChadBot (too many gpt4 queries)

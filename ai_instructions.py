@@ -12,8 +12,8 @@ logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(levelname)s - %(
 root_dir = os.path.dirname(os.path.abspath(__file__))
 audio_dir = os.path.join(root_dir, "audio")
 
-if "OPEN_API_KEY" not in os.environ:
-    print("Please set the OPEN_API_KEY environment variable to your OpenAI API key.")
+if "OPENAI_API_KEY" not in os.environ:
+    print("Please set the OPENAI_API_KEY environment variable to your OpenAI API key.")
     exit(1)
 
 
