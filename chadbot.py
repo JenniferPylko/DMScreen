@@ -2,6 +2,7 @@ import nextcord
 from nextcord.ext import commands
 import os
 import json
+import dotenv
 
 from langchain.chat_models import ChatOpenAI
 from langchain.schema import (
@@ -26,7 +27,7 @@ PERSONALITY="""You are a friendly assistant named Chad that is an expert on the 
         """
 PINECONE_INDEX_NAME = "5e"
 
-if "OPEN_API_KEY" not in os.environ:
+if "OPENAI_API_KEY" not in os.environ:
     print("Please set the OPEN_API_KEY environment variable to your OpenAI API key.")
     exit(1)
 
@@ -136,4 +137,4 @@ async def on_message(message: nextcord.Message):
 
     await bot.process_commands(message)
 
-bot.run("MTEyMDc3NDkyNjQwODg4MDI1MA.GUgZLF.PtCGya7kTZ_zSQklmSd4WCEdJ7ZInxUbjFzhAA")
+bot.run(os.environ["DISCORD_API_KEY"])

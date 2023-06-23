@@ -1,6 +1,6 @@
 
 *.pyc
-ai_instructions.txt
+ai_instructions*.txt
 *.sqlite3
 *.parquet
 *.pkl
