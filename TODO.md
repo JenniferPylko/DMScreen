@@ -44,6 +44,7 @@
 
 ## ChadBot
 - Recognize speaker
+- Train Chad on whether a message is intended for him or not
 - Record Audio
 - Replace whisper.py/split_audio.py to transcribe audio
 - Improve cost effectiveness of ChadBot (too many gpt4 queries)

@@ -73,7 +73,6 @@ class NPCQuery(BaseModel):
     hair_style: str = Field(description="The NPC's hair style")
     ears: str = Field(description="The NPC's ear shape")
     nose: str = Field(description="The NPC's nose shape")
-    mouth: str = Field(description="The NPC's mouth shape")
     chin: str = Field(description="The NPC's chin shape")
     mouth: str = Field(description="The NPC's mouth shape")
     features: str = Field(description="The NPC's distinguishing features")
@@ -138,7 +137,6 @@ npc_summary_prompt = PromptTemplate(
     Nose: {nose}
     Mouth: {mouth}
     Chin: {chin}
-    Mouth: {mouth}
     Features: {features}
     Flaws: {flaws}
     Ideals: {ideals}
