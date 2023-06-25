@@ -595,13 +595,11 @@ def savenotes(model='text-davinci-003', temperature=0.2):
     note = GameNotes(game.data['abbr']).preprocess_and_add(notes, date).data['summary']
     return send_flask_response(make_response, [note])
 
-
 @app.route('/getnote', methods=['POST'])
 def getnote():
     date = request.form.get('date')
     note = GameNotes(game.data['abbr']).get_by_date(request.form.get('date'))
     return send_flask_response(make_response, [note.data['orig']])
-
 
 @app.route('/getnpc', methods=['POST', 'GET'])
 def getnpc():

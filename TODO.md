@@ -1,24 +1,21 @@
 # TODO
 ## DM Screen
 ### v0.1 - Personal Use
-- Craig needs to notice important events such as character death
-- Move game notes into its own object
+- Show thinking... when ChatBot is working on a response
 - Update ChatBot to use functions instead of LangChain templates
-- Improve prompt to get only proper nouns back from ChatBot
+- - Improve prompt to get only proper nouns back from ChatBot
+- - Update ChatBot, let the user type the following
+- - - Create NPC with black hair...
+- - - Remind me to...
 - Find Todo messages in notes, and put them in plans and ideas
+- Handle 500 errors
 - Work on a way to organize plans and ideas
-- Update ChatBot, let the user type the following
-- - Create NPC with black hair...
-- - Remind me to...
 - Add Random Everything Generator
 - Let user manage players and characters
 - Let user manage locations
 - Let user edit date for notes
 - Let user edit/delete notes
-- Show thinking... when ChatBot is working on a response
-- Handle 500 errors
 - Make toggle button bar work
-- Move CSS and JS to their own files
 - Noun dropdown option in ChatBot to "Tell me more..."
 - Right click on ChatBot response to add it to notes
 - Let user edit/type details for NPCs
