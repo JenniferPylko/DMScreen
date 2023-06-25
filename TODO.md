@@ -1,6 +1,7 @@
 # TODO
 ## DM Screen
 ### v0.1 - Personal Use
+- Chad needs to save channel ids, and chat history to file, so it can be restarted seamlessly
 - Craig needs to notice important events such as character death
 - Move game notes into its own object
 - Update ChatBot to use functions instead of LangChain templates

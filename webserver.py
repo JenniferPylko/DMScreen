@@ -10,6 +10,7 @@ import requests
 import dmscreenxml
 from models import NPC, NPCs, GameNotes, Game
 from chatbot import ChatBot
+from notes import DMNotes
 
 from typing import List
 
@@ -58,10 +59,6 @@ for key in ['OPENAI_API_KEY', 'PINECONE_API_KEY', 'PINECONE_ENVIRONMENT', 'PINEC
     if key not in os.environ:
         print("Please set the "+key+" environment variable in .env")
         exit(1)
-
-class NotesSummary(BaseModel):
-    answer: str = Field(description="answer to the users's question")
-    nouns: List[str] = Field(description="A list of people's proper names in the answer. Do not include locations, spells nor groups of people")
 
 class NameList(BaseModel):
     names: List[str] = Field(description="A list of names")
@@ -115,17 +112,10 @@ class NPCQuery(BaseModel):
 class NPCKeyQuery(BaseModel):
     value: str = Field(description="The new value of the key")
 
-notes_summary_parser = PydanticOutputParser(pydantic_object=NotesSummary)
 names_parser = PydanticOutputParser(pydantic_object=NameList)
 npc_parser = PydanticOutputParser(pydantic_object=NPCQuery)
 npc_summary_parser = PydanticOutputParser(pydantic_object=NPCSummary)
 npc_key_parser = PydanticOutputParser(pydantic_object=NPCKeyQuery)
-
-notes_prompt = PromptTemplate(
-    template="""You are a High Fantasy Storyteller, like George R.R. Martin, Robert Jordan, or J.R.R. Tolkein. Give me a summary of the following game session notes as though they were a part of an epic story. Including any important NPCs, locations, and events. {format_instructions}\n\n{notes}""",
-    input_variables=["notes"],
-    partial_variables={"format_instructions": notes_summary_parser.get_format_instructions()}
-)
 
 names_prompt = PromptTemplate(
     template="""Give me a list of {names_need} names appropriate for a Dungeons and Dragon fantasy setting. {format_instructions}""",
@@ -242,30 +232,6 @@ npc_create_partial_prompt = PromptTemplate(
     input_variables=["attributes"],
     partial_variables={"format_instructions": npc_parser.get_format_instructions()}
 )
-
-def get_notes_summary(notes="", temperature=0.5, model='gpt-3.5-turbo-0613'):
-    _input = notes_prompt.format_prompt(notes=notes)
-    messages = _input.to_messages()
-
-    chat = ChatOpenAI(model_name=model, temperature=temperature)
-    logging.debug("Sending prompt to OpenAI using model: "+model+"\n\n"+_input.to_messages().pop().content)
-    answer = chat(_input.to_messages())
-    logging.debug("Received answer from OpenAI: "+answer.content+"\n\nType: "+str(type(answer)))
-
-    parsed_answer = ""
-    try:
-        parsed_answer = notes_summary_parser.parse(answer)
-    except:
-        if (type(answer) == str):
-            try:
-                parsed_answer = NotesSummary(answer=json.loads(answer), nouns=[])
-            except:
-                parsed_answer = NotesSummary(answer=answer, nouns=[])
-        else:
-            content = json.loads(answer.content)
-            parsed_answer = NotesSummary(answer=content["answer"], nouns=[])
-
-    return parsed_answer
 
 def get_npc(id: int, temperature: float = 0.9, model: str = 'gpt-3.5-turbo-16k', quick: bool = False):
     npc = NPCs().get_npc(int(id))
@@ -575,6 +541,12 @@ def generate_npc(npc: NPC, name:str, fields:dict={}, game_id:int=None):
     fields["name"] = name
     return npc.update(**fields)
 
+def send_flask_response(make_response, parameters:list[str]):
+    response = make_response(parameters)
+    response.mimetype = "text/plain"
+    response.headers.add('Access-Control-Allow-Origin', '*')
+    return response
+
 """Required for flask webserver"""
 @app.route('/')
 @app.route('/home')
@@ -585,18 +557,13 @@ def home():
     return render_template('dmscreen.html', **locals())
 
 @app.route('/ask', methods=['POST', 'OPTIONS'])
-def ask():
-    
+def ask():    
     message = request.form.get('question')
     modules = request.form.get('modules')
     temperature = request.form.get('temperature')
     chatbot = ChatBot(os.getenv("OPENAI_API_KEY"), os.getenv("PINECONE_API_KEY"), os.getenv("PINECONE_ENVIRONMENT"))
     answer = chatbot.send_message(message, temperature=temperature)
-    response = make_response([answer.answer, answer.source, answer.nouns])
-    
-    response.mimetype = "text/plain"
-    response.headers.add('Access-Control-Allow-Origin', '*')
-    return response
+    return send_flask_response(make_response, [answer.answer, answer.source, answer.nouns])
 
 @app.route('/setgame', methods=['POST'])
 def setgame():
@@ -605,6 +572,7 @@ def setgame():
     # Update the currently tracked game, and set embeddings 
     game = Game(request.form.get('game'))
     game_dir = os.path.join(DIR_NOTES, game.data['abbr'])
+
     # If game_dir does not exist, create it
     if not os.path.exists(game_dir):
         os.makedirs(game_dir)
@@ -613,48 +581,12 @@ def setgame():
     else:
         game_persist_dir = os.path.join(game_dir, 'db')
 
-    embeddings = OpenAIEmbeddings(openai_api_key=os.environ["OPENAI_API_KEY"])
-    notes_instance = Chroma(embedding_function=embeddings, persist_directory=game_persist_dir)
-    notes_instance.persist()
-
     # Check the db for a notes summary
     game_notes = GameNotes(game.data['abbr']).get_newest()
-
-    # Scan notes_dir for files, store the list of files and choose the most recent one
-    notes_file = None
-    notes_files = []
-    for file in [os.path.join(dp, f) for dp, dn, fn in os.walk(os.path.expanduser(game_dir)) for f in fn]:
-        file_extension = pathlib.Path(file).suffix
-        if file_extension == '.txt':
-            filename = os.path.basename(file)
-            filename = os.path.splitext(filename)[0]
-            notes_files.append(filename)
-            if notes_file == None:
-                notes_file = file
-            else:
-                if os.path.getmtime(file) > os.path.getmtime(notes_file):
-                    notes_file = file
+    notes_files = GameNotes(game.data['abbr']).get_dates()
 
     # If there is a notes summary in the db, use it, otherwise, generate one from ChatGPT
-    notes_summary = ""
-    if (game_notes != None):
-        notes_summary = game_notes.data["summary"]
-    else:
-        # Scan notes_dir for files and choose the most recent one
-        # Slurp the contents of the most recent file into string
-        notes = ""
-        if notes_file != None:
-            with open(notes_file, 'r') as f:
-                notes = f.read()
-
-        if (notes == ""):
-            notes_summary = "No notes found for "+game.data['name']
-        else:
-            gpt_response = get_notes_summary(notes)
-            notes_summary = gpt_response.answer
-
-            # Store the notes summary in the db
-            GameNotes(game.data['abbr']).add(notes, filename, notes_summary)
+    notes_summary = game_notes.data["summary"] if game_notes != None else None
 
     # Get a list of NPCs
     names = []
@@ -665,50 +597,22 @@ def setgame():
     for name in get_names(game_id=game.data['id']):
         game_names.append(name.data)
 
-    # Return the notes summary, the list of files, and the list of NPCs
-    response = make_response([notes_summary, notes_files, names, game_names])
-    response.mimetype = "text/plain"
-    response.headers.add('Access-Control-Allow-Origin', '*')
-    return response
+    return send_flask_response(make_response, [notes_summary, notes_files, names, game_names])
 
 @app.route('/savenotes', methods=['POST'])
 def savenotes(model='text-davinci-003', temperature=0.2):
     notes = request.form.get('notes')
-    demark = time.strftime("%Y-%m-%d")+" SESSION NOTES FOR "+game.data['name'].upper()
-    notes_formatted = demark+"\n\n"+notes+"\n\nEND OF "+demark
-    game_dir = os.path.join(DIR_NOTES, game.data['abbr'])
-    notes_file = os.path.join(game_dir, time.strftime("%Y-%m-%d")+'.txt')
-    with open(notes_file, 'w') as f:
-        f.write(notes_formatted)
-    loader = TextLoader(notes_file, 'utf-8')
-    #add_documents(loader, notes_instance)
+    date = time.strftime("%Y-%m-%d")
+    note = GameNotes(game.data['abbr']).preprocess_and_add(notes, date).data['summary']
+    return send_flask_response(make_response, [note])
 
-    gpt_response = get_notes_summary(notes)
-    response_text = gpt_response.answer
-    
-    db = sqlite3.connect(os.path.join(DIR_ROOT, 'db.sqlite3'))
-    cursor = db.cursor()
-    cursor.execute('INSERT INTO games_notes (game, date, orig, summary) VALUES (?, ?, ?, ?);', (game.data['abbr'], time.strftime("%Y-%m-%d"), notes, response_text))
-    db.commit()
-    cursor.close()
-    db.close()
-
-    response = make_response([response_text])
-    response.mimetype = "text/plain"
-    response.headers.add('Access-Control-Allow-Origin', '*')
-    return response
 
 @app.route('/getnote', methods=['POST'])
 def getnote():
-    notes_file = os.path.join(game_dir, request.form.get('date')+'.txt')
-    notes = ""
-    if notes_file != None:
-        with open(notes_file, 'r') as f:
-            notes = f.read()
-    response = make_response([notes])
-    response.mimetype = "text/plain"
-    response.headers.add('Access-Control-Allow-Origin', '*')
-    return response
+    date = request.form.get('date')
+    note = GameNotes(game.data['abbr']).get_by_date(request.form.get('date'))
+    return send_flask_response(make_response, [note.data['orig']])
+
 
 @app.route('/getnpc', methods=['POST', 'GET'])
 def getnpc():

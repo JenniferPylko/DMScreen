@@ -15,7 +15,8 @@ from langchain.embeddings.openai import OpenAIEmbeddings
 from langchain.chains.question_answering import load_qa_chain
 
 VERSION: float = 0.1
-DEFAULT_MODEL: str = "gpt-4-0613"
+#DEFAULT_MODEL: str = "gpt-4-0613"
+DEFAULT_MODEL: str = "gpt-3.5-turbo-0613"
 DEFAULT_TEMPERATURE: float = 0.9
 BOT_DESCRIPTION = "A bot that records sessions, and interacts with the players"
 PERSONALITY="""You are a friendly assistant named Chad that is an expert on the topic of D&D. You are
@@ -42,6 +43,8 @@ chat_history:list = [
 
 embeddings = OpenAIEmbeddings(openai_api_key=os.environ["OPENAI_API_KEY"])
 reference_instance = Pinecone.from_existing_index(PINECONE_INDEX_NAME, embedding=embeddings)
+
+sessions = []
 
 functions = [{
     "name": "help",
@@ -85,7 +88,6 @@ def search_vectorstore(query, model_name=DEFAULT_MODEL, temperature=DEFAULT_TEMP
     answer = chain.run(input_documents=docs, question=query, verbose=True)
     return answer
 
-
 def send_llm_message(message, temperature=DEFAULT_TEMPERATURE, model=DEFAULT_MODEL):
     print(f"Sending to LLM: {message}")
     human_message = HumanMessage(content=message)
@@ -112,23 +114,40 @@ def send_llm_message(message, temperature=DEFAULT_TEMPERATURE, model=DEFAULT_MOD
         print(f"LLM Answer: {answer}")
         return answer
 
-@bot.slash_command(description="Replies with pong!")
-async def ping(interaction: nextcord.Interaction):
-    await interaction.send("Pong!", ephemeral=True)
+@bot.slash_command(description="Invite Chad to your channel!")
+async def join(interaction: nextcord.Interaction):
+    print(interaction.channel)
+    print(interaction.channel_id)
+    print(interaction.guild)
+    print(interaction.user)
+    print(interaction.user.id)
+    print(interaction.user.name)
+    sessions.append(interaction)
+    await interaction.send("Howdy folks! I just logged in.", ephemeral=False)
 
-@bot.slash_command(description="Have a conversation with Chad!")
-async def convo(interaction: nextcord.Interaction):
-    await interaction.send("Hey, I'm Chad! How are you?", ephemeral=True)
+@bot.slash_command(description="Ask Chad to leave the channel")
+async def leave(interaction: nextcord.Interaction):
+    for session in sessions:
+        if session.channel_id == interaction.channel_id:
+            sessions.remove(session)
+    await interaction.send("Bye folks! I'm logging out.", ephemeral=False)
 
 @bot.event
 async def on_ready():
     print(f'{bot.user.name} has connected to Discord with user ID: {bot.user.id}!')
-    send_llm_message("Hi, how are you?")
 
 @bot.event
 async def on_message(message: nextcord.Message):
+    # don't respond to ourselves and only in the right channel
     if message.author == bot.user:
         return
+    in_session = False
+    for session in sessions:
+        if session.channel_id == message.channel.id:
+            in_session = True
+    if not in_session:
+        return
+    
     print(f"{message.author.name} said {message.content}")
     llm_response = send_llm_message(message.content)
     print(f"LLM Response: {llm_response}")

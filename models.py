@@ -1,7 +1,48 @@
 import sqlite3
 import logging
 import os
+import json
+from langchain.chat_models import ChatOpenAI
+from langchain.prompts import PromptTemplate
+from langchain.output_parsers import PydanticOutputParser
+from pydantic import BaseModel, Field
+from typing import List
+
 logging.basicConfig(level=logging.DEBUG)
+
+class NotesQuery(BaseModel):
+    summary: str = Field(description="A summary of the provided sesison notes")
+    nouns: List[str] = Field(description="A list of people's proper names in the answer. Do not include locations, spells nor groups of people")
+
+class Model():
+    def __init__(self) -> None:
+        self.__root_dir = os.path.dirname(os.path.abspath(__file__))
+        self.__db = sqlite3.connect(os.path.join(self.__root_dir, 'db.sqlite3'))
+        self.__db.row_factory = sqlite3.Row
+    
+    def get_row(self, query: str, params: tuple = None) -> dict:
+        cursor = self.__db.cursor()
+        cursor.execute(query, params)
+        row = cursor.fetchone()
+        cursor.close()
+        return row
+    
+    def get_array(self, query: str, params: tuple = None) -> list:
+        cursor = self.__db.cursor()
+        cursor.execute(query, params)
+        rows = cursor.fetchall()
+        for i, row in enumerate(rows):
+            rows[i] = row[0]
+        cursor.close()
+        return rows
+    
+    def do_insert(self, query: str, params: tuple = None) -> None:
+        cursor = self.__db.cursor()
+        cursor.execute(query, params)
+        self.__db.commit()
+        lastrowid = cursor.lastrowid
+        cursor.close()
+        return lastrowid
 
 class NPCs():
     __root_dir = os.path.dirname(os.path.abspath(__file__))
@@ -118,44 +159,95 @@ class NPC():
     def __del__(self):
         self.__db.close()
 
-class GameNotes():
-    __root_dir = os.path.dirname(os.path.abspath(__file__))
-
+class GameNotes(Model):
     def __init__(self, game: str) -> None:
+        super().__init__()
         self.game = game
-        self.__db = sqlite3.connect(os.path.join(self.__root_dir, 'db.sqlite3'))
-        self.__db.row_factory = sqlite3.Row
+        self.__notes_parser = PydanticOutputParser(pydantic_object=NotesQuery)
+        self.__notes_prompt = PromptTemplate(
+            template="""You are a High Fantasy Storyteller, like George R.R. Martin, Robert Jordan,
+            or J.R.R. Tolkein. Give me a summary of the following game session notes as though they
+            were a part of an epic story. Including any important NPCs, locations, and events.
+            
+            {format_instructions}
+            
+            {notes}""",
+            input_variables=["notes"],
+            partial_variables={"format_instructions": self.__notes_parser.get_format_instructions()}
+        )
 
     def get_newest(self):
-        cursor = self.__db.cursor()
-        cursor.execute("SELECT id FROM games_notes WHERE game=? ORDER BY date DESC LIMIT 1", (self.game, ))
-        note = cursor.fetchone()
-        cursor.close()
-
-        if note is None:
-            return None        
-        return GameNote(note['id'])
+        note = self.get_row("SELECT id FROM games_notes WHERE game=? ORDER BY date DESC LIMIT 1", (self.game,))
+        return GameNote(note['id']) if note is not None else None
     
-    def add(self, note, filename, summary):
-        cursor = self.__db.cursor()
-        cursor.execute('INSERT INTO games_notes (game, date, orig, summary) VALUES (?, ?, ?, ?);', (self.game, filename, note, summary))
-        self.__db.commit()
-        cursor.close()
-        return GameNote(cursor.lastrowid)
+    def get_by_date(self, date:str):
+        note = self.get_row("SELECT id FROM games_notes WHERE game=? AND date=?", (self.game, date))
+        return GameNote(note['id']) if note is not None else None
     
-    def __del__(self) -> None:
-        self.__db.close()
+    def preprocess_and_add(self, note, date):
+        summary:NotesQuery = self._preprocess(note)
+        return self.add(note, date, summary.summary)
+    
+    def add(self, note, date, summary):
+        id = self.do_insert('INSERT INTO games_notes (game, date, orig, summary) VALUES (?, ?, ?, ?);', (self.game, date, note, summary))
+        return GameNote(id)
+    
+    def get_all(self):
+        notes = self.get_array("SELECT id FROM games_notes WHERE game=? ORDER BY date DESC", (self.game,))
+        for i, note in enumerate(notes):
+            notes[i] = GameNote(note['id'])
+        return notes
+    
+    def get_dates(self):
+        dates = self.get_array("SELECT date FROM games_notes WHERE game=? ORDER BY date DESC", (self.game,))
+        return dates
+    
+    def _preprocess(self, note, temperature=0.5, model='gpt-3.5-turbo-0613'):
+        _input = self.__notes_prompt.format_prompt(notes=note)
+        messages = _input.to_messages()
 
+        chat = ChatOpenAI(model_name=model, temperature=temperature)
+        logging.debug("Sending prompt to OpenAI using model: "+model+"\n\n"+_input.to_messages().pop().content)
+        answer = chat(_input.to_messages())
+        logging.debug("Received answer from OpenAI: "+answer.content+"\n\nType: "+str(type(answer)))
+
+        parsed_answer = ""
+        try:
+            parsed_answer = self.__notes_parser.parse(answer)
+        except:
+            if (type(answer) == str):
+                try:
+                    parsed_answer = NotesQuery(answer=json.loads(answer), nouns=[])
+                except:
+                    parsed_answer = NotesQuery(answer=answer, nouns=[])
+            else:
+                content = json.loads(answer.content)
+                parsed_answer = NotesQuery(summary=content["summary"], nouns=[])
+
+        return parsed_answer
+    
 class GameNote():
     __root_dir = os.path.dirname(os.path.abspath(__file__))
 
-    def __init__(self, id: int) -> None:
+    def __init__(self, id: int = None, date:str = None) -> None:
+        if id is None and date is None:
+            raise Exception("Either id or date must be provided")
+        
         self.__db = sqlite3.connect(os.path.join(self.__root_dir, 'db.sqlite3'))
         self.__db.row_factory = sqlite3.Row
         self.data = {}
         cursor = self.__db.cursor()
-        cursor.execute("SELECT * FROM games_notes WHERE id = ?", (id,))
+        where = ""
+        where_args = ()
 
+        if id is not None:
+            where = " WHERE id=?"
+            where_args = (id,)
+        elif date is not None:
+            where = " WHERE date=?"
+            where_args = (date,)
+            
+        cursor.execute("SELECT * FROM games_notes "+where, where_args)
         row = cursor.fetchone()
         for key in row.keys():
             self.data[key] = row[key]
