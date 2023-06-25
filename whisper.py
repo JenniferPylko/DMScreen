@@ -72,6 +72,7 @@ map_prompt = """
 Write a concise summary of the following. When summarizing combat, only include the key points of
 the combat. Do not include the dice rolls or the results of the dice rolls. Do not include the
 narrative of the combat. Only include the key points of the combat, or funny/odd/unique moments.
+Be sure to include character deaths, if any. Be sure to include new character inductions, if any.
 "{text}"
 CONCISE SUMMARY:
 """
