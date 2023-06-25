@@ -1,6 +1,5 @@
 import os
 import time
-import pathlib
 import json
 import logging
 import sqlite3
@@ -10,23 +9,15 @@ import requests
 import dmscreenxml
 from models import NPC, NPCs, GameNotes, Game
 from chatbot import ChatBot
-from notes import DMNotes
 
 from typing import List
 
 from flask import Flask, render_template, request, make_response
-
 from dotenv import dotenv_values, load_dotenv
-
 from watchdog.observers import Observer
 
-from langchain.document_loaders import TextLoader
 from langchain.chat_models import ChatOpenAI
-from langchain.embeddings.openai import OpenAIEmbeddings
-from langchain.vectorstores import Chroma
 from langchain.chat_models import ChatOpenAI
-from langchain.document_loaders import TextLoader
-from langchain.document_loaders import UnstructuredPDFLoader
 from langchain.prompts import PromptTemplate
 from langchain.output_parsers import PydanticOutputParser
 from pydantic import BaseModel, Field, validator
@@ -59,7 +50,7 @@ for key in ['OPENAI_API_KEY', 'PINECONE_API_KEY', 'PINECONE_ENVIRONMENT', 'PINEC
     if key not in os.environ:
         print("Please set the "+key+" environment variable in .env")
         exit(1)
-
+    
 class NameList(BaseModel):
     names: List[str] = Field(description="A list of names")
 
