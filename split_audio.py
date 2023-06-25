@@ -3,6 +3,8 @@ import os
 import ffmpeg
 import sys
 
+PATH_PYTHON = "C:\users\user\AppData\Local\Programs\Python\Python39\python.exe"
+
 # Add ffmepeg to path
 root_dir = os.path.dirname(os.path.abspath(__file__))
 audio_dir = os.path.join(root_dir, "audio")
@@ -22,3 +24,6 @@ for (i, chunk) in enumerate(audio[::1400000]):
     chunk.export(chunk_name, format="mp3")
 
 print("Done")
+
+# execute whisper.py
+os.system(PATH_PYTHON + " whisper.py")
