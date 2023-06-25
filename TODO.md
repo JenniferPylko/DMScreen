@@ -29,6 +29,8 @@
 - Figure out how to stream chat responses
 - Let user manage games (add/delete/preferences)
 - Add notes to an NPC
+- Start tracking and costing tokens to learn usage/price metrics
+- Add fulltext of note transcriptions to vectorstore for better searches on what happened in a game
 
 ### v0.2 - Private Beta
 - Unify handling of wait messages while waiting for AI to complete
