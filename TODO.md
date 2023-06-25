@@ -1,7 +1,6 @@
 # TODO
 ## DM Screen
 ### v0.1 - Personal Use
-- Chad needs to save channel ids, and chat history to file, so it can be restarted seamlessly
 - Craig needs to notice important events such as character death
 - Move game notes into its own object
 - Update ChatBot to use functions instead of LangChain templates
@@ -44,7 +43,7 @@
 - Support other systems and genres
 
 ## ChadBot
-- Bind ChadBot to a specific channel
+- Recognize speaker
 - Record Audio
 - Replace whisper.py/split_audio.py to transcribe audio
 - Improve cost effectiveness of ChadBot (too many gpt4 queries)

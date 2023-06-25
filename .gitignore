@@ -13,3 +13,4 @@ static/img/npc/*
 .env
 audio/*
 summary.txt
+db/*
