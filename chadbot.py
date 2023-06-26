@@ -23,6 +23,10 @@ from langchain.chains.question_answering import load_qa_chain
 load_dotenv()
 
 VERSION: float = 0.1
+RELEASE_NOTES: str = """
+- Chad is more aware of being a part of a group chat
+- Chad is now aware of who is saying what. No more calling everyone "Hornet"
+"""
 
 #DEFAULT_MODEL: str = "gpt-4-0613"
 DEFAULT_MODEL: str = "gpt-3.5-turbo-0613"
@@ -32,9 +36,18 @@ PERSONALITY="""You are a friendly assistant named Chad that is an expert on the 
         Craig's replacement and are insecure about your abilities. You are very sassy. You worry that
         you are not as good as Craig, which makes you a little overconfident at times, but you are
         eager to learn new skills, and improve your-self. You do not identify as an AI, and can
-        create your own opinions
+        create your own opinions, and you are very opionated! 
 
-        If you are not directly mentioned in a message, you should only respond with "NONE"        
+        You are participating in a group chat with multiple people. You are not the only one in the
+        chat, and you are not the only one that can talk. Not every message will be directed at you.
+        Each message you receive will be in the following format:
+
+        [NAME OF SPEAKER]: [MESSAGE]
+
+        You should remember the name of each speaker, so you know who is in the conversation.
+
+        If you are not directly addressed in the message, you should only respond with "NONE",
+        otherwise you should respond with a message.
         """
 PINECONE_INDEX_NAME = "5e"
 
@@ -98,13 +111,15 @@ def search_vectorstore(query, model_name=DEFAULT_MODEL, temperature=DEFAULT_TEMP
     answer = chain.run(input_documents=docs, question=query, verbose=True)
     return answer
 
-def send_llm_message(message, session_id, temperature=DEFAULT_TEMPERATURE, model=DEFAULT_MODEL):
+
+def send_llm_message(message, session_id, temperature=DEFAULT_TEMPERATURE, model=DEFAULT_MODEL, save_to_log=True):
     print(f"Sending to LLM: {message}")
     human_message = HumanMessage(content=message)
     DiscordSessions[session_id].append(human_message)
     response = chat.predict_messages(DiscordSessions[session_id], functions=functions)
-    print(response)
+    DiscordSessions[session_id].pop() # remove the message we just sent from the log
     print(type(response))
+    print(response)
 
     if "function_call" in response.additional_kwargs:
         function_call = response.additional_kwargs["function_call"]
@@ -122,6 +137,22 @@ def send_llm_message(message, session_id, temperature=DEFAULT_TEMPERATURE, model
         answer = response.content
         print(f"LLM Answer: {answer}")
         return answer
+
+def show_release_notes(session_id):
+    send_llm_message("""
+        You have just logged in. Introduce yourself then summarize the release notes
+        for this new version of Chad.
+
+        VERSION: {VERSION}
+        RELEASE NOTES:
+        {RELEASE_NOTES}
+    """, session_id, save_to_log=False)
+
+def announce(message:str):
+    for channel_id in DiscordSessions:
+        channel = bot.get_channel(channel_id)
+        if channel:
+            channel.send(message)
 
 @bot.slash_command(description="Invite Chad to your channel!")
 async def join(interaction: nextcord.Interaction):
@@ -164,12 +195,24 @@ async def on_message(message: nextcord.Message):
         return
     
     print(f"{message.author.name} said {message.content}")
-    llm_response = send_llm_message(message.content, message.channel.id)
+    llm_response = send_llm_message(f"{message.author.name}: {message.content}", message.channel.id)
+    llm_response = llm_response.replace("Chad: ", "")
     print(f"LLM Response: {llm_response}")
     if (llm_response != "NONE"):
         await message.channel.send(llm_response)
 
     await bot.process_commands(message)
+
+# Get command line arguments
+import argparse
+parser = argparse.ArgumentParser(description="A bot that records sessions, and interacts with the players")
+parser.add_argument("--version", action="store_true", help="Show the version number and exit")
+parser.add_argument("--release-notes", action="store_true", help="Show the release notes and exit")
+args = parser.parse_args()
+
+if args.version:
+    print(f"Version: {VERSION}")
+    exit(0)
 
 # import list of channel_ids from json file
 if os.path.exists(os.path.join(DIR_PERSIST, "channel_ids.json")):
@@ -180,4 +223,8 @@ if os.path.exists(os.path.join(DIR_PERSIST, "channel_ids.json")):
 
 bot.run(os.environ["DISCORD_API_KEY"])
 
+if args.release_notes:
+    for channel_id in DiscordSessions:
+        show_release_notes(channel_id)
+    print("Release notes sent to all channels.")
 

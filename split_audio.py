@@ -3,7 +3,7 @@ import os
 import ffmpeg
 import sys
 
-PATH_PYTHON = "C:\users\user\AppData\Local\Programs\Python\Python39\python.exe"
+PATH_PYTHON = "C:\\users\\user\\AppData\\Local\\Programs\\Python\\Python39\\python.exe"
 
 # Add ffmepeg to path
 root_dir = os.path.dirname(os.path.abspath(__file__))

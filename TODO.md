@@ -40,7 +40,6 @@
 - Support other systems and genres
 
 ## ChadBot
-- Recognize speaker
 - Train Chad on whether a message is intended for him or not
 - Record Audio
 - Replace whisper.py/split_audio.py to transcribe audio

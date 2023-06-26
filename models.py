@@ -213,7 +213,7 @@ class GameNotes(Model):
 
         parsed_answer = ""
         try:
-            parsed_answer = self.__notes_parser.parse(answer)
+            parsed_answer = self.__notes_parser.parse(answer.content)
         except:
             if (type(answer) == str):
                 try:
