@@ -22,10 +22,11 @@ from langchain.chains.question_answering import load_qa_chain
 
 load_dotenv()
 
-VERSION: float = 0.1
+VERSION: float = 0.2
 RELEASE_NOTES: str = """
 - Chad is more aware of being a part of a group chat
 - Chad is now aware of who is saying what. No more calling everyone "Hornet"
+- Chad is now capable of longer responses
 """
 
 #DEFAULT_MODEL: str = "gpt-4-0613"
@@ -139,7 +140,7 @@ def send_llm_message(message, session_id, temperature=DEFAULT_TEMPERATURE, model
         return answer
 
 def show_release_notes(session_id):
-    send_llm_message("""
+    send_llm_message(f"""
         You have just logged in. Introduce yourself then summarize the release notes
         for this new version of Chad.
 
@@ -185,6 +186,12 @@ async def leave(interaction: nextcord.Interaction):
 async def on_ready():
     print(f'{bot.user.name} has connected to Discord with user ID: {bot.user.id}!')
 
+    if args.release_notes:
+        for channel_id in DiscordSessions:
+            show_release_notes(channel_id)
+        print("Release notes sent to all channels.")
+
+
 @bot.event
 async def on_message(message: nextcord.Message):
     # don't respond to ourselves and only in the right channel
@@ -197,11 +204,27 @@ async def on_message(message: nextcord.Message):
     print(f"{message.author.name} said {message.content}")
     llm_response = send_llm_message(f"{message.author.name}: {message.content}", message.channel.id)
     llm_response = llm_response.replace("Chad: ", "")
-    print(f"LLM Response: {llm_response}")
-    if (llm_response != "NONE"):
-        await message.channel.send(llm_response)
 
-    await bot.process_commands(message)
+    if (llm_response != "NONE"):
+        words = llm_response.split()
+        chunks = []
+        chunk = ""
+        length = 0
+        for word in words:
+            word_length = len(word) + 1
+            if length + word_length > 2000:
+                chunks.append(" "+chunk)
+                chunk = ""
+                length = 0
+            chunk += " "+word
+            length += word_length
+        if chunk:
+            chunks.append(" "+chunk)
+        for (i, c) in enumerate(chunks):
+            print (f"Chunk {i}: {c}")
+            print (f"Length: {len(c)}")
+            await message.channel.send(c)
+    bot.process_commands(message)
 
 # Get command line arguments
 import argparse
@@ -222,9 +245,3 @@ if os.path.exists(os.path.join(DIR_PERSIST, "channel_ids.json")):
             DiscordSessions[id] = []
 
 bot.run(os.environ["DISCORD_API_KEY"])
-
-if args.release_notes:
-    for channel_id in DiscordSessions:
-        show_release_notes(channel_id)
-    print("Release notes sent to all channels.")
-
