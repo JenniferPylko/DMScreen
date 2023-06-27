@@ -1,7 +1,6 @@
 # TODO
 ## DM Screen
 ### v0.1 - Personal Use
-- Show thinking... when ChatBot is working on a response
 - Update ChatBot to use functions instead of LangChain templates
 - - Improve prompt to get only proper nouns back from ChatBot
 - - Update ChatBot, let the user type the following

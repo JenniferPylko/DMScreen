@@ -26,6 +26,12 @@ $('#chat-form').on('submit', function(e) {
     e.preventDefault();
     var question = $('#question').val();
     $('#chatbox').append('<div>You: ' + question + '</div>');
+
+    div_response = $('<div class="chatmessage bot">');
+    div_response.html('Loading...')
+    $('#chatbox').append(div_response);
+    $('#chatbox').scrollTop($('#chatbox')[0].scrollHeight);
+
     $('#question').val('');
     var checkedValues = [];
     $('#chat-form input[type="checkbox"]:checked').each((input) => {
@@ -50,9 +56,12 @@ $('#chat-form').on('submit', function(e) {
         })
 
         console.log(r_formatted)
-        $('#chatbox').append(`<div class="chatmessage bot"><div>AI: ${chat_response}</div><div><small><ul><li>${source}</li></ul></small></div></div>`);
+        div_r1 = $(`<div>AI: ${chat_response}</div><div><small><ul><li>${source}</li></ul></small></div>`);
+        div_response.html(div_r1);
         $('#chatbox').scrollTop($('#chatbox')[0].scrollHeight);
-    });
+    }).fail(function(jqXHR, textStatus, errorThrown) {
+        div_response.html('An error occurred, please try again - ' + errorThrown);
+    });        
 });
 
 // When the game select changes to a value, send a request to /setgame to set the game
