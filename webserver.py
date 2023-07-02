@@ -552,7 +552,7 @@ def ask():
     temperature = request.form.get('temperature')
     chatbot = ChatBot(os.getenv("OPENAI_API_KEY"), os.getenv("PINECONE_API_KEY"), os.getenv("PINECONE_ENVIRONMENT"))
     answer = chatbot.send_message(message, temperature=temperature)
-    return send_flask_response(make_response, [answer.answer, answer.source, answer.nouns])
+    return send_flask_response(make_response, answer)
 
 @app.route('/setgame', methods=['POST'])
 def setgame():

@@ -45,9 +45,9 @@ $('#chat-form').on('submit', function(e) {
     }, function(response) {
         let r = JSON.parse(response);
         r_formatted = r;
-        let chat_response = r[0];
-        let source = r[1];
-        let nouns = r[2];
+        let chat_response = r["answer"];
+        let source = r["source"];
+        let nouns = r["people"];
 
         // Iterate over the array of nouns, and replace instances of those words in the chat response with links to the NPC
         nouns.forEach((noun) => {

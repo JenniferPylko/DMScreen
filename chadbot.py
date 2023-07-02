@@ -2,11 +2,8 @@ import nextcord
 from nextcord.ext import commands
 import os
 import json
-import dotenv
 from dotenv import load_dotenv
-import datetime
 
-from pydantic import BaseModel, Field, validator
 from typing import List, Dict
 
 from langchain.chat_models import ChatOpenAI
