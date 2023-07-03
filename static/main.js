@@ -54,6 +54,7 @@ $('#chat-form').on('submit', function(e) {
             let regex = new RegExp(noun, 'gi');
             chat_response = chat_response.replace(regex, `<span class="chat_name" onmouseover="show_chat_options('${noun}', this)" onmouseout="hide_chat_options(this)">${noun}</span>`);
         })
+        chat_response.replace(/\n/g, "<br/>\n");
 
         console.log(r_formatted)
         div_r1 = $(`<div>AI: ${chat_response}</div><div><small><ul><li>${source}</li></ul></small></div>`);
