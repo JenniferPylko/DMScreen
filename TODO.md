@@ -1,11 +1,12 @@
 # TODO
 ## DM Screen
 ### v0.1 - Personal Use
+- Update NPC creation to use functions instead of LangChain templates
 - Update ChatBot to use functions instead of LangChain templates
-- - Improve prompt to get only proper nouns back from ChatBot
 - - Update ChatBot, let the user type the following
 - - - Create NPC with black hair...
 - - - Remind me to...
+- - - Add a button for creative output from chatbot (that does not use context)
 - Find Todo messages in notes, and put them in plans and ideas
 - Handle 500 errors
 - Work on a way to organize plans and ideas
@@ -27,6 +28,7 @@
 - Add notes to an NPC
 - Start tracking and costing tokens to learn usage/price metrics
 - Add fulltext of note transcriptions to vectorstore for better searches on what happened in a game
+- BUG: When adding a new note, the note's date should be added to list of existing notes
 
 ### v0.2 - Private Beta
 - Unify handling of wait messages while waiting for AI to complete

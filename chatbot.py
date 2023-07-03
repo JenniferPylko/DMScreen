@@ -1,8 +1,5 @@
 import os
 from typing import List
-from pydantic import BaseModel, Field
-from langchain.output_parsers import PydanticOutputParser
-from langchain.prompts import PromptTemplate
 from langchain.chat_models import ChatOpenAI
 from langchain.vectorstores import Pinecone
 from langchain.chains.question_answering import load_qa_chain
@@ -10,18 +7,11 @@ from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain.embeddings.openai import OpenAIEmbeddings
 from langchain.schema import (
     HumanMessage,
-    AIMessage,
     SystemMessage,
-    BaseMessage,
     FunctionMessage
 )
 import pinecone
 import json
-
-class ReferenceQuery(BaseModel):
-    answer: str = Field(description="answer to the users's question")
-    source: str = Field(description="The source of the answer")
-    nouns: List[str] = Field(description="A list of people's proper names in the answer. Do not include locations, spells nor groups of people")
 
 class ChatBot():
     __root_dir = os.path.dirname(os.path.abspath(__file__))
@@ -40,17 +30,7 @@ class ChatBot():
         pinecone.init(api_key=pinecone_api_key, environment=pinecone_environment)
 
         self.__reference_instance = Pinecone.from_existing_index(self.__pinecone_index, embedding=embeddings)
-        self.__reference_parser = PydanticOutputParser(pydantic_object=ReferenceQuery)
         
-        self.__reference_prompt = PromptTemplate(
-            template="""
-
-            {format_instructions}
-            {query}""",
-            input_variables=["query"],
-            partial_variables={"format_instructions": self.__reference_parser.get_format_instructions()}
-        )
-
         self.functions = [
             {
                 "name": "help",
@@ -116,7 +96,7 @@ class ChatBot():
         - doc search: Chat with Chat about D&D based on all of the published D&D books, as well as lots of 3rd party content
         """
 
-    def send_message(self, query, temperature=0.0, model=None, titles=[]) -> ReferenceQuery:
+    def send_message(self, query, temperature=0.0, model=None, titles=[]):
         if model is None:
             model_name = self.__default_model
 
