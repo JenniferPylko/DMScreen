@@ -19,11 +19,12 @@ from langchain.chains.question_answering import load_qa_chain
 
 load_dotenv()
 
-VERSION: float = 0.2
+VERSION: str = "0.2"
 RELEASE_NOTES: str = """
 - Chad is more aware of being a part of a group chat
 - Chad is now aware of who is saying what. No more calling everyone "Hornet"
 - Chad is now capable of longer responses
+- Fixed bug when Chad is asked to leave a channel he is not in
 """
 
 #DEFAULT_MODEL: str = "gpt-4-0613"
@@ -171,7 +172,10 @@ async def join(interaction: nextcord.Interaction):
 
 @bot.slash_command(description="Ask Chad to leave the channel")
 async def leave(interaction: nextcord.Interaction):
-    del DiscordSessions[interaction.channel_id]
+    if interaction.channel_id in DiscordSessions:
+        del DiscordSessions[interaction.channel_id]
+    else:
+        await interaction.send("I'm not in this channel.", ephemeral=True)
 
     # export list of channel_ids to json file
     with open(os.path.join(DIR_PERSIST, "channel_ids.json"), "w") as f:
