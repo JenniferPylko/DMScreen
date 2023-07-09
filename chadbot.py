@@ -27,8 +27,8 @@ RELEASE_NOTES: str = """
 - Fixed bug when Chad is asked to leave a channel he is not in
 """
 
-#DEFAULT_MODEL: str = "gpt-4-0613"
-DEFAULT_MODEL: str = "gpt-3.5-turbo-0613"
+DEFAULT_MODEL: str = "gpt-4-0613"
+#DEFAULT_MODEL: str = "gpt-3.5-turbo-0613"
 DEFAULT_TEMPERATURE: float = 0.9
 BOT_DESCRIPTION = "A bot that records sessions, and interacts with the players"
 PERSONALITY="""You are a friendly assistant named Chad that is an expert on the topic of D&D. You are

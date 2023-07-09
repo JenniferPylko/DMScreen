@@ -14,10 +14,8 @@ import pinecone
 import json
 
 class ChatBot():
-    __root_dir = os.path.dirname(os.path.abspath(__file__))
     __default_model = "gpt-3.5-turbo-0613"
     __reference_instance = None
-    __reference_parser = None
     __split_chunk_size = 1000
     __split_chunk_overlap = 100
 
@@ -97,8 +95,7 @@ class ChatBot():
         """
 
     def send_message(self, query, temperature=0.0, model=None, titles=[]):
-        if model is None:
-            model_name = self.__default_model
+        model = model if model is not None else self.__default_model
 
         messages = [SystemMessage(content="""You are an expert on Dungeons and Dragons 5e. Your goal
             is to provide an answer to the user's question, as it pertains to D&D. You should give
@@ -107,7 +104,7 @@ class ChatBot():
             If you do not know the answer to the question, you should say so. If your response is not
             related to D&D, you should query the vectorstore for more context.""")]
 
-        llm = ChatOpenAI(model_name=model_name, temperature=temperature, openai_api_key=self.__openai_key)
+        llm = ChatOpenAI(model_name=model, temperature=temperature, openai_api_key=self.__openai_key)
         messages.append(HumanMessage(content=query))
         response = llm.predict_messages(messages, functions=self.functions, function_call={"name": "query_vectorstore"})
         messages.append(response)

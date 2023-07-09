@@ -70,27 +70,6 @@ class NPCs():
             r.append(tmp)
         return r
     
-    def get_npc(self, key, game_id=None) -> dict:
-        if isinstance(key, int):
-            return NPC(key)
-        elif isinstance(key, str):
-            cursor = self.__db.cursor()
-            sql = "SELECT id FROM npcs WHERE name=?"
-            vars = (key,)
-            if game_id is not None:
-                sql += " AND game_id IS NULL OR game_id=?"
-                vars = vars + (game_id,)
-            else:
-                sql += " AND game_id IS NULL"
-
-            cursor.execute(sql, vars)
-
-            row = cursor.fetchone()
-            cursor.close()
-            if row is None:
-                return None
-            return NPC(row['id'])
-    
     def add_npc(self, name, attributes: dict = None) -> dict:
         cursor = self.__db.cursor()
         cursor.execute("INSERT INTO npcs (name) VALUES (?)", (name,))
@@ -116,8 +95,9 @@ class NPC():
         self.__db = sqlite3.connect(os.path.join(self.__root_dir, 'db.sqlite3'))
         self.__db.row_factory = sqlite3.Row
         self.cursor = self.__db.cursor()
-        logging.debug("NPC: " + str(id))
+        logging.debug("Fetching NPC from database. ID=" + str(id))
         self.cursor.execute("SELECT * FROM npcs WHERE id = ?", (id,))
+        logging.debug("SELECT * FROM npcs WHERE id = " + str(id))
 
         row = self.cursor.fetchone()
         if row is None:
@@ -127,7 +107,7 @@ class NPC():
 
         self.cursor.close()
 
-    def update(self, race=None, npc_class=None, background=None, alignment=None, gender=None, age=None,
+    def update(self, race=None, class_=None, background=None, alignment=None, gender=None, age=None,
                height=None, weight=None, eyes=None, hair=None, eyes_description=None, hair_style=None,
                ears=None, nose=None, mouth=None, features=None, flaws=None, ideals=None, bonds=None,
                personality=None, mannerisms=None, talents=None, abilities=None, skills=None,
@@ -137,8 +117,8 @@ class NPC():
         
         query = "UPDATE npcs SET "
         vals = []
-        params = locals()
-        print (params)
+        params = locals().copy()
+        logging.debug (params)
         for k,v in params.items():
             if k == 'self' or k == 'id' or v is None or k == 'params' or k == 'query' or k == 'vals':
                 continue

@@ -283,10 +283,15 @@ function create_npc_submit() {
     // Get all the values from the form
     var form = $('#create_npc_form');
     var data = form.serializeArray();
+    params = {};
+    data.forEach((d) => {
+        params[d.name] = d.value;
+    })
+    console.log(params);
     var div = $('#modal_content');
-    $.post('/createnpc', {
-        data: data
-    }, function(response) {
+    $.post('/createnpc',
+    params,
+    function(response) {
         let r = JSON.parse(response);
         console.log(r);
         // r is a hash, iterate through it and display it
@@ -366,8 +371,14 @@ function show_name (id=null, name=null, quick=0) {
             key = key.charAt(0).toUpperCase() + key.slice(1);
             // replace _ with a space
             key = key.replace(/_/g, ' ');
-            html += '<tr class="npc"><td nowrap>' + key + `</td><td id="${id}_${k}">` + r[k] + `</td><td><img src="/static/img/arrow-rotate-right-solid.svg"/ class="regen" onclick="regen_key(${id}, '${k}', this)"></td></tr>`;
-        })           
+            val = r[k];
+            console.log(val)
+            if (val == null || val == 'null')
+                val = '';
+            html += '<tr class="npc"><td nowrap>' + key + `</td><td id="${id}_${k}">` + val + `</td><td><img src="/static/img/arrow-rotate-right-solid.svg"/ class="regen" onclick="regen_key(${id}, '${k}', this)"></td></tr>`;
+        })
+        if (r['summary'] == null)
+            r['summary'] = 'No summary available. Generate one by clicking the refresh icon above.';
         html += '</table>';     
         html += `<div class="npc_summary">
             <div class="regen" title="Regenerate Summary" onclick="regen_summary('${id}')"></div>

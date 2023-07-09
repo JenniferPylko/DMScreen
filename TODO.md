@@ -29,6 +29,7 @@
 - Start tracking and costing tokens to learn usage/price metrics
 - Add fulltext of note transcriptions to vectorstore for better searches on what happened in a game
 - BUG: When adding a new note, the note's date should be added to list of existing notes
+- Add ability to upload a picture of an NPC instead of generating one
 
 ### v0.2 - Private Beta
 - Unify handling of wait messages while waiting for AI to complete
