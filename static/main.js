@@ -519,11 +519,13 @@ function regen_key(id, key, img) {
 }
 
 function gen_npc_image(id) {
-    $.post('/gennpcimage', { 
+    $.post('/gennpcimage_stability', { 
         id: id
     }, function(response) {
         let div = $('.npc_image');
         div.html('<img src="/static/img/npc/'+id+'.png" class="npc_image"/>');
+    }).fail(function(jqXHR, textStatus, errorThrown) {
+        console.error('An error occurred, please try again - ' + errorThrown);
     });
 }
 

@@ -1,4 +1,9 @@
 import os
+import io
+import warnings
+from PIL import Image
+from stability_sdk import client
+import stability_sdk.interfaces.gooseai.generation.generation_pb2 as generation
 import time
 import logging
 import sqlite3
@@ -22,6 +27,8 @@ from pydantic import BaseModel, Field, validator
 from langchain.chains.question_answering import load_qa_chain
 
 logging.basicConfig(level=logging.DEBUG)
+
+load_dotenv()
 
 """ CONSTANTS """
 DIR_ROOT = os.path.dirname(os.path.abspath(__file__))
@@ -235,6 +242,49 @@ def deletename():
     npc_image = os.path.join(DIR_ROOT, 'static', 'img', 'npc', str(id)+'.png')
     if os.path.isfile(npc_image):
         os.remove(npc_image)
+
+    response = make_response("OK")
+    response.mimetype = "text/plain"
+    response.headers.add('Access-Control-Allow-Origin', '*')
+    return response
+
+@app.route('/gennpcimage_stability', methods=['POST'])
+def gennpcimage_stability():
+    id:int = int(request.form.get('id'))
+    npc = NPC(id)
+    print(npc.data['name'])
+    prompt = "epic 300mm professional highly realistic photo of a " +str(npc.data['age'])+" year old "+ str(npc.data['gender']) + " " + str(npc.data['race']) + " " + str(npc.data['class_']) + ", fantasy, looking at the camera, with " + str(npc.data['hair']) + " " + str(npc.data['hair_style']) + " " + " hair and " + str(npc.data['eyes']) + " " + str(npc.data['eyes_description']) + " eyes, " + str(npc.data['chin']) + " chin,  " + str(npc.data['clothing']) + ", " + str(npc.data['ears']) + " ears, " + str(npc.data['features']) + ", " + str(npc.data['mouth']) + " mouth, " + str(npc.data['nose'] + " nose, trending on deviant art, best quality, masterpiece, extremely high detail digital RAW color photograph, 4k, highly detailed")
+    negative_prompt = "ugly, duplicate, morbid, mutilated, out of frame, extra fingers, mutated hands, poorly drawn hands, poorly drawn face, disfigured, extra limbs, cloned face, bad anatomy, gross proportions, malformed limbs, missing arms, fused fingers, extra arms, mutated hands, too many fingers, long neck"
+
+    print(os.getenv("STABILITY_API_KEY"))
+    stability_api = client.StabilityInference(
+        key = os.getenv("STABILITY_API_KEY"),
+        verbose=True,
+        engine="stable-diffusion-xl-1024-v0-9"
+    )
+
+    answers = stability_api.generate(
+        prompt = [
+            generation.Prompt(text=prompt, parameters=generation.PromptParameters(weight=1)),
+            generation.Prompt(text=negative_prompt, parameters=generation.PromptParameters(weight=-1))
+        ],
+        steps=50,
+        cfg_scale=8.0,
+        width=512,
+        height=512,
+        samples=1,
+        sampler=generation.SAMPLER_K_DPMPP_2M,
+    )
+
+
+
+    for resp in answers:
+        for artifact in resp.artifacts:
+            if artifact.finish_reason == generation.FILTER:
+                logging.warn("Your request activated the APIs safety filters and could not be processed.")
+            if artifact.type == generation.ARTIFACT_IMAGE:
+                img = Image.open(io.BytesIO(artifact.binary))
+                img.save(os.path.join(DIR_ROOT, 'static', 'img', 'npc', str(id)+'.png'))
 
     response = make_response("OK")
     response.mimetype = "text/plain"
