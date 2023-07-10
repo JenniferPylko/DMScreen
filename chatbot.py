@@ -16,7 +16,6 @@ from npc import AINPC
 from models import NPCs
 import logging
 
-
 class ChatBot():
     __default_model = "gpt-3.5-turbo-0613"
     __reference_instance = None
@@ -94,7 +93,6 @@ class ChatBot():
             }
         ]
 
-
     def show_help_message(self, tool:str = None):
         return """
         Here are the tools I can use:
@@ -147,7 +145,8 @@ class ChatBot():
                     "people": arguments2["people"]
                 }
             else:
-                response2 = llm.predict_messages(messages)
+                # We don't need gpt4 for this part, so we can just use the default model
+                response2 = llm.predict_messages(messages, model=self.__default_model)
                 return {
                     "answer": response2.content,
                     "source": "Chad",
