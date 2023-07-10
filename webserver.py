@@ -59,7 +59,6 @@ names_prompt = PromptTemplate(
     partial_variables={"format_instructions": names_parser.get_format_instructions()}
 )
 
-
 def get_names(temperature=0.9, model='text-davinci-003', game_id=None) -> list[str]:
     names = NPCs().get_all(game_id=game_id)
     if (game_id != None):
@@ -186,6 +185,13 @@ def getnpc():
     response.mimetype = "text/plain"
     response.headers.add('Access-Control-Allow-Origin', '*')
     return response
+
+@app.route('/getnpcs', methods=['POST'])
+def getnpcs():
+    names = []
+    for name in get_names():
+        names.append(name.data)
+    return send_flask_response(make_response, names)
 
 @app.route('/regensummary', methods=['POST'])
 def regensummary():

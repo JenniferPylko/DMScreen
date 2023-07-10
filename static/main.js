@@ -57,9 +57,24 @@ $('#chat-form').on('submit', function(e) {
         chat_response.replace(/\n/g, "<br/>\n");
 
         console.log(r_formatted)
-        div_r1 = $(`<div>AI: ${chat_response}</div><div><small><ul><li>${source}</li></ul></small></div>`);
+        div_r1 = $(`<div>AI: ${chat_response}</div><div><small><ul>`);
+        div_r1.append(`<li>Source: ${source}</li>`);
+        div_r1.append('</ul></small></div>');
+
         div_response.html(div_r1);
         $('#chatbox').scrollTop($('#chatbox')[0].scrollHeight);
+
+        if (r["frontend"]) {
+            for (let i = 0; i < r["frontend"].length; i++) {
+                switch (r["frontend"][i]) {
+                    case "refresh_npc_list":
+                        // Refresh the list of NPCs
+                        refresh_npc_list();
+                }
+            }
+        }
+
+
     }).fail(function(jqXHR, textStatus, errorThrown) {
         div_response.html('An error occurred, please try again - ' + errorThrown);
     });        
@@ -198,6 +213,43 @@ $('#3rdParty').on('click', function(e) {
         $('#' + thirdParty).prop('checked', $('#3rdParty').prop('checked'));
     })
 })
+
+function refresh_npc_list() {
+    $.post('/getnpcs', {
+        game: $('#game').val()
+    }, function(response) {
+        let r = JSON.parse(response);
+        $('#names').html(
+            `<table id="table_names">
+                <tr>
+                    <th>Name</th><th>Quick Gen</th><th>Generated</th><th>Add to Game</th><th>Delete</th>
+                </tr>`
+        );
+        r.forEach((row)=> {
+            let id = row.id;
+            let name = row.name;
+            let npc_class = row.npc_class;
+            let file_icon = (row.background) ? 'fa fa-file' : 'fa fa-file-o';
+            $('#table_names').append(
+                `<tr id="name_${id}">
+                <td><a href="javascript:show_name('${id}', '${name}')">${name}</a></td>
+                <td id="quick_gen_${id}" class="center">`+
+                    ((row.background) ? '' : `<small><a href="javascript:show_name('${id}', '${name}', 1)">&gt;&gt;</a></small>`)
+                +`</td><td class="center">
+                    <i id="file_icon_${id}"  class="${file_icon}"></i>
+                </td>
+                <td class="center">
+                    <a href="javascript:add_name('${id}', '${row.background}', '${name}')">+</a>
+                </td>
+                <td class="center">
+                    <a href="javascript:delete_name('${id}')">X</a>
+                </td>
+                </tr>`
+            );
+        })
+        $('#names').append('</table>');
+    });
+}
 
 function show_note(date) {
     console.log('note_'+date)

@@ -147,11 +147,14 @@ class ChatBot():
             else:
                 # We don't need gpt4 for this part, so we can just use the default model
                 response2 = llm.predict_messages(messages, model=self.__default_model)
-                return {
+                r = {
                     "answer": response2.content,
                     "source": "Chad",
                     "people": []
                 }
+                if function_name == "generate_npc":
+                    r["frontend"] = ["refresh_npc_list"]
+                return r
         else:
             answer = response.content
             print(f"LLM Answer: {answer}")
