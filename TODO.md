@@ -1,10 +1,10 @@
 # TODO
 ## DM Screen
 ### v0.1 - Personal Use
-- Update NPC creation to use functions instead of LangChain templates
 - Update ChatBot to use functions instead of LangChain templates
 - - Update ChatBot, let the user type the following
 - - - Create NPC with black hair...
+- - - - After NPC is created issue refresh command to NPC list
 - - - Remind me to...
 - - - Add a button for creative output from chatbot (that does not use context)
 - Find Todo messages in notes, and put them in plans and ideas

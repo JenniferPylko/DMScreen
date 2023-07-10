@@ -12,6 +12,10 @@ from langchain.schema import (
 )
 import pinecone
 import json
+from npc import AINPC
+from models import NPCs
+import logging
+
 
 class ChatBot():
     __default_model = "gpt-3.5-turbo-0613"
@@ -47,7 +51,7 @@ class ChatBot():
             },
             {
                 "name":"query_vectorstore",
-                "description": "Get context from the vectorstore to answer the question",
+                "description": "Call this function when no other function is available to answer the user's question",
                 "parameters": {
                     "type": "object",
                     "properties": {
@@ -57,8 +61,12 @@ class ChatBot():
                         }
                     },
                     "required": ["query"]
-                },
+                }
             },
+            AINPC.create_npc_openai_functions,
+        ]
+    
+        self.function_final_answer = [
             {
                 "name":"final_answer",
                 "description": "Show the final answer to the user",
@@ -82,17 +90,21 @@ class ChatBot():
                         }
                     },
                     "required": ["answer", "source", "people"]
-                },
+                }
             }
         ]
 
 
-    def show_help_message(self):
+    def show_help_message(self, tool:str = None):
         return """
         Here are the tools I can use:
         - help: Get help with the bot, and its capabilities
         - doc search: Chat with Chat about D&D based on all of the published D&D books, as well as lots of 3rd party content
         """
+
+    def create_npc(self, **kwargs):
+        npc = NPCs().add_npc(kwargs["name"], attributes=kwargs)
+        return f"Created NPC: {npc.data['name']}" if npc is not None else "Failed to create NPC"
 
     def send_message(self, query, temperature=0.0, model=None, titles=[]):
         model = model if model is not None else self.__default_model
@@ -101,36 +113,46 @@ class ChatBot():
             is to provide an answer to the user's question, as it pertains to D&D. You should give
             factual answers only based on the provided documentation, and not your own opinion. You
             should not provide any information that is not directly related to the user's question.
-            If you do not know the answer to the question, you should say so. If your response is not
-            related to D&D, you should query the vectorstore for more context.""")]
+            If you do not know the answer to the question, you should say so. You must always
+            call a function as a response.""")]
 
         llm = ChatOpenAI(model_name=model, temperature=temperature, openai_api_key=self.__openai_key)
         messages.append(HumanMessage(content=query))
-        response = llm.predict_messages(messages, functions=self.functions, function_call={"name": "query_vectorstore"})
+        #response = llm.predict_messages(messages, functions=self.functions, function_call={"name": "query_vectorstore"})
+        response = llm.predict_messages(messages, functions=self.functions)
         messages.append(response)
         print(f"LLM Answer: {response}")
 
         if response.additional_kwargs.get("function_call"):
             function_name = response.additional_kwargs["function_call"]["name"]
-            print(f"Calling function: {function_name}")
+            logging.debug(f"Calling function: {function_name}")
             available_functions = {
                 "help": self.show_help_message,
-                "query_vectorstore": self.search_vectorstore
+                "query_vectorstore": self.search_vectorstore,
+                "generate_npc": self.create_npc
             }
 
             function_to_call = available_functions.get(function_name)
             function_args = json.loads(response.additional_kwargs["function_call"]["arguments"])
             function_response = function_to_call(**function_args)
             messages.append(FunctionMessage(content=function_response, name=function_name))
-            response2 = llm.predict_messages(messages, functions=self.functions, function_call={"name": "final_answer"})
-
-            arguments2 = json.loads(response2.additional_kwargs["function_call"]["arguments"])
-            print(f"LLM Answer 2: {arguments2['answer']}")
-            return {
-                "answer": arguments2["answer"],
-                "source": arguments2["source"],
-                "people": arguments2["people"]
-            }
+            response2 = ""
+            if (function_name == "query_vectorstore"):
+                response2 = llm.predict_messages(messages, functions=self.function_final_answer, function_call={"name": "final_answer"})
+                arguments2 = json.loads(response2.additional_kwargs["function_call"]["arguments"])
+                print(f"LLM Answer 2: {arguments2['answer']}")
+                return {
+                    "answer": arguments2["answer"],
+                    "source": arguments2["source"],
+                    "people": arguments2["people"]
+                }
+            else:
+                response2 = llm.predict_messages(messages)
+                return {
+                    "answer": response2.content,
+                    "source": "Chad",
+                    "people": []
+                }
         else:
             answer = response.content
             print(f"LLM Answer: {answer}")
@@ -158,7 +180,7 @@ class ChatBot():
             print(doc)
             r += f"{doc.metadata['title']}\n{doc.page_content}\n\n"
         return r
-    
+
     def run_chain(self, query, docs, model_name=None, temperature=None):
         # Note: This is a temporary function name, because I'm too high to come up with a better one right now
         llm = ChatOpenAI(model_name=model_name, temperature=temperature, openai_api_key=os.environ["OPENAI_API_KEY"])
