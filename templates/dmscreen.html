@@ -14,7 +14,8 @@
         <!--Horizontal toolbar with icons to show/hide the grid-items -->
         <span class="nav-button active" title="Chat Bot""><a href="#" onclick="toggle_visibility('chatbot')"><i class="fa fa-comment"></i></a></span>
         <span class="nav-button active" title="Game Notes"><a href="#" onclick="toggle_visibility('game_notes')"><i class="fa fa-book"></i></a></span>
-        <span class="nav-button active" title="Plans and Ideas"><a href="#" onclick="toggle_visibility('plans_and_ideas')"><i class="fa fa-lightbulb-o"></i></a></span>
+        <span class="nav-button active" title="Reminders"><a href="#" onclick="toggle_visibility('reminders')"><i class="fa fa-lightbulb-o"></i></a></span>
+        <span class="nav-button active" title="Story Board"><a href="#" onclick="toggle_visibility('story_board')"><i class="fa-solid fa-book-atlas"></i></a></span>
         <span class="nav-button active" title="NPCs"><a href="#" onclick="toggle_visibility('npcs')"><i class="fa fa-users"></i></a></span>
         <span class="nav-button active" title="Locations"><a href="#" onclick="toggle_visibility('locations')"><i class="fa fa-map-marker"></i></a></span>
         <span class="nav-button active" title="Random Everything"><a href="#" onclick="toggle_visibility('random_everything')"><i class="fa fa-random"></i></a></span>
@@ -178,10 +179,27 @@
                 <div style="text-align:center">Select a project in Game Notes to see previous notes</div>
             </div>
         </div>
-        <div id="plans_and_ideas" class="grid-item">
+        <div id="reminders" class="grid-item">
             <header>
-                <h1>Plans and Ideas</h1>
+                <h1>Reminders</h1>
             </header>
+            <div class="grid-body">
+                <div style="position: relative; height: 17px;">
+                    <button id="add_npc" onclick="create_reminder()">+ Add Reminder</button>
+                </div>
+                <div id="reminder_list"><center>Select a project in Game Notes to see the reminders for this game</center></div>
+            </div>
+        </div>
+        <div id="story_board" class="grid-item">
+            <header>
+                <h1>Story Board</h1>
+            </header>
+            <div class="grid-body">
+                <div style="position: relative; height: 17px;">
+                    <button id="add_npc" onclick="create_plot_point()">+ Add Plot Point</button>
+                </div>
+                <div id="plot_points""><center>Select a project in Game Notes to see the plot points and events for this game</center></div>
+            </div>
         </div>
         <div id="npcs" class="grid-item">
             <header>
@@ -225,9 +243,6 @@
                 <h2 id="modal-header">Modal Header</h2>
             </div>
             <div class="modal-body" id="modal_content">
-            </div>
-            <div class="modal-footer">
-                <h3>Modal Footer</h3>
             </div>
         </div>
     </div>

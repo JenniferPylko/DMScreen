@@ -7,6 +7,7 @@ from langchain.prompts import PromptTemplate
 from langchain.output_parsers import PydanticOutputParser
 from pydantic import BaseModel, Field
 from typing import List
+import datetime
 
 logging.basicConfig(level=logging.DEBUG)
 
@@ -247,4 +248,90 @@ class Game():
         self.data = {}
         for key in row.keys():
             self.data[key] = row[key]
+        cursor.close()
+
+class PlotPoints():
+    def __init__(self, game_id: int) -> None:
+        self.__root_dir = os.path.dirname(os.path.abspath(__file__))
+        self._db = sqlite3.connect(os.path.join(self.__root_dir, 'db.sqlite3'))
+        self._db.row_factory = sqlite3.Row
+        self.game_id = game_id
+
+    def get_all(self):
+        cursor = self._db.cursor()
+        cursor.execute("SELECT id FROM plotpoints WHERE game_id = ?", (self.game_id,))
+        rows = cursor.fetchall()
+        cursor.close()
+        r = []
+        for row in rows:
+            r.append(PlotPoint(row['id']))
+        return r
+    
+    def add(self, game_id, title, details=None):
+        date_new = datetime.datetime.now()
+        cursor = self._db.cursor()
+        cursor.execute("INSERT INTO plotpoints (game_id, title, details, date_new, date_mod, status) VALUES (?, ?, ?, ?, ?, ?)", (game_id, title, details, date_new, date_new, "NEW"))
+        self._db.commit()
+        cursor.close()
+        return PlotPoint(cursor.lastrowid)
+    
+class PlotPoint(Model):
+    def __init__(self, id: int) -> None:
+        self.__root_dir = os.path.dirname(os.path.abspath(__file__))
+        self._db = sqlite3.connect(os.path.join(self.__root_dir, 'db.sqlite3'))
+        self._db.row_factory = sqlite3.Row
+        self.id = id
+
+        cursor = self._db.cursor()
+        cursor.execute("SELECT * FROM plotpoints WHERE id = ?", (id,))
+        row = cursor.fetchone()
+        self.data = {}
+        for key in row.keys():
+            self.data[key] = row[key]
+        cursor.close()
+
+class Reminders():
+    def __init__(self, game_id:int) -> None:
+        self.root_dir = os.path.dirname(os.path.abspath(__file__))
+        self.db = sqlite3.connect(os.path.join(self.root_dir, 'db.sqlite3'))
+        self.db.row_factory = sqlite3.Row
+        self.game_id = game_id
+    
+    def get_all(self):
+        cursor = self.db.cursor()
+        cursor.execute("SELECT id FROM reminders WHERE game_id = ?", (self.game_id,))
+        rows = cursor.fetchall()
+        cursor.close()
+        r = []
+        for row in rows:
+            r.append(Reminder(row['id']))
+        return r
+    
+    def add(self, game_id, title, details, trigger):
+        cursor = self.db.cursor()
+        cursor.execute("INSERT INTO reminders (game_id, title, details, trigger) VALUES (?, ?, ?, ?)", (game_id, title, details, trigger))
+        self.db.commit()
+        cursor.close()
+        return Reminder(cursor.lastrowid)
+    
+class Reminder(Model):
+    def __init__(self, id: int) -> None:
+        self.root_dir = os.path.dirname(os.path.abspath(__file__))
+        self.db = sqlite3.connect(os.path.join(self.root_dir, 'db.sqlite3'))
+        self.db.row_factory = sqlite3.Row
+        self.id = id
+
+        cursor = self.db.cursor()
+        logging.debug("SELECT * FROM reminders WHERE id = " + str(id))
+        cursor.execute("SELECT * FROM reminders WHERE id = ?", (id,))
+        row = cursor.fetchone()
+        self.data = {}
+        for key in row.keys():
+            self.data[key] = row[key]
+        cursor.close()
+    
+    def delete(self):
+        cursor = self.db.cursor()
+        cursor.execute("DELETE FROM reminders WHERE id = ?", (self.id,))
+        self.db.commit()
         cursor.close()

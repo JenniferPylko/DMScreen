@@ -24,6 +24,8 @@ a {
     display: block;
     width: 100%;
     min-height: 100px;
+    max-height: 300px;
+    overflow: auto;
 }
 
 .grid-item header {
@@ -131,7 +133,7 @@ input[type=submit] {
     padding: 0px;
 }
 
-#notes_most_recent, #previous_notes_list, #names, #game_names, div.npc_image {
+#notes_most_recent, #previous_notes_list, #names, #game_names, div.npc_image, div#plot_points, div#reminder_list {
     min-height: 50px;
     border: 1px solid black;
     overflow: auto;
@@ -378,4 +380,60 @@ nav#toolbar {
 nav#toolbar span a {
     color: #fff;
     text-decoration: none;
+}
+
+input#plot_point_title, input#reminder_title, input#reminder_trigger {
+    width: 500px;
+}
+
+textarea#plot_point_summary, textarea#reminder_details {
+    width: 500px;
+    height: 150px;
+}
+
+div.plot_point {
+    border: 1px solid #000;
+    padding: 5px;
+    margin: 5px;
+    background-color: #fff;
+    color: #000;
+    font-size: 0.9em;
+    width: 100px;
+    height: 20px;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+div.plot_point .plot_point_hover {
+    background-color: blueviolet;
+}
+
+div.reminder {
+    position: relative;
+    border: 1px solid #000;
+    padding: 0px;
+    margin: 2px;
+    padding-bottom: 3px;
+    background-color: #fff;
+    color: #000;
+    font-size: 0.9em;
+    width: 200px;
+    height: 15px;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+div.reminder_delete {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 15px;
+    height: 15px;
+    background-image: url(/static/img/times-solid.svg);
+    background-size: contain;
+    cursor: pointer;
 }

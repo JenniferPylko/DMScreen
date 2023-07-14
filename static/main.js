@@ -1,5 +1,6 @@
 $( function() {
     $( "#sortable" ).sortable({handle: 'header'});
+    $('#reminder_list').sortable();
 } );
 
 // If the user clicks Save, then send the notes to /savenotes, disable the text area, then replace the notes with the response
@@ -73,8 +74,6 @@ $('#chat-form').on('submit', function(e) {
                 }
             }
         }
-
-
     }).fail(function(jqXHR, textStatus, errorThrown) {
         div_response.html('An error occurred, please try again - ' + errorThrown);
     });        
@@ -96,9 +95,12 @@ $('#game').on('change', function(e) {
         game: game
     }, function(response) {
         $('#notes_most_recent').html(JSON.parse(response)[0])
-        let notes_files = JSON.parse(response)[1];
-        let names = JSON.parse(response)[2];
-        let game_names = JSON.parse(response)[3];
+        json = JSON.parse(response);
+        let notes_files = json[1];
+        let names = json[2];
+        let game_names = json[3];
+        let plot_points = json[4];
+        let reminders = json[5];
         $('#game').prop('disabled', false);
         $('#notes').prop('disabled', false);
         $('#save_notes').prop('disabled', false);
@@ -169,6 +171,41 @@ $('#game').on('change', function(e) {
         } else {
             $('#game_names').html('No NPCs have been created for this game yet, click the + buton to add a pregenerated NPC to this game, or click <a href="javascript:create_npc()">+ Add NPC</a> to create a new NPC for this game');
         }
+
+        $('#plot_points').html('');
+        for (let i = 0; i < plot_points.length; i++) {
+            let plot_point = plot_points[i];
+            let div = $('<div class="plot_point">');
+            let title = $('<div class="plot_point_title">');
+            title.html(plot_point.title);
+            div.append(title);
+            div.draggable({containment: "parent"});
+            div.droppable({
+                over: function(event, ui) {
+                    console.log(this)
+                    $(this).addClass('plot_point_hover');
+                },
+                out: function(event, ui) {
+                    console.log('out')
+                    $(this).removeClass('plot_point_hover');
+                }
+            })
+            $('#plot_points').append(div);
+        }
+        
+        $('#reminder_list').html('')
+        for (let i = 0; i < reminders.length; i++) {
+            let reminder = reminders[i];
+            console.log(reminder)
+            let div = $('<div class="reminder">');
+            let title = $('<div class="reminder_title">');
+            let delete_ = $('<div class="reminder_delete" onclick="delete_reminder('+reminder.id+')">');
+            delete_.html('X');
+            title.html(reminder.title);
+            div.append(delete_);
+            div.append(title);
+            $('#reminder_list').append(div);
+        };
     });
 });
 
@@ -279,7 +316,6 @@ function close_note(date) {
 
 function create_npc() {
     var modal = document.getElementById("modal");
-    var span = document.getElementsByClassName("close")[0];
     modal.style.display = "block";
 
     var div = $('#modal_content');
@@ -388,6 +424,95 @@ function create_npc_submit() {
         // Add a close button, that goes back to the previous value
         div.append('<button type="button" onclick="close_name(\''+id+'\')">Close</button>')
     })
+}
+
+function create_plot_point() {
+    var modal = document.getElementById("modal");
+    modal.style.display = "block";
+    var div = $('#modal_content');
+    $('#modal-header').html('Create Plot Point')
+    let html = "<form id='create_npc_form' method='post'>";
+    html += "<table>";
+    html += '<tr><td><label>Title:</label></td><td><input type="text" id="plot_point_title" name="plot_point_title"></td></td>';
+    html += '<tr><td><label>Summary:</label></td><td><textarea id="plot_point_summary" name="plot_point_summary"></textarea></td></td>';
+    html += '</table>';
+    html += '<div><input type="button" value="Create" onclick="create_plot_point_submit()"></div>';
+    html += "</form>"
+    div.html(html)
+}
+
+function create_plot_point_submit() {
+    // Get all the values from the form
+    var modal = document.getElementById("modal");
+    $.post('/createplotpoint',
+    {
+        title: $('#plot_point_title').val(),
+        summary: $('#plot_point_summary').val()
+    },
+    function(response) {
+        let r = JSON.parse(response);
+        console.log(r);
+        modal.style.display = "none";
+    })
+}
+
+function create_reminder() {
+    var modal = document.getElementById("modal");
+    modal.style.display = "block";
+    var div = $('#modal_content');
+    $('#modal-header').html('Create Reminder')
+    let html = "<form id='create_npc_form' method='post'>";
+    html += "<table>";
+    html += '<tr><td><label>Title:</label></td><td><input type="text" id="reminder_title" name="reminder_title"></td></td>';
+    html += '<tr><td><label>Details:</label></td><td><textarea id="reminder_details" name="reminder_summary"></textarea></td></td>';
+    html += '<tr><td><label>Trigger:</label></td><td><input type="text" id="reminder_trigger" name="reminder_trigger"></td></td>';
+    html += '</table>';
+    html += '<div><input type="button" value="Create" onclick="create_reminder_submit()"></div>';
+    html += "</form>"
+    div.html(html)
+}
+
+function create_reminder_submit() {
+    // Get all the values from the form
+    var modal = document.getElementById("modal");
+    $.post('/createreminder',
+    {
+        title: $('#reminder_title').val(),
+        details: $('#reminder_details').val(),
+        trigger: $('#reminder_trigger').val()
+    },
+    function(response) {
+        refresh_reminders();
+        modal.style.display = "none";
+    })
+}
+
+function refresh_reminders() {
+    $.post('/getreminders', {
+        game: $('#game').val()
+    }, function(response) {
+        let r = JSON.parse(response);
+        $('#reminder_list').html('')
+        for (let i = 0; i < r.length; i++) {
+            let reminder = r[i];
+            let div = $('<div class="reminder">');
+            let title = $('<div class="reminder_title">');
+            let delete_ = $('<div class="reminder_delete" onclick="delete_reminder('+reminder.id+')">');
+            delete_.html('X');
+            title.html(reminder.title);
+            div.append(delete_);
+            div.append(title);
+            $('#reminder_list').append(div);
+        };
+    });
+}
+
+function delete_reminder(id) {
+    $.post('/deletereminder', {
+        id: id
+    }, function(response) {
+        refresh_reminders();
+    });
 }
 
 function show_name (id=null, name=null, quick=0) {

@@ -10,7 +10,7 @@ import sqlite3
 import openai
 import requests
 
-from models import NPC, NPCs, GameNotes, Game
+from models import NPC, NPCs, GameNotes, Game, PlotPoints, Reminders, Reminder
 from chatbot import ChatBot
 from npc import AINPC
 
@@ -149,7 +149,16 @@ def setgame():
     for name in get_names(game_id=game.data['id']):
         game_names.append(name.data)
 
-    return send_flask_response(make_response, [notes_summary, notes_files, names, game_names])
+    # Get the list of plot points from db
+    plot_points = []
+    for plot_point in PlotPoints(game.data['id']).get_all():
+        plot_points.append(plot_point.data)
+
+    reminders = []
+    for reminder in Reminders(game.data['id']).get_all():
+        reminders.append(reminder.data)
+
+    return send_flask_response(make_response, [notes_summary, notes_files, names, game_names, plot_points, reminders])
 
 @app.route('/savenotes', methods=['POST'])
 def savenotes(model='text-davinci-003', temperature=0.2):
@@ -321,6 +330,43 @@ def addname():
     id = request.form.get('id')
     npc = NPC(id)
     npc.update(game_id = game.data['id'])
+    response = make_response("OK")
+    response.mimetype = "text/plain"
+    response.headers.add('Access-Control-Allow-Origin', '*')
+    return response
+
+@app.route('/createplotpoint', methods=['POST'])
+def createplotpoint():
+    title = request.form.get('title')
+    details = request.form.get('summary')
+    plot_point = PlotPoints(game.data['id']).add(game.data['id'], title, details=details)
+    response = make_response(plot_point.data)
+    response.mimetype = "text/plain"
+    response.headers.add('Access-Control-Allow-Origin', '*')
+    return response
+
+@app.route('/createreminder', methods=['POST'])
+def createreminder():
+    title = request.form.get('title')
+    details = request.form.get('details')
+    trigger = request.form.get('trigger')
+    reminder = Reminders(game.data['id']).add(game.data['id'], title, details=details, trigger=trigger)
+    response = make_response(reminder.data)
+    response.mimetype = "text/plain"
+    response.headers.add('Access-Control-Allow-Origin', '*')
+    return response
+
+@app.route('/getreminders', methods=['POST'])
+def getreminders():
+    reminders = []
+    for reminder in Reminders(game.data['id']).get_all():
+        reminders.append(reminder.data)
+    return send_flask_response(make_response, reminders)
+
+@app.route('/deletereminder', methods=['POST'])
+def deletereminder():
+    id = request.form.get('id')
+    Reminder(id).delete()
     response = make_response("OK")
     response.mimetype = "text/plain"
     response.headers.add('Access-Control-Allow-Origin', '*')

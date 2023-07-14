@@ -1,10 +1,20 @@
 # TODO
 ## DM Screen
 ### v0.1 - Personal Use
+- Add Plot Points. 
+- - Nodes that are draggable and linkable to each other
+- - Add tags
+- - Filter on tags
+- - Add status indicators
+- - Attach images, notes, npcs, maps, etc.
+- - Link from npcs to plotpoints
+- - Set alarms. Notify when conditions are met (time, session, events in notes)
+- - AI to suggest other plot points
 - Update ChatBot to use functions instead of LangChain templates
 - - Update ChatBot, let the user type the following
 - - - Remind me to...
 - - - Add a button for creative output from chatbot (that does not use context)
+- When refresshing, either remember the selected game
 - Find Todo messages in notes, and put them in plans and ideas
 - Handle 500 errors
 - Work on a way to organize plans and ideas
@@ -28,6 +38,7 @@
 - Add fulltext of note transcriptions to vectorstore for better searches on what happened in a game
 - BUG: When adding a new note, the note's date should be added to list of existing notes
 - Add ability to upload a picture of an NPC instead of generating one
+- Add ability to maximize a section for better handling/visibility
 
 ### v0.2 - Private Beta
 - Unify handling of wait messages while waiting for AI to complete
