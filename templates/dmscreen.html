@@ -11,7 +11,16 @@
 </head>
 <body>
     <nav id="toolbar">
-        <!--Horizontal toolbar with icons to show/hide the grid-items -->
+        <select id="game" name="game">
+            <option value="" style="text-align: center;">--Choose a Game--</option>"
+            <option value="dotmm">Dungeon of the Mad Mage</option>
+            <option value="tod">Tyranny of Dragons</option>
+            <option value="spelljammer">Spelljammer</option>
+            <option value="dotn">Dawn of the Necromancer</option>
+            <option value="aielsland">Aielsland</option>
+            <option value="dorr">Dawn of Rock and Roll</option>
+        </select>
+<!--Horizontal toolbar with icons to show/hide the grid-items -->
         <span class="nav-button active" title="Chat Bot""><a href="#" onclick="toggle_visibility('chatbot')"><i class="fa fa-comment"></i></a></span>
         <span class="nav-button active" title="Game Notes"><a href="#" onclick="toggle_visibility('game_notes')"><i class="fa fa-book"></i></a></span>
         <span class="nav-button active" title="Reminders"><a href="#" onclick="toggle_visibility('reminders')"><i class="fa fa-lightbulb-o"></i></a></span>
@@ -153,15 +162,6 @@
             <div style="display:relative">
                 <label>Date:</label>
                 <span>{{todays_date}}</span>
-                <select id="game" name="game" style="float:right">
-                    <option value="" style="text-align: center;">--Choose a Game--</option>"
-                    <option value="dotmm">Dungeon of the Mad Mage</option>
-                    <option value="tod">Tyranny of Dragons</option>
-                    <option value="spelljammer">Spelljammer</option>
-                    <option value="dotn">Dawn of the Necromancer</option>
-                    <option value="aielsland">Aielsland</option>
-                    <option value="maegoza">Wrath of Maegoza</option>
-                </select>
             </div>
             <div>
                 <textarea id="notes" name="notes"></textarea>

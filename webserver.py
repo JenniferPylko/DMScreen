@@ -110,10 +110,11 @@ def home():
 
 @app.route('/ask', methods=['POST', 'OPTIONS'])
 def ask():    
+    global game
     message = request.form.get('question')
     modules = request.form.get('modules')
     temperature = request.form.get('temperature')
-    chatbot = ChatBot(os.getenv("OPENAI_API_KEY"), os.getenv("PINECONE_API_KEY"), os.getenv("PINECONE_ENVIRONMENT"))
+    chatbot = ChatBot(game.data['id'], os.getenv("OPENAI_API_KEY"), os.getenv("PINECONE_API_KEY"), os.getenv("PINECONE_ENVIRONMENT"))
     answer = chatbot.send_message(message, temperature=temperature, model='gpt-4')
     return send_flask_response(make_response, answer)
 

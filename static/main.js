@@ -58,9 +58,7 @@ $('#chat-form').on('submit', function(e) {
         chat_response.replace(/\n/g, "<br/>\n");
 
         console.log(r_formatted)
-        div_r1 = $(`<div>AI: ${chat_response}</div><div><small><ul>`);
-        div_r1.append(`<li>Source: ${source}</li>`);
-        div_r1.append('</ul></small></div>');
+        div_r1 = $(`<div>AI: ${chat_response}</div><div><small><ul><li>Source: ${source}</li></ul></small></div>`);
 
         div_response.html(div_r1);
         $('#chatbox').scrollTop($('#chatbox')[0].scrollHeight);

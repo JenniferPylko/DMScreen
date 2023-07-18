@@ -8,7 +8,8 @@ from langchain.embeddings.openai import OpenAIEmbeddings
 from langchain.schema import (
     HumanMessage,
     SystemMessage,
-    FunctionMessage
+    FunctionMessage,
+    AIMessage
 )
 import pinecone
 import json
@@ -18,14 +19,15 @@ import logging
 
 class ChatBot():
     __default_model = "gpt-3.5-turbo-0613"
-    __reference_instance = None
+    __reference_instance: Pinecone = None
     __split_chunk_size = 1000
     __split_chunk_overlap = 100
 
-    def __init__(self, openai_key:str, pinecone_api_key:str, pinecone_environment:str, model_name=None, pinecone_index='5e'):
+    def __init__(self, game_id, openai_key:str, pinecone_api_key:str, pinecone_environment:str, model_name=None, pinecone_index: str='5e'):
         self.__default_model = model_name if model_name is not None else self.__default_model
         self.__pinecone_index = pinecone_index
         self.__openai_key = openai_key
+        self.__game_id = game_id
 
         embeddings = OpenAIEmbeddings(openai_api_key=self.__openai_key)
         pinecone.init(api_key=pinecone_api_key, environment=pinecone_environment)
@@ -49,14 +51,28 @@ class ChatBot():
                 },
             },
             {
-                "name":"query_vectorstore",
-                "description": "Call this function when no other function is available to answer the user's question",
+                "name":"query_documentation",
+                "description": "Call this function to query the documentation",
                 "parameters": {
                     "type": "object",
                     "properties": {
                         "query": {
                             "type": "string",
-                            "description": "A well formatted query to search the vectorstore with"
+                            "description": "The question asked by the user"
+                        }
+                    },
+                    "required": ["query"]
+                }
+            },
+            {
+                "name":"query_sessions",
+                "description": "Call this function to query the previous session notes",
+                "parameters": {
+                    "type": "object",
+                    "properties": {
+                        "query": {
+                            "type": "string",
+                            "description": "The question asked by the user"
                         }
                     },
                     "required": ["query"]
@@ -107,8 +123,9 @@ class ChatBot():
     def send_message(self, query, temperature=0.0, model=None, titles=[]):
         model = model if model is not None else self.__default_model
 
-        messages = [SystemMessage(content="""You are an expert on Dungeons and Dragons 5e. Your goal
-            is to provide an answer to the user's question, as it pertains to D&D. You should give
+        messages = [SystemMessage(content="""You are an expert on Dungeons and Dragons 5e, and as
+            assistant to the Dungeon Master. Your goal is to provide an answer to the user's question,
+            as it pertains to D&D or the session notes. You should give
             factual answers only based on the provided documentation, and not your own opinion. You
             should not provide any information that is not directly related to the user's question.
             If you do not know the answer to the question, you should say so. You must always
@@ -119,15 +136,16 @@ class ChatBot():
         #response = llm.predict_messages(messages, functions=self.functions, function_call={"name": "query_vectorstore"})
         response = llm.predict_messages(messages, functions=self.functions)
         messages.append(response)
-        print(f"LLM Answer: {response}")
+        #logging.debug(f"LLM Answer: {response}")
 
         if response.additional_kwargs.get("function_call"):
             function_name = response.additional_kwargs["function_call"]["name"]
             logging.debug(f"Calling function: {function_name}")
             available_functions = {
                 "help": self.show_help_message,
-                "query_vectorstore": self.search_vectorstore,
-                "generate_npc": self.create_npc
+                "query_documentation": self.search_vectorstore,
+                "generate_npc": self.create_npc,
+                "query_sessions": self.search_sessions,
             }
 
             function_to_call = available_functions.get(function_name)
@@ -135,10 +153,10 @@ class ChatBot():
             function_response = function_to_call(**function_args)
             messages.append(FunctionMessage(content=function_response, name=function_name))
             response2 = ""
-            if (function_name == "query_vectorstore"):
+            if (function_name == "query_documentation") or (function_name == "query_sessions"):
                 response2 = llm.predict_messages(messages, functions=self.function_final_answer, function_call={"name": "final_answer"})
                 arguments2 = json.loads(response2.additional_kwargs["function_call"]["arguments"])
-                print(f"LLM Answer 2: {arguments2['answer']}")
+                logging.debug(f"LLM Answer 2: {arguments2['answer']}")
                 return {
                     "answer": arguments2["answer"],
                     "source": arguments2["source"],
@@ -157,7 +175,7 @@ class ChatBot():
                 return r
         else:
             answer = response.content
-            print(f"LLM Answer: {answer}")
+            logging.debug(f"LLM Answer: {answer}")
             return {
                 "answer": answer,
                 "source": "unknown",
@@ -176,11 +194,24 @@ class ChatBot():
             model_name = self.__default_model
         if temperature is None:
             temperature = 0.0
-        docs = self.__reference_instance.similarity_search(query, k=4)
+        docs = self.__reference_instance.similarity_search(query, k=4, namespace='srd')
         r = ""
         for doc in docs:
-            print(doc)
-            r += f"{doc.metadata['title']}\n{doc.page_content}\n\n"
+            #print(doc)
+            #r += f"{doc.metadata['title']}\n{doc.page_content}\n\n"
+            r += f"Dungeons and Dragons SRD - Page: {doc.metadata['page']}\n{doc.page_content}\n\n"
+
+        return r
+
+    def search_sessions(self, query, model_name=None, temperature=None) -> str:
+        if model_name is None:
+            model_name = self.__default_model
+        if temperature is None:
+            temperature = 0.0
+        session_notes = self.__reference_instance.similarity_search(query, k=4, namespace='sessions', filter={"game_id": str(self.__game_id)})
+        r = ""
+        for note in session_notes:
+            r += f"Session Notes - Date: {note.metadata['game_date']}\n{note.page_content}\n\n"        
         return r
 
     def run_chain(self, query, docs, model_name=None, temperature=None):
