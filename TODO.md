@@ -1,14 +1,10 @@
 # TODO
 ## DM Screen
 ### v0.1 - Early Access (MVP)
-- Update ChatBot to use functions instead of LangChain templates
-- - Update ChatBot, let the user type the following
-- - - Remind me to...
 - Handle 500 errors
-- Add Random Everything Generator
 - Let user edit date for notes
-- Let user edit/delete notes
 - Let user edit/type details for NPCs
+- All NPCs should be bound to a game
 - Start tracking and costing tokens to learn usage/price metrics
 - BUG: When adding a new note, the note's date should be added to list of existing notes
 - Add ability to upload a picture of an NPC instead of generating one
@@ -22,6 +18,7 @@
 - Set up billing
 
 ### v0.5 - Public Beta
+- Add Random Everything Generator
 - Unify handling of wait messages while waiting for AI to complete
 - Make sure all data is tied to a user/game
 - Login/Register/Forgot Password

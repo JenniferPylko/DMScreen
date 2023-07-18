@@ -235,6 +235,18 @@ class GameNote():
 
         cursor.close()
 
+    def update(self, note) -> None:
+        cursor = self.__db.cursor()
+        cursor.execute("UPDATE games_notes SET orig=? WHERE id=?", (note, self.data['id']))
+        self.__db.commit()
+        cursor.close()
+
+    def delete(self) -> None:
+        cursor = self.__db.cursor()
+        cursor.execute("DELETE FROM games_notes WHERE id=?", (self.data['id'],))
+        self.__db.commit()
+        cursor.close()
+
 class Game():
     def __init__ (self, game: str) -> None:
         self.game = game

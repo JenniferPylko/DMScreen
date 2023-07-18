@@ -168,11 +168,25 @@ def savenotes(model='text-davinci-003', temperature=0.2):
     note = GameNotes(game.data['abbr']).preprocess_and_add(notes, date).data['summary']
     return send_flask_response(make_response, [note])
 
+@app.route('/updatenote', methods=['POST'])
+def updatenote():
+    date = request.form.get('date')
+    note = request.form.get('note')
+    game_note = GameNotes(game.data['abbr']).get_by_date(date)
+    game_note.update(note)
+    return send_flask_response(make_response, ["OK"])
+
 @app.route('/getnote', methods=['POST'])
 def getnote():
     date = request.form.get('date')
     note = GameNotes(game.data['abbr']).get_by_date(request.form.get('date'))
     return send_flask_response(make_response, [note.data['orig']])
+
+@app.route('/deletenote', methods=['POST'])
+def deletenote():
+    date = request.form.get('date')
+    GameNotes(game.data['abbr']).get_by_date(date).delete()
+    return send_flask_response(make_response, ["OK"])
 
 @app.route('/getnpc', methods=['POST', 'GET'])
 def getnpc():

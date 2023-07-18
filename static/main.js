@@ -290,29 +290,64 @@ function refresh_npc_list() {
 }
 
 function show_note(date) {
-    console.log('note_'+date)
-    var div = $('#note_'+date);
-    div.html("<div></div><div></div><div></div>");
-    div.addClass('lds-ring')
     $.post('/getnote', { 
         date: date
     }, function(response) {
         let r = JSON.parse(response)[0];
         r = r.replace(/(END OF)?.*?SESSION NOTES FOR \w+\n*/g, '');
         r = r.replace(/\n/g, '<br/>');
-        console.log(r);
-        div.html($.parseHTML(r))
-        div.removeClass('lds-ring')
-        div.addClass('date-focused');
-        // Add a close button, that goes back to the previous value
-        div.append('<button type="button" onclick="close_note(\''+date+'\')">Close</button>')
+
+        modal.style.display = "block";
+        var div = $('#modal_content');
+        $('#modal-header').html("Session Notes: " + date)
+        let html = '<div class="note">' + r + '</div>';
+        div.html(html)
+
+        document.getElementById('modal-edit').style.display = "inline-block"
+        $('#modal-edit').attr('onclick', 'edit_note(\''+date+'\')')
+
+        document.getElementById('modal-delete').style.display = "inline-block"
+        $('#modal-delete').attr('onclick', 'delete_note(\''+date+'\')')
     });
 }
 
-function close_note(date) {
-    var div = $('#note_'+date);
-    div.removeClass('date-focused');
-    div.html('<a href="javascript:show_note(\''+date+'\')">' + date + '</a>');
+function edit_note (date) {
+    txt = $('#modal_content').html();
+    txt = txt.replace(/<br>/g, '\n');
+    txt = txt.replace(/<div.*?>/g, '');
+    txt = txt.replace(/<\/div>/g, '');
+
+    textarea = $('<textarea id="modal_textarea">');
+    textarea.val(txt);
+    $('#modal_content').html(textarea);
+    $('#modal-edit').attr('onclick', 'save_note()')
+    $('#modal-edit').html('[Save]')
+}
+
+function save_note() {
+    txt = $('#modal_textarea').val();
+    txt = txt.replace(/\n/g, '<br/>');
+    $.post('/updatenote', { 
+        date: $('#modal-header').html().replace('Session Notes: ', ''),
+        note: txt
+    }, function(response) {
+        let r = JSON.parse(response)[0];
+        $('#modal_content').html(txt);
+        $('#modal-edit').attr('onclick', 'edit_note()')
+        $('#modal-edit').html('[Edit]')
+    });
+}
+
+function delete_note (date) {
+    if (confirm("Are you sure you want to delete this note?") == false) {
+        return;
+    }
+    $.post('/deletenote', {
+        date: date
+    }, function(response) {
+        $('#note_'+date).remove();
+        modal.style.display = "none";
+    });
 }
 
 function create_npc() {
@@ -376,7 +411,6 @@ function create_npc_submit() {
     data.forEach((d) => {
         params[d.name] = d.value;
     })
-    console.log(params);
     var div = $('#modal_content');
     $.post('/createnpc',
     params,
@@ -416,7 +450,6 @@ function create_npc_submit() {
                 </td>
                 </tr>`
             );
-
 
         $("#file_icon_"+id).removeClass('fa-file-o');
         $("#file_icon_"+id).addClass('fa-file');
@@ -615,6 +648,7 @@ window.onclick = function(event) {
 function close_modal() {
     var modal = document.getElementById("modal");
     modal.style.display = "none";
+    document.getElementById('modal-edit').style.display = "none"
 }
 
 function regen_summary(id) {
