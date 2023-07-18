@@ -69,6 +69,9 @@ $('#chat-form').on('submit', function(e) {
                     case "refresh_npc_list":
                         // Refresh the list of NPCs
                         refresh_npc_list();
+                    case "refresh_reminders":
+                        // Refresh Reminders
+                        refresh_reminders();
                 }
             }
         }

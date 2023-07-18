@@ -307,9 +307,9 @@ class Reminders():
             r.append(Reminder(row['id']))
         return r
     
-    def add(self, game_id, title, details, trigger):
+    def add(self, title, details, trigger):
         cursor = self.db.cursor()
-        cursor.execute("INSERT INTO reminders (game_id, title, details, trigger) VALUES (?, ?, ?, ?)", (game_id, title, details, trigger))
+        cursor.execute("INSERT INTO reminders (game_id, title, details, trigger) VALUES (?, ?, ?, ?)", (self.game_id, title, details, trigger))
         self.db.commit()
         cursor.close()
         return Reminder(cursor.lastrowid)

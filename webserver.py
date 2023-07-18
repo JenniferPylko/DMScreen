@@ -351,7 +351,7 @@ def createreminder():
     title = request.form.get('title')
     details = request.form.get('details')
     trigger = request.form.get('trigger')
-    reminder = Reminders(game.data['id']).add(game.data['id'], title, details=details, trigger=trigger)
+    reminder = Reminders(game.data['id']).add(title, details=details, trigger=trigger)
     response = make_response(reminder.data)
     response.mimetype = "text/plain"
     response.headers.add('Access-Control-Allow-Origin', '*')

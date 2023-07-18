@@ -437,3 +437,9 @@ div.reminder_delete {
     background-size: contain;
     cursor: pointer;
 }
+
+div.reminder_title {
+    margin-right: 8px;
+    overflow-x: hidden;
+    text-overflow: ellipsis;
+}

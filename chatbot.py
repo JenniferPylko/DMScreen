@@ -14,7 +14,7 @@ from langchain.schema import (
 import pinecone
 import json
 from npc import AINPC
-from models import NPCs
+from models import NPCs, Reminders
 import logging
 
 class ChatBot():
@@ -79,6 +79,28 @@ class ChatBot():
                 }
             },
             AINPC.create_npc_openai_functions,
+            {
+                "name": "create_reminder",
+                "description": "Create a reminder for the DM",
+                "parameters": {
+                    "type": "object",
+                    "properties": {
+                        "title": {
+                            "type": "string",
+                            "description": "Short title or description of the reminder"
+                        },
+                        "details": {
+                            "type": "string",
+                            "description": "Detailed description of the reminder"
+                        },
+                        "trigger": {
+                            "type": "string",
+                            "description": "The trigger for the reminder"
+                        },
+                    },
+                    "required": ["title", "details", "trigger"]
+                }
+            },
         ]
     
         self.function_final_answer = [
@@ -146,6 +168,7 @@ class ChatBot():
                 "query_documentation": self.search_vectorstore,
                 "generate_npc": self.create_npc,
                 "query_sessions": self.search_sessions,
+                "create_reminder": self.create_reminder
             }
 
             function_to_call = available_functions.get(function_name)
@@ -172,6 +195,8 @@ class ChatBot():
                 }
                 if function_name == "generate_npc":
                     r["frontend"] = ["refresh_npc_list"]
+                elif function_name == "create_reminder":
+                    r["frontend"] = ["refresh_reminders"]
                 return r
         else:
             answer = response.content
@@ -213,6 +238,13 @@ class ChatBot():
         for note in session_notes:
             r += f"Session Notes - Date: {note.metadata['game_date']}\n{note.page_content}\n\n"        
         return r
+    
+    def create_reminder(self, title, details, trigger):
+        reminder = Reminders(self.__game_id).add(title, details, trigger)
+        if (reminder is None):
+            return "Failed to create reminder"
+        
+        return f"Reminder created: {title}"
 
     def run_chain(self, query, docs, model_name=None, temperature=None):
         # Note: This is a temporary function name, because I'm too high to come up with a better one right now
