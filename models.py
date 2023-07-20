@@ -175,8 +175,9 @@ class GameNotes(Model):
     
     def get_all(self):
         notes = self.get_array("SELECT id FROM games_notes WHERE game=? ORDER BY date DESC", (self.game,))
-        for i, note in enumerate(notes):
-            notes[i] = GameNote(note['id'])
+        for i, note_id in enumerate(notes):
+            print(note_id)
+            notes[i] = GameNote(note_id)
         return notes
     
     def get_dates(self):
@@ -238,6 +239,12 @@ class GameNote():
     def update(self, note) -> None:
         cursor = self.__db.cursor()
         cursor.execute("UPDATE games_notes SET orig=? WHERE id=?", (note, self.data['id']))
+        self.__db.commit()
+        cursor.close()
+    
+    def update_date(self, date) -> None:
+        cursor = self.__db.cursor()
+        cursor.execute("UPDATE games_notes SET date=? WHERE id=?", (date, self.data['id']))
         self.__db.commit()
         cursor.close()
 

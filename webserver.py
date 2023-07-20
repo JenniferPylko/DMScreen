@@ -10,7 +10,7 @@ import sqlite3
 import openai
 import requests
 
-from models import NPC, NPCs, GameNotes, Game, PlotPoints, Reminders, Reminder
+from models import NPC, NPCs, GameNotes, GameNote, Game, PlotPoints, Reminders, Reminder
 from chatbot import ChatBot
 from npc import AINPC
 
@@ -136,7 +136,13 @@ def setgame():
 
     # Check the db for a notes summary
     game_notes = GameNotes(game.data['abbr']).get_newest()
-    notes_files = GameNotes(game.data['abbr']).get_dates()
+    all_notes = GameNotes(game.data['abbr']).get_all()
+    r_notes = []
+    for note in all_notes:
+        r_notes.append({
+            "date": note.data['date'],
+            "id": note.data['id']
+        })
 
     # If there is a notes summary in the db, use it, otherwise, generate one from ChatGPT
     notes_summary = game_notes.data["summary"] if game_notes != None else None
@@ -159,7 +165,7 @@ def setgame():
     for reminder in Reminders(game.data['id']).get_all():
         reminders.append(reminder.data)
 
-    return send_flask_response(make_response, [notes_summary, notes_files, names, game_names, plot_points, reminders])
+    return send_flask_response(make_response, [notes_summary, r_notes, names, game_names, plot_points, reminders])
 
 @app.route('/savenotes', methods=['POST'])
 def savenotes(model='text-davinci-003', temperature=0.2):
@@ -178,14 +184,22 @@ def updatenote():
 
 @app.route('/getnote', methods=['POST'])
 def getnote():
-    date = request.form.get('date')
-    note = GameNotes(game.data['abbr']).get_by_date(request.form.get('date'))
+    id = request.form.get('id')
+    note = GameNote(id)
     return send_flask_response(make_response, [note.data['orig']])
 
 @app.route('/deletenote', methods=['POST'])
 def deletenote():
     date = request.form.get('date')
     GameNotes(game.data['abbr']).get_by_date(date).delete()
+    return send_flask_response(make_response, ["OK"])
+
+@app.route('/update_notes_date', methods=['POST'])
+def update_notes_date():
+    id = request.form.get('id')
+    new_date = request.form.get('new_date')
+    note = GameNote(id)
+    note.update_date(new_date)
     return send_flask_response(make_response, ["OK"])
 
 @app.route('/getnpc', methods=['POST', 'GET'])

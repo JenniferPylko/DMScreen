@@ -108,8 +108,9 @@ $('#game').on('change', function(e) {
         $('#notes').css('background-color', '#fff');
         $('#notes_most_recent').removeClass('lds-ring')
         $('#previous_notes_list').html('');
-        notes_files.forEach((file) => {
-            $('#previous_notes_list').append('<div id="note_'+file+'"><a href="javascript:show_note(\''+file+'\')">' + file + '</a></div>');
+        notes_files.forEach((note) => {
+            console.log(note)
+            $('#previous_notes_list').append('<div id="note_'+note['date']+'"><a href="javascript:show_note(\''+note['date']+'\', \''+note['id']+'\')">' + note['date'] + '</a></div>');
         })
 
         $('#names').html(
@@ -289,10 +290,10 @@ function refresh_npc_list() {
     });
 }
 
-function show_note(date) {
+function show_note(date, note_id) {
     console.log('show_note()')
     $.post('/getnote', { 
-        date: date
+        id: note_id
     }, function(response) {
         let r = JSON.parse(response)[0];
         r = r.replace(/(END OF)?.*?SESSION NOTES FOR \w+\n*/g, '');
@@ -303,14 +304,14 @@ function show_note(date) {
         // Use Date to get the date in Month Day, Year format
         let date_formatted = new Date(date + "T00:00");
         date_formatted = date_formatted.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
-        $('#modal-header').html("Session Notes: " + date_formatted)
+        $('#modal-header').html("Session Notes: <span id='session_date'>" + date_formatted + "</span>")
         let html = '<div class="note">' + r + '</div>';
         div.html(html)
 
         div_btns = $('#modal-buttons');
         btn_edit = $('<span id="modal-edit" class="modal-button">');
         btn_edit.html('[Edit]')
-        btn_edit.on('click', function() { edit_note (date) });
+        btn_edit.on('click', function() { edit_note (note_id, date) });
         btn_delete = $('<span id="modal-delete" class="modal-button">');
         btn_delete.html('[Delete]')
         btn_delete.on('click', function() { delete_note (date) });
@@ -319,7 +320,7 @@ function show_note(date) {
     });
 }
 
-function edit_note (date) {
+function edit_note (id, date) {
     console.log('edit_note()')
     txt = $('#modal_content').html();
     txt = txt.replace(/<br>/g, '\n');
@@ -335,6 +336,19 @@ function edit_note (date) {
     btn_save.on('click', function() { save_note (date, textarea) });
     $('#modal-buttons').append(btn_save);
     $('#modal-edit').remove()
+
+    sesison_date = $('#session_date')
+    sesison_date.html('<input type="date" id="session_date_input" value="' + date + '">')
+    $('#session_date_input').on('change', function() {
+        new_date = $('#session_date_input').val()
+        $.post('/update_notes_date', {
+            id: id,
+            new_date: new_date
+        }, function(response) {
+            console.log(response)
+            $('#note_'+date).html('<a href="javascript:show_note(\''+new_date+'\', \''+id+'\')">' + new_date + '</a>')
+        });
+    });
 }
 
 function save_note(date, textarea) {
