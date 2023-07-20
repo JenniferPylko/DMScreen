@@ -290,6 +290,7 @@ function refresh_npc_list() {
 }
 
 function show_note(date) {
+    console.log('show_note()')
     $.post('/getnote', { 
         date: date
     }, function(response) {
@@ -299,19 +300,27 @@ function show_note(date) {
 
         modal.style.display = "block";
         var div = $('#modal_content');
-        $('#modal-header').html("Session Notes: " + date)
+        // Use Date to get the date in Month Day, Year format
+        let date_formatted = new Date(date + "T00:00");
+        date_formatted = date_formatted.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
+        $('#modal-header').html("Session Notes: " + date_formatted)
         let html = '<div class="note">' + r + '</div>';
         div.html(html)
 
-        document.getElementById('modal-edit').style.display = "inline-block"
-        $('#modal-edit').attr('onclick', 'edit_note(\''+date+'\')')
-
-        document.getElementById('modal-delete').style.display = "inline-block"
-        $('#modal-delete').attr('onclick', 'delete_note(\''+date+'\')')
+        div_btns = $('#modal-buttons');
+        btn_edit = $('<span id="modal-edit" class="modal-button">');
+        btn_edit.html('[Edit]')
+        btn_edit.on('click', function() { edit_note (date) });
+        btn_delete = $('<span id="modal-delete" class="modal-button">');
+        btn_delete.html('[Delete]')
+        btn_delete.on('click', function() { delete_note (date) });
+        div_btns.append(btn_edit);
+        div_btns.append(btn_delete);
     });
 }
 
 function edit_note (date) {
+    console.log('edit_note()')
     txt = $('#modal_content').html();
     txt = txt.replace(/<br>/g, '\n');
     txt = txt.replace(/<div.*?>/g, '');
@@ -320,21 +329,25 @@ function edit_note (date) {
     textarea = $('<textarea id="modal_textarea">');
     textarea.val(txt);
     $('#modal_content').html(textarea);
-    $('#modal-edit').attr('onclick', 'save_note()')
-    $('#modal-edit').html('[Save]')
+    $('#modal-edit').off()
+    btn_save = $('<span id="modal-edit" class="modal-button">');
+    btn_save.html('[Save]')
+    btn_save.on('click', function() { save_note (date, textarea) });
+    $('#modal-buttons').append(btn_save);
+    $('#modal-edit').remove()
 }
 
-function save_note() {
-    txt = $('#modal_textarea').val();
-    txt = txt.replace(/\n/g, '<br/>');
+function save_note(date, textarea) {
+    console.log('save_note()')
+    console.log(date)
+    txt = textarea.val();
+    console.log(txt)
     $.post('/updatenote', { 
-        date: $('#modal-header').html().replace('Session Notes: ', ''),
+        date: date,
         note: txt
     }, function(response) {
-        let r = JSON.parse(response)[0];
-        $('#modal_content').html(txt);
-        $('#modal-edit').attr('onclick', 'edit_note()')
-        $('#modal-edit').html('[Edit]')
+        modal.style.display = "none";
+        $('#modal-buttons').html('')
     });
 }
 
@@ -347,6 +360,7 @@ function delete_note (date) {
     }, function(response) {
         $('#note_'+date).remove();
         modal.style.display = "none";
+        $('#modal-buttons').html('')
     });
 }
 
@@ -648,7 +662,7 @@ window.onclick = function(event) {
 function close_modal() {
     var modal = document.getElementById("modal");
     modal.style.display = "none";
-    document.getElementById('modal-edit').style.display = "none"
+    $('#modal-buttons').html('')
 }
 
 function regen_summary(id) {

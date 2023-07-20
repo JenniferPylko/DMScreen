@@ -249,7 +249,7 @@ input[type=submit] {
     cursor: pointer;
 }
 
-.edit, .delete {
+.edit, .delete, #modal-buttons {
     color: #aaa;
     float: right;
     font-size: 14px;
@@ -258,9 +258,14 @@ input[type=submit] {
     margin-right: 5px;
 }
 
+#modal-buttons span {
+    padding-left: 5px;
+    display: inline-block;
+}
+
 .edit:hover,
 .edit:focus, .delete:hover,
-.delete:focus {
+.delete:focus, #modal-buttons span:hover, #modal-buttons span:focus {
     color: #fff;
     text-decoration: none;
     cursor: pointer;
