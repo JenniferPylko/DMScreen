@@ -61,15 +61,31 @@ class NameList(BaseModel):
 names_parser = PydanticOutputParser(pydantic_object=NameList)
 
 names_prompt = PromptTemplate(
-    template="""Give me a list of {names_need} names appropriate for a Dungeons and Dragon fantasy setting. {format_instructions}""",
+    template="""Give me a list of {names_need} names appropriate for a Dungeons and Dragon fantasy
+    setting. The names should be first and last names. The names should include names appropriate for
+    humans, elves, dwarves, halflings, gnomes, and half-orcs. Do not include published names. Do not
+    include generic names
+
+    GOOD EXAMPLES:
+    - Eleanor Silverleaf
+    - Kethryllia
+    - Glimmer Moonbrook
+    - Daelin Proudmoore
+
+    BAD EXAMPLES:
+    - John Smith
+    - Bob
+    - Frodo Underhill
+    - Gandalf
+    - Merlin
+
+    {format_instructions}""",
     input_variables=["names_need"],
     partial_variables={"format_instructions": names_parser.get_format_instructions()}
 )
 
 def get_names(temperature=0.9, model='text-davinci-003', game_id=None) -> list[str]:
     names = NPCs().get_all(game_id=game_id)
-    if (game_id != None):
-        return names
     
     # If we get here, we are getting unassigned names
     names_need = 5 - len(names)
@@ -85,7 +101,7 @@ def get_names(temperature=0.9, model='text-davinci-003', game_id=None) -> list[s
         parsed_answer = names_parser.parse(answer.content)
 
         for name in parsed_answer.names:
-            NPCs().add_npc(name)
+            NPCs().add_npc(name, attributes={"game_id": game_id})
     return names
 
 def generate_npc(npc: NPC, name:str, fields:dict={}, game_id:int=None):
@@ -149,12 +165,8 @@ def setgame():
 
     # Get a list of NPCs
     names = []
-    for name in get_names():
-        names.append(name.data)
-
-    game_names = []
     for name in get_names(game_id=game.data['id']):
-        game_names.append(name.data)
+        names.append(name.data)
 
     # Get the list of plot points from db
     plot_points = []
@@ -165,7 +177,7 @@ def setgame():
     for reminder in Reminders(game.data['id']).get_all():
         reminders.append(reminder.data)
 
-    return send_flask_response(make_response, [notes_summary, r_notes, names, game_names, plot_points, reminders])
+    return send_flask_response(make_response, [notes_summary, r_notes, names, plot_points, reminders])
 
 @app.route('/savenotes', methods=['POST'])
 def savenotes(model='text-davinci-003', temperature=0.2):
@@ -265,7 +277,7 @@ def createnpc():
     for key in keys:
         npc_dict[key] = request.form.get(key)
     
-    npc = AINPC().gen_npc_from_dict(npc_dict)
+    npc = AINPC().gen_npc_from_dict(game_id=game.data['id'], npc_dict=npc_dict)
     response = make_response(npc.data)
     response.mimetype = "text/plain"
     response.headers.add('Access-Control-Allow-Origin', '*')

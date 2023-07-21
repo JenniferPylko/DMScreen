@@ -1,9 +1,6 @@
 # TODO
 ## DM Screen
 ### v0.1 - Early Access (MVP)
-- Add ability to regenerate portrait
-- Add ability to upload a picture of an NPC instead of generating one
-- All NPCs should be bound to a game
 - Start tracking and costing tokens to learn usage/price metrics
 - BUG: When adding a new note, the note's date should be added to list of existing notes
 - Upload an audio recording to kick of whisper.py/split_audio.py/ai_instructions,save_transcript, etc.
@@ -16,6 +13,7 @@
 - Set up billing
 
 ### v0.5 - Public Beta
+- Add ability to upload a picture of an NPC instead of generating one
 - Let user edit/type details for NPCs
 - Add Random Everything Generator
 - Unify handling of wait messages while waiting for AI to complete

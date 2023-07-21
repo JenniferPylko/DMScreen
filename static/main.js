@@ -100,10 +100,9 @@ $('#game').on('change', function(e) {
         $('#notes_most_recent').html(JSON.parse(response)[0])
         json = JSON.parse(response);
         let notes_files = json[1];
-        let names = json[2];
-        let game_names = json[3];
-        let plot_points = json[4];
-        let reminders = json[5];
+        let game_names = json[2];
+        let plot_points = json[3];
+        let reminders = json[4];
         $('#game').prop('disabled', false);
         $('#notes').prop('disabled', false);
         $('#save_notes').prop('disabled', false);
@@ -114,36 +113,6 @@ $('#game').on('change', function(e) {
             console.log(note)
             $('#previous_notes_list').append('<div id="note_'+note['date']+'"><a href="javascript:show_note(\''+note['date']+'\', \''+note['id']+'\')">' + note['date'] + '</a></div>');
         })
-
-        $('#names').html(
-            `<table id="table_names">
-                <tr>
-                    <th>Name</th><th>Quick Gen</th><th>Generated</th><th>Add to Game</th><th>Delete</th>
-                </tr>`
-        );
-        names.forEach((row)=> {
-            let id = row.id;
-            let name = row.name;
-            let npc_class = row.npc_class;
-            let file_icon = (row.background) ? 'fa fa-file' : 'fa fa-file-o';
-            $('#table_names').append(
-                `<tr id="name_${id}">
-                <td><a href="javascript:show_name('${id}', '${name}')">${name}</a></td>
-                <td id="quick_gen_${id}" class="center">`+
-                    ((row.background) ? '' : `<small><a href="javascript:show_name('${id}', '${name}', 1)">&gt;&gt;</a></small>`)
-                +`</td><td class="center">
-                    <i id="file_icon_${id}"  class="${file_icon}"></i>
-                </td>
-                <td class="center">
-                    <a href="javascript:add_name('${id}', '${row.background}', '${name}')">+</a>
-                </td>
-                <td class="center">
-                    <a href="javascript:delete_name('${id}')">X</a>
-                </td>
-                </tr>`
-            );
-        })
-        $('#names').append('</table>');
 
         if (game_names.length > 0) {
             $('#game_names').html(

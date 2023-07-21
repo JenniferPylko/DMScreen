@@ -337,7 +337,7 @@ class AINPC():
             logging.error("No function call in response from OpenAI")
             return None
 
-    def gen_npc_from_dict(self, npc_dict=None) -> NPC:
+    def gen_npc_from_dict(self, game_id, npc_dict=None) -> NPC:
         attributes: str = ""
         for key in npc_dict:
             if npc_dict[key] != None and len(npc_dict[key]) > 0:
@@ -390,14 +390,12 @@ class AINPC():
             ],
             function_call = {"name": "gen_npc_from_dict"}
         )
-        print(response)
+        logging.debug(response)
         message = response["choices"][0]["message"]
         if (message.get("function_call")):
-            function_name = message["function_call"]["name"]
             args = message.get("function_call")["arguments"]
-            print(args)
             args_json = json.loads(args)
-            print(args_json)
+            args_json['game_id'] = game_id
             return NPCs().add_npc(args_json["name"], args_json)
         else:
             logging.error("No function call in response from OpenAI")
