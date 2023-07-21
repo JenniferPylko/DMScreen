@@ -354,3 +354,10 @@ class Reminder(Model):
         cursor.execute("DELETE FROM reminders WHERE id = ?", (self.id,))
         self.db.commit()
         cursor.close()
+
+class TokenLog(Model):
+    def __init__(self) -> None:
+        super().__init__()
+
+    def add(self, query_type: str, prompt_tokens: int, completion_tokens: int, cost: float):
+        return self.do_insert("INSERT INTO log_tokens (query_type, prompt_tokens, completion_tokens, cost) VALUES (?, ?, ?, ?)", (query_type, prompt_tokens, completion_tokens, cost))

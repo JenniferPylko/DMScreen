@@ -4,6 +4,7 @@
 - Start tracking and costing tokens to learn usage/price metrics
 - BUG: When adding a new note, the note's date should be added to list of existing notes
 - Upload an audio recording to kick of whisper.py/split_audio.py/ai_instructions,save_transcript, etc.
+- Add user accounts
 - HTTPS
 
 #### ChadBot

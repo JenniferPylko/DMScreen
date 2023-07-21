@@ -2,15 +2,30 @@ import os
 import json
 import logging
 from typing import List
-from models import NPCs, NPC
+from models import NPCs, NPC, TokenLog
 import dmscreenxml
 import openai
+import tiktoken
 
 logging.basicConfig(level=logging.DEBUG)
 
 class AINPC():
     MODEL_GPT4 = "gpt-4-0613"
+    MODEL_GPT4_16 = "gpt-4-0613-16k"
     MODEL_GPT3 = "gpt-3.5-turbo-0613"
+    MODEL_GPT3_16 = "gpt-3.5-turbo-16k"
+    GPT_COST_INPUT = {
+        MODEL_GPT4: 0.00003,
+        MODEL_GPT4_16: 0.00006,
+        MODEL_GPT3: 0.0000015,
+        MODEL_GPT3_16: 0.000003
+    }
+    GPT_COST_OUTPUT = {
+        MODEL_GPT4: 0.00006,
+        MODEL_GPT4_16: 0.00012,
+        MODEL_GPT3: 0.00002,
+        MODEL_GPT3_16: 0.00004
+    }
     __default_model = MODEL_GPT3
     __dir_xml = os.path.join(os.path.dirname(os.path.realpath(__file__)), "xml")
     create_npc_openai_functions = {
@@ -194,6 +209,14 @@ class AINPC():
     def __init__(self, model_name=None):
         self.__default_model = model_name if model_name is not None else self.__default_model
 
+    def __num_tokens_from_string(string: str, encoding_name: str) -> int:
+        encoding = tiktoken.get_encoding(encoding_name)
+        num_tokens = len(encoding.encode(string))
+        return num_tokens
+    
+    def __calculate_cost(self, input_tokens: int, output_tokens: int, model: str) -> float:
+        return input_tokens * self.GPT_COST_INPUT[model] + output_tokens * self.GPT_COST_OUTPUT[model]
+
     def get_npc(self, id: int, temperature: float = 0.9, model: str = 'gpt-3.5-turbo-16k', quick: bool = False):
         npc = NPC(id) # First, try to get the NPC from the database, before doing the expensive GPT-3.5-0613 call
 
@@ -225,6 +248,9 @@ class AINPC():
             )
 
             print(response)
+            print(response["usage"]["completion_tokens"])
+            cost = self.__calculate_cost(response["usage"]["prompt_tokens"], response["usage"]["completion_tokens"], model)
+            TokenLog().add("Generate NPC", response["usage"]["prompt_tokens"], response["usage"]["completion_tokens"], cost)
             message = response["choices"][0]["message"]
 
             if (message.get("function_call")):
@@ -244,7 +270,7 @@ class AINPC():
         for key in npc.data:
             if npc.data[key] != None:
                 npc_description += str(npc.data[key]) + "\n"
-        print(npc_description)
+
         response = openai.ChatCompletion.create(
             model = model,
             messages = [{
@@ -269,7 +295,8 @@ class AINPC():
             ],
             function_call = {"name": "show_npc_summary"}
         )
-        print(response)
+        cost = self.__calculate_cost(response["usage"]["prompt_tokens"], response["usage"]["completion_tokens"], model)
+        TokenLog().add("Regen NPC Summary", response["usage"]["prompt_tokens"], response["usage"]["completion_tokens"], cost)
         message = response["choices"][0]["message"]
         if (message.get("function_call")):
             function_name = message["function_call"]["name"]
@@ -323,7 +350,8 @@ class AINPC():
             ],
             function_call = {"name": "regen_npc_key"}
         )
-        print(response)
+        cost = self.__calculate_cost(response["usage"]["prompt_tokens"], response["usage"]["completion_tokens"], model)
+        TokenLog().add("Regen NPC Key", response["usage"]["prompt_tokens"], response["usage"]["completion_tokens"], cost)
         message = response["choices"][0]["message"]
         if (message.get("function_call")):
             function_name = message["function_call"]["name"]
@@ -391,6 +419,8 @@ class AINPC():
             function_call = {"name": "gen_npc_from_dict"}
         )
         logging.debug(response)
+        cost = self.__calculate_cost(response["usage"]["prompt_tokens"], response["usage"]["completion_tokens"], self.MODEL_GPT4)
+        TokenLog().add("Generate NPC from Dict", response["usage"]["prompt_tokens"], response["usage"]["completion_tokens"], cost)
         message = response["choices"][0]["message"]
         if (message.get("function_call")):
             args = message.get("function_call")["arguments"]

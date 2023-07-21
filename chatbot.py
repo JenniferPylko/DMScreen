@@ -5,6 +5,7 @@ from langchain.vectorstores import Pinecone
 from langchain.chains.question_answering import load_qa_chain
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain.embeddings.openai import OpenAIEmbeddings
+from langchain.callbacks import get_openai_callback
 from langchain.schema import (
     HumanMessage,
     SystemMessage,
@@ -14,11 +15,15 @@ from langchain.schema import (
 import pinecone
 import json
 from npc import AINPC
-from models import NPCs, Reminders
+from models import NPCs, Reminders, TokenLog
 import logging
 
+logging.basicConfig(level=logging.DEBUG, filename='webserver.log')
+
 class ChatBot():
-    __default_model = "gpt-3.5-turbo-0613"
+    MODEL_GPT4 = "gpt-4-0613"
+    MODEL_GPT3 = "gpt-3.5-turbo-0613"
+    __default_model = MODEL_GPT3
     __reference_instance: Pinecone = None
     __split_chunk_size = 1000
     __split_chunk_overlap = 100
@@ -155,10 +160,11 @@ class ChatBot():
 
         llm = ChatOpenAI(model_name=model, temperature=temperature, openai_api_key=self.__openai_key)
         messages.append(HumanMessage(content=query))
-        #response = llm.predict_messages(messages, functions=self.functions, function_call={"name": "query_vectorstore"})
-        response = llm.predict_messages(messages, functions=self.functions)
+        with get_openai_callback() as cb:
+            response = llm.predict_messages(messages, functions=self.functions)
+            TokenLog().add("Chat Bot", cb.prompt_tokens, cb.completion_tokens, cb.total_cost)
+
         messages.append(response)
-        #logging.debug(f"LLM Answer: {response}")
 
         if response.additional_kwargs.get("function_call"):
             function_name = response.additional_kwargs["function_call"]["name"]
@@ -177,17 +183,22 @@ class ChatBot():
             messages.append(FunctionMessage(content=function_response, name=function_name))
             response2 = ""
             if (function_name == "query_documentation") or (function_name == "query_sessions"):
-                response2 = llm.predict_messages(messages, functions=self.function_final_answer, function_call={"name": "final_answer"})
+                with get_openai_callback() as cb:
+                    response2 = llm.predict_messages(messages, functions=self.function_final_answer, function_call={"name": "final_answer"})
+                    TokenLog().add("Query Vectorstore", cb.prompt_tokens, cb.completion_tokens, cb.total_cost)
+
                 arguments2 = json.loads(response2.additional_kwargs["function_call"]["arguments"])
                 logging.debug(f"LLM Answer 2: {arguments2['answer']}")
                 return {
-                    "answer": arguments2["answer"],
-                    "source": arguments2["source"],
-                    "people": arguments2["people"]
+                    "answer": arguments2["answer"] if arguments2["answer"] is not None else "I don't know the answer to that question",
+                    "source": arguments2["source"] if arguments2["source"] is not None else "unknown",
+                    "people": arguments2["people"] if arguments2["people"] is not None else [],
                 }
             else:
                 # We don't need gpt4 for this part, so we can just use the default model
-                response2 = llm.predict_messages(messages, model=self.__default_model)
+                with get_openai_callback() as cb:
+                    response2 = llm.predict_messages(messages, model=self.__default_model)
+                    TokenLog().add("Chat Function: " + function_name, cb.prompt_tokens, cb.completion_tokens, cb.total_cost)
                 r = {
                     "answer": response2.content,
                     "source": "Chad",

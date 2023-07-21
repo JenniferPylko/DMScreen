@@ -10,7 +10,7 @@ import sqlite3
 import openai
 import requests
 
-from models import NPC, NPCs, GameNotes, GameNote, Game, PlotPoints, Reminders, Reminder
+from models import NPC, NPCs, GameNotes, GameNote, Game, PlotPoints, Reminders, Reminder, TokenLog
 from chatbot import ChatBot
 from npc import AINPC
 
@@ -25,8 +25,9 @@ from langchain.prompts import PromptTemplate
 from langchain.output_parsers import PydanticOutputParser
 from pydantic import BaseModel, Field, validator
 from langchain.chains.question_answering import load_qa_chain
+from langchain.callbacks import get_openai_callback
 
-logging.basicConfig(level=logging.DEBUG)
+logging.basicConfig(level=logging.DEBUG, filename='webserver.log')
 
 load_dotenv()
 
@@ -95,7 +96,9 @@ def get_names(temperature=0.9, model='text-davinci-003', game_id=None) -> list[s
         messages = _input.to_messages()
         chat = ChatOpenAI(model_name=model_name, temperature=0.9)
         logging.debug("Sending prompt to OpenAI using model: "+model_name+"\n\n"+_input.to_messages().pop().content)
-        answer = chat(_input.to_messages())
+        with get_openai_callback() as cb:
+            answer = chat(_input.to_messages())
+            TokenLog().add("Generate Names", cb.prompt_tokens, cb.completion_tokens, cb.total_cost)
         logging.debug("Received answer from OpenAI: "+answer.content+"\n\nType: "+str(type(answer.content)))
 
         parsed_answer = names_parser.parse(answer.content)
@@ -131,7 +134,7 @@ def ask():
     modules = request.form.get('modules')
     temperature = request.form.get('temperature')
     chatbot = ChatBot(game.data['id'], os.getenv("OPENAI_API_KEY"), os.getenv("PINECONE_API_KEY"), os.getenv("PINECONE_ENVIRONMENT"))
-    answer = chatbot.send_message(message, temperature=temperature, model='gpt-4')
+    answer = chatbot.send_message(message, temperature=temperature, model=ChatBot.MODEL_GPT3)
     return send_flask_response(make_response, answer)
 
 @app.route('/setgame', methods=['POST'])
@@ -160,7 +163,7 @@ def setgame():
             "id": note.data['id']
         })
 
-    # If there is a notes summary in the db, use it, otherwise, generate one from ChatGPT
+    # If there is a notes summary in the db, use it
     notes_summary = game_notes.data["summary"] if game_notes != None else None
 
     # Get a list of NPCs
@@ -246,7 +249,7 @@ def getnpc():
 @app.route('/getnpcs', methods=['POST'])
 def getnpcs():
     names = []
-    for name in get_names():
+    for name in get_names(game_id=game.data['id']):
         names.append(name.data)
     return send_flask_response(make_response, names)
 
@@ -354,6 +357,7 @@ def gennpcimage():
         n=1,
         size='512x512'
     )
+    TokenLog().add("Generate OpenAI Image", 0, 0, 0.018)
     image_url = openai_response['data'][0]['url']
     print(image_url)
 
