@@ -9,7 +9,9 @@ import openai
 logging.basicConfig(level=logging.DEBUG)
 
 class AINPC():
-    __default_model = "gpt-3.5-turbo-0613"
+    MODEL_GPT4 = "gpt-4-0613"
+    MODEL_GPT3 = "gpt-3.5-turbo-0613"
+    __default_model = MODEL_GPT3
     __dir_xml = os.path.join(os.path.dirname(os.path.realpath(__file__)), "xml")
     create_npc_openai_functions = {
         "name": "generate_npc",
@@ -196,7 +198,7 @@ class AINPC():
         npc = NPC(id) # First, try to get the NPC from the database, before doing the expensive GPT-3.5-0613 call
 
         # if npc has the key, race, then it is a completed NPC, so we can just return it
-        if (npc.data["background"] != None):
+        if (npc.data["background"] != None and npc.data['background'] != ""):
             return npc
 
         # If we get here, the NPC is in the database as a placeholder, so we need to generate the all of the details
@@ -212,7 +214,11 @@ class AINPC():
                 model = 'gpt-3.5-turbo-0613',
                 messages = [{
                     "role": "user",
-                    "content": "Create a NPC for Dungeons and Dragons 5e whose name is "+npc.data["name"]+"."
+                    "content": f"""Create a NPC for Dungeons and Dragons 5e whose name is 
+                    {npc.data["name"]}. The NPC should be as realistic as possible, and should be able to
+                    be used in a game of Dungeons and Dragons 5e. The NPC should be able to be
+                    non-player character. Do not leave any fields blanks.
+                    """
                 }],
                 functions = [ self.create_npc_openai_functions ],
                 function_call = {"name": "generate_npc"}
@@ -356,11 +362,11 @@ class AINPC():
         }
 
         response = openai.ChatCompletion.create(
-            model = self.__default_model,
+            model = self.MODEL_GPT4,
             messages = [{
                 "role": "user",
                 "content": f"""Create an NPC for Dungeons and Dragons 5e that has the following
-                attributes. These are only the known attributes of the NPC. Create all other 
+                attributes. These are just the known attributes of the NPC. Create all of the other 
                 attributes. The NPC should be as realistic as possible, and should be able to
                 be used in a game of Dungeons and Dragons 5e. The NPC should be able to be
                 non-player character. Do not leave any fields blanks.

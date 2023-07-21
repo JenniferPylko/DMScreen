@@ -648,7 +648,7 @@ function show_name (id=null, name=null, quick=0) {
             <div class="regen" title="Regenerate Summary" onclick="regen_summary('${id}')"></div>
             <div id="npc_summary">${r['summary']}</div>
             </div>`;
-        html += `<div class="npc_image">${npc_img_html}</div>`;
+        html += `<div id="npc_image" class="npc_image">${npc_img_html}</div>`;
         html += '<div style="clear:both"></div>';
         div.html(html)
         div.removeClass('lds-ring')
@@ -742,13 +742,16 @@ function regen_key(id, key, img) {
 }
 
 function gen_npc_image(id) {
+    let div_img = $('#npc_image');
+    div_img.html("Your image in being generated. This may take a few seconds...");
+
     $.post('/gennpcimage_stability', { 
         id: id
     }, function(response) {
         let div = $('.npc_image');
         div.html('<img src="/static/img/npc/'+id+'.png" class="npc_image"/>');
     }).fail(function(jqXHR, textStatus, errorThrown) {
-        console.error('An error occurred, please try again - ' + errorThrown);
+        div_img.html('An error occurred, please try again - ' + errorThrown);
     });
 }
 
