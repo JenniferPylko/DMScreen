@@ -1,13 +1,13 @@
 # TODO
 ## DM Screen
 ### v0.1 - Early Access (MVP)
-- Handle 500 errors
-- Let user edit date for notes
 - Let user edit/type details for NPCs
+- Change dimensions for NPC portrait
+- Add ability to regenerate portrait
+- Add ability to upload a picture of an NPC instead of generating one
 - All NPCs should be bound to a game
 - Start tracking and costing tokens to learn usage/price metrics
 - BUG: When adding a new note, the note's date should be added to list of existing notes
-- Add ability to upload a picture of an NPC instead of generating one
 - Upload an audio recording to kick of whisper.py/split_audio.py/ai_instructions,save_transcript, etc.
 - HTTPS
 

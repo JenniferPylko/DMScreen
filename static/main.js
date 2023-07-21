@@ -19,6 +19,8 @@ $('#save_notes').on('click', function(e) {
         $('#save_notes').prop('disabled', false);
         $('#notes').css('background-color', '#fff');
         $('#notes').val('');
+    }).fail(function(jqXHR, textStatus, errorThrown) {
+        alert('An error occurred, please try again - ' + errorThrown);
     });
 });
 
@@ -208,6 +210,9 @@ $('#game').on('change', function(e) {
             div.append(title);
             $('#reminder_list').append(div);
         };
+    }).fail(function(jqXHR, textStatus, errorThrown) {
+        alert('An error occurred, please try again - ' + errorThrown)
+        document.location.reload();
     });
 });
 
@@ -287,6 +292,8 @@ function refresh_npc_list() {
             );
         })
         $('#names').append('</table>');
+    }).fail(function(jqXHR, textStatus, errorThrown) {
+        alert('An error occurred, please try again - ' + errorThrown);
     });
 }
 
@@ -317,6 +324,8 @@ function show_note(date, note_id) {
         btn_delete.on('click', function() { delete_note (date) });
         div_btns.append(btn_edit);
         div_btns.append(btn_delete);
+    }).fail(function(jqXHR, textStatus, errorThrown) {
+        alert('An error occurred, please try again - ' + errorThrown)
     });
 }
 
@@ -347,6 +356,8 @@ function edit_note (id, date) {
         }, function(response) {
             console.log(response)
             $('#note_'+date).html('<a href="javascript:show_note(\''+new_date+'\', \''+id+'\')">' + new_date + '</a>')
+        }).fail(function(jqXHR, textStatus, errorThrown) {
+            alert('An error occurred, please try again - ' + errorThrown);
         });
     });
 }
@@ -362,6 +373,8 @@ function save_note(date, textarea) {
     }, function(response) {
         modal.style.display = "none";
         $('#modal-buttons').html('')
+    }).fail(function(jqXHR, textStatus, errorThrown) {
+        alert('An error occurred, please try again - ' + errorThrown);
     });
 }
 
@@ -375,6 +388,8 @@ function delete_note (date) {
         $('#note_'+date).remove();
         modal.style.display = "none";
         $('#modal-buttons').html('')
+    }).fail(function(jqXHR, textStatus, errorThrown) {
+        alert('An error occurred, please try again - ' + errorThrown);
     });
 }
 
@@ -485,6 +500,8 @@ function create_npc_submit() {
 
         // Add a close button, that goes back to the previous value
         div.append('<button type="button" onclick="close_name(\''+id+'\')">Close</button>')
+    }).fail(function(jqXHR, textStatus, errorThrown) {
+        alert('An error occurred, please try again - ' + errorThrown);
     })
 }
 
@@ -515,6 +532,8 @@ function create_plot_point_submit() {
         let r = JSON.parse(response);
         console.log(r);
         modal.style.display = "none";
+    }).fail(function(jqXHR, textStatus, errorThrown) {
+        alert('An error occurred, please try again - ' + errorThrown);
     })
 }
 
@@ -546,6 +565,8 @@ function create_reminder_submit() {
     function(response) {
         refresh_reminders();
         modal.style.display = "none";
+    }).fail(function(jqXHR, textStatus, errorThrown) {
+        alert('An error occurred, please try again - ' + errorThrown);
     })
 }
 
@@ -566,6 +587,8 @@ function refresh_reminders() {
             div.append(title);
             $('#reminder_list').append(div);
         };
+    }).fail(function(jqXHR, textStatus, errorThrown) {
+        alert('An error occurred, please try again - ' + errorThrown);
     });
 }
 
@@ -574,6 +597,8 @@ function delete_reminder(id) {
         id: id
     }, function(response) {
         refresh_reminders();
+    }).fail(function(jqXHR, textStatus, errorThrown) {
+        alert('An error occurred, please try again - ' + errorThrown);
     });
 }
 
@@ -627,7 +652,9 @@ function show_name (id=null, name=null, quick=0) {
         html += '<div style="clear:both"></div>';
         div.html(html)
         div.removeClass('lds-ring')
-    });
+    }).fail(function(jqXHR, textStatus, errorThrown) {
+        alert('An error occurred, please try again - ' + errorThrown);
+    })
 }
 
 function delete_name(id) {
@@ -638,6 +665,8 @@ function delete_name(id) {
             $('#name_'+id).remove();
         if ($('#game_name_'+id))
         $('#game_name_'+id).remove();
+    }).fail(function(jqXHR, textStatus, errorThrown) {
+        alert('An error occurred, please try again - ' + errorThrown);
     });
 }
 
@@ -658,7 +687,9 @@ function add_name(id, background, name) {
             <td><a href="javascript:delete_name('${id}')">X</a></td>
             </tr>`
         $('#table_game_names').append(tr);
-    });
+    }).fail(function(jqXHR, textStatus, errorThrown) {
+        alert('An error occurred, please try again - ' + errorThrown);
+    });;
 }
 
 function close_name() {
@@ -691,6 +722,8 @@ function regen_summary(id) {
         div.html(response)
         div.removeClass('lds-ring')
         div.css('display', 'block');
+    }).fail(function(jqXHR, textStatus, errorThrown) {
+        alert('An error occurred, please try again - ' + errorThrown);
     });
 }
 
@@ -703,6 +736,8 @@ function regen_key(id, key, img) {
     }, function(response) {
         td.html(response);
         img.classList.remove('spin');
+    }).fail(function(jqXHR, textStatus, errorThrown) {
+        alert('An error occurred, please try again - ' + errorThrown);
     });
 }
 
