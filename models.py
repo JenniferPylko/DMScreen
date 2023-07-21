@@ -5,6 +5,8 @@ import json
 from langchain.chat_models import ChatOpenAI
 from langchain.prompts import PromptTemplate
 from langchain.output_parsers import PydanticOutputParser
+from langchain.callbacks import get_openai_callback
+from openaihandler import OpenAIHandler
 from pydantic import BaseModel, Field
 from typing import List
 import datetime
@@ -184,13 +186,15 @@ class GameNotes(Model):
         dates = self.get_array("SELECT date FROM games_notes WHERE game=? ORDER BY date DESC", (self.game,))
         return dates
     
-    def _preprocess(self, note, temperature=0.5, model='gpt-3.5-turbo-0613'):
+    def _preprocess(self, note, temperature=0.5, model=OpenAIHandler.MODEL_GPT3):
         _input = self.__notes_prompt.format_prompt(notes=note)
         messages = _input.to_messages()
 
         chat = ChatOpenAI(model_name=model, temperature=temperature)
         logging.debug("Sending prompt to OpenAI using model: "+model+"\n\n"+_input.to_messages().pop().content)
-        answer = chat(_input.to_messages())
+        with get_openai_callback() as cb:
+            answer = chat(_input.to_messages())
+            TokenLog().add("Add Game Notes", cb.prompt_tokens, cb.completion_tokens, cb.total_cost)
         logging.debug("Received answer from OpenAI: "+answer.content+"\n\nType: "+str(type(answer)))
 
         parsed_answer = ""

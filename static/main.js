@@ -19,6 +19,7 @@ $('#save_notes').on('click', function(e) {
         $('#save_notes').prop('disabled', false);
         $('#notes').css('background-color', '#fff');
         $('#notes').val('');
+        refresh_notes_list();
     }).fail(function(jqXHR, textStatus, errorThrown) {
         alert('An error occurred, please try again - ' + errorThrown);
     });
@@ -566,6 +567,36 @@ function delete_reminder(id) {
         id: id
     }, function(response) {
         refresh_reminders();
+    }).fail(function(jqXHR, textStatus, errorThrown) {
+        alert('An error occurred, please try again - ' + errorThrown);
+    });
+}
+
+function refresh_notes_list() {
+    $.post('/getnotes', {
+        game: $('#game').val()
+    }, function(response) {
+        let r = JSON.parse(response);
+        $('#notes').html(
+            `<table id="table_notes">
+                <tr>
+                    <th>Date</th><th>Notes</th><th>Delete</th>
+                </tr>`
+        );
+        r.forEach((row)=> {
+            let date = row.date;
+            let id = row.id;
+            $('#table_notes').append(
+                `<tr id="note_${date}">
+                <td><a href="javascript:show_note('${date}', '${id}')">${date}</a></td>
+                <td></td>
+                <td>
+                    <a href="javascript:delete_note('${date}')">X</a>
+                </td>
+                </tr>`
+            );
+        })
+        $('#notes').append('</table>');
     }).fail(function(jqXHR, textStatus, errorThrown) {
         alert('An error occurred, please try again - ' + errorThrown);
     });

@@ -13,6 +13,7 @@ import requests
 from models import NPC, NPCs, GameNotes, GameNote, Game, PlotPoints, Reminders, Reminder, TokenLog
 from chatbot import ChatBot
 from npc import AINPC
+from openaihandler import OpenAIHandler
 
 from typing import List
 
@@ -37,8 +38,7 @@ DIR_DOCS = os.path.join(DIR_ROOT, 'docs')
 DIR_PERSIST = os.path.join(DIR_ROOT, 'db')
 DIR_NOTES = os.path.join(DIR_ROOT, 'notes')
 
-#model_name = 'gpt-4'
-model_name = 'gpt-3.5-turbo-16k'
+model_name = OpenAIHandler.MODEL_GPT3
 notes_instance = None
 game = None
 game_dir = None
@@ -134,7 +134,7 @@ def ask():
     modules = request.form.get('modules')
     temperature = request.form.get('temperature')
     chatbot = ChatBot(game.data['id'], os.getenv("OPENAI_API_KEY"), os.getenv("PINECONE_API_KEY"), os.getenv("PINECONE_ENVIRONMENT"))
-    answer = chatbot.send_message(message, temperature=temperature, model=ChatBot.MODEL_GPT3)
+    answer = chatbot.send_message(message, temperature=temperature, model=OpenAIHandler.MODEL_GPT3)
     return send_flask_response(make_response, answer)
 
 @app.route('/setgame', methods=['POST'])

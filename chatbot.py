@@ -17,13 +17,12 @@ import json
 from npc import AINPC
 from models import NPCs, Reminders, TokenLog
 import logging
+from openaihandler import OpenAIHandler
 
 logging.basicConfig(level=logging.DEBUG, filename='webserver.log')
 
 class ChatBot():
-    MODEL_GPT4 = "gpt-4-0613"
-    MODEL_GPT3 = "gpt-3.5-turbo-0613"
-    __default_model = MODEL_GPT3
+    __default_model = OpenAIHandler.MODEL_GPT3
     __reference_instance: Pinecone = None
     __split_chunk_size = 1000
     __split_chunk_overlap = 100
