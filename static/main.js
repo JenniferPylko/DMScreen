@@ -622,9 +622,11 @@ function show_name (id=null, name=null, quick=0) {
         if (id == null)
             id = r['id'];
         // r is a hash, iterate through it and display it
+        let rnd = Math.random();
         let npc_img_html = (r['image_exists'])
-            ? `<img src="/static/img/npc/${id}.png" class="npc_image"/>`
+            ? `<img src="/static/img/npc/${id}.png?${rnd}" class="npc_image"/><br/><a href="javascript:gen_npc_image('${id}')">Regenerate Image</a>`
             : '<a href="javascript:gen_npc_image(\''+id+'\')">Generate Image</a>';
+        console.log(npc_img_html)
         let html = '<table class="npc_details">';
         Object.keys(r).forEach((key) => {
             if (key == 'summary' || key == "id" || key == "image_exists" || key == "game_id") {
@@ -749,7 +751,11 @@ function gen_npc_image(id) {
         id: id
     }, function(response) {
         let div = $('.npc_image');
-        div.html('<img src="/static/img/npc/'+id+'.png" class="npc_image"/>');
+        let rnd = Math.random();
+        div.html(`<img src="/static/img/npc/${id}.png?${rnd}" class="npc_image"/>`);
+        link_regen = $('<a href="javascript:gen_npc_image(\''+id+'\')">');
+        link_regen.html('Regenerate Image');
+        div.append(link_regen);
     }).fail(function(jqXHR, textStatus, errorThrown) {
         div_img.html('An error occurred, please try again - ' + errorThrown);
     });
