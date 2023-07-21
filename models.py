@@ -178,7 +178,6 @@ class GameNotes(Model):
     def get_all(self):
         notes = self.get_array("SELECT id FROM games_notes WHERE game=? ORDER BY date DESC", (self.game,))
         for i, note_id in enumerate(notes):
-            print(note_id)
             notes[i] = GameNote(note_id)
         return notes
     

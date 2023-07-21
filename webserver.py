@@ -203,6 +203,13 @@ def getnote():
     note = GameNote(id)
     return send_flask_response(make_response, [note.data['orig']])
 
+@app.route('/getnotes', methods=['POST'])
+def getnotes():
+    notes = []
+    for note in GameNotes(game.data['abbr']).get_all():
+        notes.append(note.data)
+    return send_flask_response(make_response, notes)
+
 @app.route('/deletenote', methods=['POST'])
 def deletenote():
     date = request.form.get('date')
