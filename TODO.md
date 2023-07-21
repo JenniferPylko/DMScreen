@@ -1,8 +1,6 @@
 # TODO
 ## DM Screen
 ### v0.1 - Early Access (MVP)
-- Let user edit/type details for NPCs
-- Change dimensions for NPC portrait
 - Add ability to regenerate portrait
 - Add ability to upload a picture of an NPC instead of generating one
 - All NPCs should be bound to a game
@@ -18,6 +16,7 @@
 - Set up billing
 
 ### v0.5 - Public Beta
+- Let user edit/type details for NPCs
 - Add Random Everything Generator
 - Unify handling of wait messages while waiting for AI to complete
 - Make sure all data is tied to a user/game
