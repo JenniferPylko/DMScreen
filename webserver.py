@@ -431,13 +431,12 @@ def gennpcimage_stability():
         sampler=generation.SAMPLER_K_DPMPP_2M,
     )
 
-
-
     for resp in answers:
         for artifact in resp.artifacts:
             if artifact.finish_reason == generation.FILTER:
                 logging.warn("Your request activated the APIs safety filters and could not be processed.")
             if artifact.type == generation.ARTIFACT_IMAGE:
+                TokenLog().add("Generate Stability Image", 0, 0, 0.002)
                 img = Image.open(io.BytesIO(artifact.binary))
                 img.save(os.path.join(DIR_ROOT, 'static', 'img', 'npc', str(id)+'.png'))
 
