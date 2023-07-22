@@ -189,9 +189,9 @@ class ChatBot():
                 arguments2 = json.loads(response2.additional_kwargs["function_call"]["arguments"])
                 logging.debug(f"LLM Answer 2: {arguments2['answer']}")
                 return {
-                    "answer": arguments2["answer"] if arguments2["answer"] is not None else "I don't know the answer to that question",
-                    "source": arguments2["source"] if arguments2["source"] is not None else "unknown",
-                    "people": arguments2["people"] if arguments2["people"] is not None else [],
+                    "answer": arguments2["answer"] if "answer" in arguments2 else "I dot know the answer to that question.",
+                    "source": arguments2["source"] if "source" in arguments2 else "unknown",
+                    "people": arguments2["people"] if "people" in arguments2 else []
                 }
             else:
                 # We don't need gpt4 for this part, so we can just use the default model

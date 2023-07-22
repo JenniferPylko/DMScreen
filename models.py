@@ -10,6 +10,7 @@ from openaihandler import OpenAIHandler
 from pydantic import BaseModel, Field
 from typing import List
 import datetime
+import random
 
 logging.basicConfig(level=logging.DEBUG)
 
@@ -121,7 +122,6 @@ class NPC():
         query = "UPDATE npcs SET "
         vals = []
         params = locals().copy()
-        logging.debug (params)
         for k,v in params.items():
             if k == 'self' or k == 'id' or v is None or k == 'params' or k == 'query' or k == 'vals':
                 continue
@@ -364,3 +364,62 @@ class TokenLog(Model):
 
     def add(self, query_type: str, prompt_tokens: int, completion_tokens: int, cost: float):
         return self.do_insert("INSERT INTO log_tokens (query_type, prompt_tokens, completion_tokens, cost) VALUES (?, ?, ?, ?)", (query_type, prompt_tokens, completion_tokens, cost))
+
+class Users(Model):
+    def __init__(self) -> None:
+        super().__init__()
+
+    def add(self, email, password):
+        date_new = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+        verify = random.randint(100000, 999999)
+        id = self.do_insert("INSERT INTO users (email, password, date_new, verify) VALUES (?, ?, ?, ?)", (email, password, date_new, verify))
+        return User(id)
+    
+    def get_by_email(self, email):
+        user = self.get_row("SELECT id FROM users WHERE email=?", (email,))
+        return User(user['id']) if user is not None else None
+
+class User():
+    def __init__(self, id: int) -> None:
+        self.id = id
+        self.data = {}
+        self.__root_dir = os.path.dirname(os.path.abspath(__file__))
+        self._db = sqlite3.connect(os.path.join(self.__root_dir, 'db.sqlite3'))
+        self._db.row_factory = sqlite3.Row
+        cursor = self._db.cursor()
+        cursor.execute("SELECT * FROM users WHERE id = ?", (id,))
+        row = cursor.fetchone()
+        for key in row.keys():
+            self.data[key] = row[key]
+        cursor.close()        
+
+    def pre_reset_password(self):
+        reset = random.randint(100000, 999999)
+        cursor = self._db.cursor()
+        cursor.execute("UPDATE users SET reset=? WHERE id=?", (reset, self.id))
+        self._db.commit()
+        cursor.close()
+        self.data['reset'] = reset
+        return reset
+    
+    def update(self, email=None, password=None, verify=None, reset=None):
+        params = locals().copy()
+        query = "UPDATE users SET "
+        vals = []
+        for k,v in params.items():
+            if k == 'self' or k == 'id' or v is None:
+                continue
+            query += k + "=?,"
+            vals.append(v)
+            self.data[k] = v
+        query = query[:-1]
+        query += " WHERE id=?"
+        vals.append(self.data['id'])
+        logging.debug(query)
+        logging.debug(str(vals))
+        cursor = self._db.cursor()
+        cursor.execute(query, vals)
+        self._db.commit()
+        cursor.close()
+        return self  
+    

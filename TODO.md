@@ -1,9 +1,9 @@
 # TODO
 ## DM Screen
 ### v0.1 - Early Access (MVP)
-- BUG: When adding a new note, the note's date should be added to list of existing notes
-- Upload an audio recording to kick of whisper.py/split_audio.py/ai_instructions,save_transcript, etc.
 - Add user accounts
+- - Track game_id on client, not server
+- Upload an audio recording to kick off whisper.py/split_audio.py/ai_instructions,save_transcript, etc.
 - Move to DigitalOcean
 - HTTPS
 
@@ -14,6 +14,7 @@
 - Set up billing
 
 ### v0.5 - Public Beta
+- Use Flask sessions for security/authentication
 - Add ability to upload documents
 - Add ability to upload a picture of an NPC instead of generating one
 - Let user edit/type details for NPCs

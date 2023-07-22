@@ -6,18 +6,19 @@ from stability_sdk import client
 import stability_sdk.interfaces.gooseai.generation.generation_pb2 as generation
 import time
 import logging
-import sqlite3
 import openai
 import requests
+import bcrypt
+import smtplib
 
-from models import NPC, NPCs, GameNotes, GameNote, Game, PlotPoints, Reminders, Reminder, TokenLog
+from models import NPC, NPCs, GameNotes, GameNote, Game, PlotPoints, Reminders, Reminder, TokenLog, Users
 from chatbot import ChatBot
 from npc import AINPC
 from openaihandler import OpenAIHandler
 
 from typing import List
 
-from flask import Flask, render_template, request, make_response
+from flask import Flask, render_template, request, make_response, session
 from dotenv import dotenv_values, load_dotenv
 from watchdog.observers import Observer
 
@@ -118,12 +119,96 @@ def send_flask_response(make_response, parameters:list[str]):
     response.headers.add('Access-Control-Allow-Origin', '*')
     return response
 
+def send_simple_message(email, subject, msg):
+    logging.info("Sending email to "+email)
+    return requests.post(
+        "https://api.mailgun.net/v3/"+os.getenv("MAILGUN_DOMAIN")+"/messages" ,
+        auth=("api", os.getenv("MAILGUN_API_KEY")),
+        data={
+            "from": "DM Assistant <mailgun@"+os.getenv("MAILGUN_DOMAIN")+">",
+            "to": [email],
+            "subject": subject,
+            "text": msg
+        })
+
 """Required for flask webserver"""
 @app.route('/')
+@app.route('/loginprompt')
+def loginprompt():
+    return render_template('loginprompt.html')
+
+@app.route('/forgot')
+def forgotpassword():
+    return render_template('forgotpassword.html')
+
+@app.route('/forgot_2', methods=['POST'])
+def forgotpassword_2():
+    email = request.form.get('email')
+    user = Users().get_by_email(email)
+    if user != None:
+        reset = user.pre_reset_password()
+        r = send_simple_message(email, "DM Assistant Password Reset", "A request was made to reset your password at dmscreen.net. If you did not make this request, please ignore this email. If you made this request, please click the following link to reset your password: http://localhost:30003/reset?email="+email+"&key="+str(reset)+"\n\nIf you did not make this request, please ignore this email.")
+        logging.debug("Email response: "+str(r))
+
+    # Send the user back to the login prompt even if they didn't have an account. Don't clue an
+    # attacker in that they have the wrong email address
+    return render_template('loginprompt.html', reset=True)
+
+@app.route('/reset', methods=['GET'])
+def resetpassword():
+    email = request.args.get('email')
+    key = request.args.get('key')
+    user = Users().get_by_email(email)
+    if user == None:
+        return render_template('loginprompt.html', error="Invalid email or password")
+    if str(user.data['reset']) != key:
+        return render_template('loginprompt.html', error="Invalid email or password")
+    return render_template('resetpassword.html', email=email, key=key)
+
+@app.route('/reset_2', methods=['POST'])
+def resetpassword_2():
+    email = request.form.get('email')
+    key = request.form.get('key')
+    password = request.form.get('psw1').encode('utf-8')
+    user = Users().get_by_email(email)
+    if user == None:
+        return render_template('loginprompt.html', error="Invalid email or password")
+    if str(user.data['reset']) != key:
+        return render_template('loginprompt.html', error="Invalid email or password")
+    salt = bcrypt.gensalt()
+    hashed_password = bcrypt.hashpw(password, bcrypt.gensalt())
+    user.update(password=hashed_password, reset="")
+    return render_template('loginprompt.html', info="Your password has been reset. Please login with your new password")
+
+@app.route('/login', methods=['POST'])
+def login():
+    email = request.form.get('email')
+    password = request.form.get('psw').encode('utf-8')
+    remember = request.form.get('remember')
+    user = Users().get_by_email(email)
+    if user == None:
+        return render_template('loginprompt.html', error="Invalid email or password")
+    if not bcrypt.checkpw(password, user.data['password']):
+        return render_template('loginprompt.html', error="Invalid email or password")
+    return home()
+
+@app.route('/createaccount')
+def createaccount():
+    return render_template('createaccount.html')
+
+@app.route('/createaccount_2', methods=['POST'])
+def createaccount_2():
+    email = request.form.get('email')
+    password = request.form.get('psw1').encode('utf-8')
+    salt = bcrypt.gensalt()
+    hashed_password = bcrypt.hashpw(password, bcrypt.gensalt())
+    user = Users().add(email, hashed_password)
+    # send email
+    send_simple_message(email, "Welcome to DM Assistant!", "Your account has been created. Please click the following link to verify your email address: http://localhost:30003/verify?email="+email+"&key="+user.data['verify'])
+    return render_template('loginprompt.html', created=True)
+
 @app.route('/home')
 def home():
-    db = sqlite3.connect(os.path.join(DIR_ROOT, 'db.sqlite3'))
-
     todays_date = time.strftime("%m/%d/%Y")
     return render_template('dmscreen.html', **locals())
 
@@ -131,10 +216,8 @@ def home():
 def ask():    
     global game
     message = request.form.get('question')
-    modules = request.form.get('modules')
-    temperature = request.form.get('temperature')
     chatbot = ChatBot(game.data['id'], os.getenv("OPENAI_API_KEY"), os.getenv("PINECONE_API_KEY"), os.getenv("PINECONE_ENVIRONMENT"))
-    answer = chatbot.send_message(message, temperature=temperature, model=OpenAIHandler.MODEL_GPT3)
+    answer = chatbot.send_message(message, model=OpenAIHandler.MODEL_GPT3)
     return send_flask_response(make_response, answer)
 
 @app.route('/setgame', methods=['POST'])
