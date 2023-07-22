@@ -225,7 +225,7 @@ class AINPC():
 
             print(response)
             print(response["usage"]["completion_tokens"])
-            cost = OpenAIHandler.calculate_cost(response["usage"]["prompt_tokens"], response["usage"]["completion_tokens"], model)
+            cost = OpenAIHandler().calculate_cost(response["usage"]["prompt_tokens"], response["usage"]["completion_tokens"], model)
             TokenLog().add("Generate NPC", response["usage"]["prompt_tokens"], response["usage"]["completion_tokens"], cost)
             message = response["choices"][0]["message"]
 

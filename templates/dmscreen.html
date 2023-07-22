@@ -8,18 +8,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="/static/style.css">
+    <script type="text/javascript">
+        const todays_date = "{{ todays_date }}";
+    </script>
 </head>
 <body>
     <nav id="toolbar">
         <span class="logout"><a href="/">Logout</a></span>
         <select id="game" name="game">
             <option value="" style="text-align: center;">--Choose a Game--</option>"
-            <option value="dotmm">Dungeon of the Mad Mage</option>
-            <option value="tod">Tyranny of Dragons</option>
-            <option value="spelljammer">Spelljammer</option>
-            <option value="dotn">Dawn of the Necromancer</option>
-            <option value="aielsland">Aielsland</option>
-            <option value="dorr">Dawn of Rock and Roll</option>
         </select>
         <!--Horizontal toolbar with icons to show/hide the grid-items -->
         <span class="nav-button active" title="Chat Bot""><a href="#" onclick="toggle_visibility('chatbot')"><i class="fa fa-comment"></i></a></span>
@@ -104,4 +101,15 @@
 <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script type="text/javascript" src="https://code.jquery.com/ui/1.13.0/jquery-ui.min.js"></script>
 <script type="text/javascript" src="/static/main.js"></script>
+<script type="text/javascript">
+    // eslint-disable-next-line no-redeclare
+    const game_list = {{ game_list | tojson }};
+    let game_select = document.getElementById("game");
+    game_list.forEach(function(game) {
+        let option = document.createElement("option");
+        option.text = game.name;
+        option.value = game.id;
+        game_select.add(option);
+    });
+</script>
 </html>

@@ -11,7 +11,8 @@ $('#save_notes').on('click', function(e) {
     $('#save_notes').prop('disabled', true);
     $('#notes').css('background-color', '#ccc');
     $.post('/savenotes', { 
-        notes: notes
+        notes: notes,
+        game_id: $('#game').val()
     }, function(response) {
         let r = JSON.parse(response);
         $('#notes_most_recent').html(r[0]);
@@ -44,8 +45,7 @@ $('#chat-form').on('submit', function(e) {
     $('#chatbox').scrollTop($('#chatbox')[0].scrollHeight);
     $.post('/ask', { 
         question: question,
-        modules: checkedValues.join(','),
-        temperature: $('#temp').val()
+        game_id: $('#game').val()
     }, function(response) {
         let r = JSON.parse(response);
         r_formatted = r;
@@ -96,7 +96,7 @@ $('#game').on('change', function(e) {
     $('#notes').css('background-color', '#ccc');
     
     $.post('/setgame', { 
-        game: game
+        game_id: game
     }, function(response) {
         $('#notes_most_recent').html(JSON.parse(response)[0])
         json = JSON.parse(response);
@@ -230,7 +230,7 @@ $('#3rdParty').on('click', function(e) {
 
 function refresh_npc_list() {
     $.post('/getnpcs', {
-        game: $('#game').val()
+        game_id: $('#game').val()
     }, function(response) {
         let r = JSON.parse(response);
         $('#names').html(
@@ -270,7 +270,8 @@ function refresh_npc_list() {
 function show_note(date, note_id) {
     console.log('show_note()')
     $.post('/getnote', { 
-        id: note_id
+        id: note_id,
+        game_id: $('#game').val()
     }, function(response) {
         let r = JSON.parse(response)[0];
         r = r.replace(/(END OF)?.*?SESSION NOTES FOR \w+\n*/g, '');
@@ -339,7 +340,8 @@ function save_note(date, textarea) {
     console.log(txt)
     $.post('/updatenote', { 
         date: date,
-        note: txt
+        note: txt,
+        game_id: $('#game').val()
     }, function(response) {
         modal.style.display = "none";
         $('#modal-buttons').html('')
@@ -353,7 +355,8 @@ function delete_note (date) {
         return;
     }
     $.post('/deletenote', {
-        date: date
+        date: date,
+        game_id: $('#game').val()
     }, function(response) {
         $('#note_'+date).remove();
         modal.style.display = "none";
@@ -420,7 +423,9 @@ function create_npc_submit() {
     // Get all the values from the form
     var form = $('#create_npc_form');
     var data = form.serializeArray();
-    params = {};
+    params = {
+        game_id: $('#game').val()
+    };
     data.forEach((d) => {
         params[d.name] = d.value;
     })
@@ -496,7 +501,8 @@ function create_plot_point_submit() {
     $.post('/createplotpoint',
     {
         title: $('#plot_point_title').val(),
-        summary: $('#plot_point_summary').val()
+        summary: $('#plot_point_summary').val(),
+        game_id: $('#game').val()
     },
     function(response) {
         let r = JSON.parse(response);
@@ -530,7 +536,8 @@ function create_reminder_submit() {
     {
         title: $('#reminder_title').val(),
         details: $('#reminder_details').val(),
-        trigger: $('#reminder_trigger').val()
+        trigger: $('#reminder_trigger').val(),
+        game_id: $('#game').val()
     },
     function(response) {
         refresh_reminders();
@@ -542,7 +549,7 @@ function create_reminder_submit() {
 
 function refresh_reminders() {
     $.post('/getreminders', {
-        game: $('#game').val()
+        game_id: $('#game').val()
     }, function(response) {
         let r = JSON.parse(response);
         $('#reminder_list').html('')
@@ -574,7 +581,7 @@ function delete_reminder(id) {
 
 function refresh_notes_list() {
     $.post('/getnotes', {
-        game: $('#game').val()
+        game_id: $('#game').val()
     }, function(response) {
         let r = JSON.parse(response);
         $('#notes').html(
@@ -674,7 +681,8 @@ function delete_name(id) {
 
 function add_name(id, background, name) {
     $.post('/addname', { 
-        id: id
+        id: id,
+        game_id: $('#game').val()
     }, function(response) {
         tr = $('#name_'+id);
         tr.remove();  

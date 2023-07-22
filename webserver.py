@@ -10,8 +10,7 @@ import openai
 import requests
 import bcrypt
 import smtplib
-
-from models import NPC, NPCs, GameNotes, GameNote, Game, PlotPoints, Reminders, Reminder, TokenLog, Users
+from models import NPC, NPCs, GameNotes, GameNote, Game, PlotPoints, Reminders, Reminder, TokenLog, Users, Games
 from chatbot import ChatBot
 from npc import AINPC
 from openaihandler import OpenAIHandler
@@ -41,7 +40,6 @@ DIR_NOTES = os.path.join(DIR_ROOT, 'notes')
 
 model_name = OpenAIHandler.MODEL_GPT3
 notes_instance = None
-game = None
 game_dir = None
 game_persist_dir = None
 
@@ -210,22 +208,29 @@ def createaccount_2():
 @app.route('/home')
 def home():
     todays_date = time.strftime("%m/%d/%Y")
+    game_list = []
+    for game in Games().get_all():
+        game_list.append({
+            "id": game.data['id'],
+            "name": game.data['name']
+        })
     return render_template('dmscreen.html', **locals())
 
 @app.route('/ask', methods=['POST', 'OPTIONS'])
 def ask():    
-    global game
     message = request.form.get('question')
-    chatbot = ChatBot(game.data['id'], os.getenv("OPENAI_API_KEY"), os.getenv("PINECONE_API_KEY"), os.getenv("PINECONE_ENVIRONMENT"))
+    game_id = int(request.form.get('game_id'))
+    chatbot = ChatBot(game_id, os.getenv("OPENAI_API_KEY"), os.getenv("PINECONE_API_KEY"), os.getenv("PINECONE_ENVIRONMENT"))
     answer = chatbot.send_message(message, model=OpenAIHandler.MODEL_GPT3)
     return send_flask_response(make_response, answer)
 
 @app.route('/setgame', methods=['POST'])
 def setgame():
-    global game, game_dir, game_persist_dir, notes_instance
+    global game_dir, game_persist_dir, notes_instance
+
+    game = Game(int(request.form.get('game_id')))
 
     # Update the currently tracked game, and set embeddings 
-    game = Game(request.form.get('game'))
     game_dir = os.path.join(DIR_NOTES, game.data['abbr'])
 
     # If game_dir does not exist, create it
@@ -268,6 +273,7 @@ def setgame():
 @app.route('/savenotes', methods=['POST'])
 def savenotes(model='text-davinci-003', temperature=0.2):
     notes = request.form.get('notes')
+    game = Game(int(request.form.get('game_id')))
     date = time.strftime("%Y-%m-%d")
     note = GameNotes(game.data['abbr']).preprocess_and_add(notes, date).data['summary']
     return send_flask_response(make_response, [note])
@@ -276,6 +282,7 @@ def savenotes(model='text-davinci-003', temperature=0.2):
 def updatenote():
     date = request.form.get('date')
     note = request.form.get('note')
+    game = Game(int(request.form.get('game_id')))
     game_note = GameNotes(game.data['abbr']).get_by_date(date)
     game_note.update(note)
     return send_flask_response(make_response, ["OK"])
@@ -288,6 +295,7 @@ def getnote():
 
 @app.route('/getnotes', methods=['POST'])
 def getnotes():
+    game = Game(int(request.form.get('game_id')))
     notes = []
     for note in GameNotes(game.data['abbr']).get_all():
         notes.append(note.data)
@@ -296,6 +304,7 @@ def getnotes():
 @app.route('/deletenote', methods=['POST'])
 def deletenote():
     date = request.form.get('date')
+    game = Game(int(request.form.get('game_id')))
     GameNotes(game.data['abbr']).get_by_date(date).delete()
     return send_flask_response(make_response, ["OK"])
 
@@ -338,8 +347,9 @@ def getnpc():
 
 @app.route('/getnpcs', methods=['POST'])
 def getnpcs():
+    game_id = int(request.form.get('game_id'))
     names = []
-    for name in get_names(game_id=game.data['id']):
+    for name in get_names(game_id=game_id):
         names.append(name.data)
     return send_flask_response(make_response, names)
 
@@ -368,9 +378,11 @@ def createnpc():
     keys = request.form.keys()
     npc_dict = {}
     for key in keys:
+        if (key == 'game_id'):
+            continue
         npc_dict[key] = request.form.get(key)
     
-    npc = AINPC().gen_npc_from_dict(game_id=game.data['id'], npc_dict=npc_dict)
+    npc = AINPC().gen_npc_from_dict(game_id=keys['game_id'], npc_dict=npc_dict)
     response = make_response(npc.data)
     response.mimetype = "text/plain"
     response.headers.add('Access-Control-Allow-Origin', '*')
@@ -463,8 +475,9 @@ def gennpcimage():
 @app.route('/addname', methods=['POST'])
 def addname():
     id = request.form.get('id')
+    game_id = request.form.get('game_id')
     npc = NPC(id)
-    npc.update(game_id = game.data['id'])
+    npc.update(game_id = game_id)
     response = make_response("OK")
     response.mimetype = "text/plain"
     response.headers.add('Access-Control-Allow-Origin', '*')
@@ -474,7 +487,8 @@ def addname():
 def createplotpoint():
     title = request.form.get('title')
     details = request.form.get('summary')
-    plot_point = PlotPoints(game.data['id']).add(game.data['id'], title, details=details)
+    game_id = request.form.get('game_id')
+    plot_point = PlotPoints(game_id).add(game_id, title, details=details)
     response = make_response(plot_point.data)
     response.mimetype = "text/plain"
     response.headers.add('Access-Control-Allow-Origin', '*')
@@ -485,7 +499,8 @@ def createreminder():
     title = request.form.get('title')
     details = request.form.get('details')
     trigger = request.form.get('trigger')
-    reminder = Reminders(game.data['id']).add(title, details=details, trigger=trigger)
+    game_id = request.form.get('game_id')
+    reminder = Reminders(game_id).add(title, details=details, trigger=trigger)
     response = make_response(reminder.data)
     response.mimetype = "text/plain"
     response.headers.add('Access-Control-Allow-Origin', '*')
@@ -493,8 +508,9 @@ def createreminder():
 
 @app.route('/getreminders', methods=['POST'])
 def getreminders():
+    game_id = request.form.get('game_id')
     reminders = []
-    for reminder in Reminders(game.data['id']).get_all():
+    for reminder in Reminders(game_id).get_all():
         reminders.append(reminder.data)
     return send_flask_response(make_response, reminders)
 

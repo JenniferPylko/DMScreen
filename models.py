@@ -31,7 +31,7 @@ class Model():
         cursor.close()
         return row
     
-    def get_array(self, query: str, params: tuple = None) -> list:
+    def get_array(self, query: str, params: tuple = ()) -> list:
         cursor = self.__db.cursor()
         cursor.execute(query, params)
         rows = cursor.fetchall()
@@ -257,15 +257,35 @@ class GameNote():
         self.__db.commit()
         cursor.close()
 
+class Games(Model):
+    def __init__(self) -> None:
+        super().__init__()
+    
+    def get_all(self):
+        games = self.get_array("SELECT id FROM games ORDER BY name ASC")
+        for i, game in enumerate(games):
+            games[i] = Game(game)
+        return games
+    
+    def add(self, abbr, name, description=None):
+        id = self.do_insert("INSERT INTO games (abbr, name, description) VALUES (?, ?, ?)", (abbr, name, description))
+        return Game(abbr)
+    
+    def delete(self, abbr):
+        cursor = self._db.cursor()
+        cursor.execute("DELETE FROM games WHERE abbr=?", (abbr,))
+        self._db.commit()
+        cursor.close()
+
 class Game():
-    def __init__ (self, game: str) -> None:
+    def __init__ (self, game: int) -> None:
         self.game = game
         self.__root_dir = os.path.dirname(os.path.abspath(__file__))
         self._db = sqlite3.connect(os.path.join(self.__root_dir, 'db.sqlite3'))
         self._db.row_factory = sqlite3.Row
 
         cursor = self._db.cursor()
-        cursor.execute("SELECT * FROM games WHERE abbr = ?", (game,))
+        cursor.execute("SELECT * FROM games WHERE id = ?", (game,))
         row = cursor.fetchone()
         self.data = {}
         for key in row.keys():
