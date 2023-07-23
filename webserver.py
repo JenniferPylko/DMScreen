@@ -298,7 +298,7 @@ def createaccount_2():
     hashed_password = bcrypt.hashpw(password, bcrypt.gensalt())
     user = Users().add(email, hashed_password)
     # send email
-    send_simple_message(email, "Welcome to DM Assistant!", "Your account has been created. Please click the following link to verify your email address: http://dmscreen.net/verify?email="+email+"&key="+user.data['verify'])
+    send_simple_message(email, "Welcome to DM Assistant!", "Your account has been created. Please click the following link to verify your email address: http://dmscreen.net/verify?email="+email+"&key="+str(user.data['verify']))
     return render_template('loginprompt.html', created=True)
 
 @app.route('/home')
@@ -646,6 +646,13 @@ def getaudiostatus():
     task_id = request.form.get('task_id')
     task = Task(task_id)
     return send_flask_response(make_response, [task.data['status'], task.data['message']])
+
+@app.route('/creategame', methods=['POST'])
+def creategame():
+    name = request.form.get('game_name')
+    abbr = request.form.get('abbr')
+    game = Games().add(name, abbr, session.get('user_id'))
+    return send_flask_response(make_response, [game.data['id']])
 
 @app.after_request
 def add_header(r):

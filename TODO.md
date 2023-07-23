@@ -12,6 +12,7 @@
 - Set up billing
 
 ### v0.5 - Public Beta
+- Add ability to delete a game
 - Audio Transcripts
 - - Remember to check upload status when returning to a game (and disable upload if needed)
 - - Inject notes to vectorstore when processing complete
@@ -41,6 +42,8 @@
 - Let user edit/dropdown from XML for NPCs
 - Add ability to maximize a section for better handling/visibility
 - Create stock NPC names based on race
+- Migrate to MySql
+- - Set up proper relationships between tables (foreign/unique keys, etc)
 
 #### Multi-Game Support
 - Let user manage games (add/delete/preferences)

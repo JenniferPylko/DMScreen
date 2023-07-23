@@ -94,161 +94,177 @@ $('#game').on('change', function(e) {
     $('#notes').prop('disabled', true);
     $('#save_notes').prop('disabled', true);
     $('#notes').css('background-color', '#ccc');
+
+    if (game == 0) { // Create a new game
+        modal.style.display = "block";
+        var div = $('#modal_content');
+        $('#modal-header').html('Create Game')
+        let html = "<div><i>What would you like to name your game?</i></div>";
+        html += "<form id='create_game_form' method='post'>";
+        html += "<table>";
+        html += '<tr><td><label>Name:</label></td><td><input type="text" id="game_name" name="game_name"></td></td>';
+        html += '<tr><td><label>Abbreviation:</label></td><td><input type="text" id="abbr" name="abbr"></td></td>';
+        html += "</table>"
+        html += '<div><input type="button" value="Create" onclick="create_game_submit()"></div>';
+        html += "</form>"
+        div.html(html)        
+    } else { // Load the game
+        $.post('/setgame', { 
+            game_id: game
+        }, function(response) {
+            $('#notes_most_recent').html(JSON.parse(response)[0])
+            json = JSON.parse(response);
+            let notes_files = json[1];
+            let game_names = json[2];
+            let plot_points = json[3];
+            let reminders = json[4];
+            $('#game').prop('disabled', false);
+            $('#notes').prop('disabled', false);
+            $('#save_notes').prop('disabled', false);
+            $('#notes').css('background-color', '#fff');
+            $('#notes_most_recent').removeClass('lds-ring')
+            $('#previous_notes_list').html('');
+            notes_files.forEach((note) => {
+                console.log(note)
+                $('#previous_notes_list').append('<div id="note_'+note['date']+'"><a href="javascript:show_note(\''+note['date']+'\', \''+note['id']+'\')">' + note['date'] + '</a></div>');
+            })
     
-    $.post('/setgame', { 
-        game_id: game
-    }, function(response) {
-        $('#notes_most_recent').html(JSON.parse(response)[0])
-        json = JSON.parse(response);
-        let notes_files = json[1];
-        let game_names = json[2];
-        let plot_points = json[3];
-        let reminders = json[4];
-        $('#game').prop('disabled', false);
-        $('#notes').prop('disabled', false);
-        $('#save_notes').prop('disabled', false);
-        $('#notes').css('background-color', '#fff');
-        $('#notes_most_recent').removeClass('lds-ring')
-        $('#previous_notes_list').html('');
-        notes_files.forEach((note) => {
-            console.log(note)
-            $('#previous_notes_list').append('<div id="note_'+note['date']+'"><a href="javascript:show_note(\''+note['date']+'\', \''+note['id']+'\')">' + note['date'] + '</a></div>');
-        })
-
-        if (game_names.length > 0) {
-            $('#game_names').html(
-                `<table id="table_game_names">
-                    <tr>
-                        <th>Name</th><th>Quick Gen</th><th>Generated</th><th>Delete</th>
-                    </tr>`
-            );
-            game_names.forEach((row)=> {
-                let id = row.id;
-                let name = row.name;
-                let npc_class = row.npc_class;
-                let file_icon = (row.background) ? 'fa fa-file' : 'fa fa-file-o';
-                $('#table_game_names').append(
-                    `<tr id="game_name_${id}">
-                    <td><a href="javascript:show_name('${id}', '${name}')">${name}</a></td>
-                    <td id="game_quick_gen_${id}" class="center">`+
-                        ((row.background) ? '' : `<small><a href="javascript:show_name('${id}', '${name}', 1)">&gt;&gt;</a></small>`)
-                    +`</td><td class="center">
-                        <i id="game_file_icon_${id}"  class="${file_icon}"></i>
-                    </td>
-                    <td class="center">
-                        <a href="javascript:delete_name('${id}')">X</a>
-                    </td>
-                    </tr>`
+            if (game_names.length > 0) {
+                $('#game_names').html(
+                    `<table id="table_game_names">
+                        <tr>
+                            <th>Name</th><th>Quick Gen</th><th>Generated</th><th>Delete</th>
+                        </tr>`
                 );
-            })
-            $('#game_names').append('</table>');
-        } else {
-            $('#game_names').html('No NPCs have been created for this game yet, click the + buton to add a pregenerated NPC to this game, or click <a href="javascript:create_npc()">+ Add NPC</a> to create a new NPC for this game');
-        }
-
-        $('#plot_points').html('');
-        for (let i = 0; i < plot_points.length; i++) {
-            let plot_point = plot_points[i];
-            let div = $('<div class="plot_point">');
-            let title = $('<div class="plot_point_title">');
-            title.html(plot_point.title);
-            div.append(title);
-            div.draggable({containment: "parent"});
-            div.droppable({
-                over: function(event, ui) {
-                    console.log(this)
-                    $(this).addClass('plot_point_hover');
-                },
-                out: function(event, ui) {
-                    console.log('out')
-                    $(this).removeClass('plot_point_hover');
-                }
-            })
-            $('#plot_points').append(div);
-        }
-        
-        $('#reminder_list').html('')
-        for (let i = 0; i < reminders.length; i++) {
-            let reminder = reminders[i];
-            console.log(reminder)
-            let div = $('<div class="reminder">');
-            let title = $('<div class="reminder_title">');
-            let delete_ = $('<div class="reminder_delete" onclick="delete_reminder('+reminder.id+')">');
-            delete_.html('X');
-            title.html(reminder.title);
-            div.append(delete_);
-            div.append(title);
-            $('#reminder_list').append(div);
-        };
-
-        $('#audio_status').html('');
-        // Add mp3 upload
-        $('#audio_status').append('<div>Upload MP3 of a Session to create notes, and make them searchable by the chatbot</div><br/><br/>')
-        $('#audio_status').append('<label for="audio_file">Upload Audio File:</label>');
-        $('#audio_status').append('<input type="file" id="audio_file" name="audio_file" accept="audio/mp3">');
-        $('#audio_status').append('<input type="button" id="audio_upload" value="Upload">');
-        $('#audio_status').append('<div id="audio_progress"></div>');
-        $('#audio_upload').on('click', function(e) {
-            e.preventDefault();
-            $('#audio_upload').prop('disabled', true);
-            var file = $('#audio_file').prop('files')[0];
-            var formData = new FormData();
-            formData.append('audio_file', file);
-            formData.append('game_id', $('#game').val());
-            $.ajax({
-                url: '/uploadaudio',
-                data: formData,
-                processData: false,
-                contentType: false,
-                type: 'POST',
-                success: function(data){
-                    json = JSON.parse(data);
-                    var task_id;
-                    var div_progress = $('<div class="audio_progress">');
-                    if (json[0]['error']) {
-                        div_progress.html('Error: ' + json[0]['error']);
-                        $('#audio_upload').prop('disabled', false);
-                    } else {
-                        div_progress.html('Queued: ' + file.name);
-                        task_id = json[0];
+                game_names.forEach((row)=> {
+                    let id = row.id;
+                    let name = row.name;
+                    let npc_class = row.npc_class;
+                    let file_icon = (row.background) ? 'fa fa-file' : 'fa fa-file-o';
+                    $('#table_game_names').append(
+                        `<tr id="game_name_${id}">
+                        <td><a href="javascript:show_name('${id}', '${name}')">${name}</a></td>
+                        <td id="game_quick_gen_${id}" class="center">`+
+                            ((row.background) ? '' : `<small><a href="javascript:show_name('${id}', '${name}', 1)">&gt;&gt;</a></small>`)
+                        +`</td><td class="center">
+                            <i id="game_file_icon_${id}"  class="${file_icon}"></i>
+                        </td>
+                        <td class="center">
+                            <a href="javascript:delete_name('${id}')">X</a>
+                        </td>
+                        </tr>`
+                    );
+                })
+                $('#game_names').append('</table>');
+            } else {
+                $('#game_names').html('No NPCs have been created for this game yet, click the + buton to add a pregenerated NPC to this game, or click <a href="javascript:create_npc()">+ Add NPC</a> to create a new NPC for this game');
+            }
+    
+            $('#plot_points').html('');
+            for (let i = 0; i < plot_points.length; i++) {
+                let plot_point = plot_points[i];
+                let div = $('<div class="plot_point">');
+                let title = $('<div class="plot_point_title">');
+                title.html(plot_point.title);
+                div.append(title);
+                div.draggable({containment: "parent"});
+                div.droppable({
+                    over: function(event, ui) {
+                        console.log(this)
+                        $(this).addClass('plot_point_hover');
+                    },
+                    out: function(event, ui) {
+                        console.log('out')
+                        $(this).removeClass('plot_point_hover');
                     }
-                    $('#audio_status').append(div_progress);
-
-                    var intervalId = setInterval(function() {
-                        $.ajax({
-                            url: '/getaudiostatus',
-                            data: {
-                                task_id: task_id
-                            },
-                            type: 'POST',
-                            success: function(data){
-                                json = JSON.parse(data);
-                                if (json['error']) {
-                                    div_progress.html('Error: ' + json['error']);
+                })
+                $('#plot_points').append(div);
+            }
+            
+            $('#reminder_list').html('')
+            for (let i = 0; i < reminders.length; i++) {
+                let reminder = reminders[i];
+                console.log(reminder)
+                let div = $('<div class="reminder">');
+                let title = $('<div class="reminder_title">');
+                let delete_ = $('<div class="reminder_delete" onclick="delete_reminder('+reminder.id+')">');
+                delete_.html('X');
+                title.html(reminder.title);
+                div.append(delete_);
+                div.append(title);
+                $('#reminder_list').append(div);
+            };
+    
+            $('#audio_status').html('');
+            // Add mp3 upload
+            $('#audio_status').append('<div>Upload MP3 of a Session to create notes, and make them searchable by the chatbot</div><br/><br/>')
+            $('#audio_status').append('<label for="audio_file">Upload Audio File:</label>');
+            $('#audio_status').append('<input type="file" id="audio_file" name="audio_file" accept="audio/mp3">');
+            $('#audio_status').append('<input type="button" id="audio_upload" value="Upload">');
+            $('#audio_status').append('<div id="audio_progress"></div>');
+            $('#audio_upload').on('click', function(e) {
+                e.preventDefault();
+                $('#audio_upload').prop('disabled', true);
+                var file = $('#audio_file').prop('files')[0];
+                var formData = new FormData();
+                formData.append('audio_file', file);
+                formData.append('game_id', $('#game').val());
+                $.ajax({
+                    url: '/uploadaudio',
+                    data: formData,
+                    processData: false,
+                    contentType: false,
+                    type: 'POST',
+                    success: function(data){
+                        json = JSON.parse(data);
+                        var task_id;
+                        var div_progress = $('<div class="audio_progress">');
+                        if (json[0]['error']) {
+                            div_progress.html('Error: ' + json[0]['error']);
+                            $('#audio_upload').prop('disabled', false);
+                        } else {
+                            div_progress.html('Queued: ' + file.name);
+                            task_id = json[0];
+                        }
+                        $('#audio_status').append(div_progress);
+    
+                        var intervalId = setInterval(function() {
+                            $.ajax({
+                                url: '/getaudiostatus',
+                                data: {
+                                    task_id: task_id
+                                },
+                                type: 'POST',
+                                success: function(data){
+                                    json = JSON.parse(data);
+                                    if (json['error']) {
+                                        div_progress.html('Error: ' + json['error']);
+                                        $('#audio_upload').prop('disabled', false);
+                                        clearInterval(intervalId);
+                                    } else if (json[0] == 'Complete') {
+                                        div_progress.html('Complete');
+                                        clearInterval(intervalId);
+                                        $('#audio_upload').prop('disabled', false);
+                                        refresh_notes_list();
+                                    } else {
+                                        div_progress.html(json[1]);
+                                    }
+                                },
+                                error: function(data) {
+                                    div_progress.html('Error: ' + data);
                                     $('#audio_upload').prop('disabled', false);
-                                    clearInterval(intervalId);
-                                } else if (json[0] == 'Complete') {
-                                    div_progress.html('Complete');
-                                    clearInterval(intervalId);
-                                    $('#audio_upload').prop('disabled', false);
-                                    refresh_notes_list();
-                                } else {
-                                    div_progress.html(json[1]);
                                 }
-                            },
-                            error: function(data) {
-                                div_progress.html('Error: ' + data);
-                                $('#audio_upload').prop('disabled', false);
-                            }
-                        });
-                    }, 5000);
-                }
-            });
-        })
-    }).fail(function(jqXHR, textStatus, errorThrown) {
-        alert('An error occurred, please try again - ' + errorThrown)
-        document.location.reload();
-    });
+                            });
+                        }, 5000);
+                    }
+                });
+            })
+        }).fail(function(jqXHR, textStatus, errorThrown) {
+            alert('An error occurred, please try again - ' + errorThrown)
+            document.location.reload();
+        });
+    }
+    
 });
 
 // Chat Bot Collapsible Sections
@@ -292,6 +308,26 @@ $('#3rdParty').on('click', function(e) {
         $('#' + thirdParty).prop('checked', $('#3rdParty').prop('checked'));
     })
 })
+
+function create_game_submit() {
+    var form = $('#create_game_form');
+    var data = form.serializeArray();
+    params = {};
+    data.forEach((d) => {
+        params[d.name] = d.value;
+    })
+    $.post('/creategame',
+    params,
+    function(response) {
+        let r = JSON.parse(response);
+        $('#game').append('<option value="' + r['id'] + '">' + r['name'] + '</option>');
+        $('#game').val(r['id']);
+        $('#modal').css('display', 'none');
+        document.location = '/home'
+    }).fail(function(jqXHR, textStatus, errorThrown) {
+        alert('An error occurred, please try again - ' + errorThrown);
+    })
+}
 
 function refresh_npc_list() {
     $.post('/getnpcs', {

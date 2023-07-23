@@ -119,5 +119,9 @@
         option.value = game.id;
         game_select.add(option);
     });
+    let option_new = document.createElement("option");
+    option_new.text = "-- Create a new Game --";
+    option_new.value = "0";
+    game_select.add(option_new);
 </script>
 </html>

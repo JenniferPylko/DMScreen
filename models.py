@@ -267,9 +267,9 @@ class Games(Model):
             games[i] = Game(game)
         return games
     
-    def add(self, abbr, name, description=None):
-        id = self.do_insert("INSERT INTO games (abbr, name, description) VALUES (?, ?, ?)", (abbr, name, description))
-        return Game(abbr)
+    def add(self, name, abbr, owner_id):
+        id = self.do_insert("INSERT INTO games (abbr, name, owner_id) VALUES (?, ?, ?)", (abbr, name, owner_id))
+        return Game(id)
     
     def delete(self, abbr):
         cursor = self._db.cursor()
