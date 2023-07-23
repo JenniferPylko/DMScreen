@@ -239,7 +239,7 @@ def forgotpassword_2():
     user = Users().get_by_email(email)
     if user != None:
         reset = user.pre_reset_password()
-        r = send_simple_message(email, "DM Assistant Password Reset", "A request was made to reset your password at dmscreen.net. If you did not make this request, please ignore this email. If you made this request, please click the following link to reset your password: http://localhost:30003/reset?email="+email+"&key="+str(reset)+"\n\nIf you did not make this request, please ignore this email.")
+        r = send_simple_message(email, "DM Assistant Password Reset", "A request was made to reset your password at dmscreen.net. If you did not make this request, please ignore this email. If you made this request, please click the following link to reset your password: http://dmscreen.net/reset?email="+email+"&key="+str(reset)+"\n\nIf you did not make this request, please ignore this email.")
         logging.debug("Email response: "+str(r))
 
     # Send the user back to the login prompt even if they didn't have an account. Don't clue an
@@ -298,7 +298,7 @@ def createaccount_2():
     hashed_password = bcrypt.hashpw(password, bcrypt.gensalt())
     user = Users().add(email, hashed_password)
     # send email
-    send_simple_message(email, "Welcome to DM Assistant!", "Your account has been created. Please click the following link to verify your email address: http://localhost:30003/verify?email="+email+"&key="+user.data['verify'])
+    send_simple_message(email, "Welcome to DM Assistant!", "Your account has been created. Please click the following link to verify your email address: http://dmscreen.net/verify?email="+email+"&key="+user.data['verify'])
     return render_template('loginprompt.html', created=True)
 
 @app.route('/home')
@@ -670,4 +670,4 @@ if __name__ == '__main__':
     """
 
     """Start the webserver"""
-    app.run(port=30003)
+    app.run(port=os.getenv("SERVER_HTTP_PORT"))
