@@ -1,6 +1,5 @@
 import os
 import io
-import warnings
 from PIL import Image
 from stability_sdk import client
 import stability_sdk.interfaces.gooseai.generation.generation_pb2 as generation
@@ -9,17 +8,22 @@ import logging
 import openai
 import requests
 import bcrypt
-import smtplib
-from models import NPC, NPCs, GameNotes, GameNote, Game, PlotPoints, Reminders, Reminder, TokenLog, Users, Games
+from models import NPC, NPCs, GameNotes, GameNote, Game, PlotPoints, Reminders, Reminder, TokenLog, Users, Games, Tasks, Task
 from chatbot import ChatBot
 from npc import AINPC
 from openaihandler import OpenAIHandler
+import uuid
+import threading
+from pydub import AudioSegment
+import ffmpeg
+import glob
 
 from typing import List
 
 from flask import Flask, render_template, request, make_response, session
 from dotenv import dotenv_values, load_dotenv
 from watchdog.observers import Observer
+from werkzeug.utils import secure_filename
 
 from langchain.chat_models import ChatOpenAI
 from langchain.prompts import PromptTemplate
@@ -27,6 +31,9 @@ from langchain.output_parsers import PydanticOutputParser
 from pydantic import BaseModel, Field, validator
 from langchain.chains.question_answering import load_qa_chain
 from langchain.callbacks import get_openai_callback
+from langchain.chains.summarize import load_summarize_chain
+from langchain.text_splitter import RecursiveCharacterTextSplitter
+from langchain.prompts import PromptTemplate
 
 logging.basicConfig(level=logging.DEBUG, filename='webserver.log')
 
@@ -37,6 +44,7 @@ DIR_ROOT = os.path.dirname(os.path.abspath(__file__))
 DIR_DOCS = os.path.join(DIR_ROOT, 'docs')
 DIR_PERSIST = os.path.join(DIR_ROOT, 'db')
 DIR_NOTES = os.path.join(DIR_ROOT, 'notes')
+DIR_AUDIO = os.path.join(DIR_ROOT, 'audio')
 
 model_name = OpenAIHandler.MODEL_GPT3
 notes_instance = None
@@ -48,6 +56,7 @@ app = Flask(__name__)
 app.config['SEND_FILE_MAX_AGE_DEFAULT'] = 0
 app.config['TEMPLATES_AUTO_RELOAD'] = True
 app.config['EXPLAIN_TEMPLATE_LOADING'] = True
+app.config['MAX_CONTENT_LENGTH'] = 300 * 1024 * 1024 # 300 MB
 
 # Required Environment Variables
 for key in ['OPENAI_API_KEY', 'PINECONE_API_KEY', 'PINECONE_ENVIRONMENT', 'PINECONE_INDEX']:
@@ -98,7 +107,7 @@ def get_names(temperature=0.9, model='text-davinci-003', game_id=None) -> list[s
         with get_openai_callback() as cb:
             answer = chat(_input.to_messages())
             TokenLog().add("Generate Names", cb.prompt_tokens, cb.completion_tokens, cb.total_cost)
-        logging.debug("Received answer from OpenAI: "+answer.content+"\n\nType: "+str(type(answer.content)))
+        logging.debug("Received answer from OpenAI: "+answer.content)
 
         parsed_answer = names_parser.parse(answer.content)
 
@@ -128,6 +137,90 @@ def send_simple_message(email, subject, msg):
             "subject": subject,
             "text": msg
         })
+
+def split_audio(task_id, file_path, game):
+    logging.debug("Splitting audio file: "+file_path)
+    task = Task(task_id)
+    task.update(status="Running", message="Loading audio file")
+    audio = AudioSegment.from_mp3(file_path)
+    audio_length = audio.duration_seconds
+    TokenLog().add("Split Audio", 0, 0, OpenAIHandler.GPT_COST_WHISPER * (audio_length/60))
+    logging.debug("Audio length: " + str(audio_length))
+    for (i, chunk) in enumerate(audio[::1400000]):
+        task.update(message="Preparing audio for transcription.")
+        chunk_name = os.path.join(DIR_AUDIO, f"{task_id}--chunk{i}.mp3")
+        logging.debug("Exporting " + chunk_name)
+        chunk.export(chunk_name, format="mp3")
+    logging.debug("Done")
+    task.update(message="Split Complete")
+    note = whisper(task)
+
+    date = time.strftime("%Y-%m-%d")
+    GameNotes(game.data['abbr']).preprocess_and_add(note['bullets'], date).data['summary']
+
+    # Delete the audio files
+    audio_files = glob.glob(DIR_AUDIO + f"""/{task_id}--chunk*.mp3""")
+    for f in audio_files:
+        os.remove(f)
+    txt_files = glob.glob(DIR_AUDIO + f"""/{task_id}--chunk*.mp3.transcript.txt""")
+    for f in txt_files:
+        os.remove(f)
+    os.remove(file_path)
+
+def whisper(task):
+    task.update(message="Transcribing audio files")
+    llm = ChatOpenAI(temperature=0, openai_api_key=os.environ["OPENAI_API_KEY"], model_name=OpenAIHandler.MODEL_GPT3)
+    text_splitter = RecursiveCharacterTextSplitter(chunk_size=2000, chunk_overlap=100)
+    text = ""
+    audio_files = glob.glob(DIR_AUDIO + f"""/{task.data['id']}--chunk*.mp3""")
+    for f in audio_files:
+        output_file = f + ".transcript.txt"
+        if not os.path.exists(output_file):
+            audio_file = open(f, "rb")
+            logging.debug("Transcribing audio file: " + f)
+            task.update(message="Transcribing audio")
+            try:
+                transcript = openai.Audio.transcribe(OpenAIHandler.MODEL_WHISPER, audio_file)
+                text += transcript.text + "\n"
+            except Exception as e:
+                logging.error(e)
+
+    task.update(message="Summarizing transcripts")
+    docs = text_splitter.create_documents([text])
+    num_docs = len(docs)
+    logging.debug(f"Number of documents: {num_docs}")
+
+    map_prompt = """
+    Write a concise summary of the following. When summarizing combat, only include the key points of
+    the combat. Do not include the dice rolls or the results of the dice rolls. Do not include the
+    narrative of the combat. Only include the key points of the combat, or funny/odd/unique moments.
+    Be sure to include character deaths, if any. Be sure to include new character inductions, if any.
+    "{text}"
+    CONCISE SUMMARY:
+    """
+    map_prompt_template = PromptTemplate(template=map_prompt, input_variables=["text"])
+
+    combine_prompt = """
+    Write a concise summary of the following text delimited by triple backquotes.
+    Return your response in bullet points which covers the key points of the text.
+    ```{text}```
+    BULLET POINT SUMMARY:
+    """
+    combine_prompt_template = PromptTemplate(template=combine_prompt, input_variables=["text"])
+
+    logging.debug("Loading summarization chain...")
+    with get_openai_callback() as cb:
+        summary_chain = load_summarize_chain(llm=llm, chain_type="map_reduce",
+                                            map_prompt=map_prompt_template,
+                                            combine_prompt=combine_prompt_template, verbose=True)
+        output = summary_chain.run(docs)
+        TokenLog().add("Summarize Transcript", cb.prompt_tokens, cb.completion_tokens, cb.total_cost)
+
+    task.update(status="Complete", message="")
+    return {
+        "bullets": output,
+        "fulltext": text
+    }
 
 """Required for flask webserver"""
 @app.route('/')
@@ -377,12 +470,13 @@ def createnpc():
     # Get all the form data
     keys = request.form.keys()
     npc_dict = {}
+    game_id = request.form.get('game_id')
     for key in keys:
         if (key == 'game_id'):
             continue
         npc_dict[key] = request.form.get(key)
     
-    npc = AINPC().gen_npc_from_dict(game_id=keys['game_id'], npc_dict=npc_dict)
+    npc = AINPC().gen_npc_from_dict(game_id=game_id, npc_dict=npc_dict)
     response = make_response(npc.data)
     response.mimetype = "text/plain"
     response.headers.add('Access-Control-Allow-Origin', '*')
@@ -521,6 +615,34 @@ def deletereminder():
     response.mimetype = "text/plain"
     response.headers.add('Access-Control-Allow-Origin', '*')
     return response
+
+@app.route('/uploadaudio', methods=['POST'])
+def uploadaudio():
+    audio_file = request.files['audio_file']
+    if audio_file.filename == '':
+        return send_flask_response(make_response, [{"error": "No file selected"}])
+    uploaded_filename = secure_filename(audio_file.filename)
+    uploaded_ext = os.path.splitext(uploaded_filename)[1]
+    if uploaded_ext not in ['.mp3']:
+        return send_flask_response(make_response, [{"error": "Invalid file type"}])
+    
+    game_id = request.form.get('game_id')
+    file_name = str(game_id) + "-" + str(uuid.uuid4())+".mp3"
+    file_path = os.path.join(DIR_ROOT, 'tmp', file_name)
+    audio_file.save(file_path)
+
+    task = Tasks().add(game_id, "Process Audio", "Queued")
+    #p = Process(target=split_audio, args=(task_id,file_path))
+    #p.start()
+    thread = threading.Thread(target=split_audio, args=(task.data['id'],file_path, Game(game_id)))
+    thread.start()
+    return send_flask_response(make_response, [task.data['id']])
+
+@app.route('/getaudiostatus', methods=['POST'])
+def getaudiostatus():
+    task_id = request.form.get('task_id')
+    task = Task(task_id)
+    return send_flask_response(make_response, [task.data['status'], task.data['message']])
 
 @app.after_request
 def add_header(r):

@@ -395,7 +395,7 @@ class AINPC():
             function_call = {"name": "gen_npc_from_dict"}
         )
         logging.debug(response)
-        cost = OpenAIHandler.calculate_cost(response["usage"]["prompt_tokens"], response["usage"]["completion_tokens"], OpenAIHandler.MODEL_GPT4)
+        cost = OpenAIHandler().calculate_cost(response["usage"]["prompt_tokens"], response["usage"]["completion_tokens"], OpenAIHandler.MODEL_GPT4)
         TokenLog().add("Generate NPC from Dict", response["usage"]["prompt_tokens"], response["usage"]["completion_tokens"], cost)
         message = response["choices"][0]["message"]
         if (message.get("function_call")):

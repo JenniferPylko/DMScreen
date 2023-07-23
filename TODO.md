@@ -1,9 +1,10 @@
 # TODO
 ## DM Screen
 ### v0.1 - Early Access (MVP)
-- Upload an audio recording to kick off whisper.py/split_audio.py/ai_instructions,save_transcript, etc.
+- Track datetime in token cost log
 - Move to DigitalOcean
 - HTTPS
+- Set up limit to active users. If full, add to waiting list
 
 #### ChadBot
 - Improve cost effectiveness of ChadBot (too many gpt4 queries)
@@ -12,6 +13,10 @@
 - Set up billing
 
 ### v0.5 - Public Beta
+- Audio Transcripts
+- - Remember to check upload status when returning to a game (and disable upload if needed)
+- - Inject notes to vectorstore when processing complete
+- - Send email when processing complete
 - Use Flask sessions for security/authentication
 - Add ability to upload documents
 - Add ability to upload a picture of an NPC instead of generating one

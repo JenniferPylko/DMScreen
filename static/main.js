@@ -180,6 +180,71 @@ $('#game').on('change', function(e) {
             div.append(title);
             $('#reminder_list').append(div);
         };
+
+        $('#audio_status').html('');
+        // Add mp3 upload
+        $('#audio_status').append('<div>Upload MP3 of a Session to create notes, and make them searchable by the chatbot</div><br/><br/>')
+        $('#audio_status').append('<label for="audio_file">Upload Audio File:</label>');
+        $('#audio_status').append('<input type="file" id="audio_file" name="audio_file" accept="audio/mp3">');
+        $('#audio_status').append('<input type="button" id="audio_upload" value="Upload">');
+        $('#audio_status').append('<div id="audio_progress"></div>');
+        $('#audio_upload').on('click', function(e) {
+            e.preventDefault();
+            $('#audio_upload').prop('disabled', true);
+            var file = $('#audio_file').prop('files')[0];
+            var formData = new FormData();
+            formData.append('audio_file', file);
+            formData.append('game_id', $('#game').val());
+            $.ajax({
+                url: '/uploadaudio',
+                data: formData,
+                processData: false,
+                contentType: false,
+                type: 'POST',
+                success: function(data){
+                    json = JSON.parse(data);
+                    var task_id;
+                    var div_progress = $('<div class="audio_progress">');
+                    if (json[0]['error']) {
+                        div_progress.html('Error: ' + json[0]['error']);
+                        $('#audio_upload').prop('disabled', false);
+                    } else {
+                        div_progress.html('Queued: ' + file.name);
+                        task_id = json[0];
+                    }
+                    $('#audio_status').append(div_progress);
+
+                    var intervalId = setInterval(function() {
+                        $.ajax({
+                            url: '/getaudiostatus',
+                            data: {
+                                task_id: task_id
+                            },
+                            type: 'POST',
+                            success: function(data){
+                                json = JSON.parse(data);
+                                if (json['error']) {
+                                    div_progress.html('Error: ' + json['error']);
+                                    $('#audio_upload').prop('disabled', false);
+                                    clearInterval(intervalId);
+                                } else if (json[0] == 'Complete') {
+                                    div_progress.html('Complete');
+                                    clearInterval(intervalId);
+                                    $('#audio_upload').prop('disabled', false);
+                                    refresh_notes_list();
+                                } else {
+                                    div_progress.html(json[1]);
+                                }
+                            },
+                            error: function(data) {
+                                div_progress.html('Error: ' + data);
+                                $('#audio_upload').prop('disabled', false);
+                            }
+                        });
+                    }, 5000);
+                }
+            });
+        })
     }).fail(function(jqXHR, textStatus, errorThrown) {
         alert('An error occurred, please try again - ' + errorThrown)
         document.location.reload();

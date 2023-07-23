@@ -442,4 +442,48 @@ class User():
         self._db.commit()
         cursor.close()
         return self  
+
+class Tasks(Model):
+    def __init__(self) -> None:
+        super().__init__()
     
+    def add(self, game_id: int, name: str, status:str="Queued"):
+        date_new = datetime.datetime.now()
+        id = self.do_insert("INSERT INTO tasks (game_id, name, status, date_new, date_mod) VALUES (?, ?, ?, ?, ?)", (game_id, name, status, date_new, date_new))
+        return Task(id)
+
+class Task():
+    def __init__(self, id: int) -> None:
+        self.id = id
+        self.data = {}
+        self.__root_dir = os.path.dirname(os.path.abspath(__file__))
+        self._db = sqlite3.connect(os.path.join(self.__root_dir, 'db.sqlite3'))
+        self._db.row_factory = sqlite3.Row
+        cursor = self._db.cursor()
+        cursor.execute("SELECT * FROM tasks WHERE id = ?", (id,))
+        row = cursor.fetchone()
+        for key in row.keys():
+            self.data[key] = row[key]
+        cursor.close()        
+
+    def update(self, name=None, status=None, message=None):
+        params = locals().copy()
+        date_mod = datetime.datetime.now()
+        query = "UPDATE tasks SET date_mod=?,"
+        vals = [date_mod]
+        for k,v in params.items():
+            if k == 'self' or k == 'id' or v is None:
+                continue
+            query += k + "=?,"
+            vals.append(v)
+            self.data[k] = v
+        query = query[:-1]
+        query += " WHERE id=?"
+        vals.append(self.data['id'])
+        logging.debug(query)
+        logging.debug(str(vals))
+        cursor = self._db.cursor()
+        cursor.execute(query, vals)
+        self._db.commit()
+        cursor.close()
+        return self
