@@ -167,8 +167,8 @@ class GameNotes(Model):
         note = self.get_row("SELECT id FROM games_notes WHERE game=? AND date=?", (self.game, date))
         return GameNote(note['id']) if note is not None else None
     
-    def preprocess_and_add(self, note, date):
-        summary:NotesQuery = self._preprocess(note)
+    def preprocess_and_add(self, note, date, user_id):
+        summary:NotesQuery = self._preprocess(note, user_id)
         return self.add(note, date, summary.summary)
     
     def add(self, note, date, summary):
@@ -185,7 +185,7 @@ class GameNotes(Model):
         dates = self.get_array("SELECT date FROM games_notes WHERE game=? ORDER BY date DESC", (self.game,))
         return dates
     
-    def _preprocess(self, note, temperature=0.5, model=OpenAIHandler.MODEL_GPT3):
+    def _preprocess(self, note, user_id, temperature=0.5, model=OpenAIHandler.MODEL_GPT3):
         _input = self.__notes_prompt.format_prompt(notes=note)
         messages = _input.to_messages()
 
@@ -193,7 +193,7 @@ class GameNotes(Model):
         logging.debug("Sending prompt to OpenAI using model: "+model+"\n\n"+_input.to_messages().pop().content)
         with get_openai_callback() as cb:
             answer = chat(_input.to_messages())
-            TokenLog().add("Add Game Notes", cb.prompt_tokens, cb.completion_tokens, cb.total_cost)
+            TokenLog().add("Add Game Notes", cb.prompt_tokens, cb.completion_tokens, cb.total_cost, user_id)
         logging.debug("Received answer from OpenAI: "+answer.content+"\n\nType: "+str(type(answer)))
 
         parsed_answer = ""
@@ -382,8 +382,9 @@ class TokenLog(Model):
     def __init__(self) -> None:
         super().__init__()
 
-    def add(self, query_type: str, prompt_tokens: int, completion_tokens: int, cost: float):
-        return self.do_insert("INSERT INTO log_tokens (query_type, prompt_tokens, completion_tokens, cost) VALUES (?, ?, ?, ?)", (query_type, prompt_tokens, completion_tokens, cost))
+    def add(self, query_type: str, prompt_tokens: int, completion_tokens: int, cost: float, user: int):
+        date = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+        return self.do_insert("INSERT INTO log_tokens (query_type, prompt_tokens, completion_tokens, cost, date_new, user_id) VALUES (?, ?, ?, ?, ?, ?)", (query_type, prompt_tokens, completion_tokens, cost, date, user))
 
 class Users(Model):
     def __init__(self) -> None:

@@ -1,7 +1,6 @@
 # TODO
 ## DM Screen
 ### v0.1 - Early Access (MVP)
-- Track datetime in token cost log
 - Move to DigitalOcean
 - HTTPS
 - Set up limit to active users. If full, add to waiting list

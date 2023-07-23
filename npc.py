@@ -190,8 +190,9 @@ class AINPC():
         }
     }
 
-    def __init__(self, model_name=None):
+    def __init__(self, user_id, model_name=None):
         self.__default_model = model_name if model_name is not None else self.__default_model
+        self.__user_id = user_id
 
     def get_npc(self, id: int, temperature: float = 0.9, model: str = OpenAIHandler.MODEL_GPT3_16, quick: bool = False):
         npc = NPC(id) # First, try to get the NPC from the database, before doing the expensive GPT-3.5-0613 call
@@ -226,7 +227,7 @@ class AINPC():
             print(response)
             print(response["usage"]["completion_tokens"])
             cost = OpenAIHandler().calculate_cost(response["usage"]["prompt_tokens"], response["usage"]["completion_tokens"], model)
-            TokenLog().add("Generate NPC", response["usage"]["prompt_tokens"], response["usage"]["completion_tokens"], cost)
+            TokenLog().add("Generate NPC", response["usage"]["prompt_tokens"], response["usage"]["completion_tokens"], cost, self.__user_id)
             message = response["choices"][0]["message"]
 
             if (message.get("function_call")):
@@ -272,7 +273,7 @@ class AINPC():
             function_call = {"name": "show_npc_summary"}
         )
         cost = OpenAIHandler.calculate_cost(response["usage"]["prompt_tokens"], response["usage"]["completion_tokens"], model)
-        TokenLog().add("Regen NPC Summary", response["usage"]["prompt_tokens"], response["usage"]["completion_tokens"], cost)
+        TokenLog().add("Regen NPC Summary", response["usage"]["prompt_tokens"], response["usage"]["completion_tokens"], cost, self.__user_id)
         message = response["choices"][0]["message"]
         if (message.get("function_call")):
             function_name = message["function_call"]["name"]
@@ -327,7 +328,7 @@ class AINPC():
             function_call = {"name": "regen_npc_key"}
         )
         cost = OpenAIHandler.calculate_cost(response["usage"]["prompt_tokens"], response["usage"]["completion_tokens"], model)
-        TokenLog().add("Regen NPC Key", response["usage"]["prompt_tokens"], response["usage"]["completion_tokens"], cost)
+        TokenLog().add("Regen NPC Key", response["usage"]["prompt_tokens"], response["usage"]["completion_tokens"], cost, self.__user_id)
         message = response["choices"][0]["message"]
         if (message.get("function_call")):
             function_name = message["function_call"]["name"]
@@ -396,7 +397,7 @@ class AINPC():
         )
         logging.debug(response)
         cost = OpenAIHandler().calculate_cost(response["usage"]["prompt_tokens"], response["usage"]["completion_tokens"], OpenAIHandler.MODEL_GPT4)
-        TokenLog().add("Generate NPC from Dict", response["usage"]["prompt_tokens"], response["usage"]["completion_tokens"], cost)
+        TokenLog().add("Generate NPC from Dict", response["usage"]["prompt_tokens"], response["usage"]["completion_tokens"], cost, self.__user_id)
         message = response["choices"][0]["message"]
         if (message.get("function_call")):
             args = message.get("function_call")["arguments"]

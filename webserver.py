@@ -57,6 +57,7 @@ app.config['SEND_FILE_MAX_AGE_DEFAULT'] = 0
 app.config['TEMPLATES_AUTO_RELOAD'] = True
 app.config['EXPLAIN_TEMPLATE_LOADING'] = True
 app.config['MAX_CONTENT_LENGTH'] = 300 * 1024 * 1024 # 300 MB
+app.secret_key = os.getenv('SESSION_SECRET')
 
 # Required Environment Variables
 for key in ['OPENAI_API_KEY', 'PINECONE_API_KEY', 'PINECONE_ENVIRONMENT', 'PINECONE_INDEX']:
@@ -106,7 +107,7 @@ def get_names(temperature=0.9, model='text-davinci-003', game_id=None) -> list[s
         logging.debug("Sending prompt to OpenAI using model: "+model_name+"\n\n"+_input.to_messages().pop().content)
         with get_openai_callback() as cb:
             answer = chat(_input.to_messages())
-            TokenLog().add("Generate Names", cb.prompt_tokens, cb.completion_tokens, cb.total_cost)
+            TokenLog().add("Generate Names", cb.prompt_tokens, cb.completion_tokens, cb.total_cost, session.get('user_id'))
         logging.debug("Received answer from OpenAI: "+answer.content)
 
         parsed_answer = names_parser.parse(answer.content)
@@ -144,7 +145,7 @@ def split_audio(task_id, file_path, game):
     task.update(status="Running", message="Loading audio file")
     audio = AudioSegment.from_mp3(file_path)
     audio_length = audio.duration_seconds
-    TokenLog().add("Split Audio", 0, 0, OpenAIHandler.GPT_COST_WHISPER * (audio_length/60))
+    TokenLog().add("Split Audio", 0, 0, OpenAIHandler.GPT_COST_WHISPER * (audio_length/60), session.get('user_id'))
     logging.debug("Audio length: " + str(audio_length))
     for (i, chunk) in enumerate(audio[::1400000]):
         task.update(message="Preparing audio for transcription.")
@@ -156,7 +157,7 @@ def split_audio(task_id, file_path, game):
     note = whisper(task)
 
     date = time.strftime("%Y-%m-%d")
-    GameNotes(game.data['abbr']).preprocess_and_add(note['bullets'], date).data['summary']
+    GameNotes(game.data['abbr']).preprocess_and_add(note['bullets'], date, session.get('user_id')).data['summary']
 
     # Delete the audio files
     audio_files = glob.glob(DIR_AUDIO + f"""/{task_id}--chunk*.mp3""")
@@ -214,7 +215,7 @@ def whisper(task):
                                             map_prompt=map_prompt_template,
                                             combine_prompt=combine_prompt_template, verbose=True)
         output = summary_chain.run(docs)
-        TokenLog().add("Summarize Transcript", cb.prompt_tokens, cb.completion_tokens, cb.total_cost)
+        TokenLog().add("Summarize Transcript", cb.prompt_tokens, cb.completion_tokens, cb.total_cost, session.get('user_id'))
 
     task.update(status="Complete", message="")
     return {
@@ -281,6 +282,8 @@ def login():
         return render_template('loginprompt.html', error="Invalid email or password")
     if not bcrypt.checkpw(password, user.data['password']):
         return render_template('loginprompt.html', error="Invalid email or password")
+    
+    session['user_id'] = user.data['id']
     return home()
 
 @app.route('/createaccount')
@@ -313,7 +316,7 @@ def home():
 def ask():    
     message = request.form.get('question')
     game_id = int(request.form.get('game_id'))
-    chatbot = ChatBot(game_id, os.getenv("OPENAI_API_KEY"), os.getenv("PINECONE_API_KEY"), os.getenv("PINECONE_ENVIRONMENT"))
+    chatbot = ChatBot(game_id, session.get('user_id'), os.getenv("OPENAI_API_KEY"), os.getenv("PINECONE_API_KEY"), os.getenv("PINECONE_ENVIRONMENT"))
     answer = chatbot.send_message(message, model=OpenAIHandler.MODEL_GPT3)
     return send_flask_response(make_response, answer)
 
@@ -368,7 +371,7 @@ def savenotes(model='text-davinci-003', temperature=0.2):
     notes = request.form.get('notes')
     game = Game(int(request.form.get('game_id')))
     date = time.strftime("%Y-%m-%d")
-    note = GameNotes(game.data['abbr']).preprocess_and_add(notes, date).data['summary']
+    note = GameNotes(game.data['abbr']).preprocess_and_add(notes, date, session.get('user_id')).data['summary']
     return send_flask_response(make_response, [note])
 
 @app.route('/updatenote', methods=['POST'])
@@ -419,7 +422,7 @@ def getnpc():
         npc = NPCs().add_npc(name)
         id = npc.data['id']
     
-    npc = AINPC().get_npc(id, quick=quick)
+    npc = AINPC(session.get('user_id')).get_npc(id, quick=quick)
 
     if (npc == None):
         response = make_response("ERROR: Could not find NPC")
@@ -449,7 +452,7 @@ def getnpcs():
 @app.route('/regensummary', methods=['POST'])
 def regensummary():
     id = request.form.get('id')
-    gpt_response = AINPC().get_npc_summary(id)
+    gpt_response = AINPC(session.get('user_id')).get_npc_summary(id)
     response = make_response(gpt_response)
     response.mimetype = "text/plain"
     response.headers.add('Access-Control-Allow-Origin', '*')
@@ -459,7 +462,7 @@ def regensummary():
 def regenkey():
     id = request.form.get('id')
     key = request.form.get('key')
-    gpt_response = AINPC().regen_npc_key(id, key, temperature=0.9)
+    gpt_response = AINPC(session.get['user_id']).regen_npc_key(id, key, temperature=0.9)
     response = make_response(gpt_response)
     response.mimetype = "text/plain"
     response.headers.add('Access-Control-Allow-Origin', '*')
@@ -476,7 +479,7 @@ def createnpc():
             continue
         npc_dict[key] = request.form.get(key)
     
-    npc = AINPC().gen_npc_from_dict(game_id=game_id, npc_dict=npc_dict)
+    npc = AINPC(session.get['user_id']).gen_npc_from_dict(game_id=game_id, npc_dict=npc_dict)
     response = make_response(npc.data)
     response.mimetype = "text/plain"
     response.headers.add('Access-Control-Allow-Origin', '*')
@@ -530,7 +533,7 @@ def gennpcimage_stability():
             if artifact.finish_reason == generation.FILTER:
                 logging.warn("Your request activated the APIs safety filters and could not be processed.")
             if artifact.type == generation.ARTIFACT_IMAGE:
-                TokenLog().add("Generate Stability Image", 0, 0, 0.002)
+                TokenLog().add("Generate Stability Image", 0, 0, 0.002, session.get('user_id'))
                 img = Image.open(io.BytesIO(artifact.binary))
                 img.save(os.path.join(DIR_ROOT, 'static', 'img', 'npc', str(id)+'.png'))
 
@@ -552,7 +555,7 @@ def gennpcimage():
         n=1,
         size='512x512'
     )
-    TokenLog().add("Generate OpenAI Image", 0, 0, 0.018)
+    TokenLog().add("Generate OpenAI Image", 0, 0, 0.018, session.get('user_id'))
     image_url = openai_response['data'][0]['url']
     print(image_url)
 

@@ -27,11 +27,12 @@ class ChatBot():
     __split_chunk_size = 1000
     __split_chunk_overlap = 100
 
-    def __init__(self, game_id, openai_key:str, pinecone_api_key:str, pinecone_environment:str, model_name=None, pinecone_index: str='5e'):
+    def __init__(self, game_id, user_id, openai_key:str, pinecone_api_key:str, pinecone_environment:str, model_name=None, pinecone_index: str='5e'):
         self.__default_model = model_name if model_name is not None else self.__default_model
         self.__pinecone_index = pinecone_index
         self.__openai_key = openai_key
         self.__game_id = game_id
+        self.__user_id = user_id
 
         embeddings = OpenAIEmbeddings(openai_api_key=self.__openai_key)
         pinecone.init(api_key=pinecone_api_key, environment=pinecone_environment)
@@ -161,7 +162,7 @@ class ChatBot():
         messages.append(HumanMessage(content=query))
         with get_openai_callback() as cb:
             response = llm.predict_messages(messages, functions=self.functions)
-            TokenLog().add("Chat Bot", cb.prompt_tokens, cb.completion_tokens, cb.total_cost)
+            TokenLog().add("Chat Bot", cb.prompt_tokens, cb.completion_tokens, cb.total_cost, self.__user_id)
 
         messages.append(response)
 
@@ -184,7 +185,7 @@ class ChatBot():
             if (function_name == "query_documentation") or (function_name == "query_sessions"):
                 with get_openai_callback() as cb:
                     response2 = llm.predict_messages(messages, functions=self.function_final_answer, function_call={"name": "final_answer"})
-                    TokenLog().add("Query Vectorstore", cb.prompt_tokens, cb.completion_tokens, cb.total_cost)
+                    TokenLog().add("Query Vectorstore", cb.prompt_tokens, cb.completion_tokens, cb.total_cost, self.__user_id)
 
                 arguments2 = json.loads(response2.additional_kwargs["function_call"]["arguments"])
                 logging.debug(f"LLM Answer 2: {arguments2['answer']}")
@@ -197,7 +198,7 @@ class ChatBot():
                 # We don't need gpt4 for this part, so we can just use the default model
                 with get_openai_callback() as cb:
                     response2 = llm.predict_messages(messages, model=self.__default_model)
-                    TokenLog().add("Chat Function: " + function_name, cb.prompt_tokens, cb.completion_tokens, cb.total_cost)
+                    TokenLog().add("Chat Function: " + function_name, cb.prompt_tokens, cb.completion_tokens, cb.total_cost, self.__user_id)
                 r = {
                     "answer": response2.content,
                     "source": "Chad",
