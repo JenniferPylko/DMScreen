@@ -24,7 +24,7 @@ class Model():
         self.__db = sqlite3.connect(os.path.join(self.__root_dir, 'db.sqlite3'))
         self.__db.row_factory = sqlite3.Row
     
-    def get_row(self, query: str, params: tuple = None) -> dict:
+    def get_row(self, query: str, params: tuple = ()) -> dict:
         cursor = self.__db.cursor()
         cursor.execute(query, params)
         row = cursor.fetchone()
@@ -400,6 +400,9 @@ class Users(Model):
         user = self.get_row("SELECT id FROM users WHERE email=?", (email,))
         return User(user['id']) if user is not None else None
 
+    def count(self) -> int:
+        return self.get_row("SELECT COUNT(*) AS count FROM users")['count']
+
 class User():
     def __init__(self, id: int) -> None:
         self.id = id
@@ -488,3 +491,12 @@ class Task():
         self._db.commit()
         cursor.close()
         return self
+
+class Waitlist(Model):
+    def __init__(self) -> None:
+        super().__init__()
+    
+    def add(self, email: str):
+        date_new = datetime.datetime.now()
+        id = self.do_insert("INSERT INTO waitlist (email, date_new) VALUES (?, ?)", (email, date_new))
+        return id

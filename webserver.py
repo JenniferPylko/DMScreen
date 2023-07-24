@@ -8,7 +8,7 @@ import logging
 import openai
 import requests
 import bcrypt
-from models import NPC, NPCs, GameNotes, GameNote, Game, PlotPoints, Reminders, Reminder, TokenLog, Users, Games, Tasks, Task
+from models import NPC, NPCs, GameNotes, GameNote, Game, PlotPoints, Reminders, Reminder, TokenLog, Users, Games, Tasks, Task, Waitlist
 from chatbot import ChatBot
 from npc import AINPC
 from openaihandler import OpenAIHandler
@@ -288,6 +288,10 @@ def login():
 
 @app.route('/createaccount')
 def createaccount():
+    if (int(os.getenv("MAX_USERS")) > -1):
+        count = Users().count()
+        if count >= int(os.getenv("MAX_USERS")):
+            return render_template('waitlist.html')
     return render_template('createaccount.html')
 
 @app.route('/createaccount_2', methods=['POST'])
@@ -653,6 +657,12 @@ def creategame():
     abbr = request.form.get('abbr')
     game = Games().add(name, abbr, session.get('user_id'))
     return send_flask_response(make_response, [game.data['id']])
+
+@app.route('/waitlist', methods=['POST'])
+def waitlist():
+    email = request.form.get('email')
+    user = Waitlist().add(email)
+    return render_template('loginprompt.html', message="You have been added to the waitlist. You will be notified when your account is ready.")
 
 @app.after_request
 def add_header(r):

@@ -1,14 +1,7 @@
 # TODO
 ## DM Screen
-### v0.1 - Early Access (MVP)
-- Move to DigitalOcean
-- HTTPS
-- Set up limit to active users. If full, add to waiting list
 
-#### ChadBot
-- Improve cost effectiveness of ChadBot (too many gpt4 queries)
-
-#### Billing
+### v0.2 Billing
 - Set up billing
 
 ### v0.5 - Public Beta
