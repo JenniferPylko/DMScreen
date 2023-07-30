@@ -14,6 +14,7 @@ static/img/npc/*
 audio/*
 summary.txt
 db/*
+tmp/*
 fine-tune/*
 save_transcript.py
 pinecone_test.py

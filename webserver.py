@@ -165,7 +165,7 @@ def split_audio(task_id, file_path, game):
     h, m, s = map(float, duration.split(':'))
     audio_length = (h * 3600) + (m * 60) + s
 
-    TokenLog().add("Split Audio", 0, 0, OpenAIHandler.GPT_COST_WHISPER * (audio_length/60), session.get('user_id'))
+    #TokenLog().add("Split Audio", 0, 0, OpenAIHandler.GPT_COST_WHISPER * (audio_length/60), session.get('user_id'))
     logging.debug("Audio length: " + str(audio_length))
     chunk_duration = 1400 # 23 minutes
 
@@ -251,7 +251,7 @@ def whisper(task):
                                             map_prompt=map_prompt_template,
                                             combine_prompt=combine_prompt_template, verbose=True)
         output = summary_chain.run(docs)
-        TokenLog().add("Summarize Transcript", cb.prompt_tokens, cb.completion_tokens, cb.total_cost, session.get('user_id'))
+        #TokenLog().add("Summarize Transcript", cb.prompt_tokens, cb.completion_tokens, cb.total_cost, session.get('user_id'))
 
     task.update(status="Complete", message="")
     return {
