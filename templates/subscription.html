@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DM Screen - Subscriptions</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lumanosimo&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <img src="/static/img/dmscreen_login.png" alt="DM Screen" style="width:100%;height:100%">
+        <div id="login-title">
+            <h1>DM Screen</h1>
+        </div>
+        {% if error %}
+            <div class="error">
+                {{ error }}
+            </div>
+        {% endif %}
+        {% if message %}
+            <div class="message">
+                {{ message }}
+            </div>
+        {% endif %}
+        <div id="subscriptions">
+            <div class="subscription-item" id="subscription-basic">
+                <div class="subscription-header">
+                    <h2>Basic</h2>
+                </div>
+                <div class="subscription-body">
+                    <div class="subscription-price">
+                        <h3>$10.00/month</h3>
+                    </div>
+                    <div class="subscription-description">
+                        <ul>
+                            <li>Access to all features</li>
+                            <li>Up to 5 campaigns</li>
+                            <li>Up to 5 players per campaign</li>
+                        </ul>
+                    </div>
+                    <script async
+                    src="https://js.stripe.com/v3/buy-button.js">
+                  </script>
+                  
+                  <stripe-buy-button
+                    buy-button-id="buy_btn_1NXbuhIv1yyTRw7n6X1SSYSE"
+                    publishable-key="pk_test_5nTmxSh2cFbFCXFlFRLqQV95"
+                  >
+                  </stripe-buy-button>
+
+                    <!--
+                    <div class="subscription-button">
+                        <script async
+                        src="https://js.stripe.com/v3/buy-button.js">
+                      </script>
+                      
+                      <stripe-buy-button
+                        buy-button-id="buy_btn_1NXbmCIv1yyTRw7nYKbWkUjE"
+                        publishable-key="pk_live_mkqrUqVyL0SNUggXK2Kzw5sj"
+                      >
+                      </stripe-buy-button>
+                      -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close" onclick="close_modal()">&times;</span>
+                <div id ="modal-buttons" class="modal-buttons">
+                </div>
+                <h2 id="modal-header">Modal Header</h2>
+            </div>
+            <div class="modal-body" id="modal_content">
+            </div>
+        </div>
+    </div>
+</body>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/ui/1.13.0/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/static/main.js"></script>
+</html>
+
+
+
+<body>
+    <div>{{error}}</div>
+    <div class="subscriptions">
+        <div class="subscription">
+            <div class="subscription" id="subscription-basic">
+
+            </div>
+        </div>
+    </div>
+  </body>
+</html>

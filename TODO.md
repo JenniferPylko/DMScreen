@@ -1,8 +1,9 @@
 # TODO
 ## DM Screen
 
-### v0.2 Billing
+### v0.2 
 - Set up billing
+- 
 
 ### v0.5 - Public Beta
 - Add ability to delete a game
@@ -10,7 +11,6 @@
 - - Remember to check upload status when returning to a game (and disable upload if needed)
 - - Inject notes to vectorstore when processing complete
 - - Send email when processing complete
-- Use Flask sessions for security/authentication
 - Add ability to upload documents
 - Add ability to upload a picture of an NPC instead of generating one
 - Let user edit/type details for NPCs

@@ -889,6 +889,135 @@ function show_chat_options(name, span) {
     })
 }
 
+function show_account() {
+    var modal = document.getElementById("modal");
+    modal.style.display = "block";
+    var div = $('#modal_content');
+    $('#modal-header').html('Account')
+    let html = "<main class='account'>"
+    html += "<nav>"
+    html += "<ul>"
+    html += "<li><a href='javascript:show_account_password()'>Change Password</a></li>"
+    html += "<li><a href='javascript:show_account_membership()'>Membership</a></li>"
+    html += "</ul>"
+    html += "</nav>"
+    html += "<article id='account_article'>"
+    html += "<div id='account_content'>"
+    html += "</div>"
+    html += "</article>"
+    html += "<div style='clear:both'></div>"
+    html += "</main>"
+    div.html(html)
+    show_account_password();
+}
+
+function show_account_password() {
+    let article = $('#account_article');
+    let html = "<h1>Change Password</h1>"
+    html += "<form id='account_form' method='post'>";
+    html += "<table>";
+    html += '<tr><td><label>Change Password:</label></td><td><input type="password" id="psw1" name="psw1"></td></td>';
+    html += '<tr><td><label>Confirm Password:</label></td><td><input type="password" id="psw2" name="psw2"></td></td>';
+    html += '</table>';
+    html += '<div><input type="button" value="Save New Password" onclick="save_password()"></div>';
+    html += "</form>"
+    article.html(html)
+}
+
+function show_account_membership() {
+    let article = $('#account_article');
+    let html = "<h1>Membership</h1>"
+    html += "<div id='subscriptions'>"
+
+    html += "<div class='subscription-item' id='subscription-free'>"
+    html += "<div class='subscription-header'>Free</div>"
+    html += "<div class='subscription-body'>"
+    html += "<div class='subscription-price'>Free</div>"
+    html += "<div class='subscription-description'>"
+    html += "<ul>"
+    html += "<li>100 Chat Messages per Month</li>"
+    html += "<li>5 NPCs</li>"
+    html += "<li>1 Campaign</li>"
+    html += "<li>Unlimited Session Notes</li>"
+    html += "<li>Unlimited Reminders</li>"
+    html += "</ul>"
+    html += "</div>" // subscription-description
+    html += "</div>" // subscription-body
+    html += "</div>" // subscription-item
+ 
+    html += "<div class='subscription-item' id='subscription-basic'>"
+    html += "<div class='subscription-header'>Basic</div>"
+    html += "<div class='subscription-body'>"
+    html += "<div class='subscription-price'>$10/month</div>"
+    html += "<div class='subscription-description'>"
+    html += "<ul>"
+    html += "<li>500 Chat Messages per Month</li>"
+    html += "<li>50 NPCs</li>"
+    html += "<li>3 Campaigns</li>"
+    html += "<li>Unlimited Session Notes</li>"
+    html += "<li>Unlimited Reminders</li>"
+    html += "<li>AI Note Taking from MP3 (1/Week)</li>"
+    html += "</ul>"
+    html += "</div>" // subscription-description
+    html += "</div>" // subscription-body
+    html += "</div>" // subscription-item
+
+    html += "<div class='subscription-item' id='subscription-basic'>"
+    html += "<div class='subscription-header'>Pro</div>"
+    html += "<div class='subscription-body'>"
+    html += "<div class='subscription-price'>$25/month</div>"
+    html += "<div class='subscription-description'>"
+    html += "<ul>"
+    html += "<li>2000 Chat Messages per Month</li>"
+    html += "<li>200 NPCs</li>"
+    html += "<li>7 Campaigns</li>"
+    html += "<li>Unlimited Session Notes</li>"
+    html += "<li>Unlimited Reminders</li>"
+    html += "<li>AI Note Taking from MP3 (3/Week)</li>"
+    html += "</ul>"
+    html += "</div>" // subscription-description
+    html += "</div>" // subscription-body
+    html += "</div>" // subscription-item
+
+    html += "<div class='subscription-item' id='subscription-basic'>"
+    html += "<div class='subscription-header'>Hero</div>"
+    html += "<div class='subscription-body'>"
+    html += "<div class='subscription-price'>$50/month</div>"
+    html += "<div class='subscription-description'>"
+    html += "<ul>"
+    html += "<li>5000 Chat Messages per Month</li>"
+    html += "<li>500 NPCs</li>"
+    html += "<li>Unlimited Campaigns</li>"
+    html += "<li>Unlimited Session Notes</li>"
+    html += "<li>Unlimited Reminders</li>"
+    html += "<li>AI Note Taking from MP3 (7/Week)</li>"
+    html += "</ul>"
+    html += "</div>" // subscription-description
+    html += "</div>" // subscription-body
+    html += "</div>" // subscription-item
+
+    html += "<div style='clear:both'></div>"
+    html += "</div>" // subscrptions
+    article.html(html)
+}
+
+function save_password() {
+    let psw1 = $('#psw1').val();
+    let psw2 = $('#psw2').val();
+    if (psw1 != psw2) {
+        alert('Passwords do not match');
+        return;
+    }
+    $.post('/savepassword', {
+        password: psw1
+    }, function(response) {
+        alert('Password saved');
+        close_modal();
+    }).fail(function(jqXHR, textStatus, errorThrown) {
+        alert('An error occurred, please try again - ' + errorThrown);
+    });
+}
+
 function hide_chat_options(span, force=false) {
     if (!force) {
         // Determine which divs the mouse is over

@@ -378,7 +378,7 @@ nav#toolbar {
     padding-left: 10px;
 }
 
-nav#toolbar span.logout {
+nav#toolbar span.logout, nav#toolbar span.account {
     float: right;
     margin-right: 10px;
     padding-right: 20px;
@@ -492,6 +492,10 @@ div#login {
     padding: 10px;
 }
 
+div#subscriptions {
+    padding: 10px;
+}
+
 div#login-title {
     font-family: 'Lumanosimo', cursive;
     position: absolute;
@@ -548,4 +552,71 @@ div.audio_progress {
     font-size: 12px;
     color: black;
     padding: 2px;
+}
+
+.subscription-item {
+    background-color: rgba(0,0,0,0.1);
+    backdrop-filter: blur(5px);
+    border-radius: 30px;
+    width: 300px;
+    height: 420px;
+    float: left;
+    margin-right: 5px;
+}
+
+.subscription-item:hover {
+    cursor: pointer;
+    background-color: rgba(0,0,0,0.2);
+}
+
+.subscription-button {
+    text-align:center;
+}
+
+.subscription-price {
+    font-size: 1.0em;
+    font-weight: bold;
+    text-align:center
+}
+
+.subscription-header {
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align:center;
+    background-color: darkblue;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+
+main.account {
+    height: 100%;
+}
+
+main.account nav {
+    width: 150px;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    padding-left: 5px;
+    background-color: #000;
+    float: left;
+    font-size: 0.9em;
+}
+
+main.account nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+article#account_article {
+    display: block;
+    padding-left: 15px;
+    float: left;
+    width: calc(100%-160px)
+}
+
+article#account_article h1 {
+    text-align:center;
+    font-size: 1.5em;
 }

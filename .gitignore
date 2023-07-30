@@ -17,3 +17,4 @@ db/*
 fine-tune/*
 save_transcript.py
 pinecone_test.py
+webserver.log
