@@ -17,12 +17,14 @@ import threading
 from pydub import AudioSegment
 import ffmpeg
 import glob
+import stripe
+import atexit
+import subprocess
 
 from typing import List
 
-from flask import Flask, render_template, request, make_response, session
+from flask import Flask, render_template, request, make_response, session, redirect
 from dotenv import dotenv_values, load_dotenv
-from watchdog.observers import Observer
 from werkzeug.utils import secure_filename
 
 from langchain.chat_models import ChatOpenAI
@@ -35,6 +37,12 @@ from langchain.chains.summarize import load_summarize_chain
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain.prompts import PromptTemplate
 
+handler = logging.FileHandler('webserver.log')
+handler.setLevel(logging.DEBUG)
+root_logger = logging.getLogger()
+root_logger.addHandler(handler)
+root_logger.setLevel(logging.DEBUG)
+root_logger.debug('Starting webserver')
 logging.basicConfig(level=logging.DEBUG, filename='webserver.log')
 
 load_dotenv()
@@ -143,10 +151,36 @@ def split_audio(task_id, file_path, game):
     logging.debug("Splitting audio file: "+file_path)
     task = Task(task_id)
     task.update(status="Running", message="Loading audio file")
-    audio = AudioSegment.from_mp3(file_path)
-    audio_length = audio.duration_seconds
+
+    #audio = AudioSegment.from_mp3(file_path)
+    #audio_length = audio.duration_seconds
+
+    # Get the audio length first
+    audio_length_cmd = ["ffmpeg", "-i", file_path, "-f", "null", "-"]
+    result = subprocess.run(audio_length_cmd, stdout=subprocess.PIPE, stderr=subprocess.STDOUT, universal_newlines=True)
+    output = result.stdout
+    start = output.rfind("Duration: ")
+    end = output.rfind(", start: ")
+    duration = output[start+10:end]
+    h, m, s = map(float, duration.split(':'))
+    audio_length = (h * 3600) + (m * 60) + s
+
     TokenLog().add("Split Audio", 0, 0, OpenAIHandler.GPT_COST_WHISPER * (audio_length/60), session.get('user_id'))
     logging.debug("Audio length: " + str(audio_length))
+    chunk_duration = 1400 # 23 minutes
+
+    for i in range(int(audio_length/chunk_duration)):
+        task.update(message="Preparing audio for transcription.")
+        start_time = i * chunk_duration
+        chunk_name = os.path.join(DIR_AUDIO, f"{task_id}--chunk{i}.mp3")
+        logging.debug("Exporting " + chunk_name)
+        chunk_audio_cmd = ["ffmpeg", "-i", file_path, "-ss", str(start_time), "-t", str(chunk_duration), "-f", "mp3", chunk_name]
+        subprocess.run(chunk_audio_cmd)
+
+    logging.debug("Done")
+    task.update(message="Split Complete")
+
+    """
     for (i, chunk) in enumerate(audio[::1400000]):
         task.update(message="Preparing audio for transcription.")
         chunk_name = os.path.join(DIR_AUDIO, f"{task_id}--chunk{i}.mp3")
@@ -154,6 +188,8 @@ def split_audio(task_id, file_path, game):
         chunk.export(chunk_name, format="mp3")
     logging.debug("Done")
     task.update(message="Split Complete")
+    """
+
     note = whisper(task)
 
     date = time.strftime("%Y-%m-%d")
@@ -315,6 +351,31 @@ def home():
             "name": game.data['name']
         })
     return render_template('dmscreen.html', **locals())
+
+@app.route('/subscription')
+def subscription():
+    return render_template('subscription.html')
+
+@app.route('/create-checkout-session', methods=['POST'])
+def create_checkout_session():
+    try:
+        price_id = "price_1NXa5RIv1yyTRw7njvjcH7mc"
+        stripe.api_key = "sk_test_4eC39HqLyjWDarjtT1zdp7dc"
+
+        session = stripe.checkout.Session.create(
+            success_url="http://dmscreen.net/subscription?success=true",
+            cancel_url="http://dmscreen.net/subscription?canceled=true",
+            mode="subscription",
+            line_items=[{
+                'price': price_id,
+                'quantity': 1,
+            }]
+        )
+    except Exception as e:
+        logging.error(e)
+        return render_template('subscription.html', error=e)
+
+    return redirect(session.url, code=303)
 
 @app.route('/ask', methods=['POST', 'OPTIONS'])
 def ask():    
