@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="/static/style.css">
+    <script src="https://js.stripe.com/v3"></script>
     <script type="text/javascript">
         const todays_date = "{{ todays_date }}";
     </script>
@@ -111,6 +112,8 @@
 <script type="text/javascript" src="https://code.jquery.com/ui/1.13.0/jquery-ui.min.js"></script>
 <script type="text/javascript" src="/static/main.js"></script>
 <script type="text/javascript">
+    const membership_level = "{{membership}}";
+
     // eslint-disable-next-line no-redeclare
     const game_list = {{ game_list | tojson }};
     let game_select = document.getElementById("game");
