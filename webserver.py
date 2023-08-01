@@ -8,7 +8,7 @@ import logging
 import openai
 import requests
 import bcrypt
-from models import NPC, NPCs, GameNotes, GameNote, Game, PlotPoints, Reminders, Reminder, TokenLog, Users, Games, Tasks, Task, Waitlist
+from models import NPC, NPCs, GameNotes, GameNote, Game, PlotPoints, Reminders, Reminder, TokenLog, Users, Games, Tasks, Task, Waitlist, User
 from chatbot import ChatBot
 from npc import AINPC
 from openaihandler import OpenAIHandler
@@ -217,7 +217,7 @@ def whisper(task):
             logging.debug("Transcribing audio file: " + f)
             task.update(message="Transcribing audio")
             try:
-                transcript = openai.Audio.transcribe(OpenAIHandler.MODEL_WHISPER, audio_file)
+                transcript = openai.Audio.transcribe(OpenAIHandler.MODEL_WHISPER, audio_file, api_key=os.environ["OPENAI_API_KEY"])
                 text += transcript.text + "\n"
             except Exception as e:
                 logging.error(e)
@@ -345,6 +345,8 @@ def createaccount_2():
 def home():
     todays_date = time.strftime("%m/%d/%Y")
     game_list = []
+    user = User(session.get('user_id'))
+    membership = user.data['membership']
     for game in Games().get_all():
         game_list.append({
             "id": game.data['id'],
