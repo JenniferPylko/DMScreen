@@ -170,11 +170,9 @@ $('#game').on('change', function(e) {
                 div.draggable({containment: "parent"});
                 div.droppable({
                     over: function(event, ui) {
-                        console.log(this)
                         $(this).addClass('plot_point_hover');
                     },
                     out: function(event, ui) {
-                        console.log('out')
                         $(this).removeClass('plot_point_hover');
                     }
                 })
@@ -929,54 +927,9 @@ function show_account_membership() {
     let html = "<h1>Membership</h1>"
     html += "<div id='subscriptions'>"
 
-    var subscriptions = [
-        {
-            header: 'Free',
-            price: 'Free',
-            priceId: '',
-            features: [
-                '50 Chat Messages per Month',
-                '5 NPCs',
-                '1 Campaign',
-                'Unlimited Session Notes',
-                'Unlimited Reminders'
-            ]
-        },
-        {
-            header: 'Basic',
-            price: '$10/month',
-            priceId: 'price_1NXbu4Iv1yyTRw7nf31fiKkL',
-            features: [
-                '500 Chat Messages per Month',
-                '50 NPCs',
-                '3 Campaigns',
-                'Unlimited Session Notes',
-                'Unlimited Reminders',
-                'AI Note Taking from MP3 (1/Week)'
-            ]
-        },
-        {
-            header: 'Advanced',
-            price: 'TBD',
-            priceId: 'price_1Na7oBIv1yyTRw7n8n3ZD2Ky',
-            features: [
-                'TBD',
-            ]
-        },
-        {
-            header: 'Pro',
-            price: 'TBD',
-            priceId: '',
-            features: [
-                'TBD',
-            ]
-        }
-    ];
-
     for (var i = 0; i < subscriptions.length; i++) {
         var subscription = subscriptions[i];
         let item_class = (subscription.header.toLowerCase() == membership_level.toLowerCase()) ? 'subscription-item selected' : 'subscription-item';
-        console.log(item_class)
         html += "<div class='"+item_class+"' id='subscription-" + subscription.header.toLowerCase() + "'>";
         html += "<div class='subscription-header'>" + subscription.header + "</div>";
         html += "<div class='subscription-body'>";
@@ -1012,7 +965,8 @@ function show_account_membership() {
             $('.subscription-item').removeClass('selected');
             $(this).addClass('selected');
         });
-        initialize_stripe_button(subscription.priceId);
+        if (subscription.priceId != null)
+            initialize_stripe_button(subscription.priceId);
     }
 }
 
@@ -1061,7 +1015,8 @@ function toggle_visibility(id) {
 }
 
 function initialize_stripe_button(stripdId) {
-    var stripe = Stripe('pk_live_mkqrUqVyL0SNUggXK2Kzw5sj');
+    var stripe = Stripe(stripe_publishable_key);
+    alert(stripe_publishable_key + "\n" + stripdId)
   
     var checkoutButton = document.getElementById('checkout-button-'+stripdId);
     checkoutButton.addEventListener('click', function () {

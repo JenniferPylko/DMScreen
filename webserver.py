@@ -347,6 +347,8 @@ def home():
     game_list = []
     user = User(session.get('user_id'))
     membership = user.data['membership']
+    stripe_publishable_key = os.getenv("STRIPE_PUBLISHABLE_KEY")
+    stripe_priceId_10 = os.getenv("STRIPE_PRICEID_BASIC")
     for game in Games().get_all():
         game_list.append({
             "id": game.data['id'],

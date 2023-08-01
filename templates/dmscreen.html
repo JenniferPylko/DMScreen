@@ -127,5 +127,34 @@
     option_new.text = "-- Create a new Game --";
     option_new.value = "0";
     game_select.add(option_new);
+
+    const subscriptions = [
+        {
+            header: 'Free',
+            price: 'Free',
+            priceId: null,
+            features: [
+                '50 Chat Messages per Month',
+                '5 NPCs',
+                '1 Campaign',
+                'Unlimited Session Notes',
+                'Unlimited Reminders'
+            ]
+        },
+        {
+            header: 'Basic',
+            price: '$10/month',
+            priceId: '{{stripe_priceId_10}}',
+            features: [
+                '500 Chat Messages per Month',
+                '50 NPCs',
+                '3 Campaigns',
+                'Unlimited Session Notes',
+                'Unlimited Reminders',
+                'AI Note Taking from MP3 (1/Week)'
+            ]
+        },
+    ];
+    const stripe_publishable_key = "{{stripe_publishable_key}}";
 </script>
 </html>
