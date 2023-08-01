@@ -929,76 +929,91 @@ function show_account_membership() {
     let html = "<h1>Membership</h1>"
     html += "<div id='subscriptions'>"
 
-    html += "<div class='subscription-item' id='subscription-free'>"
-    html += "<div class='subscription-header'>Free</div>"
-    html += "<div class='subscription-body'>"
-    html += "<div class='subscription-price'>Free</div>"
-    html += "<div class='subscription-description'>"
-    html += "<ul>"
-    html += "<li>100 Chat Messages per Month</li>"
-    html += "<li>5 NPCs</li>"
-    html += "<li>1 Campaign</li>"
-    html += "<li>Unlimited Session Notes</li>"
-    html += "<li>Unlimited Reminders</li>"
-    html += "</ul>"
-    html += "</div>" // subscription-description
-    html += "</div>" // subscription-body
-    html += "</div>" // subscription-item
- 
-    html += "<div class='subscription-item' id='subscription-basic'>"
-    html += "<div class='subscription-header'>Basic</div>"
-    html += "<div class='subscription-body'>"
-    html += "<div class='subscription-price'>$10/month</div>"
-    html += "<div class='subscription-description'>"
-    html += "<ul>"
-    html += "<li>500 Chat Messages per Month</li>"
-    html += "<li>50 NPCs</li>"
-    html += "<li>3 Campaigns</li>"
-    html += "<li>Unlimited Session Notes</li>"
-    html += "<li>Unlimited Reminders</li>"
-    html += "<li>AI Note Taking from MP3 (1/Week)</li>"
-    html += "</ul>"
-    html += "</div>" // subscription-description
-    html += "</div>" // subscription-body
-    html += "</div>" // subscription-item
+    var subscriptions = [
+        {
+            header: 'Free',
+            price: 'Free',
+            priceId: '',
+            features: [
+                '50 Chat Messages per Month',
+                '5 NPCs',
+                '1 Campaign',
+                'Unlimited Session Notes',
+                'Unlimited Reminders'
+            ]
+        },
+        {
+            header: 'Basic',
+            price: '$10/month',
+            priceId: 'price_1NXbu4Iv1yyTRw7nf31fiKkL',
+            features: [
+                '500 Chat Messages per Month',
+                '50 NPCs',
+                '3 Campaigns',
+                'Unlimited Session Notes',
+                'Unlimited Reminders',
+                'AI Note Taking from MP3 (1/Week)'
+            ]
+        },
+        {
+            header: 'Advanced',
+            price: 'TBD',
+            priceId: 'price_1Na7oBIv1yyTRw7n8n3ZD2Ky',
+            features: [
+                'TBD',
+            ]
+        },
+        {
+            header: 'Pro',
+            price: 'TBD',
+            priceId: '',
+            features: [
+                'TBD',
+            ]
+        }
+    ];
 
-    html += "<div class='subscription-item' id='subscription-basic'>"
-    html += "<div class='subscription-header'>Pro</div>"
-    html += "<div class='subscription-body'>"
-    html += "<div class='subscription-price'>$25/month</div>"
-    html += "<div class='subscription-description'>"
-    html += "<ul>"
-    html += "<li>2000 Chat Messages per Month</li>"
-    html += "<li>200 NPCs</li>"
-    html += "<li>7 Campaigns</li>"
-    html += "<li>Unlimited Session Notes</li>"
-    html += "<li>Unlimited Reminders</li>"
-    html += "<li>AI Note Taking from MP3 (3/Week)</li>"
-    html += "</ul>"
-    html += "</div>" // subscription-description
-    html += "</div>" // subscription-body
-    html += "</div>" // subscription-item
-
-    html += "<div class='subscription-item' id='subscription-basic'>"
-    html += "<div class='subscription-header'>Hero</div>"
-    html += "<div class='subscription-body'>"
-    html += "<div class='subscription-price'>$50/month</div>"
-    html += "<div class='subscription-description'>"
-    html += "<ul>"
-    html += "<li>5000 Chat Messages per Month</li>"
-    html += "<li>500 NPCs</li>"
-    html += "<li>Unlimited Campaigns</li>"
-    html += "<li>Unlimited Session Notes</li>"
-    html += "<li>Unlimited Reminders</li>"
-    html += "<li>AI Note Taking from MP3 (7/Week)</li>"
-    html += "</ul>"
-    html += "</div>" // subscription-description
-    html += "</div>" // subscription-body
-    html += "</div>" // subscription-item
+    for (var i = 0; i < subscriptions.length; i++) {
+        var subscription = subscriptions[i];
+        let item_class = (subscription.header.toLowerCase() == membership_level.toLowerCase()) ? 'subscription-item selected' : 'subscription-item';
+        console.log(item_class)
+        html += "<div class='"+item_class+"' id='subscription-" + subscription.header.toLowerCase() + "'>";
+        html += "<div class='subscription-header'>" + subscription.header + "</div>";
+        html += "<div class='subscription-body'>";
+        html += "<div class='subscription-price'>" + subscription.price + "</div>";
+        html += "<div class='subscription-description'>";
+        html += "<ul>";
+        for (var j = 0; j < subscription.features.length; j++) {
+            html += "<li>" + subscription.features[j] + "</li>";
+        }
+        html += "</ul>";
+        html += "</div>"; // subscription-description
+        html += "<div style='text-align:center'>"
+        html += `<button style="background-color:#6772E5;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em;cursor:pointer"`
+            + ` id="checkout-button-${subscription.priceId}"`
+            + ` role="link"`
+            + ` type="button">`
+            + `Update Membership`
+            + `</button>`;
+        html += "</div>"; // subscription-button    
+        html += "</div>"; // subscription-body
+        html += "</div>"; // subscription-item
+    }
 
     html += "<div style='clear:both'></div>"
+    //html += "<div style='text-align:center'><input type='button' value='Update Membership' onclick='update_membership()' style='background: rgba(25, 25, 112, 1); border: none; color: white; padding: 15px 32px; text-align: center; text-decoration: none; display: inline-block; font-size: 16px; margin: 4px 2px; cursor: pointer; border-radius: 10px;'></div>"
     html += "</div>" // subscrptions
+    html += "<div id='error-message'></div>";
     article.html(html)
+
+    for (var i = 0; i < subscriptions.length; i++) {
+        var subscription = subscriptions[i];
+        $('#subscription-'+subscription.header.toLowerCase()).on('click', function() {
+            $('.subscription-item').removeClass('selected');
+            $(this).addClass('selected');
+        });
+        initialize_stripe_button(subscription.priceId);
+    }
 }
 
 function save_password() {
@@ -1044,3 +1059,38 @@ function toggle_visibility(id) {
     else
         e.style.display = 'block';
 }
+
+function initialize_stripe_button(stripdId) {
+    var stripe = Stripe('pk_test_5nTmxSh2cFbFCXFlFRLqQV95');
+  
+    var checkoutButton = document.getElementById('checkout-button-'+stripdId);
+    checkoutButton.addEventListener('click', function () {
+      /*
+       * When the customer clicks on the button, redirect
+       * them to Checkout.
+       */
+      stripe.redirectToCheckout({
+        lineItems: [{price: stripdId, quantity: 1}],
+        mode: 'subscription',
+        /*
+         * Do not rely on the redirect to the successUrl for fulfilling
+         * purchases, customers may not always reach the success_url after
+         * a successful payment.
+         * Instead use one of the strategies described in
+         * https://stripe.com/docs/payments/checkout/fulfill-orders
+         */
+        successUrl: window.location.protocol + '//dmscreen.net/success',
+        cancelUrl: window.location.protocol + '//dmscreen.net/canceled',
+      })
+      .then(function (result) {
+        if (result.error) {
+          /*
+           * If `redirectToCheckout` fails due to a browser or network
+           * error, display the localized error message to your customer.
+           */
+          var displayError = document.getElementById('error-message');
+          displayError.textContent = result.error.message;
+        }
+      });
+    });
+  }
