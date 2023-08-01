@@ -217,7 +217,7 @@ def whisper(task):
             logging.debug("Transcribing audio file: " + f)
             task.update(message="Transcribing audio")
             try:
-                transcript = openai.Audio.transcribe(OpenAIHandler.MODEL_WHISPER, audio_file)
+                transcript = openai.Audio.transcribe(OpenAIHandler.MODEL_WHISPER, audio_file, api_key=os.environ["OPENAI_API_KEY"])
                 text += transcript.text + "\n"
             except Exception as e:
                 logging.error(e)
