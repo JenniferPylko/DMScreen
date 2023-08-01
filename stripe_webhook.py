@@ -39,17 +39,6 @@ def my_webhook_view():
         # Fulfill the purchase
         fulfill_order(line_items)
         # app.py
-#
-# Use this sample code to handle webhook events in your integration.
-#
-# 1) Paste this code into a new file (app.py)
-#
-# 2) Install dependencies
-#   pip3 install flask
-#   pip3 install stripe
-#
-# 3) Run the server on http://localhost:4242
-#   python3 -m flask run --port=4242
 
 import json
 import os

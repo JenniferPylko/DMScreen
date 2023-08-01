@@ -354,31 +354,6 @@ def home():
         })
     return render_template('dmscreen.html', **locals())
 
-@app.route('/subscription')
-def subscription():
-    return render_template('subscription.html')
-
-@app.route('/create-checkout-session', methods=['POST'])
-def create_checkout_session():
-    try:
-        price_id = "price_1NXa5RIv1yyTRw7njvjcH7mc"
-        stripe.api_key = "sk_test_4eC39HqLyjWDarjtT1zdp7dc"
-
-        session = stripe.checkout.Session.create(
-            success_url="http://dmscreen.net/subscription?success=true",
-            cancel_url="http://dmscreen.net/subscription?canceled=true",
-            mode="subscription",
-            line_items=[{
-                'price': price_id,
-                'quantity': 1,
-            }]
-        )
-    except Exception as e:
-        logging.error(e)
-        return render_template('subscription.html', error=e)
-
-    return redirect(session.url, code=303)
-
 @app.route('/ask', methods=['POST', 'OPTIONS'])
 def ask():    
     message = request.form.get('question')
