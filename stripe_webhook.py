@@ -1,54 +1,8 @@
-import os
-import stripe
-from flask import Flask, request, Response
-
-# Set your secret key. Remember to switch to your live secret key in production.
-# See your keys here: https://dashboard.stripe.com/apikeys
-stripe.api_key = os.getenv('STRIPE_API_KEY')
-
-app = Flask(__name__)
-
-@app.route('/webhook', methods=['POST'])
-def my_webhook_view():
-    payload = request.data
-    sig_header = request.headers.get('Stripe-Signature')
-    event = None
-
-    try:
-        event = stripe.Webhook.construct_event(
-            payload, sig_header, os.getenv('STRIPE_WEBHOOK_SECRET')
-        )
-    except ValueError as e:
-        # Invalid Payload
-        print('Invalid Payload');
-        return Response(status=400)
-    except stripe.error.SignatureVerificationError as e:
-        print('Signature Verification Error');
-        return Response(status=400)
-
-
-    # Handle the checkout.session.completed event
-    if event['type'] == 'checkout.session.completed':
-        # Retrieve the session
-        session = stripe.checkout.Session.retrieve(
-            event['data']['object']['id'],
-            expand=['line_items'],
-        )
-
-        line_items = session.line_items
-        # Fulfill the purchase
-        fulfill_order(line_items)
-        # app.py
-
 import json
 import os
 import stripe
 
 from flask import Flask, jsonify, request
-
-# The library needs to be configured with your account's secret key.
-# Ensure the key is kept out of any version control system you might be using.
-stripe.api_key = "sk_test_..."
 
 # This is your Stripe CLI webhook secret for testing your endpoint locally.
 endpoint_secret = 'whsec_5628e42078af6e43a14058da6d866d11be8451727ff28f4b10cc9d6c9ed2787d'

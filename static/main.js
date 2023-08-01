@@ -927,6 +927,34 @@ function show_account_membership() {
     let html = "<h1>Membership</h1>"
     html += "<div id='subscriptions'>"
 
+    var subscriptions = [
+        {
+            header: 'Free',
+            price: 'Free',
+            priceId: '',
+            features: [
+                '50 Chat Messages per Month',
+                '5 NPCs',
+                '1 Campaign',
+                'Unlimited Session Notes',
+                'Unlimited Reminders'
+            ]
+        },
+        {
+            header: 'Basic',
+            price: '$10/month',
+            priceId: 'price_1NXa5RIv1yyTRw7njvjcH7mc',
+            features: [
+                '500 Chat Messages per Month',
+                '50 NPCs',
+                '3 Campaigns',
+                'Unlimited Session Notes',
+                'Unlimited Reminders',
+                'AI Note Taking from MP3 (1/Week)'
+            ]
+        }
+    ];
+
     for (var i = 0; i < subscriptions.length; i++) {
         var subscription = subscriptions[i];
         let item_class = (subscription.header.toLowerCase() == membership_level.toLowerCase()) ? 'subscription-item selected' : 'subscription-item';
@@ -1020,6 +1048,7 @@ function initialize_stripe_button(stripdId) {
   
     var checkoutButton = document.getElementById('checkout-button-'+stripdId);
     checkoutButton.addEventListener('click', function () {
+	    alert(stripdId);
       stripe.redirectToCheckout({
         lineItems: [{price: stripdId, quantity: 1}],
         mode: 'subscription',
