@@ -945,7 +945,7 @@ function show_account_membership() {
         {
             header: 'Basic',
             price: '$10/month',
-            priceId: 'price_1NXbu4Iv1yyTRw7nf31fiKkL',
+            priceId: 'price_1NXa5RIv1yyTRw7njvjcH7mc',
             features: [
                 '500 Chat Messages per Month',
                 '50 NPCs',
@@ -953,22 +953,6 @@ function show_account_membership() {
                 'Unlimited Session Notes',
                 'Unlimited Reminders',
                 'AI Note Taking from MP3 (1/Week)'
-            ]
-        },
-        {
-            header: 'Advanced',
-            price: 'TBD',
-            priceId: 'price_1Na7oBIv1yyTRw7n8n3ZD2Ky',
-            features: [
-                'TBD',
-            ]
-        },
-        {
-            header: 'Pro',
-            price: 'TBD',
-            priceId: '',
-            features: [
-                'TBD',
             ]
         }
     ];
@@ -1012,7 +996,8 @@ function show_account_membership() {
             $('.subscription-item').removeClass('selected');
             $(this).addClass('selected');
         });
-        initialize_stripe_button(subscription.priceId);
+	if (subscription.priceId.length > 0) 
+		initialize_stripe_button(subscription.priceId);
     }
 }
 
@@ -1065,6 +1050,7 @@ function initialize_stripe_button(stripdId) {
   
     var checkoutButton = document.getElementById('checkout-button-'+stripdId);
     checkoutButton.addEventListener('click', function () {
+	    alert(stripdId);
       stripe.redirectToCheckout({
         lineItems: [{price: stripdId, quantity: 1}],
         mode: 'subscription',
