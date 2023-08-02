@@ -1,23 +1,16 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Home</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="/static/style.css">
+{% extends "base.html" %}
+{% block title %}Home{% endblock %}
+{% block head %}
     <script src="https://js.stripe.com/v3"></script>
     <script type="text/javascript">
         const todays_date = "{{ todays_date }}";
     </script>
-</head>
-<body>
+{% endblock %}
+{% block body %}
     <nav id="toolbar">
         <span class="logout"><a href="/">Logout</a></span>
         <span class="account"><a href="javascript:show_account()"><img src="/static/img/icons/account.png" height="25" style="margin-top:2px" title="Account"/></a></span>
-        <select id="game" name="game">
+        <select title="Game" id="game" name="game">
             <option value="" style="text-align: center;">--Choose a Game--</option>"
         </select>
         <!--Horizontal toolbar with icons to show/hide the grid-items -->
@@ -95,22 +88,6 @@
             </div>
         </div>
     </div>
-    <div id="modal" class="modal">
-        <div class="modal-content">
-            <div class="modal-header">
-                <span class="close" onclick="close_modal()">&times;</span>
-                <div id ="modal-buttons" class="modal-buttons">
-                </div>
-                <h2 id="modal-header">Modal Header</h2>
-            </div>
-            <div class="modal-body" id="modal_content">
-            </div>
-        </div>
-    </div>
-</body>
-<script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script type="text/javascript" src="https://code.jquery.com/ui/1.13.0/jquery-ui.min.js"></script>
-<script type="text/javascript" src="/static/main.js"></script>
 <script type="text/javascript">
     const membership_level = "{{membership}}";
 
@@ -157,4 +134,4 @@
     ];
     const stripe_publishable_key = "{{stripe_publishable_key}}";
 </script>
-</html>
+{% endblock %}
