@@ -3,6 +3,7 @@ import os
 import stripe
 import logging
 from dotenv import load_dotenv
+from models import User
 
 from flask import Flask, jsonify, request
 
@@ -12,7 +13,7 @@ root_logger = logging.getLogger()
 root_logger.addHandler(handler)
 root_logger.setLevel(logging.DEBUG)
 root_logger.debug('Starting webserver')
-logging.basicConfig(level=logging.DEBUG, filename='webserver.log')
+logging.basicConfig(level=logging.DEBUG, filename='stripe_webhook.log')
 
 load_dotenv()
 
@@ -88,9 +89,9 @@ def webhook():
       session = event['data']['object']
     elif event['type'] == 'checkout.session.async_payment_succeeded':
       session = event['data']['object']
-      user_id = session['metadata']['user_id']
+      user_id = session['client_reference_id']
       logging.info('User {} paid for order: {}'.format(user_id, session['display_items']))
-      fulfill_order(session['display_items'])
+      fulfill_order(user_id, session['display_items'])
     elif event['type'] == 'checkout.session.completed':
       session = event['data']['object']
     elif event['type'] == 'checkout.session.expired':
@@ -422,9 +423,11 @@ def webhook():
 
     return Response(status=200)
 
-def fulfill_order(line_items):
+def fulfill_order(userid, line_items):
     # TODO:
     logging.debug('Fulfilling Order')
+    user = User(userid)
+    user.update(membership='basic')
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=4242)

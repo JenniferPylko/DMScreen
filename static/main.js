@@ -1024,9 +1024,9 @@ function initialize_stripe_button(stripdId) {
       stripe.redirectToCheckout({
         lineItems: [{price: stripdId, quantity: 1}],
         mode: 'subscription',
-        successUrl: window.location.protocol + '//dmscreen.net/success',
-        cancelUrl: window.location.protocol + '//dmscreen.net/canceled',
-        metadata: {userid: userid}
+        successUrl: window.location.protocol + '//' + window.location.host  + '/home?sub=success',
+        cancelUrl: window.location.protocol + '//' + window.location.host  + '/home?sub=cancel',
+        clientReferenceId: userid
       })
       .then(function (result) {
         if (result.error) {

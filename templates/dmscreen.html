@@ -90,8 +90,7 @@
     </div>
 <script type="text/javascript">
     const membership_level = "{{membership}}";
-    const userid = {{userid}};
-
+    const userid = "{{userid}}"
     // eslint-disable-next-line no-redeclare
     const game_list = {{ game_list | tojson }};
     let game_select = document.getElementById("game");
@@ -134,5 +133,12 @@
         },
     ];
     const stripe_publishable_key = "{{stripe_publishable_key}}";
+
+    // get sub from paramaters
+    const urlParams = new URLSearchParams(window.location.search);
+    const sub = urlParams.get('sub');
+    if (sub=='success') {
+        alert('Thank you for subscribing!');
+    }
 </script>
 {% endblock %}
