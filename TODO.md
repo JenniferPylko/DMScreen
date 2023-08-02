@@ -2,10 +2,11 @@
 ## DM Screen
 
 ### v0.2 
+- BUG: I can see Red Hand of Doom
 - Set up billing
-- 
 
 ### v0.5 - Public Beta
+- Click on a chat message to make a DM Screen helpful note (Holywater does 2d6 damage). Click to get full description of rules
 - Add ability to delete a game
 - Audio Transcripts
 - - Remember to check upload status when returning to a game (and disable upload if needed)

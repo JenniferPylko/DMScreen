@@ -572,9 +572,31 @@ div.audio_progress {
     margin-right: 5px;
 }
 
+.subscription-item.selected {
+    border: 2px solid blue;
+    background-color: rgba(128, 0, 128, 1);
+}
+
+.subscription-item.selected .subscription-header {
+    background: linear-gradient(to right, rgba(255, 215, 0, 1), rgba(192, 192, 192, 1));
+    color: black;
+}
+
 .subscription-item:hover {
     cursor: pointer;
     background-color: rgba(0,0,0,0.2);
+}
+
+.subscription-body {
+    position: relative;
+    height: 100%;
+}
+
+.subscription-body button {
+    position: absolute;
+    bottom: 45px;
+    width: 90%;
+    left: 5%;
 }
 
 .subscription-button {
@@ -594,6 +616,10 @@ div.audio_progress {
     background-color: darkblue;
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
+}
+
+.subscription-description {
+    font-size: 0.9em;
 }
 
 main.account {

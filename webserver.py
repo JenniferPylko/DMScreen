@@ -8,7 +8,7 @@ import logging
 import openai
 import requests
 import bcrypt
-from models import NPC, NPCs, GameNotes, GameNote, Game, PlotPoints, Reminders, Reminder, TokenLog, Users, Games, Tasks, Task, Waitlist
+from models import NPC, NPCs, GameNotes, GameNote, Game, PlotPoints, Reminders, Reminder, TokenLog, Users, Games, Tasks, Task, Waitlist, User
 from chatbot import ChatBot
 from npc import AINPC
 from openaihandler import OpenAIHandler
@@ -217,7 +217,7 @@ def whisper(task):
             logging.debug("Transcribing audio file: " + f)
             task.update(message="Transcribing audio")
             try:
-                transcript = openai.Audio.transcribe(OpenAIHandler.MODEL_WHISPER, audio_file)
+                transcript = openai.Audio.transcribe(OpenAIHandler.MODEL_WHISPER, audio_file, api_key=os.environ["OPENAI_API_KEY"])
                 text += transcript.text + "\n"
             except Exception as e:
                 logging.error(e)
@@ -345,37 +345,16 @@ def createaccount_2():
 def home():
     todays_date = time.strftime("%m/%d/%Y")
     game_list = []
+    user = User(session.get('user_id'))
+    membership = user.data['membership']
+    stripe_publishable_key = os.getenv("STRIPE_PUBLISHABLE_KEY")
+    stripe_priceId_10 = os.getenv("STRIPE_PRICEID_BASIC")
     for game in Games().get_all():
         game_list.append({
             "id": game.data['id'],
             "name": game.data['name']
         })
     return render_template('dmscreen.html', **locals())
-
-@app.route('/subscription')
-def subscription():
-    return render_template('subscription.html')
-
-@app.route('/create-checkout-session', methods=['POST'])
-def create_checkout_session():
-    try:
-        price_id = "price_1NXa5RIv1yyTRw7njvjcH7mc"
-        stripe.api_key = "sk_test_4eC39HqLyjWDarjtT1zdp7dc"
-
-        session = stripe.checkout.Session.create(
-            success_url="http://dmscreen.net/subscription?success=true",
-            cancel_url="http://dmscreen.net/subscription?canceled=true",
-            mode="subscription",
-            line_items=[{
-                'price': price_id,
-                'quantity': 1,
-            }]
-        )
-    except Exception as e:
-        logging.error(e)
-        return render_template('subscription.html', error=e)
-
-    return redirect(session.url, code=303)
 
 @app.route('/ask', methods=['POST', 'OPTIONS'])
 def ask():    
