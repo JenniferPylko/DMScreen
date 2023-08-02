@@ -88,6 +88,9 @@ def webhook():
       session = event['data']['object']
     elif event['type'] == 'checkout.session.async_payment_succeeded':
       session = event['data']['object']
+      user_id = session['metadata']['user_id']
+      logging.info('User {} paid for order: {}'.format(user_id, session['display_items']))
+      fulfill_order(session['display_items'])
     elif event['type'] == 'checkout.session.completed':
       session = event['data']['object']
     elif event['type'] == 'checkout.session.expired':

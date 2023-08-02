@@ -942,12 +942,14 @@ function show_account_membership() {
         html += "</ul>";
         html += "</div>"; // subscription-description
         html += "<div style='text-align:center'>"
-        html += `<button style="background-color:#6772E5;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em;cursor:pointer"`
-            + ` id="checkout-button-${subscription.priceId}"`
-            + ` role="link"`
-            + ` type="button">`
-            + `Update Membership`
-            + `</button>`;
+        if (subscription.header.toLowerCase() != membership_level.toLowerCase()) {
+            html += `<button style="background-color:#6772E5;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em;cursor:pointer"`
+                + ` id="checkout-button-${subscription.priceId}"`
+                + ` role="link"`
+                + ` type="button">`
+                + `Update Membership`
+                + `</button>`;
+        }
         html += "</div>"; // subscription-button    
         html += "</div>"; // subscription-body
         html += "</div>"; // subscription-item
@@ -1024,6 +1026,7 @@ function initialize_stripe_button(stripdId) {
         mode: 'subscription',
         successUrl: window.location.protocol + '//dmscreen.net/success',
         cancelUrl: window.location.protocol + '//dmscreen.net/canceled',
+        metadata: {userid: userid}
       })
       .then(function (result) {
         if (result.error) {
