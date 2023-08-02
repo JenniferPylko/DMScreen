@@ -1,11 +1,22 @@
 import json
 import os
 import stripe
+import logging
+from dotenv import load_dotenv
 
 from flask import Flask, jsonify, request
 
+handler = logging.FileHandler('webserver.log')
+handler.setLevel(logging.DEBUG)
+root_logger = logging.getLogger()
+root_logger.addHandler(handler)
+root_logger.setLevel(logging.DEBUG)
+root_logger.debug('Starting webserver')
+logging.basicConfig(level=logging.DEBUG, filename='webserver.log')
+
+load_dotenv()
+
 # This is your Stripe CLI webhook secret for testing your endpoint locally.
-endpoint_secret = 'whsec_5628e42078af6e43a14058da6d866d11be8451727ff28f4b10cc9d6c9ed2787d'
 
 app = Flask(__name__)
 
@@ -17,7 +28,7 @@ def webhook():
 
     try:
         event = stripe.Webhook.construct_event(
-            payload, sig_header, endpoint_secret
+            payload, sig_header, os.getenv('STRIPE_WEBHOOK_SECRET')
         )
     except ValueError as e:
         # Invalid payload
@@ -402,7 +413,7 @@ def webhook():
     elif event['type'] == 'transfer.updated':
       transfer = event['data']['object']
     else:
-      print('Unhandled event type {}'.format(event['type']))
+      logging.warn('Unhandled event type {}'.format(event['type']))
 
     return jsonify(success=True)
 
@@ -410,7 +421,7 @@ def webhook():
 
 def fulfill_order(line_items):
     # TODO:
-    print('Fulfilling Order')
+    logging.debug('Fulfilling Order')
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=4242)
