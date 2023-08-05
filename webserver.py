@@ -37,6 +37,8 @@ from langchain.chains.summarize import load_summarize_chain
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain.prompts import PromptTemplate
 
+import build_scss
+
 handler = logging.FileHandler('webserver.log')
 handler.setLevel(logging.DEBUG)
 root_logger = logging.getLogger()
