@@ -426,7 +426,7 @@ class User():
         self.data['reset'] = reset
         return reset
     
-    def update(self, email=None, password=None, verify=None, reset=None):
+    def update(self, email=None, password=None, verify=None, reset=None, stripe_invoice_id=None, membership=None):
         params = locals().copy()
         query = "UPDATE users SET "
         vals = []
