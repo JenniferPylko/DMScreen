@@ -27,13 +27,17 @@ a {
     min-height: 100px;
     max-height: 300px;
     overflow: auto;
-}
-
-.grid-item header {
-    -webkit-user-select: none; /* Chrome/Safari */
-    -moz-user-select: none; /* Firefox */
-    -ms-user-select: none; /* IE10+/Edge */
-    user-select: none; /* Standard */
+    header {
+        -webkit-user-select: none; /* Chrome/Safari */
+        -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* IE10+/Edge */
+        user-select: none; /* Standard */
+        background-color: #333;
+        color: #fff;
+        padding: 0;
+        margin: 0;
+        text-align:center;
+    }
 }
 
 #game-npc-table {
@@ -55,18 +59,10 @@ a {
     position: relative;
 }
 
-.grid-item header {
-    background-color: #333;
-    color: #fff;
-    padding: 0px;
-    margin: 0px;
-    text-align:center;
-}
-
 h1 {
     font-size: 1em;
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
 }
 
 #chatbox, #notes {
@@ -124,14 +120,14 @@ input[type=range] {
 input[type=submit] {
     vertical-align: middle;
     width: 40px;
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
 }
 
 #save_notes {
     width: 100%;
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
 }
 
 #notes_most_recent, #previous_notes_list, #names, #game_names, div.npc_image, div#plot_points, div#reminder_list {
@@ -158,27 +154,27 @@ input[type=submit] {
     position: relative;
     width: calc(100% - 25px);
     height: 80px;
-}
-.lds-ring div {
-    box-sizing: border-box;
-    display: block;
-    position: absolute;
-    width: 64px;
-    height: 64px;
-    margin: 8px;
-    border: 8px solid #fff;
-    border-radius: 50%;
-    animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
-    border-color: #fff transparent transparent transparent;
-}
-.lds-ring div:nth-child(1) {
-    animation-delay: -0.45s;
-}
-.lds-ring div:nth-child(2) {
-    animation-delay: -0.3s;
-}
-.lds-ring div:nth-child(3) {
-    animation-delay: -0.15s;
+    div {
+        box-sizing: border-box;
+        display: block;
+        position: absolute;
+        width: 64px;
+        height: 64px;
+        margin: 8px;
+        border: 8px solid #fff;
+        border-radius: 50%;
+        animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+        border-color: #fff transparent transparent transparent;
+        &:nth-child(1) {
+            animation-delay: -0.45s;
+        }
+        &:nth-child(2) {
+            animation-delay: -0.3s;
+        }
+        &:nth-child(3) {
+            animation-delay: -0.15s;
+        }
+    }
 }
 @keyframes lds-ring {
     0% {
@@ -241,14 +237,13 @@ input[type=submit] {
     float: right;
     font-size: 28px;
     font-weight: bold;
+    &:hover, &:focus {
+        color: #fff;
+        text-decoration: none;
+        cursor: pointer;
+    }
 }
 
-.close:hover,
-.close:focus {
-    color: #fff;
-    text-decoration: none;
-    cursor: pointer;
-}
 
 .edit, .delete, #modal-buttons {
     color: #aaa;
@@ -330,8 +325,8 @@ div.npc_image {
     width: 512px;
     height: 542px;
     float: right;
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     overflow: hidden;
     text-align: center;
 }
@@ -353,11 +348,11 @@ div.chat_options {
     display: none;
     background-color: #f9f9f9;
     min-width: 160px;
-    box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.5);
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
     padding: 6px 8px;
     z-index: 1;
     top: 20px;
-    left: 0px;
+    left: 0;
     font-size: 0.8em;
 }
 
@@ -369,8 +364,8 @@ div.chat_option {
 
 nav#toolbar {
     position: fixed;
-    top: 0px;
-    left: 0px;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 30px;
     background-color: #333;
@@ -394,25 +389,25 @@ nav#toolbar span.logout, nav#toolbar span.account {
     text-align: center;
     align-items: center;
     justify-content: center;
-}
+    &:hover {
+        background-color: blueviolet;
+        color: #333;
+    }
 
-.nav-button:hover {
-    background-color: blueviolet;
-    color: #333;
-}
-
-.nav-button.active {
-    background-color: blueviolet;
-    color: #333;
+    &.active {
+        background-color: blueviolet;
+        color: #333;
+    }
 }
 
 nav#toolbar span a {
     color: #fff;
     text-decoration: none;
 }
-
-input#plot_point_title, input#reminder_title, input#reminder_trigger {
-    width: 500px;
+input {
+    &#plot_point_title, &#reminder_title, &#reminder_trigger {
+        width: 500px;
+    }
 }
 
 textarea#plot_point_summary, textarea#reminder_details {
@@ -433,16 +428,15 @@ div.plot_point {
     text-align: center;
     cursor: pointer;
     overflow: hidden;
-}
-
-div.plot_point .plot_point_hover {
-    background-color: blueviolet;
+    .plot_point_hover {
+        background-color: blueviolet;
+    }
 }
 
 div.reminder {
     position: relative;
     border: 1px solid #000;
-    padding: 0px;
+    padding: 0;
     margin: 2px;
     padding-bottom: 3px;
     background-color: #fff;
@@ -458,8 +452,8 @@ div.reminder {
 
 div.reminder_delete {
     position: absolute;
-    top: 0px;
-    right: 0px;
+    top: 0;
+    right: 0;
     width: 15px;
     height: 15px;
     background-image: url(/static/img/times-solid.svg);
@@ -517,11 +511,10 @@ div.psw {
     background-color: transparent;   
     width: 100%;
     text-align: right;
-}
-
-div.psw a {
-    color: white;
-    font-size: 14px;
+    a {
+        color: white;
+        font-size: 14px;
+    }
 }
 
 div#login div#remember {
@@ -530,8 +523,8 @@ div#login div#remember {
 
 h2 {
     text-align: center;
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
 }
 
 div.error {
@@ -575,11 +568,10 @@ div.audio_progress {
 .subscription-item.selected {
     border: 2px solid blue;
     background-color: rgba(128, 0, 128, 1);
-}
-
-.subscription-item.selected .subscription-header {
-    background: linear-gradient(to right, rgba(255, 215, 0, 1), rgba(192, 192, 192, 1));
-    color: black;
+    .subscription-header {
+        background: linear-gradient(to right, rgba(255, 215, 0, 1), rgba(192, 192, 192, 1));
+        color: black;
+    }
 }
 
 .subscription-item:hover {
@@ -590,13 +582,12 @@ div.audio_progress {
 .subscription-body {
     position: relative;
     height: 100%;
-}
-
-.subscription-body button {
-    position: absolute;
-    bottom: 45px;
-    width: 90%;
-    left: 5%;
+    button {
+        position: absolute;
+        bottom: 45px;
+        width: 90%;
+        left: 5%;
+    }
 }
 
 .subscription-button {
@@ -624,23 +615,21 @@ div.audio_progress {
 
 main.account {
     height: 100%;
-}
-
-main.account nav {
-    width: 150px;
-    height: 100%;
-    margin: 0px;
-    padding: 0px;
-    padding-left: 5px;
-    background-color: #000;
-    float: left;
-    font-size: 0.9em;
-}
-
-main.account nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+    nav {
+        width: 150px;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        padding-left: 5px;
+        background-color: #000;
+        float: left;
+        font-size: 0.9em;
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+    }
 }
 
 article#account_article {
@@ -648,9 +637,8 @@ article#account_article {
     padding-left: 15px;
     float: left;
     width: calc(100%-160px)
-}
-
-article#account_article h1 {
-    text-align:center;
-    font-size: 1.5em;
+    h1 {
+        text-align:center;
+        font-size: 1.5em;
+    }
 }
