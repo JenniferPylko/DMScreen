@@ -244,13 +244,20 @@ class ChatBot():
             model_name = self.__default_model
         if temperature is None:
             temperature = 0.0
+
+        if (self.__game_id is None):
+            return ""
+
         session_notes = self.__reference_instance.similarity_search(query, k=4, namespace='sessions', filter={"game_id": str(self.__game_id)})
         r = ""
         for note in session_notes:
-            r += f"Session Notes - Date: {note.metadata['game_date']}\n{note.page_content}\n\n"        
+            r += f"Session Notes - Date: {note.metadata['game_date']}\n{note.page_content}\n\n"
         return r
     
     def create_reminder(self, title, details, trigger):
+        if (self.__game_id is None):
+            return "No game selected"
+        
         reminder = Reminders(self.__game_id).add(title, details, trigger)
         if (reminder is None):
             return "Failed to create reminder"

@@ -378,7 +378,7 @@ def home(user):
 @require_loggedin_ajax
 def ask(user):
     message = request.form.get('question')
-    game_id = int(request.form.get('game_id'))
+    game_id = int(request.form.get('game_id')) if len(request.form.get('game_id')) > 0 else None
     chatbot = ChatBot(game_id, user.data['id'], os.getenv("OPENAI_API_KEY"), os.getenv("PINECONE_API_KEY"), os.getenv("PINECONE_ENVIRONMENT"))
     answer = chatbot.send_message(message, model=OpenAIHandler.MODEL_GPT3)
     return send_flask_response(make_response, answer)
