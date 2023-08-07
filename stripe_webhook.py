@@ -3,7 +3,7 @@ import os
 import stripe
 import logging
 from dotenv import load_dotenv
-from models import User
+from models import User, Users
 
 from flask import Flask, jsonify, request
 
@@ -199,7 +199,10 @@ def webhook():
     elif event['type'] == 'invoice.payment_succeeded':
       invoice = event['data']['object']
       invoice_id = invoice['id']
-      logging.debug('Received Payment for invoice_id');
+      user = Users().get_by_stripe_invoice_id(invoice_id)
+      if (user is not None):
+        logging.debug('Received Payment for invoice_id: {}, ({})'.format(invoice_id, user.data['id']))
+        user.update(membership='basic')
     elif event['type'] == 'invoice.sent':
       invoice = event['data']['object']
     elif event['type'] == 'invoice.upcoming':

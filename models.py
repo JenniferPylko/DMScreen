@@ -400,6 +400,10 @@ class Users(Model):
         user = self.get_row("SELECT id FROM users WHERE email=?", (email,))
         return User(user['id']) if user is not None else None
 
+    def get_by_stripe_invoice_id(self, stripe_invoice_id):
+        user = self.get_row("SELECT id FROM users WHERE stripe_invoice_id=?", (stripe_invoice_id,))
+        return User(user['id']) if user is not None else None
+
     def count(self) -> int:
         return self.get_row("SELECT COUNT(*) AS count FROM users")['count']
 
@@ -446,6 +450,8 @@ class User():
         self._db.commit()
         cursor.close()
         return self  
+
+        
 
 class Tasks(Model):
     def __init__(self) -> None:
