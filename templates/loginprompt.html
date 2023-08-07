@@ -5,7 +5,7 @@
         <header id="login-title">
             <h1>DM Screen</h1>
         </header>
-        <section id="login">
+        <section id="login" class="panel">
             {% if error %}
                 <div class="error">
                     {{ error }}
@@ -17,32 +17,22 @@
                 </div>
             {% endif %}
             <form method="POST" action="/login">
-                <h2>Login</h2>
+                <h3>Login</h3>
                 <div class="container">
-                    <table>
-                        <tr>
-                            <td><label for="email"><b>Email</b></label></td>
-                            <td><input type="email" placeholder="Enter Email Address" id="email" name="email" required></td>
-                        </tr>
-                        <tr>
-                            <td><label for="psw"><b>Password</b></label></td>
-                            <td><input type="password" placeholder="Enter Password" id="psw" name="psw" required></td>
-                        </tr>
-                        <tr>
-                            <td colspan="2">
-                                <label><input id="remember" type="checkbox" checked="checked" name="remember"> Remember me</label>
-                                <button type="submit">Login</button>
-                            </td>
-                        </tr><tr>
-                            <td colspan="2">
-                                <div class="psw"><a href="/forgot">Forgot password?</a></div>
-                            </td>
-                        </tr><tr>
-                            <td colspan="2">
-                                <div class="psw"><a href="/createaccount">Create Account</a></div>
-                            </td>
-                        </tr>
-                    </table>
+                    <div class="login-row">
+                        <label for="email"><b>Email</b></label>
+                        <input type="email" placeholder="Enter Email Address" id="email" name="email" required>
+                    </div>
+                    <div class="login-row">
+                        <label for="psw"><b>Password</b></label>
+                        <input type="password" placeholder="Enter Password" id="psw" name="psw" required>
+                    </div>
+                    <div class="login-row">
+                        <label><input id="remember" type="checkbox" checked="checked" name="remember"> Remember me</label>
+                        <button type="submit" class="primary">Login</button>
+                    </div>
+                    <div class="psw login-row"><div></div><a href="/forgot">Forgot password?</a></div>
+                    <div class="psw login-row"><div></div><a href="/createaccount">Create Account</a></div>
                 </div>
             </form>
         </section>

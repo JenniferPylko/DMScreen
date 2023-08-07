@@ -1,0 +1,88 @@
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 90%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+
+    .modal-content {
+        background-color: #444;
+        margin: auto;
+        padding: 20Wpx;
+        border: 1px solid #888;
+        width: 80%;
+        color: #fff;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.2), 0, 6px 20px rgba(0,0,0,0.19);
+        animation-name: animatetop;
+        animation-duration: 0.4s;
+    }
+
+    .modal-header {
+        padding: 2px 16px;
+        background-color: #333;
+        color: #fff;
+        display: flex;
+        flex-direction: row-reverse;
+        #modal-header {
+            flex-grow: 1;
+        }
+    }
+    
+    .modal-body {
+        padding: 2px 16px;
+    }
+    
+    .modal-footer {
+        padding: 2px 16px;
+        background-color: #333;
+        color: #fff;
+    }
+
+    .edit, .delete, #modal-buttons {
+        color: #aaa;
+        font-size: 14px;
+        font-weight: bold;
+        margin-top: 10px;
+        margin-right: 5px;
+    }
+    
+    #modal-buttons span {
+        padding-left: 5px;
+        display: inline-block;
+    }
+    
+    .edit:hover,
+    .edit:focus, .delete:hover,
+    .delete:focus, #modal-buttons span:hover, #modal-buttons span:focus {
+        color: #fff;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    .close {
+        color: #aaa;
+        font-size: 28px;
+        font-weight: bold;
+        &:hover, &:focus {
+            color: #fff;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    }
+}
+
+textarea#modal_textarea {
+    width: 100%;
+    height: 300px;
+}
+
+@keyframes animatetop {
+    from {top: -300px; opacity: 0}
+    to {top: 0; opacity: 1}
+}
