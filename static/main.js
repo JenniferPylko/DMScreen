@@ -548,7 +548,7 @@ function create_npc_submit() {
             key = key.charAt(0).toUpperCase() + key.slice(1);
             // replace _ with a space
             key = key.replace(/_/g, ' ');
-            html += '<tr class="npc"><td nowrap>' + key + `</td><td id="${id}_${k}">` + r[k] + `</td><td><img src="/static/img/arrow-rotate-right-solid.svg"/ class="regen" onclick="regen_key(${id}, '${k}', this)"></td></tr>`;
+            html += '<tr class="npc"><td nowrap>' + key + `</td><td id="${id}_${k}">` + r[k] + `</td><td><img src="/static/img/arrow-rotate-right-solid.svg" class="regen" onclick="regen_key(${id}, '${k}', this)" /></td></tr>`;
         })           
         html += '</table>';     
         html += `<div class="npc_summary">
@@ -1026,11 +1026,21 @@ function hide_chat_options(span, force=false) {
 }
 
 function toggle_visibility(id) {
-    var e = document.getElementById(id);
-    if (e.style.display == 'block')
-        e.style.display = 'none';
-    else
-        e.style.display = 'block';
+    if (Array.isArray(id)) {
+        id.forEach((i) => {
+            do_toggle(i);
+        })
+    } else {
+        do_toggle(id);
+    }
+
+    function do_toggle(id) {
+        var e = document.getElementById(id);
+        if (e.style.display == 'block')
+            e.style.display = 'none';
+        else
+            e.style.display = 'block';
+    }
 }
 
 function initialize_stripe_button(stripdId) {
