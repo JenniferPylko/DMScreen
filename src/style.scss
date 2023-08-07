@@ -229,7 +229,7 @@ tr.npc td {
     background-color: transparent;
 }
 
-button#add_npc {
+button#add_npc, button#add_reminder {
     position: absolute;
     top: 2px;
     right: 10px;
@@ -312,6 +312,11 @@ nav#toolbar span.logout, nav#toolbar span.account {
 
     &.active {
         background-color: blueviolet;
+        color: #333;
+    }
+
+    &.off {
+        background-color: transparent;
         color: #333;
     }
 }
@@ -418,6 +423,10 @@ div.audio_progress {
     padding: 2px;
 }
 
+textarea:disabled {
+    background-color: #ccc !important;
+}
+
 .subscription-item {
     background-color: rgba(0,0,0,0.1);
     backdrop-filter: blur(5px);
@@ -501,4 +510,10 @@ article#account_article {
         text-align:center;
         font-size: 1.5em;
     }
+}
+
+nav#toolbar img {
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
 }

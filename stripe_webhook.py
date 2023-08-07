@@ -3,11 +3,11 @@ import os
 import stripe
 import logging
 from dotenv import load_dotenv
-from models import User
+from models import User, Users
 
 from flask import Flask, jsonify, request
 
-handler = logging.FileHandler('webserver.log')
+handler = logging.FileHandler('logs/stripe_webhook.log')
 handler.setLevel(logging.DEBUG)
 root_logger = logging.getLogger()
 root_logger.addHandler(handler)
@@ -39,6 +39,7 @@ def webhook():
         raise e
 
     # Handle the event
+    logging.info("Intercepted event: " + event['type'])
     if event['type'] == 'account.updated':
       account = event['data']['object']
     elif event['type'] == 'account.external_account.created':
@@ -90,10 +91,15 @@ def webhook():
     elif event['type'] == 'checkout.session.async_payment_succeeded':
       session = event['data']['object']
       user_id = session['client_reference_id']
-      logging.info('User {} paid for order: {}'.format(user_id, session['display_items']))
-      fulfill_order(user_id, session['display_items'])
+      price_id = session['items']['plan']['id']
+      logging.info('User {} paid for order: {}'.format(user_id, price_id))
+      fulfill_order(user_id, price_id)
     elif event['type'] == 'checkout.session.completed':
       session = event['data']['object']
+      user_id = session['client_reference_id']
+      invoice_id = session['invoice']
+      logging.info('User {} paid for order. (Invoice: {})'.format(user_id, invoice_id))
+      User(user_id).update(stripe_invoice_id=invoice_id)
     elif event['type'] == 'checkout.session.expired':
       session = event['data']['object']
     elif event['type'] == 'coupon.created':
@@ -192,6 +198,11 @@ def webhook():
       invoice = event['data']['object']
     elif event['type'] == 'invoice.payment_succeeded':
       invoice = event['data']['object']
+      invoice_id = invoice['id']
+      user = Users().get_by_stripe_invoice_id(invoice_id)
+      if (user is not None):
+        logging.debug('Received Payment for invoice_id: {}, ({})'.format(invoice_id, user.data['id']))
+        user.update(membership='basic', stripe_customer_id=invoice['customer'])
     elif event['type'] == 'invoice.sent':
       invoice = event['data']['object']
     elif event['type'] == 'invoice.upcoming':

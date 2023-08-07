@@ -366,6 +366,7 @@ class AINPC():
             "description": "A summary of the NPC"
         }
 
+        openai.api_key = os.environ.get("OPENAI_API_KEY")
         response = openai.ChatCompletion.create(
             model = OpenAIHandler.MODEL_GPT4,
             messages = [{

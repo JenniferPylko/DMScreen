@@ -14,13 +14,14 @@
             <option value="" style="text-align: center;">--Choose a Game--</option>"
         </select>
         <!--Horizontal toolbar with icons to show/hide the grid-items -->
-        <span class="nav-button active" title="Chat Bot""><a href="#" onclick="toggle_visibility('chatbot')"><i class="fa fa-comment"></i></a></span>
-        <span class="nav-button active" title="Game Notes"><a href="#" onclick="toggle_visibility('game_notes')"><i class="fa fa-book"></i></a></span>
-        <span class="nav-button active" title="Reminders"><a href="#" onclick="toggle_visibility('reminders')"><i class="fa fa-lightbulb-o"></i></a></span>
-        <span class="nav-button active" title="NPCs"><a href="#" onclick="toggle_visibility('npcs')"><i class="fa fa-users"></i></a></span>
+        <span class="nav-button active" title="Chat Bot"" id="btn_chatbot"><a href="#" onclick="toggle_visibility('chatbot')"><i class="fa fa-comment"></i></a></span>
+        <span class="nav-button active" title="Game Notes" id="btn_game_notes"><a href="#" onclick="toggle_visibility(['game_notes', 'previous_notes'])"><i class="fa fa-book"></i></a></span>
+        <span class="nav-button active" title="Reminders" id="btn_reminders"><a href="#" onclick="toggle_visibility('reminders')"><i class="fa fa-lightbulb-o"></i></a></span>
+        <span class="nav-button active" title="NPCs" id="btn_npcs"><a href="#" onclick="toggle_visibility('npcs')"><i class="fa fa-users"></i></a></span>
+        <span class="nav-button active" title="Audio" id="btn_audio"><a href="#" onclick="toggle_visibility('audio')"><img src="/static/img/headphones-solid.png" /></a></span>
     </nav>
     <div id="sortable">
-        <div id="chatbot" class="grid-item">
+        <div id="chatbot" class="grid-item" style="display: block;">
             <header>
                 <h1>Chat Bot</h1>
             </header>
@@ -32,7 +33,7 @@
                 </form>
             </content>
         </div>
-        <div id="game_notes" class="grid-item">
+        <div id="game_notes" class="grid-item" style="display: block;">
             <header>
                 <h1>Game Notes</h1>
             </header>
@@ -41,11 +42,11 @@
                 <span>{{todays_date}}</span>
             </div>
             <div>
-                <textarea id="notes" name="notes"></textarea>
+                <textarea id="notes" name="notes" disabled></textarea>
             </div>
-            <input id="save_notes" type="submit" value="Save">
+            <input id="save_notes" type="submit" value="Save" disabled>
         </div>
-        <div id="previous_notes" class="grid-item">
+        <div id="previous_notes" class="grid-item" style="display: block;">
             <header>
                 <h1>Previous Notes</h1>
             </header>
@@ -56,30 +57,30 @@
                 <div style="text-align:center">Select a project to get started</div>
             </div>
         </div>
-        <div id="reminders" class="grid-item">
+        <div id="reminders" class="grid-item" style="display: block;">
             <header>
                 <h1>Reminders</h1>
             </header>
             <div class="grid-body">
                 <div style="position: relative; height: 17px;">
-                    <button id="add_npc" onclick="create_reminder()">+ Add Reminder</button>
+                    <button id="add_reminder" onclick="create_reminder()" disabled>+ Add Reminder</button>
                 </div>
                 <div id="reminder_list"><center>Select a project to get started</center></div>
             </div>
         </div>
-        <div id="npcs" class="grid-item">
+        <div id="npcs" class="grid-item" style="display: block;">
             <header>
                 <h1>NPCs</h1>
             </header>
             <div class="grid-body">
                 <div id="game_names"><center>Select a project to get started</center></div>
                 <div style="position: relative; height: 17px;">
-                    <button id="add_npc" onclick="create_npc()">+ Add NPC</button>
+                    <button id="add_npc" onclick="create_npc()" disabled>+ Add NPC</button>
                 </div>
                 <div id="names"><center>Select a project to get started</center></div>
             </div>
         </div>
-        <div id="audio" class="grid-item">
+        <div id="audio" class="grid-item" style="display: block;">
             <header>
                 <h1>Audio</h1>
             </header>
@@ -109,7 +110,7 @@
         {
             header: 'Free',
             price: 'Free',
-            priceId: null,
+            priceId: '__free',
             features: [
                 '50 Chat Messages per Month',
                 '5 NPCs',

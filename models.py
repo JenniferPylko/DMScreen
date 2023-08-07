@@ -266,7 +266,13 @@ class Games(Model):
         for i, game in enumerate(games):
             games[i] = Game(game)
         return games
-    
+
+    def get_by_owner(self, owner_id):
+        games = self.get_array("SELECT id FROM games WHERE owner_id=? ORDER BY name ASC", (owner_id,))
+        for i, game in enumerate(games):
+            games[i] = Game(game)
+        return games
+
     def add(self, name, abbr, owner_id):
         id = self.do_insert("INSERT INTO games (abbr, name, owner_id) VALUES (?, ?, ?)", (abbr, name, owner_id))
         return Game(id)
@@ -400,6 +406,10 @@ class Users(Model):
         user = self.get_row("SELECT id FROM users WHERE email=?", (email,))
         return User(user['id']) if user is not None else None
 
+    def get_by_stripe_invoice_id(self, stripe_invoice_id):
+        user = self.get_row("SELECT id FROM users WHERE stripe_invoice_id=?", (stripe_invoice_id,))
+        return User(user['id']) if user is not None else None
+
     def count(self) -> int:
         return self.get_row("SELECT COUNT(*) AS count FROM users")['count']
 
@@ -426,7 +436,9 @@ class User():
         self.data['reset'] = reset
         return reset
     
-    def update(self, email=None, password=None, verify=None, reset=None):
+    def update(self, email=None, password=None, verify=None, reset=None,
+               stripe_invoice_id=None, membership=None, stripe_subscription_id=None,
+               stripe_customer_id=None):
         params = locals().copy()
         query = "UPDATE users SET "
         vals = []

@@ -87,13 +87,6 @@ $('#chat-form').on('submit', function(e) {
 $('#game').on('change', function(e) {
     e.preventDefault();
     var game = $('#game').val();
-    $('#notes_most_recent').html("<div></div><div></div><div></div>");
-    $('#notes_most_recent').addClass('lds-ring')
-    $('#notes').val('');
-    $('#game').prop('disabled', true);
-    $('#notes').prop('disabled', true);
-    $('#save_notes').prop('disabled', true);
-    $('#notes').css('background-color', '#ccc');
 
     if (game == 0) { // Create a new game
         modal.style.display = "block";
@@ -109,6 +102,14 @@ $('#game').on('change', function(e) {
         html += "</form>"
         div.html(html)        
     } else { // Load the game
+        $('#notes_most_recent').html("<div></div><div></div><div></div>");
+        $('#notes_most_recent').addClass('lds-ring')
+        $('#notes').val('');
+        $('#game').prop('disabled', true);
+        $('#notes').prop('disabled', true);
+        $('#save_notes').prop('disabled', true);
+        $('#notes').css('background-color', '#ccc');
+
         $.post('/setgame', { 
             game_id: game
         }, function(response) {
@@ -121,6 +122,8 @@ $('#game').on('change', function(e) {
             $('#game').prop('disabled', false);
             $('#notes').prop('disabled', false);
             $('#save_notes').prop('disabled', false);
+            $('#add_npc').prop('disabled', false);
+            $('#add_reminder').prop('disabled', false);
             $('#notes').css('background-color', '#fff');
             $('#notes_most_recent').removeClass('lds-ring')
             $('#previous_notes_list').html('');
@@ -546,7 +549,7 @@ function create_npc_submit() {
             key = key.charAt(0).toUpperCase() + key.slice(1);
             // replace _ with a space
             key = key.replace(/_/g, ' ');
-            html += '<tr class="npc"><td nowrap>' + key + `</td><td id="${id}_${k}">` + r[k] + `</td><td><img src="/static/img/arrow-rotate-right-solid.svg"/ class="regen" onclick="regen_key(${id}, '${k}', this)"></td></tr>`;
+            html += '<tr class="npc"><td nowrap>' + key + `</td><td id="${id}_${k}">` + r[k] + `</td><td><img src="/static/img/arrow-rotate-right-solid.svg" class="regen" onclick="regen_key(${id}, '${k}', this)" /></td></tr>`;
         })           
         html += '</table>';     
         html += `<div class="npc_summary">
@@ -943,11 +946,12 @@ function show_account_membership() {
         html += "</div>"; // subscription-description
         html += "<div style='text-align:center'>"
         if (subscription.header.toLowerCase() != membership_level.toLowerCase()) {
+            let btn_txt = (subscription.priceId == '__free') ? 'Cancel Membership' : 'Update Membership';
             html += `<button style="background-color:#6772E5;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em;cursor:pointer"`
                 + ` id="checkout-button-${subscription.priceId}"`
                 + ` role="link"`
                 + ` type="button">`
-                + `Update Membership`
+                + btn_txt
                 + `</button>`;
         }
         html += "</div>"; // subscription-button    
@@ -967,8 +971,22 @@ function show_account_membership() {
             $('.subscription-item').removeClass('selected');
             $(this).addClass('selected');
         });
-        if (subscription.priceId != null)
+        if (subscription.priceId == '__free' && membership_level != 'free') {
+            var checkoutButton = document.getElementById('checkout-button-__free');
+
+            checkoutButton.addEventListener('click', function () {
+                $.post('/cancelmembership', {
+                    subscriptionId: subscription.priceId
+                }, function(response) {
+                    alert('Membership cancelled');
+                    window.location = '/home';
+                }).fail(function(jqXHR, textStatus, errorThrown) {
+                    alert('An error occurred, please try again - ' + errorThrown);
+                });
+            });
+        } else if (subscription.priceId != '__free' && membership_level != subscription.header.toLowerCase()) {
             initialize_stripe_button(subscription.priceId);
+        }
     }
 }
 
@@ -1008,12 +1026,28 @@ function hide_chat_options(span, force=false) {
     }
 }
 
-function toggle_visibility(id) {
-    var e = document.getElementById(id);
-    if (e.style.display == 'block')
-        e.style.display = 'none';
-    else
-        e.style.display = 'block';
+function toggle_visibility(id, btn) {
+    if (Array.isArray(id)) {
+        id.forEach((i) => {
+            do_toggle(i);
+        })
+    } else {
+        do_toggle(id);
+    }
+
+    function do_toggle(id) {
+        var e = document.getElementById(id);
+        var btn = document.getElementById('btn_'+id);
+        if (e.style.display == 'block') {
+            e.style.display = 'none';
+            if (btn)
+                btn.classList.add('off');
+        } else {
+            e.style.display = 'block';
+            if (btn)
+                btn.classList.remove('off');
+        }
+    }
 }
 
 function initialize_stripe_button(stripdId) {
@@ -1024,9 +1058,9 @@ function initialize_stripe_button(stripdId) {
       stripe.redirectToCheckout({
         lineItems: [{price: stripdId, quantity: 1}],
         mode: 'subscription',
-        successUrl: window.location.protocol + '//' + window.location.host  + '/home?sub=success',
-        cancelUrl: window.location.protocol + '//' + window.location.host  + '/home?sub=cancel',
-        clientReferenceId: userid
+        successUrl: window.location.protocol + '//' + window.location.host  + '/home?sub=success&uid='+userid,
+        cancelUrl: window.location.protocol + '//' + window.location.host  + '/home?sub=cancel&uid='+userid,
+	clientReferenceId: userid
       })
       .then(function (result) {
         if (result.error) {

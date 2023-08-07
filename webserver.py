@@ -18,12 +18,12 @@ from pydub import AudioSegment
 import ffmpeg
 import glob
 import stripe
-import atexit
 import subprocess
+import functools
 
 from typing import List
 
-from flask import Flask, render_template, request, make_response, session, redirect
+from flask import Flask, render_template, request, make_response, session, redirect, url_for
 from dotenv import dotenv_values, load_dotenv
 from werkzeug.utils import secure_filename
 
@@ -39,7 +39,7 @@ from langchain.prompts import PromptTemplate
 
 import build_scss
 
-handler = logging.FileHandler('webserver.log')
+handler = logging.FileHandler('logs/webserver.log')
 handler.setLevel(logging.DEBUG)
 root_logger = logging.getLogger()
 root_logger.addHandler(handler)
@@ -57,9 +57,6 @@ DIR_NOTES = os.path.join(DIR_ROOT, 'notes')
 DIR_AUDIO = os.path.join(DIR_ROOT, 'audio')
 
 model_name = OpenAIHandler.MODEL_GPT3
-notes_instance = None
-game_dir = None
-game_persist_dir = None
 
 """ FLASK """
 app = Flask(__name__)
@@ -104,7 +101,7 @@ names_prompt = PromptTemplate(
     partial_variables={"format_instructions": names_parser.get_format_instructions()}
 )
 
-def get_names(temperature=0.9, model='text-davinci-003', game_id=None) -> list[str]:
+def get_names(user_id, temperature=0.9, model='text-davinci-003', game_id=None) -> list[str]:
     names = NPCs().get_all(game_id=game_id)
     
     # If we get here, we are getting unassigned names
@@ -117,7 +114,7 @@ def get_names(temperature=0.9, model='text-davinci-003', game_id=None) -> list[s
         logging.debug("Sending prompt to OpenAI using model: "+model_name+"\n\n"+_input.to_messages().pop().content)
         with get_openai_callback() as cb:
             answer = chat(_input.to_messages())
-            TokenLog().add("Generate Names", cb.prompt_tokens, cb.completion_tokens, cb.total_cost, session.get('user_id'))
+            TokenLog().add("Generate Names", cb.prompt_tokens, cb.completion_tokens, cb.total_cost, user_id)
         logging.debug("Received answer from OpenAI: "+answer.content)
 
         parsed_answer = names_parser.parse(answer.content)
@@ -195,7 +192,8 @@ def split_audio(task_id, file_path, game):
     note = whisper(task)
 
     date = time.strftime("%Y-%m-%d")
-    GameNotes(game.data['abbr']).preprocess_and_add(note['bullets'], date, session.get('user_id')).data['summary']
+    #GameNotes(game.data['abbr']).preprocess_and_add(note['bullets'], date, user_id).data['summary']
+    GameNotes(game.data['abbr']).add(note['bullets'], date, note['bullets']).data['summary']
 
     # Delete the audio files
     audio_files = glob.glob(DIR_AUDIO + f"""/{task_id}--chunk*.mp3""")
@@ -261,6 +259,23 @@ def whisper(task):
         "fulltext": text
     }
 
+""" Decorators """
+def require_loggedin(func):
+    @functools.wraps(func)
+    def wrapper(*args, **kwargs):
+        if (session.get('user_id') == None):
+            return render_template('loginprompt.html', error="You must be logged in to view this page")
+        return func(User(session.get('user_id')), *args, **kwargs)
+    return wrapper
+
+def require_loggedin_ajax(func):
+    @functools.wraps(func)
+    def wrapper(*args, **kwargs):
+        if (session.get('user_id') == None):
+            return send_flask_response(make_response, ["ERROR: You must be logged in to view this page"])
+        return func(User(session.get('user_id')), *args, **kwargs)
+    return wrapper
+
 """Required for flask webserver"""
 @app.route('/')
 @app.route('/loginprompt')
@@ -322,7 +337,7 @@ def login():
         return render_template('loginprompt.html', error="Invalid email or password")
     
     session['user_id'] = user.data['id']
-    return home()
+    return redirect(url_for('home'))
 
 @app.route('/createaccount')
 def createaccount():
@@ -344,15 +359,14 @@ def createaccount_2():
     return render_template('loginprompt.html', created=True)
 
 @app.route('/home')
-def home():
+@require_loggedin
+def home(user):
     todays_date = time.strftime("%m/%d/%Y")
     game_list = []
-    user = User(session.get('user_id'))
     membership = user.data['membership']
     stripe_publishable_key = os.getenv("STRIPE_PUBLISHABLE_KEY")
     stripe_priceId_10 = os.getenv("STRIPE_PRICEID_BASIC")
-    userid = session.get('user_id')
-    for game in Games().get_all():
+    for game in Games().get_by_owner(user.data['id']):
         game_list.append({
             "id": game.data['id'],
             "name": game.data['name']
@@ -360,29 +374,18 @@ def home():
     return render_template('dmscreen.html', **locals())
 
 @app.route('/ask', methods=['POST', 'OPTIONS'])
-def ask():    
+@require_loggedin_ajax
+def ask(user):
     message = request.form.get('question')
-    game_id = int(request.form.get('game_id'))
-    chatbot = ChatBot(game_id, session.get('user_id'), os.getenv("OPENAI_API_KEY"), os.getenv("PINECONE_API_KEY"), os.getenv("PINECONE_ENVIRONMENT"))
+    game_id = int(request.form.get('game_id')) if len(request.form.get('game_id')) > 0 else None
+    chatbot = ChatBot(game_id, user.data['id'], os.getenv("OPENAI_API_KEY"), os.getenv("PINECONE_API_KEY"), os.getenv("PINECONE_ENVIRONMENT"))
     answer = chatbot.send_message(message, model=OpenAIHandler.MODEL_GPT3)
     return send_flask_response(make_response, answer)
 
 @app.route('/setgame', methods=['POST'])
-def setgame():
-    global game_dir, game_persist_dir, notes_instance
-
+@require_loggedin_ajax
+def setgame(user):
     game = Game(int(request.form.get('game_id')))
-
-    # Update the currently tracked game, and set embeddings 
-    game_dir = os.path.join(DIR_NOTES, game.data['abbr'])
-
-    # If game_dir does not exist, create it
-    if not os.path.exists(game_dir):
-        os.makedirs(game_dir)
-        game_persist_dir = os.path.join(game_dir, 'db')
-        os.makedirs(game_persist_dir)
-    else:
-        game_persist_dir = os.path.join(game_dir, 'db')
 
     # Check the db for a notes summary
     game_notes = GameNotes(game.data['abbr']).get_newest()
@@ -399,7 +402,7 @@ def setgame():
 
     # Get a list of NPCs
     names = []
-    for name in get_names(game_id=game.data['id']):
+    for name in get_names(user.data['id'], game_id=game.data['id']):
         names.append(name.data)
 
     # Get the list of plot points from db
@@ -414,15 +417,18 @@ def setgame():
     return send_flask_response(make_response, [notes_summary, r_notes, names, plot_points, reminders])
 
 @app.route('/savenotes', methods=['POST'])
-def savenotes(model='text-davinci-003', temperature=0.2):
+@require_loggedin_ajax
+def savenotes(user):
     notes = request.form.get('notes')
     game = Game(int(request.form.get('game_id')))
     date = time.strftime("%Y-%m-%d")
-    note = GameNotes(game.data['abbr']).preprocess_and_add(notes, date, session.get('user_id')).data['summary']
+    #note = GameNotes(game.data['abbr']).preprocess_and_add(notes, date, user.data['id']).data['summary']
+    note = GameNotes(game.data['abbr']).add(notes, date, user.data['id']).data['summary']
     return send_flask_response(make_response, [note])
 
 @app.route('/updatenote', methods=['POST'])
-def updatenote():
+@require_loggedin_ajax
+def updatenote(user):
     date = request.form.get('date')
     note = request.form.get('note')
     game = Game(int(request.form.get('game_id')))
@@ -431,13 +437,15 @@ def updatenote():
     return send_flask_response(make_response, ["OK"])
 
 @app.route('/getnote', methods=['POST'])
-def getnote():
+@require_loggedin_ajax
+def getnote(user):
     id = request.form.get('id')
     note = GameNote(id)
     return send_flask_response(make_response, [note.data['orig']])
 
 @app.route('/getnotes', methods=['POST'])
-def getnotes():
+@require_loggedin_ajax
+def getnotes(user):
     game = Game(int(request.form.get('game_id')))
     notes = []
     for note in GameNotes(game.data['abbr']).get_all():
@@ -445,14 +453,16 @@ def getnotes():
     return send_flask_response(make_response, notes)
 
 @app.route('/deletenote', methods=['POST'])
-def deletenote():
+@require_loggedin_ajax
+def deletenote(user):
     date = request.form.get('date')
     game = Game(int(request.form.get('game_id')))
     GameNotes(game.data['abbr']).get_by_date(date).delete()
     return send_flask_response(make_response, ["OK"])
 
 @app.route('/update_notes_date', methods=['POST'])
-def update_notes_date():
+@require_loggedin_ajax
+def update_notes_date(user):
     id = request.form.get('id')
     new_date = request.form.get('new_date')
     note = GameNote(id)
@@ -460,7 +470,8 @@ def update_notes_date():
     return send_flask_response(make_response, ["OK"])
 
 @app.route('/getnpc', methods=['POST', 'GET'])
-def getnpc():
+@require_loggedin_ajax
+def getnpc(user):
     id = int(request.form.get('id'))
     name = request.form.get('name')
     quick = True if request.form.get('quick') == "1" else False
@@ -469,7 +480,7 @@ def getnpc():
         npc = NPCs().add_npc(name)
         id = npc.data['id']
     
-    npc = AINPC(session.get('user_id')).get_npc(id, quick=quick)
+    npc = AINPC(user.data['id']).get_npc(id, quick=quick)
 
     if (npc == None):
         response = make_response("ERROR: Could not find NPC")
@@ -489,34 +500,38 @@ def getnpc():
     return response
 
 @app.route('/getnpcs', methods=['POST'])
-def getnpcs():
+@require_loggedin_ajax
+def getnpcs(user):
     game_id = int(request.form.get('game_id'))
     names = []
-    for name in get_names(game_id=game_id):
+    for name in get_names(user.data['id'], game_id=game_id):
         names.append(name.data)
     return send_flask_response(make_response, names)
 
 @app.route('/regensummary', methods=['POST'])
-def regensummary():
+@require_loggedin_ajax
+def regensummary(user):
     id = request.form.get('id')
-    gpt_response = AINPC(session.get('user_id')).get_npc_summary(id)
+    gpt_response = AINPC(user.data['id']).get_npc_summary(id)
     response = make_response(gpt_response)
     response.mimetype = "text/plain"
     response.headers.add('Access-Control-Allow-Origin', '*')
     return response
 
 @app.route('/regenkey', methods=['POST'])
-def regenkey():
+@require_loggedin_ajax
+def regenkey(user):
     id = request.form.get('id')
     key = request.form.get('key')
-    gpt_response = AINPC(session.get['user_id']).regen_npc_key(id, key, temperature=0.9)
+    gpt_response = AINPC(user.data['id']).regen_npc_key(id, key, temperature=0.9)
     response = make_response(gpt_response)
     response.mimetype = "text/plain"
     response.headers.add('Access-Control-Allow-Origin', '*')
     return response
 
 @app.route('/createnpc', methods=['POST'])
-def createnpc():
+@require_loggedin_ajax
+def createnpc(user):
     # Get all the form data
     keys = request.form.keys()
     npc_dict = {}
@@ -526,14 +541,15 @@ def createnpc():
             continue
         npc_dict[key] = request.form.get(key)
     
-    npc = AINPC(session.get['user_id']).gen_npc_from_dict(game_id=game_id, npc_dict=npc_dict)
+    npc = AINPC(user.data['id']).gen_npc_from_dict(game_id=game_id, npc_dict=npc_dict)
     response = make_response(npc.data)
     response.mimetype = "text/plain"
     response.headers.add('Access-Control-Allow-Origin', '*')
     return response
 
 @app.route('/deletename', methods=['POST'])
-def deletename():
+@require_loggedin_ajax
+def deletename(user):
     id = request.form.get('id')
     NPCs().delete_npc(id)
 
@@ -548,7 +564,8 @@ def deletename():
     return response
 
 @app.route('/gennpcimage_stability', methods=['POST'])
-def gennpcimage_stability():
+@require_loggedin_ajax
+def gennpcimage_stability(user):
     id:int = int(request.form.get('id'))
     npc = NPC(id)
     print(npc.data['name'])
@@ -580,7 +597,7 @@ def gennpcimage_stability():
             if artifact.finish_reason == generation.FILTER:
                 logging.warn("Your request activated the APIs safety filters and could not be processed.")
             if artifact.type == generation.ARTIFACT_IMAGE:
-                TokenLog().add("Generate Stability Image", 0, 0, 0.002, session.get('user_id'))
+                TokenLog().add("Generate Stability Image", 0, 0, 0.002, user.data['id'])
                 img = Image.open(io.BytesIO(artifact.binary))
                 img.save(os.path.join(DIR_ROOT, 'static', 'img', 'npc', str(id)+'.png'))
 
@@ -590,7 +607,8 @@ def gennpcimage_stability():
     return response
 
 @app.route('/gennpcimage', methods=['POST'])
-def gennpcimage():
+@require_loggedin_ajax
+def gennpcimage(user):
     id:int = int(request.form.get('id'))
     npc = NPC(id)
     print(npc.data['name'])
@@ -602,7 +620,7 @@ def gennpcimage():
         n=1,
         size='512x512'
     )
-    TokenLog().add("Generate OpenAI Image", 0, 0, 0.018, session.get('user_id'))
+    TokenLog().add("Generate OpenAI Image", 0, 0, 0.018, user.data['id'])
     image_url = openai_response['data'][0]['url']
     print(image_url)
 
@@ -616,7 +634,8 @@ def gennpcimage():
     return response
 
 @app.route('/addname', methods=['POST'])
-def addname():
+@require_loggedin_ajax
+def addname(user):
     id = request.form.get('id')
     game_id = request.form.get('game_id')
     npc = NPC(id)
@@ -627,7 +646,8 @@ def addname():
     return response
 
 @app.route('/createplotpoint', methods=['POST'])
-def createplotpoint():
+@require_loggedin_ajax
+def createplotpoint(user):
     title = request.form.get('title')
     details = request.form.get('summary')
     game_id = request.form.get('game_id')
@@ -638,7 +658,8 @@ def createplotpoint():
     return response
 
 @app.route('/createreminder', methods=['POST'])
-def createreminder():
+@require_loggedin_ajax
+def createreminder(user):
     title = request.form.get('title')
     details = request.form.get('details')
     trigger = request.form.get('trigger')
@@ -650,7 +671,8 @@ def createreminder():
     return response
 
 @app.route('/getreminders', methods=['POST'])
-def getreminders():
+@require_loggedin_ajax
+def getreminders(user):
     game_id = request.form.get('game_id')
     reminders = []
     for reminder in Reminders(game_id).get_all():
@@ -658,7 +680,8 @@ def getreminders():
     return send_flask_response(make_response, reminders)
 
 @app.route('/deletereminder', methods=['POST'])
-def deletereminder():
+@require_loggedin_ajax
+def deletereminder(user):
     id = request.form.get('id')
     Reminder(id).delete()
     response = make_response("OK")
@@ -667,7 +690,8 @@ def deletereminder():
     return response
 
 @app.route('/uploadaudio', methods=['POST'])
-def uploadaudio():
+@require_loggedin_ajax
+def uploadaudio(user):
     audio_file = request.files['audio_file']
     if audio_file.filename == '':
         return send_flask_response(make_response, [{"error": "No file selected"}])
@@ -689,16 +713,18 @@ def uploadaudio():
     return send_flask_response(make_response, [task.data['id']])
 
 @app.route('/getaudiostatus', methods=['POST'])
-def getaudiostatus():
+@require_loggedin_ajax
+def getaudiostatus(user):
     task_id = request.form.get('task_id')
     task = Task(task_id)
     return send_flask_response(make_response, [task.data['status'], task.data['message']])
 
 @app.route('/creategame', methods=['POST'])
-def creategame():
+@require_loggedin_ajax
+def creategame(user):
     name = request.form.get('game_name')
     abbr = request.form.get('abbr')
-    game = Games().add(name, abbr, session.get('user_id'))
+    game = Games().add(name, abbr, user.data['id'])
     return send_flask_response(make_response, [game.data['id']])
 
 @app.route('/waitlist', methods=['POST'])
@@ -706,6 +732,19 @@ def waitlist():
     email = request.form.get('email')
     user = Waitlist().add(email)
     return render_template('loginprompt.html', message="You have been added to the waitlist. You will be notified when your account is ready.")
+
+@app.route('/cancelmembership', methods=['POST'])
+@require_loggedin_ajax
+def cancelmembership(user):
+    stripe.api_key = os.getenv("STRIPE_API_KEY")
+    stripe.Subscription.modify(
+        user.data['stripe_subscription_id'],
+        cancel_at_period_end=True
+    )
+
+    user.update(membership="free")
+
+    return send_flask_response(make_response, ["OK"])
 
 @app.after_request
 def add_header(r):
