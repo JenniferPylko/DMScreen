@@ -2,7 +2,6 @@
 ## DM Screen
 
 ### v0.2 
-- BUG: You should not be able to "Save Notes" When a game is not selected
 - Set up billing
 - Move Logs to their own folder
 - SECURITY: If user is not logged in redirect /home (and others) to /login

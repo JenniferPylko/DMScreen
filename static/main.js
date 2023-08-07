@@ -121,6 +121,8 @@ $('#game').on('change', function(e) {
             $('#game').prop('disabled', false);
             $('#notes').prop('disabled', false);
             $('#save_notes').prop('disabled', false);
+            $('#add_npc').prop('disabled', false);
+            $('#add_reminder').prop('disabled', false);
             $('#notes').css('background-color', '#fff');
             $('#notes_most_recent').removeClass('lds-ring')
             $('#previous_notes_list').html('');
