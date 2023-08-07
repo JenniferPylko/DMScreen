@@ -1025,7 +1025,7 @@ function hide_chat_options(span, force=false) {
     }
 }
 
-function toggle_visibility(id) {
+function toggle_visibility(id, btn) {
     if (Array.isArray(id)) {
         id.forEach((i) => {
             do_toggle(i);
@@ -1036,10 +1036,16 @@ function toggle_visibility(id) {
 
     function do_toggle(id) {
         var e = document.getElementById(id);
-        if (e.style.display == 'block')
+        var btn = document.getElementById('btn_'+id);
+        if (e.style.display == 'block') {
             e.style.display = 'none';
-        else
+            if (btn)
+                btn.classList.add('off');
+        } else {
             e.style.display = 'block';
+            if (btn)
+                btn.classList.remove('off');
+        }
     }
 }
 

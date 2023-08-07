@@ -398,6 +398,11 @@ nav#toolbar span.logout, nav#toolbar span.account {
         background-color: blueviolet;
         color: #333;
     }
+
+    &.off {
+        background-color: transparent;
+        color: #333;
+    }
 }
 
 nav#toolbar span a {

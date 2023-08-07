@@ -14,11 +14,11 @@
             <option value="" style="text-align: center;">--Choose a Game--</option>"
         </select>
         <!--Horizontal toolbar with icons to show/hide the grid-items -->
-        <span class="nav-button active" title="Chat Bot""><a href="#" onclick="toggle_visibility('chatbot')"><i class="fa fa-comment"></i></a></span>
-        <span class="nav-button active" title="Game Notes"><a href="#" onclick="toggle_visibility(['game_notes', 'previous_notes'])"><i class="fa fa-book"></i></a></span>
-        <span class="nav-button active" title="Reminders"><a href="#" onclick="toggle_visibility('reminders')"><i class="fa fa-lightbulb-o"></i></a></span>
-        <span class="nav-button active" title="NPCs"><a href="#" onclick="toggle_visibility('npcs')"><i class="fa fa-users"></i></a></span>
-        <span class="nav-button active" title="Audio"><a href="#" onclick="toggle_visibility('audio')"><img src="/static/img/headphones-solid.png" /></a></span>
+        <span class="nav-button active" title="Chat Bot"" id="btn_chatbot"><a href="#" onclick="toggle_visibility('chatbot')"><i class="fa fa-comment"></i></a></span>
+        <span class="nav-button active" title="Game Notes" id="btn_game_notes"><a href="#" onclick="toggle_visibility(['game_notes', 'previous_notes'])"><i class="fa fa-book"></i></a></span>
+        <span class="nav-button active" title="Reminders" id="btn_reminders"><a href="#" onclick="toggle_visibility('reminders')"><i class="fa fa-lightbulb-o"></i></a></span>
+        <span class="nav-button active" title="NPCs" id="btn_npcs"><a href="#" onclick="toggle_visibility('npcs')"><i class="fa fa-users"></i></a></span>
+        <span class="nav-button active" title="Audio" id="btn_audio"><a href="#" onclick="toggle_visibility('audio')"><img src="/static/img/headphones-solid.png" /></a></span>
     </nav>
     <div id="sortable">
         <div id="chatbot" class="grid-item" style="display: block;">
