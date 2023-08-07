@@ -7,7 +7,7 @@ from models import User, Users
 
 from flask import Flask, jsonify, request
 
-handler = logging.FileHandler('stripe_webhook.log')
+handler = logging.FileHandler('logs/stripe_webhook.log')
 handler.setLevel(logging.DEBUG)
 root_logger = logging.getLogger()
 root_logger.addHandler(handler)

@@ -2,8 +2,6 @@
 ## DM Screen
 
 ### v0.2 
-- Set up billing
-- Move Logs to their own folder
 - SECURITY: If user is not logged in redirect /home (and others) to /login
 
 ### v0.5 - Public Beta

@@ -39,7 +39,7 @@ from langchain.prompts import PromptTemplate
 
 import build_scss
 
-handler = logging.FileHandler('webserver.log')
+handler = logging.FileHandler('logs/webserver.log')
 handler.setLevel(logging.DEBUG)
 root_logger = logging.getLogger()
 root_logger.addHandler(handler)
