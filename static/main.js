@@ -943,11 +943,12 @@ function show_account_membership() {
         html += "</div>"; // subscription-description
         html += "<div style='text-align:center'>"
         if (subscription.header.toLowerCase() != membership_level.toLowerCase()) {
+            let btn_txt = (subscription.priceId == '__free') ? 'Cancel Membership' : 'Update Membership';
             html += `<button style="background-color:#6772E5;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em;cursor:pointer"`
                 + ` id="checkout-button-${subscription.priceId}"`
                 + ` role="link"`
                 + ` type="button">`
-                + `Update Membership`
+                + btn_txt
                 + `</button>`;
         }
         html += "</div>"; // subscription-button    
@@ -967,8 +968,22 @@ function show_account_membership() {
             $('.subscription-item').removeClass('selected');
             $(this).addClass('selected');
         });
-        if (subscription.priceId != null)
+        if (subscription.priceId == '__free' && membership_level != 'free') {
+            var checkoutButton = document.getElementById('checkout-button-__free');
+
+            checkoutButton.addEventListener('click', function () {
+                $.post('/cancelmembership', {
+                    subscriptionId: subscription.priceId
+                }, function(response) {
+                    alert('Membership cancelled');
+                    window.location = '/home';
+                }).fail(function(jqXHR, textStatus, errorThrown) {
+                    alert('An error occurred, please try again - ' + errorThrown);
+                });
+            });
+        } else if (subscription.priceId != '__free' && membership_level != subscription.header.toLowerCase()) {
             initialize_stripe_button(subscription.priceId);
+        }
     }
 }
 

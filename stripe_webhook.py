@@ -202,7 +202,7 @@ def webhook():
       user = Users().get_by_stripe_invoice_id(invoice_id)
       if (user is not None):
         logging.debug('Received Payment for invoice_id: {}, ({})'.format(invoice_id, user.data['id']))
-        user.update(membership='basic')
+        user.update(membership='basic', stripe_customer_id=invoice['customer'])
     elif event['type'] == 'invoice.sent':
       invoice = event['data']['object']
     elif event['type'] == 'invoice.upcoming':

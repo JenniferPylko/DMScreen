@@ -707,6 +707,20 @@ def waitlist():
     user = Waitlist().add(email)
     return render_template('loginprompt.html', message="You have been added to the waitlist. You will be notified when your account is ready.")
 
+@app.route('/cancelmembership', methods=['POST'])
+def cancelmembership():
+    user = User(session.get('user_id'))
+
+    stripe.api_key = os.getenv("STRIPE_API_KEY")
+    stripe.Subscription.modify(
+        user.data['stripe_subscription_id'],
+        cancel_at_period_end=True
+    )
+
+    user.update(membership="free")
+
+    return send_flask_response(make_response, ["OK"])
+
 @app.after_request
 def add_header(r):
     """
