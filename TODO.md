@@ -2,10 +2,10 @@
 ## DM Screen
 
 ### v0.2 
-- BUG: I can see Red Hand of Doom
 - BUG: You should not be able to "Save Notes" When a game is not selected
 - Set up billing
 - Move Logs to their own folder
+- SECURITY: If user is not logged in redirect /home (and others) to /login
 
 ### v0.5 - Public Beta
 - Click on a chat message to make a DM Screen helpful note (Holywater does 2d6 damage). Click to get full description of rules

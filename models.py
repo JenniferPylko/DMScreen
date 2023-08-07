@@ -266,7 +266,13 @@ class Games(Model):
         for i, game in enumerate(games):
             games[i] = Game(game)
         return games
-    
+
+    def get_by_owner(self, owner_id):
+        games = self.get_array("SELECT id FROM games WHERE owner_id=? ORDER BY name ASC", (owner_id,))
+        for i, game in enumerate(games):
+            games[i] = Game(game)
+        return games
+
     def add(self, name, abbr, owner_id):
         id = self.do_insert("INSERT INTO games (abbr, name, owner_id) VALUES (?, ?, ?)", (abbr, name, owner_id))
         return Game(id)
@@ -452,8 +458,6 @@ class User():
         self._db.commit()
         cursor.close()
         return self  
-
-        
 
 class Tasks(Model):
     def __init__(self) -> None:

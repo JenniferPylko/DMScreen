@@ -352,7 +352,7 @@ def home():
     stripe_publishable_key = os.getenv("STRIPE_PUBLISHABLE_KEY")
     stripe_priceId_10 = os.getenv("STRIPE_PRICEID_BASIC")
     userid = session.get('user_id')
-    for game in Games().get_all():
+    for game in Games().get_by_owner(userid):
         game_list.append({
             "id": game.data['id'],
             "name": game.data['name']
