@@ -23,7 +23,7 @@ import functools
 
 from typing import List
 
-from flask import Flask, render_template, request, make_response, session, redirect
+from flask import Flask, render_template, request, make_response, session, redirect, url_for
 from dotenv import dotenv_values, load_dotenv
 from werkzeug.utils import secure_filename
 
@@ -258,6 +258,7 @@ def whisper(task):
         "fulltext": text
     }
 
+""" Decorators """
 def require_loggedin(func):
     @functools.wraps(func)
     def wrapper(*args, **kwargs):
@@ -335,7 +336,7 @@ def login():
         return render_template('loginprompt.html', error="Invalid email or password")
     
     session['user_id'] = user.data['id']
-    return home()
+    return redirect(url_for('home'))
 
 @app.route('/createaccount')
 def createaccount():

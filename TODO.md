@@ -2,7 +2,6 @@
 ## DM Screen
 
 ### v0.2 
-- SECURITY: If user is not logged in redirect /home (and others) to /login
 
 ### v0.5 - Public Beta
 - Click on a chat message to make a DM Screen helpful note (Holywater does 2d6 damage). Click to get full description of rules
