@@ -1,0 +1,13 @@
+@mixin create-brand-color($name, $color) {
+    --#{$name}: #{$color};
+    --#{$name}-hover: #{lighten($color, 10%)};
+    --#{$name}-active: #{darken($color, 10%)};
+    --#{$name}-border: #{darken($color, 20%)};
+}
+
+:root {
+    @include create-brand-color("default",   #3b3b3b);
+    @include create-brand-color("primary",   #8b0808);
+    @include create-brand-color("secondary", #592963);
+    @include create-brand-color("tertiary",  #105ea7);
+}

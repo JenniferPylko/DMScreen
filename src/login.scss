@@ -1,0 +1,48 @@
+#login {
+    /* Center Vertically and Horizontally */
+    margin: 10vh auto auto;
+    width: -moz-fit-content;
+    width: fit-content;
+    max-width: 480px;
+    .login-row {
+        display: flex;
+        margin-top: 12px;
+        >:first-child {
+            flex-grow: 1;
+            padding-right:12px;
+        }
+    }
+}
+
+#loginscreen {
+    background-image: url('/static/img/dmscreen_login.png');
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: bottom;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 12px;
+}
+
+div#subscriptions {
+    padding: 10px;
+}
+
+#login-title {
+    font-family: 'Cinzel Decorative', serif;
+    width: 100%;
+    text-align: center;
+    margin-top: 10vh;
+}
+
+div.psw {
+    background-color: transparent;   
+    width: 100%;
+    text-align: right;
+    a {
+        color: white;
+        font-size: 14px;
+    }
+}

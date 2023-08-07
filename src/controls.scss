@@ -1,0 +1,43 @@
+@mixin button-styles($name) {
+    background-color: var(--#{$name});
+    border: 1px solid var(--#{name}-border);
+    &:hover {
+        background-color: var(--#{$name}-hover) ;
+    }
+    &:active {
+        background-color: var(--#{$name}-active)
+    }
+}
+
+@mixin button-class($name) {
+    &.#{$name} {
+        @include button-styles($name);
+    }
+}
+
+button, input[type=text], input[type=password], input[type=submit], input[type=email] {
+    outline: none;
+    border: none;
+    border-radius: 6px;
+    padding: 6px 12px;
+    font-size: 14px;
+}
+
+button, input[type=submit] {
+    color: white;
+    @include button-styles("default");
+    @include button-class("primary");
+    @include button-class("secondary");
+    @include button-class("tertiary");
+    cursor: pointer;
+}
+
+input[type=checkbox] {
+    height: 18px;
+    width: 18px;
+    vertical-align: middle;
+}
+
+label {
+    font-size: 18px;
+}
