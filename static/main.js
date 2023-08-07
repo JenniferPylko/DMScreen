@@ -87,13 +87,6 @@ $('#chat-form').on('submit', function(e) {
 $('#game').on('change', function(e) {
     e.preventDefault();
     var game = $('#game').val();
-    $('#notes_most_recent').html("<div></div><div></div><div></div>");
-    $('#notes_most_recent').addClass('lds-ring')
-    $('#notes').val('');
-    $('#game').prop('disabled', true);
-    $('#notes').prop('disabled', true);
-    $('#save_notes').prop('disabled', true);
-    $('#notes').css('background-color', '#ccc');
 
     if (game == 0) { // Create a new game
         modal.style.display = "block";
@@ -109,6 +102,14 @@ $('#game').on('change', function(e) {
         html += "</form>"
         div.html(html)        
     } else { // Load the game
+        $('#notes_most_recent').html("<div></div><div></div><div></div>");
+        $('#notes_most_recent').addClass('lds-ring')
+        $('#notes').val('');
+        $('#game').prop('disabled', true);
+        $('#notes').prop('disabled', true);
+        $('#save_notes').prop('disabled', true);
+        $('#notes').css('background-color', '#ccc');
+
         $.post('/setgame', { 
             game_id: game
         }, function(response) {
