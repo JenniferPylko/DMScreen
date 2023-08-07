@@ -1,3 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import "variables.scss";
+@import "controls.scss";
+@import "layout.scss";
+@import "modal.scss";
+@import "login.scss";
+
 body {
     margin: 0;
     padding: 0;
@@ -6,9 +14,13 @@ body {
     color: #fff
 }
 
+* {
+    box-sizing: border-box !important;
+    accent-color: var(--primary);
+}
+
 a {
     text-decoration: none;
-    box-sizing: border-box !important;
 }
 
 #sortable {
@@ -60,9 +72,10 @@ a {
 }
 
 h1 {
-    font-size: 1em;
+    font-size: 10vw;
     margin: 0;
     padding: 0;
+    text-shadow: 0px 0px 10px black;
 }
 
 #chatbox, #notes {
@@ -111,17 +124,6 @@ div.chatmessage.bot {
     color: #000;
     border-bottom: 1px solid #ccc;
     padding: 3px;
-}
-
-input[type=range] {
-    vertical-align: middle;
-}
-
-input[type=submit] {
-    vertical-align: middle;
-    width: 40px;
-    margin: 0;
-    padding: 0;
 }
 
 #save_notes {
@@ -185,96 +187,12 @@ input[type=submit] {
     }
 }
 
-.modal {
-    display: none;
-    position: fixed;
-    z-index: 1;
-    padding-top: 100px;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 90%;
-    overflow: auto;
-    background-color: rgb(0,0,0);
-    background-color: rgba(0,0,0,0.4);
-}
-
-.modal-content {
-    background-color: #444;
-    margin: auto;
-    padding: 20Wpx;
-    border: 1px solid #888;
-    width: 80%;
-    color: #fff;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2), 0, 6px 20px rgba(0,0,0,0.19);
-    animation-name: animatetop;
-    animation-duration: 0.4s;
-}
-
-@keyframes animatetop {
-    from {top: -300px; opacity: 0}
-    to {top: 0; opacity: 1}
-}
-
-.modal-header {
-    padding: 2px 16px;
-    background-color: #333;
-    color: #fff;
-}
-
-.modal-body {
-    padding: 2px 16px;
-}
-
-.modal-footer {
-    padding: 2px 16px;
-    background-color: #333;
-    color: #fff;
-}
-
-.close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-    &:hover, &:focus {
-        color: #fff;
-        text-decoration: none;
-        cursor: pointer;
-    }
-}
-
-
-.edit, .delete, #modal-buttons {
-    color: #aaa;
-    float: right;
-    font-size: 14px;
-    font-weight: bold;
-    margin-top: 10px;
-    margin-right: 5px;
-}
-
-#modal-buttons span {
-    padding-left: 5px;
-    display: inline-block;
-}
-
-.edit:hover,
-.edit:focus, .delete:hover,
-.delete:focus, #modal-buttons span:hover, #modal-buttons span:focus {
-    color: #fff;
-    text-decoration: none;
-    cursor: pointer;
-}
-
 .npc_details {
     width: 50%;
-    float: left;
 }
 
 .npc_summary {
     width: 45%;
-    float: right;
     border: 1px solid #ccc;
     padding: 15px 5px 5px 5px;
     position: relative;
@@ -324,7 +242,6 @@ table#table_names td.center {
 div.npc_image {
     width: 512px;
     height: 542px;
-    float: right;
     margin: 0;
     padding: 0;
     overflow: hidden;
@@ -375,7 +292,6 @@ nav#toolbar {
 }
 
 nav#toolbar span.logout, nav#toolbar span.account {
-    float: right;
     margin-right: 10px;
     padding-right: 20px;
 }
@@ -472,68 +388,11 @@ div.reminder_title {
     text-overflow: ellipsis;
 }
 
-textarea#modal_textarea {
-    width: 100%;
-    height: 300px;
-}
-
-textarea:disabled {
-    background-color: #ccc !important;
-}
-
-#login {
-    /* Center Vertically and Horizontally */
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    max-width: 300px;
-
-    /* Blur the background */
-    background-color: rgba(0,0,0,0.4);
-    backdrop-filter: blur(5px);
-    border-radius: 30px;
-    padding: 10px;
-}
-
-#loginscreen {
-    background-image: url('/static/img/dmscreen_login.png');
-    background-size: cover;
-    width: 100vw;
-    height: 100vh;
-}
-
-div#subscriptions {
-    padding: 10px;
-}
-
-#login-title {
-    font-family: 'Lumanosimo', cursive;
-    position: absolute;
-    top: 10%;
-    width: 100%;
+h3 {
     text-align: center;
-    font-size: 144px;
-}
-
-div.psw {
-    background-color: transparent;   
-    width: 100%;
-    text-align: right;
-    a {
-        color: white;
-        font-size: 14px;
-    }
-}
-
-div#login div#remember {
-    float: right;
-}
-
-h2 {
-    text-align: center;
-    margin: 0;
-    padding: 0;
+    font-size: 36px;
+    margin-block-start: 0;
+    margin-block-end: 24px;
 }
 
 div.error {
@@ -564,13 +423,16 @@ div.audio_progress {
     padding: 2px;
 }
 
+textarea:disabled {
+    background-color: #ccc !important;
+}
+
 .subscription-item {
     background-color: rgba(0,0,0,0.1);
     backdrop-filter: blur(5px);
     border-radius: 30px;
     width: 300px;
     height: 420px;
-    float: left;
     margin-right: 5px;
 }
 
@@ -631,7 +493,6 @@ main.account {
         padding: 0;
         padding-left: 5px;
         background-color: #000;
-        float: left;
         font-size: 0.9em;
         ul {
             list-style-type: none;
@@ -644,7 +505,6 @@ main.account {
 article#account_article {
     display: block;
     padding-left: 15px;
-    float: left;
     width: calc(100%-160px)
     h1 {
         text-align:center;
