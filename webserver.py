@@ -101,7 +101,7 @@ names_prompt = PromptTemplate(
     partial_variables={"format_instructions": names_parser.get_format_instructions()}
 )
 
-def get_names(temperature=0.9, model='text-davinci-003', game_id=None) -> list[str]:
+def get_names(user_id, temperature=0.9, model='text-davinci-003', game_id=None) -> list[str]:
     names = NPCs().get_all(game_id=game_id)
     
     # If we get here, we are getting unassigned names
@@ -114,7 +114,7 @@ def get_names(temperature=0.9, model='text-davinci-003', game_id=None) -> list[s
         logging.debug("Sending prompt to OpenAI using model: "+model_name+"\n\n"+_input.to_messages().pop().content)
         with get_openai_callback() as cb:
             answer = chat(_input.to_messages())
-            TokenLog().add("Generate Names", cb.prompt_tokens, cb.completion_tokens, cb.total_cost, session.get('user_id'))
+            TokenLog().add("Generate Names", cb.prompt_tokens, cb.completion_tokens, cb.total_cost, user_id)
         logging.debug("Received answer from OpenAI: "+answer.content)
 
         parsed_answer = names_parser.parse(answer.content)
@@ -192,7 +192,8 @@ def split_audio(task_id, file_path, game):
     note = whisper(task)
 
     date = time.strftime("%Y-%m-%d")
-    GameNotes(game.data['abbr']).preprocess_and_add(note['bullets'], date, session.get('user_id')).data['summary']
+    #GameNotes(game.data['abbr']).preprocess_and_add(note['bullets'], date, user_id).data['summary']
+    GameNotes(game.data['abbr']).add(note['bullets'], date, note['bullets']).data['summary']
 
     # Delete the audio files
     audio_files = glob.glob(DIR_AUDIO + f"""/{task_id}--chunk*.mp3""")
@@ -362,12 +363,10 @@ def createaccount_2():
 def home(user):
     todays_date = time.strftime("%m/%d/%Y")
     game_list = []
-    print(session.get('user_id'))
     membership = user.data['membership']
     stripe_publishable_key = os.getenv("STRIPE_PUBLISHABLE_KEY")
     stripe_priceId_10 = os.getenv("STRIPE_PRICEID_BASIC")
-    userid = session.get('user_id')
-    for game in Games().get_by_owner(userid):
+    for game in Games().get_by_owner(user.data['id']):
         game_list.append({
             "id": game.data['id'],
             "name": game.data['name']
@@ -403,7 +402,7 @@ def setgame(user):
 
     # Get a list of NPCs
     names = []
-    for name in get_names(game_id=game.data['id']):
+    for name in get_names(user.data['id'], game_id=game.data['id']):
         names.append(name.data)
 
     # Get the list of plot points from db
@@ -423,7 +422,8 @@ def savenotes(user):
     notes = request.form.get('notes')
     game = Game(int(request.form.get('game_id')))
     date = time.strftime("%Y-%m-%d")
-    note = GameNotes(game.data['abbr']).preprocess_and_add(notes, date, user.data['id']).data['summary']
+    #note = GameNotes(game.data['abbr']).preprocess_and_add(notes, date, user.data['id']).data['summary']
+    note = GameNotes(game.data['abbr']).add(notes, date, user.data['id']).data['summary']
     return send_flask_response(make_response, [note])
 
 @app.route('/updatenote', methods=['POST'])
@@ -480,7 +480,7 @@ def getnpc(user):
         npc = NPCs().add_npc(name)
         id = npc.data['id']
     
-    npc = AINPC(session.get('user_id')).get_npc(id, quick=quick)
+    npc = AINPC(user.data['id']).get_npc(id, quick=quick)
 
     if (npc == None):
         response = make_response("ERROR: Could not find NPC")
@@ -504,7 +504,7 @@ def getnpc(user):
 def getnpcs(user):
     game_id = int(request.form.get('game_id'))
     names = []
-    for name in get_names(game_id=game_id):
+    for name in get_names(user.data['id'], game_id=game_id):
         names.append(name.data)
     return send_flask_response(make_response, names)
 
@@ -512,7 +512,7 @@ def getnpcs(user):
 @require_loggedin_ajax
 def regensummary(user):
     id = request.form.get('id')
-    gpt_response = AINPC(session.get('user_id')).get_npc_summary(id)
+    gpt_response = AINPC(user.data['id']).get_npc_summary(id)
     response = make_response(gpt_response)
     response.mimetype = "text/plain"
     response.headers.add('Access-Control-Allow-Origin', '*')
@@ -523,7 +523,7 @@ def regensummary(user):
 def regenkey(user):
     id = request.form.get('id')
     key = request.form.get('key')
-    gpt_response = AINPC(session.get['user_id']).regen_npc_key(id, key, temperature=0.9)
+    gpt_response = AINPC(user.data['id']).regen_npc_key(id, key, temperature=0.9)
     response = make_response(gpt_response)
     response.mimetype = "text/plain"
     response.headers.add('Access-Control-Allow-Origin', '*')
@@ -541,7 +541,7 @@ def createnpc(user):
             continue
         npc_dict[key] = request.form.get(key)
     
-    npc = AINPC(session.get['user_id']).gen_npc_from_dict(game_id=game_id, npc_dict=npc_dict)
+    npc = AINPC(user.data['id']).gen_npc_from_dict(game_id=game_id, npc_dict=npc_dict)
     response = make_response(npc.data)
     response.mimetype = "text/plain"
     response.headers.add('Access-Control-Allow-Origin', '*')
@@ -597,7 +597,7 @@ def gennpcimage_stability(user):
             if artifact.finish_reason == generation.FILTER:
                 logging.warn("Your request activated the APIs safety filters and could not be processed.")
             if artifact.type == generation.ARTIFACT_IMAGE:
-                TokenLog().add("Generate Stability Image", 0, 0, 0.002, session.get('user_id'))
+                TokenLog().add("Generate Stability Image", 0, 0, 0.002, user.data['id'])
                 img = Image.open(io.BytesIO(artifact.binary))
                 img.save(os.path.join(DIR_ROOT, 'static', 'img', 'npc', str(id)+'.png'))
 
@@ -620,7 +620,7 @@ def gennpcimage(user):
         n=1,
         size='512x512'
     )
-    TokenLog().add("Generate OpenAI Image", 0, 0, 0.018, session.get('user_id'))
+    TokenLog().add("Generate OpenAI Image", 0, 0, 0.018, user.data['id'])
     image_url = openai_response['data'][0]['url']
     print(image_url)
 
@@ -724,7 +724,7 @@ def getaudiostatus(user):
 def creategame(user):
     name = request.form.get('game_name')
     abbr = request.form.get('abbr')
-    game = Games().add(name, abbr, session.get('user_id'))
+    game = Games().add(name, abbr, user.data['id'])
     return send_flask_response(make_response, [game.data['id']])
 
 @app.route('/waitlist', methods=['POST'])
