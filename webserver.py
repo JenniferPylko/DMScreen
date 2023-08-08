@@ -78,7 +78,6 @@ for key in ['OPENAI_API_KEY', 'PINECONE_API_KEY', 'PINECONE_ENVIRONMENT', 'PINEC
         print("Please set the "+key+" environment variable in .env")
         exit(1)
 
-
 class NameList(BaseModel):
     names: List[str] = Field(description="A list of names")
 

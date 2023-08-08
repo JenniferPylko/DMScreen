@@ -49,6 +49,12 @@ a {
         padding: 0;
         margin: 0;
         text-align:center;
+
+        h1 {
+            font-size: 1.5em;
+            margin: 0;
+            padding: 0;
+        }
     }
 }
 
@@ -289,11 +295,13 @@ nav#toolbar {
     color: #fff;
     z-index: 1;
     padding-left: 10px;
-}
 
-nav#toolbar span.logout, nav#toolbar span.account {
-    margin-right: 10px;
-    padding-right: 20px;
+    span.logout, span.account {
+        float: right;
+        margin-right: 10px;
+        padding-right: 20px;
+    }
+
 }
 
 .nav-button {
@@ -434,6 +442,7 @@ textarea:disabled {
     width: 300px;
     height: 420px;
     margin-right: 5px;
+    float: left;
 }
 
 .subscription-item.selected {
@@ -506,10 +515,11 @@ article#account_article {
     display: block;
     padding-left: 15px;
     width: calc(100%-160px)
-    h1 {
-        text-align:center;
-        font-size: 1.5em;
-    }
+}
+
+article#account_article h1 {
+    text-align:center;
+    font-size: 1.5em !important;
 }
 
 nav#toolbar img {
