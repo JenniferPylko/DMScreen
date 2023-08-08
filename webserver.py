@@ -39,22 +39,28 @@ from langchain.prompts import PromptTemplate
 
 import build_scss
 
-handler = logging.FileHandler('logs/webserver.log')
-handler.setLevel(logging.DEBUG)
-root_logger = logging.getLogger()
-root_logger.addHandler(handler)
-root_logger.setLevel(logging.DEBUG)
-root_logger.debug('Starting webserver')
-logging.basicConfig(level=logging.DEBUG, filename='webserver.log')
-
 load_dotenv()
 
 """ CONSTANTS """
 DIR_ROOT = os.path.dirname(os.path.abspath(__file__))
 DIR_DOCS = os.path.join(DIR_ROOT, 'docs')
-DIR_PERSIST = os.path.join(DIR_ROOT, 'db')
-DIR_NOTES = os.path.join(DIR_ROOT, 'notes')
 DIR_AUDIO = os.path.join(DIR_ROOT, 'audio')
+DIR_LOGS = os.path.join(DIR_ROOT, 'logs')
+
+# Create required directories
+for dir in [DIR_DOCS, DIR_AUDIO, DIR_LOGS]:
+    if not os.path.exists(dir):
+        print("Creating directory: "+dir)
+        os.makedirs(dir)
+
+
+handler = logging.FileHandler(os.path.join(DIR_LOGS, 'webserver.log'))
+handler.setLevel(logging.DEBUG)
+root_logger = logging.getLogger()
+root_logger.addHandler(handler)
+root_logger.setLevel(logging.DEBUG)
+root_logger.debug('Starting webserver')
+logging.basicConfig(level=logging.DEBUG, filename=os.path.join(DIR_LOGS, 'webserver.log'))
 
 model_name = OpenAIHandler.MODEL_GPT3
 
@@ -71,7 +77,8 @@ for key in ['OPENAI_API_KEY', 'PINECONE_API_KEY', 'PINECONE_ENVIRONMENT', 'PINEC
     if key not in os.environ:
         print("Please set the "+key+" environment variable in .env")
         exit(1)
-    
+
+
 class NameList(BaseModel):
     names: List[str] = Field(description="A list of names")
 
@@ -759,14 +766,5 @@ def add_header(r):
     return r
 
 if __name__ == '__main__':
-    """Load the index from the loaders"""
-    #reload_documents()
-
-    """
-    template="As a resource bot, your goal is to provide as accurate inforfmation as possible to the user. When possible site your sources. You can use the following resources to help you answer questions: \n{modules}\n\nQuestion: {message}\nAnswer:"
-    PROMPT = PromptTemplate(template=template, input_variables=["modules", "message"])
-    chain_type_kwargs = {"prompt": PROMPT}
-    """
-
     """Start the webserver"""
     app.run(port=os.getenv("SERVER_HTTP_PORT"))
