@@ -23,7 +23,7 @@ import functools
 
 from typing import List
 
-from flask import Flask, render_template, request, make_response, session, redirect, url_for
+from flask import Flask, render_template, request, make_response, session, redirect, url_for, jsonify, g
 from dotenv import dotenv_values, load_dotenv
 from werkzeug.utils import secure_filename
 
@@ -108,7 +108,7 @@ names_prompt = PromptTemplate(
 )
 
 def get_names(user_id, temperature=0.9, model='text-davinci-003', game_id=None) -> list[str]:
-    names = NPCs().get_all(game_id=game_id)
+    names = NPCs(game_id).get_all()
     
     # If we get here, we are getting unassigned names
     names_need = 5 - len(names)
@@ -126,7 +126,7 @@ def get_names(user_id, temperature=0.9, model='text-davinci-003', game_id=None) 
         parsed_answer = names_parser.parse(answer.content)
 
         for name in parsed_answer.names:
-            NPCs().add_npc(name, attributes={"game_id": game_id})
+            NPCs(game_id).add_npc(name, attributes={"game_id": game_id})
     return names
 
 def generate_npc(npc: NPC, name:str, fields:dict={}, game_id:int=None):
@@ -278,9 +278,68 @@ def require_loggedin_ajax(func):
     @functools.wraps(func)
     def wrapper(*args, **kwargs):
         if (session.get('user_id') == None):
-            return send_flask_response(make_response, ["ERROR: You must be logged in to view this page"])
+            return send_flask_response(make_response, [{"error":"You must be logged in to view this page"}])
         return func(User(session.get('user_id')), *args, **kwargs)
     return wrapper
+
+def required_fields(fields):
+    def decorator(func):
+        @functools.wraps(func)
+        def wrapper(*args, **kwargs):
+            errors = {}
+            for field, field_type in fields.items():
+                value = request.form.get(field)
+                if value is None:
+                    errors[field] = f"Missing field"
+                else:
+                    try:
+                        value = field_type(value)
+                    except ValueError:
+                        errors[field] = f"Expected type {field_type}, got {type(value)}"
+                    else:
+                        setattr(g, field, value)
+            
+            if errors:
+                response = jsonify(error="Invalid fields", fields=errors)
+                response.status_code = 400
+                return response
+
+            return func(*args, **kwargs)
+        return wrapper
+    return decorator
+
+def optional_fields(fields):
+    def decorator(func):
+        @functools.wraps(func)
+        def wrapper(*args, **kwargs):
+            errors = {}
+            for field, field_type in fields.items():
+                value = request.form.get(field)
+
+                # If the field is an int and the value is an empty string, set it to None
+                # There is a chance that the front end will not know the id of an npc if 
+                # it is creating a new one
+                if (field_type == int and value == ""):
+                    value = None
+
+                if value is None:
+                    setattr(g, field, None)
+                else:
+                    try:
+                        value = field_type(value)
+                    except ValueError:
+                        errors[field] = f"Expected type {field_type}, got {type(value)}"
+                    else:
+                        setattr(g, field, value)
+
+            if errors:
+                response = jsonify(error="Invalid fields", fields=errors)
+                response.status_code = 400
+                return response
+            
+            return func(*args, **kwargs)
+        return wrapper
+    return decorator
 
 """Required for flask webserver"""
 @app.route('/')
@@ -477,22 +536,14 @@ def update_notes_date(user):
 
 @app.route('/getnpc', methods=['POST', 'GET'])
 @require_loggedin_ajax
+@required_fields({"quick": bool, "game_id": int})
+@optional_fields({"id": int, "name": str})
 def getnpc(user):
-    id = int(request.form.get('id'))
-    name = request.form.get('name')
-    quick = True if request.form.get('quick') == "1" else False
-
-    if (id == '' and name == ''): # Create a completely new NPC
-        npc = NPCs().add_npc(name)
-        id = npc.data['id']
-    
-    npc = AINPC(user.data['id']).get_npc(id, quick=quick)
+    # First try to get the NPC by ID
+    npc = AINPC(g.game_id, user_id=user.data['id']).get_or_create(id=g.id, name=g.name, quick=g.quick)
 
     if (npc == None):
-        response = make_response("ERROR: Could not find NPC")
-        response.mimetype = "text/plain"
-        response.headers.add('Access-Control-Allow-Origin', '*')
-        return response
+        return send_flask_response(make_response, [{"error": "Could not find NPC"}])
 
     # Check if the NPC image exists
     npc_image = os.path.join(DIR_ROOT, 'static', 'img', 'npc', str(id)+'.png')
@@ -547,7 +598,7 @@ def createnpc(user):
             continue
         npc_dict[key] = request.form.get(key)
     
-    npc = AINPC(user.data['id']).gen_npc_from_dict(game_id=game_id, npc_dict=npc_dict)
+    npc = AINPC(user.data['id']).gen_npc_from_dict(npc_dict=npc_dict)
     response = make_response(npc.data)
     response.mimetype = "text/plain"
     response.headers.add('Access-Control-Allow-Origin', '*')
@@ -557,7 +608,8 @@ def createnpc(user):
 @require_loggedin_ajax
 def deletename(user):
     id = request.form.get('id')
-    NPCs().delete_npc(id)
+    game_id = request.form.get('game_id')
+    NPCs(game_id).delete_npc(id)
 
     # If the image exists, delete it
     npc_image = os.path.join(DIR_ROOT, 'static', 'img', 'npc', str(id)+'.png')

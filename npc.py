@@ -190,15 +190,17 @@ class AINPC():
         }
     }
 
-    def __init__(self, user_id, model_name=None):
+    def __init__(self, game_id:int, user_id = None, model_name=None):
         self.__default_model = model_name if model_name is not None else self.__default_model
         self.__user_id = user_id
+        self.__game_id = game_id
 
     def get_npc(self, id: int, temperature: float = 0.9, model: str = OpenAIHandler.MODEL_GPT3_16, quick: bool = False):
-        npc = NPC(id) # First, try to get the NPC from the database, before doing the expensive GPT-3.5-0613 call
+        if (id != None and id > 0):
+            npc = NPC(id) # First, try to get the NPC from the database, before doing the expensive GPT-3.5-0613 call
 
-        # if npc has the key, race, then it is a completed NPC, so we can just return it
-        if (npc.data["background"] != None and npc.data['background'] != ""):
+        # If the NPC is not in the database, or is a placeholder, we need to generate it
+        if ("placeholder" in npc.data and npc.data["placeholder"] == False):
             return npc
 
         # If we get here, the NPC is in the database as a placeholder, so we need to generate the all of the details
@@ -207,6 +209,7 @@ class AINPC():
             dmscreen_npc = dmscreenxml.DMScreenXML(os.path.join(self.__dir_xml, 'npc.xml'))
             npc_dict = dmscreen_npc.get_all_values()
             npc_dict["name"] = npc.data["name"]
+            npc_dict["placeholder"] = False
             return npc.update(**npc_dict)
         else:
             # Slow mode, use GPT-3.5-0613 functions to generate the NPC
@@ -224,8 +227,7 @@ class AINPC():
                 function_call = {"name": "generate_npc"}
             )
 
-            print(response)
-            print(response["usage"]["completion_tokens"])
+            logging.debug(response)
             cost = OpenAIHandler().calculate_cost(response["usage"]["prompt_tokens"], response["usage"]["completion_tokens"], model)
             TokenLog().add("Generate NPC", response["usage"]["prompt_tokens"], response["usage"]["completion_tokens"], cost, self.__user_id)
             message = response["choices"][0]["message"]
@@ -233,9 +235,8 @@ class AINPC():
             if (message.get("function_call")):
                 function_name = message["function_call"]["name"]
                 args = message.get("function_call")["arguments"]
-                print(args)
                 args_json = json.loads(args)
-                print(args_json)
+                args_json['placeholder'] = False
                 return npc.update(**args_json)
             else:
                 logging.error("No function call in response from OpenAI")
@@ -342,10 +343,10 @@ class AINPC():
             logging.error("No function call in response from OpenAI")
             return None
 
-    def gen_npc_from_dict(self, game_id, npc_dict=None) -> NPC:
+    def gen_npc_from_dict(self, npc_dict=None) -> NPC:
         attributes: str = ""
         for key in npc_dict:
-            if npc_dict[key] != None and len(npc_dict[key]) > 0:
+            if npc_dict[key] != None and type(npc_dict[key]) != bool and len(npc_dict[key]) > 0:
                 attributes += str(key) + ": " + str(npc_dict[key]) + "\n"
 
         function_args = ["name", "race", "class_", "background", "alignment", "gender", "age",
@@ -403,8 +404,27 @@ class AINPC():
         if (message.get("function_call")):
             args = message.get("function_call")["arguments"]
             args_json = json.loads(args)
-            args_json['game_id'] = game_id
-            return NPCs().add_npc(args_json["name"], args_json)
+            args_json['game_id'] = self.__game_id
+            return NPCs(self.__game_id).add_npc(args_json["name"], args_json)
         else:
             logging.error("No function call in response from OpenAI")
             return None
+
+    def get_or_create(self, **kwargs) -> NPC:        
+        id = kwargs.get('id', None)
+        name = kwargs.get('name', None)
+        npc = None
+
+        if (id is not None):
+            npc = NPC(int(kwargs["id"]))
+        elif (name is not None and name != ""):
+            npc = NPCs(self.__game_id).get_npc_by_name(kwargs["name"])
+        
+        if npc is None:
+            # Could not find the NPC in the DB, so we need to create it
+            npc = self.gen_npc_from_dict(npc_dict=kwargs)
+        elif npc.data["placeholder"] == True:
+            # NPC is in the DB, but is a placeholder, so we need to generate the details
+            npc = self.get_npc(npc.data["id"])
+        
+        return npc

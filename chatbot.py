@@ -144,7 +144,8 @@ class ChatBot():
         """
 
     def create_npc(self, **kwargs):
-        npc = NPCs().add_npc(kwargs["name"], attributes=kwargs)
+        kwargs["game_id"] = self.__game_id
+        npc = NPCs(self.__game_id).add_npc(kwargs["name"], attributes=kwargs)
         return f"Created NPC: {npc.data['name']}" if npc is not None else "Failed to create NPC"
 
     def send_message(self, query, temperature=0.0, model=None, titles=[]):

@@ -54,11 +54,14 @@ $('#chat-form').on('submit', function(e) {
         let nouns = r["people"];
 
         // Iterate over the array of nouns, and replace instances of those words in the chat response with links to the NPC
-        nouns.forEach((noun) => {
-            let regex = new RegExp(noun, 'gi');
-            chat_response = chat_response.replace(regex, `<span class="chat_name" onmouseover="show_chat_options('${noun}', this)" onmouseout="hide_chat_options(this)">${noun}</span>`);
-        })
-        chat_response.replace(/\n/g, "<br/>\n");
+        // BUT, only do this if a game is selected
+        if ($('#game').val() > 0) {
+            nouns.forEach((noun) => {
+                let regex = new RegExp(noun, 'gi');
+                chat_response = chat_response.replace(regex, `<span class="chat_name" onmouseover="show_chat_options('${noun}', this)" onmouseout="hide_chat_options(this)">${noun}</span>`);
+            })
+            chat_response.replace(/\n/g, "<br/>\n");
+        }
 
         console.log(r_formatted)
         div_r1 = $(`<div>AI: ${chat_response}</div><div><small><ul><li>Source: ${source}</li></ul></small></div>`);
@@ -724,10 +727,15 @@ function show_name (id=null, name=null, quick=0) {
     $.post('/getnpc', { 
         id: id,
         name: name,
-        quick: quick
+        quick: quick,
+        game_id: $('#game').val()
     }, function(response) {
         let r = JSON.parse(response);
         console.log(r);
+        if (r.length > 0 && r[0].error) {
+            alert(r[0].error);
+            return;
+        }
         if (id == null)
             id = r['id'];
         // r is a hash, iterate through it and display it
@@ -770,7 +778,8 @@ function show_name (id=null, name=null, quick=0) {
 
 function delete_name(id) {
     $.post('/deletename', { 
-        id: id
+        id: id,
+        game_id: $('#game').val()
     }, function(response) {
         if ($('#name_'+id))
             $('#name_'+id).remove();

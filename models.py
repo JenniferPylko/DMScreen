@@ -51,16 +51,17 @@ class Model():
 class NPCs():
     __root_dir = os.path.dirname(os.path.abspath(__file__))
 
-    def __init__(self) -> None:
+    def __init__(self, game_id:int) -> None:
         self.__db = sqlite3.connect(os.path.join(self.__root_dir, 'db.sqlite3'))
         self.__db.row_factory = sqlite3.Row
+        self.__game_id = game_id
 
-    def get_all(self, game_id: int = None) -> list:
+    def get_all(self) -> list:
         where = ""
         sql_args = ()
-        if game_id is not None:
+        if self.__game_id is not None:
             where = " WHERE game_id=?"
-            sql_args = (game_id,)
+            sql_args = (self.__game_id,)
         else:
             where = " WHERE game_id IS NULL"
 
@@ -68,11 +69,7 @@ class NPCs():
         cursor.execute("SELECT id FROM npcs " + where, sql_args)
         npcs = cursor.fetchall()
         cursor.close()
-        r = []
-        for npc in npcs:
-            tmp = NPC(npc['id'])
-            r.append(tmp)
-        return r
+        return [NPC(npc['id']) for npc in npcs]
     
     def add_npc(self, name, attributes: dict = None) -> dict:
         cursor = self.__db.cursor()
@@ -90,6 +87,13 @@ class NPCs():
         self.__db.commit()
         cursor.close()
     
+    def get_npc_by_name(self, name: str):
+        cursor = self.__db.cursor()
+        cursor.execute("SELECT id FROM npcs WHERE name=?", (name,))
+        npc = cursor.fetchone()
+        cursor.close()
+        return NPC(npc['id']) if npc is not None else None
+
 class NPC():
     __root_dir = os.path.dirname(os.path.abspath(__file__))
 
@@ -117,7 +121,7 @@ class NPC():
                personality=None, mannerisms=None, talents=None, abilities=None, skills=None,
                languages=None, inventory=None, body=None, clothing=None, hands=None, jewelry=None,
                voice=None, attitude=None, deity=None, occupation=None, wealth=None, family=None,
-               faith=None, summary=None, chin=None, name=None, game_id=None):
+               faith=None, summary=None, chin=None, name=None, game_id=None, placeholder=None):
         
         query = "UPDATE npcs SET "
         vals = []
