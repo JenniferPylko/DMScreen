@@ -14,7 +14,7 @@ def send_invite_notification(email):
 
     Here's how to get started:
 
-    1. Visit https://dmscreen.com and click "Create Account"
+    1. Visit https://dmscreen.net and click "Create Account"
     2. Enter your email address and create a password
     3. Click the link in the verification email we send you. If you don't see it, check your spam folder. If you still don't see it, please send a message on our Discord server.
     4. Explore the array of features and let your creativity flow!

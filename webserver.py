@@ -406,10 +406,12 @@ def login():
 
 @app.route('/createaccount')
 def createaccount():
-    if (int(os.getenv("MAX_USERS")) > -1):
+    """
+    if (int(os.getenv("MAX_USERS")) > os.getenv("MAX_USERS")):
         count = Users().count()
         if count >= int(os.getenv("MAX_USERS")):
             return render_template('waitlist.html')
+"""
     return render_template('createaccount.html')
 
 @app.route('/createaccount_2', methods=['POST'])
