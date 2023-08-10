@@ -8,18 +8,18 @@ import logging
 import openai
 import requests
 import bcrypt
-from models import NPC, NPCs, GameNotes, GameNote, Game, PlotPoints, Reminders, Reminder, TokenLog, Users, Games, Tasks, Task, Waitlist, User
 from chatbot import ChatBot
 from npc import AINPC
 from openaihandler import OpenAIHandler
 import uuid
 import threading
-from pydub import AudioSegment
 import ffmpeg
 import glob
 import stripe
 import subprocess
 import functools
+
+from models import NPC, NPCs, GameNotes, GameNote, Game, PlotPoints, Reminders, Reminder, TokenLog, Users, Games, Tasks, Task, Waitlist, User
 
 from typing import List
 
@@ -127,6 +127,8 @@ def get_names(user_id, temperature=0.9, model='text-davinci-003', game_id=None) 
 
         for name in parsed_answer.names:
             NPCs(game_id).add_npc(name, attributes={"game_id": game_id})
+            names.append(name)
+
     return names
 
 def generate_npc(npc: NPC, name:str, fields:dict={}, game_id:int=None):
@@ -629,7 +631,21 @@ def gennpcimage_stability(user):
     id:int = int(request.form.get('id'))
     npc = NPC(id)
     print(npc.data['name'])
-    prompt = "epic 300mm professional highly realistic photo of a " +str(npc.data['age'])+" year old "+ str(npc.data['gender']) + " " + str(npc.data['race']) + " " + str(npc.data['class_']) + ", fantasy, looking at the camera, with " + str(npc.data['hair']) + " " + str(npc.data['hair_style']) + " " + " hair and " + str(npc.data['eyes']) + " " + str(npc.data['eyes_description']) + " eyes, " + str(npc.data['chin']) + " chin,  " + str(npc.data['clothing']) + ", " + str(npc.data['ears']) + " ears, " + str(npc.data['features']) + ", " + str(npc.data['mouth']) + " mouth, " + str(npc.data['nose'] + " nose, trending on deviant art, best quality, masterpiece, extremely high detail digital RAW color photograph, 4k, highly detailed, upper body")
+    age = str(npc.data['age']) if npc.data['age'] != None else "25"
+    gender = npc.data['gender'] if npc.data['gender'] != None else "male"
+    race = npc.data['race'] if npc.data['race'] != None else "human"
+    class_ = npc.data['class_'] if npc.data['class_'] != None else "commoner"
+    hair = npc.data['hair'] if npc.data['hair'] != None else "brown"
+    hair_style = npc.data['hair_style'] if npc.data['hair_style'] != None else "short"
+    eyes = npc.data['eyes'] if npc.data['eyes'] != None else "brown"
+    eyes_description = npc.data['eyes_description'] if npc.data['eyes_description'] != None else "brown"
+    chin = npc.data['chin'] if npc.data['chin'] != None else "normal"
+    clothing = npc.data['clothing'] if npc.data['clothing'] != None else "normal"
+    ears = npc.data['ears'] if npc.data['ears'] != None else "normal"
+    features = npc.data['features'] if npc.data['features'] != None else "normal"
+    mouth = npc.data['mouth'] if npc.data['mouth'] != None else "normal"
+    nose = npc.data['nose'] if npc.data['nose'] != None else "normal"
+    prompt = "epic 300mm professional highly realistic photo of a "+age+" year old "+gender+" "+race+" "+class_+", fantasy, looking at the camera, with "+hair+ " "+hair_style+ " hair and " +eyes+ " "+eyes_description+" eyes, "+chin+" chin,  "+clothing+", "+ears+" ears, "+features+", "+mouth+" mouth, "+nose+" nose, trending on deviant art, best quality, masterpiece, extremely high detail digital RAW color photograph, 4k, highly detailed, upper body"
     negative_prompt = "ugly, duplicate, morbid, mutilated, out of frame, extra fingers, mutated hands, poorly drawn hands, poorly drawn face, disfigured, extra limbs, cloned face, bad anatomy, gross proportions, malformed limbs, missing arms, fused fingers, extra arms, mutated hands, too many fingers, long neck"
 
     print(os.getenv("STABILITY_API_KEY"))

@@ -116,8 +116,13 @@ $('#game').on('change', function(e) {
         $.post('/setgame', { 
             game_id: game
         }, function(response) {
-            $('#notes_most_recent').html(JSON.parse(response)[0])
             json = JSON.parse(response);
+            var note = json[0];
+            note = note.replace(/</g, "&lt;");
+            note = note.replace(/>/g, "&gt;");
+            note = note.replace(/\n/g, "<br/>\n");
+            console.log(note);
+            $('#notes_most_recent').html(note);
             let notes_files = json[1];
             let game_names = json[2];
             let plot_points = json[3];

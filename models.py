@@ -1,4 +1,4 @@
-import sqlite3
+import mysql.connector
 import logging
 import os
 import json
@@ -20,19 +20,34 @@ class NotesQuery(BaseModel):
 
 class Model():
     def __init__(self) -> None:
-        self.__root_dir = os.path.dirname(os.path.abspath(__file__))
-        self.__db = sqlite3.connect(os.path.join(self.__root_dir, 'db.sqlite3'))
-        self.__db.row_factory = sqlite3.Row
-    
+        self._root_dir = os.path.dirname(os.path.abspath(__file__))
+        #self.__db = sqlite3.connect(os.path.join(self.__root_dir, 'db.sqlite3'))
+        #self.__db.row_factory = sqlite3.Row
+        self._db = mysql.connector.connect(
+            host = os.getenv("MYSQL_HOST"),
+            user = os.getenv("MYSQL_USER"),
+            password = os.getenv("MYSQL_PASS"),
+            database = os.getenv("MYSQL_DB")
+        )
+        self._table = None
+
+    def __del__(self) -> None:
+        self._db.close()
+
     def get_row(self, query: str, params: tuple = ()) -> dict:
-        cursor = self.__db.cursor()
+        cursor = self._db.cursor()
         cursor.execute(query, params)
         row = cursor.fetchone()
         cursor.close()
+
+        # Convert to dict
+        if row is not None:
+            row = dict(zip(cursor.column_names, row))
+
         return row
     
     def get_array(self, query: str, params: tuple = ()) -> list:
-        cursor = self.__db.cursor()
+        cursor = self._db.cursor()
         cursor.execute(query, params)
         rows = cursor.fetchall()
         for i, row in enumerate(rows):
@@ -41,79 +56,72 @@ class Model():
         return rows
     
     def do_insert(self, query: str, params: tuple = None) -> None:
-        cursor = self.__db.cursor()
-        cursor.execute(query, params)
-        self.__db.commit()
+        cursor = self._db.cursor()
+        try:
+            cursor.execute(query, params)
+        except Exception as e:
+            logging.error("Error inserting into database: "+str(e))
+            logging.error("Query: "+query)
+            logging.error("Params: "+str(params))
+            raise e
+        self._db.commit()
         lastrowid = cursor.lastrowid
         cursor.close()
         return lastrowid
 
-class NPCs():
-    __root_dir = os.path.dirname(os.path.abspath(__file__))
+    def delete_row(self, table: str, id: int) -> None:
+        cursor = self._db.cursor()
+        logging.debug(f"DELETE FROM {table} WHERE id={id}")
+        cursor.execute(f"DELETE FROM {table} WHERE id=%s", (id,))
+        self._db.commit()
+        cursor.close()
 
+    def update_row(self, query: str, params: tuple = None) -> None:
+        cursor = self._db.cursor()
+        cursor.execute(query, params)
+        self._db.commit()
+        cursor.close()
+
+class NPCs(Model):
     def __init__(self, game_id:int) -> None:
-        self.__db = sqlite3.connect(os.path.join(self.__root_dir, 'db.sqlite3'))
-        self.__db.row_factory = sqlite3.Row
+        super().__init__()
         self.__game_id = game_id
 
     def get_all(self) -> list:
         where = ""
         sql_args = ()
         if self.__game_id is not None:
-            where = " WHERE game_id=?"
+            where = " WHERE game_id=%s"
             sql_args = (self.__game_id,)
         else:
             where = " WHERE game_id IS NULL"
 
-        cursor = self.__db.cursor()
+        cursor = self._db.cursor()
         cursor.execute("SELECT id FROM npcs " + where, sql_args)
         npcs = cursor.fetchall()
         cursor.close()
-        return [NPC(npc['id']) for npc in npcs]
+        return [NPC(npc[0]) for npc in npcs]
     
     def add_npc(self, name, attributes: dict = None) -> dict:
-        cursor = self.__db.cursor()
-        cursor.execute("INSERT INTO npcs (name) VALUES (?)", (name,))
-        self.__db.commit()
-        cursor.close()
-        npc = NPC(cursor.lastrowid)
+        id = self.do_insert("INSERT INTO npcs (name) VALUES (%s)", (name,))
+        npc = NPC(id)
         if attributes is not None:
+            attributes['placeholder'] = attributes.get('placeholder') or True
             npc.update(**attributes)
-        return NPC(cursor.lastrowid)
+        return npc
     
     def delete_npc(self, id: int):
-        cursor = self.__db.cursor()
-        cursor.execute("DELETE FROM npcs WHERE id=?", (id,))
-        self.__db.commit()
-        cursor.close()
+        self.delete_row('npcs', id)
     
     def get_npc_by_name(self, name: str):
-        cursor = self.__db.cursor()
-        cursor.execute("SELECT id FROM npcs WHERE name=?", (name,))
-        npc = cursor.fetchone()
-        cursor.close()
-        return NPC(npc['id']) if npc is not None else None
+        id = self.get_row("SELECT id FROM npcs WHERE name=%s", (name,))
+        return NPC(id) if id is not None else None
 
-class NPC():
-    __root_dir = os.path.dirname(os.path.abspath(__file__))
-
+class NPC(Model):
     def __init__(self, id: int):
+        super().__init__()
         self.id = id
-        self.data = {}
-        self.__db = sqlite3.connect(os.path.join(self.__root_dir, 'db.sqlite3'))
-        self.__db.row_factory = sqlite3.Row
-        self.cursor = self.__db.cursor()
-        logging.debug("Fetching NPC from database. ID=" + str(id))
-        self.cursor.execute("SELECT * FROM npcs WHERE id = ?", (id,))
-        logging.debug("SELECT * FROM npcs WHERE id = " + str(id))
-
-        row = self.cursor.fetchone()
-        if row is None:
-            raise Exception("NPC not found")
-        for key in row.keys():
-            self.data[key] = row[key]
-
-        self.cursor.close()
+        self.data = self.get_row("SELECT * FROM npcs WHERE id = %s", (id,))
 
     def update(self, race=None, class_=None, background=None, alignment=None, gender=None, age=None,
                height=None, weight=None, eyes=None, hair=None, eyes_description=None, hair_style=None,
@@ -129,22 +137,15 @@ class NPC():
         for k,v in params.items():
             if k == 'self' or k == 'id' or v is None or k == 'params' or k == 'query' or k == 'vals':
                 continue
-            query += k + "=?,"
+            query += k + "=%s,"
             vals.append(v)
             self.data[k] = v
         query = query[:-1]
-        query += " WHERE id=?"
+        query += " WHERE id=%s"
         vals.append(self.data['id'])
-        logging.debug(query)
-        logging.debug(str(vals))
-        cursor = self.__db.cursor()
-        cursor.execute(query, vals)
-        self.__db.commit()
-        cursor.close()
+
+        self.update_row(query, tuple(vals))
         return self    
-        
-    def __del__(self):
-        self.__db.close()
 
 class GameNotes(Model):
     def __init__(self, game: str) -> None:
@@ -164,11 +165,11 @@ class GameNotes(Model):
         )
 
     def get_newest(self):
-        note = self.get_row("SELECT id FROM games_notes WHERE game=? ORDER BY date DESC LIMIT 1", (self.game,))
+        note = self.get_row("SELECT id FROM games_notes WHERE game=%s ORDER BY date DESC LIMIT 1", (self.game,))
         return GameNote(note['id']) if note is not None else None
     
     def get_by_date(self, date:str):
-        note = self.get_row("SELECT id FROM games_notes WHERE game=? AND date=?", (self.game, date))
+        note = self.get_row("SELECT id FROM games_notes WHERE game=%s AND date=%s", (self.game, date))
         return GameNote(note['id']) if note is not None else None
     
     def preprocess_and_add(self, note, date, user_id):
@@ -176,17 +177,17 @@ class GameNotes(Model):
         return self.add(note, date, summary.summary)
     
     def add(self, note, date, summary):
-        id = self.do_insert('INSERT INTO games_notes (game, date, orig, summary) VALUES (?, ?, ?, ?);', (self.game, date, note, summary))
+        id = self.do_insert('INSERT INTO games_notes (game, date, orig, summary) VALUES (%s, %s, %s, %s);', (self.game, date, note, summary))
         return GameNote(id)
     
     def get_all(self):
-        notes = self.get_array("SELECT id FROM games_notes WHERE game=? ORDER BY date DESC", (self.game,))
+        notes = self.get_array("SELECT id FROM games_notes WHERE game=%s ORDER BY date DESC", (self.game,))
         for i, note_id in enumerate(notes):
             notes[i] = GameNote(note_id)
         return notes
     
     def get_dates(self):
-        dates = self.get_array("SELECT date FROM games_notes WHERE game=? ORDER BY date DESC", (self.game,))
+        dates = self.get_array("SELECT date FROM games_notes WHERE game=%s ORDER BY date DESC", (self.game,))
         return dates
     
     def _preprocess(self, note, user_id, temperature=0.5, model=OpenAIHandler.MODEL_GPT3):
@@ -215,51 +216,32 @@ class GameNotes(Model):
 
         return parsed_answer
     
-class GameNote():
-    __root_dir = os.path.dirname(os.path.abspath(__file__))
-
+class GameNote(Model):
     def __init__(self, id: int = None, date:str = None) -> None:
+        super().__init__()
         if id is None and date is None:
             raise Exception("Either id or date must be provided")
         
-        self.__db = sqlite3.connect(os.path.join(self.__root_dir, 'db.sqlite3'))
-        self.__db.row_factory = sqlite3.Row
-        self.data = {}
-        cursor = self.__db.cursor()
         where = ""
         where_args = ()
 
         if id is not None:
-            where = " WHERE id=?"
+            where = " WHERE id=%s"
             where_args = (id,)
         elif date is not None:
-            where = " WHERE date=?"
+            where = " WHERE date=%s"
             where_args = (date,)
-            
-        cursor.execute("SELECT * FROM games_notes "+where, where_args)
-        row = cursor.fetchone()
-        for key in row.keys():
-            self.data[key] = row[key]
 
-        cursor.close()
+        self.data=self.get_row("SELECT * FROM games_notes "+where, where_args)         
 
     def update(self, note) -> None:
-        cursor = self.__db.cursor()
-        cursor.execute("UPDATE games_notes SET orig=? WHERE id=?", (note, self.data['id']))
-        self.__db.commit()
-        cursor.close()
+        return self.update_row("UPDATE games_notes SET orig=%s WHERE id=%s", (note, self.data['id']))
     
     def update_date(self, date) -> None:
-        cursor = self.__db.cursor()
-        cursor.execute("UPDATE games_notes SET date=? WHERE id=?", (date, self.data['id']))
-        self.__db.commit()
-        cursor.close()
+        return self.update_row("UPDATE games_notes SET date=%s WHERE id=%s", (date, self.data['id']))
 
     def delete(self) -> None:
-        cursor = self.__db.cursor()
-        cursor.execute("DELETE FROM games_notes WHERE id=?", (self.data['id'],))
-        self.__db.commit()
-        cursor.close()
+        return self.delete_row('games_notes', self.data['id'])
 
 class Games(Model):
     def __init__(self) -> None:
@@ -272,46 +254,35 @@ class Games(Model):
         return games
 
     def get_by_owner(self, owner_id):
-        games = self.get_array("SELECT id FROM games WHERE owner_id=? ORDER BY name ASC", (owner_id,))
+        games = self.get_array("SELECT id FROM games WHERE owner_id=%s ORDER BY name ASC", (owner_id,))
         for i, game in enumerate(games):
             games[i] = Game(game)
         return games
 
     def add(self, name, abbr, owner_id):
-        id = self.do_insert("INSERT INTO games (abbr, name, owner_id) VALUES (?, ?, ?)", (abbr, name, owner_id))
+        id = self.do_insert("INSERT INTO games (abbr, name, owner_id) VALUES (%s, %s, %s)", (abbr, name, owner_id))
         return Game(id)
     
     def delete(self, abbr):
         cursor = self._db.cursor()
-        cursor.execute("DELETE FROM games WHERE abbr=?", (abbr,))
+        cursor.execute("DELETE FROM games WHERE abbr=%s", (abbr,))
         self._db.commit()
         cursor.close()
 
-class Game():
+class Game(Model):
     def __init__ (self, game: int) -> None:
+        super().__init__()
         self.game = game
-        self.__root_dir = os.path.dirname(os.path.abspath(__file__))
-        self._db = sqlite3.connect(os.path.join(self.__root_dir, 'db.sqlite3'))
-        self._db.row_factory = sqlite3.Row
+        self.data = self.get_row("SELECT * FROM games WHERE id = %s", (game,))        
 
-        cursor = self._db.cursor()
-        cursor.execute("SELECT * FROM games WHERE id = ?", (game,))
-        row = cursor.fetchone()
-        self.data = {}
-        for key in row.keys():
-            self.data[key] = row[key]
-        cursor.close()
-
-class PlotPoints():
+class PlotPoints(Model):
     def __init__(self, game_id: int) -> None:
-        self.__root_dir = os.path.dirname(os.path.abspath(__file__))
-        self._db = sqlite3.connect(os.path.join(self.__root_dir, 'db.sqlite3'))
-        self._db.row_factory = sqlite3.Row
+        super().__init__()
         self.game_id = game_id
 
     def get_all(self):
         cursor = self._db.cursor()
-        cursor.execute("SELECT id FROM plotpoints WHERE game_id = ?", (self.game_id,))
+        cursor.execute("SELECT id FROM plotpoints WHERE game_id = %s", (self.game_id,))
         rows = cursor.fetchall()
         cursor.close()
         r = []
@@ -322,71 +293,44 @@ class PlotPoints():
     def add(self, game_id, title, details=None):
         date_new = datetime.datetime.now()
         cursor = self._db.cursor()
-        cursor.execute("INSERT INTO plotpoints (game_id, title, details, date_new, date_mod, status) VALUES (?, ?, ?, ?, ?, ?)", (game_id, title, details, date_new, date_new, "NEW"))
+        cursor.execute("INSERT INTO plotpoints (game_id, title, details, date_new, date_mod, status) VALUES (%s, %s, %s, %s, %s, %s)", (game_id, title, details, date_new, date_new, "NEW"))
         self._db.commit()
         cursor.close()
         return PlotPoint(cursor.lastrowid)
     
 class PlotPoint(Model):
     def __init__(self, id: int) -> None:
-        self.__root_dir = os.path.dirname(os.path.abspath(__file__))
-        self._db = sqlite3.connect(os.path.join(self.__root_dir, 'db.sqlite3'))
-        self._db.row_factory = sqlite3.Row
+        super().__init__()
         self.id = id
+        self.data = self.get_row("SELECT * FROM plotpoints WHERE id = %s", (id,))
 
-        cursor = self._db.cursor()
-        cursor.execute("SELECT * FROM plotpoints WHERE id = ?", (id,))
-        row = cursor.fetchone()
-        self.data = {}
-        for key in row.keys():
-            self.data[key] = row[key]
-        cursor.close()
-
-class Reminders():
+class Reminders(Model):
     def __init__(self, game_id:int) -> None:
-        self.root_dir = os.path.dirname(os.path.abspath(__file__))
-        self.db = sqlite3.connect(os.path.join(self.root_dir, 'db.sqlite3'))
-        self.db.row_factory = sqlite3.Row
+        super().__init__()
         self.game_id = game_id
     
     def get_all(self):
-        cursor = self.db.cursor()
-        cursor.execute("SELECT id FROM reminders WHERE game_id = ?", (self.game_id,))
+        cursor = self._db.cursor()
+        cursor.execute("SELECT id FROM reminders WHERE game_id = %s", (self.game_id,))
         rows = cursor.fetchall()
         cursor.close()
         r = []
         for row in rows:
-            r.append(Reminder(row['id']))
+            r.append(Reminder(row[0]))
         return r
     
     def add(self, title, details, trigger):
-        cursor = self.db.cursor()
-        cursor.execute("INSERT INTO reminders (game_id, title, details, trigger) VALUES (?, ?, ?, ?)", (self.game_id, title, details, trigger))
-        self.db.commit()
-        cursor.close()
-        return Reminder(cursor.lastrowid)
+        id = self.do_insert("INSERT INTO reminders (game_id, title, details, trigger_) VALUES (%s, %s, %s, %s)", (self.game_id, title, details, trigger))
+        return Reminder(id)
     
 class Reminder(Model):
     def __init__(self, id: int) -> None:
-        self.root_dir = os.path.dirname(os.path.abspath(__file__))
-        self.db = sqlite3.connect(os.path.join(self.root_dir, 'db.sqlite3'))
-        self.db.row_factory = sqlite3.Row
+        super().__init__()
         self.id = id
-
-        cursor = self.db.cursor()
-        logging.debug("SELECT * FROM reminders WHERE id = " + str(id))
-        cursor.execute("SELECT * FROM reminders WHERE id = ?", (id,))
-        row = cursor.fetchone()
-        self.data = {}
-        for key in row.keys():
-            self.data[key] = row[key]
-        cursor.close()
+        self.data = self.get_row("SELECT * FROM reminders WHERE id = %s", (id,))
     
     def delete(self):
-        cursor = self.db.cursor()
-        cursor.execute("DELETE FROM reminders WHERE id = ?", (self.id,))
-        self.db.commit()
-        cursor.close()
+        return self.delete_row('reminders', self.id)
 
 class TokenLog(Model):
     def __init__(self) -> None:
@@ -394,7 +338,7 @@ class TokenLog(Model):
 
     def add(self, query_type: str, prompt_tokens: int, completion_tokens: int, cost: float, user: int):
         date = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-        return self.do_insert("INSERT INTO log_tokens (query_type, prompt_tokens, completion_tokens, cost, date_new, user_id) VALUES (?, ?, ?, ?, ?, ?)", (query_type, prompt_tokens, completion_tokens, cost, date, user))
+        return self.do_insert("INSERT INTO log_tokens (query_type, prompt_tokens, completion_tokens, cost, date_new, user_id) VALUES (%s, %s, %s, %s, %s, %s)", (query_type, prompt_tokens, completion_tokens, cost, date, user))
 
 class Users(Model):
     def __init__(self) -> None:
@@ -403,38 +347,36 @@ class Users(Model):
     def add(self, email, password):
         date_new = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
         verify = random.randint(100000, 999999)
-        id = self.do_insert("INSERT INTO users (email, password, date_new, verify) VALUES (?, ?, ?, ?)", (email, password, date_new, verify))
+
+        # First make sure this doesn't already exist, so we don't throw a duplicate key error
+        user = self.get_by_email(email)
+        if user is not None:
+            return user
+
+        id = self.do_insert("INSERT INTO users (email, password, date_new, verify) VALUES (%s, %s, %s, %s)", (email, password, date_new, verify))
         return User(id)
     
     def get_by_email(self, email):
-        user = self.get_row("SELECT id FROM users WHERE email=?", (email,))
+        user = self.get_row("SELECT id FROM users WHERE email=%s", (email,))
         return User(user['id']) if user is not None else None
 
     def get_by_stripe_invoice_id(self, stripe_invoice_id):
-        user = self.get_row("SELECT id FROM users WHERE stripe_invoice_id=?", (stripe_invoice_id,))
+        user = self.get_row("SELECT id FROM users WHERE stripe_invoice_id=%s", (stripe_invoice_id,))
         return User(user['id']) if user is not None else None
 
     def count(self) -> int:
         return self.get_row("SELECT COUNT(*) AS count FROM users")['count']
 
-class User():
+class User(Model):
     def __init__(self, id: int) -> None:
+        super().__init__()
         self.id = id
-        self.data = {}
-        self.__root_dir = os.path.dirname(os.path.abspath(__file__))
-        self._db = sqlite3.connect(os.path.join(self.__root_dir, 'db.sqlite3'))
-        self._db.row_factory = sqlite3.Row
-        cursor = self._db.cursor()
-        cursor.execute("SELECT * FROM users WHERE id = ?", (id,))
-        row = cursor.fetchone()
-        for key in row.keys():
-            self.data[key] = row[key]
-        cursor.close()        
+        self.data = self.get_row("SELECT * FROM users WHERE id = %s", (id,))
 
     def pre_reset_password(self):
         reset = random.randint(100000, 999999)
         cursor = self._db.cursor()
-        cursor.execute("UPDATE users SET reset=? WHERE id=?", (reset, self.id))
+        cursor.execute("UPDATE users SET reset=%s WHERE id=%s", (reset, self.id))
         self._db.commit()
         cursor.close()
         self.data['reset'] = reset
@@ -449,11 +391,11 @@ class User():
         for k,v in params.items():
             if k == 'self' or k == 'id' or v is None:
                 continue
-            query += k + "=?,"
+            query += k + "=%s,"
             vals.append(v)
             self.data[k] = v
         query = query[:-1]
-        query += " WHERE id=?"
+        query += " WHERE id=%s"
         vals.append(self.data['id'])
         logging.debug(query)
         logging.debug(str(vals))
@@ -469,36 +411,28 @@ class Tasks(Model):
     
     def add(self, game_id: int, name: str, status:str="Queued"):
         date_new = datetime.datetime.now()
-        id = self.do_insert("INSERT INTO tasks (game_id, name, status, date_new, date_mod) VALUES (?, ?, ?, ?, ?)", (game_id, name, status, date_new, date_new))
+        id = self.do_insert("INSERT INTO tasks (game_id, name, status, date_new, date_mod) VALUES (%s, %s, %s, %s, %s)", (game_id, name, status, date_new, date_new))
         return Task(id)
 
-class Task():
+class Task(Model):
     def __init__(self, id: int) -> None:
+        super().__init__()
         self.id = id
-        self.data = {}
-        self.__root_dir = os.path.dirname(os.path.abspath(__file__))
-        self._db = sqlite3.connect(os.path.join(self.__root_dir, 'db.sqlite3'))
-        self._db.row_factory = sqlite3.Row
-        cursor = self._db.cursor()
-        cursor.execute("SELECT * FROM tasks WHERE id = ?", (id,))
-        row = cursor.fetchone()
-        for key in row.keys():
-            self.data[key] = row[key]
-        cursor.close()        
+        self.data = self.get_row("SELECT * FROM tasks WHERE id = %s", (id,))
 
     def update(self, name=None, status=None, message=None):
         params = locals().copy()
         date_mod = datetime.datetime.now()
-        query = "UPDATE tasks SET date_mod=?,"
+        query = "UPDATE tasks SET date_mod=%s,"
         vals = [date_mod]
         for k,v in params.items():
             if k == 'self' or k == 'id' or v is None:
                 continue
-            query += k + "=?,"
+            query += k + "=%s,"
             vals.append(v)
             self.data[k] = v
         query = query[:-1]
-        query += " WHERE id=?"
+        query += " WHERE id=%s"
         vals.append(self.data['id'])
         logging.debug(query)
         logging.debug(str(vals))
@@ -514,5 +448,5 @@ class Waitlist(Model):
     
     def add(self, email: str):
         date_new = datetime.datetime.now()
-        id = self.do_insert("INSERT INTO waitlist (email, date_new) VALUES (?, ?)", (email, date_new))
+        id = self.do_insert("INSERT INTO waitlist (email, date_new) VALUES (%s, %s)", (email, date_new))
         return id

@@ -273,7 +273,7 @@ class AINPC():
             ],
             function_call = {"name": "show_npc_summary"}
         )
-        cost = OpenAIHandler.calculate_cost(response["usage"]["prompt_tokens"], response["usage"]["completion_tokens"], model)
+        cost = OpenAIHandler().calculate_cost(response["usage"]["prompt_tokens"], response["usage"]["completion_tokens"], model)
         TokenLog().add("Regen NPC Summary", response["usage"]["prompt_tokens"], response["usage"]["completion_tokens"], cost, self.__user_id)
         message = response["choices"][0]["message"]
         if (message.get("function_call")):
@@ -328,7 +328,7 @@ class AINPC():
             ],
             function_call = {"name": "regen_npc_key"}
         )
-        cost = OpenAIHandler.calculate_cost(response["usage"]["prompt_tokens"], response["usage"]["completion_tokens"], model)
+        cost = OpenAIHandler().calculate_cost(response["usage"]["prompt_tokens"], response["usage"]["completion_tokens"], model)
         TokenLog().add("Regen NPC Key", response["usage"]["prompt_tokens"], response["usage"]["completion_tokens"], cost, self.__user_id)
         message = response["choices"][0]["message"]
         if (message.get("function_call")):
@@ -337,7 +337,7 @@ class AINPC():
             print(args)
             args_json = json.loads(args)
             print(args_json)
-            npc.update(**{key: args_json["value"]})
+            npc.update(**{field_: args_json["value"]})
             return args_json["value"]
         else:
             logging.error("No function call in response from OpenAI")
@@ -405,6 +405,7 @@ class AINPC():
             args = message.get("function_call")["arguments"]
             args_json = json.loads(args)
             args_json['game_id'] = self.__game_id
+            args_json['placeholder'] = False
             return NPCs(self.__game_id).add_npc(args_json["name"], args_json)
         else:
             logging.error("No function call in response from OpenAI")
@@ -422,9 +423,16 @@ class AINPC():
         
         if npc is None:
             # Could not find the NPC in the DB, so we need to create it
-            npc = self.gen_npc_from_dict(npc_dict=kwargs)
+            return self.gen_npc_from_dict(npc_dict=kwargs)
         elif npc.data["placeholder"] == True:
             # NPC is in the DB, but is a placeholder, so we need to generate the details
-            npc = self.get_npc(npc.data["id"])
-        
-        return npc
+            if ("quick" in kwargs and kwargs["quick"] == True):
+                dmscreen_npc = dmscreenxml.DMScreenXML(os.path.join(self.__dir_xml, 'npc.xml'))
+                npc_dict = dmscreen_npc.get_all_values()
+                npc_dict["name"] = npc.data["name"]
+                npc_dict["placeholder"] = False
+                return npc.update(**npc_dict)
+            else:
+                return self.get_npc(npc.data["id"])
+        else:
+            raise Exception("Should not get here!")
